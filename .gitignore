@@ -1,0 +1,20 @@
+# Saidas de compilacao do STM32
+/Firmware/STM32/Debug/
+/Firmware/STM32/Release/
+/Firmware/STM32/build/
+
+# Estado local do workspace Eclipse/STM32CubeIDE
+.metadata/
+
+# Backups manuais antigos
+/Firmware/STM32/docs/backups/
+
+# Estado local e backups do KiCad
+*.kicad_prl
+*.lck
+*-backups/
+fp-info-cache
+
+# Arquivos do Windows
+Thumbs.db
+Desktop.ini
