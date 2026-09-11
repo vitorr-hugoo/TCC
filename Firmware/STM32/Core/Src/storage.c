@@ -270,3 +270,44 @@ void Storage_Deinit(void)
     s_state = STORAGE_OFFLINE;
     s_last_error = FR_NOT_READY;
 }
+
+/* Separate append-only diagnostics; data.csv keeps its existing schema. */
+FRESULT Storage_AppendSensorHealth(uint32_t now, SensorId sensor,
+                                  const SensorHealth *health, HealthEvent event)
+{
+    if (!health || (unsigned)sensor >= SENSOR_COUNT) return FR_INVALID_PARAMETER;
+    if (!Storage_IsReady()) return FR_NOT_READY;
+    uint32_t free_kb;
+    FRESULT res = Storage_CheckCardSpace(NULL, &free_kb);
+    if (res != FR_OK) { _enter_fault(res); return res; }
+    if (free_kb < STORAGE_MIN_FREE_KB) return FR_DENIED;
+    /* Storage is serviced only by main. Keep FatFs' sector buffer out of
+     * the call stack, as already done for data.csv. */
+    static FIL file;
+    res = f_open(&file, "0:/logs/sensor_health.csv", FA_WRITE | FA_OPEN_APPEND);
+    if (res != FR_OK) { _enter_fault(res); return res; }
+    UINT written;
+    if (f_size(&file) == 0) {
+        const char *header = "timestamp_ms;sensor;evento;valido;motivo;falhas;tem_ultima_valida;ultima_valida_ms;idade_ms\r\n";
+        res = f_write(&file, header, (UINT)strlen(header), &written);
+        if (res == FR_OK && written != strlen(header)) res = FR_DISK_ERR;
+    }
+    if (res == FR_OK) {
+        char line[180];
+        int len = snprintf(line, sizeof(line), "%lu;%s;%s;%u;%s;%u;%u;%lu;%lu\r\n",
+            (unsigned long)now, Sensor_Name(sensor), Sensor_Event(event), health->valid,
+            Sensor_Reason(health->reason), health->consecutive_failures, health->has_valid,
+            (unsigned long)health->last_valid_ms,
+            (unsigned long)(health->has_valid ? now - health->last_valid_ms : 0));
+        if (len <= 0 || len >= (int)sizeof(line)) res = FR_INVALID_PARAMETER;
+        else {
+            res = f_write(&file, line, (UINT)len, &written);
+            if (res == FR_OK && written != (UINT)len) res = FR_DISK_ERR;
+        }
+    }
+    /* close flushes this event; preserve the first error. */
+    FRESULT close_res = f_close(&file);
+    if (res == FR_OK) res = close_res;
+    if (res != FR_OK) _enter_fault(res);
+    return res;
+}

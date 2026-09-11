@@ -27,12 +27,15 @@ extern "C" {
 #include "ff.h"       /* FatFs API */
 #include <stdint.h>
 #include <stdbool.h>
+#include "sensor_health.h"
 
 /* ─── Configurações ──────────────────────────────────────────────────────── */
 
 /** Caminho do diretório e arquivo de log */
 #define STORAGE_LOG_DIR   "0:/logs"
 #define STORAGE_LOG_FILE  "0:/logs/data.csv"
+FRESULT Storage_AppendSensorHealth(uint32_t now, SensorId sensor,
+                                  const SensorHealth *health, HealthEvent event);
 
 /**
  * Número de amostras entre chamadas de f_sync.

@@ -47,6 +47,7 @@ extern "C" {
  *        Deve coincidir com a configuração do ARR/PSC do TIM6.
  */
 #define ANEM_SAMPLE_WINDOW_MS   1000u
+#define ANEM_TIMEOUT_MARGIN_MS  1000u
 
 /**
  * @brief Número de pulsos gerados por rotação completa do eixo (WH-SP-WS01).
@@ -71,7 +72,7 @@ typedef struct {
     float    speed_ms;      /**< Velocidade calculada em metros por segundo [m/s]        */
     float    speed_kmh;     /**< Velocidade calculada em quilômetros por hora [km/h]     */
     uint32_t pulse_count;   /**< Quantidade bruta de pulsos capturados na janela         */
-    uint8_t  valid;         /**< 1 = leitura disponível e calculada; 0 = pendente/vazia  */
+    uint8_t  valid;         /**< 1 = leitura disponível e calculada; 0 = leitura invalida/pendente  */
 } Anemometer_Data_t;
 
 /* -------------------------------------------------------------------------- */
@@ -97,7 +98,7 @@ void anemometer_init(void);
  *
  * @param  htim  Ponteiro para o handle do TIM6 (htim6, declarado em main.c).
  */
-void anemometer_start_sampling(TIM_HandleTypeDef *htim);
+HAL_StatusTypeDef anemometer_start_sampling(TIM_HandleTypeDef *htim);
 
 /**
  * @brief  Encerra a janela de amostragem e congela o contador de pulsos.
@@ -111,6 +112,9 @@ void anemometer_start_sampling(TIM_HandleTypeDef *htim);
  * @param  htim  Ponteiro para o handle do TIM6.
  */
 void anemometer_stop_sampling(TIM_HandleTypeDef *htim);
+/* Service in main after other reads; HAL_BUSY means window still pending. */
+HAL_StatusTypeDef anemometer_service(TIM_HandleTypeDef *htim, uint32_t now);
+void anemometer_get_diagnostics(uint32_t *accepted, uint32_t *rejected, uint32_t *last_pulse_ms);
 
 /**
  * @brief  Calcula a velocidade do vento a partir dos pulsos congelados.
@@ -119,7 +123,7 @@ void anemometer_stop_sampling(TIM_HandleTypeDef *htim);
  *          fator de conversão ANEM_KMH_PER_HZ. Preenche todos os campos da
  *          struct de saída, incluindo valid = 1. Calmaria (pulse_count == 0)
  *          é um resultado válido: speed_ms = speed_kmh = 0.0f, valid = 1.
- *          Se nenhuma janela foi concluída (result_ready == 0), não modifica nada.
+ *          Se a janela nao concluiu, devolve valid = 0 sem reutilizar cache.
  *
  * @param  window_ms  Duração real da janela de integração [ms] (use ANEM_SAMPLE_WINDOW_MS).
  * @param  result     Ponteiro para a struct de saída; não pode ser NULL.

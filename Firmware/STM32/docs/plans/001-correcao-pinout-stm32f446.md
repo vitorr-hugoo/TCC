@@ -41,7 +41,7 @@ Os demais sinais permanecem inalterados:
 | UART de diagnóstico | PA2 TX, PA3 RX |
 | SD / SPI1 | PA5 SCK, PA6 MISO, PA7 MOSI |
 | DHT22 | PA8 / TIM10 como base de tempo |
-| LoRa NSS | PB0 |
+| LoRa NSS | PB12 |
 | I²C1 | PB6 SCL, PB7 SDA |
 | LoRa / SPI2 | PB13 SCK, PB14 MISO, PB15 MOSI |
 | Anemômetro | PC7 / EXTI7 |
@@ -79,7 +79,7 @@ Após a regeneração, verificar os seguintes pontos.
 
 - `SD_CS` em PC5 deve iniciar em nível alto.
 - `LORA_RST` em PC4 deve iniciar em nível alto.
-- `LORA_NSS` em PB0 deve iniciar em nível alto.
+- `LORA_NSS` em PB12 deve iniciar em nível alto.
 - `DHT22` em PA8 deve iniciar em nível alto.
 
 Isso evita selecionar o cartão ou o rádio durante a inicialização.

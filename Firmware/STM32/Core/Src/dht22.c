@@ -46,11 +46,15 @@ static void _set_input(DHT22_Handle_t *hdev)
 static DHT22_Status_t _wait_for(DHT22_Handle_t    *hdev,
                                 GPIO_PinState      expected_state)
 {
-    uint16_t timeout = 0;
+    uint16_t start = (uint16_t)__HAL_TIM_GET_COUNTER(hdev->htim);
+    uint32_t start_ms = HAL_GetTick();
+    uint32_t spins = 0;
     while (HAL_GPIO_ReadPin(hdev->gpio_port, hdev->gpio_pin) != expected_state) {
-        if (++timeout > DHT22_TIMEOUT_TICKS) {
-            return DHT22_ERR_TIMEOUT;
-        }
+        uint16_t elapsed = (uint16_t)((uint16_t)__HAL_TIM_GET_COUNTER(hdev->htim) - start);
+        if (elapsed >= DHT22_EDGE_TIMEOUT_US) return DHT22_ERR_TIMEOUT;
+        /* The independent bound also catches a stopped timer or SysTick. */
+        if ((uint32_t)(HAL_GetTick() - start_ms) >= 2u || ++spins >= 100000u)
+            return elapsed == 0 ? DHT22_ERR_TIMER : DHT22_ERR_TIMEOUT;
     }
     return DHT22_OK;
 }
@@ -71,7 +75,10 @@ void DHT22_Init(DHT22_Handle_t    *hdev,
 
 DHT22_Status_t DHT22_Read(DHT22_Handle_t *hdev)
 {
+    if (!hdev || !hdev->gpio_port || !hdev->htim || !hdev->htim->Instance ||
+        !(hdev->htim->Instance->CR1 & TIM_CR1_CEN)) return DHT22_ERR_TIMER;
     uint8_t raw[5] = {0};
+    DHT22_Status_t st;
 
     /* ── 1. Sinal de START ──────────────────────────────────────────────── */
     /*
@@ -93,11 +100,11 @@ DHT22_Status_t DHT22_Read(DHT22_Handle_t *hdev)
     _set_input(hdev);
 
     /* Aguarda o sensor assumir o barramento (queda para LOW) */
-    if (_wait_for(hdev, GPIO_PIN_RESET) != DHT22_OK) return DHT22_ERR_TIMEOUT;
+    if ((st = _wait_for(hdev, GPIO_PIN_RESET)) != DHT22_OK) return st;
     /* Aguarda subida do acknowledge */
-    if (_wait_for(hdev, GPIO_PIN_SET)   != DHT22_OK) return DHT22_ERR_TIMEOUT;
+    if ((st = _wait_for(hdev, GPIO_PIN_SET)) != DHT22_OK) return st;
     /* Aguarda fim do pulso alto de acknowledge (início real dos dados) */
-    if (_wait_for(hdev, GPIO_PIN_RESET) != DHT22_OK) return DHT22_ERR_TIMEOUT;
+    if ((st = _wait_for(hdev, GPIO_PIN_RESET)) != DHT22_OK) return st;
 
     /* ── 3. Leitura dos 40 bits (5 bytes) ──────────────────────────────── */
     /*
@@ -107,23 +114,26 @@ DHT22_Status_t DHT22_Read(DHT22_Handle_t *hdev)
      *      ~26–28 µs → bit '0'
      *      ~70    µs → bit '1'
      *
-     * Estratégia: zera o timer ao detectar a subida do pino,
+     * Estrategia: captura o timer ao detectar a subida do pino,
      * lê o contador ao detectar a descida e compara com o limiar.
      */
     for (int byte_idx = 0; byte_idx < 5; byte_idx++) {
         for (int bit_idx = 7; bit_idx >= 0; bit_idx--) {
 
             /* Aguarda o pulso LOW (separador entre bits) terminar */
-            if (_wait_for(hdev, GPIO_PIN_SET) != DHT22_OK) return DHT22_ERR_TIMEOUT;
+            if ((st = _wait_for(hdev, GPIO_PIN_SET)) != DHT22_OK) return st;
 
-            /* Zera o contador e mede a duração do pulso HIGH */
-            __HAL_TIM_SET_COUNTER(hdev->htim, 0);
+            /* Captura o inicio do pulso HIGH sem alterar o timer livre. */
+            uint16_t pulse_start = (uint16_t)__HAL_TIM_GET_COUNTER(hdev->htim);
 
             /* Aguarda a descida (fim do pulso de dados) */
-            if (_wait_for(hdev, GPIO_PIN_RESET) != DHT22_OK) return DHT22_ERR_TIMEOUT;
+            if ((st = _wait_for(hdev, GPIO_PIN_RESET)) != DHT22_OK) return st;
 
             /* Classifica o bit pelo tempo medido */
-            if (__HAL_TIM_GET_COUNTER(hdev->htim) > DHT22_BIT_THRESHOLD_US) {
+            uint16_t width = (uint16_t)((uint16_t)__HAL_TIM_GET_COUNTER(hdev->htim) - pulse_start);
+            if (width == 0) return DHT22_ERR_TIMER;
+            if (width < 15u || width > 100u) return DHT22_ERR_RANGE;
+            if (width > DHT22_BIT_THRESHOLD_US) {
                 raw[byte_idx] |= (1 << bit_idx); /* bit '1' */
             }
             /* bit '0': raw[byte_idx] já está zerado, não precisa escrever */
@@ -152,16 +162,21 @@ DHT22_Status_t DHT22_Read(DHT22_Handle_t *hdev)
      * Para temperatura: o bit 15 (MSB do raw[2]) indica sinal negativo.
      *   Se bit 15 = 1  →  temperatura negativa
      */
-    hdev->humidity = (float)((raw[0] << 8) | raw[1]) / 10.0f;
+    float humidity = (float)((raw[0] << 8) | raw[1]) / 10.0f;
 
+    float temperature;
     uint16_t temp_raw = (uint16_t)((raw[2] << 8) | raw[3]);
     if (temp_raw & 0x8000) {
         /* Temperatura negativa: limpa o bit de sinal e inverte */
-        hdev->temperature = -((float)(temp_raw & 0x7FFF) / 10.0f);
+        temperature = -((float)(temp_raw & 0x7FFF) / 10.0f);
     } else {
-        hdev->temperature = (float)temp_raw / 10.0f;
+        temperature = (float)temp_raw / 10.0f;
     }
 
+    if (humidity > 100.0f || temperature < -40.0f || temperature > 80.0f)
+        return DHT22_ERR_RANGE;
+    hdev->humidity = humidity;
+    hdev->temperature = temperature;
     return DHT22_OK;
 }
 
@@ -171,6 +186,8 @@ const char *DHT22_StatusStr(DHT22_Status_t status)
         case DHT22_OK:           return "OK";
         case DHT22_ERR_TIMEOUT:  return "TIMEOUT - Verifique fiacao e pull-up";
         case DHT22_ERR_CHECKSUM: return "CHECKSUM - Ruido no cabo ou sensor com defeito";
+        case DHT22_ERR_RANGE: return "FAIXA OU PULSO INVALIDO";
+        case DHT22_ERR_TIMER: return "TIMER INDISPONIVEL";
         default:                 return "ERRO DESCONHECIDO";
     }
 }

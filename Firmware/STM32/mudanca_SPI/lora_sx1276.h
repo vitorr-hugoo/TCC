@@ -5,7 +5,7 @@
  *
  * Pinagem (definida em main.h / CubeMX):
  *   SPI2  → PB13 (SCK) | PB14 (MISO) | PB15 (MOSI)
- *   NSS   → PB0  (LORA_NSS_Pin / LORA_NSS_GPIO_Port)
+ *   NSS   → PB12  (LORA_NSS_Pin / LORA_NSS_GPIO_Port)
  *   RESET → PB5  (LORA_RST_Pin / LORA_RST_GPIO_Port)
  *   DIO0  → PB4  (LORA_DIO0_Pin — TxDone / RxDone via EXTI4)
  *   DIO1  → PC3  (LORA_DIO1_Pin — RxTimeout via EXTI3)

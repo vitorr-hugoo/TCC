@@ -33,6 +33,8 @@
 #include "storage.h"
 #include "sd_spi.h"
 #include "lora_sx1276.h"
+#include "lora_payload.h"
+#include "station_sample.h"
 
 extern UART_HandleTypeDef huart2;
 
@@ -99,11 +101,14 @@ char wind_direction_label[8]; // Array para guardar os textos "N", "L", "S", "O"
 /* Garante o acesso ao handle do ADC configurado pelo CubeMX */
 extern ADC_HandleTypeDef hadc1;
 
-static bool lora_ok = false;   /* [NOVO] true se Init passou */
 static uint16_t lora_seq = 0u;
 
 static bool acquisition_pending = false;
 static uint32_t acquisition_start_ms = 0;
+static SensorHealth sensor_health[SENSOR_COUNT];
+static HAL_StatusTypeDef vane_status = HAL_ERROR;
+static bool adc_initialized = false;
+static uint8_t last_wire_overflow = 0;
 
 static DHT22_Status_t last_dht_status;
 static BMP280_Status_t last_bmp_status;
@@ -183,45 +188,137 @@ static void App_WindVane_Init(void)
     //vane_cfg.lut_size           = 4u;
     vane_cfg.lut_size           = 16u;
 
-    if (Wind_Vane_Init(&vane_cfg) != HAL_OK)
-    {
-        Error_Handler(); // Trava o sistema se houver erro crítico no ADC
-    }
+    vane_status = adc_initialized ? Wind_Vane_Init(&vane_cfg) : HAL_ERROR;
+    printf("[BIRUTA] %s\r\n", vane_status == HAL_OK ? "ADC configurado; aguardando leitura" : "Falha de inicializacao do ADC");
 }
 
-#pragma pack(push, 1)
-typedef struct {
-    uint8_t  node_id;
-    uint16_t seq;
-    int16_t  temperature_x10;
-    uint16_t humidity_x10;
-    uint16_t pressure_hpa_x1;
-    uint16_t illuminance_lux_x1;
-    int16_t  wind_speed_x100;
-    uint16_t wind_dir_deg;
-    uint16_t rain_mm_x100;
-    uint8_t  crc8;
-} LoRaPayload_t;
-#pragma pack(pop)
 
-static uint8_t App_CRC8(const uint8_t *data, uint16_t len)
+static SensorReason App_DhtReason(DHT22_Status_t status)
 {
-    uint8_t crc = 0x00u;
-
-    for (uint16_t i = 0; i < len; i++)
-    {
-        crc ^= data[i];
-        for (uint8_t b = 0; b < 8u; b++)
-        {
-            if (crc & 0x80u)
-                crc = (uint8_t)((crc << 1) ^ 0x07u);
-            else
-                crc <<= 1;
+    switch (status) {
+        case DHT22_OK: return SENSOR_OK;
+        case DHT22_ERR_TIMEOUT: return SENSOR_TIMEOUT;
+        case DHT22_ERR_CHECKSUM: return SENSOR_CHECKSUM;
+        case DHT22_ERR_TIMER: return SENSOR_TIMER;
+        default: return SENSOR_RANGE;
+    }
+}
+static SensorReason App_BmpReason(BMP280_Status_t status)
+{
+    switch (status) {
+        case BMP280_OK: return SENSOR_OK;
+        case BMP280_ERR_BUSY: return SENSOR_TIMEOUT;
+        case BMP280_ERR_CONFIG: return SENSOR_CONFIG;
+        case BMP280_ERR_CALIBRATION: return SENSOR_CALIBRATION;
+        case BMP280_ERR_RANGE: return SENSOR_RANGE;
+        default: return SENSOR_IO;
+    }
+}
+static SensorReason App_BhReason(BH1750_Status_t status)
+{
+    switch (status) {
+        case BH1750_OK: return SENSOR_OK;
+        case BH1750_ERR_NOT_RDY: return SENSOR_TIMEOUT;
+        case BH1750_ERR_CONFIG: return SENSOR_CONFIG;
+        case BH1750_ERR_SATURATED: return SENSOR_SATURATED;
+        case BH1750_ERR_RANGE: return SENSOR_RANGE;
+        default: return SENSOR_IO;
+    }
+}
+static float App_Value(const StationSample *s, SensorId id, float value)
+{
+    return s->reason[id] == SENSOR_OK ? value : -999.0f;
+}
+static void App_FinishAcquisition(uint32_t now, HAL_StatusTypeDef wind_status)
+{
+    StationSample sample = {
+        .timestamp_ms = acquisition_start_ms,
+        .reason = {
+            App_DhtReason(last_dht_status), App_BmpReason(last_bmp_status),
+            App_BhReason(last_bh_status),
+            vane_status == HAL_OK ? SENSOR_OK : (vane_status == HAL_TIMEOUT ? SENSOR_TIMEOUT : SENSOR_IO),
+            last_dados_vento.valid ? SENSOR_OK : (wind_status == HAL_TIMEOUT ? SENSOR_TIMEOUT : SENSOR_TIMER),
+            last_dados_chuva.valid ? SENSOR_OK : SENSOR_RANGE
+        },
+        .temperature = dht22.temperature, .humidity = dht22.humidity,
+        .pressure = bmp280.pressure, .bmp_temperature = bmp280.temperature, .altitude = bmp280.altitude,
+        .illuminance = bh1750.illuminance, .irradiance = bh1750.irradiance,
+        .wind_speed = last_dados_vento.speed_ms, .wind_dir_deg = wind_direction_deg,
+        .rain_mm = last_dados_chuva.rain_mm
+    };
+    StationSample_Validate(&sample);
+    FRESULT sd_result = FR_OK;
+    for (unsigned i = 0; i < SENSOR_COUNT; ++i) {
+        SensorHealth *h = &sensor_health[i];
+        HealthEvent event = SensorHealth_Update(h, sample.reason[i], now);
+        if (event == HEALTH_NONE) continue;
+        printf("[SAUDE] %s %s | motivo=%s | falhas=%u | tem_ultima=%u | idade_ms=%lu\r\n",
+            Sensor_Name((SensorId)i), Sensor_Event(event), Sensor_Reason(h->reason),
+            h->consecutive_failures, h->has_valid,
+            (unsigned long)(h->has_valid ? now - h->last_valid_ms : 0));
+        if (Storage_IsReady()) {
+            FRESULT res = Storage_AppendSensorHealth(now, (SensorId)i, h, event);
+            if (res != FR_OK) sd_result = res;
         }
     }
+    if (sample.reason[SENSOR_BMP] == SENSOR_IO && sample.reason[SENSOR_BH] == SENSOR_IO &&
+        (sensor_health[SENSOR_BMP].consecutive_failures == 1 || sensor_health[SENSOR_BH].consecutive_failures == 1))
+        printf("[I2C1] BMP280 e BH1750 falharam: verificar tambem barramento/alimentacao comuns.\r\n");
 
-    return crc;
+    SensorSample_t sd_sample = {
+        .timestamp_ms = sample.timestamp_ms,
+        .temperature = App_Value(&sample, SENSOR_DHT, sample.temperature),
+        .humidity = App_Value(&sample, SENSOR_DHT, sample.humidity),
+        .pressure = App_Value(&sample, SENSOR_BMP, sample.pressure),
+        .irradiance = App_Value(&sample, SENSOR_BH, sample.irradiance),
+        .wind_speed = App_Value(&sample, SENSOR_ANEM, sample.wind_speed),
+        .wind_dir_deg = App_Value(&sample, SENSOR_VANE, sample.wind_dir_deg),
+        .rain_mm = App_Value(&sample, SENSOR_RAIN, sample.rain_mm)
+    };
+    if (Storage_IsReady()) {
+        FRESULT res = Storage_AppendSample(&sd_sample);
+        if (res != FR_OK) sd_result = res;
+    }
+    LoRaPayload_t packet;
+    uint8_t overflow = StationSample_Payload(&sample, lora_seq++, &packet);
+    if (overflow != last_wire_overflow) {
+        printf("[LORA] Limite do pacote legado: mascara=%02X. Campos sem representacao usam sentinela; dados locais preservados.\r\n", overflow);
+        last_wire_overflow = overflow;
+    }
+    bool tx_ok = SX1276_Transmit((const uint8_t *)&packet, sizeof(packet));
+    printf("[LORA] %s | seq=%u | len=%u | motivo=%s\r\n",
+        tx_ok ? "TX concluida pelo radio" : "Falha local", packet.seq,
+        (unsigned)sizeof(packet), SX1276_LastError());
+    printf("\r\n===== DADOS DA ESTACAO | t=%lu ms =====\r\n", (unsigned long)sample.timestamp_ms);
+    if (sample.reason[SENSOR_DHT] == SENSOR_OK)
+        printf("Temp: %.1f C | Umid: %.1f %%\r\n", sample.temperature, sample.humidity);
+    else printf("Temp/Umid: indisponiveis\r\n");
+    if (sample.reason[SENSOR_BMP] == SENSOR_OK)
+        printf("Pres: %.1f hPa | Alt: %.1f m\r\n", sample.pressure, sample.altitude);
+    else printf("Pressao/Altitude: indisponiveis\r\n");
+    if (sample.reason[SENSOR_BH] == SENSOR_OK)
+        printf("Ilum: %.1f lux | Irrad: %.2f W/m2\r\n", sample.illuminance, sample.irradiance);
+    else printf("Iluminancia/Irradiancia: indisponiveis\r\n");
+    if (sample.reason[SENSOR_ANEM] == SENSOR_OK)
+        printf("Vento: %.2f m/s\r\n", sample.wind_speed);
+    else printf("Velocidade do vento: indisponivel\r\n");
+    if (sample.reason[SENSOR_VANE] == SENSOR_OK) {
+        Wind_Vane_GetLabel(sample.wind_dir_deg, wind_direction_label, sizeof(wind_direction_label));
+        printf("Direcao: %s (%u graus)\r\n", wind_direction_label, sample.wind_dir_deg);
+    } else printf("Direcao: indisponivel\r\n");
+    if (sample.reason[SENSOR_RAIN] == SENSOR_OK) printf("Chuva acumulada: %.2f mm\r\n", sample.rain_mm);
+    else printf("Chuva acumulada: indisponivel\r\n");
+    uint32_t accepted, rejected, last_pulse, rain_rejected, last_tip;
+    anemometer_get_diagnostics(&accepted, &rejected, &last_pulse);
+    pluviometer_get_diagnostics(&rain_rejected, &last_tip);
+    printf("[PULSOS] Vento janela: aceitos=%lu rejeitados=%lu ultimo_ms=%lu | Chuva total: aceitos=%lu rejeitados=%lu ultimo_ms=%lu\r\n",
+        (unsigned long)accepted, (unsigned long)rejected, (unsigned long)last_pulse,
+        (unsigned long)last_dados_chuva.tip_count, (unsigned long)rain_rejected, (unsigned long)last_tip);
+    printf("SD: %s (erro=%d)\r\n", Storage_IsReady() ? (sd_result == FR_OK ? "OK" : "ERRO") : "INDISPONIVEL",
+        (int)(Storage_IsReady() ? sd_result : Storage_GetLastError()));
+    printf("==========================================\r\n");
 }
+
 /* USER CODE END 0 */
 
 /**
@@ -285,6 +382,7 @@ int main(void)
   /* ── Verificação do chip ────────────────────────────────────────────────── */
   uint8_t lora_version = 0x00u;
 
+  SX1276_Reset(); /* Reset somente no boot. Sondagens posteriores nao resetam. */
   if (!SX1276_CheckVersion(&lora_version))
   {
       printf("[LORA] FALHA. RegVersion = 0x%02X\r\n", lora_version);
@@ -296,20 +394,20 @@ int main(void)
       printf("[LORA] SX1276 OK. RegVersion = 0x%02X\r\n", lora_version);
 
       SX1276_Config_t lora_cfg = SX1276_DEFAULT_CONFIG;
-      lora_ok = SX1276_Init(&lora_cfg);
+      bool lora_init_ok = SX1276_Init(&lora_cfg);
 
-      if (lora_ok)
+      if (lora_init_ok)
           printf("[LORA] Init OK. Pronto para TX.\r\n");
       else
-          printf("[LORA] Init FALHOU.\r\n");
+          printf("[LORA] Init FALHOU: %s. Reiniciar apos corrigir a causa.\r\n", SX1276_LastError());
   }
 
   /* ── Sensores ───────────────────────────────────────────────────────────── */
   printf("\r\n=== Inicializando sensores ===\r\n");
 
-  HAL_TIM_Base_Start(&htim10);
+  HAL_StatusTypeDef dht_timer_status = HAL_TIM_Base_Start(&htim10);
   DHT22_Init(&dht22, DHT22_GPIO_Port, DHT22_Pin, &htim10);
-  printf("[DHT22] OK\r\n");
+  printf("[DHT22] %s\r\n", dht_timer_status == HAL_OK ? "Configurado; aguardando primeira leitura" : "Falha ao iniciar TIM10");
 
   BMP280_Config_t bmp_cfg = BMP280_DEFAULT_CONFIG;
   BMP280_Status_t bmp_st  = BMP280_Init(&bmp280, &hi2c1, BMP280_ADDR_SDO_LOW, &bmp_cfg);
@@ -317,7 +415,7 @@ int main(void)
   else printf("[BMP280] FALHA: %s\r\n", BMP280_StatusStr(bmp_st));
 
   BH1750_Status_t bh_st = BH1750_Init(&bh1750, &hi2c1,
-                                        BH1750_ADDR_LOW, BH1750_MODE_CONT_H_RES);
+                                        BH1750_ADDR_LOW, BH1750_MODE_ONCE_H_RES);
   if (bh_st == BH1750_OK) printf("[BH1750] OK - I2C1 0x23\r\n");
   else printf("[BH1750] FALHA: %s\r\n", BH1750_StatusStr(bh_st));
 
@@ -328,6 +426,7 @@ int main(void)
   printf("[PLUV] OK - EXTI PA1\r\n");
 
   App_WindVane_Init();
+  printf("[DIAG] Zero pulsos e direcao constante nao comprovam conexao fisica.\r\n");
 
   (void)Storage_Init();
   if (Storage_IsReady())
@@ -336,8 +435,8 @@ int main(void)
       printf("[SD] AVISO - Cartao/SPI indisponivel. Sensores e LoRa continuam ativos.\r\n");
 
   last_dht_status = DHT22_ERR_TIMEOUT;
-  last_bmp_status = BMP280_OK;
-  last_bh_status  = BH1750_OK;
+  last_bmp_status = bmp_st;
+  last_bh_status  = bh_st;
   last_dht_ms     = HAL_GetTick();
 
   printf("Sistema Inicializado. A iniciar leituras...\r\n");
@@ -345,157 +444,38 @@ int main(void)
 
   /* Infinite loop */
   /* USER CODE BEGIN WHILE */
-      while (1)
-            {
-                uint32_t now = HAL_GetTick();
-
-                FRESULT fr_sd = FR_OK;
-
-                /* Recuperação do SD ocorre apenas entre janelas de aquisição. */
-                if (!acquisition_pending)
-                {
-                    Storage_Service(now);
-                }
-
-                /* ── FASE A: inicia uma nova aquisição a cada 5 s ───────────── */
-                                if (!acquisition_pending && ((now - last_dht_ms) >= 5000u))
-                                {
-                                    acquisition_pending = true;
-                                    acquisition_start_ms = now;
-
-                                    /* 1. Inicia amostragem do anemômetro */
-                                    anemometer_start_sampling(&htim6);
-
-                                    /* 2. Lê sensores não bloqueantes */
-                                    last_dht_status = DHT22_Read(&dht22);
-                                    last_bmp_status = BMP280_Read(&bmp280);
-                                    last_bh_status  = BH1750_Read(&bh1750);
-
-                                    /* 3. Lê a biruta */
-                                    if (Wind_Vane_Read(&wind_direction_deg) == HAL_OK)
-                                    {
-                                        Wind_Vane_GetLabel(wind_direction_deg, wind_direction_label, sizeof(wind_direction_label));
-                                    }
-                                    else
-                                    {
-                                        strcpy(wind_direction_label, "ERR");
-                                        wind_direction_deg = 999;
-                                    }
-                                }
-
-                                /* ── FASE B: finaliza aquisição quando anemômetro terminar ─── */
-                                if (acquisition_pending && anemometer_is_ready())
-                                {
-                                    /* Finaliza cálculo do vento */
-                                    anemometer_calculate(ANEM_SAMPLE_WINDOW_MS, &last_dados_vento);
-
-                                    /* Lê pluviômetro no fechamento da janela */
-                                    pluviometer_read(&last_dados_chuva);
-
-                                    /* Grava no SD */
-                                    if (Storage_IsReady())
-                                    {
-                                        SensorSample_t sample = {
-                                            .timestamp_ms = acquisition_start_ms,
-                                            .temperature  = (last_dht_status == DHT22_OK)   ? dht22.temperature       : -999.0f,
-                                            .humidity     = (last_dht_status == DHT22_OK)   ? dht22.humidity          : -999.0f,
-                                            .pressure     = (last_bmp_status == BMP280_OK)  ? bmp280.pressure         : -999.0f,
-                                            .irradiance   = (last_bh_status  == BH1750_OK)  ? bh1750.irradiance       : -999.0f,
-                                            .wind_speed   = last_dados_vento.valid          ? last_dados_vento.speed_ms : -999.0f,
-                                            .wind_dir_deg = (wind_direction_deg != 999)     ? (float)wind_direction_deg : -999.0f,
-                                            .rain_mm      = last_dados_chuva.rain_mm
-                                        };
-
-                                        fr_sd = Storage_AppendSample(&sample);
-
-                                    }
-
-                                    if (lora_ok)
-                                    {
-                                        LoRaPayload_t pkt;
-                                        pkt.node_id            = 0x01u;
-                                        pkt.seq                = lora_seq++;
-                                        pkt.temperature_x10    = (last_dht_status == DHT22_OK) ? (int16_t)(dht22.temperature * 10.0f) : (int16_t)-9990;
-                                        pkt.humidity_x10       = (last_dht_status == DHT22_OK) ? (uint16_t)(dht22.humidity * 10.0f) : 0u;
-                                        pkt.pressure_hpa_x1    = (last_bmp_status == BMP280_OK) ? (uint16_t)(bmp280.pressure) : 0u;
-                                        pkt.illuminance_lux_x1 = (last_bh_status == BH1750_OK) ? (uint16_t)(bh1750.illuminance) : 0u;
-                                        pkt.wind_speed_x100    = (last_dados_vento.valid) ? (int16_t)(last_dados_vento.speed_ms * 100.0f) : (int16_t)-9990;
-                                        pkt.wind_dir_deg       = (wind_direction_deg != 999u) ? wind_direction_deg : 999u;
-                                        pkt.rain_mm_x100       = (uint16_t)(last_dados_chuva.rain_mm * 100.0f);
-                                        pkt.crc8               = 0x00u;
-
-                                        pkt.crc8 = App_CRC8((const uint8_t *)&pkt, (uint16_t)(sizeof(pkt) - 1u));
-
-                                        bool tx_ok = SX1276_Transmit((const uint8_t *)&pkt, (uint8_t)sizeof(pkt));
-
-                                        printf("[LORA] TX %s | seq=%u | len=%u\r\n",
-                                               tx_ok ? "OK" : "FALHA",
-                                               pkt.seq,
-                                               (unsigned)sizeof(pkt));
-                                    }
-
-                                    /* Impressão unificada */
-                                    printf("\r\n===== DADOS DA ESTACAO METEOROLOGICA =====\r\n");
-
-                                    if (last_dht_status == DHT22_OK)
-                                        printf("Temp: %.1f C | Umid: %.1f %%\r\n", dht22.temperature, dht22.humidity);
-                                    else
-                                        printf("DHT22: FALHA\r\n");
-
-                                    if (last_bmp_status == BMP280_OK)
-                                        printf("Pres: %.1f hPa | Alt: %.1f m\r\n", bmp280.pressure, bmp280.altitude);
-                                    else
-                                        printf("BMP280: FALHA\r\n");
-
-                                    if (last_bh_status == BH1750_OK)
-                                        printf("Ilum: %.1f lux | Irrad: %.2f W/m2\r\n", bh1750.illuminance, bh1750.irradiance);
-                                    else
-                                        printf("BH1750: FALHA\r\n");
-
-                                    if (last_dados_vento.valid)
-                                        printf("Vento Vel: %.2f m/s (%.2f km/h)\r\n", last_dados_vento.speed_ms, last_dados_vento.speed_kmh);
-                                    else
-                                        printf("Anemometro: FALHA\r\n");
-
-                                    printf("Direcao Vento: %s (%d graus)\r\n", wind_direction_label, wind_direction_deg);
-                                    printf("Chuva acumulada: %.2f mm\r\n", last_dados_chuva.rain_mm);
-
-                                    if (Storage_IsReady())
-                                    {
-                                        if (fr_sd == FR_OK)
-                                            printf("SD: OK\r\n");
-                                        else
-                                            printf("SD: ERRO (%d)\r\n", (int)fr_sd);
-                                    }
-                                    else
-                                    {
-                                        printf("SD: INDISPONIVEL (estado=%u, erro=%d)\r\n",
-                                               (unsigned)Storage_GetState(),
-                                               (int)Storage_GetLastError());
-                                    }
-
-                                    printf("==========================================\r\n");
-
-                                    last_dht_ms = now;
-                                    acquisition_pending = false;
-                                }
-
-                                /* Timeout de segurança caso o anemômetro nunca sinalize pronto */
-                                if (acquisition_pending && ((now - acquisition_start_ms) > 2000u))
-                                {
-                                    memset(&last_dados_vento, 0, sizeof(last_dados_vento));
-                                    pluviometer_read(&last_dados_chuva);
-
-                                    printf("[ANEM] Timeout na janela de amostragem\r\n");
-
-                                    last_dht_ms = now;
-                                    acquisition_pending = false;
-                                }
+  while (1)
+  {
+      uint32_t now = HAL_GetTick();
+      if (!acquisition_pending) Storage_Service(now);
+      if (!acquisition_pending && (uint32_t)(now - last_dht_ms) >= 5000u) {
+          acquisition_pending = true;
+          acquisition_start_ms = now;
+          /* Driver retains start errors for service(); no cycle is skipped. */
+          (void)anemometer_start_sampling(&htim6);
+          last_dht_status = DHT22_Read(&dht22);
+          /* Init/configuration failures require a validated initialization.
+           * Transient communication errors are retried on the next cycle. */
+          if (bmp280.initialized) last_bmp_status = BMP280_Read(&bmp280);
+          if (bh1750.initialized) last_bh_status = BH1750_Read(&bh1750);
+          vane_status = Wind_Vane_Read(&wind_direction_deg);
+      }
+      if (acquisition_pending) {
+          now = HAL_GetTick(); /* Sensor reads above include bounded waits. */
+          HAL_StatusTypeDef wind_status = anemometer_service(&htim6, now);
+          if (wind_status != HAL_BUSY) {
+              anemometer_calculate(ANEM_SAMPLE_WINDOW_MS, &last_dados_vento);
+              pluviometer_read(&last_dados_chuva);
+              App_FinishAcquisition(now, wind_status);
+              acquisition_pending = false;
+              last_dht_ms = HAL_GetTick();
+          }
+      }
 
     /* USER CODE END WHILE */
 
     /* USER CODE BEGIN 3 */
-            }
+  }
   /* USER CODE END 3 */
 }
 
@@ -600,6 +580,7 @@ static void MX_ADC1_Init(void)
     Error_Handler();
   }
   /* USER CODE BEGIN ADC1_Init 2 */
+  adc_initialized = true;
 
   /* USER CODE END ADC1_Init 2 */
 

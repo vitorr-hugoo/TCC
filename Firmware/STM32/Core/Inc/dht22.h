@@ -40,7 +40,7 @@ extern "C" {
 #define DHT22_START_LOW_MS       18u
 
 /** Tempo limite de espera por qualquer transição de borda (ticks de timer) */
-#define DHT22_TIMEOUT_TICKS      1000u
+#define DHT22_EDGE_TIMEOUT_US    120u
 
 /**
  * Limiar de duração do pulso alto para distinguir bit '0' de bit '1'.
@@ -58,6 +58,8 @@ typedef enum {
     DHT22_OK            = 0x00, /**< Leitura bem-sucedida                  */
     DHT22_ERR_TIMEOUT   = 0x01, /**< Timeout aguardando resposta do sensor */
     DHT22_ERR_CHECKSUM  = 0x02, /**< Dados recebidos com erro de paridade  */
+    DHT22_ERR_RANGE = 3,
+    DHT22_ERR_TIMER = 4,
 } DHT22_Status_t;
 
 /* ─── Handle do sensor ───────────────────────────────────────────────────── */

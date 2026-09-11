@@ -24,7 +24,7 @@ extern SPI_HandleTypeDef hspi2;
 /* ── Helpers de chip-select (privados, sem conflito com sd_spi) ─────────── */
 
 /**
- * @brief Ativa o NSS do LoRa (PB0 → LOW).
+ * @brief Ativa o NSS do LoRa (PB12 → LOW).
  *        Usa as macros de main.h — mesma fonte de verdade do CubeMX.
  */
 static inline void _LoRa_Select(void)
@@ -33,7 +33,7 @@ static inline void _LoRa_Select(void)
 }
 
 /**
- * @brief Desativa o NSS do LoRa (PB0 → HIGH).
+ * @brief Desativa o NSS do LoRa (PB12 → HIGH).
  *        Aguarda o flag BSY do SPI2 antes de soltar o NSS para garantir
  *        que o último clock já saiu no barramento.
  *
@@ -122,7 +122,7 @@ bool SX1276_CheckVersion(uint8_t *version)
      *
      * Se retornar 0xFF, verifique:
      *  - MX_SPI2_Init() foi chamado antes de SX1276_CheckVersion()?
-     *  - PB0 (LORA_NSS) foi configurado como GPIO Output PP pelo CubeMX?
+     *  - PB12 (LORA_NSS) foi configurado como GPIO Output PP pelo CubeMX?
      *  - O módulo LoRa está alimentado com 3.3 V?
      *  - PB13/14/15 estão configurados como AF SPI2 (AF5) no CubeMX?
      */

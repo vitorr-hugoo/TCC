@@ -102,6 +102,9 @@ typedef enum {
     BMP280_ERR_NOT_FOUND   = 0x01, /**< Chip ID incorreto / sem sensor */
     BMP280_ERR_I2C         = 0x02, /**< Falha na comunicação I²C       */
     BMP280_ERR_BUSY        = 0x03, /**< Sensor ainda medindo           */
+    BMP280_ERR_CONFIG = 4,
+    BMP280_ERR_CALIBRATION = 5,
+    BMP280_ERR_RANGE = 6,
 } BMP280_Status_t;
 
 /* ─── Struct de configuração ────────────────────────────────────────────── */
@@ -153,6 +156,8 @@ typedef struct {
     float pressure;    /**< Pressão atmosférica em hPa                     */
     float altitude;    /**< Altitude relativa em metros (fórmula barométrica)*/
 
+    uint8_t initialized, expected_ctrl, expected_config;
+    uint32_t measurement_timeout_ms;
 } BMP280_Handle_t;
 
 /* ─── Protótipos ────────────────────────────────────────────────────────── */

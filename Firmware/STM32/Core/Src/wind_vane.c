@@ -227,6 +227,7 @@ static void Wind_Vane_DisableAdcClock(ADC_HandleTypeDef *hadc)
  */
 HAL_StatusTypeDef Wind_Vane_Init(const wind_vane_config_t *cfg)
 {
+    s_initialized = 0u;
     ADC_ChannelConfTypeDef sConfig;
     HAL_StatusTypeDef      status;
 
@@ -348,7 +349,8 @@ HAL_StatusTypeDef Wind_Vane_Read(uint16_t *degrees_out)
     Wind_Vane_DisableAdcClock(s_cfg.hadc);
 
     /* --- 4. Verifica se há amostras válidas --- */
-    if (valid_samples == 0u) {
+    /* Require a majority of mapped samples; 5 of 8 in this station. */
+    if (valid_samples < (s_cfg.num_samples / 2u + 1u)) {
         return HAL_ERROR;
     }
 

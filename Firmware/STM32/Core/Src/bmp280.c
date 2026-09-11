@@ -5,7 +5,7 @@
  *
  * Referência: BMP280 Datasheet — BST-BMP280-DS001-19 (Rev. 1.19)
  *   Seção 4.2.3 — Compensation formulas in double precision floating point
- *   (usamos a versão inteira de 64 bits por ser mais portável em bare-metal)
+ *   (calculo em double, com validacao antes de atualizar a amostra)
  ******************************************************************************
  */
 
@@ -13,7 +13,7 @@
 #include <math.h>
 
 /* ─── Mapa de registradores internos ─────────────────────────────────────── */
-#define REG_CHIP_ID      0xD0u  /**< Chip ID (deve retornar 0x60)           */
+#define REG_CHIP_ID      0xD0u  /**< Chip ID (deve retornar 0x58)           */
 #define REG_RESET        0xE0u  /**< Soft-reset: escrever 0xB6              */
 #define REG_STATUS       0xF3u  /**< bit3=measuring, bit0=im_update         */
 #define REG_CTRL_MEAS    0xF4u  /**< osrs_t[7:5] | osrs_p[4:2] | mode[1:0] */
@@ -30,6 +30,7 @@ static BMP280_Status_t _write_reg(BMP280_Handle_t *hdev,
                                   uint8_t          reg,
                                   uint8_t          value)
 {
+    if (!hdev || !hdev->hi2c) return BMP280_ERR_CONFIG;
     uint8_t buf[2] = { reg, value };
     HAL_StatusTypeDef ret = HAL_I2C_Master_Transmit(
         hdev->hi2c, hdev->dev_addr, buf, 2, BMP280_I2C_TIMEOUT);
@@ -41,6 +42,7 @@ static BMP280_Status_t _read_regs(BMP280_Handle_t *hdev,
                                   uint8_t         *dst,
                                   uint16_t         len)
 {
+    if (!hdev || !hdev->hi2c) return BMP280_ERR_CONFIG;
     /* Aponta para o registrador inicial */
     HAL_StatusTypeDef ret = HAL_I2C_Master_Transmit(
         hdev->hi2c, hdev->dev_addr, &reg, 1, BMP280_I2C_TIMEOUT);
@@ -84,10 +86,12 @@ static BMP280_Status_t _read_calibration(BMP280_Handle_t *hdev)
 #undef CALIB_U16
 #undef CALIB_S16
 
+    if (hdev->dig_P1 == 0 || hdev->dig_P1 == UINT16_MAX ||
+        hdev->dig_T1 == 0 || hdev->dig_T1 == UINT16_MAX) return BMP280_ERR_CALIBRATION;
     return BMP280_OK;
 }
 
-/* ─── Fórmulas de compensação (inteira de 64 bits — datasheet Bosch §4.2.3) */
+/* ─── Formulas de compensacao (double — datasheet Bosch §4.2.3) */
 
 /**
  * @brief  Compensa o valor ADC bruto de temperatura.
@@ -100,25 +104,13 @@ static BMP280_Status_t _read_calibration(BMP280_Handle_t *hdev)
  */
 static float _compensate_temperature(BMP280_Handle_t *hdev, int32_t adc_T)
 {
-    int32_t var1, var2;
-
-    /*
-     * Fórmula do datasheet (versão inteira de 32 bits):
-     *
-     *   var1 = ((adc_T >> 3) - (dig_T1 << 1)) * dig_T2 >> 11
-     *   var2 = (((adc_T >> 4) - dig_T1)^2 >> 12) * dig_T3 >> 14
-     *   t_fine = var1 + var2
-     *   T = (t_fine * 5 + 128) >> 8          [resultado em centésimos de °C]
-     */
-    var1 = ((adc_T >> 3) - ((int32_t)hdev->dig_T1 << 1));
-    var1 = (var1 * (int32_t)hdev->dig_T2) >> 11;
-
-    var2 = (adc_T >> 4) - (int32_t)hdev->dig_T1;
-    var2 = (((var2 * var2) >> 12) * (int32_t)hdev->dig_T3) >> 14;
-
-    hdev->t_fine = var1 + var2;
-
-    return (float)((hdev->t_fine * 5 + 128) >> 8) / 100.0f;
+    /* Bosch double-precision formula avoids signed-shift/overflow UB if
+     * a coefficient is corrupted. Candidate outputs are validated below. */
+    double v1 = ((double)adc_T / 16384.0 - hdev->dig_T1 / 1024.0) * hdev->dig_T2;
+    double d = (double)adc_T / 131072.0 - hdev->dig_T1 / 8192.0;
+    double v2 = d * d * hdev->dig_T3;
+    hdev->t_fine = (int32_t)(v1 + v2);
+    return (float)((v1 + v2) / 5120.0);
 }
 
 /**
@@ -127,35 +119,21 @@ static float _compensate_temperature(BMP280_Handle_t *hdev, int32_t adc_T)
  *
  * @param  hdev      Handle do sensor.
  * @param  adc_P     Valor ADC de 20 bits (raw, já deslocado).
- * @return Pressão em hPa (float).  Retorna 0.0f em caso de overflow.
+ * @return Pressão em hPa (float).  Retorna NAN se o divisor for zero.
  */
 static float _compensate_pressure(BMP280_Handle_t *hdev, int32_t adc_P)
 {
-    /*
-     * Fórmula do datasheet (versão inteira de 64 bits):
-     * Necessária para não perder precisão nas multiplicações intermediárias.
-     */
-    int64_t var1, var2, p;
-
-    var1 = (int64_t)hdev->t_fine - 128000LL;
-    var2 = var1 * var1 * (int64_t)hdev->dig_P6;
-    var2 = var2 + ((var1 * (int64_t)hdev->dig_P5) << 17);
-    var2 = var2 + (((int64_t)hdev->dig_P4) << 35);
-    var1 = ((var1 * var1 * (int64_t)hdev->dig_P3) >> 8)
-         + ((var1 * (int64_t)hdev->dig_P2) << 12);
-    var1 = (((int64_t)1 << 47) + var1) * (int64_t)hdev->dig_P1 >> 33;
-
-    if (var1 == 0) return 0.0f; /* Evita divisão por zero */
-
-    p    = 1048576LL - (int64_t)adc_P;
-    p    = (((p << 31) - var2) * 3125LL) / var1;
-    var1 = ((int64_t)hdev->dig_P9 * (p >> 13) * (p >> 13)) >> 25;
-    var2 = ((int64_t)hdev->dig_P8 * p) >> 19;
-    p    = ((p + var1 + var2) >> 8) + ((int64_t)hdev->dig_P7 << 4);
-
-    /* p está em Pa com 8 bits fracionários → divide por 256 para Pa inteiro
-     * e depois por 100 para hPa */
-    return (float)(uint32_t)(p >> 8) / 100.0f;
+    double v1 = hdev->t_fine / 2.0 - 64000.0;
+    double v2 = v1 * v1 * hdev->dig_P6 / 32768.0;
+    v2 += v1 * hdev->dig_P5 * 2.0;
+    v2 = v2 / 4.0 + hdev->dig_P4 * 65536.0;
+    v1 = (hdev->dig_P3 * v1 * v1 / 524288.0 + hdev->dig_P2 * v1) / 524288.0;
+    v1 = (1.0 + v1 / 32768.0) * hdev->dig_P1;
+    if (v1 == 0) return NAN;
+    double p = (1048576.0 - adc_P - v2 / 4096.0) * 6250.0 / v1;
+    v1 = hdev->dig_P9 * p * p / 2147483648.0;
+    v2 = p * hdev->dig_P8 / 32768.0;
+    return (float)((p + (v1 + v2 + hdev->dig_P7) / 16.0) / 100.0);
 }
 
 /**
@@ -179,6 +157,34 @@ static float _calc_altitude(float pressure_hpa, float sea_level_hpa)
     return 44330.0f * (1.0f - powf(pressure_hpa / sea_level_hpa, 0.190295f));
 }
 
+/* Polling is bounded even if HAL_GetTick stops; I2C has its own timeout. */
+static BMP280_Status_t _wait_ready(BMP280_Handle_t *hdev)
+{
+    for (uint32_t waited = 0; waited <= hdev->measurement_timeout_ms; ++waited) {
+        uint8_t status;
+        BMP280_Status_t st = _read_regs(hdev, REG_STATUS, &status, 1);
+        if (st != BMP280_OK) return st;
+        if (!(status & (STATUS_MEASURING | 1u))) return BMP280_OK;
+        if (waited < hdev->measurement_timeout_ms) HAL_Delay(1);
+    }
+    return BMP280_ERR_BUSY;
+}
+static BMP280_Status_t _check_config(BMP280_Handle_t *hdev)
+{
+    BMP280_Status_t st = BMP280_IsConnected(hdev);
+    if (st != BMP280_OK) return st;
+    uint8_t regs[2];
+    st = _read_regs(hdev, REG_CTRL_MEAS, regs, 2);
+    if (st != BMP280_OK) return st;
+    uint8_t mask = (hdev->expected_ctrl & 3u) == BMP280_MODE_NORMAL ? 0xff : 0xfc;
+    if ((regs[0] & mask) != (hdev->expected_ctrl & mask) ||
+        (regs[1] & 0xfdu) != hdev->expected_config) {
+        hdev->initialized = 0;
+        return BMP280_ERR_CONFIG;
+    }
+    return BMP280_OK;
+}
+
 /* ─── API pública ────────────────────────────────────────────────────────── */
 
 BMP280_Status_t BMP280_Init(BMP280_Handle_t       *hdev,
@@ -186,6 +192,16 @@ BMP280_Status_t BMP280_Init(BMP280_Handle_t       *hdev,
                             uint8_t                addr_7bit,
                             const BMP280_Config_t *cfg)
 {
+    if (!hdev) return BMP280_ERR_CONFIG;
+    hdev->initialized = 0;
+    if (!hi2c || !cfg || cfg->os_temperature < BMP280_OS_1X || cfg->os_temperature > BMP280_OS_16X ||
+        cfg->os_pressure < BMP280_OS_1X || cfg->os_pressure > BMP280_OS_16X ||
+        (cfg->mode != BMP280_MODE_NORMAL && cfg->mode != BMP280_MODE_FORCED) ||
+        (unsigned)cfg->filter > BMP280_FILTER_16 || (unsigned)cfg->standby > BMP280_STANDBY_4000MS ||
+        !isfinite(cfg->sea_level_hpa) || cfg->sea_level_hpa <= 0) return BMP280_ERR_CONFIG;
+    /* Maximum conversion time from oversampling, rounded up + 5 ms margin. */
+    hdev->measurement_timeout_ms = (1825u + 2300u * ((1u << (cfg->os_temperature-1u)) +
+        (1u << (cfg->os_pressure-1u))) + 999u) / 1000u + 5u;
     /* Armazena recursos de hardware */
     hdev->hi2c         = hi2c;
     hdev->dev_addr     = (uint16_t)(addr_7bit << 1); /* HAL usa endereço 8 bits */
@@ -207,6 +223,9 @@ BMP280_Status_t BMP280_Init(BMP280_Handle_t       *hdev,
     st = _write_reg(hdev, REG_RESET, RESET_VALUE);
     if (st != BMP280_OK) return st;
     HAL_Delay(10); /* Aguarda reinicialização do sensor (~2 ms conforme datasheet) */
+
+    st = _wait_ready(hdev);
+    if (st != BMP280_OK) return st;
 
     /* ── 3. Lê coeficientes de calibração da NVM ─────────────────────── */
     st = _read_calibration(hdev);
@@ -236,23 +255,29 @@ BMP280_Status_t BMP280_Init(BMP280_Handle_t       *hdev,
     st = _write_reg(hdev, REG_CTRL_MEAS, reg_ctrl);
     if (st != BMP280_OK) return st;
 
-    /* Aguarda a primeira medição completar antes de retornar.
-         * t_meas(max) com osrs_T=x2 + osrs_P=x16 ≈ 191 ms (datasheet §4.1).
-         * 250 ms garante margem de segurança independente da config. */
-        HAL_Delay(250);
+    hdev->expected_ctrl = reg_ctrl;
+    hdev->expected_config = reg_config;
+    st = _wait_ready(hdev);
+    if (st != BMP280_OK) return st;
+    st = _check_config(hdev);
+    if (st != BMP280_OK) return st;
+    hdev->initialized = 1;
 
     return BMP280_OK;
 }
 
 BMP280_Status_t BMP280_Read(BMP280_Handle_t *hdev)
 {
-    BMP280_Status_t st;
-
-    /* ── Verifica se o sensor ainda está medindo (modo Forced) ───────── */
-    uint8_t status = 0;
-    st = _read_regs(hdev, REG_STATUS, &status, 1);
+    if (!hdev || !hdev->initialized) return BMP280_ERR_CONFIG;
+    BMP280_Status_t st = _check_config(hdev);
     if (st != BMP280_OK) return st;
-    if (status & STATUS_MEASURING) return BMP280_ERR_BUSY;
+    if ((hdev->expected_ctrl & 3u) == BMP280_MODE_FORCED) {
+        st = _write_reg(hdev, REG_CTRL_MEAS, hdev->expected_ctrl);
+        if (st != BMP280_OK) return st;
+        HAL_Delay(hdev->measurement_timeout_ms);
+    }
+    st = _wait_ready(hdev);
+    if (st != BMP280_OK) return st;
 
     /* ── Lê os 6 bytes de dados brutos (pressão + temperatura) ──────── */
     /*
@@ -275,16 +300,25 @@ BMP280_Status_t BMP280_Read(BMP280_Handle_t *hdev)
                                ((uint32_t)raw[4] <<  4) |
                                ((uint32_t)raw[5] >>  4));
 
-    /* ── Aplica compensação (temperatura primeiro — atualiza t_fine) ── */
-    hdev->temperature = _compensate_temperature(hdev, adc_T);
-    hdev->pressure    = _compensate_pressure(hdev, adc_P);
-    hdev->altitude    = _calc_altitude(hdev->pressure, hdev->sea_level_hpa);
+    if (adc_P == 0x80000 || adc_T == 0x80000) return BMP280_ERR_RANGE;
+    BMP280_Handle_t candidate = *hdev;
+    candidate.temperature = _compensate_temperature(&candidate, adc_T);
+    candidate.pressure = _compensate_pressure(&candidate, adc_P);
+    candidate.altitude = _calc_altitude(candidate.pressure, candidate.sea_level_hpa);
+    if (!isfinite(candidate.temperature) || candidate.temperature < -40 || candidate.temperature > 85 ||
+        !isfinite(candidate.pressure) || candidate.pressure < 300 || candidate.pressure > 1100 ||
+        !isfinite(candidate.altitude)) return BMP280_ERR_RANGE;
+    st = _check_config(hdev);
+    if (st != BMP280_OK) return st;
+    *hdev = candidate;
 
     return BMP280_OK;
 }
 
 BMP280_Status_t BMP280_Reset(BMP280_Handle_t *hdev)
 {
+    if (!hdev) return BMP280_ERR_CONFIG;
+    hdev->initialized = 0;
     return _write_reg(hdev, REG_RESET, RESET_VALUE);
 }
 
@@ -292,7 +326,8 @@ BMP280_Status_t BMP280_IsConnected(BMP280_Handle_t *hdev)
 {
     uint8_t chip_id = 0;
     BMP280_Status_t st = _read_regs(hdev, REG_CHIP_ID, &chip_id, 1);
-    if (st != BMP280_OK || chip_id != BMP280_CHIP_ID) return BMP280_ERR_NOT_FOUND;
+    if (st != BMP280_OK) return st;
+    if (chip_id != BMP280_CHIP_ID) return BMP280_ERR_NOT_FOUND;
     return BMP280_OK;
 }
 
@@ -302,7 +337,10 @@ const char *BMP280_StatusStr(BMP280_Status_t status)
         case BMP280_OK:            return "OK";
         case BMP280_ERR_NOT_FOUND: return "SENSOR NAO ENCONTRADO - Verifique endereco e fiacao I2C";
         case BMP280_ERR_I2C:       return "FALHA I2C - Verifique SDA/SCL e resistores de pull-up";
-        case BMP280_ERR_BUSY:      return "SENSOR OCUPADO - Aguardando fim da medicao";
+        case BMP280_ERR_BUSY:      return "TIMEOUT - Conversao nao concluiu";
+        case BMP280_ERR_CONFIG: return "NAO INICIALIZADO / CONFIGURACAO PERDIDA";
+        case BMP280_ERR_CALIBRATION: return "CALIBRACAO INVALIDA";
+        case BMP280_ERR_RANGE: return "DADO / COMPENSACAO INVALIDA";
         default:                   return "ERRO DESCONHECIDO";
     }
 }

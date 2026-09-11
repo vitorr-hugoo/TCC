@@ -52,7 +52,7 @@ else
         printf("[LORA] DICA: 0xFF = MISO em pull-up. Verifique:\r\n");
         printf("  1. Alimentacao 3.3V no modulo LoRa?\r\n");
         printf("  2. PB13/14/15 configurados como AF5 (SPI2) no CubeMX?\r\n");
-        printf("  3. PB0 (LORA_NSS) configurado como Output PP?\r\n");
+        printf("  3. PB12 (LORA_NSS) configurado como Output PP?\r\n");
     }
     else if (lora_version == 0x00u)
     {

@@ -15,6 +15,7 @@
  */
 
 #include "bh1750.h"
+#include <math.h>
 
 /* ─── Tempos de medição por modo (ms) — datasheet tabela 1 ──────────────── */
 /*
@@ -58,6 +59,12 @@ BH1750_Status_t BH1750_Init(BH1750_Handle_t   *hdev,
                              uint8_t            addr_7bit,
                              BH1750_Mode_t      mode)
 {
+    if (!hdev) return BH1750_ERR_CONFIG;
+    hdev->initialized = 0;
+    if (!hi2c || (addr_7bit != BH1750_ADDR_LOW && addr_7bit != BH1750_ADDR_HIGH)) return BH1750_ERR_CONFIG;
+    if (mode != BH1750_MODE_CONT_H_RES && mode != BH1750_MODE_CONT_H_RES2 &&
+        mode != BH1750_MODE_CONT_L_RES && mode != BH1750_MODE_ONCE_H_RES &&
+        mode != BH1750_MODE_ONCE_H_RES2 && mode != BH1750_MODE_ONCE_L_RES) return BH1750_ERR_CONFIG;
     hdev->hi2c        = hi2c;
     hdev->dev_addr    = (uint16_t)(addr_7bit << 1);
     hdev->mode        = mode;
@@ -84,11 +91,15 @@ BH1750_Status_t BH1750_Init(BH1750_Handle_t   *hdev,
      * aguardar _meas_time_ms() antes da primeira chamada a BH1750_Read.
      * Em modo One Time, BH1750_Read controla o timing internamente.
      */
+    hdev->initialized = 1;
+    hdev->measurement_start_ms = HAL_GetTick();
     return BH1750_OK;
 }
 
 BH1750_Status_t BH1750_Read(BH1750_Handle_t *hdev)
 {
+    if (!hdev || !hdev->initialized) return BH1750_ERR_CONFIG;
+    if (!isfinite(hdev->k_factor) || hdev->k_factor <= 0) return BH1750_ERR_RANGE;
     BH1750_Status_t st;
 
     /*
@@ -113,6 +124,8 @@ BH1750_Status_t BH1750_Read(BH1750_Handle_t *hdev)
 
         /* Aguarda a medição concluir */
         HAL_Delay(_meas_time_ms(hdev->mode));
+    } else if ((uint32_t)(HAL_GetTick() - hdev->measurement_start_ms) < _meas_time_ms(hdev->mode)) {
+        return BH1750_ERR_NOT_RDY;
     }
 
     /* Lê os 2 bytes de resultado (big-endian: MSB primeiro) */
@@ -140,10 +153,11 @@ BH1750_Status_t BH1750_Read(BH1750_Handle_t *hdev)
      * aberto, H-Resolution simples (divisor 1.2) é o mais indicado.
      */
     uint16_t raw_word = (uint16_t)((raw[0] << 8) | raw[1]);
+    if (raw_word == UINT16_MAX) return BH1750_ERR_SATURATED;
     float divisor = (hdev->mode == BH1750_MODE_CONT_H_RES2 ||
                      hdev->mode == BH1750_MODE_ONCE_H_RES2) ? 2.4f : 1.2f;
 
-    hdev->illuminance = (float)raw_word / divisor;
+    float illuminance = (float)raw_word / divisor;
 
     /*
      * Estimativa de irradiância solar global (W/m²):
@@ -159,7 +173,10 @@ BH1750_Status_t BH1750_Read(BH1750_Handle_t *hdev)
      * aproximação — documente essa limitação no TCC conforme a arquitetura
      * do projeto prevê.
      */
-    hdev->irradiance = hdev->illuminance * hdev->k_factor;
+    float irradiance = illuminance * hdev->k_factor;
+    if (!isfinite(irradiance)) return BH1750_ERR_RANGE;
+    hdev->illuminance = illuminance;
+    hdev->irradiance = irradiance;
 
     return BH1750_OK;
 }
@@ -171,6 +188,8 @@ void BH1750_SetCalibration(BH1750_Handle_t *hdev, float k_factor)
 
 BH1750_Status_t BH1750_PowerDown(BH1750_Handle_t *hdev)
 {
+    if (!hdev || !hdev->hi2c) return BH1750_ERR_CONFIG;
+    hdev->initialized = 0;
     return _send_cmd(hdev, BH1750_CMD_POWER_DOWN);
 }
 
@@ -180,6 +199,9 @@ const char *BH1750_StatusStr(BH1750_Status_t status)
         case BH1750_OK:          return "OK";
         case BH1750_ERR_I2C:     return "FALHA I2C - Verifique SDA/SCL e endereco (ADDR pin)";
         case BH1750_ERR_NOT_RDY: return "DADO NAO DISPONIVEL - Aguarde o tempo de medicao";
+        case BH1750_ERR_SATURATED: return "SATURADO - Limite da medicao";
+        case BH1750_ERR_CONFIG: return "NAO INICIALIZADO / CONFIGURACAO";
+        case BH1750_ERR_RANGE: return "FAIXA / CALIBRACAO INVALIDA";
         default:                 return "ERRO DESCONHECIDO";
     }
 }

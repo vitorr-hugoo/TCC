@@ -1,11 +1,11 @@
 /**
  ******************************************************************************
  * @file    lora_sx1276.h
- * @brief   Driver SX1276 via SPI2 — Passo 1: Init do modem LoRa
+ * @brief   Driver SX1276 via SPI2 — diagnostico e TX local verificada, sem ACK
  *
  * Pinagem (main.h / CubeMX):
  *   SPI2  → PB13 SCK | PB14 MISO | PB15 MOSI
- *   PB0   → LORA_NSS   (Output PP, NSS por software)
+ *   PB12   → LORA_NSS   (Output PP, NSS por software)
  *   PC4   → LORA_RST   (Output PP)
  *   PA11  → LORA_DIO0  (EXTI11, rising — TxDone / RxDone)
  *   PA12  → LORA_DIO1  (EXTI12, rising — RxTimeout)
@@ -115,7 +115,7 @@ extern "C" {
  * ═══════════════════════════════════════════════════════════════════════════ */
 typedef struct {
     uint32_t frequency_hz;   /* Frequência em Hz. Ex: 915000000 (915 MHz) */
-    uint8_t  tx_power_dbm;   /* Potência TX em dBm: 2 a 20 (PA_BOOST)     */
+    uint8_t  tx_power_dbm;   /* Potência TX em dBm: 2 a 17 (PA_BOOST)     */
     uint8_t  spreading_factor; /* SF7 a SF12                               */
     uint8_t  bandwidth;      /* 0=7.8k 1=10.4k 2=15.6k 3=20.8k 4=31.25k
                                  5=41.7k 6=62.5k 7=125k 8=250k 9=500k     */
@@ -144,18 +144,24 @@ typedef struct {
 /** Pulsa RESET conforme datasheet §7.2.2 */
 bool SX1276_Reset(void);
 
-/** Lê 1 byte de um registrador via SPI2 */
-uint8_t SX1276_ReadRegister(uint8_t addr);
+/** false em erro SPI; so altera *value em sucesso. */
+bool SX1276_ReadRegister(uint8_t addr, uint8_t *value);
 
 /** Escreve 1 byte em um registrador via SPI2 */
-void SX1276_WriteRegister(uint8_t addr, uint8_t value);
+bool SX1276_WriteRegister(uint8_t addr, uint8_t value);
 
-/** Reset + lê REG_VERSION. Retorna true se 0x12. */
+/** Le REG_VERSION sem reset. Retorna true se SPI OK e valor 0x12. */
 bool SX1276_CheckVersion(uint8_t *version);
+
+/** Exige init validada e registradores coerentes, sem reset. */
+bool SX1276_CheckHealth(void);
+
+/** Motivo da ultima operacao: OK, ARG, SPI, RADIO, INIT, CONFIG, IRQ, TIMEOUT. */
+const char *SX1276_LastError(void);
 
 /**
  * @brief  Configura todos os registradores do modem LoRa.
- *         Deve ser chamado UMA VEZ após SX1276_CheckVersion() retornar true.
+ *         No boot: Reset, CheckVersion e Init. Nao reinicializa automaticamente.
  *
  * @param  cfg  Ponteiro para a struct de configuração.
  *              Use SX1276_DEFAULT_CONFIG para bancada.
@@ -165,6 +171,7 @@ bool SX1276_CheckVersion(uint8_t *version);
  */
 bool SX1276_Init(const SX1276_Config_t *cfg);
 
+/** true = conclusao LOCAL verificada, nunca confirmacao de entrega. */
 bool SX1276_Transmit(const uint8_t *data, uint8_t len);
 
 #ifdef __cplusplus

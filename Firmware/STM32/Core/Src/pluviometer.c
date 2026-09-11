@@ -52,6 +52,8 @@
  *        Volatile: escrito pela ISR, lido pelo main em seção crítica.
  */
 static volatile uint32_t tip_count = 0u;
+static volatile uint32_t rejected_tips = 0u;
+static volatile uint8_t counter_overflow = 0u;
 
 /**
  * @brief Timestamp (HAL_GetTick) da última basculada considerada válida.
@@ -95,10 +97,13 @@ void pluviometer_init(void)
     /* Seção crítica para zerar variáveis compartilhadas com a ISR.
      * Embora a ISR ainda não deva estar ativa neste ponto, a seção crítica
      * é mantida como boa prática e defesa contra reordenação de instruções. */
+    uint32_t irq_state = __get_PRIMASK();
     __disable_irq();
+    counter_overflow = 0u;
+    rejected_tips = 0u;
     tip_count     = 0u;
     last_tip_tick = 0u;
-    __enable_irq();
+    __set_PRIMASK(irq_state);
 
     tip_snapshot = 0u;
 
@@ -122,16 +127,19 @@ void pluviometer_init(void)
  */
 void pluviometer_read(Pluviometer_Data_t *result)
 {
+    if (result == NULL) return;
+    uint8_t overflow;
     uint32_t frozen_tips;
     uint32_t delta_tips;
 
     /* Captura atômica do totalizador — seção crítica mínima (apenas a cópia) */
+    uint32_t irq_state = __get_PRIMASK();
     __disable_irq();
     frozen_tips = tip_count;
-    __enable_irq();
+    overflow = counter_overflow;
+    __set_PRIMASK(irq_state);
 
-    /* Cálculo do delta em relação ao snapshot da leitura anterior.
-     * A subtração de uint32_t é segura mesmo com rollover (C99 aritmética modular). */
+    /* O totalizador satura ao exceder uint32_t; overflow invalida a leitura. */
     delta_tips = frozen_tips - tip_snapshot;
 
     /* Cálculo de ponto flutuante no contexto do main, nunca em ISR */
@@ -139,13 +147,13 @@ void pluviometer_read(Pluviometer_Data_t *result)
     result->delta_mm   = (float)delta_tips  * PLUV_MM_PER_TIP;
     result->tip_count  = frozen_tips;
     result->delta_tips = delta_tips;
-    result->valid      = 1u;
+    result->valid      = !overflow;
 
     /* Atualiza snapshot para o próximo cálculo de delta */
     tip_snapshot = frozen_tips;
 
     /* Atualiza o cache interno para pluviometer_get_last() */
-    last_result = *result;
+    if (result->valid) last_result = *result;
 }
 
 /**
@@ -167,10 +175,11 @@ void pluviometer_tip_callback(void)
      * (comportamento bem definido por aritmética modular em C99). */
     if ((now - last_tip_tick) >= (uint32_t)PLUV_DEBOUNCE_MS)
     {
-        tip_count++;
+        if (tip_count < UINT32_MAX) tip_count++;
+        else counter_overflow = 1u;
         last_tip_tick = now;
     }
-    /* else: bounce mecânico residual — basculada descartada */
+    else if (rejected_tips < UINT32_MAX) rejected_tips++;
 }
 
 /**
@@ -184,9 +193,11 @@ void pluviometer_tip_callback(void)
  */
 void pluviometer_reset(void)
 {
+    uint32_t irq_state = __get_PRIMASK();
     __disable_irq();
     tip_count = 0u;
-    __enable_irq();
+    counter_overflow = 0u;
+    __set_PRIMASK(irq_state);
 
     /* Reseta o snapshot junto com o totalizador para que o próximo delta
      * seja calculado corretamente a partir do zero */
@@ -220,9 +231,19 @@ uint32_t pluviometer_get_tip_count(void)
 {
     uint32_t snapshot;
 
+    uint32_t irq_state = __get_PRIMASK();
     __disable_irq();
     snapshot = tip_count;
-    __enable_irq();
+    __set_PRIMASK(irq_state);
 
     return snapshot;
+}
+
+void pluviometer_get_diagnostics(uint32_t *rejected, uint32_t *last_tip_ms)
+{
+    uint32_t irq_state = __get_PRIMASK();
+    __disable_irq();
+    if (rejected) *rejected = rejected_tips;
+    if (last_tip_ms) *last_tip_ms = last_tip_tick;
+    __set_PRIMASK(irq_state);
 }

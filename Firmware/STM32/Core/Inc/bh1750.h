@@ -97,6 +97,9 @@ typedef enum {
     BH1750_OK           = 0x00, /**< Operação bem-sucedida                   */
     BH1750_ERR_I2C      = 0x01, /**< Falha na comunicação I²C                */
     BH1750_ERR_NOT_RDY  = 0x02, /**< Dado ainda não disponível (One Time)    */
+    BH1750_ERR_SATURATED = 3,
+    BH1750_ERR_CONFIG = 4,
+    BH1750_ERR_RANGE = 5,
 } BH1750_Status_t;
 
 /* ─── Handle do sensor ───────────────────────────────────────────────────── */
@@ -114,6 +117,8 @@ typedef struct {
     float illuminance;  /**< Iluminância em lux                              */
     float irradiance;   /**< Irradiância estimada em W/m² (lux * k_factor)  */
 
+    uint8_t initialized;
+    uint32_t measurement_start_ms;
 } BH1750_Handle_t;
 
 /* ─── Protótipos ─────────────────────────────────────────────────────────── */

@@ -159,6 +159,7 @@ Pluviometer_Data_t pluviometer_get_last(void);
  * @return  Valor atual do totalizador tip_count.
  */
 uint32_t pluviometer_get_tip_count(void);
+void pluviometer_get_diagnostics(uint32_t *rejected, uint32_t *last_tip_ms);
 
 #ifdef __cplusplus
 }

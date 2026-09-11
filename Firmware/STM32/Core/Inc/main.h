@@ -68,7 +68,7 @@ void Error_Handler(void);
 #define LORA_RST_GPIO_Port GPIOC
 #define SD_CS_Pin GPIO_PIN_5
 #define SD_CS_GPIO_Port GPIOC
-#define LORA_NSS_Pin GPIO_PIN_0
+#define LORA_NSS_Pin GPIO_PIN_12
 #define LORA_NSS_GPIO_Port GPIOB
 #define ANEM_SPEED_Pin GPIO_PIN_7
 #define ANEM_SPEED_GPIO_Port GPIOC

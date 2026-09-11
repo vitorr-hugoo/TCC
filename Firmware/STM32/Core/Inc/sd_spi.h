@@ -22,7 +22,7 @@
  *
  * Barramento LoRa (SPI2 — gerenciado por lora_sx1276.c):
  *   PB13 → SCK  |  PB14 → MISO  |  PB15 → MOSI
- *   PB0  → LORA_NSS (gerenciado por lora_sx1276.c, NÃO por sd_spi)
+ *   PB12  → LORA_NSS (gerenciado por lora_sx1276.c, NÃO por sd_spi)
  ******************************************************************************
  */
 
