@@ -1,0 +1,54 @@
+{
+  "revisao": "worktree local em 2026-09-12, incluindo estilo C, isolamento da falha de ADC, credenciais externas do gateway e builds STM32 Debug/Release + ESP32",
+  "etapas": {
+    "formatacao": {
+      "obrigatoria": true,
+      "comando": ["{python}", "tests/verificar_formatacao.py", "--raiz", ".", "--proprios"],
+      "depende_de": [],
+      "motivo": "44 fontes próprias selecionadas explicitamente em tests/_fontes_proprias.py; nenhuma fonte gerada ou de terceiros é varrida."
+    },
+    "build": {
+      "obrigatoria": true,
+      "comando": ["{python}", "tests/compilar_firmware.py", "--raiz", ".", "--timeout", "300"],
+      "timeout": 330,
+      "depende_de": [],
+      "motivo": "Compila STM32 Debug/Release com makefiles gerados pelo STM32CubeIDE e o gateway pelo script Arduino existente; grava logs atuais em relatorios/build/."
+    },
+    "warnings": {
+      "obrigatoria": true,
+      "comando": ["{python}", "tests/avaliar_warnings.py", "--raiz", "."],
+      "depende_de": ["build"],
+      "motivo": "Compara logs atuais das duas variantes com baseline versionado; não altera flags de compilação."
+    },
+    "analise_estatica": {
+      "obrigatoria": true,
+      "comando": ["{python}", "tests/analisar_firmware.py", "--raiz", "."],
+      "depende_de": [],
+      "motivo": "Executa clang-tidy e/ou cppcheck disponíveis somente com compile_commands.json correspondente ao build."
+    },
+    "testes_unitarios": {
+      "obrigatoria": true,
+      "comando": ["{python}", "tests/executar_testes_unitarios.py", "--raiz", "."],
+      "depende_de": [],
+      "motivo": "Executa as suítes host de sensores/integração e LoRa/gateway; os runners falham se não encontrarem testes."
+    },
+    "testes_automatizados": {
+      "obrigatoria": false,
+      "comando": ["{python}", "tests/executar_testes.py", "--raiz", ".", "--timeout", "30", "--", "{python}", "tests/lora/run.py", "--case", "radio_ff"],
+      "depende_de": [],
+      "motivo": "Valida o wrapper automatizado existente com um cenário determinístico do driver; a regressão completa pertence à etapa de testes unitários."
+    },
+    "hil": {
+      "obrigatoria": false,
+      "comando": null,
+      "depende_de": ["build"],
+      "motivo": "A NUCLEO-F446RE está identificada no IOC, mas não há placa, porta serial, procedimento de gravação ou bancada identificados para esta execução."
+    },
+    "code_review": {
+      "obrigatoria": true,
+      "comando": ["{python}", "tests/verificar_revisao.py", "--raiz", ".", "--relatorio", "relatorios/revisao-tecnica.md"],
+      "depende_de": [],
+      "motivo": "A revisão é manual, por severidade e vinculada ao relatório versionado da execução; o comando apenas garante a presença da evidência."
+    }
+  }
+}

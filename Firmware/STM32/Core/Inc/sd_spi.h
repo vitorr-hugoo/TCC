@@ -30,22 +30,23 @@
 #define SD_SPI_H
 
 #ifdef __cplusplus
-extern "C" {
+extern "C"
+{
 #endif
 
 #include "main.h"
 #include <stdbool.h>
 #include <stdint.h>
 
-/* ── Handle externo (gerado pelo CubeMX) ─────────────────────────────────── */
-extern SPI_HandleTypeDef hspi1;
+    /* ── Handle externo (gerado pelo CubeMX) ─────────────────────────────────── */
+    extern SPI_HandleTypeDef hspi1;
 
 /* ── Timeouts (ms) ───────────────────────────────────────────────────────── */
-#define SD_SPI_POLL_TIMEOUT  500u   /**< Polling de byte único              */
-#define SD_SPI_DMA_TIMEOUT  2000u   /**< Transferência DMA de 512 bytes     */
+#define SD_SPI_POLL_TIMEOUT 500u  /**< Polling de byte único              */
+#define SD_SPI_DMA_TIMEOUT  2000u /**< Transferência DMA de 512 bytes     */
 
-/* ── Velocidades do SPI1 ─────────────────────────────────────────────────── */
-/**
+    /* ── Velocidades do SPI1 ─────────────────────────────────────────────────── */
+    /**
  * SLOW : fPCLK2/256 → ~351,6 kHz @ 90 MHz APB2.
  *         Obrigatório na inicialização do SD (protocolo exige < 400 kHz).
  * FAST : fPCLK2/8   → ~11,25 MHz. Usado após init bem-sucedida.
@@ -54,56 +55,57 @@ extern SPI_HandleTypeDef hspi1;
  *       (SPIBAUDRATEPRESCALER_128 → ~351,6 kHz @ APB1 45 MHz).
  *       Não há mais SPI1_SPEED_LORA aqui.
  */
-typedef enum {
-    SPI1_SPEED_SLOW = SPI_BAUDRATEPRESCALER_256,
-    SPI1_SPEED_FAST = SPI_BAUDRATEPRESCALER_8,
-} SPI1_Speed_t;
+    typedef enum
+    {
+        SPI1_SPEED_SLOW = SPI_BAUDRATEPRESCALER_256,
+        SPI1_SPEED_FAST = SPI_BAUDRATEPRESCALER_8,
+    } SPI1_Speed_t;
 
-/* ── Chip Select do SD ───────────────────────────────────────────────────── */
-void SD_Select(void);
-void SD_Deselect(void);
+    /* ── Chip Select do SD ───────────────────────────────────────────────────── */
+    void SD_Select(void);
+    void SD_Deselect(void);
 
-/* ── API pública ─────────────────────────────────────────────────────────── */
+    /* ── API pública ─────────────────────────────────────────────────────────── */
 
-/**
+    /**
  * @brief Inicializa buffers internos de DMA (preenche TX dummy com 0xFF).
  *        Chamar uma vez em Storage_Init antes de qualquer operação SD.
  */
-void SPI1_DMA_Init(void);
+    void SPI1_DMA_Init(void);
 
-/**
+    /**
  * @brief Reconfigura o prescaler do SPI1 sem reinicializar o periférico.
  * @param speed  SPI1_SPEED_SLOW (init SD) ou SPI1_SPEED_FAST (operação).
  */
-HAL_StatusTypeDef SPI1_SetSpeed(SPI1_Speed_t speed);
+    HAL_StatusTypeDef SPI1_SetSpeed(SPI1_Speed_t speed);
 
-/**
+    /**
  * @brief Envia e recebe 1 byte via SPI1 em modo polling.
  * @param tx  Byte a transmitir (0xFF = dummy para forçar clock).
  * @retval    Byte recebido pelo MISO.
  */
-uint8_t SPI1_SendByte(uint8_t tx);
+    uint8_t SPI1_SendByte(uint8_t tx);
 
-/**
+    /**
  * @brief Transmite um buffer de bytes via SPI1 em modo polling.
  */
-void SPI1_SendBytes(const uint8_t *buf, uint16_t len);
+    void SPI1_SendBytes(const uint8_t *buf, uint16_t len);
 
-/**
+    /**
  * @brief Lê exatamente 512 bytes do SD via DMA (TX = 0xFF dummy).
  *        CS deve estar ativo (SD_Select) antes de chamar.
  * @param rxBuf  Buffer de destino — DEVE ser 4-byte aligned para DMA.
  * @retval HAL_OK | HAL_TIMEOUT | HAL_ERROR
  */
-HAL_StatusTypeDef SPI1_DMA_ReadBlock(uint8_t *rxBuf);
+    HAL_StatusTypeDef SPI1_DMA_ReadBlock(uint8_t *rxBuf);
 
-/**
+    /**
  * @brief Escreve exatamente 512 bytes no SD via DMA.
  *        CS deve estar ativo (SD_Select) antes de chamar.
  * @param txBuf  Buffer de origem — DEVE ser 4-byte aligned para DMA.
  * @retval HAL_OK | HAL_TIMEOUT | HAL_ERROR
  */
-HAL_StatusTypeDef SPI1_DMA_WriteBlock(const uint8_t *txBuf);
+    HAL_StatusTypeDef SPI1_DMA_WriteBlock(const uint8_t *txBuf);
 
 #ifdef __cplusplus
 }

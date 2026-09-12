@@ -53,7 +53,7 @@ Chuva em centésimos de mm só cabe até 65535 unidades (655,35 mm). Ao exceder 
 
 ## Validação automatizada
 
-Execução e detalhes em [tests/sensors/README.md](../../../../tests/sensors/README.md).
+Execução e detalhes em [tests/sensors/README.md](../../../tests/sensors/README.md).
 
 - Suíte de sensores: drivers reais com HAL simulado; inclui forma de onda DHT, vetor de referência BMP, saturação BH, ADC, timers, debounce, relógios, caches e limites de codificação.
 - Integração: executa trechos extraídos diretamente do `main.c`, com drivers e armazenamento reais, conferindo que os demais dados são salvos/transmitidos mesmo com falhas individuais e com SD indisponível.

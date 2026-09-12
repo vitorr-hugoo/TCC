@@ -19,7 +19,7 @@ Nenhum commit novo foi criado e nenhum push foi executado. main e tag v0.8 perma
 | `Firmware/Gateway ESP32/gateway_esp32_lora_V1.2.ino` | Integracao da validacao antes de publicar/atualizar estado; avisos de silencio e recuperacao; rede depois da recepcao e timeouts de conexao |
 | `Firmware/Gateway ESP32/lora_protocol.h/.cpp` | Estrutura de pacote, CRC, validacao de tamanho/no e acompanhamento de sequencia/ultimo valido/silencio, independentes de Arduino/MQTT |
 | `Firmware/Gateway ESP32/lora_receive.h` | Adaptador usado pelo LoRa real e fake; tamanho original exato, leitura completa e descarte limitado a 255 bytes |
-| `tests/lora` | Driver real com HAL fake, vetores fixos, testes de pacote/gateway, runner e script de compilacao Arduino |
+| `Firmware/tests/lora` | Driver real com HAL fake, vetores fixos, testes de pacote/gateway, runner e script de compilacao Arduino |
 
 O hash de ambiente que o CubeIDE alterou automaticamente em `.settings/language.settings.xml` foi restaurado. Nao houve mudanca de pinagem, sensores, SD, parametros LoRa padrao, tag ou branch principal.
 
@@ -41,7 +41,7 @@ O hash de ambiente que o CubeIDE alterou automaticamente em `.settings/language.
 
 ## Verificacao automatizada
 
-Comando: `python tests/lora/run.py` a partir da raiz do repositorio.
+Comando: `python tests/lora/run.py` a partir de `Firmware/`.
 
 | Grupo | Quantidade | Resultado |
 |---|---:|---|
@@ -74,7 +74,7 @@ Esses testes nao executam a rede MQTT real. A chamada de publicacao esta restrit
 - LoRa 0.8.0 e PubSubClient 2.8.
 - Compilacao final: 745385 bytes de programa (56%) e 44896 bytes de variaveis globais (13%). Sem erro.
 - PubSubClient 2.8 foi obtida em pasta temporaria porque nao estava instalada; nenhuma biblioteca de terceiros foi adicionada ao repositorio.
-- Reproducao: `tests/lora/build_gateway.ps1`. O script copia os fontes para um sketch com nome valido para Arduino e nao grava o ESP32.
+- Reproducao: `Firmware/tests/lora/build_gateway.ps1`. O script copia os fontes para um sketch com nome valido para Arduino e nao grava o ESP32.
 - O limite TCP usa a sobrecarga de connect com timeout do Core 2.0.17; o MQTT usa socket timeout de 1 segundo e reutiliza a conexao TCP aberta. Esse comportamento foi conferido no [fonte oficial PubSubClient 2.8](https://github.com/knolleary/pubsubclient/blob/v2.8/src/PubSubClient.cpp).
 
 A tentativa de rede ainda pode ocupar temporariamente o loop; nao foi introduzida uma tarefa concorrente. Atrasos reais, inclusive de serial/rede, devem ser medidos em bancada. O aviso e emitido quando o loop observa o prazo vencido, nao por uma interrupcao de tempo real.

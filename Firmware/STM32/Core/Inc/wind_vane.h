@@ -57,12 +57,13 @@
 /* =========================================================================
  * Includes
  * ========================================================================= */
-#include "stm32f4xx_hal.h"   /* HAL_StatusTypeDef, ADC_HandleTypeDef, etc. */
+#include "stm32f4xx_hal.h" /* HAL_StatusTypeDef, ADC_HandleTypeDef, etc. */
 #include <stdint.h>
 #include <stddef.h>
 
 #ifdef __cplusplus
-extern "C" {
+extern "C"
+{
 #endif
 
 /* =========================================================================
@@ -70,53 +71,56 @@ extern "C" {
  * ========================================================================= */
 
 /** @brief Número de posições da biruta (16 direções × 22,5°). */
-#define WIND_VANE_NUM_POSITIONS      (16u)
+#define WIND_VANE_NUM_POSITIONS (16u)
 
 /** @brief Tamanho máximo recomendado para o buffer de label textual. */
-#define WIND_VANE_LABEL_BUF_SIZE     (8u)
+#define WIND_VANE_LABEL_BUF_SIZE (8u)
 
 /** @brief Número máximo de amostras por burst (limite interno do filtro de moda). */
-#define WIND_VANE_MAX_SAMPLES        (16u)
+#define WIND_VANE_MAX_SAMPLES (16u)
 
 /** @brief Valor sentinela para ângulo inválido. */
-#define WIND_VANE_INVALID_DEGREES    (0xFFFFu)
+#define WIND_VANE_INVALID_DEGREES (0xFFFFu)
 
 /** @brief Timeout ADC por amostra em milissegundos. */
-#define WIND_VANE_ADC_TIMEOUT_MS     (10u)
+#define WIND_VANE_ADC_TIMEOUT_MS (10u)
 
-/* =========================================================================
+    /* =========================================================================
  * Tipos públicos
  * ========================================================================= */
 
-/**
+    /**
  * @brief Entrada da LUT: janela de decisão ADC → direção do vento.
  *
  * @note  Os valores de adc_min / adc_max são ILUSTRATIVOS na tabela padrão.
  *        Devem ser medidos na bancada com a biruta real (ver "Procedimento de
  *        Calibração" no final da documentação).
  */
-typedef struct {
-    uint16_t    adc_min;  /**< Limiar inferior da janela ADC (inclusive). */
-    uint16_t    adc_max;  /**< Limiar superior da janela ADC (inclusive). */
-    uint16_t    degrees;  /**< Direção correspondente em graus (0–359). */
-    const char *label;    /**< Rótulo textual, ex.: "N", "NNE", "NE", … */
-} WindVaneLUT_t;
+    typedef struct
+    {
+        uint16_t adc_min;  /**< Limiar inferior da janela ADC (inclusive). */
+        uint16_t adc_max;  /**< Limiar superior da janela ADC (inclusive). */
+        uint16_t degrees;  /**< Direção correspondente em graus (0–359). */
+        const char *label; /**< Rótulo textual, ex.: "N", "NNE", "NE", … */
+    } WindVaneLUT_t;
 
-/**
+    /**
  * @brief Estrutura de configuração da biruta.
  *
  * @note  Preencher antes de chamar Wind_Vane_Init().
  */
-typedef struct {
-    ADC_HandleTypeDef  *hadc;               /**< Handle do ADC (HAL). */
-    uint32_t            channel;            /**< Canal ADC (ex.: ADC_CHANNEL_0). */
-    uint32_t            sampling_time;      /**< Tempo de amostragem ADC (ex.: ADC_SAMPLETIME_84CYCLES). */
-    uint8_t             num_samples;        /**< Amostras por burst (1–WIND_VANE_MAX_SAMPLES). */
-    uint16_t            sample_interval_ms; /**< Intervalo entre amostras dentro do burst (ms). */
-    int16_t             north_offset_deg;   /**< Offset de calibração de Norte em graus (pode ser negativo). */
-    const WindVaneLUT_t *lut;               /**< Ponteiro para a tabela LUT. */
-    uint8_t             lut_size;           /**< Número de entradas na LUT. */
-} wind_vane_config_t;
+    typedef struct
+    {
+        ADC_HandleTypeDef *hadc;     /**< Handle do ADC (HAL). */
+        uint32_t channel;            /**< Canal ADC (ex.: ADC_CHANNEL_0). */
+        uint32_t sampling_time;      /**< Tempo de amostragem ADC (ex.: ADC_SAMPLETIME_84CYCLES). */
+        uint8_t num_samples;         /**< Amostras por burst (1–WIND_VANE_MAX_SAMPLES). */
+        uint16_t sample_interval_ms; /**< Intervalo entre amostras dentro do burst (ms). */
+        int16_t
+            north_offset_deg; /**< Offset de calibração de Norte em graus (pode ser negativo). */
+        const WindVaneLUT_t *lut; /**< Ponteiro para a tabela LUT. */
+        uint8_t lut_size;         /**< Número de entradas na LUT. */
+    } wind_vane_config_t;
 
 /* =========================================================================
  * LUT padrão (valores ILUSTRATIVOS — calibrar na bancada!)
@@ -125,9 +129,9 @@ typedef struct {
 /**
  * @brief Número de entradas da LUT padrão.
  */
-#define WIND_VANE_DEFAULT_LUT_SIZE   (16u)
+#define WIND_VANE_DEFAULT_LUT_SIZE (16u)
 
-/**
+    /**
  * @brief LUT padrão com 16 posições.
  *
  * @warning Os valores de adc_min / adc_max abaixo são ESTIMATIVAS para um
@@ -135,13 +139,13 @@ typedef struct {
  *          Eles DEVEM ser substituídos pelos valores reais medidos na bancada.
  *          Consulte a seção "Procedimento de Calibração" na documentação.
  */
-extern const WindVaneLUT_t WIND_VANE_DEFAULT_LUT[WIND_VANE_DEFAULT_LUT_SIZE];
+    extern const WindVaneLUT_t WIND_VANE_DEFAULT_LUT[WIND_VANE_DEFAULT_LUT_SIZE];
 
-/* =========================================================================
+    /* =========================================================================
  * API pública
  * ========================================================================= */
 
-/**
+    /**
  * @brief  Inicializa o driver da biruta.
  *
  * @details Valida os parâmetros de configuração, configura o canal ADC via
@@ -154,9 +158,9 @@ extern const WindVaneLUT_t WIND_VANE_DEFAULT_LUT[WIND_VANE_DEFAULT_LUT_SIZE];
  * @retval HAL_OK     Inicialização bem-sucedida.
  * @retval HAL_ERROR  Parâmetros inválidos ou falha na configuração do ADC.
  */
-HAL_StatusTypeDef Wind_Vane_Init(const wind_vane_config_t *cfg);
+    HAL_StatusTypeDef Wind_Vane_Init(const wind_vane_config_t *cfg);
 
-/**
+    /**
  * @brief  Realiza uma leitura completa da direção do vento.
  *
  * @details
@@ -177,9 +181,9 @@ HAL_StatusTypeDef Wind_Vane_Init(const wind_vane_config_t *cfg);
  * @retval HAL_ERROR   Falha de ADC ou nenhuma amostra mapeável pela LUT.
  * @retval HAL_TIMEOUT Timeout de conversão ADC; burst interrompido.
  */
-HAL_StatusTypeDef Wind_Vane_Read(uint16_t *degrees_out);
+    HAL_StatusTypeDef Wind_Vane_Read(uint16_t *degrees_out);
 
-/**
+    /**
  * @brief  Retorna uma leitura bruta do ADC da biruta.
  *
  * @param[out] adc_raw_out Ponteiro para receber o valor bruto do ADC.
@@ -187,9 +191,9 @@ HAL_StatusTypeDef Wind_Vane_Read(uint16_t *degrees_out);
  * @retval HAL_ERROR   Erro de parâmetro, inicialização ou ADC.
  * @retval HAL_TIMEOUT Timeout na conversão ADC.
  */
-HAL_StatusTypeDef Wind_Vane_ReadRaw(uint16_t *adc_raw_out);
+    HAL_StatusTypeDef Wind_Vane_ReadRaw(uint16_t *adc_raw_out);
 
-/**
+    /**
  * @brief  Retorna o rótulo textual da direção mais próxima na LUT.
  *
  * @details Percorre a LUT e seleciona a entrada cuja direção (em graus) é
@@ -200,9 +204,9 @@ HAL_StatusTypeDef Wind_Vane_ReadRaw(uint16_t *adc_raw_out);
  * @param[out] buf       Buffer de destino para o rótulo.
  * @param[in]  buf_size  Tamanho do buffer (mínimo: WIND_VANE_LABEL_BUF_SIZE).
  */
-void Wind_Vane_GetLabel(uint16_t degrees, char *buf, uint8_t buf_size);
+    void Wind_Vane_GetLabel(uint16_t degrees, char *buf, uint8_t buf_size);
 
-/**
+    /**
  * @brief  Atualiza o offset de calibração de Norte em tempo de execução.
  *
  * @details Permite ajuste fino sem reinicialização do driver.
@@ -210,9 +214,9 @@ void Wind_Vane_GetLabel(uint16_t degrees, char *buf, uint8_t buf_size);
  *
  * @param[in] offset_degrees  Offset em graus (pode ser negativo).
  */
-void Wind_Vane_SetNorthOffset(int16_t offset_degrees);
+    void Wind_Vane_SetNorthOffset(int16_t offset_degrees);
 
-/**
+    /**
  * @brief  Retorna o contador de erros de mapeamento LUT acumulados.
  *
  * @details Incrementado a cada amostra que não encontra janela na LUT
@@ -220,9 +224,7 @@ void Wind_Vane_SetNorthOffset(int16_t offset_degrees);
  *
  * @retval Número de outliers detectados desde o último Wind_Vane_Init().
  */
-uint32_t Wind_Vane_GetErrorCount(void);
-
-
+    uint32_t Wind_Vane_GetErrorCount(void);
 
 #ifdef __cplusplus
 }

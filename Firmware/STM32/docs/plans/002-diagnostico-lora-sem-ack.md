@@ -108,12 +108,12 @@ Aceite: aviso no primeiro processamento em que o tempo sem pacote válido alcan�
 
 ### 4.1 Testes executáveis entregues agora
 
-Diretório: `tests/lora` na raiz do repositório.
+Diretório: `Firmware/tests/lora`; execute os comandos a partir de `Firmware/`.
 
 O runner compila **o driver C real** com GCC nativo, ligado a uma HAL fake. Cada cenário roda em processo independente. Não exige placa, Arduino, MQTT, internet ou instalação de framework de testes. Arquivos compilados ficam em diretório temporário fora do repositório.
 
 ```powershell
-cd D:\TCC
+cd D:\TCC\Firmware
 python tests/lora/run.py
 ```
 

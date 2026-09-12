@@ -1,0 +1,9 @@
+{
+  "warnings": [
+    {
+      "arquivo": "../Middlewares/Third_Party/FatFs/src/ff.c",
+      "linha": 5032,
+      "opcao": "-Wmisleading-indentation"
+    }
+  ]
+}

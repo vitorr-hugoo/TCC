@@ -176,6 +176,18 @@ static const WindVaneLUT_t s_vane_lut[16u] = {
   { 3665u, 4095u, 270u, "W"   }
 };
 
+/**
+ * @brief Desabilita a biruta quando a inicialização do ADC falha.
+ *
+ * Os demais subsistemas da estação permanecem disponíveis. A leitura da
+ * biruta será marcada como indisponível por App_WindVane_Init().
+ */
+static void appRegistrarFalhaAdc(void)
+{
+    adc_initialized = false;
+    vane_status = HAL_ERROR;
+}
+
 static void App_WindVane_Init(void)
 {
     vane_cfg.hadc               = &hadc1;
@@ -567,7 +579,8 @@ static void MX_ADC1_Init(void)
   hadc1.Init.EOCSelection = ADC_EOC_SINGLE_CONV;
   if (HAL_ADC_Init(&hadc1) != HAL_OK)
   {
-    Error_Handler();
+    appRegistrarFalhaAdc();
+    return;
   }
 
   /** Configure for the selected ADC regular channel its corresponding rank in the sequencer and its sample time.
@@ -577,7 +590,8 @@ static void MX_ADC1_Init(void)
   sConfig.SamplingTime = ADC_SAMPLETIME_144CYCLES;
   if (HAL_ADC_ConfigChannel(&hadc1, &sConfig) != HAL_OK)
   {
-    Error_Handler();
+    appRegistrarFalhaAdc();
+    return;
   }
   /* USER CODE BEGIN ADC1_Init 2 */
   adc_initialized = true;

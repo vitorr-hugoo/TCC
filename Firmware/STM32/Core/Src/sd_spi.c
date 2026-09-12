@@ -16,7 +16,7 @@
  */
 
 #include "sd_spi.h"
-#include <string.h>     /* memset */
+#include <string.h> /* memset */
 
 /* ── Buffers internos de DMA ─────────────────────────────────────────────── */
 /*
@@ -28,7 +28,7 @@
  * s_dma_rx_discard : RX de escrita — bytes recebidos durante escrita são
  *                    descartados (o SD não envia dados úteis durante CMD24).
  */
-static uint8_t s_dma_tx_ff[512]      __attribute__((aligned(4)));
+static uint8_t s_dma_tx_ff[512] __attribute__((aligned(4)));
 static uint8_t s_dma_rx_discard[512] __attribute__((aligned(4)));
 
 /* Flag setada pela callback de conclusão de DMA */
@@ -82,8 +82,7 @@ HAL_StatusTypeDef SPI1_SetSpeed(SPI1_Speed_t speed)
         return HAL_ERROR;
     }
 
-    if ((hspi1.State != HAL_SPI_STATE_READY) &&
-        (hspi1.State != HAL_SPI_STATE_RESET))
+    if ((hspi1.State != HAL_SPI_STATE_READY) && (hspi1.State != HAL_SPI_STATE_RESET))
     {
         return HAL_BUSY;
     }
@@ -116,9 +115,11 @@ HAL_StatusTypeDef SPI1_DMA_ReadBlock(uint8_t *rxBuf)
 
     s_dma_done = 0u;
 
-    HAL_StatusTypeDef ret = HAL_SPI_TransmitReceive_DMA(
-                                &hspi1, s_dma_tx_ff, rxBuf, 512u);
-    if (ret != HAL_OK) { return ret; }
+    HAL_StatusTypeDef ret = HAL_SPI_TransmitReceive_DMA(&hspi1, s_dma_tx_ff, rxBuf, 512u);
+    if (ret != HAL_OK)
+    {
+        return ret;
+    }
 
     uint32_t t0 = HAL_GetTick();
     while (!s_dma_done)
@@ -141,10 +142,12 @@ HAL_StatusTypeDef SPI1_DMA_WriteBlock(const uint8_t *txBuf)
 
     s_dma_done = 0u;
 
-    HAL_StatusTypeDef ret = HAL_SPI_TransmitReceive_DMA(
-                                &hspi1, (uint8_t *)txBuf,
-                                s_dma_rx_discard, 512u);
-    if (ret != HAL_OK) { return ret; }
+    HAL_StatusTypeDef ret =
+        HAL_SPI_TransmitReceive_DMA(&hspi1, (uint8_t *)txBuf, s_dma_rx_discard, 512u);
+    if (ret != HAL_OK)
+    {
+        return ret;
+    }
 
     uint32_t t0 = HAL_GetTick();
     while (!s_dma_done)

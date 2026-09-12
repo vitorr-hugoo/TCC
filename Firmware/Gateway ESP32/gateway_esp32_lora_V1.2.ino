@@ -32,36 +32,29 @@
 #include <PubSubClient.h>
 #include "lora_protocol.h"
 #include "lora_receive.h"
-
+#include "gateway_credentials.h"
 /* ─────────────────────────────────────────────
    1. PINAGEM
    ───────────────────────────────────────────── */
-#define LORA_NSS    5
-#define LORA_RST   14
-#define LORA_DIO0  26
+#define LORA_NSS  5
+#define LORA_RST  14
+#define LORA_DIO0 26
 /* MOSI=23, MISO=19, SCK=18 são fixos no VSPI do WROOM-32 */
 
 /* ─────────────────────────────────────────────
    CONFIGURAÇÕES WI-FI E MQTT
    ───────────────────────────────────────────── */
-#define WIFI_SSID        "2,4 CHAMA NOIS 22"
-#define WIFI_PASSWORD    "xupafederupa"
-#define MQTT_BROKER_IP   "192.168.0.83"
-//#define MQTT_BROKER_IP   "192.168.0.83"    // IP do seu PC anotado no ipconfig
-#define MQTT_PORT        1883
-#define MQTT_CLIENT_ID   "gateway_esp32_lora"
-#define MQTT_TOPIC       "estacao/no1/dados"
-#define MQTT_RECONNECT_INTERVAL_MS  5000  // tenta reconectar a cada 5s
+#define MQTT_RECONNECT_INTERVAL_MS 5000 // tenta reconectar a cada 5s
 
 /* ─────────────────────────────────────────────
    2. PARÂMETROS DE RÁDIO — devem espelhar o TX
    ───────────────────────────────────────────── */
-#define LORA_FREQ        915E6   /* 915 MHz                    */
-#define LORA_SF          9       /* Spreading Factor 9         */
-#define LORA_BW          125E3   /* Bandwidth 125 kHz          */
-#define LORA_CR          5       /* Coding Rate 4/5 → valor=5  */
-#define LORA_PREAMBLE    8       /* Símbolos de preâmbulo      */
-#define LORA_TX_POWER    17      /* Referência; RX ignora      */
+#define LORA_FREQ     915E6 /* 915 MHz                    */
+#define LORA_SF       9     /* Spreading Factor 9         */
+#define LORA_BW       125E3 /* Bandwidth 125 kHz          */
+#define LORA_CR       5     /* Coding Rate 4/5 → valor=5  */
+#define LORA_PREAMBLE 8     /* Símbolos de preâmbulo      */
+#define LORA_TX_POWER 17    /* Referência; RX ignora      */
 
 /* ─────────────────────────────────────────────
    3. PROTOCOLO DE PAYLOAD
@@ -69,43 +62,41 @@
 // Formato e tamanho verificados em lora_protocol.h.
 
 /* Sentinelas definidos pelo transmissor */
-#define SENTINEL_TEMP_INVALID    (-9990)
-#define SENTINEL_WIND_INVALID    (-9990)
-#define SENTINEL_DIR_INVALID     (999)
-#define SENTINEL_HUMID_INVALID   (0)
-#define SENTINEL_PRES_INVALID    (0)
-#define SENTINEL_LUX_INVALID     (0)
+#define SENTINEL_TEMP_INVALID  (-9990)
+#define SENTINEL_WIND_INVALID  (-9990)
+#define SENTINEL_DIR_INVALID   (999)
+#define SENTINEL_HUMID_INVALID (0)
+#define SENTINEL_PRES_INVALID  (0)
+#define SENTINEL_LUX_INVALID   (0)
 
-
-#define WDT_TIMEOUT_S  30
+#define WDT_TIMEOUT_S 30
 
 // ── Diagnóstico de enlace ─────────────────────
-static uint32_t diag_pkt_received  = 0;  // total de pacotes recebidos pelo rádio
-static uint32_t diag_pkt_size_err  = 0;  // descartados por tamanho incorreto
-static uint32_t diag_pkt_crc_err   = 0;  // reprovados no CRC-8 de aplicação
+static uint32_t diag_pkt_received = 0; // total de pacotes recebidos pelo rádio
+static uint32_t diag_pkt_size_err = 0; // descartados por tamanho incorreto
+static uint32_t diag_pkt_crc_err = 0;  // reprovados no CRC-8 de aplicação
 
 /* ─────────────────────────────────────────────
    OBJETOS WI-FI E MQTT
    ───────────────────────────────────────────── */
 GatewayState gateway_state;
 static uint32_t diag_pkt_node_err = 0;
-WiFiClient   wifi_client;
+WiFiClient wifi_client;
 PubSubClient mqtt_client(wifi_client);
 
 /* ─────────────────────────────────────────────
    4. PAYLOAD: definido e verificado em lora_protocol.h.
    ───────────────────────────────────────────── */
 
-
 /* ─────────────────────────────────────────────
    5. PROTÓTIPOS
    ───────────────────────────────────────────── */
-bool     lora_init(void);
-int      lora_receive_packet(uint8_t *buf, int buf_size, int *rssi, float *snr);
-bool     payload_validate_crc(const LoRaPayload_t *p);
-void     payload_print(const LoRaPayload_t *p, int rssi, float snr, bool crc_ok);
-uint8_t  crc8_calc(const uint8_t *data, uint16_t len);
-void     diag_print_summary(void);
+bool lora_init(void);
+int lora_receive_packet(uint8_t *buf, int buf_size, int *rssi, float *snr);
+bool payload_validate_crc(const LoRaPayload_t *p);
+void payload_print(const LoRaPayload_t *p, int rssi, float snr, bool crc_ok);
+uint8_t crc8_calc(const uint8_t *data, uint16_t len);
+void diag_print_summary(void);
 void wifi_connect(void);
 bool mqtt_ensure_connected(void);
 void mqtt_publish_payload(const LoRaPayload_t *p, int rssi, float snr, bool crc_ok);
@@ -116,17 +107,22 @@ void mqtt_publish_payload(const LoRaPayload_t *p, int rssi, float snr, bool crc_
 void setup(void)
 {
     Serial.begin(115200);
-    while (!Serial && millis() < 3000);   /* aguarda Serial (debug USB) */
+    while (!Serial && millis() < 3000)
+    {
+        /* Aguarda Serial para diagnóstico via USB. */
+    }
 
     Serial.println(F("\n======================================"));
     Serial.println(F("  Gateway LoRa RX — ESP32 + SX1276"));
     Serial.println(F("======================================"));
 
-    if (!lora_init()) {
+    if (!lora_init())
+    {
         Serial.println(F("[ERRO FATAL] Falha na inicializacao do SX1276."));
-        while (true) { 
-            delay(1000); 
-        }   /* para execução — inspecionar fiação */
+        while (true)
+        {
+            delay(1000);
+        } /* para execução — inspecionar fiação */
     }
 
     GatewayStart(gateway_state, millis());
@@ -134,21 +130,24 @@ void setup(void)
 
     // API do ESP32 Arduino Core 2.0.17, usado nesta compilacao.
     esp_task_wdt_init(WDT_TIMEOUT_S, true);
-    esp_task_wdt_add(NULL);                  // registra a task atual (loopTask)
+    esp_task_wdt_add(NULL); // registra a task atual (loopTask)
     Serial.println(F("[WDT] Watchdog configurado: timeout = 30s"));
-    
+
     wifi_connect();
     mqtt_client.setServer(MQTT_BROKER_IP, MQTT_PORT);
     mqtt_client.setBufferSize(512);
     mqtt_client.setSocketTimeout(1); // segundos, espera pelo CONNACK limitada
     delay(1000);
     mqtt_ensure_connected();
-    
-    if (mqtt_client.connected()) {
+
+    if (mqtt_client.connected())
+    {
         bool ok = mqtt_client.publish("estacao/teste", "{\"msg\":\"boot esp32\"}");
         Serial.print(F("[MQTT] Publish de teste no setup: "));
         Serial.println(ok ? F("OK") : F("FALHOU"));
-    } else {
+    }
+    else
+    {
         Serial.println(F("[MQTT] Sem conexao no setup, teste nao enviado."));
     }
 
@@ -165,41 +164,69 @@ void loop(void)
     int rssi = 0;
     float snr = 0;
     int rx_len = lora_receive_packet(raw, sizeof(raw), &rssi, &snr);
-    if (rx_len >= 0) {
+    if (rx_len >= 0)
+    {
         ++diag_pkt_received;
         LoRaPayload_t payload;
         bool gap, recovered;
         uint16_t expected_seq = (uint16_t)(gateway_state.last_seq + 1u);
-        PacketStatus status = GatewayAccept(gateway_state, raw, (size_t)rx_len,
-                                            millis(), payload, gap, recovered);
-        if (status == PacketStatus::Valid) {
-            if (gap) {
-                Serial.print(F("[AVISO] Sequencia: esperado ")); Serial.print(expected_seq);
-                Serial.print(F(", recebido ")); Serial.println(payload.seq);
+        PacketStatus status =
+            GatewayAccept(gateway_state, raw, (size_t)rx_len, millis(), payload, gap, recovered);
+        if (status == PacketStatus::Valid)
+        {
+            if (gap)
+            {
+                Serial.print(F("[AVISO] Sequencia: esperado "));
+                Serial.print(expected_seq);
+                Serial.print(F(", recebido "));
+                Serial.println(payload.seq);
             }
-            if (recovered) Serial.println(F("[GATEWAY] Recepcao de pacotes validos restabelecida."));
+            if (recovered)
+            {
+                Serial.println(F("[GATEWAY] Recepcao de pacotes validos restabelecida."));
+            }
             payload_print(&payload, rssi, snr, true);
             mqtt_publish_payload(&payload, rssi, snr, true);
-        } else {
-            if (status == PacketStatus::Size) ++diag_pkt_size_err;
-            else if (status == PacketStatus::Crc) ++diag_pkt_crc_err;
-            else ++diag_pkt_node_err;
+        }
+        else
+        {
+            if (status == PacketStatus::Size)
+            {
+                ++diag_pkt_size_err;
+            }
+            else if (status == PacketStatus::Crc)
+            {
+                ++diag_pkt_crc_err;
+            }
+            else
+            {
+                ++diag_pkt_node_err;
+            }
             Serial.print(F("[GATEWAY] Pacote descartado: "));
-            Serial.println(status == PacketStatus::Size ? F("tamanho/leitura") :
-                           status == PacketStatus::Crc ? F("CRC") : F("no inesperado"));
+            Serial.println(status == PacketStatus::Size  ? F("tamanho/leitura")
+                           : status == PacketStatus::Crc ? F("CRC")
+                                                         : F("no inesperado"));
         }
         diag_print_summary();
     }
     // Avaliar depois da recepcao evita alerta se um pacote valido ja esta disponivel.
-    if (GatewayCheckSilence(gateway_state, millis())) {
+    if (GatewayCheckSilence(gateway_state, millis()))
+    {
         Serial.print(F("[GATEWAY] Sem pacote valido do no 1 ha "));
         Serial.print((uint32_t)(millis() - gateway_state.last_valid_ms) / 1000u);
         Serial.println(F(" segundos."));
     }
     // Recepcao e aviso acima sempre executam, inclusive sem rede.
-    if (WiFi.status() == WL_CONNECTED) {
-        if (!mqtt_client.connected()) mqtt_ensure_connected();
-        else mqtt_client.loop();
+    if (WiFi.status() == WL_CONNECTED)
+    {
+        if (!mqtt_client.connected())
+        {
+            mqtt_ensure_connected();
+        }
+        else
+        {
+            mqtt_client.loop();
+        }
     }
     delay(10);
 }
@@ -226,25 +253,27 @@ bool lora_init(void)
     Serial.print((long)LORA_FREQ / 1000000L);
     Serial.println(F(" MHz..."));
 
-    if (!LoRa.begin(LORA_FREQ)) {
+    if (!LoRa.begin(LORA_FREQ))
+    {
         Serial.println(F("[LORA] FALHA: LoRa.begin() retornou 0."));
         Serial.println(F("       Verificar: fiacao SPI, NSS/RST/DIO0, alimentacao 3.3V."));
         return false;
     }
 
     /* ── parâmetros idênticos ao transmissor STM32 ── */
-    LoRa.setSpreadingFactor(LORA_SF);          /* SF9               */
-    LoRa.setSignalBandwidth(LORA_BW);          /* 125 kHz           */
-    LoRa.setCodingRate4(LORA_CR);              /* 4/5               */
-    LoRa.setPreambleLength(LORA_PREAMBLE);     /* 8 símbolos        */
-    LoRa.enableCrc();                          /* CRC modem ON      */
+    LoRa.setSpreadingFactor(LORA_SF);      /* SF9               */
+    LoRa.setSignalBandwidth(LORA_BW);      /* 125 kHz           */
+    LoRa.setCodingRate4(LORA_CR);          /* 4/5               */
+    LoRa.setPreambleLength(LORA_PREAMBLE); /* 8 símbolos        */
+    LoRa.enableCrc();                      /* CRC modem ON      */
     /* header explícito é o padrão da biblioteca — não há disableImplicitHeader() a chamar */
 
     /* Modo recepção contínua */
     LoRa.receive();
 
     Serial.println(F("[LORA] Init OK."));
-    Serial.print(F("       SF="));   Serial.print(LORA_SF);
+    Serial.print(F("       SF="));
+    Serial.print(LORA_SF);
     Serial.print(F(" BW=125kHz CR=4/5 CRC=ON Preambulo="));
     Serial.print(LORA_PREAMBLE);
     Serial.println(F(" simbolos"));
@@ -265,7 +294,8 @@ bool lora_init(void)
 int lora_receive_packet(uint8_t *buf, int buf_size, int *rssi, float *snr)
 {
     int result = LoRaReadPacket(LoRa, buf, buf_size > 0 ? (size_t)buf_size : 0);
-    if (result == (int)EXPECTED_PAYLOAD_LEN) {
+    if (result == (int)EXPECTED_PAYLOAD_LEN)
+    {
         *rssi = LoRa.packetRssi();
         *snr = LoRa.packetSnr();
     }
@@ -296,54 +326,72 @@ void payload_print(const LoRaPayload_t *p, int rssi, float snr, bool crc_ok)
 
     /* ── temperatura ── */
     Serial.print(F("  Temp     : "));
-    if (p->temperature_x10 == SENTINEL_TEMP_INVALID) {
+    if (p->temperature_x10 == SENTINEL_TEMP_INVALID)
+    {
         Serial.println(F("INVALIDA (sensor sem resposta)"));
-    } else {
+    }
+    else
+    {
         Serial.print(p->temperature_x10 / 10.0f, 1);
         Serial.println(F(" °C"));
     }
 
     /* ── umidade ── */
     Serial.print(F("  Umidade  : "));
-    if (p->humidity_x10 == SENTINEL_HUMID_INVALID) {
+    if (p->humidity_x10 == SENTINEL_HUMID_INVALID)
+    {
         Serial.println(F("INVALIDA"));
-    } else {
+    }
+    else
+    {
         Serial.print(p->humidity_x10 / 10.0f, 1);
         Serial.println(F(" %"));
     }
 
     /* ── pressão ── */
     Serial.print(F("  Pressao  : "));
-    if (p->pressure_hpa_x1 == SENTINEL_PRES_INVALID) {
+    if (p->pressure_hpa_x1 == SENTINEL_PRES_INVALID)
+    {
         Serial.println(F("INVALIDA"));
-    } else {
+    }
+    else
+    {
         Serial.print(p->pressure_hpa_x1);
         Serial.println(F(" hPa"));
     }
 
     /* ── iluminância ── */
     Serial.print(F("  Ilum     : "));
-    if (p->illuminance_lux_x1 == SENTINEL_LUX_INVALID) {
+    if (p->illuminance_lux_x1 == SENTINEL_LUX_INVALID)
+    {
         Serial.println(F("INVALIDA"));
-    } else {
+    }
+    else
+    {
         Serial.print(p->illuminance_lux_x1);
         Serial.println(F(" lux"));
     }
 
     /* ── vento ── */
     Serial.print(F("  Vento    : "));
-    if (p->wind_speed_x100 == SENTINEL_WIND_INVALID) {
+    if (p->wind_speed_x100 == SENTINEL_WIND_INVALID)
+    {
         Serial.println(F("INVALIDA"));
-    } else {
+    }
+    else
+    {
         Serial.print(p->wind_speed_x100 / 100.0f, 2);
         Serial.println(F(" m/s"));
     }
 
     /* ── direção do vento ── */
     Serial.print(F("  Direcao  : "));
-    if (p->wind_dir_deg == SENTINEL_DIR_INVALID) {
+    if (p->wind_dir_deg == SENTINEL_DIR_INVALID)
+    {
         Serial.println(F("INVALIDA"));
-    } else {
+    }
+    else
+    {
         Serial.print(p->wind_dir_deg);
         Serial.println(F(" graus"));
     }
@@ -364,9 +412,12 @@ void payload_print(const LoRaPayload_t *p, int rssi, float snr, bool crc_ok)
 
     /* ── CRC da aplicação ── */
     Serial.print(F("  CRC-8    : "));
-    if (crc_ok) {
+    if (crc_ok)
+    {
         Serial.println(F("OK"));
-    } else {
+    }
+    else
+    {
         Serial.print(F("FALHOU (rx=0x"));
         Serial.print(p->crc8, HEX);
         Serial.print(F(", calc=0x"));
@@ -381,18 +432,26 @@ void diag_print_summary(void)
 {
     // Fracao valida entre os pacotes observados; nao mede pacotes perdidos no ar.
     float pdr = 0.0f;
-    if (diag_pkt_received > 0) {
+    if (diag_pkt_received > 0)
+    {
         uint32_t pkt_ok = gateway_state.valid_packets;
         pdr = (float)pkt_ok / (float)diag_pkt_received * 100.0f;
     }
 
     Serial.println(F("  ─── Diagnóstico de Enlace ───────────"));
-    Serial.print(F("  Recebidos : ")); Serial.println(diag_pkt_received);
-    Serial.print(F("  Erro tam. : ")); Serial.println(diag_pkt_size_err);
-    Serial.print(F("  Erro CRC  : ")); Serial.println(diag_pkt_crc_err);
-    Serial.print(F("  No errado : ")); Serial.println(diag_pkt_node_err);
-    Serial.print(F("  Gaps seq  : ")); Serial.println(gateway_state.sequence_gaps);
-    Serial.print(F("  Validos/recebidos: ")); Serial.print(pdr, 1); Serial.println(F(" %"));
+    Serial.print(F("  Recebidos : "));
+    Serial.println(diag_pkt_received);
+    Serial.print(F("  Erro tam. : "));
+    Serial.println(diag_pkt_size_err);
+    Serial.print(F("  Erro CRC  : "));
+    Serial.println(diag_pkt_crc_err);
+    Serial.print(F("  No errado : "));
+    Serial.println(diag_pkt_node_err);
+    Serial.print(F("  Gaps seq  : "));
+    Serial.println(gateway_state.sequence_gaps);
+    Serial.print(F("  Validos/recebidos: "));
+    Serial.print(pdr, 1);
+    Serial.println(F(" %"));
     Serial.println();
 }
 
@@ -415,15 +474,16 @@ void wifi_connect(void)
    MQTT — reconexao periodica com timeout
    ══════════════════════════════════════════════ */
 
-
 bool mqtt_ensure_connected(void)
 {
-    if (mqtt_client.connected()) {
+    if (mqtt_client.connected())
+    {
         Serial.println(F("[MQTT] Ja conectado."));
         return true;
     }
 
-    if (WiFi.status() != WL_CONNECTED) {
+    if (WiFi.status() != WL_CONNECTED)
+    {
         Serial.println(F("[MQTT] Wi-Fi nao conectado."));
         return false;
     }
@@ -431,7 +491,8 @@ bool mqtt_ensure_connected(void)
     static uint32_t last_attempt_ms = 0;
     uint32_t now = millis();
 
-    if (now - last_attempt_ms < MQTT_RECONNECT_INTERVAL_MS) {
+    if (now - last_attempt_ms < MQTT_RECONNECT_INTERVAL_MS)
+    {
         return false;
     }
     last_attempt_ms = now;
@@ -447,21 +508,23 @@ bool mqtt_ensure_connected(void)
     //bool ok = mqtt_client.connect(MQTT_CLIENT_ID);
     String clientId = String(MQTT_CLIENT_ID) + "_" + String((uint32_t)ESP.getEfuseMac(), HEX);
     IPAddress broker;
-    if (!broker.fromString(MQTT_BROKER_IP)) {
+    if (!broker.fromString(MQTT_BROKER_IP))
+    {
         Serial.println(F("[MQTT] IP do broker invalido."));
         return false;
     }
-    if (!wifi_client.connected() && !wifi_client.connect(broker, MQTT_PORT, 1000)) {
+    if (!wifi_client.connected() && !wifi_client.connect(broker, MQTT_PORT, 1000))
+    {
         Serial.println(F("[MQTT] Timeout/falha TCP."));
         return false;
     }
     bool ok = mqtt_client.connect(clientId.c_str());
 
-
     Serial.print(F("[MQTT] state() depois = "));
     Serial.println(mqtt_client.state());
 
-    if (ok) {
+    if (ok)
+    {
         Serial.println(F("[MQTT] Conexao OK."));
         return true;
     }
@@ -475,7 +538,8 @@ bool mqtt_ensure_connected(void)
    ══════════════════════════════════════════════ */
 void mqtt_publish_payload(const LoRaPayload_t *p, int rssi, float snr, bool crc_ok)
 {
-    if (!mqtt_client.connected()) {
+    if (!mqtt_client.connected())
+    {
         Serial.println(F("[MQTT] Cliente nao conectado — publicacao ignorada."));
         return;
     }
@@ -483,33 +547,23 @@ void mqtt_publish_payload(const LoRaPayload_t *p, int rssi, float snr, bool crc_
     // Monta JSON manualmente — evita dependência da ArduinoJson nessa fase
     char json[400];
     snprintf(json, sizeof(json),
-        "{"
-        "\"node_id\":%u,"
-        "\"seq\":%u,"
-        "\"temp_c\":%.1f,"
-        "\"hum_pct\":%.1f,"
-        "\"pres_hpa\":%u,"
-        "\"lux\":%u,"
-        "\"wind_ms\":%.2f,"
-        "\"wind_deg\":%u,"
-        "\"rain_mm\":%.2f,"
-        "\"rssi\":%d,"
-        "\"snr\":%.1f,"
-        "\"crc_ok\":%s"
-        "}",
-        p->node_id,
-        p->seq,
-        p->temperature_x10  / 10.0f,
-        p->humidity_x10     / 10.0f,
-        p->pressure_hpa_x1,
-        p->illuminance_lux_x1,
-        p->wind_speed_x100  / 100.0f,
-        p->wind_dir_deg,
-        p->rain_mm_x100     / 100.0f,
-        rssi,
-        snr,
-        crc_ok ? "true" : "false"
-    );
+             "{"
+             "\"node_id\":%u,"
+             "\"seq\":%u,"
+             "\"temp_c\":%.1f,"
+             "\"hum_pct\":%.1f,"
+             "\"pres_hpa\":%u,"
+             "\"lux\":%u,"
+             "\"wind_ms\":%.2f,"
+             "\"wind_deg\":%u,"
+             "\"rain_mm\":%.2f,"
+             "\"rssi\":%d,"
+             "\"snr\":%.1f,"
+             "\"crc_ok\":%s"
+             "}",
+             p->node_id, p->seq, p->temperature_x10 / 10.0f, p->humidity_x10 / 10.0f,
+             p->pressure_hpa_x1, p->illuminance_lux_x1, p->wind_speed_x100 / 100.0f,
+             p->wind_dir_deg, p->rain_mm_x100 / 100.0f, rssi, snr, crc_ok ? "true" : "false");
 
     bool ok = mqtt_client.publish(MQTT_TOPIC, json);
 

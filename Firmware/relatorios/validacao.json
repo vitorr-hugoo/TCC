@@ -1,0 +1,119 @@
+{
+  "revisao_declarada": "worktree local em 2026-09-12, incluindo estilo C, isolamento da falha de ADC, credenciais externas do gateway e builds STM32 Debug/Release + ESP32",
+  "resultado_automatico": "FALHA",
+  "aprovacao_tecnica": "NÃO AVALIADA — exige revisão semântica e validacao-firmware",
+  "ressalvas": [
+    "build",
+    "warnings",
+    "analise_estatica",
+    "hil"
+  ],
+  "etapas": {
+    "formatacao": {
+      "comando": [
+        "C:\\Python314\\python.exe",
+        "tests/verificar_formatacao.py",
+        "--raiz",
+        ".",
+        "--proprios"
+      ],
+      "diretorio": "D:\\TCC\\Firmware",
+      "status": "PASS",
+      "returncode": 0,
+      "saida": "PASS: ['C:\\\\Program Files\\\\Arduino IDE\\\\resources\\\\app\\\\lib\\\\backend\\\\resources\\\\clang-format.exe', '--style=file', '--dry-run', '--Werror', 'D:\\\\TCC\\\\Firmware\\\\STM32\\\\Core\\\\Inc\\\\anemometer.h']\nPASS: ['C:\\\\Program Files\\\\Arduino IDE\\\\resources\\\\app\\\\lib\\\\backend\\\\resources\\\\clang-format.exe', '--style=file', '--dry-run', '--Werror', 'D:\\\\TCC\\\\Firmware\\\\STM32\\\\Core\\\\Inc\\\\bh1750.h']\nPASS: ['C:\\\\Program Files\\\\Arduino IDE\\\\resources\\\\app\\\\lib\\\\backend\\\\resources\\\\clang-format.exe', '--style=file', '--dry-run', '--Werror', 'D:\\\\TCC\\\\Firmware\\\\STM32\\\\Core\\\\Inc\\\\bmp280.h']\nPASS: ['C:\\\\Program Files\\\\Arduino IDE\\\\resources\\\\app\\\\lib\\\\backend\\\\resources\\\\clang-format.exe', '--style=file', '--dry-run', '--Werror', 'D:\\\\TCC\\\\Firmware\\\\STM32\\\\Core\\\\Inc\\\\dht22.h']\nPASS: ['C:\\\\Program Files\\\\Arduino IDE\\\\resources\\\\app\\\\lib\\\\backend\\\\resources\\\\clang-format.exe', '--style=file', '--dry-run', '--Werror', 'D:\\\\TCC\\\\Firmware\\\\STM32\\\\Core\\\\Inc\\\\lora_payload.h']\nPASS: ['C:\\\\Program Files\\\\Arduino IDE\\\\resources\\\\app\\\\lib\\\\backend\\\\resources\\\\clang-format.exe', '--style=file', '--dry-run', '--Werror', 'D:\\\\TCC\\\\Firmware\\\\STM32\\\\Core\\\\Inc\\\\lora_sx1276.h']\nPASS: ['C:\\\\Program Files\\\\Arduino IDE\\\\resources\\\\app\\\\lib\\\\backend\\\\resources\\\\clang-format.exe', '--style=file', '--dry-run', '--Werror', 'D:\\\\TCC\\\\Firmware\\\\STM32\\\\Core\\\\Inc\\\\pluviometer.h']\nPASS: ['C:\\\\Program Files\\\\Arduino IDE\\\\resources\\\\app\\\\lib\\\\backend\\\\resources\\\\clang-format.exe', '--style=file', '--dry-run', '--Werror', 'D:\\\\TCC\\\\Firmware\\\\STM32\\\\Core\\\\Inc\\\\sd_card.h']\nPASS: ['C:\\\\Program Files\\\\Arduino IDE\\\\resources\\\\app\\\\lib\\\\backend\\\\resources\\\\clang-format.exe', '--style=file', '--dry-run', '--Werror', 'D:\\\\TCC\\\\Firmware\\\\STM32\\\\Core\\\\Inc\\\\sd_spi.h']\nPASS: ['C:\\\\Program Files\\\\Arduino IDE\\\\resources\\\\app\\\\lib\\\\backend\\\\resources\\\\clang-format.exe', '--style=file', '--dry-run', '--Werror', 'D:\\\\TCC\\\\Firmware\\\\STM32\\\\Core\\\\Inc\\\\sensor_health.h']\nPASS: ['C:\\\\Program Files\\\\Arduino IDE\\\\resources\\\\app\\\\lib\\\\backend\\\\resources\\\\clang-format.exe', '--style=file', '--dry-run', '--Werror', 'D:\\\\TCC\\\\Firmware\\\\STM32\\\\Core\\\\Inc\\\\station_sample.h']\nPASS: ['C:\\\\Program Files\\\\Arduino IDE\\\\resources\\\\app\\\\lib\\\\backend\\\\resources\\\\clang-format.exe', '--style=file', '--dry-run', '--Werror', 'D:\\\\TCC\\\\Firmware\\\\STM32\\\\Core\\\\Inc\\\\storage.h']\nPASS: ['C:\\\\Program Files\\\\Arduino IDE\\\\resources\\\\app\\\\lib\\\\backend\\\\resources\\\\clang-format.exe', '--style=file', '--dry-run', '--Werror', 'D:\\\\TCC\\\\Firmware\\\\STM32\\\\Core\\\\Inc\\\\wind_vane.h']\nPASS: ['C:\\\\Program Files\\\\Arduino IDE\\\\resources\\\\app\\\\lib\\\\backend\\\\resources\\\\clang-format.exe', '--style=file', '--dry-run', '--Werror', 'D:\\\\TCC\\\\Firmware\\\\STM32\\\\Core\\\\Src\\\\anemometer.c']\nPASS: ['C:\\\\Program Files\\\\Arduino IDE\\\\resources\\\\app\\\\lib\\\\backend\\\\resources\\\\clang-format.exe', '--style=file', '--dry-run', '--Werror', 'D:\\\\TCC\\\\Firmware\\\\STM32\\\\Core\\\\Src\\\\bh1750.c']\nPASS: ['C:\\\\Program Files\\\\Arduino IDE\\\\resources\\\\app\\\\lib\\\\backend\\\\resources\\\\clang-format.exe', '--style=file', '--dry-run', '--Werror', 'D:\\\\TCC\\\\Firmware\\\\STM32\\\\Core\\\\Src\\\\bmp280.c']\nPASS: ['C:\\\\Program Files\\\\Arduino IDE\\\\resources\\\\app\\\\lib\\\\backend\\\\resources\\\\clang-format.exe', '--style=file', '--dry-run', '--Werror', 'D:\\\\TCC\\\\Firmware\\\\STM32\\\\Core\\\\Src\\\\dht22.c']\nPASS: ['C:\\\\Program Files\\\\Arduino IDE\\\\resources\\\\app\\\\lib\\\\backend\\\\resources\\\\clang-format.exe', '--style=file', '--dry-run', '--Werror', 'D:\\\\TCC\\\\Firmware\\\\STM32\\\\Core\\\\Src\\\\lora_sx1276.c']\nPASS: ['C:\\\\Program Files\\\\Arduino IDE\\\\resources\\\\app\\\\lib\\\\backend\\\\resources\\\\clang-format.exe', '--style=file', '--dry-run', '--Werror', 'D:\\\\TCC\\\\Firmware\\\\STM32\\\\Core\\\\Src\\\\pluviometer.c']\nPASS: ['C:\\\\Program Files\\\\Arduino IDE\\\\resources\\\\app\\\\lib\\\\backend\\\\resources\\\\clang-format.exe', '--style=file', '--dry-run', '--Werror', 'D:\\\\TCC\\\\Firmware\\\\STM32\\\\Core\\\\Src\\\\sd_card.c']\nPASS: ['C:\\\\Program Files\\\\Arduino IDE\\\\resources\\\\app\\\\lib\\\\backend\\\\resources\\\\clang-format.exe', '--style=file', '--dry-run', '--Werror', 'D:\\\\TCC\\\\Firmware\\\\STM32\\\\Core\\\\Src\\\\sd_spi.c']\nPASS: ['C:\\\\Program Files\\\\Arduino IDE\\\\resources\\\\app\\\\lib\\\\backend\\\\resources\\\\clang-format.exe', '--style=file', '--dry-run', '--Werror', 'D:\\\\TCC\\\\Firmware\\\\STM32\\\\Core\\\\Src\\\\sensor_health.c']\nPASS: ['C:\\\\Program Files\\\\Arduino IDE\\\\resources\\\\app\\\\lib\\\\backend\\\\resources\\\\clang-format.exe', '--style=file', '--dry-run', '--Werror', 'D:\\\\TCC\\\\Firmware\\\\STM32\\\\Core\\\\Src\\\\station_sample.c']\nPASS: ['C:\\\\Program Files\\\\Arduino IDE\\\\resources\\\\app\\\\lib\\\\backend\\\\resources\\\\clang-format.exe', '--style=file', '--dry-run', '--Werror', 'D:\\\\TCC\\\\Firmware\\\\STM32\\\\Core\\\\Src\\\\storage.c']\nPASS: ['C:\\\\Program Files\\\\Arduino IDE\\\\resources\\\\app\\\\lib\\\\backend\\\\resources\\\\clang-format.exe', '--style=file', '--dry-run', '--Werror', 'D:\\\\TCC\\\\Firmware\\\\STM32\\\\Core\\\\Src\\\\wind_vane.c']\nPASS: ['C:\\\\Program Files\\\\Arduino IDE\\\\resources\\\\app\\\\lib\\\\backend\\\\resources\\\\clang-format.exe', '--style=file', '--dry-run', '--Werror', 'D:\\\\TCC\\\\Firmware\\\\Gateway ESP32\\\\gateway_esp32_lora_V1.2.ino']\nPASS: ['C:\\\\Program Files\\\\Arduino IDE\\\\resources\\\\app\\\\lib\\\\backend\\\\resources\\\\clang-format.exe', '--style=file', '--dry-run', '--Werror', 'D:\\\\TCC\\\\Firmware\\\\Gateway ESP32\\\\gateway_credentials.example.h']\nPASS: ['C:\\\\Program Files\\\\Arduino IDE\\\\resources\\\\app\\\\lib\\\\backend\\\\resources\\\\clang-format.exe', '--style=file', '--dry-run', '--Werror', 'D:\\\\TCC\\\\Firmware\\\\Gateway ESP32\\\\lora_protocol.h']\nPASS: ['C:\\\\Program Files\\\\Arduino IDE\\\\resources\\\\app\\\\lib\\\\backend\\\\resources\\\\clang-format.exe', '--style=file', '--dry-run', '--Werror', 'D:\\\\TCC\\\\Firmware\\\\Gateway ESP32\\\\lora_protocol.cpp']\nPASS: ['C:\\\\Program Files\\\\Arduino IDE\\\\resources\\\\app\\\\lib\\\\backend\\\\resources\\\\clang-format.exe', '--style=file', '--dry-run', '--Werror', 'D:\\\\TCC\\\\Firmware\\\\Gateway ESP32\\\\lora_receive.h']\nPASS: ['C:\\\\Program Files\\\\Arduino IDE\\\\resources\\\\app\\\\lib\\\\backend\\\\resources\\\\clang-format.exe', '--style=file', '--dry-run', '--Werror', 'D:\\\\TCC\\\\Firmware\\\\tests\\\\lora\\\\fixtures.h']\nPASS: ['C:\\\\Program Files\\\\Arduino IDE\\\\resources\\\\app\\\\lib\\\\backend\\\\resources\\\\clang-format.exe', '--style=file', '--dry-run', '--Werror', 'D:\\\\TCC\\\\Firmware\\\\tests\\\\lora\\\\test_driver.c']\nPASS: ['C:\\\\Program Files\\\\Arduino IDE\\\\resources\\\\app\\\\lib\\\\backend\\\\resources\\\\clang-format.exe', '--style=file', '--dry-run', '--Werror', 'D:\\\\TCC\\\\Firmware\\\\tests\\\\lora\\\\test_gateway.cpp']\nPASS: ['C:\\\\Program Files\\\\Arduino IDE\\\\resources\\\\app\\\\lib\\\\backend\\\\resources\\\\clang-format.exe', '--style=file', '--dry-run', '--Werror', 'D:\\\\TCC\\\\Firmware\\\\tests\\\\lora\\\\test_payload.c']\nPASS: ['C:\\\\Program Files\\\\Arduino IDE\\\\resources\\\\app\\\\lib\\\\backend\\\\resources\\\\clang-format.exe', '--style=file', '--dry-run', '--Werror', 'D:\\\\TCC\\\\Firmware\\\\tests\\\\lora\\\\host\\\\stm32f4xx_hal.h']\nPASS: ['C:\\\\Program Files\\\\Arduino IDE\\\\resources\\\\app\\\\lib\\\\backend\\\\resources\\\\clang-format.exe', '--style=file', '--dry-run', '--Werror', 'D:\\\\TCC\\\\Firmware\\\\tests\\\\sensors\\\\test_integration.c']\nPASS: ['C:\\\\Program Files\\\\Arduino IDE\\\\resources\\\\app\\\\lib\\\\backend\\\\resources\\\\clang-format.exe', '--style=file', '--dry-run', '--Werror', 'D:\\\\TCC\\\\Firmware\\\\tests\\\\sensors\\\\test_sensors.c']\nPASS: ['C:\\\\Program Files\\\\Arduino IDE\\\\resources\\\\app\\\\lib\\\\backend\\\\resources\\\\clang-format.exe', '--style=file', '--dry-run', '--Werror', 'D:\\\\TCC\\\\Firmware\\\\tests\\\\sensors\\\\host\\\\fake_hal.c']\nPASS: ['C:\\\\Program Files\\\\Arduino IDE\\\\resources\\\\app\\\\lib\\\\backend\\\\resources\\\\clang-format.exe', '--style=file', '--dry-run', '--Werror', 'D:\\\\TCC\\\\Firmware\\\\tests\\\\sensors\\\\host\\\\fake_hal.h']\nPASS: ['C:\\\\Program Files\\\\Arduino IDE\\\\resources\\\\app\\\\lib\\\\backend\\\\resources\\\\clang-format.exe', '--style=file', '--dry-run', '--Werror', 'D:\\\\TCC\\\\Firmware\\\\tests\\\\sensors\\\\host\\\\fake_storage.c']\nPASS: ['C:\\\\Program Files\\\\Arduino IDE\\\\resources\\\\app\\\\lib\\\\backend\\\\resources\\\\clang-format.exe', '--style=file', '--dry-run', '--Werror', 'D:\\\\TCC\\\\Firmware\\\\tests\\\\sensors\\\\host\\\\fake_storage.h']\nPASS: ['C:\\\\Program Files\\\\Arduino IDE\\\\resources\\\\app\\\\lib\\\\backend\\\\resources\\\\clang-format.exe', '--style=file', '--dry-run', '--Werror', 'D:\\\\TCC\\\\Firmware\\\\tests\\\\sensors\\\\host\\\\ff.h']\nPASS: ['C:\\\\Program Files\\\\Arduino IDE\\\\resources\\\\app\\\\lib\\\\backend\\\\resources\\\\clang-format.exe', '--style=file', '--dry-run', '--Werror', 'D:\\\\TCC\\\\Firmware\\\\tests\\\\sensors\\\\host\\\\sd_card.h']\nPASS: ['C:\\\\Program Files\\\\Arduino IDE\\\\resources\\\\app\\\\lib\\\\backend\\\\resources\\\\clang-format.exe', '--style=file', '--dry-run', '--Werror', 'D:\\\\TCC\\\\Firmware\\\\tests\\\\sensors\\\\host\\\\sd_spi.h']\nPASS: ['C:\\\\Program Files\\\\Arduino IDE\\\\resources\\\\app\\\\lib\\\\backend\\\\resources\\\\clang-format.exe', '--style=file', '--dry-run', '--Werror', 'D:\\\\TCC\\\\Firmware\\\\tests\\\\sensors\\\\host\\\\stm32f4xx_hal.h']\n",
+      "duracao_segundos": 3.274,
+      "obrigatoria": true
+    },
+    "build": {
+      "comando": [
+        "C:\\Python314\\python.exe",
+        "tests/compilar_firmware.py",
+        "--raiz",
+        ".",
+        "--timeout",
+        "300"
+      ],
+      "diretorio": "D:\\TCC\\Firmware",
+      "status": "FAIL",
+      "returncode": 1,
+      "saida": "STM32CubeIDE localizado em: C:\\ST\\STM32CubeIDE_2.1.1\\STM32CubeIDE\nDebug: exit 0\narm-none-eabi-size  Firmware_V0.8.elf \n   text\t   data\t    bss\t    dec\t    hex\tfilename\n  82948\t    504\t   6384\t  89836\t  15eec\tFirmware_V0.8.elf\nFinished building: default.size.stdout\n \nRelease: exit 0\narm-none-eabi-size  Firmware_V0.8.elf \n   text\t   data\t    bss\t    dec\t    hex\tfilename\n  48292\t    140\t   6388\t  54820\t   d624\tFirmware_V0.8.elf\nFinished building: default.size.stdout\n \n\nPrazo excedido.\nSTM32: exit 0\ngateway ESP32: exit 124\n",
+      "duracao_segundos": 305.783,
+      "obrigatoria": true
+    },
+    "warnings": {
+      "status": "NÃO EXECUTADO",
+      "motivo": "Dependências sem PASS: ['build']",
+      "obrigatoria": true
+    },
+    "analise_estatica": {
+      "comando": [
+        "C:\\Python314\\python.exe",
+        "tests/analisar_firmware.py",
+        "--raiz",
+        "."
+      ],
+      "diretorio": "D:\\TCC\\Firmware",
+      "status": "NÃO CONFIGURADO",
+      "returncode": 125,
+      "saida": "compile_commands.json atual não foi encontrado após o build.\n",
+      "duracao_segundos": 0.27,
+      "obrigatoria": true
+    },
+    "testes_unitarios": {
+      "comando": [
+        "C:\\Python314\\python.exe",
+        "tests/executar_testes_unitarios.py",
+        "--raiz",
+        "."
+      ],
+      "diretorio": "D:\\TCC\\Firmware",
+      "status": "PASS",
+      "returncode": 0,
+      "saida": "PASS: ['C:\\\\Python314\\\\python.exe', 'tests/sensors/run.py']\nPASS test_dht_valid\nPASS test_dht_negative\nPASS test_dht_zero\nPASS test_dht_checksum\nPASS test_dht_range\nPASS test_dht_temp_range\nPASS test_dht_stuck_high\nPASS test_dht_stuck_low\nPASS test_dht_timer_off\nPASS test_dht_timer_stopped\nPASS test_dht_bad_pulse\nPASS test_dht_counter_wrap\nPASS test_dht_recovery\nPASS test_bmp_vector\nPASS test_bmp_identity\nPASS test_bmp_calibration\nPASS test_bmp_init_mismatch\nPASS test_bmp_read_nack\nPASS test_bmp_lost_config\nPASS test_bmp_final_config\nPASS test_bmp_busy_ready\nPASS test_bmp_busy_timeout\nPASS test_bmp_disabled_raw\nPASS test_bmp_zero_divisor\nPASS test_bmp_same_value\nPASS test_bmp_forced\nPASS test_bmp_bad_config\nPASS test_bh_fresh\nPASS test_bh_dark\nPASS test_bh_saturated\nPASS test_bh_nack\nPASS test_bh_receive_timeout\nPASS test_bmp_receive_timeout\nPASS test_bh_bad_factor\nPASS test_bh_init_fail\nPASS test_bh_not_ready\nPASS test_vane_majority\nPASS test_vane_boundaries\nPASS test_vane_start_fail\nPASS test_vane_timeout\nPASS test_vane_stop_fail\nPASS test_vane_init_fail\nPASS test_anem_calm\nPASS test_anem_start_fail\nPASS test_anem_start_busy\nPASS test_anem_stop_fail\nPASS test_anem_timeout_late_irq\nPASS test_anem_wrap\nPASS test_anem_pulses_irq\nPASS test_rain_dry\nPASS test_rain_counts\nPASS test_rain_wrap\nPASS test_health_transitions\nPASS test_health_initial_failure\nPASS test_health_saturation\nPASS test_health_wrap\nPASS test_sample_crc\nPASS test_sample_stale\nPASS test_sample_nonfinite\nPASS test_sample_wire_overflow\nPASS test_sample_wire_boundary\nPASS test_integration_normal\nPASS test_integration_timer_timeout\nPASS test_integration_timer_start_error\nPASS test_integration_dht_stale\nPASS test_integration_adc_error\nPASS test_integration_adc_init_failure\nPASS test_integration_adc_channel_config_failure\nPASS test_integration_adc_init_success\nPASS test_integration_actual_lut\nPASS test_integration_shared_i2c\nPASS test_integration_init_failed\nPASS test_integration_sd_absent\nPASS test_integration_health_write_failure\nPASS test_integration_rain_overflow\nPASS test_integration_log_transitions\nPASS test_storage_health_close_failure\nPASS test_storage_health_open_failure\n78/78 cenarios passaram.\nPASS: ['C:\\\\Python314\\\\python.exe', 'tests/lora/run.py']\nPASS mode_delayed\nPASS mode_stuck\nPASS mode_spi_error\nPASS mode_wrap\nPASS invalid_arguments\nPASS init_ok\nPASS init_write_error\nPASS init_read_error\nPASS init_mismatch\nPASS init_final_read_error\nPASS tx_ok\nPASS radio_ff\nPASS wrong_version\nPASS read_error\nPASS write_error\nPASS fifo_error\nPASS stale_done\nPASS disconnect_during_tx\nPASS disconnect_after_done\nPASS tx_timeout\nPASS busy_timeout\nPASS header_error\nPASS lost_config\nPASS wrong_length\nPASS bad_final_mode\nPASS timeout_wrap\nPASS final_irq_error\nPASS transient_retry\nPASS uninitialized\nPASS reset_radio\nPASS STM32 CRC de referencia e bytes exatos do pacote\nPASS gateway G01\nPASS gateway G02\nPASS gateway G03\nPASS gateway G04\nPASS gateway G05\nPASS gateway G06\nPASS gateway G07\nPASS gateway G08\nPASS gateway G09\nPASS gateway G10\nPASS gateway G11\nPASS gateway G12\nPASS gateway G13\nPASS gateway G14\nPASS gateway G15\nPASS gateway G16\nPASS gateway G17\nPASS gateway G18\nPASS gateway G19\nPASS gateway G20\nPASS gateway G21\nPASS gateway G22\nPASS gateway G23\n\n54/54 passaram; 0 falharam.\n",
+      "duracao_segundos": 7.691,
+      "obrigatoria": true
+    },
+    "testes_automatizados": {
+      "comando": [
+        "C:\\Python314\\python.exe",
+        "tests/executar_testes.py",
+        "--raiz",
+        ".",
+        "--timeout",
+        "30",
+        "--",
+        "C:\\Python314\\python.exe",
+        "tests/lora/run.py",
+        "--case",
+        "radio_ff"
+      ],
+      "diretorio": "D:\\TCC\\Firmware",
+      "status": "PASS",
+      "returncode": 0,
+      "saida": "PASS: ['C:\\\\Python314\\\\python.exe', 'tests/lora/run.py', '--case', 'radio_ff']\nPASS radio_ff\n\n1/1 passaram; 0 falharam.\n",
+      "duracao_segundos": 0.724,
+      "obrigatoria": false
+    },
+    "hil": {
+      "status": "NÃO EXECUTADO",
+      "motivo": "Dependências sem PASS: ['build']",
+      "obrigatoria": false
+    },
+    "code_review": {
+      "comando": [
+        "C:\\Python314\\python.exe",
+        "tests/verificar_revisao.py",
+        "--raiz",
+        ".",
+        "--relatorio",
+        "relatorios/revisao-tecnica.md"
+      ],
+      "diretorio": "D:\\TCC\\Firmware",
+      "status": "PASS",
+      "returncode": 0,
+      "saida": "Relatório de revisão encontrado: D:\\TCC\\Firmware\\relatorios\\revisao-tecnica.md\n",
+      "duracao_segundos": 0.128,
+      "obrigatoria": true
+    }
+  }
+}

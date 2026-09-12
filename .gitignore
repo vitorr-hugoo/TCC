@@ -25,3 +25,15 @@ _autosave-*
 # Arquivos do Windows
 Thumbs.db
 Desktop.ini
+
+# Cache local do Python
+__pycache__/
+*.py[cod]
+
+# Arquivos de recuperação locais do KiCad
+/Hardware/\#auto_saved_files\#
+/Hardware/_autosave-*.kicad_sch
+
+# Configuração local do gateway ESP32
+/Firmware/Gateway ESP32/gateway_credentials.h
+/Firmware/.arduino/

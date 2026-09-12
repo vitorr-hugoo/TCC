@@ -74,12 +74,7 @@ static uint32_t tip_snapshot = 0u;
  *        Inicializado com zeros (valid = 0) em tempo de compilação.
  */
 static Pluviometer_Data_t last_result = {
-    .rain_mm     = 0.0f,
-    .delta_mm    = 0.0f,
-    .tip_count   = 0u,
-    .delta_tips  = 0u,
-    .valid       = 0u
-};
+    .rain_mm = 0.0f, .delta_mm = 0.0f, .tip_count = 0u, .delta_tips = 0u, .valid = 0u};
 
 /* -------------------------------------------------------------------------- */
 /* Implementação das funções públicas                                          */
@@ -101,17 +96,17 @@ void pluviometer_init(void)
     __disable_irq();
     counter_overflow = 0u;
     rejected_tips = 0u;
-    tip_count     = 0u;
+    tip_count = 0u;
     last_tip_tick = 0u;
     __set_PRIMASK(irq_state);
 
     tip_snapshot = 0u;
 
-    last_result.rain_mm    = 0.0f;
-    last_result.delta_mm   = 0.0f;
-    last_result.tip_count  = 0u;
+    last_result.rain_mm = 0.0f;
+    last_result.delta_mm = 0.0f;
+    last_result.tip_count = 0u;
     last_result.delta_tips = 0u;
-    last_result.valid      = 0u;
+    last_result.valid = 0u;
 }
 
 /**
@@ -127,7 +122,10 @@ void pluviometer_init(void)
  */
 void pluviometer_read(Pluviometer_Data_t *result)
 {
-    if (result == NULL) return;
+    if (result == NULL)
+    {
+        return;
+    }
     uint8_t overflow;
     uint32_t frozen_tips;
     uint32_t delta_tips;
@@ -143,17 +141,20 @@ void pluviometer_read(Pluviometer_Data_t *result)
     delta_tips = frozen_tips - tip_snapshot;
 
     /* Cálculo de ponto flutuante no contexto do main, nunca em ISR */
-    result->rain_mm    = (float)frozen_tips * PLUV_MM_PER_TIP;
-    result->delta_mm   = (float)delta_tips  * PLUV_MM_PER_TIP;
-    result->tip_count  = frozen_tips;
+    result->rain_mm = (float)frozen_tips * PLUV_MM_PER_TIP;
+    result->delta_mm = (float)delta_tips * PLUV_MM_PER_TIP;
+    result->tip_count = frozen_tips;
     result->delta_tips = delta_tips;
-    result->valid      = !overflow;
+    result->valid = !overflow;
 
     /* Atualiza snapshot para o próximo cálculo de delta */
     tip_snapshot = frozen_tips;
 
     /* Atualiza o cache interno para pluviometer_get_last() */
-    if (result->valid) last_result = *result;
+    if (result->valid)
+    {
+        last_result = *result;
+    }
 }
 
 /**
@@ -168,18 +169,27 @@ void pluviometer_read(Pluviometer_Data_t *result)
 void pluviometer_tip_callback(void)
 {
 
-	uint32_t now = HAL_GetTick();   /* Leitura atômica do SysTick [ms] */
+    uint32_t now = HAL_GetTick(); /* Leitura atômica do SysTick [ms] */
 
     /* Debounce por software: ignora basculadas mecânicas múltiplas (bounce).
      * Subtração de uint32_t sem sinal é segura com rollover do HAL_GetTick()
      * (comportamento bem definido por aritmética modular em C99). */
     if ((now - last_tip_tick) >= (uint32_t)PLUV_DEBOUNCE_MS)
     {
-        if (tip_count < UINT32_MAX) tip_count++;
-        else counter_overflow = 1u;
+        if (tip_count < UINT32_MAX)
+        {
+            tip_count++;
+        }
+        else
+        {
+            counter_overflow = 1u;
+        }
         last_tip_tick = now;
     }
-    else if (rejected_tips < UINT32_MAX) rejected_tips++;
+    else if (rejected_tips < UINT32_MAX)
+    {
+        rejected_tips++;
+    }
 }
 
 /**
@@ -243,7 +253,13 @@ void pluviometer_get_diagnostics(uint32_t *rejected, uint32_t *last_tip_ms)
 {
     uint32_t irq_state = __get_PRIMASK();
     __disable_irq();
-    if (rejected) *rejected = rejected_tips;
-    if (last_tip_ms) *last_tip_ms = last_tip_tick;
+    if (rejected)
+    {
+        *rejected = rejected_tips;
+    }
+    if (last_tip_ms)
+    {
+        *last_tip_ms = last_tip_tick;
+    }
     __set_PRIMASK(irq_state);
 }
