@@ -1,0 +1,1 @@
+arm-none-eabi-size  Firmware_V0.8.elf\n   text	   data	    bss	    dec	    hex	filename\n  82948	    504	   6384	  89836	  15eec	Firmware_V0.8.elf\nFinished building: default.size.stdout\n\n

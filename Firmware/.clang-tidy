@@ -1,0 +1,6 @@
+---
+Checks: '-*,clang-analyzer-core.*,clang-analyzer-deadcode.*,clang-analyzer-security.*,clang-analyzer-unix.Malloc,clang-analyzer-unix.MallocSizeof,bugprone-sizeof-expression,bugprone-suspicious-memset-usage,bugprone-infinite-loop,bugprone-branch-clone,readability-braces-around-statements'
+WarningsAsErrors: ''
+HeaderFilterRegex: '.*'
+FormatStyle: none
+...

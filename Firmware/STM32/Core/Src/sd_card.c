@@ -14,35 +14,34 @@
 #include <stdio.h>
 
 /* ─── Comandos SD ────────────────────────────────────────────────────────── */
-#define SD_CMD0    0u   /**< GO_IDLE_STATE       — Reset para modo SPI       */
-#define SD_CMD8    8u   /**< SEND_IF_COND        — Verifica tensão/versão    */
-#define SD_CMD9    9u   /**< SEND_CSD             — Lê capacidade real       */
-#define SD_CMD16   16u  /**< SET_BLOCKLEN         — Força bloco de 512 bytes  */
-#define SD_CMD17   17u  /**< READ_SINGLE_BLOCK    — Lê 1 setor               */
-#define SD_CMD24   24u  /**< WRITE_BLOCK          — Escreve 1 setor          */
-#define SD_CMD55   55u  /**< APP_CMD              — Prefixo para ACMD        */
-#define SD_CMD58   58u  /**< READ_OCR             — Lê registrador de operação */
-#define SD_ACMD41  41u  /**< SD_SEND_OP_COND      — Inicia inicialização      */
+#define SD_CMD0   0u  /**< GO_IDLE_STATE       — Reset para modo SPI       */
+#define SD_CMD8   8u  /**< SEND_IF_COND        — Verifica tensão/versão    */
+#define SD_CMD9   9u  /**< SEND_CSD             — Lê capacidade real       */
+#define SD_CMD16  16u /**< SET_BLOCKLEN         — Força bloco de 512 bytes  */
+#define SD_CMD17  17u /**< READ_SINGLE_BLOCK    — Lê 1 setor               */
+#define SD_CMD24  24u /**< WRITE_BLOCK          — Escreve 1 setor          */
+#define SD_CMD55  55u /**< APP_CMD              — Prefixo para ACMD        */
+#define SD_CMD58  58u /**< READ_OCR             — Lê registrador de operação */
+#define SD_ACMD41 41u /**< SD_SEND_OP_COND      — Inicia inicialização      */
 
 /* ─── Bits de resposta R1 ────────────────────────────────────────────────── */
-#define R1_IDLE_STATE   0x01u
-#define R1_ILLEGAL_CMD  0x04u
-#define R1_READY        0x00u
+#define R1_IDLE_STATE  0x01u
+#define R1_ILLEGAL_CMD 0x04u
+#define R1_READY       0x00u
 
 /* ─── Tokens de dados ────────────────────────────────────────────────────── */
-#define TOKEN_START_BLOCK  0xFEu  /**< Início de bloco de leitura/escrita    */
-#define DATA_RESP_MASK     0x1Fu  /**< Máscara da resposta de escrita        */
-#define DATA_RESP_OK       0x05u  /**< Dados aceitos pelo cartão             */
+#define TOKEN_START_BLOCK 0xFEu /**< Início de bloco de leitura/escrita    */
+#define DATA_RESP_MASK    0x1Fu /**< Máscara da resposta de escrita        */
+#define DATA_RESP_OK      0x05u /**< Dados aceitos pelo cartão             */
 
 /* ─── Timeouts ───────────────────────────────────────────────────────────── */
 //#define INIT_RETRY_MAX   1000u   /**< Iterações máx. para ACMD41 (~1 s)      */
 //#define TOKEN_WAIT_MAX   200u    /**< ms máximos aguardando token de dado    */
 //#define BUSY_WAIT_MAX    500u    /**< ms máximos aguardando fim de escrita   */
 
-#define INIT_RETRY_MAX   2000u   /**< Iterações máx. para ACMD41 (~1 s)      */
-#define TOKEN_WAIT_MAX   1000u    /**< ms máximos aguardando token de dado    */
-#define BUSY_WAIT_MAX    2000u    /**< ms máximos aguardando fim de escrita   */
-
+#define INIT_RETRY_MAX 2000u /**< Iterações máx. para ACMD41 (~1 s)      */
+#define TOKEN_WAIT_MAX 1000u /**< ms máximos aguardando token de dado    */
+#define BUSY_WAIT_MAX  2000u /**< ms máximos aguardando fim de escrita   */
 
 /* ─── Helpers internos ───────────────────────────────────────────────────── */
 
@@ -63,8 +62,8 @@ static uint8_t _send_cmd(uint8_t cmd, uint32_t arg, uint8_t crc)
     buf[0] = 0x40u | cmd;
     buf[1] = (uint8_t)(arg >> 24);
     buf[2] = (uint8_t)(arg >> 16);
-    buf[3] = (uint8_t)(arg >>  8);
-    buf[4] = (uint8_t)(arg      );
+    buf[3] = (uint8_t)(arg >> 8);
+    buf[4] = (uint8_t)(arg);
     buf[5] = crc;
 
     /* 1 byte dummy entre o fim de uma resposta e o próximo comando */
@@ -76,9 +75,13 @@ static uint8_t _send_cmd(uint8_t cmd, uint32_t arg, uint8_t crc)
      * O cartão pode inserir até 8 bytes de espera antes de responder.
      */
     uint8_t r1 = 0xFF;
-    for (int i = 0; i < 8; i++) {
+    for (int i = 0; i < 8; i++)
+    {
         r1 = SPI1_SendByte(0xFF);
-        if (!(r1 & 0x80u)) break;  /* bit 7 = 0 → resposta válida */
+        if (!(r1 & 0x80u))
+        {
+            break; /* bit 7 = 0 → resposta válida */
+        }
     }
     return r1;
 }
@@ -93,8 +96,12 @@ static uint8_t _send_cmd(uint8_t cmd, uint32_t arg, uint8_t crc)
 static bool _wait_not_busy(uint32_t timeout_ms)
 {
     uint32_t t0 = HAL_GetTick();
-    while (SPI1_SendByte(0xFF) != 0xFF) {
-        if ((HAL_GetTick() - t0) >= timeout_ms) return false;
+    while (SPI1_SendByte(0xFF) != 0xFF)
+    {
+        if ((HAL_GetTick() - t0) >= timeout_ms)
+        {
+            return false;
+        }
     }
     return true;
 }
@@ -106,9 +113,13 @@ static bool _wait_not_busy(uint32_t timeout_ms)
 static bool _wait_start_token(void)
 {
     uint32_t t0 = HAL_GetTick();
-    uint8_t  token;
-    while ((token = SPI1_SendByte(0xFF)) == 0xFF) {
-        if ((HAL_GetTick() - t0) >= TOKEN_WAIT_MAX) return false;
+    uint8_t token;
+    while ((token = SPI1_SendByte(0xFF)) == 0xFF)
+    {
+        if ((HAL_GetTick() - t0) >= TOKEN_WAIT_MAX)
+        {
+            return false;
+        }
     }
     return (token == TOKEN_START_BLOCK);
 }
@@ -151,20 +162,17 @@ static SD_Status_t _read_csd(SD_Handle_t *hsd)
     if (csd_structure == 1u)
     {
         /* CSD v2.0 (SDHC/SDXC): capacidade = (C_SIZE + 1) * 1024 setores. */
-        uint32_t c_size = ((uint32_t)(csd[7] & 0x3Fu) << 16) |
-                          ((uint32_t)csd[8] << 8) |
-                          (uint32_t)csd[9];
+        uint32_t c_size =
+            ((uint32_t)(csd[7] & 0x3Fu) << 16) | ((uint32_t)csd[8] << 8) | (uint32_t)csd[9];
         sectors = ((uint64_t)c_size + 1u) * 1024u;
     }
     else if (csd_structure == 0u)
     {
         /* CSD v1.0 (SDSC). Converte a capacidade em blocos de 512 bytes. */
         uint8_t read_bl_len = (uint8_t)(csd[5] & 0x0Fu);
-        uint16_t c_size = (uint16_t)(((uint16_t)(csd[6] & 0x03u) << 10) |
-                                     ((uint16_t)csd[7] << 2) |
+        uint16_t c_size = (uint16_t)(((uint16_t)(csd[6] & 0x03u) << 10) | ((uint16_t)csd[7] << 2) |
                                      ((uint16_t)csd[8] >> 6));
-        uint8_t c_size_mult = (uint8_t)(((csd[9] & 0x03u) << 1) |
-                                        ((csd[10] >> 7) & 0x01u));
+        uint8_t c_size_mult = (uint8_t)(((csd[9] & 0x03u) << 1) | ((csd[10] >> 7) & 0x01u));
         uint64_t block_count = ((uint64_t)c_size + 1u) << (c_size_mult + 2u);
         uint64_t block_length = 1ULL << read_bl_len;
         sectors = (block_count * block_length) / 512u;
@@ -192,8 +200,8 @@ SD_Status_t SD_SPI_InitCard(SD_Handle_t *hsd)
         return SD_ERR_PARAM;
     }
 
-    hsd->initialized  = false;
-    hsd->type         = SD_TYPE_UNKNOWN;
+    hsd->initialized = false;
+    hsd->type = SD_TYPE_UNKNOWN;
     hsd->sector_count = 0;
 
     printf("\r\n--- INICIANDO INIT DO SD ---\r\n");
@@ -209,7 +217,10 @@ SD_Status_t SD_SPI_InitCard(SD_Handle_t *hsd)
     }
 
     printf("Enviando 80 dummy clocks...\r\n");
-    for (uint8_t i = 0u; i < 10u; i++) (void)SPI1_SendByte(0xFFu);
+    for (uint8_t i = 0u; i < 10u; i++)
+    {
+        (void)SPI1_SendByte(0xFFu);
+    }
     HAL_Delay(20);
 
     /* 2. CMD0 — Reset para modo SPI (R1 deve ser 0x01) */
@@ -217,17 +228,20 @@ SD_Status_t SD_SPI_InitCard(SD_Handle_t *hsd)
 
     printf("Enviando CMD0 (Reset SPI)...\r\n");
     uint8_t r1 = 0xFF;
-    for (int i = 0; i < 10; i++) {
+    for (int i = 0; i < 10; i++)
+    {
         r1 = _send_cmd(SD_CMD0, 0x00000000, 0x95);
-        printf("Tentativa %d, Resposta do CMD0: 0x%02X\r\n", i+1, r1);
-        if (r1 == R1_IDLE_STATE) {
+        printf("Tentativa %d, Resposta do CMD0: 0x%02X\r\n", i + 1, r1);
+        if (r1 == R1_IDLE_STATE)
+        {
             printf("-> SUCESSO: CMD0 respondeu 0x01\r\n");
             break;
         }
         HAL_Delay(10);
     }
 
-    if (r1 != R1_IDLE_STATE) {
+    if (r1 != R1_IDLE_STATE)
+    {
         printf("[SD] CMD0 sem resposta valida: 0x%02X\r\n", r1);
         return _abort_transaction(hsd, SD_ERR_NOT_RESPONDING);
     }
@@ -236,13 +250,20 @@ SD_Status_t SD_SPI_InitCard(SD_Handle_t *hsd)
     printf("Enviando CMD8...\r\n");
     r1 = _send_cmd(SD_CMD8, 0x000001AA, 0x87);
     bool is_v2 = false;
-    if (r1 == R1_IDLE_STATE) {
+    if (r1 == R1_IDLE_STATE)
+    {
         uint8_t r7[4];
-        for (int i = 0; i < 4; i++) r7[i] = SPI1_SendByte(0xFF);
-        if ((r7[2] == 0x01) && (r7[3] == 0xAA)) {
+        for (int i = 0; i < 4; i++)
+        {
+            r7[i] = SPI1_SendByte(0xFF);
+        }
+        if ((r7[2] == 0x01) && (r7[3] == 0xAA))
+        {
             printf("-> Cartao V2: Tensao aceita.\r\n");
             is_v2 = true;
-        } else {
+        }
+        else
+        {
             return _abort_transaction(hsd, SD_ERR_INIT);
         }
     }
@@ -256,20 +277,23 @@ SD_Status_t SD_SPI_InitCard(SD_Handle_t *hsd)
     uint32_t arg_acmd41 = is_v2 ? 0x40000000 : 0x00000000;
     uint32_t retry = 0;
     printf("Iniciando loop ACMD41...\r\n");
-    do {
+    do
+    {
         _send_cmd(SD_CMD55, 0x00000000, 0xFF);
-        r1 = _send_cmd(SD_ACMD41, arg_acmd41,  0xFF);
+        r1 = _send_cmd(SD_ACMD41, arg_acmd41, 0xFF);
         HAL_Delay(1);
     } while ((r1 != R1_READY) && (++retry < INIT_RETRY_MAX));
 
     printf("ACMD41 finalizado. R1: 0x%02X\r\n", r1);
 
-    if (r1 != R1_READY) {
+    if (r1 != R1_READY)
+    {
         return _abort_transaction(hsd, SD_ERR_TIMEOUT);
     }
 
     /* 5. CMD58 — Lê OCR */
-    if (is_v2) {
+    if (is_v2)
+    {
         r1 = _send_cmd(SD_CMD58, 0x00000000, 0xFF);
         if (r1 != R1_READY)
         {
@@ -277,9 +301,14 @@ SD_Status_t SD_SPI_InitCard(SD_Handle_t *hsd)
             return _abort_transaction(hsd, SD_ERR_IO);
         }
         uint8_t ocr[4];
-        for (int i = 0; i < 4; i++) ocr[i] = SPI1_SendByte(0xFF);
+        for (int i = 0; i < 4; i++)
+        {
+            ocr[i] = SPI1_SendByte(0xFF);
+        }
         hsd->type = (ocr[0] & 0x40u) ? SD_TYPE_SDHC : SD_TYPE_V2;
-    } else {
+    }
+    else
+    {
         hsd->type = SD_TYPE_V1;
     }
 
@@ -308,19 +337,25 @@ SD_Status_t SD_SPI_InitCard(SD_Handle_t *hsd)
     }
 
     hsd->initialized = true;
-    printf("[SD] Inicializado: tipo=%u, setores=%lu\r\n",
-           (unsigned)hsd->type, (unsigned long)hsd->sector_count);
+    printf("[SD] Inicializado: tipo=%u, setores=%lu\r\n", (unsigned)hsd->type,
+           (unsigned long)hsd->sector_count);
     return SD_OK;
 }
 
-SD_Status_t SD_SPI_ReadBlock(SD_Handle_t *hsd,
-                              uint32_t     sector,
-                              uint8_t     *buffer)
+SD_Status_t SD_SPI_ReadBlock(SD_Handle_t *hsd, uint32_t sector, uint8_t *buffer)
 {
-    if ((hsd == NULL) || (buffer == NULL)) return SD_ERR_PARAM;
-    if (!hsd->initialized) return SD_ERR_NOT_RESPONDING;
-    if ((hsd->sector_count > 0u) && (sector >= hsd->sector_count))
+    if ((hsd == NULL) || (buffer == NULL))
+    {
         return SD_ERR_PARAM;
+    }
+    if (!hsd->initialized)
+    {
+        return SD_ERR_NOT_RESPONDING;
+    }
+    if ((hsd->sector_count > 0u) && (sector >= hsd->sector_count))
+    {
+        return SD_ERR_PARAM;
+    }
 
     /*
      * SDHC/SDXC: endereça por número de bloco (sector).
@@ -332,12 +367,14 @@ SD_Status_t SD_SPI_ReadBlock(SD_Handle_t *hsd,
 
     /* Envia CMD17 e aguarda R1 = 0x00 */
     uint8_t r1 = _send_cmd(SD_CMD17, addr, 0xFF);
-    if (r1 != R1_READY) {
+    if (r1 != R1_READY)
+    {
         return _abort_transaction(hsd, SD_ERR_IO);
     }
 
     /* Aguarda o token de início de dados (0xFE) */
-    if (!_wait_start_token()) {
+    if (!_wait_start_token())
+    {
         return _abort_transaction(hsd, SD_ERR_TIMEOUT);
     }
 
@@ -360,14 +397,20 @@ SD_Status_t SD_SPI_ReadBlock(SD_Handle_t *hsd,
     return SD_OK;
 }
 
-SD_Status_t SD_SPI_WriteBlock(SD_Handle_t    *hsd,
-                               uint32_t        sector,
-                               const uint8_t  *buffer)
+SD_Status_t SD_SPI_WriteBlock(SD_Handle_t *hsd, uint32_t sector, const uint8_t *buffer)
 {
-    if ((hsd == NULL) || (buffer == NULL)) return SD_ERR_PARAM;
-    if (!hsd->initialized) return SD_ERR_NOT_RESPONDING;
-    if ((hsd->sector_count > 0u) && (sector >= hsd->sector_count))
+    if ((hsd == NULL) || (buffer == NULL))
+    {
         return SD_ERR_PARAM;
+    }
+    if (!hsd->initialized)
+    {
+        return SD_ERR_NOT_RESPONDING;
+    }
+    if ((hsd->sector_count > 0u) && (sector >= hsd->sector_count))
+    {
+        return SD_ERR_PARAM;
+    }
 
     uint32_t addr = (hsd->type == SD_TYPE_SDHC) ? sector : sector * 512;
 
@@ -375,7 +418,8 @@ SD_Status_t SD_SPI_WriteBlock(SD_Handle_t    *hsd,
 
     /* Envia CMD24 e aguarda R1 = 0x00 */
     uint8_t r1 = _send_cmd(SD_CMD24, addr, 0xFF);
-    if (r1 != R1_READY) {
+    if (r1 != R1_READY)
+    {
         return _abort_transaction(hsd, SD_ERR_IO);
     }
 
@@ -385,7 +429,8 @@ SD_Status_t SD_SPI_WriteBlock(SD_Handle_t    *hsd,
 
     /* Transfere os 512 bytes de dados via DMA */
     HAL_StatusTypeDef dma_ret = SPI1_DMA_WriteBlock(buffer);
-    if (dma_ret != HAL_OK) {
+    if (dma_ret != HAL_OK)
+    {
         return _abort_transaction(hsd, SD_ERR_IO);
     }
 
@@ -401,7 +446,8 @@ SD_Status_t SD_SPI_WriteBlock(SD_Handle_t    *hsd,
      *   0b01101        = Write error.
      */
     uint8_t resp = SPI1_SendByte(0xFF) & DATA_RESP_MASK;
-    if (resp != DATA_RESP_OK) {
+    if (resp != DATA_RESP_OK)
+    {
         return _abort_transaction(hsd, SD_ERR_IO);
     }
 
@@ -411,7 +457,8 @@ SD_Status_t SD_SPI_WriteBlock(SD_Handle_t    *hsd,
      * PITFALL: não deselecionar o CS durante o busy wait — isso abortaria
      * a escrita e poderia corromper o setor.
      */
-    if (!_wait_not_busy(BUSY_WAIT_MAX)) {
+    if (!_wait_not_busy(BUSY_WAIT_MAX))
+    {
         return _abort_transaction(hsd, SD_ERR_TIMEOUT);
     }
 
@@ -443,13 +490,21 @@ SD_Status_t SD_SPI_Sync(SD_Handle_t *hsd)
 
 const char *SD_StatusStr(SD_Status_t status)
 {
-    switch (status) {
-        case SD_OK:                 return "OK";
-        case SD_ERR_NOT_RESPONDING: return "CARTAO/SPI NAO RESPONDEU";
-        case SD_ERR_TIMEOUT:        return "TIMEOUT - Cartao nao respondeu no prazo";
-        case SD_ERR_INIT:           return "FALHA DE INIT - Cartao incompativel ou danificado";
-        case SD_ERR_IO:             return "ERRO DE I/O - Falha na leitura ou escrita do bloco";
-        case SD_ERR_PARAM:          return "PARAMETRO INVALIDO";
-        default:                    return "ERRO DESCONHECIDO";
+    switch (status)
+    {
+        case SD_OK:
+            return "OK";
+        case SD_ERR_NOT_RESPONDING:
+            return "CARTAO/SPI NAO RESPONDEU";
+        case SD_ERR_TIMEOUT:
+            return "TIMEOUT - Cartao nao respondeu no prazo";
+        case SD_ERR_INIT:
+            return "FALHA DE INIT - Cartao incompativel ou danificado";
+        case SD_ERR_IO:
+            return "ERRO DE I/O - Falha na leitura ou escrita do bloco";
+        case SD_ERR_PARAM:
+            return "PARAMETRO INVALIDO";
+        default:
+            return "ERRO DESCONHECIDO";
     }
 }

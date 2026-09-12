@@ -1,0 +1,18 @@
+{
+  "resultado": "PASS",
+  "execucoes": [
+    {
+      "comando": [
+        "python",
+        "tests\\lora\\run.py",
+        "--case",
+        "radio_ff"
+      ],
+      "diretorio": "D:\\TCC\\Firmware",
+      "status": "PASS",
+      "returncode": 0,
+      "saida": "PASS radio_ff\n\n1/1 passaram; 0 falharam.\n",
+      "duracao_segundos": 0.989
+    }
+  ]
+}

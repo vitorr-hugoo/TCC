@@ -1,3 +1,8 @@
+/**
+ * @file lora_payload.h
+ * @brief Define o contrato binário legado de 18 bytes transmitido por LoRa.
+ */
+
 #ifndef LORA_PAYLOAD_H
 #define LORA_PAYLOAD_H
 #include <stdint.h>
@@ -5,17 +10,18 @@
 
 /* Formato little-endian preservado no STM32 e ESP32. */
 #pragma pack(push, 1)
-typedef struct {
-    uint8_t  node_id;
+typedef struct
+{
+    uint8_t node_id;
     uint16_t seq;
-    int16_t  temperature_x10;
+    int16_t temperature_x10;
     uint16_t humidity_x10;
     uint16_t pressure_hpa_x1;
     uint16_t illuminance_lux_x1;
-    int16_t  wind_speed_x100;
+    int16_t wind_speed_x100;
     uint16_t wind_dir_deg;
     uint16_t rain_mm_x100;
-    uint8_t  crc8;
+    uint8_t crc8;
 } LoRaPayload_t;
 #pragma pack(pop)
 _Static_assert(sizeof(LoRaPayload_t) == 18u, "Payload LoRa deve ter 18 bytes");
@@ -31,9 +37,13 @@ static inline uint8_t App_CRC8(const uint8_t *data, uint16_t len)
         for (uint8_t b = 0; b < 8u; b++)
         {
             if (crc & 0x80u)
+            {
                 crc = (uint8_t)((crc << 1) ^ 0x07u);
+            }
             else
+            {
                 crc <<= 1;
+            }
         }
     }
 

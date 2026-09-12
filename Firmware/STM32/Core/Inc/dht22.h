@@ -28,7 +28,8 @@
 #define DHT22_H
 
 #ifdef __cplusplus
-extern "C" {
+extern "C"
+{
 #endif
 
 /* ─── Includes ──────────────────────────────────────────────────────────── */
@@ -37,10 +38,10 @@ extern "C" {
 
 /* ─── Constantes de temporização (µs) ───────────────────────────────────── */
 /** Duração do sinal de START em nível baixo (spec: mínimo 1 ms) */
-#define DHT22_START_LOW_MS       18u
+#define DHT22_START_LOW_MS 18u
 
 /** Tempo limite de espera por qualquer transição de borda (ticks de timer) */
-#define DHT22_EDGE_TIMEOUT_US    120u
+#define DHT22_EDGE_TIMEOUT_US 120u
 
 /**
  * Limiar de duração do pulso alto para distinguir bit '0' de bit '1'.
@@ -48,39 +49,41 @@ extern "C" {
  * bit '1': pulso alto ~70 µs
  * Limiar recomendado: ~40 µs  →  40 ticks com resolução de 1 µs/tick
  */
-#define DHT22_BIT_THRESHOLD_US   40u
+#define DHT22_BIT_THRESHOLD_US 40u
 
-/* ─── Tipo de retorno ────────────────────────────────────────────────────── */
-/**
+    /* ─── Tipo de retorno ────────────────────────────────────────────────────── */
+    /**
  * @brief Códigos de status retornados por DHT22_Read().
  */
-typedef enum {
-    DHT22_OK            = 0x00, /**< Leitura bem-sucedida                  */
-    DHT22_ERR_TIMEOUT   = 0x01, /**< Timeout aguardando resposta do sensor */
-    DHT22_ERR_CHECKSUM  = 0x02, /**< Dados recebidos com erro de paridade  */
-    DHT22_ERR_RANGE = 3,
-    DHT22_ERR_TIMER = 4,
-} DHT22_Status_t;
+    typedef enum
+    {
+        DHT22_OK = 0x00,           /**< Leitura bem-sucedida                  */
+        DHT22_ERR_TIMEOUT = 0x01,  /**< Timeout aguardando resposta do sensor */
+        DHT22_ERR_CHECKSUM = 0x02, /**< Dados recebidos com erro de paridade  */
+        DHT22_ERR_RANGE = 3,
+        DHT22_ERR_TIMER = 4,
+    } DHT22_Status_t;
 
-/* ─── Handle do sensor ───────────────────────────────────────────────────── */
-/**
+    /* ─── Handle do sensor ───────────────────────────────────────────────────── */
+    /**
  * @brief Estrutura de controle de uma instância do sensor DHT22.
  *        Instancie uma struct por sensor utilizado.
  */
-typedef struct {
-    /* ── Configuração (preenchida por DHT22_Init) ── */
-    GPIO_TypeDef        *gpio_port;   /**< Porta GPIO do pino de dados       */
-    uint16_t             gpio_pin;    /**< Pino GPIO (ex.: GPIO_PIN_8)       */
-    TIM_HandleTypeDef   *htim;        /**< Timer usado para medir duração    */
+    typedef struct
+    {
+        /* ── Configuração (preenchida por DHT22_Init) ── */
+        GPIO_TypeDef *gpio_port; /**< Porta GPIO do pino de dados       */
+        uint16_t gpio_pin;       /**< Pino GPIO (ex.: GPIO_PIN_8)       */
+        TIM_HandleTypeDef *htim; /**< Timer usado para medir duração    */
 
-    /* ── Dados lidos (válidos quando DHT22_Read retorna DHT22_OK) ── */
-    float                temperature; /**< Temperatura em graus Celsius      */
-    float                humidity;    /**< Umidade relativa em %             */
-} DHT22_Handle_t;
+        /* ── Dados lidos (válidos quando DHT22_Read retorna DHT22_OK) ── */
+        float temperature; /**< Temperatura em graus Celsius      */
+        float humidity;    /**< Umidade relativa em %             */
+    } DHT22_Handle_t;
 
-/* ─── Protótipos ─────────────────────────────────────────────────────────── */
+    /* ─── Protótipos ─────────────────────────────────────────────────────────── */
 
-/**
+    /**
  * @brief  Inicializa o handle do DHT22 com os recursos de hardware.
  *
  * @param  hdev       Ponteiro para o handle do sensor.
@@ -90,12 +93,10 @@ typedef struct {
  *                    O timer deve estar iniciado (HAL_TIM_Base_Start) antes
  *                    de chamar DHT22_Read.
  */
-void DHT22_Init(DHT22_Handle_t    *hdev,
-                GPIO_TypeDef      *gpio_port,
-                uint16_t           gpio_pin,
-                TIM_HandleTypeDef *htim);
+    void DHT22_Init(DHT22_Handle_t *hdev, GPIO_TypeDef *gpio_port, uint16_t gpio_pin,
+                    TIM_HandleTypeDef *htim);
 
-/**
+    /**
  * @brief  Realiza uma leitura completa do sensor DHT22 (40 bits).
  *
  * @note   O DHT22 requer intervalo mínimo de 2 s entre leituras consecutivas.
@@ -106,16 +107,15 @@ void DHT22_Init(DHT22_Handle_t    *hdev,
  * @retval DHT22_ERR_TIMEOUT  Sensor não respondeu (verificar fiação/pull-up).
  * @retval DHT22_ERR_CHECKSUM Dado corrompido (ruído no cabo ou sensor defeituoso).
  */
-DHT22_Status_t DHT22_Read(DHT22_Handle_t *hdev);
+    DHT22_Status_t DHT22_Read(DHT22_Handle_t *hdev);
 
-/**
+    /**
  * @brief  Retorna uma string descritiva do código de erro.
  *
  * @param  status  Código retornado por DHT22_Read().
  * @retval Ponteiro para string estática (não modificar).
  */
-const char *DHT22_StatusStr(DHT22_Status_t status);
-
+    const char *DHT22_StatusStr(DHT22_Status_t status);
 
 #ifdef __cplusplus
 }

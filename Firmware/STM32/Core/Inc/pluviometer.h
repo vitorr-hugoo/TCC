@@ -33,7 +33,8 @@
 #define PLUVIOMETER_H
 
 #ifdef __cplusplus
-extern "C" {
+extern "C"
+{
 #endif
 
 /* -------------------------------------------------------------------------- */
@@ -54,7 +55,7 @@ extern "C" {
  *        Chuva máxima típica (~300 mm/h) → ~1 basculada/s (período = 1000 ms)
  *        para funis padrão de 0,2794 mm/tip.
  */
-#define PLUV_DEBOUNCE_MS        200u
+#define PLUV_DEBOUNCE_MS 200u
 
 /**
  * @brief Volume de precipitação correspondente a uma basculada [mm].
@@ -64,7 +65,7 @@ extern "C" {
  * @note  O valor 0.2794f é equivalente a 1 polegada / 91 tips (especificação
  *        do fabricante). Multiplica-se pela área do funil internamente ao fator.
  */
-#define PLUV_MM_PER_TIP         0.2794f
+#define PLUV_MM_PER_TIP 0.2794f
 
 /**
  * @brief Valor máximo do totalizador de basculadas antes de overflow.
@@ -73,28 +74,29 @@ extern "C" {
  *        (diário) ocorrerá muito antes.
  *        Definido como UINT32_MAX para uso em verificação defensiva futura.
  */
-#define PLUV_TIP_COUNT_MAX      (0xFFFFFFFFu)
+#define PLUV_TIP_COUNT_MAX (0xFFFFFFFFu)
 
-/* -------------------------------------------------------------------------- */
-/* Tipos públicos                                                              */
-/* -------------------------------------------------------------------------- */
+    /* -------------------------------------------------------------------------- */
+    /* Tipos públicos                                                              */
+    /* -------------------------------------------------------------------------- */
 
-/**
+    /**
  * @brief Estrutura com o resultado de uma leitura do pluviômetro.
  */
-typedef struct {
-    float    rain_mm;         /**< Precipitação acumulada desde o último reset [mm]       */
-    float    delta_mm;        /**< Precipitação do intervalo atual (desde última leitura) [mm] */
-    uint32_t tip_count;       /**< Número bruto de basculadas desde o último reset        */
-    uint32_t delta_tips;      /**< Basculadas do intervalo atual (desde última leitura)   */
-    uint8_t  valid;           /**< 1 = leitura calculada com sucesso; 0 = pendente/vazia  */
-} Pluviometer_Data_t;
+    typedef struct
+    {
+        float rain_mm;       /**< Precipitação acumulada desde o último reset [mm]       */
+        float delta_mm;      /**< Precipitação do intervalo atual (desde última leitura) [mm] */
+        uint32_t tip_count;  /**< Número bruto de basculadas desde o último reset        */
+        uint32_t delta_tips; /**< Basculadas do intervalo atual (desde última leitura)   */
+        uint8_t valid;       /**< 1 = leitura calculada com sucesso; 0 = pendente/vazia  */
+    } Pluviometer_Data_t;
 
-/* -------------------------------------------------------------------------- */
-/* Protótipos de funções públicas                                              */
-/* -------------------------------------------------------------------------- */
+    /* -------------------------------------------------------------------------- */
+    /* Protótipos de funções públicas                                              */
+    /* -------------------------------------------------------------------------- */
 
-/**
+    /**
  * @brief  Inicializa as variáveis internas do módulo pluviômetro.
  *
  * @details Deve ser chamada uma única vez, após MX_GPIO_Init(), antes do
@@ -102,9 +104,9 @@ typedef struct {
  *          de último resultado. NÃO habilita interrupção — a EXTI é habilitada
  *          automaticamente pelo CubeMX via MX_GPIO_Init().
  */
-void pluviometer_init(void);
+    void pluviometer_init(void);
 
-/**
+    /**
  * @brief  Lê o totalizador de basculadas e calcula a precipitação acumulada.
  *
  * @details Captura atomicamente o valor atual de tip_count (seção crítica),
@@ -116,9 +118,9 @@ void pluviometer_init(void);
  *
  * @param  result  Ponteiro para a struct de saída; não pode ser NULL.
  */
-void pluviometer_read(Pluviometer_Data_t *result);
+    void pluviometer_read(Pluviometer_Data_t *result);
 
-/**
+    /**
  * @brief  Callback de contagem de basculadas — chamado pela ISR do EXTI.
  *
  * @details Aplica debounce por software (PLUV_DEBOUNCE_MS) e, se o intervalo
@@ -127,18 +129,18 @@ void pluviometer_read(Pluviometer_Data_t *result);
  *          DEVE ser chamada dentro de HAL_GPIO_EXTI_Callback,
  *          na guarda if (GPIO_Pin == PLUV_RAIN_Pin).
  */
-void pluviometer_tip_callback(void);
+    void pluviometer_tip_callback(void);
 
-/**
+    /**
  * @brief  Zera o totalizador de basculadas e o snapshot de delta.
  *
  * @details Usa seção crítica para garantir atomicidade. Deve ser chamada
  *          periodicamente (ex: a cada 24 h pelo RTC, ou no início de cada
  *          período de monitoramento). Não afeta o cache de last_result.
  */
-void pluviometer_reset(void);
+    void pluviometer_reset(void);
 
-/**
+    /**
  * @brief  Retorna o último resultado calculado por pluviometer_read().
  *
  * @details Retorna cópia por valor da struct interna. Se pluviometer_read()
@@ -147,9 +149,9 @@ void pluviometer_reset(void);
  *
  * @return  Última Pluviometer_Data_t calculada, ou struct zerada (valid = 0).
  */
-Pluviometer_Data_t pluviometer_get_last(void);
+    Pluviometer_Data_t pluviometer_get_last(void);
 
-/**
+    /**
  * @brief  Retorna o número bruto de basculadas acumuladas desde o último reset.
  *
  * @details Leitura atômica do totalizador. Útil para inspeção rápida sem
@@ -158,8 +160,8 @@ Pluviometer_Data_t pluviometer_get_last(void);
  *
  * @return  Valor atual do totalizador tip_count.
  */
-uint32_t pluviometer_get_tip_count(void);
-void pluviometer_get_diagnostics(uint32_t *rejected, uint32_t *last_tip_ms);
+    uint32_t pluviometer_get_tip_count(void);
+    void pluviometer_get_diagnostics(uint32_t *rejected, uint32_t *last_tip_ms);
 
 #ifdef __cplusplus
 }

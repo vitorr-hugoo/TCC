@@ -22,7 +22,8 @@
 #define ANEMOMETER_H
 
 #ifdef __cplusplus
-extern "C" {
+extern "C"
+{
 #endif
 
 /* -------------------------------------------------------------------------- */
@@ -40,55 +41,56 @@ extern "C" {
  *        Velocidade máxima física (~50 m/s) gera ~25 Hz (período ≈ 40 ms).
  *        20 ms é margem conservadora; filtra bounces residuais do reed switch.
  */
-#define ANEM_DEBOUNCE_MS        20u
+#define ANEM_DEBOUNCE_MS 20u
 
 /**
  * @brief Duração da janela de integração de pulsos [ms].
  *        Deve coincidir com a configuração do ARR/PSC do TIM6.
  */
-#define ANEM_SAMPLE_WINDOW_MS   1000u
-#define ANEM_TIMEOUT_MARGIN_MS  1000u
+#define ANEM_SAMPLE_WINDOW_MS  1000u
+#define ANEM_TIMEOUT_MARGIN_MS 1000u
 
 /**
  * @brief Número de pulsos gerados por rotação completa do eixo (WH-SP-WS01).
  *        O imã fecha o reed switch duas vezes por volta.
  */
-#define ANEM_PULSES_PER_REV     2u
+#define ANEM_PULSES_PER_REV 2u
 
 /**
  * @brief Fator de conversão do fabricante: 1 Hz de pulsos = 2,4 km/h.
  *        Equivale a: 1 fechamento/s = 1,2 km/h; como há 2 pulsos/rev → 2,4 km/h/Hz.
  */
-#define ANEM_KMH_PER_HZ         2.4f
+#define ANEM_KMH_PER_HZ 2.4f
 
-/* -------------------------------------------------------------------------- */
-/* Tipos públicos                                                              */
-/* -------------------------------------------------------------------------- */
+    /* -------------------------------------------------------------------------- */
+    /* Tipos públicos                                                              */
+    /* -------------------------------------------------------------------------- */
 
-/**
+    /**
  * @brief Estrutura com o resultado de uma janela de amostragem.
  */
-typedef struct {
-    float    speed_ms;      /**< Velocidade calculada em metros por segundo [m/s]        */
-    float    speed_kmh;     /**< Velocidade calculada em quilômetros por hora [km/h]     */
-    uint32_t pulse_count;   /**< Quantidade bruta de pulsos capturados na janela         */
-    uint8_t  valid;         /**< 1 = leitura disponível e calculada; 0 = leitura invalida/pendente  */
-} Anemometer_Data_t;
+    typedef struct
+    {
+        float speed_ms;       /**< Velocidade calculada em metros por segundo [m/s]        */
+        float speed_kmh;      /**< Velocidade calculada em quilômetros por hora [km/h]     */
+        uint32_t pulse_count; /**< Quantidade bruta de pulsos capturados na janela         */
+        uint8_t valid; /**< 1 = leitura disponível e calculada; 0 = leitura invalida/pendente  */
+    } Anemometer_Data_t;
 
-/* -------------------------------------------------------------------------- */
-/* Protótipos de funções públicas                                              */
-/* -------------------------------------------------------------------------- */
+    /* -------------------------------------------------------------------------- */
+    /* Protótipos de funções públicas                                              */
+    /* -------------------------------------------------------------------------- */
 
-/**
+    /**
  * @brief  Inicializa as variáveis internas do módulo.
  *
  * @details Deve ser chamada uma única vez, após MX_GPIO_Init() e MX_TIM6_Init(),
  *          antes do início do loop principal. NÃO inicia o timer nem habilita
  *          a interrupção EXTI — apenas garante estado interno limpo e definido.
  */
-void anemometer_init(void);
+    void anemometer_init(void);
 
-/**
+    /**
  * @brief  Inicia uma nova janela de amostragem de 1 segundo.
  *
  * @details - Zera o contador de pulsos e o timestamp do último pulso válido.
@@ -98,9 +100,9 @@ void anemometer_init(void);
  *
  * @param  htim  Ponteiro para o handle do TIM6 (htim6, declarado em main.c).
  */
-HAL_StatusTypeDef anemometer_start_sampling(TIM_HandleTypeDef *htim);
+    HAL_StatusTypeDef anemometer_start_sampling(TIM_HandleTypeDef *htim);
 
-/**
+    /**
  * @brief  Encerra a janela de amostragem e congela o contador de pulsos.
  *
  * @details - Para o TIM6 (HAL_TIM_Base_Stop_IT).
@@ -111,12 +113,13 @@ HAL_StatusTypeDef anemometer_start_sampling(TIM_HandleTypeDef *htim);
  *
  * @param  htim  Ponteiro para o handle do TIM6.
  */
-void anemometer_stop_sampling(TIM_HandleTypeDef *htim);
-/* Service in main after other reads; HAL_BUSY means window still pending. */
-HAL_StatusTypeDef anemometer_service(TIM_HandleTypeDef *htim, uint32_t now);
-void anemometer_get_diagnostics(uint32_t *accepted, uint32_t *rejected, uint32_t *last_pulse_ms);
+    void anemometer_stop_sampling(TIM_HandleTypeDef *htim);
+    /* Service in main after other reads; HAL_BUSY means window still pending. */
+    HAL_StatusTypeDef anemometer_service(TIM_HandleTypeDef *htim, uint32_t now);
+    void anemometer_get_diagnostics(uint32_t *accepted, uint32_t *rejected,
+                                    uint32_t *last_pulse_ms);
 
-/**
+    /**
  * @brief  Calcula a velocidade do vento a partir dos pulsos congelados.
  *
  * @details Converte o valor de frozen_count em frequência (Hz) e aplica o
@@ -128,9 +131,9 @@ void anemometer_get_diagnostics(uint32_t *accepted, uint32_t *rejected, uint32_t
  * @param  window_ms  Duração real da janela de integração [ms] (use ANEM_SAMPLE_WINDOW_MS).
  * @param  result     Ponteiro para a struct de saída; não pode ser NULL.
  */
-void anemometer_calculate(uint32_t window_ms, Anemometer_Data_t *result);
+    void anemometer_calculate(uint32_t window_ms, Anemometer_Data_t *result);
 
-/**
+    /**
  * @brief  Callback de contagem de pulsos — chamado pela ISR de EXTI.
  *
  * @details Aplica debounce por software (ANEM_DEBOUNCE_MS) comparando
@@ -140,9 +143,9 @@ void anemometer_calculate(uint32_t window_ms, Anemometer_Data_t *result);
  *          DEVE ser chamada dentro de HAL_GPIO_EXTI_Callback,
  *          na guarda if (GPIO_Pin == ANEM_SPEED_Pin).
  */
-void anemometer_pulse_callback(void);
+    void anemometer_pulse_callback(void);
 
-/**
+    /**
  * @brief  Verifica se uma janela de amostragem foi concluída.
  *
  * @details NÃO consome o flag interno — apenas o lê. Use anemometer_calculate()
@@ -151,9 +154,9 @@ void anemometer_pulse_callback(void);
  * @return  1  se o resultado estiver disponível para leitura.
  * @return  0  caso contrário (janela em andamento ou módulo não iniciado).
  */
-uint8_t anemometer_is_ready(void);
+    uint8_t anemometer_is_ready(void);
 
-/**
+    /**
  * @brief  Retorna o último resultado calculado (cópia da struct interna).
  *
  * @details Se nenhuma janela foi concluída e calculada ainda, retorna uma
@@ -161,7 +164,7 @@ uint8_t anemometer_is_ready(void);
  *
  * @return  Cópia por valor da última Anemometer_Data_t calculada.
  */
-Anemometer_Data_t anemometer_get_last(void);
+    Anemometer_Data_t anemometer_get_last(void);
 
 #ifdef __cplusplus
 }

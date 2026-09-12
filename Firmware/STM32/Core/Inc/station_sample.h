@@ -1,8 +1,14 @@
+/**
+ * @file station_sample.h
+ * @brief Declara validação e codificação da amostra da estação.
+ */
+
 #ifndef STATION_SAMPLE_H
 #define STATION_SAMPLE_H
 #include "sensor_health.h"
 #include "lora_payload.h"
-typedef struct {
+typedef struct
+{
     uint32_t timestamp_ms;
     SensorReason reason[SENSOR_COUNT];
     float temperature, humidity, pressure, bmp_temperature, altitude;

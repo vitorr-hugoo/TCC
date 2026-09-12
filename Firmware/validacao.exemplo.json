@@ -1,0 +1,13 @@
+{
+  "revisao": "ADAPTAR: commit + diff não commitado + variante + toolchain",
+  "etapas": {
+    "formatacao": {"obrigatoria": true, "comando": null, "depende_de": [], "motivo": "Selecionar fontes próprias para verificar_formatacao.py"},
+    "build": {"obrigatoria": true, "comando": null, "depende_de": [], "motivo": "Definir comando de build existente"},
+    "warnings": {"obrigatoria": true, "comando": null, "depende_de": ["build"], "motivo": "Definir gate que compara warnings com baseline"},
+    "analise_estatica": {"obrigatoria": true, "comando": null, "depende_de": [], "motivo": "Configurar analisador e compilation database"},
+    "testes_unitarios": {"obrigatoria": true, "comando": null, "depende_de": [], "motivo": "Definir build e runner host que falhe em zero testes"},
+    "testes_automatizados": {"obrigatoria": false, "comando": null, "depende_de": [], "motivo": "Identificar testes adicionais existentes"},
+    "hil": {"obrigatoria": false, "comando": null, "depende_de": ["build"], "motivo": "Definir setup de placa e obrigatoriedade conforme requisitos"},
+    "code_review": {"obrigatoria": true, "comando": null, "depende_de": [], "motivo": "Executar revisão técnica e fornecer gate de evidência vinculado à revisão atual"}
+  }
+}
