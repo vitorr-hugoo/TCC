@@ -14,6 +14,9 @@
 *.lck
 *-backups/
 fp-info-cache
+# Arquivos de recuperacao automatica do KiCad
+#auto_saved_files#
+_autosave-*
 
 # Arquivos do Windows
 Thumbs.db

@@ -1,0 +1,1369 @@
+(kicad_sch
+	(version 20250114)
+	(generator "eeschema")
+	(generator_version "9.0")
+	(uuid "6c377433-9c72-4804-96a1-5faf47244716")
+	(paper "A4")
+	(lib_symbols
+		(symbol "74xx:74LVC125"
+			(pin_names
+				(offset 1.016)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "U"
+				(at 0 1.27 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "74LVC125"
+				(at 0 -1.27 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "http://www.ti.com/lit/gpn/sn74LVC125"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Quad buffer 3-State outputs"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_locked" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_keywords" "TTL buffer 3State"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "DIP*W7.62mm*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "74LVC125_1_0"
+				(polyline
+					(pts
+						(xy -3.81 3.81) (xy -3.81 -3.81) (xy 3.81 0) (xy -3.81 3.81)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type background)
+					)
+				)
+				(pin input line
+					(at -7.62 0 0)
+					(length 3.81)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin input inverted
+					(at 0 -6.35 90)
+					(length 4.445)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin tri_state line
+					(at 7.62 0 180)
+					(length 3.81)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(symbol "74LVC125_2_0"
+				(polyline
+					(pts
+						(xy -3.81 3.81) (xy -3.81 -3.81) (xy 3.81 0) (xy -3.81 3.81)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type background)
+					)
+				)
+				(pin input line
+					(at -7.62 0 0)
+					(length 3.81)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "5"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin input inverted
+					(at 0 -6.35 90)
+					(length 4.445)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "4"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin tri_state line
+					(at 7.62 0 180)
+					(length 3.81)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "6"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(symbol "74LVC125_3_0"
+				(polyline
+					(pts
+						(xy -3.81 3.81) (xy -3.81 -3.81) (xy 3.81 0) (xy -3.81 3.81)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type background)
+					)
+				)
+				(pin input line
+					(at -7.62 0 0)
+					(length 3.81)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "9"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin input inverted
+					(at 0 -6.35 90)
+					(length 4.445)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "10"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin tri_state line
+					(at 7.62 0 180)
+					(length 3.81)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "8"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(symbol "74LVC125_4_0"
+				(polyline
+					(pts
+						(xy -3.81 3.81) (xy -3.81 -3.81) (xy 3.81 0) (xy -3.81 3.81)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type background)
+					)
+				)
+				(pin input line
+					(at -7.62 0 0)
+					(length 3.81)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "12"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin input inverted
+					(at 0 -6.35 90)
+					(length 4.445)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "13"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin tri_state line
+					(at 7.62 0 180)
+					(length 3.81)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "11"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(symbol "74LVC125_5_0"
+				(pin power_in line
+					(at 0 12.7 270)
+					(length 5.08)
+					(name "VCC"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "14"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin power_in line
+					(at 0 -12.7 90)
+					(length 5.08)
+					(name "GND"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "7"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(symbol "74LVC125_5_1"
+				(rectangle
+					(start -5.08 7.62)
+					(end 5.08 -7.62)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type background)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+		(symbol "Connector:Micro_SD_Card"
+			(pin_names
+				(offset 1.016)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "J"
+				(at -16.51 15.24 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "Micro_SD_Card"
+				(at 16.51 15.24 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify right)
+				)
+			)
+			(property "Footprint" ""
+				(at 29.21 7.62 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "https://www.we-online.com/components/products/datasheet/693072010801.pdf"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Micro SD Card Socket"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "connector SD microsd"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "microSD*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "Micro_SD_Card_0_1"
+				(polyline
+					(pts
+						(xy -8.89 -11.43) (xy -8.89 8.89) (xy -1.27 8.89) (xy 2.54 12.7) (xy 3.81 12.7) (xy 3.81 11.43)
+						(xy 6.35 11.43) (xy 7.62 12.7) (xy 20.32 12.7) (xy 20.32 -11.43) (xy -8.89 -11.43)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type background)
+					)
+				)
+				(rectangle
+					(start -7.62 8.255)
+					(end -5.08 6.985)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type outline)
+					)
+				)
+				(rectangle
+					(start -7.62 5.715)
+					(end -5.08 4.445)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type outline)
+					)
+				)
+				(rectangle
+					(start -7.62 3.175)
+					(end -5.08 1.905)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type outline)
+					)
+				)
+				(rectangle
+					(start -7.62 0.635)
+					(end -5.08 -0.635)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type outline)
+					)
+				)
+				(rectangle
+					(start -7.62 -1.905)
+					(end -5.08 -3.175)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type outline)
+					)
+				)
+				(rectangle
+					(start -7.62 -4.445)
+					(end -5.08 -5.715)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type outline)
+					)
+				)
+				(rectangle
+					(start -7.62 -6.985)
+					(end -5.08 -8.255)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type outline)
+					)
+				)
+				(rectangle
+					(start -7.62 -9.525)
+					(end -5.08 -10.795)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type outline)
+					)
+				)
+				(polyline
+					(pts
+						(xy 16.51 12.7) (xy 16.51 13.97) (xy -19.05 13.97) (xy -19.05 -16.51) (xy 16.51 -16.51) (xy 16.51 -11.43)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "Micro_SD_Card_1_1"
+				(pin bidirectional line
+					(at -22.86 7.62 0)
+					(length 3.81)
+					(name "DAT2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at -22.86 5.08 0)
+					(length 3.81)
+					(name "DAT3/CD"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin input line
+					(at -22.86 2.54 0)
+					(length 3.81)
+					(name "CMD"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin power_in line
+					(at -22.86 0 0)
+					(length 3.81)
+					(name "VDD"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "4"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin input line
+					(at -22.86 -2.54 0)
+					(length 3.81)
+					(name "CLK"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "5"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin power_in line
+					(at -22.86 -5.08 0)
+					(length 3.81)
+					(name "VSS"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "6"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at -22.86 -7.62 0)
+					(length 3.81)
+					(name "DAT0"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "7"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at -22.86 -10.16 0)
+					(length 3.81)
+					(name "DAT1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "8"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 20.32 -15.24 180)
+					(length 3.81)
+					(name "SHIELD"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "9"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+	)
+	(symbol
+		(lib_id "74xx:74LVC125")
+		(at 102.87 140.97 0)
+		(unit 3)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "272d3de7-2912-414b-9eb6-41ee58427539")
+		(property "Reference" "U11"
+			(at 102.87 132.08 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "74LVC125"
+			(at 102.87 134.62 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Package_DIP:DIP-14_W7.62mm"
+			(at 102.87 140.97 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "http://www.ti.com/lit/gpn/sn74LVC125"
+			(at 102.87 140.97 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Quad buffer 3-State outputs"
+			(at 102.87 140.97 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "3"
+			(uuid "90950357-21dc-4991-aea4-f79ae7bfe417")
+		)
+		(pin "8"
+			(uuid "e27d1bed-6f51-4e66-8696-4802dbace669")
+		)
+		(pin "10"
+			(uuid "9c431b35-8e65-4be4-9094-8b54316aa550")
+		)
+		(pin "2"
+			(uuid "988f4f28-8f6f-4af6-a5e4-619eea76aa76")
+		)
+		(pin "1"
+			(uuid "ae28034d-d649-4dc5-9379-a3c37a5fda9e")
+		)
+		(pin "12"
+			(uuid "8944845f-0971-4f6e-8b0c-c5daa327c2df")
+		)
+		(pin "5"
+			(uuid "2e900f3b-af75-4a96-b78e-b60fc7a433e8")
+		)
+		(pin "6"
+			(uuid "c62abf58-eb18-4bc9-b54b-848c75f39d55")
+		)
+		(pin "13"
+			(uuid "9c54bbf4-aa0e-4100-83de-8d67cf21cce2")
+		)
+		(pin "4"
+			(uuid "8c123a3e-6b30-4d76-b19a-f6e238223814")
+		)
+		(pin "9"
+			(uuid "89e15f77-a11c-465c-a77b-a8f4c230f0a5")
+		)
+		(pin "11"
+			(uuid "cddcca4e-6bdd-4ec7-89a2-a4e9dee52b0d")
+		)
+		(pin "14"
+			(uuid "87052974-f116-4bf9-a3bb-8e24b61c6fe4")
+		)
+		(pin "7"
+			(uuid "c84209ba-c431-47ca-a75e-ef6dde6b50c7")
+		)
+		(instances
+			(project ""
+				(path "/0c305a6e-f9cd-49a1-b146-c2956e5469b6/8495f6b1-74a6-413b-a199-5ab08c5254ba"
+					(reference "U11")
+					(unit 3)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector:Micro_SD_Card")
+		(at 147.32 81.28 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "3c95a2de-705e-482d-8e74-94ac4762c495")
+		(property "Reference" "J17"
+			(at 147.955 62.23 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "Micro_SD_Card"
+			(at 147.955 64.77 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Connector_Card:microSD_HC_Wuerth_693072010801"
+			(at 176.53 73.66 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.we-online.com/components/products/datasheet/693072010801.pdf"
+			(at 147.32 81.28 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Micro SD Card Socket"
+			(at 147.32 81.28 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "5"
+			(uuid "88ec68a5-6f31-4601-807c-01d3abc12783")
+		)
+		(pin "1"
+			(uuid "7c4d0eea-e060-4685-b497-ad37e237a74a")
+		)
+		(pin "8"
+			(uuid "9745557f-8e68-438f-92ec-90a2ed1f4b55")
+		)
+		(pin "2"
+			(uuid "93bf31fe-5d4d-4e85-b418-dd7f73da12e7")
+		)
+		(pin "7"
+			(uuid "592261e4-7693-4f0d-9bd7-1752adaba5aa")
+		)
+		(pin "3"
+			(uuid "93999388-25bc-48b1-aa42-31f3b04316e1")
+		)
+		(pin "4"
+			(uuid "182885ba-1f1d-4cd1-8a8d-2800a3df6344")
+		)
+		(pin "6"
+			(uuid "1ac5ee46-0f71-4219-8ba8-9f2e1d1d9b2f")
+		)
+		(pin "9"
+			(uuid "0310f6ce-00bd-4cba-9755-afaba2c525cd")
+		)
+		(instances
+			(project ""
+				(path "/0c305a6e-f9cd-49a1-b146-c2956e5469b6/8495f6b1-74a6-413b-a199-5ab08c5254ba"
+					(reference "J17")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "74xx:74LVC125")
+		(at 102.87 179.07 90)
+		(unit 5)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "561cda1a-48f7-48ee-9a9f-84096982834f")
+		(property "Reference" "U11"
+			(at 102.87 168.91 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "74LVC125"
+			(at 102.87 171.45 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Package_DIP:DIP-14_W7.62mm"
+			(at 102.87 179.07 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "http://www.ti.com/lit/gpn/sn74LVC125"
+			(at 102.87 179.07 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Quad buffer 3-State outputs"
+			(at 102.87 179.07 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "3"
+			(uuid "90950357-21dc-4991-aea4-f79ae7bfe417")
+		)
+		(pin "8"
+			(uuid "e27d1bed-6f51-4e66-8696-4802dbace669")
+		)
+		(pin "10"
+			(uuid "9c431b35-8e65-4be4-9094-8b54316aa550")
+		)
+		(pin "2"
+			(uuid "988f4f28-8f6f-4af6-a5e4-619eea76aa76")
+		)
+		(pin "1"
+			(uuid "ae28034d-d649-4dc5-9379-a3c37a5fda9e")
+		)
+		(pin "12"
+			(uuid "8944845f-0971-4f6e-8b0c-c5daa327c2df")
+		)
+		(pin "5"
+			(uuid "2e900f3b-af75-4a96-b78e-b60fc7a433e8")
+		)
+		(pin "6"
+			(uuid "c62abf58-eb18-4bc9-b54b-848c75f39d55")
+		)
+		(pin "13"
+			(uuid "9c54bbf4-aa0e-4100-83de-8d67cf21cce2")
+		)
+		(pin "4"
+			(uuid "8c123a3e-6b30-4d76-b19a-f6e238223814")
+		)
+		(pin "9"
+			(uuid "89e15f77-a11c-465c-a77b-a8f4c230f0a5")
+		)
+		(pin "11"
+			(uuid "cddcca4e-6bdd-4ec7-89a2-a4e9dee52b0d")
+		)
+		(pin "14"
+			(uuid "87052974-f116-4bf9-a3bb-8e24b61c6fe4")
+		)
+		(pin "7"
+			(uuid "c84209ba-c431-47ca-a75e-ef6dde6b50c7")
+		)
+		(instances
+			(project ""
+				(path "/0c305a6e-f9cd-49a1-b146-c2956e5469b6/8495f6b1-74a6-413b-a199-5ab08c5254ba"
+					(reference "U11")
+					(unit 5)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "74xx:74LVC125")
+		(at 102.87 123.19 0)
+		(unit 2)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "6af92a5a-a910-498e-b2cc-c14faba00f8a")
+		(property "Reference" "U11"
+			(at 102.87 114.3 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "74LVC125"
+			(at 102.87 116.84 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Package_DIP:DIP-14_W7.62mm"
+			(at 102.87 123.19 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "http://www.ti.com/lit/gpn/sn74LVC125"
+			(at 102.87 123.19 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Quad buffer 3-State outputs"
+			(at 102.87 123.19 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "3"
+			(uuid "90950357-21dc-4991-aea4-f79ae7bfe417")
+		)
+		(pin "8"
+			(uuid "e27d1bed-6f51-4e66-8696-4802dbace669")
+		)
+		(pin "10"
+			(uuid "9c431b35-8e65-4be4-9094-8b54316aa550")
+		)
+		(pin "2"
+			(uuid "988f4f28-8f6f-4af6-a5e4-619eea76aa76")
+		)
+		(pin "1"
+			(uuid "ae28034d-d649-4dc5-9379-a3c37a5fda9e")
+		)
+		(pin "12"
+			(uuid "8944845f-0971-4f6e-8b0c-c5daa327c2df")
+		)
+		(pin "5"
+			(uuid "2e900f3b-af75-4a96-b78e-b60fc7a433e8")
+		)
+		(pin "6"
+			(uuid "c62abf58-eb18-4bc9-b54b-848c75f39d55")
+		)
+		(pin "13"
+			(uuid "9c54bbf4-aa0e-4100-83de-8d67cf21cce2")
+		)
+		(pin "4"
+			(uuid "8c123a3e-6b30-4d76-b19a-f6e238223814")
+		)
+		(pin "9"
+			(uuid "89e15f77-a11c-465c-a77b-a8f4c230f0a5")
+		)
+		(pin "11"
+			(uuid "cddcca4e-6bdd-4ec7-89a2-a4e9dee52b0d")
+		)
+		(pin "14"
+			(uuid "87052974-f116-4bf9-a3bb-8e24b61c6fe4")
+		)
+		(pin "7"
+			(uuid "c84209ba-c431-47ca-a75e-ef6dde6b50c7")
+		)
+		(instances
+			(project ""
+				(path "/0c305a6e-f9cd-49a1-b146-c2956e5469b6/8495f6b1-74a6-413b-a199-5ab08c5254ba"
+					(reference "U11")
+					(unit 2)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "74xx:74LVC125")
+		(at 102.87 102.87 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "7fa88133-6a97-4fe1-b3d4-27dd0bad44c1")
+		(property "Reference" "U11"
+			(at 102.87 93.98 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "74LVC125"
+			(at 102.87 96.52 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Package_DIP:DIP-14_W7.62mm"
+			(at 102.87 102.87 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "http://www.ti.com/lit/gpn/sn74LVC125"
+			(at 102.87 102.87 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Quad buffer 3-State outputs"
+			(at 102.87 102.87 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "3"
+			(uuid "90950357-21dc-4991-aea4-f79ae7bfe417")
+		)
+		(pin "8"
+			(uuid "e27d1bed-6f51-4e66-8696-4802dbace669")
+		)
+		(pin "10"
+			(uuid "9c431b35-8e65-4be4-9094-8b54316aa550")
+		)
+		(pin "2"
+			(uuid "988f4f28-8f6f-4af6-a5e4-619eea76aa76")
+		)
+		(pin "1"
+			(uuid "ae28034d-d649-4dc5-9379-a3c37a5fda9e")
+		)
+		(pin "12"
+			(uuid "8944845f-0971-4f6e-8b0c-c5daa327c2df")
+		)
+		(pin "5"
+			(uuid "2e900f3b-af75-4a96-b78e-b60fc7a433e8")
+		)
+		(pin "6"
+			(uuid "c62abf58-eb18-4bc9-b54b-848c75f39d55")
+		)
+		(pin "13"
+			(uuid "9c54bbf4-aa0e-4100-83de-8d67cf21cce2")
+		)
+		(pin "4"
+			(uuid "8c123a3e-6b30-4d76-b19a-f6e238223814")
+		)
+		(pin "9"
+			(uuid "89e15f77-a11c-465c-a77b-a8f4c230f0a5")
+		)
+		(pin "11"
+			(uuid "cddcca4e-6bdd-4ec7-89a2-a4e9dee52b0d")
+		)
+		(pin "14"
+			(uuid "87052974-f116-4bf9-a3bb-8e24b61c6fe4")
+		)
+		(pin "7"
+			(uuid "c84209ba-c431-47ca-a75e-ef6dde6b50c7")
+		)
+		(instances
+			(project ""
+				(path "/0c305a6e-f9cd-49a1-b146-c2956e5469b6/8495f6b1-74a6-413b-a199-5ab08c5254ba"
+					(reference "U11")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "74xx:74LVC125")
+		(at 102.87 158.75 0)
+		(unit 4)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "fb6d180b-7690-4730-8f7a-808095bc1378")
+		(property "Reference" "U11"
+			(at 102.87 149.86 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "74LVC125"
+			(at 102.87 152.4 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Package_DIP:DIP-14_W7.62mm"
+			(at 102.87 158.75 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "http://www.ti.com/lit/gpn/sn74LVC125"
+			(at 102.87 158.75 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Quad buffer 3-State outputs"
+			(at 102.87 158.75 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "3"
+			(uuid "90950357-21dc-4991-aea4-f79ae7bfe417")
+		)
+		(pin "8"
+			(uuid "e27d1bed-6f51-4e66-8696-4802dbace669")
+		)
+		(pin "10"
+			(uuid "9c431b35-8e65-4be4-9094-8b54316aa550")
+		)
+		(pin "2"
+			(uuid "988f4f28-8f6f-4af6-a5e4-619eea76aa76")
+		)
+		(pin "1"
+			(uuid "ae28034d-d649-4dc5-9379-a3c37a5fda9e")
+		)
+		(pin "12"
+			(uuid "8944845f-0971-4f6e-8b0c-c5daa327c2df")
+		)
+		(pin "5"
+			(uuid "2e900f3b-af75-4a96-b78e-b60fc7a433e8")
+		)
+		(pin "6"
+			(uuid "c62abf58-eb18-4bc9-b54b-848c75f39d55")
+		)
+		(pin "13"
+			(uuid "9c54bbf4-aa0e-4100-83de-8d67cf21cce2")
+		)
+		(pin "4"
+			(uuid "8c123a3e-6b30-4d76-b19a-f6e238223814")
+		)
+		(pin "9"
+			(uuid "89e15f77-a11c-465c-a77b-a8f4c230f0a5")
+		)
+		(pin "11"
+			(uuid "cddcca4e-6bdd-4ec7-89a2-a4e9dee52b0d")
+		)
+		(pin "14"
+			(uuid "87052974-f116-4bf9-a3bb-8e24b61c6fe4")
+		)
+		(pin "7"
+			(uuid "c84209ba-c431-47ca-a75e-ef6dde6b50c7")
+		)
+		(instances
+			(project ""
+				(path "/0c305a6e-f9cd-49a1-b146-c2956e5469b6/8495f6b1-74a6-413b-a199-5ab08c5254ba"
+					(reference "U11")
+					(unit 4)
+				)
+			)
+		)
+	)
+)

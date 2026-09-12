@@ -445,7 +445,7 @@
       "no_connect_dangling": "warning",
       "pin_not_connected": "error",
       "pin_not_driven": "error",
-      "pin_to_pin": "warning",
+      "pin_to_pin": "error",
       "power_pin_not_driven": "error",
       "same_local_global_label": "warning",
       "similar_label_and_power": "warning",
@@ -738,6 +738,18 @@
     [
       "19a3c20f-53ab-4562-aabc-58e6e99571a0",
       "alimentacao"
+    ],
+    [
+      "0abc4084-0cd9-43a4-88f9-87e0e6566acc",
+      "BMP280"
+    ],
+    [
+      "c5455acd-00c4-4dde-ab9a-382e33c5bf3a",
+      "BH1750"
+    ],
+    [
+      "8495f6b1-74a6-413b-a199-5ab08c5254ba",
+      "Cartao SD"
     ]
   ],
   "text_variables": {}

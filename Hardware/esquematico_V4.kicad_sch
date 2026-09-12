@@ -9423,7 +9423,7 @@
 			)
 		)
 	)
-	(global_label "PB7"
+	(global_label "SDA"
 		(shape input)
 		(at 194.31 -36.83 180)
 		(fields_autoplaced yes)
@@ -9435,7 +9435,7 @@
 		)
 		(uuid "ad4afbab-d11b-4c0d-b468-b26ec99c3d94")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 187.5753 -36.83 0)
+			(at 187.7567 -36.83 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9687,7 +9687,7 @@
 			)
 		)
 	)
-	(global_label "PB6"
+	(global_label "SCK"
 		(shape input)
 		(at 256.54 -31.75 180)
 		(fields_autoplaced yes)
@@ -14139,6 +14139,48 @@
 		)
 	)
 	(sheet
+		(at 33.02 93.98)
+		(size 38.1 20.32)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "0abc4084-0cd9-43a4-88f9-87e0e6566acc")
+		(property "Sheetname" "BMP280"
+			(at 33.02 93.2684 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "untitled.kicad_sch"
+			(at 33.02 114.8846 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(instances
+			(project "esquematico_V4"
+				(path "/0c305a6e-f9cd-49a1-b146-c2956e5469b6"
+					(page "4")
+				)
+			)
+		)
+	)
+	(sheet
 		(at 30.48 134.62)
 		(size 25.4 16.51)
 		(exclude_from_sim no)
@@ -14221,6 +14263,48 @@
 		)
 	)
 	(sheet
+		(at 80.01 134.62)
+		(size 29.21 15.24)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "8495f6b1-74a6-413b-a199-5ab08c5254ba")
+		(property "Sheetname" "Cartao SD"
+			(at 80.01 133.9084 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "cartao_sd.kicad_sch"
+			(at 80.01 150.4446 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(instances
+			(project "esquematico_V4"
+				(path "/0c305a6e-f9cd-49a1-b146-c2956e5469b6"
+					(page "6")
+				)
+			)
+		)
+	)
+	(sheet
 		(at 93.98 25.4)
 		(size 39.37 16.51)
 		(exclude_from_sim no)
@@ -14258,6 +14342,48 @@
 			(project "esquematico_V4"
 				(path "/0c305a6e-f9cd-49a1-b146-c2956e5469b6"
 					(page "2")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 91.44 93.98)
+		(size 29.21 16.51)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "c5455acd-00c4-4dde-ab9a-382e33c5bf3a")
+		(property "Sheetname" "BH1750"
+			(at 91.44 93.2684 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "bh1750.kicad_sch"
+			(at 91.44 111.0746 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(instances
+			(project "esquematico_V4"
+				(path "/0c305a6e-f9cd-49a1-b146-c2956e5469b6"
+					(page "5")
 				)
 			)
 		)
