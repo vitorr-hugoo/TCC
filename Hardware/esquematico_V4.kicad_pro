@@ -750,6 +750,14 @@
     [
       "8495f6b1-74a6-413b-a199-5ab08c5254ba",
       "Cartao SD"
+    ],
+    [
+      "1fd7a678-c9b9-4a6a-ab50-58dfcf2b1932",
+      "LORA Module"
+    ],
+    [
+      "34d78a87-9b09-4795-98a5-fe6ea1a123f9",
+      "DHT22"
     ]
   ],
   "text_variables": {}
