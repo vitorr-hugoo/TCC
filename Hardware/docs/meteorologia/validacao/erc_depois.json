@@ -1,0 +1,599 @@
+{
+    "$schema": "https://schemas.kicad.org/erc.v1.json",
+    "coordinate_units": "mm",
+    "date": "2026-09-16T22:32:44-0300",
+    "kicad_version": "9.0.6",
+    "sheets": [
+        {
+            "path": "/",
+            "uuid_path": "/0c305a6e-f9cd-49a1-b146-c2956e5469b6",
+            "violations": [
+                {
+                    "description": "A folha de pinos +12V não tem um rótulo hierárquico correspondente dentro da folha",
+                    "items": [
+                        {
+                            "description": "Pino +12V da folha hierárquica",
+                            "pos": {
+                                "x": 0.3048,
+                                "y": 1.3843
+                            },
+                            "uuid": "850d6aa1-5f5c-4992-b12a-452ee0bd269d"
+                        }
+                    ],
+                    "severity": "error",
+                    "type": "hier_label_mismatch"
+                },
+                {
+                    "description": "Pino sem conexão",
+                    "items": [
+                        {
+                            "description": "Pino +12V da folha hierárquica",
+                            "pos": {
+                                "x": 0.3048,
+                                "y": 1.3843
+                            },
+                            "uuid": "850d6aa1-5f5c-4992-b12a-452ee0bd269d"
+                        }
+                    ],
+                    "severity": "error",
+                    "type": "pin_not_connected"
+                },
+                {
+                    "description": "Pino sem conexão",
+                    "items": [
+                        {
+                            "description": "Pino GND da folha hierárquica",
+                            "pos": {
+                                "x": 0.3048,
+                                "y": 1.4351
+                            },
+                            "uuid": "075aebd4-5b57-4f6a-a16a-5d8a4d920903"
+                        }
+                    ],
+                    "severity": "error",
+                    "type": "pin_not_connected"
+                },
+                {
+                    "description": "O pino da entrada de energia não foi acionado por nenhum pino de energia da saída",
+                    "items": [
+                        {
+                            "description": "Symbol #PWR07 Pino 1 [Power input, Line]",
+                            "pos": {
+                                "x": 0.5969,
+                                "y": 1.4478
+                            },
+                            "uuid": "637def39-ae0d-4996-8cbc-4a98d3e23220"
+                        }
+                    ],
+                    "severity": "error",
+                    "type": "power_pin_not_driven"
+                },
+                {
+                    "description": "O rótulo global não está conectado em nenhum outro lugar no esquema",
+                    "items": [
+                        {
+                            "description": "Rótulo global 'MCU_MOSI'",
+                            "pos": {
+                                "x": 0.762,
+                                "y": 0.5207
+                            },
+                            "uuid": "54ca0ffb-82b2-47e6-808e-d1884d50489c"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "global_label_dangling"
+                },
+                {
+                    "description": "O rótulo global não está conectado em nenhum outro lugar no esquema",
+                    "items": [
+                        {
+                            "description": "Rótulo global 'MCU_SCK'",
+                            "pos": {
+                                "x": 0.762,
+                                "y": 0.9017
+                            },
+                            "uuid": "7adf4e16-6f16-4e19-b6f7-762c70aec185"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "global_label_dangling"
+                },
+                {
+                    "description": "O rótulo global não está conectado em nenhum outro lugar no esquema",
+                    "items": [
+                        {
+                            "description": "Rótulo global 'MCU_MISO'",
+                            "pos": {
+                                "x": 1.0795,
+                                "y": 0.7239
+                            },
+                            "uuid": "bddf2960-32d2-4a5a-a78c-336253f9dea3"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "global_label_dangling"
+                },
+                {
+                    "description": "O rótulo global não está conectado em nenhum outro lugar no esquema",
+                    "items": [
+                        {
+                            "description": "Rótulo global 'DIO2'",
+                            "pos": {
+                                "x": 1.7272,
+                                "y": 0.8255
+                            },
+                            "uuid": "12be0c20-5419-4e29-95db-7d2972ce28f0"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "global_label_dangling"
+                },
+                {
+                    "description": "O rótulo global não está conectado em nenhum outro lugar no esquema",
+                    "items": [
+                        {
+                            "description": "Rótulo global 'ANT_EXT'",
+                            "pos": {
+                                "x": 1.7272,
+                                "y": 1.1176
+                            },
+                            "uuid": "976a19f8-0e6e-4a0c-8b41-f6629ecee55c"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "global_label_dangling"
+                }
+            ]
+        },
+        {
+            "path": "/mcu/",
+            "uuid_path": "/0c305a6e-f9cd-49a1-b146-c2956e5469b6/a23dea8e-0c82-454e-9219-5e250a611b0f",
+            "violations": []
+        },
+        {
+            "path": "/alimentacao/",
+            "uuid_path": "/0c305a6e-f9cd-49a1-b146-c2956e5469b6/19a3c20f-53ab-4562-aabc-58e6e99571a0",
+            "violations": [
+                {
+                    "description": "O pino da entrada de energia não foi acionado por nenhum pino de energia da saída",
+                    "items": [
+                        {
+                            "description": "Symbol #PWR02 Pino 1 [Power input, Line]",
+                            "pos": {
+                                "x": 0.5842,
+                                "y": 0.5461
+                            },
+                            "uuid": "d2562641-e366-41a4-a882-5159f9fba7c9"
+                        }
+                    ],
+                    "severity": "error",
+                    "type": "power_pin_not_driven"
+                },
+                {
+                    "description": "O pino da entrada de energia não foi acionado por nenhum pino de energia da saída",
+                    "items": [
+                        {
+                            "description": "Symbol #PWR01 Pino 1 [Power input, Line]",
+                            "pos": {
+                                "x": 0.5715,
+                                "y": 0.6858
+                            },
+                            "uuid": "f2c64786-cf09-4b11-91d8-829f579a7a00"
+                        }
+                    ],
+                    "severity": "error",
+                    "type": "power_pin_not_driven"
+                },
+                {
+                    "description": "Os pinos do tipo Output e Power output estão conectados",
+                    "items": [
+                        {
+                            "description": "Symbol PS1 Pino OUT+ [OUT+, Output, Line]",
+                            "pos": {
+                                "x": 0.9779,
+                                "y": 0.6858
+                            },
+                            "uuid": "0b9e19e2-5480-41d2-b014-f6584320e1fb"
+                        },
+                        {
+                            "description": "Symbol U10 Pino 3 [OUT, Power output, Line]",
+                            "pos": {
+                                "x": 1.1557,
+                                "y": 0.8763
+                            },
+                            "uuid": "805cf975-ef38-4edd-8115-b56526d8077f"
+                        }
+                    ],
+                    "severity": "error",
+                    "type": "pin_to_pin"
+                }
+            ]
+        },
+        {
+            "path": "/BMP280/",
+            "uuid_path": "/0c305a6e-f9cd-49a1-b146-c2956e5469b6/0abc4084-0cd9-43a4-88f9-87e0e6566acc",
+            "violations": [
+                {
+                    "description": "O pino da entrada de energia não foi acionado por nenhum pino de energia da saída",
+                    "items": [
+                        {
+                            "description": "Symbol #PWR016 Pino 1 [Power input, Line]",
+                            "pos": {
+                                "x": 1.5748,
+                                "y": 0.8128
+                            },
+                            "uuid": "094109b9-c9f1-4998-b020-dc9fc3f50a20"
+                        }
+                    ],
+                    "severity": "error",
+                    "type": "power_pin_not_driven"
+                },
+                {
+                    "description": "O pino da entrada de energia não foi acionado por nenhum pino de energia da saída",
+                    "items": [
+                        {
+                            "description": "Symbol U8 Pino 8 [VDD, Power input, Line]",
+                            "pos": {
+                                "x": 1.4986,
+                                "y": 1.0922
+                            },
+                            "uuid": "b3eeaf25-32c7-43a4-9b32-d329e83a63ad"
+                        }
+                    ],
+                    "severity": "error",
+                    "type": "power_pin_not_driven"
+                }
+            ]
+        },
+        {
+            "path": "/BH1750/",
+            "uuid_path": "/0c305a6e-f9cd-49a1-b146-c2956e5469b6/c5455acd-00c4-4dde-ab9a-382e33c5bf3a",
+            "violations": [
+                {
+                    "description": "Ambos os VCC e +5V estão ligados aos mesmos itens; o VCC será utilizado na netlist",
+                    "items": [
+                        {
+                            "description": "Rótulo global 'VCC'",
+                            "pos": {
+                                "x": 0.8382,
+                                "y": 0.8763
+                            },
+                            "uuid": "2c7ee941-84ea-4651-a857-24ab8718feb1"
+                        },
+                        {
+                            "description": "Symbol #PWR027 Pino 1 [Power input, Line]",
+                            "pos": {
+                                "x": 2.0955,
+                                "y": 1.1176
+                            },
+                            "uuid": "bb8881ee-f082-4ebb-b5d1-74df8a8ec833"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "multiple_net_names"
+                }
+            ]
+        },
+        {
+            "path": "/Cartao SD/",
+            "uuid_path": "/0c305a6e-f9cd-49a1-b146-c2956e5469b6/8495f6b1-74a6-413b-a199-5ab08c5254ba",
+            "violations": [
+                {
+                    "description": "O pino de entrada não foi acionado por nenhum pino de saída",
+                    "items": [
+                        {
+                            "description": "Symbol U11 Pino 2 [Input, Line]",
+                            "pos": {
+                                "x": 0.9017,
+                                "y": 0.5207
+                            },
+                            "uuid": "988f4f28-8f6f-4af6-a5e4-619eea76aa79"
+                        }
+                    ],
+                    "severity": "error",
+                    "type": "pin_not_driven"
+                },
+                {
+                    "description": "O pino de entrada não foi acionado por nenhum pino de saída",
+                    "items": [
+                        {
+                            "description": "Symbol U11 Pino 9 [Input, Line]",
+                            "pos": {
+                                "x": 0.9017,
+                                "y": 0.9017
+                            },
+                            "uuid": "89e15f77-a11c-465c-a77b-a8f4c230f0a5"
+                        }
+                    ],
+                    "severity": "error",
+                    "type": "pin_not_driven"
+                }
+            ]
+        },
+        {
+            "path": "/LORA Module/",
+            "uuid_path": "/0c305a6e-f9cd-49a1-b146-c2956e5469b6/1fd7a678-c9b9-4a6a-ab50-58dfcf2b1932",
+            "violations": [
+                {
+                    "description": "Os pinos do tipo Unspecified e Unspecified estão conectados",
+                    "items": [
+                        {
+                            "description": "Symbol U12 Pino 1 [GND, Unspecified, Line]",
+                            "pos": {
+                                "x": 1.3208,
+                                "y": 0.8255
+                            },
+                            "uuid": "995b4f84-c63a-4134-b4b5-bb23ac84c847"
+                        },
+                        {
+                            "description": "Symbol U12 Pino 8 [GND, Unspecified, Line]",
+                            "pos": {
+                                "x": 1.3208,
+                                "y": 1.0033
+                            },
+                            "uuid": "ad4b9ded-cf23-41d1-806b-ec63463e025a"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "pin_to_pin"
+                },
+                {
+                    "description": "Os pinos do tipo Unspecified e Bidirectional estão conectados",
+                    "items": [
+                        {
+                            "description": "Symbol U12 Pino 2 [MISO, Unspecified, Line]",
+                            "pos": {
+                                "x": 1.3208,
+                                "y": 0.8509
+                            },
+                            "uuid": "90e12437-e781-413c-abd8-fcd12632c1f0"
+                        },
+                        {
+                            "description": "Symbol U5 Pino CN10_28 [PB14, Bidirectional, Line]",
+                            "pos": {
+                                "x": 1.5113,
+                                "y": 1.143
+                            },
+                            "uuid": "6e2523bb-2de8-47fc-a2c5-2d70ee0efbe9"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "pin_to_pin"
+                },
+                {
+                    "description": "Os pinos do tipo Unspecified e Bidirectional estão conectados",
+                    "items": [
+                        {
+                            "description": "Symbol U12 Pino 3 [MOSI, Unspecified, Line]",
+                            "pos": {
+                                "x": 1.3208,
+                                "y": 0.8763
+                            },
+                            "uuid": "8924a742-a2bf-4b61-83be-2ec9a77e129a"
+                        },
+                        {
+                            "description": "Symbol U5 Pino CN10_26 [PB15, Bidirectional, Line]",
+                            "pos": {
+                                "x": 1.5113,
+                                "y": 1.1684
+                            },
+                            "uuid": "4db1ede9-2efd-4d7c-85ec-b2e77330514a"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "pin_to_pin"
+                },
+                {
+                    "description": "Os pinos do tipo Unspecified e Bidirectional estão conectados",
+                    "items": [
+                        {
+                            "description": "Symbol U12 Pino 4 [SCK, Unspecified, Line]",
+                            "pos": {
+                                "x": 1.3208,
+                                "y": 0.9017
+                            },
+                            "uuid": "312d4605-b665-4d47-a4d1-f98ea87498ba"
+                        },
+                        {
+                            "description": "Symbol U5 Pino CN10_30 [PB13, Bidirectional, Line]",
+                            "pos": {
+                                "x": 1.5113,
+                                "y": 1.1176
+                            },
+                            "uuid": "122a8b6f-cc74-4ce7-a423-209a926bf705"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "pin_to_pin"
+                },
+                {
+                    "description": "Os pinos do tipo Unspecified e Passive estão conectados",
+                    "items": [
+                        {
+                            "description": "Symbol U12 Pino 5 [NSS, Unspecified, Line]",
+                            "pos": {
+                                "x": 1.3208,
+                                "y": 0.9271
+                            },
+                            "uuid": "67df5b2f-066b-4719-a8f3-4bb209399648"
+                        },
+                        {
+                            "description": "Symbol R14 Pino 2 [Passive, Line]",
+                            "pos": {
+                                "x": 1.2446,
+                                "y": 0.7874
+                            },
+                            "uuid": "830e9495-573d-4801-876e-c11139ce1a2f"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "pin_to_pin"
+                },
+                {
+                    "description": "Os pinos do tipo Unspecified e Passive estão conectados",
+                    "items": [
+                        {
+                            "description": "Symbol U12 Pino 6 [NRESET, Unspecified, Line]",
+                            "pos": {
+                                "x": 1.3208,
+                                "y": 0.9525
+                            },
+                            "uuid": "a13ea137-ad7f-4efe-a4f0-655b9f82e71b"
+                        },
+                        {
+                            "description": "Symbol R15 Pino 2 [Passive, Line]",
+                            "pos": {
+                                "x": 1.1938,
+                                "y": 0.7874
+                            },
+                            "uuid": "d0112f62-494d-4847-a34c-22d946c33c9c"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "pin_to_pin"
+                },
+                {
+                    "description": "Os pinos do tipo Unspecified e Power input estão conectados",
+                    "items": [
+                        {
+                            "description": "Symbol U12 Pino 8 [GND, Unspecified, Line]",
+                            "pos": {
+                                "x": 1.3208,
+                                "y": 1.0033
+                            },
+                            "uuid": "ad4b9ded-cf23-41d1-806b-ec63463e025a"
+                        },
+                        {
+                            "description": "Symbol #PWR041 Pino 1 [Power input, Line]",
+                            "pos": {
+                                "x": 1.2954,
+                                "y": 1.016
+                            },
+                            "uuid": "7ffcac4d-e184-4c5f-bbd7-a0606485af67"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "pin_to_pin"
+                },
+                {
+                    "description": "Os pinos do tipo Unspecified e Bidirectional estão conectados",
+                    "items": [
+                        {
+                            "description": "Symbol U12 Pino 15 [DIO1, Unspecified, Line]",
+                            "pos": {
+                                "x": 1.5748,
+                                "y": 0.8509
+                            },
+                            "uuid": "bb5b8880-9ecf-41de-9a0d-200efc4f6677"
+                        },
+                        {
+                            "description": "Symbol U5 Pino CN10_12 [PA12, Bidirectional, Line]",
+                            "pos": {
+                                "x": 1.5113,
+                                "y": 0.8128
+                            },
+                            "uuid": "06dff834-b2bf-4293-afe7-d666381f0df5"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "pin_to_pin"
+                },
+                {
+                    "description": "Os pinos do tipo Unspecified e Bidirectional estão conectados",
+                    "items": [
+                        {
+                            "description": "Symbol U12 Pino 14 [DIO0, Unspecified, Line]",
+                            "pos": {
+                                "x": 1.5748,
+                                "y": 0.8763
+                            },
+                            "uuid": "80725353-0c6c-46a5-a71a-1c6e8b5be6e1"
+                        },
+                        {
+                            "description": "Symbol U5 Pino CN10_14 [PA11, Bidirectional, Line]",
+                            "pos": {
+                                "x": 1.5113,
+                                "y": 0.7874
+                            },
+                            "uuid": "e1599f2e-3048-431b-879b-11a994959f56"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "pin_to_pin"
+                },
+                {
+                    "description": "Os pinos do tipo Unspecified e Power input estão conectados",
+                    "items": [
+                        {
+                            "description": "Symbol U12 Pino 13 [VCC, Unspecified, Line]",
+                            "pos": {
+                                "x": 1.5748,
+                                "y": 0.9017
+                            },
+                            "uuid": "be878949-1e28-4955-be5c-dce5be086ca7"
+                        },
+                        {
+                            "description": "Symbol #PWR042 Pino 1 [Power input, Line]",
+                            "pos": {
+                                "x": 1.6129,
+                                "y": 0.7874
+                            },
+                            "uuid": "1be11c81-cc10-4c56-9ae2-0ae9488e383e"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "pin_to_pin"
+                },
+                {
+                    "description": "Os pinos do tipo Unspecified e Power input estão conectados",
+                    "items": [
+                        {
+                            "description": "Symbol U12 Pino 10 [GND, Unspecified, Line]",
+                            "pos": {
+                                "x": 1.5748,
+                                "y": 0.9779
+                            },
+                            "uuid": "cc2722bb-f272-409e-8219-310db2767806"
+                        },
+                        {
+                            "description": "Symbol #PWR043 Pino 1 [Power input, Line]",
+                            "pos": {
+                                "x": 1.6129,
+                                "y": 1.016
+                            },
+                            "uuid": "4b5e51bd-fb5c-4204-8a45-3ba59bda7b27"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "pin_to_pin"
+                }
+            ]
+        },
+        {
+            "path": "/DHT22/",
+            "uuid_path": "/0c305a6e-f9cd-49a1-b146-c2956e5469b6/34d78a87-9b09-4795-98a5-fe6ea1a123f9",
+            "violations": []
+        },
+        {
+            "path": "/METEOROLOGIA/",
+            "uuid_path": "/0c305a6e-f9cd-49a1-b146-c2956e5469b6/058dce74-971b-49d7-82f0-384e20be985c",
+            "violations": []
+        },
+        {
+            "path": "/METEOROLOGIA/PLUVIOMETRO/",
+            "uuid_path": "/0c305a6e-f9cd-49a1-b146-c2956e5469b6/058dce74-971b-49d7-82f0-384e20be985c/e9242eb5-e685-47a2-8464-3e1e52960bb8",
+            "violations": []
+        },
+        {
+            "path": "/METEOROLOGIA/ANEMOMETRO/",
+            "uuid_path": "/0c305a6e-f9cd-49a1-b146-c2956e5469b6/058dce74-971b-49d7-82f0-384e20be985c/9f29de2e-b04a-471a-b3f5-0032147ee0d6",
+            "violations": []
+        },
+        {
+            "path": "/METEOROLOGIA/BIRUTA/",
+            "uuid_path": "/0c305a6e-f9cd-49a1-b146-c2956e5469b6/058dce74-971b-49d7-82f0-384e20be985c/4ef75fdb-90eb-437a-af55-0afcbbe28aca",
+            "violations": []
+        }
+    ],
+    "source": "esquematico_V4.kicad_sch"
+}

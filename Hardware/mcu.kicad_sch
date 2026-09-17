@@ -5,7 +5,7 @@
 	(uuid "0638f2b3-be22-4330-8493-c25ce830182d")
 	(paper "A4")
 	(lib_symbols
-		(symbol "Nucleo_F446:NUCLEO-F446RE"
+		(symbol "Hardware_MCU:NUCLEO-F446RE_Morpho"
 			(pin_names
 				(offset 1.016)
 			)
@@ -188,7 +188,7 @@
 					(hide yes)
 				)
 			)
-			(symbol "NUCLEO-F446RE_1_0"
+			(symbol "NUCLEO-F446RE_Morpho_1_0"
 				(rectangle
 					(start -17.78 -43.18)
 					(end 17.78 40.64)
@@ -743,7 +743,6 @@
 				(pin power_in line
 					(at 22.86 -40.64 180)
 					(length 5.08)
-					(hide yes)
 					(name "CN7_GND"
 						(effects
 							(font
@@ -762,7 +761,6 @@
 				(pin power_in line
 					(at 22.86 -40.64 180)
 					(length 5.08)
-					(hide yes)
 					(name "CN7_GND"
 						(effects
 							(font
@@ -781,7 +779,6 @@
 				(pin power_in line
 					(at 22.86 -40.64 180)
 					(length 5.08)
-					(hide yes)
 					(name "CN7_GND"
 						(effects
 							(font
@@ -816,7 +813,7 @@
 					)
 				)
 			)
-			(symbol "NUCLEO-F446RE_2_0"
+			(symbol "NUCLEO-F446RE_Morpho_2_0"
 				(rectangle
 					(start -12.7 -40.64)
 					(end 12.7 38.1)
@@ -1242,7 +1239,7 @@
 						)
 					)
 				)
-				(pin power_in line
+				(pin power_out line
 					(at 17.78 35.56 180)
 					(length 5.08)
 					(name "AVDD"
@@ -1407,7 +1404,6 @@
 				(pin power_in line
 					(at 17.78 -38.1 180)
 					(length 5.08)
-					(hide yes)
 					(name "CN10_GND"
 						(effects
 							(font
@@ -1442,617 +1438,10 @@
 					)
 				)
 			)
-			(symbol "NUCLEO-F446RE_3_0"
-				(rectangle
-					(start -15.24 -12.7)
-					(end 15.24 10.16)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type background)
-					)
-				)
-				(pin bidirectional line
-					(at -20.32 -2.54 0)
-					(length 5.08)
-					(name "CN6_RESET"
-						(effects
-							(font
-								(size 1.016 1.016)
-							)
-						)
-					)
-					(number "CN6_3"
-						(effects
-							(font
-								(size 1.016 1.016)
-							)
-						)
-					)
-				)
-				(pin bidirectional line
-					(at -20.32 -5.08 0)
-					(length 5.08)
-					(name "CN6_IOREF"
-						(effects
-							(font
-								(size 1.016 1.016)
-							)
-						)
-					)
-					(number "CN6_2"
-						(effects
-							(font
-								(size 1.016 1.016)
-							)
-						)
-					)
-				)
-				(pin power_in line
-					(at 20.32 7.62 180)
-					(length 5.08)
-					(name "CN6_VIN"
-						(effects
-							(font
-								(size 1.016 1.016)
-							)
-						)
-					)
-					(number "CN6_8"
-						(effects
-							(font
-								(size 1.016 1.016)
-							)
-						)
-					)
-				)
-				(pin power_in line
-					(at 20.32 5.08 180)
-					(length 5.08)
-					(name "CN6_+5V"
-						(effects
-							(font
-								(size 1.016 1.016)
-							)
-						)
-					)
-					(number "CN6_5"
-						(effects
-							(font
-								(size 1.016 1.016)
-							)
-						)
-					)
-				)
-				(pin power_in line
-					(at 20.32 2.54 180)
-					(length 5.08)
-					(name "CN6_+3V3"
-						(effects
-							(font
-								(size 1.016 1.016)
-							)
-						)
-					)
-					(number "CN6_4"
-						(effects
-							(font
-								(size 1.016 1.016)
-							)
-						)
-					)
-				)
-				(pin power_in line
-					(at 20.32 -10.16 180)
-					(length 5.08)
-					(name "CN6_GND"
-						(effects
-							(font
-								(size 1.016 1.016)
-							)
-						)
-					)
-					(number "CN6_6"
-						(effects
-							(font
-								(size 1.016 1.016)
-							)
-						)
-					)
-				)
-				(pin power_in line
-					(at 20.32 -10.16 180)
-					(length 5.08)
-					(hide yes)
-					(name "CN6_GND"
-						(effects
-							(font
-								(size 1.016 1.016)
-							)
-						)
-					)
-					(number "CN6_7"
-						(effects
-							(font
-								(size 1.016 1.016)
-							)
-						)
-					)
-				)
-			)
-			(symbol "NUCLEO-F446RE_4_0"
-				(rectangle
-					(start -5.08 -12.7)
-					(end 5.08 12.7)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type background)
-					)
-				)
-				(pin input line
-					(at -10.16 10.16 0)
-					(length 5.08)
-					(name "D0"
-						(effects
-							(font
-								(size 1.016 1.016)
-							)
-						)
-					)
-					(number "CN9_1"
-						(effects
-							(font
-								(size 1.016 1.016)
-							)
-						)
-					)
-				)
-				(pin output line
-					(at -10.16 7.62 0)
-					(length 5.08)
-					(name "D1"
-						(effects
-							(font
-								(size 1.016 1.016)
-							)
-						)
-					)
-					(number "CN9_2"
-						(effects
-							(font
-								(size 1.016 1.016)
-							)
-						)
-					)
-				)
-				(pin bidirectional line
-					(at -10.16 2.54 0)
-					(length 5.08)
-					(name "D2"
-						(effects
-							(font
-								(size 1.016 1.016)
-							)
-						)
-					)
-					(number "CN9_3"
-						(effects
-							(font
-								(size 1.016 1.016)
-							)
-						)
-					)
-				)
-				(pin bidirectional line
-					(at -10.16 0 0)
-					(length 5.08)
-					(name "D3"
-						(effects
-							(font
-								(size 1.016 1.016)
-							)
-						)
-					)
-					(number "CN9_4"
-						(effects
-							(font
-								(size 1.016 1.016)
-							)
-						)
-					)
-				)
-				(pin bidirectional line
-					(at -10.16 -2.54 0)
-					(length 5.08)
-					(name "D4"
-						(effects
-							(font
-								(size 1.016 1.016)
-							)
-						)
-					)
-					(number "CN9_5"
-						(effects
-							(font
-								(size 1.016 1.016)
-							)
-						)
-					)
-				)
-				(pin bidirectional line
-					(at -10.16 -5.08 0)
-					(length 5.08)
-					(name "D5"
-						(effects
-							(font
-								(size 1.016 1.016)
-							)
-						)
-					)
-					(number "CN9_6"
-						(effects
-							(font
-								(size 1.016 1.016)
-							)
-						)
-					)
-				)
-				(pin bidirectional line
-					(at -10.16 -7.62 0)
-					(length 5.08)
-					(name "D6"
-						(effects
-							(font
-								(size 1.016 1.016)
-							)
-						)
-					)
-					(number "CN9_7"
-						(effects
-							(font
-								(size 1.016 1.016)
-							)
-						)
-					)
-				)
-				(pin bidirectional line
-					(at -10.16 -10.16 0)
-					(length 5.08)
-					(name "D7"
-						(effects
-							(font
-								(size 1.016 1.016)
-							)
-						)
-					)
-					(number "CN9_8"
-						(effects
-							(font
-								(size 1.016 1.016)
-							)
-						)
-					)
-				)
-			)
-			(symbol "NUCLEO-F446RE_5_0"
-				(rectangle
-					(start -5.08 -10.16)
-					(end 5.08 7.62)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type background)
-					)
-				)
-				(pin input line
-					(at -10.16 5.08 0)
-					(length 5.08)
-					(name "A0"
-						(effects
-							(font
-								(size 1.016 1.016)
-							)
-						)
-					)
-					(number "CN8_1"
-						(effects
-							(font
-								(size 1.016 1.016)
-							)
-						)
-					)
-				)
-				(pin input line
-					(at -10.16 2.54 0)
-					(length 5.08)
-					(name "A1"
-						(effects
-							(font
-								(size 1.016 1.016)
-							)
-						)
-					)
-					(number "CN8_2"
-						(effects
-							(font
-								(size 1.016 1.016)
-							)
-						)
-					)
-				)
-				(pin input line
-					(at -10.16 0 0)
-					(length 5.08)
-					(name "A2"
-						(effects
-							(font
-								(size 1.016 1.016)
-							)
-						)
-					)
-					(number "CN8_3"
-						(effects
-							(font
-								(size 1.016 1.016)
-							)
-						)
-					)
-				)
-				(pin input line
-					(at -10.16 -2.54 0)
-					(length 5.08)
-					(name "A3"
-						(effects
-							(font
-								(size 1.016 1.016)
-							)
-						)
-					)
-					(number "CN8_4"
-						(effects
-							(font
-								(size 1.016 1.016)
-							)
-						)
-					)
-				)
-				(pin input line
-					(at -10.16 -5.08 0)
-					(length 5.08)
-					(name "A4"
-						(effects
-							(font
-								(size 1.016 1.016)
-							)
-						)
-					)
-					(number "CN8_5"
-						(effects
-							(font
-								(size 1.016 1.016)
-							)
-						)
-					)
-				)
-				(pin input line
-					(at -10.16 -7.62 0)
-					(length 5.08)
-					(name "A5"
-						(effects
-							(font
-								(size 1.016 1.016)
-							)
-						)
-					)
-					(number "CN8_6"
-						(effects
-							(font
-								(size 1.016 1.016)
-							)
-						)
-					)
-				)
-			)
-			(symbol "NUCLEO-F446RE_6_0"
-				(rectangle
-					(start -10.16 -17.78)
-					(end 10.16 15.24)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type background)
-					)
-				)
-				(pin bidirectional line
-					(at -15.24 7.62 0)
-					(length 5.08)
-					(name "D8"
-						(effects
-							(font
-								(size 1.016 1.016)
-							)
-						)
-					)
-					(number "CN5_1"
-						(effects
-							(font
-								(size 1.016 1.016)
-							)
-						)
-					)
-				)
-				(pin bidirectional line
-					(at -15.24 5.08 0)
-					(length 5.08)
-					(name "D9"
-						(effects
-							(font
-								(size 1.016 1.016)
-							)
-						)
-					)
-					(number "CN5_2"
-						(effects
-							(font
-								(size 1.016 1.016)
-							)
-						)
-					)
-				)
-				(pin bidirectional line
-					(at -15.24 2.54 0)
-					(length 5.08)
-					(name "D10"
-						(effects
-							(font
-								(size 1.016 1.016)
-							)
-						)
-					)
-					(number "CN5_3"
-						(effects
-							(font
-								(size 1.016 1.016)
-							)
-						)
-					)
-				)
-				(pin bidirectional line
-					(at -15.24 0 0)
-					(length 5.08)
-					(name "D11"
-						(effects
-							(font
-								(size 1.016 1.016)
-							)
-						)
-					)
-					(number "CN5_4"
-						(effects
-							(font
-								(size 1.016 1.016)
-							)
-						)
-					)
-				)
-				(pin bidirectional line
-					(at -15.24 -2.54 0)
-					(length 5.08)
-					(name "D12"
-						(effects
-							(font
-								(size 1.016 1.016)
-							)
-						)
-					)
-					(number "CN5_5"
-						(effects
-							(font
-								(size 1.016 1.016)
-							)
-						)
-					)
-				)
-				(pin bidirectional clock
-					(at -15.24 -5.08 0)
-					(length 5.08)
-					(name "D13"
-						(effects
-							(font
-								(size 1.016 1.016)
-							)
-						)
-					)
-					(number "CN5_6"
-						(effects
-							(font
-								(size 1.016 1.016)
-							)
-						)
-					)
-				)
-				(pin bidirectional line
-					(at -15.24 -7.62 0)
-					(length 5.08)
-					(name "D14"
-						(effects
-							(font
-								(size 1.016 1.016)
-							)
-						)
-					)
-					(number "CN5_9"
-						(effects
-							(font
-								(size 1.016 1.016)
-							)
-						)
-					)
-				)
-				(pin bidirectional clock
-					(at -15.24 -10.16 0)
-					(length 5.08)
-					(name "D15"
-						(effects
-							(font
-								(size 1.016 1.016)
-							)
-						)
-					)
-					(number "CN5_10"
-						(effects
-							(font
-								(size 1.016 1.016)
-							)
-						)
-					)
-				)
-				(pin power_in line
-					(at 15.24 12.7 180)
-					(length 5.08)
-					(name "AREF"
-						(effects
-							(font
-								(size 1.016 1.016)
-							)
-						)
-					)
-					(number "CN5_8"
-						(effects
-							(font
-								(size 1.016 1.016)
-							)
-						)
-					)
-				)
-				(pin power_in line
-					(at 15.24 -15.24 180)
-					(length 5.08)
-					(name "CN5_GND"
-						(effects
-							(font
-								(size 1.016 1.016)
-							)
-						)
-					)
-					(number "CN5_7"
-						(effects
-							(font
-								(size 1.016 1.016)
-							)
-						)
-					)
-				)
-			)
+
+
+
+
 			(embedded_fonts no)
 		)
 	)
@@ -2080,10 +1469,7 @@
 		(at 151.13 58.42)
 		(uuid "1e2383f7-5843-4656-b8f6-88de1d12ea60")
 	)
-	(no_connect
-		(at 186.69 50.8)
-		(uuid "2c8f02e4-c00f-4d83-ac91-a447e13cfafc")
-	)
+
 	(no_connect
 		(at 134.62 60.96)
 		(uuid "330f7455-4cf0-4a09-be04-fdc8554a7995")
@@ -2176,10 +1562,7 @@
 		(at 134.62 55.88)
 		(uuid "9fe5fd75-425b-4f26-905b-b20f7cc16e97")
 	)
-	(no_connect
-		(at 186.69 121.92)
-		(uuid "a56fac59-2db1-4f96-a274-678f8d131f19")
-	)
+
 	(no_connect
 		(at 88.9 119.38)
 		(uuid "aca32520-8974-4651-b39d-947326b3fb38")
@@ -2466,28 +1849,7 @@
 			)
 		)
 	)
-	(global_label "PA1"
-		(shape input)
-		(at 85.09 76.2 180)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "126e5094-2e94-4667-9924-4af6a91b372d")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 78.5367 76.2 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-				(hide yes)
-			)
-		)
-	)
+	(hierarchical_label "RAIN_PULSE" (shape input) (at 85.09 76.2 0) (effects (font (size 1.0 1.0)) (justify right)) (uuid "126e5094-2e94-4667-9924-4af6a91b372d"))
 	(global_label "PA6"
 		(shape input)
 		(at 148.59 66.04 180)
@@ -2664,7 +2026,7 @@
 			)
 		)
 	)
-	(global_label "Gnd"
+	(global_label "GND"
 		(shape input)
 		(at 137.16 127 0)
 		(fields_autoplaced yes)
@@ -2686,50 +2048,8 @@
 			)
 		)
 	)
-	(global_label "PC7"
-		(shape input)
-		(at 189.23 66.04 0)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "b9bd8ff0-04d8-4097-990a-bc7aa5d1992d")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 195.9647 66.04 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-	)
-	(global_label "PA0"
-		(shape input)
-		(at 85.09 73.66 180)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "be5cda4c-ef2a-48ff-b816-b40d26f43b36")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 78.5367 73.66 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-				(hide yes)
-			)
-		)
-	)
+	(hierarchical_label "WIND_SPEED_PULSE" (shape input) (at 189.23 66.04 180) (effects (font (size 1.0 1.0)) (justify left)) (uuid "b9bd8ff0-04d8-4097-990a-bc7aa5d1992d"))
+	(hierarchical_label "WIND_DIR_ADC" (shape input) (at 85.09 73.66 0) (effects (font (size 1.0 1.0)) (justify right)) (uuid "be5cda4c-ef2a-48ff-b816-b40d26f43b36"))
 	(global_label "PB13"
 		(shape input)
 		(at 148.59 111.76 180)
@@ -2818,7 +2138,7 @@
 			)
 		)
 	)
-	(global_label "Gnd"
+	(global_label "GND"
 		(shape input)
 		(at 186.69 124.46 0)
 		(fields_autoplaced yes)
@@ -2863,7 +2183,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Nucleo_F446:NUCLEO-F446RE")
+		(lib_id "Hardware_MCU:NUCLEO-F446RE_Morpho")
 		(at 111.76 86.36 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -3353,7 +2673,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Nucleo_F446:NUCLEO-F446RE")
+		(lib_id "Hardware_MCU:NUCLEO-F446RE_Morpho")
 		(at 168.91 86.36 0)
 		(unit 2)
 		(exclude_from_sim no)
@@ -3842,4 +3162,11 @@
 			)
 		)
 	)
+(wire (pts (xy 186.69 50.8) (xy 210.82 50.8)) (stroke (width 0) (type default)) (uuid "a580a70d-5f17-5a62-9c7b-bbe25120c268"))
+(hierarchical_label "VREF_SENSOR" (shape output) (at 210.82 50.8 180) (effects (font (size 1.0 1.0)) (justify left)) (uuid "308c1e12-b323-5754-8b02-fad05dd79738"))
+(wire (pts (xy 186.69 121.92) (xy 201.93 121.92)) (stroke (width 0) (type default)) (uuid "bc550c59-6a85-5c55-97b1-4236facbd9e6"))
+(global_label "GND" (shape passive) (at 201.93 121.92 0) (effects (font (size 1.0 1.0)) (justify left)) (uuid "9dd7aa4d-d9e6-50db-83db-4ed51b3e4536"))
+(text "METEO: PA1=chuva; PC7=velocidade; PA0=ADC.
+VREF_SENSOR: AVDD/VREF+ da Nucleo.
+Futura MCU discreta: ligar a mesma fonte da referencia ADC." (at 45.72 152.4 0) (effects (font (size 1.27 1.27)) (justify left top)) (uuid "18800044-4a22-5af0-9db0-96c1e6d3d6cb"))
 )

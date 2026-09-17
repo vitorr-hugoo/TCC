@@ -1,0 +1,4939 @@
+{
+    "$schema": "https://schemas.kicad.org/drc.v1.json",
+    "coordinate_units": "mm",
+    "date": "2026-09-16T22:25:40-0300",
+    "kicad_version": "9.0.6",
+    "schematic_parity": [],
+    "source": "esquematico_V4.kicad_pcb",
+    "unconnected_items": [
+        {
+            "description": "Conexão ausente entre os itens",
+            "items": [
+                {
+                    "description": "Ilha PTH 1 [+3V3] de J14",
+                    "pos": {
+                        "x": -183.18,
+                        "y": 122.65
+                    },
+                    "uuid": "3a0e41b3-38a4-40d1-8653-805617d9eac5"
+                },
+                {
+                    "description": "Ilha PTH 2 [+3V3] de J14",
+                    "pos": {
+                        "x": -183.18,
+                        "y": 125.19
+                    },
+                    "uuid": "f36fad82-f21d-45e8-9b45-1a90718d3ec9"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Conexão ausente entre os itens",
+            "items": [
+                {
+                    "description": "Ilha PTH 1 [+3V3] de J14",
+                    "pos": {
+                        "x": -183.18,
+                        "y": 122.65
+                    },
+                    "uuid": "3a0e41b3-38a4-40d1-8653-805617d9eac5"
+                },
+                {
+                    "description": "Ilha PTH 1 [+3V3] de J16",
+                    "pos": {
+                        "x": -173.98,
+                        "y": 122.65
+                    },
+                    "uuid": "f4e10bd2-5c6d-4de6-8b62-a87e613b2b26"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Conexão ausente entre os itens",
+            "items": [
+                {
+                    "description": "Ilha PTH 1 [+3V3] de J16",
+                    "pos": {
+                        "x": -173.98,
+                        "y": 122.65
+                    },
+                    "uuid": "f4e10bd2-5c6d-4de6-8b62-a87e613b2b26"
+                },
+                {
+                    "description": "Ilha PTH 2 [+3V3] de J16",
+                    "pos": {
+                        "x": -173.98,
+                        "y": 125.19
+                    },
+                    "uuid": "c474d522-dfed-4d9a-9a3f-b30650d2a9b2"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Conexão ausente entre os itens",
+            "items": [
+                {
+                    "description": "Ilha PTH 2 [+3V3] de J16",
+                    "pos": {
+                        "x": -173.98,
+                        "y": 125.19
+                    },
+                    "uuid": "c474d522-dfed-4d9a-9a3f-b30650d2a9b2"
+                },
+                {
+                    "description": "Ilha PTH 2 [+3V3] de J18",
+                    "pos": {
+                        "x": -164.78,
+                        "y": 125.19
+                    },
+                    "uuid": "1b808263-7375-45be-beb4-2ab8749d8bec"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Conexão ausente entre os itens",
+            "items": [
+                {
+                    "description": "Ilha PTH 1 [+3V3] de J18",
+                    "pos": {
+                        "x": -164.78,
+                        "y": 122.65
+                    },
+                    "uuid": "92ed7171-11a0-4be7-9924-0066db050259"
+                },
+                {
+                    "description": "Ilha PTH 2 [+3V3] de R9",
+                    "pos": {
+                        "x": -87.91,
+                        "y": 63.05
+                    },
+                    "uuid": "d2190329-c26a-4544-a760-a7c37cb506e1"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Conexão ausente entre os itens",
+            "items": [
+                {
+                    "description": "Ilha PTH 2 [+3V3] de J18",
+                    "pos": {
+                        "x": -164.78,
+                        "y": 125.19
+                    },
+                    "uuid": "1b808263-7375-45be-beb4-2ab8749d8bec"
+                },
+                {
+                    "description": "Ilha PTH 1 [+3V3] de J18",
+                    "pos": {
+                        "x": -164.78,
+                        "y": 122.65
+                    },
+                    "uuid": "92ed7171-11a0-4be7-9924-0066db050259"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Conexão ausente entre os itens",
+            "items": [
+                {
+                    "description": "Ilha PTH 1 [+3V3] de R1",
+                    "pos": {
+                        "x": -95.53,
+                        "y": 37.85
+                    },
+                    "uuid": "ee545d03-0c8b-441f-aff7-d11e47296db9"
+                },
+                {
+                    "description": "Ilha PTH 1 [+3V3] de R2",
+                    "pos": {
+                        "x": -95.53,
+                        "y": 41.0
+                    },
+                    "uuid": "009952db-1c2b-4881-8823-81e3fa174169"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Conexão ausente entre os itens",
+            "items": [
+                {
+                    "description": "Ilha PTH 1 [+3V3] de R3",
+                    "pos": {
+                        "x": -95.53,
+                        "y": 44.15
+                    },
+                    "uuid": "55b41e74-3586-4377-8427-035b3314c585"
+                },
+                {
+                    "description": "Ilha PTH 1 [+3V3] de R2",
+                    "pos": {
+                        "x": -95.53,
+                        "y": 41.0
+                    },
+                    "uuid": "009952db-1c2b-4881-8823-81e3fa174169"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Conexão ausente entre os itens",
+            "items": [
+                {
+                    "description": "Ilha PTH 1 [+3V3] de R4",
+                    "pos": {
+                        "x": -95.53,
+                        "y": 47.3
+                    },
+                    "uuid": "87c9fba3-dd5d-49a2-9a2c-494ee760aad8"
+                },
+                {
+                    "description": "Ilha PTH 1 [+3V3] de R3",
+                    "pos": {
+                        "x": -95.53,
+                        "y": 44.15
+                    },
+                    "uuid": "55b41e74-3586-4377-8427-035b3314c585"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Conexão ausente entre os itens",
+            "items": [
+                {
+                    "description": "Ilha PTH 2 [+3V3] de R8",
+                    "pos": {
+                        "x": -87.91,
+                        "y": 59.9
+                    },
+                    "uuid": "ae9e35b1-e8a3-4367-a859-019823954dfb"
+                },
+                {
+                    "description": "Ilha PTH 1 [+3V3] de R4",
+                    "pos": {
+                        "x": -95.53,
+                        "y": 47.3
+                    },
+                    "uuid": "87c9fba3-dd5d-49a2-9a2c-494ee760aad8"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Conexão ausente entre os itens",
+            "items": [
+                {
+                    "description": "Ilha PTH 2 [+3V3] de R9",
+                    "pos": {
+                        "x": -87.91,
+                        "y": 63.05
+                    },
+                    "uuid": "d2190329-c26a-4544-a760-a7c37cb506e1"
+                },
+                {
+                    "description": "Ilha PTH 2 [+3V3] de R8",
+                    "pos": {
+                        "x": -87.91,
+                        "y": 59.9
+                    },
+                    "uuid": "ae9e35b1-e8a3-4367-a859-019823954dfb"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Conexão ausente entre os itens",
+            "items": [
+                {
+                    "description": "Ilha PTH 2 [+3V3] de J9",
+                    "pos": {
+                        "x": 49.97,
+                        "y": 43.18
+                    },
+                    "uuid": "06f3ca6a-a43e-463a-8ce1-8d99df94e602"
+                },
+                {
+                    "description": "Ilha PTH 3 [+3V3] de J9",
+                    "pos": {
+                        "x": 49.97,
+                        "y": 45.72
+                    },
+                    "uuid": "18c5ffd6-3091-4c79-9f82-1af95f00c36a"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Conexão ausente entre os itens",
+            "items": [
+                {
+                    "description": "Ilha PTH 2 [+3V3] de J9",
+                    "pos": {
+                        "x": 49.97,
+                        "y": 43.18
+                    },
+                    "uuid": "06f3ca6a-a43e-463a-8ce1-8d99df94e602"
+                },
+                {
+                    "description": "Ilha PTH 1 [+3V3] de J9",
+                    "pos": {
+                        "x": 49.97,
+                        "y": 40.64
+                    },
+                    "uuid": "d0b1aba7-15f1-4f96-adbb-bdfd524ac167"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Conexão ausente entre os itens",
+            "items": [
+                {
+                    "description": "Trilha [+3V3] no B.Cu, comprimento 2,5400 mm",
+                    "pos": {
+                        "x": 49.97,
+                        "y": 50.8
+                    },
+                    "uuid": "2d5d629d-0f2c-4e33-9f24-d9d62bec2ee7"
+                },
+                {
+                    "description": "Ilha PTH 3 [+3V3] de J9",
+                    "pos": {
+                        "x": 49.97,
+                        "y": 45.72
+                    },
+                    "uuid": "18c5ffd6-3091-4c79-9f82-1af95f00c36a"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Conexão ausente entre os itens",
+            "items": [
+                {
+                    "description": "Trilha [+3V3] no F.Cu, comprimento 3,3700 mm",
+                    "pos": {
+                        "x": 53.34,
+                        "y": 63.5
+                    },
+                    "uuid": "911f143b-1562-469f-9822-4859c72ce529"
+                },
+                {
+                    "description": "Ilha PTH 2 [+3V3] de R9",
+                    "pos": {
+                        "x": -87.91,
+                        "y": 63.05
+                    },
+                    "uuid": "d2190329-c26a-4544-a760-a7c37cb506e1"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Conexão ausente entre os itens",
+            "items": [
+                {
+                    "description": "Ilha 7 [+3V3] de U11 no F.Cu",
+                    "pos": {
+                        "x": 78.4175,
+                        "y": 85.77
+                    },
+                    "uuid": "e48225e6-8fac-4af4-bc75-0f3d6e8ccfaf"
+                },
+                {
+                    "description": "Trilha [+3V3] no F.Cu, comprimento 2,5400 mm",
+                    "pos": {
+                        "x": 60.96,
+                        "y": 73.66
+                    },
+                    "uuid": "be12625a-b792-442e-b924-9eee86edfff8"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Conexão ausente entre os itens",
+            "items": [
+                {
+                    "description": "Trilha [+3V3] no F.Cu, comprimento 7,5800 mm",
+                    "pos": {
+                        "x": 88.9,
+                        "y": 119.34
+                    },
+                    "uuid": "0a10090a-882f-4d1c-bc5d-de9d554307b3"
+                },
+                {
+                    "description": "Ilha 3 [+3V3] de U4 no F.Cu",
+                    "pos": {
+                        "x": 68.4558,
+                        "y": 123.54
+                    },
+                    "uuid": "956c796c-4332-481c-9b49-4ab70abbf4b7"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Conexão ausente entre os itens",
+            "items": [
+                {
+                    "description": "Trilha [+3V3] no B.Cu, comprimento 0,1796 mm",
+                    "pos": {
+                        "x": 91.44,
+                        "y": 60.833
+                    },
+                    "uuid": "1acfe18d-0f27-4d1b-b7fe-690e8a35013a"
+                },
+                {
+                    "description": "Ilha 7 [+3V3] de U11 no F.Cu",
+                    "pos": {
+                        "x": 78.4175,
+                        "y": 85.77
+                    },
+                    "uuid": "e48225e6-8fac-4af4-bc75-0f3d6e8ccfaf"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Conexão ausente entre os itens",
+            "items": [
+                {
+                    "description": "Trilha [+3V3] no F.Cu, comprimento 57,0154 mm",
+                    "pos": {
+                        "x": 101.276,
+                        "y": 113.976
+                    },
+                    "uuid": "0304c715-8bb7-419e-8efb-53c7943bca7d"
+                },
+                {
+                    "description": "Ilha 4 [+3V3] de J17 no F.Cu",
+                    "pos": {
+                        "x": 103.145,
+                        "y": 95.855
+                    },
+                    "uuid": "d86fbe06-0e48-42ea-99d8-2e8d0cf5c3ee"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Conexão ausente entre os itens",
+            "items": [
+                {
+                    "description": "Trilha [+3V3] no B.Cu, comprimento 1,6164 mm",
+                    "pos": {
+                        "x": 102.743,
+                        "y": 47.117
+                    },
+                    "uuid": "ab378d0e-23f3-411b-8bec-469a4df9162d"
+                },
+                {
+                    "description": "Trilha [+3V3] no B.Cu, comprimento 1,6164 mm",
+                    "pos": {
+                        "x": 92.583,
+                        "y": 47.117
+                    },
+                    "uuid": "e6021377-2e0c-468f-a2c3-2b59b67dbf86"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Conexão ausente entre os itens",
+            "items": [
+                {
+                    "description": "Trilha [+3V3] no F.Cu, comprimento 14,3684 mm",
+                    "pos": {
+                        "x": 170.18,
+                        "y": 121.92
+                    },
+                    "uuid": "1db6926f-5a42-4ebf-b4ff-2d9f50645db0"
+                },
+                {
+                    "description": "Trilha [+3V3] no B.Cu, comprimento 2,5400 mm",
+                    "pos": {
+                        "x": 231.14,
+                        "y": 76.2
+                    },
+                    "uuid": "51daf59d-ce64-4d9a-b0eb-7f4ac48a9604"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Conexão ausente entre os itens",
+            "items": [
+                {
+                    "description": "Trilha [+3V3] no B.Cu, comprimento 2,5400 mm",
+                    "pos": {
+                        "x": 231.14,
+                        "y": 76.2
+                    },
+                    "uuid": "51daf59d-ce64-4d9a-b0eb-7f4ac48a9604"
+                },
+                {
+                    "description": "Ilha 1 [+3V3] de U9 no F.Cu",
+                    "pos": {
+                        "x": 225.925,
+                        "y": 50.3
+                    },
+                    "uuid": "c2ec7943-be4d-4a00-8593-5dfb515dbb4a"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Conexão ausente entre os itens",
+            "items": [
+                {
+                    "description": "Ilha PTH 1 [PC7] de J22",
+                    "pos": {
+                        "x": -146.38,
+                        "y": 122.65
+                    },
+                    "uuid": "6c695dcd-86dd-4600-bbe5-a48f25fbb7a9"
+                },
+                {
+                    "description": "Ilha PTH 2 [PC7] de J22",
+                    "pos": {
+                        "x": -146.38,
+                        "y": 125.19
+                    },
+                    "uuid": "f6032fd0-b895-4ef1-b264-bec49f5605e4"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Conexão ausente entre os itens",
+            "items": [
+                {
+                    "description": "Ilha PTH 2 [PC7] de J22",
+                    "pos": {
+                        "x": -146.38,
+                        "y": 125.19
+                    },
+                    "uuid": "f6032fd0-b895-4ef1-b264-bec49f5605e4"
+                },
+                {
+                    "description": "Ilha PTH 1 [PC7] de C2",
+                    "pos": {
+                        "x": -124.88,
+                        "y": 126.55
+                    },
+                    "uuid": "625e7baa-5ce5-4b42-ae0a-32107c63a9fc"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Conexão ausente entre os itens",
+            "items": [
+                {
+                    "description": "Ilha 1 [PC7] de S1 no F.Cu",
+                    "pos": {
+                        "x": -110.93,
+                        "y": 94.15
+                    },
+                    "uuid": "4b411d4f-e213-473a-96d1-c332af6a1066"
+                },
+                {
+                    "description": "Ilha PTH 1 [PC7] de C2",
+                    "pos": {
+                        "x": -124.88,
+                        "y": 126.55
+                    },
+                    "uuid": "625e7baa-5ce5-4b42-ae0a-32107c63a9fc"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Conexão ausente entre os itens",
+            "items": [
+                {
+                    "description": "Ilha 1 [PC7] de S1 no F.Cu",
+                    "pos": {
+                        "x": -110.93,
+                        "y": 94.15
+                    },
+                    "uuid": "4b411d4f-e213-473a-96d1-c332af6a1066"
+                },
+                {
+                    "description": "Ilha PTH 1 [PC7] de R8",
+                    "pos": {
+                        "x": -95.53,
+                        "y": 59.9
+                    },
+                    "uuid": "ebdfa754-1789-4bb9-95ea-0bd3304ee66e"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Conexão ausente entre os itens",
+            "items": [
+                {
+                    "description": "Ilha PTH 1 [PC7] de R8",
+                    "pos": {
+                        "x": -95.53,
+                        "y": 59.9
+                    },
+                    "uuid": "ebdfa754-1789-4bb9-95ea-0bd3304ee66e"
+                },
+                {
+                    "description": "Ilha PTH CN10_19 [PC7] de U5",
+                    "pos": {
+                        "x": -134.62,
+                        "y": 15.24
+                    },
+                    "uuid": "04e79ac1-730b-462c-9e4a-6561d36a59eb"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Conexão ausente entre os itens",
+            "items": [
+                {
+                    "description": "Ilha PTH 1 [PC7] de R8",
+                    "pos": {
+                        "x": -95.53,
+                        "y": 59.9
+                    },
+                    "uuid": "ebdfa754-1789-4bb9-95ea-0bd3304ee66e"
+                },
+                {
+                    "description": "Trilha [PC7] no B.Cu, comprimento 3,1750 mm",
+                    "pos": {
+                        "x": 155.575,
+                        "y": 96.52
+                    },
+                    "uuid": "5e113cb9-db76-4240-a6f6-7ee7bf26d478"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Conexão ausente entre os itens",
+            "items": [
+                {
+                    "description": "Trilha [PC7] no B.Cu, comprimento 26,6700 mm",
+                    "pos": {
+                        "x": 155.575,
+                        "y": 123.19
+                    },
+                    "uuid": "7db87484-20e9-4d84-8a0f-16a6f0673dcf"
+                },
+                {
+                    "description": "Trilha [PC7] no B.Cu, comprimento 1,7961 mm",
+                    "pos": {
+                        "x": 166.37,
+                        "y": 125.73
+                    },
+                    "uuid": "520b29c1-f8c6-4bdf-b1ed-1a632b43910a"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Conexão ausente entre os itens",
+            "items": [
+                {
+                    "description": "Ilha 1 [Net-(R1-Pad2)] de S3 no F.Cu",
+                    "pos": {
+                        "x": -110.93,
+                        "y": 100.85
+                    },
+                    "uuid": "b77e0441-5b83-4656-9a33-6c5d41e0bc30"
+                },
+                {
+                    "description": "Ilha PTH 2 [Net-(R1-Pad2)] de R1",
+                    "pos": {
+                        "x": -87.91,
+                        "y": 37.85
+                    },
+                    "uuid": "da5b1ec0-0ac1-42b9-8605-c9863cd1bda9"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Conexão ausente entre os itens",
+            "items": [
+                {
+                    "description": "Ilha 2 [Net-(R5-Pad1)] de S3 no F.Cu",
+                    "pos": {
+                        "x": -99.08,
+                        "y": 100.85
+                    },
+                    "uuid": "0199ddfc-be9c-415d-80e2-ea39d8c9d38a"
+                },
+                {
+                    "description": "Ilha 2 [Net-(R5-Pad1)] de S4 no F.Cu",
+                    "pos": {
+                        "x": -99.08,
+                        "y": 104.2
+                    },
+                    "uuid": "1aa23ab5-132e-4949-9265-72271520b2ba"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Conexão ausente entre os itens",
+            "items": [
+                {
+                    "description": "Ilha 2 [Net-(R5-Pad1)] de S4 no F.Cu",
+                    "pos": {
+                        "x": -99.08,
+                        "y": 104.2
+                    },
+                    "uuid": "1aa23ab5-132e-4949-9265-72271520b2ba"
+                },
+                {
+                    "description": "Ilha 2 [Net-(R5-Pad1)] de S5 no F.Cu",
+                    "pos": {
+                        "x": -99.08,
+                        "y": 107.55
+                    },
+                    "uuid": "bf5859cb-0667-4e69-ba4e-84e709eb2976"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Conexão ausente entre os itens",
+            "items": [
+                {
+                    "description": "Ilha 2 [Net-(R5-Pad1)] de S5 no F.Cu",
+                    "pos": {
+                        "x": -99.08,
+                        "y": 107.55
+                    },
+                    "uuid": "bf5859cb-0667-4e69-ba4e-84e709eb2976"
+                },
+                {
+                    "description": "Ilha 2 [Net-(R5-Pad1)] de S6 no F.Cu",
+                    "pos": {
+                        "x": -99.08,
+                        "y": 110.9
+                    },
+                    "uuid": "2cb21ead-951d-4418-acc8-abe74291bdc8"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Conexão ausente entre os itens",
+            "items": [
+                {
+                    "description": "Ilha PTH 1 [Net-(R5-Pad1)] de R5",
+                    "pos": {
+                        "x": -95.53,
+                        "y": 50.45
+                    },
+                    "uuid": "ade3e0d2-5095-4f8b-94f8-2637722928ee"
+                },
+                {
+                    "description": "Ilha 2 [Net-(R5-Pad1)] de S3 no F.Cu",
+                    "pos": {
+                        "x": -99.08,
+                        "y": 100.85
+                    },
+                    "uuid": "0199ddfc-be9c-415d-80e2-ea39d8c9d38a"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Conexão ausente entre os itens",
+            "items": [
+                {
+                    "description": "Ilha 1 [Net-(R2-Pad2)] de S4 no F.Cu",
+                    "pos": {
+                        "x": -110.93,
+                        "y": 104.2
+                    },
+                    "uuid": "7de9d381-9508-4224-95aa-2aa6e0c937ae"
+                },
+                {
+                    "description": "Ilha PTH 2 [Net-(R2-Pad2)] de R2",
+                    "pos": {
+                        "x": -87.91,
+                        "y": 41.0
+                    },
+                    "uuid": "bc4006ac-12c3-4e1a-8989-635548a66614"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Conexão ausente entre os itens",
+            "items": [
+                {
+                    "description": "Ilha 1 [Net-(R3-Pad2)] de S5 no F.Cu",
+                    "pos": {
+                        "x": -110.93,
+                        "y": 107.55
+                    },
+                    "uuid": "b7281202-b4d4-4035-82c0-f7bd90319c39"
+                },
+                {
+                    "description": "Ilha PTH 2 [Net-(R3-Pad2)] de R3",
+                    "pos": {
+                        "x": -87.91,
+                        "y": 44.15
+                    },
+                    "uuid": "720581bb-3381-4d6a-baad-950e0bf4ef6f"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Conexão ausente entre os itens",
+            "items": [
+                {
+                    "description": "Ilha 1 [Net-(R4-Pad2)] de S6 no F.Cu",
+                    "pos": {
+                        "x": -110.93,
+                        "y": 110.9
+                    },
+                    "uuid": "3990668e-a032-4467-8898-f387d044af4c"
+                },
+                {
+                    "description": "Ilha PTH 2 [Net-(R4-Pad2)] de R4",
+                    "pos": {
+                        "x": -87.91,
+                        "y": 47.3
+                    },
+                    "uuid": "6b983508-d2d8-4a29-96b9-8462bccaf271"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Conexão ausente entre os itens",
+            "items": [
+                {
+                    "description": "Ilha PTH CN7_20 [Gnd] de U5",
+                    "pos": {
+                        "x": -193.04,
+                        "y": 15.24
+                    },
+                    "uuid": "8c0623a2-4d5c-459c-9bfd-1412a4ba3630"
+                },
+                {
+                    "description": "Ilha PTH CN7_19 [Gnd] de U5",
+                    "pos": {
+                        "x": -195.58,
+                        "y": 15.24
+                    },
+                    "uuid": "9de14dae-38be-4af9-8e20-37a155020b44"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Conexão ausente entre os itens",
+            "items": [
+                {
+                    "description": "Ilha PTH CN7_20 [Gnd] de U5",
+                    "pos": {
+                        "x": -193.04,
+                        "y": 15.24
+                    },
+                    "uuid": "8c0623a2-4d5c-459c-9bfd-1412a4ba3630"
+                },
+                {
+                    "description": "Ilha PTH CN7_8 [Gnd] de U5",
+                    "pos": {
+                        "x": -193.04,
+                        "y": 0.0
+                    },
+                    "uuid": "25a62b9d-23a8-4d48-a755-a6ebbaa72f8a"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Conexão ausente entre os itens",
+            "items": [
+                {
+                    "description": "Ilha PTH CN7_22 [Gnd] de U5",
+                    "pos": {
+                        "x": -193.04,
+                        "y": 17.78
+                    },
+                    "uuid": "08cbede2-05a3-4b04-aca2-a20f06bdeeb9"
+                },
+                {
+                    "description": "Ilha PTH CN7_20 [Gnd] de U5",
+                    "pos": {
+                        "x": -193.04,
+                        "y": 15.24
+                    },
+                    "uuid": "8c0623a2-4d5c-459c-9bfd-1412a4ba3630"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Conexão ausente entre os itens",
+            "items": [
+                {
+                    "description": "Ilha PTH CN10_9 [Gnd] de U5",
+                    "pos": {
+                        "x": -134.62,
+                        "y": 2.54
+                    },
+                    "uuid": "0c0a7efe-4b95-47e2-99ed-15694b32b2ce"
+                },
+                {
+                    "description": "Ilha PTH CN7_8 [Gnd] de U5",
+                    "pos": {
+                        "x": -193.04,
+                        "y": 0.0
+                    },
+                    "uuid": "25a62b9d-23a8-4d48-a755-a6ebbaa72f8a"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Conexão ausente entre os itens",
+            "items": [
+                {
+                    "description": "Ilha PTH CN10_20 [Gnd] de U5",
+                    "pos": {
+                        "x": -132.08,
+                        "y": 15.24
+                    },
+                    "uuid": "55171308-a663-4089-8283-b4f62d284e86"
+                },
+                {
+                    "description": "Ilha PTH CN10_9 [Gnd] de U5",
+                    "pos": {
+                        "x": -134.62,
+                        "y": 2.54
+                    },
+                    "uuid": "0c0a7efe-4b95-47e2-99ed-15694b32b2ce"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Conexão ausente entre os itens",
+            "items": [
+                {
+                    "description": "Ilha PTH 1 [Gnd] de J10",
+                    "pos": {
+                        "x": 60.96,
+                        "y": 40.64
+                    },
+                    "uuid": "154d4b41-3c86-4226-b6d8-db9f2255f07b"
+                },
+                {
+                    "description": "Ilha PTH 2 [Gnd] de J10",
+                    "pos": {
+                        "x": 60.96,
+                        "y": 43.18
+                    },
+                    "uuid": "39420958-7df9-4ef5-96e9-5115f208a171"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Conexão ausente entre os itens",
+            "items": [
+                {
+                    "description": "Ilha PTH 1 [Gnd] de J10",
+                    "pos": {
+                        "x": 60.96,
+                        "y": 40.64
+                    },
+                    "uuid": "154d4b41-3c86-4226-b6d8-db9f2255f07b"
+                },
+                {
+                    "description": "Ilha PTH CN10_20 [Gnd] de U5",
+                    "pos": {
+                        "x": -132.08,
+                        "y": 15.24
+                    },
+                    "uuid": "55171308-a663-4089-8283-b4f62d284e86"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Conexão ausente entre os itens",
+            "items": [
+                {
+                    "description": "Ilha PTH 2 [Gnd] de J10",
+                    "pos": {
+                        "x": 60.96,
+                        "y": 43.18
+                    },
+                    "uuid": "39420958-7df9-4ef5-96e9-5115f208a171"
+                },
+                {
+                    "description": "Ilha PTH 3 [Gnd] de J10",
+                    "pos": {
+                        "x": 60.96,
+                        "y": 45.72
+                    },
+                    "uuid": "e885ad18-ad3d-484b-b578-3ec21c600849"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Conexão ausente entre os itens",
+            "items": [
+                {
+                    "description": "Ilha PTH 3 [Gnd] de J10",
+                    "pos": {
+                        "x": 60.96,
+                        "y": 45.72
+                    },
+                    "uuid": "e885ad18-ad3d-484b-b578-3ec21c600849"
+                },
+                {
+                    "description": "Trilha [Gnd] no B.Cu, comprimento 2,5400 mm",
+                    "pos": {
+                        "x": 60.96,
+                        "y": 50.8
+                    },
+                    "uuid": "30f31cc1-a027-4eb9-b0fd-815becf27bde"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Conexão ausente entre os itens",
+            "items": [
+                {
+                    "description": "Ilha 2 [Gnd] de U4 no F.Cu",
+                    "pos": {
+                        "x": 68.4558,
+                        "y": 121.54
+                    },
+                    "uuid": "6960f597-c97e-43a8-8d39-7ebbef347616"
+                },
+                {
+                    "description": "Ilha PTH IN- [Gnd] de PS1",
+                    "pos": {
+                        "x": 66.9925,
+                        "y": 108.6485
+                    },
+                    "uuid": "f0c0d982-a644-42b7-bc2a-1521f2e12b2c"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Conexão ausente entre os itens",
+            "items": [
+                {
+                    "description": "Ilha 1 [Gnd] de U11 no F.Cu",
+                    "pos": {
+                        "x": 78.4175,
+                        "y": 81.87
+                    },
+                    "uuid": "38688693-e223-4ada-aecc-44e6d61d4d71"
+                },
+                {
+                    "description": "Trilha [Gnd] no B.Cu, comprimento 2,9210 mm",
+                    "pos": {
+                        "x": 64.0715,
+                        "y": 69.1515
+                    },
+                    "uuid": "51b00fcb-a11b-47cc-89ff-7666ffdee608"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Conexão ausente entre os itens",
+            "items": [
+                {
+                    "description": "Ilha 4 [Gnd] de U11 no F.Cu",
+                    "pos": {
+                        "x": 78.4175,
+                        "y": 83.82
+                    },
+                    "uuid": "d992c303-daff-4285-98cf-1f44b070eb0e"
+                },
+                {
+                    "description": "Ilha 1 [Gnd] de U11 no F.Cu",
+                    "pos": {
+                        "x": 78.4175,
+                        "y": 81.87
+                    },
+                    "uuid": "38688693-e223-4ada-aecc-44e6d61d4d71"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Conexão ausente entre os itens",
+            "items": [
+                {
+                    "description": "Ilha 16 [Gnd] de U4 no F.Cu",
+                    "pos": {
+                        "x": 83.82,
+                        "y": 119.54
+                    },
+                    "uuid": "5792c707-3c64-40c3-9f18-761e09dd77b8"
+                },
+                {
+                    "description": "Ilha 2 [Gnd] de U4 no F.Cu",
+                    "pos": {
+                        "x": 68.4558,
+                        "y": 121.54
+                    },
+                    "uuid": "6960f597-c97e-43a8-8d39-7ebbef347616"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Conexão ausente entre os itens",
+            "items": [
+                {
+                    "description": "Ilha 10 [Gnd] de U11 no F.Cu",
+                    "pos": {
+                        "x": 84.1425,
+                        "y": 84.47
+                    },
+                    "uuid": "d3b3539d-fba2-4489-bc2f-065395006982"
+                },
+                {
+                    "description": "Ilha 13 [Gnd] de U11 no F.Cu",
+                    "pos": {
+                        "x": 84.1425,
+                        "y": 82.52
+                    },
+                    "uuid": "4b06be8e-a57b-4496-b7ae-c12c3c68e814"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Conexão ausente entre os itens",
+            "items": [
+                {
+                    "description": "Ilha 10 [Gnd] de U11 no F.Cu",
+                    "pos": {
+                        "x": 84.1425,
+                        "y": 84.47
+                    },
+                    "uuid": "d3b3539d-fba2-4489-bc2f-065395006982"
+                },
+                {
+                    "description": "Ilha 4 [Gnd] de U11 no F.Cu",
+                    "pos": {
+                        "x": 78.4175,
+                        "y": 83.82
+                    },
+                    "uuid": "d992c303-daff-4285-98cf-1f44b070eb0e"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Conexão ausente entre os itens",
+            "items": [
+                {
+                    "description": "Trilha [Gnd] no B.Cu, comprimento 3,7700 mm",
+                    "pos": {
+                        "x": 87.63,
+                        "y": 132.04
+                    },
+                    "uuid": "3565cbb9-d59b-4770-a674-946ceceb0347"
+                },
+                {
+                    "description": "Ilha 9 [Gnd] de U4 no F.Cu",
+                    "pos": {
+                        "x": 83.82,
+                        "y": 133.54
+                    },
+                    "uuid": "adbc1b9c-bb2a-49b9-8822-77ce4a715061"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Conexão ausente entre os itens",
+            "items": [
+                {
+                    "description": "Ilha PTH 2 [Gnd] de C4",
+                    "pos": {
+                        "x": 93.98,
+                        "y": 126.96
+                    },
+                    "uuid": "c91ba642-7965-4006-8d47-f679261be95b"
+                },
+                {
+                    "description": "Ilha 16 [Gnd] de U4 no F.Cu",
+                    "pos": {
+                        "x": 83.82,
+                        "y": 119.54
+                    },
+                    "uuid": "5792c707-3c64-40c3-9f18-761e09dd77b8"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Conexão ausente entre os itens",
+            "items": [
+                {
+                    "description": "Ilha 10 [Gnd] de J17 no F.Cu",
+                    "pos": {
+                        "x": 97.21,
+                        "y": 105.705
+                    },
+                    "uuid": "b8d2d9d7-aa16-4aa9-b1e4-0a13628e1142"
+                },
+                {
+                    "description": "Ilha 16 [Gnd] de U4 no F.Cu",
+                    "pos": {
+                        "x": 83.82,
+                        "y": 119.54
+                    },
+                    "uuid": "5792c707-3c64-40c3-9f18-761e09dd77b8"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Conexão ausente entre os itens",
+            "items": [
+                {
+                    "description": "Ilha 11 [Gnd] de J17 no F.Cu",
+                    "pos": {
+                        "x": 97.385,
+                        "y": 95.98
+                    },
+                    "uuid": "3b5f2f9f-fe7b-4d69-a414-d683c5ffb7ed"
+                },
+                {
+                    "description": "Ilha 6 [Gnd] de J17 no F.Cu",
+                    "pos": {
+                        "x": 105.345,
+                        "y": 95.855
+                    },
+                    "uuid": "1bf33721-8c2a-4694-b610-82b0f0ca3bc2"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Conexão ausente entre os itens",
+            "items": [
+                {
+                    "description": "Ilha 11 [Gnd] de J17 no F.Cu",
+                    "pos": {
+                        "x": 97.385,
+                        "y": 95.98
+                    },
+                    "uuid": "3b5f2f9f-fe7b-4d69-a414-d683c5ffb7ed"
+                },
+                {
+                    "description": "Ilha 10 [Gnd] de J17 no F.Cu",
+                    "pos": {
+                        "x": 97.21,
+                        "y": 105.705
+                    },
+                    "uuid": "b8d2d9d7-aa16-4aa9-b1e4-0a13628e1142"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Conexão ausente entre os itens",
+            "items": [
+                {
+                    "description": "Ilha 11 [Gnd] de J17 no F.Cu",
+                    "pos": {
+                        "x": 97.385,
+                        "y": 95.98
+                    },
+                    "uuid": "3b5f2f9f-fe7b-4d69-a414-d683c5ffb7ed"
+                },
+                {
+                    "description": "Ilha 10 [Gnd] de U11 no F.Cu",
+                    "pos": {
+                        "x": 84.1425,
+                        "y": 84.47
+                    },
+                    "uuid": "d3b3539d-fba2-4489-bc2f-065395006982"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Conexão ausente entre os itens",
+            "items": [
+                {
+                    "description": "Ilha 11 [Gnd] de J17 no F.Cu",
+                    "pos": {
+                        "x": 100.71,
+                        "y": 106.68
+                    },
+                    "uuid": "5b7976dd-a732-4fb1-925a-e735ac6190f0"
+                },
+                {
+                    "description": "Ilha 10 [Gnd] de J17 no F.Cu",
+                    "pos": {
+                        "x": 97.21,
+                        "y": 105.705
+                    },
+                    "uuid": "b8d2d9d7-aa16-4aa9-b1e4-0a13628e1142"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Conexão ausente entre os itens",
+            "items": [
+                {
+                    "description": "Trilha [Gnd] no B.Cu, comprimento 4,9530 mm",
+                    "pos": {
+                        "x": 101.727,
+                        "y": 60.96
+                    },
+                    "uuid": "b4cd28c2-b3b9-49f8-869f-897e805573f9"
+                },
+                {
+                    "description": "Trilha [Gnd] no B.Cu, comprimento 0,1796 mm",
+                    "pos": {
+                        "x": 93.98,
+                        "y": 60.833
+                    },
+                    "uuid": "9fc742e0-9523-43cb-9f08-2fa93145944c"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Conexão ausente entre os itens",
+            "items": [
+                {
+                    "description": "Trilha [Gnd] no B.Cu, comprimento 4,9530 mm",
+                    "pos": {
+                        "x": 101.727,
+                        "y": 60.96
+                    },
+                    "uuid": "b4cd28c2-b3b9-49f8-869f-897e805573f9"
+                },
+                {
+                    "description": "Ilha PTH CN7_8 [Gnd] de U7",
+                    "pos": {
+                        "x": 117.59,
+                        "y": 74.41
+                    },
+                    "uuid": "3871ad47-2423-431b-bafb-87b03c599a4a"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Conexão ausente entre os itens",
+            "items": [
+                {
+                    "description": "Ilha 6 [Gnd] de J17 no F.Cu",
+                    "pos": {
+                        "x": 105.345,
+                        "y": 95.855
+                    },
+                    "uuid": "1bf33721-8c2a-4694-b610-82b0f0ca3bc2"
+                },
+                {
+                    "description": "Ilha 11 [Gnd] de J17 no F.Cu",
+                    "pos": {
+                        "x": 108.705,
+                        "y": 96.205
+                    },
+                    "uuid": "37bf40d0-6cca-430d-ba77-5fc81b9f2e0c"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Conexão ausente entre os itens",
+            "items": [
+                {
+                    "description": "Ilha 11 [Gnd] de J17 no F.Cu",
+                    "pos": {
+                        "x": 106.68,
+                        "y": 106.68
+                    },
+                    "uuid": "e9d3bc08-754e-4949-a041-54c21584d555"
+                },
+                {
+                    "description": "Ilha 11 [Gnd] de J17 no F.Cu",
+                    "pos": {
+                        "x": 100.71,
+                        "y": 106.68
+                    },
+                    "uuid": "5b7976dd-a732-4fb1-925a-e735ac6190f0"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Conexão ausente entre os itens",
+            "items": [
+                {
+                    "description": "Ilha 11 [Gnd] de J17 no F.Cu",
+                    "pos": {
+                        "x": 108.705,
+                        "y": 96.205
+                    },
+                    "uuid": "37bf40d0-6cca-430d-ba77-5fc81b9f2e0c"
+                },
+                {
+                    "description": "Ilha PTH CN7_19 [Gnd] de U7",
+                    "pos": {
+                        "x": 115.05,
+                        "y": 89.65
+                    },
+                    "uuid": "4c9dab97-0937-4a08-ab6d-c4d5a7ced20b"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Conexão ausente entre os itens",
+            "items": [
+                {
+                    "description": "Ilha PTH CN7_20 [Gnd] de U7",
+                    "pos": {
+                        "x": 117.59,
+                        "y": 89.65
+                    },
+                    "uuid": "404a3902-6eae-48ed-9847-2a443720d218"
+                },
+                {
+                    "description": "Ilha PTH CN7_19 [Gnd] de U7",
+                    "pos": {
+                        "x": 115.05,
+                        "y": 89.65
+                    },
+                    "uuid": "4c9dab97-0937-4a08-ab6d-c4d5a7ced20b"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Conexão ausente entre os itens",
+            "items": [
+                {
+                    "description": "Ilha PTH CN7_20 [Gnd] de U7",
+                    "pos": {
+                        "x": 117.59,
+                        "y": 89.65
+                    },
+                    "uuid": "404a3902-6eae-48ed-9847-2a443720d218"
+                },
+                {
+                    "description": "Ilha PTH CN7_8 [Gnd] de U7",
+                    "pos": {
+                        "x": 117.59,
+                        "y": 74.41
+                    },
+                    "uuid": "3871ad47-2423-431b-bafb-87b03c599a4a"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Conexão ausente entre os itens",
+            "items": [
+                {
+                    "description": "Ilha PTH CN7_22 [Gnd] de U7",
+                    "pos": {
+                        "x": 117.59,
+                        "y": 92.19
+                    },
+                    "uuid": "df14fa94-1c0b-4e04-818f-b519487f0128"
+                },
+                {
+                    "description": "Ilha PTH CN7_20 [Gnd] de U7",
+                    "pos": {
+                        "x": 117.59,
+                        "y": 89.65
+                    },
+                    "uuid": "404a3902-6eae-48ed-9847-2a443720d218"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Conexão ausente entre os itens",
+            "items": [
+                {
+                    "description": "Trilha [Gnd] no B.Cu, comprimento 1,8526 mm",
+                    "pos": {
+                        "x": 171.41,
+                        "y": 133.35
+                    },
+                    "uuid": "32049fc4-0447-4627-8695-4294fcaf7e1c"
+                },
+                {
+                    "description": "Trilha [Gnd] no B.Cu, comprimento 7,5700 mm",
+                    "pos": {
+                        "x": 198.12,
+                        "y": 132.03
+                    },
+                    "uuid": "57e28e6b-d513-4c06-82a9-c7ba1f289d36"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Conexão ausente entre os itens",
+            "items": [
+                {
+                    "description": "Ilha PTH CN10_20 [Gnd] de U7",
+                    "pos": {
+                        "x": 178.55,
+                        "y": 89.65
+                    },
+                    "uuid": "d481e59a-2c1e-4801-b9f7-67e6d0aae78d"
+                },
+                {
+                    "description": "Ilha PTH CN10_9 [Gnd] de U7",
+                    "pos": {
+                        "x": 176.01,
+                        "y": 76.95
+                    },
+                    "uuid": "e508c2a4-a46d-4ac0-bf5a-a52c4fb3116b"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Conexão ausente entre os itens",
+            "items": [
+                {
+                    "description": "Ilha PTH 6 [Gnd] de J4",
+                    "pos": {
+                        "x": 198.12,
+                        "y": 53.34
+                    },
+                    "uuid": "38685b28-f222-4b7f-aabf-ee65e1bc02b9"
+                },
+                {
+                    "description": "Ilha PTH 1 [Gnd] de U6",
+                    "pos": {
+                        "x": 198.12,
+                        "y": 58.42
+                    },
+                    "uuid": "98f4f3e2-76a9-42f7-9a8f-ee9b55d7a2f8"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Conexão ausente entre os itens",
+            "items": [
+                {
+                    "description": "Ilha PTH 6 [Gnd] de J4",
+                    "pos": {
+                        "x": 198.12,
+                        "y": 53.34
+                    },
+                    "uuid": "38685b28-f222-4b7f-aabf-ee65e1bc02b9"
+                },
+                {
+                    "description": "Ilha 3 [Gnd] de U9 no F.Cu",
+                    "pos": {
+                        "x": 225.925,
+                        "y": 51.3
+                    },
+                    "uuid": "6680df9d-7645-4a18-bfde-e8806770a2de"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Conexão ausente entre os itens",
+            "items": [
+                {
+                    "description": "Ilha PTH 1 [Gnd] de U6",
+                    "pos": {
+                        "x": 198.12,
+                        "y": 58.42
+                    },
+                    "uuid": "98f4f3e2-76a9-42f7-9a8f-ee9b55d7a2f8"
+                },
+                {
+                    "description": "Ilha PTH CN10_9 [Gnd] de U7",
+                    "pos": {
+                        "x": 176.01,
+                        "y": 76.95
+                    },
+                    "uuid": "e508c2a4-a46d-4ac0-bf5a-a52c4fb3116b"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Conexão ausente entre os itens",
+            "items": [
+                {
+                    "description": "Trilha [Gnd] no B.Cu, comprimento 7,5700 mm",
+                    "pos": {
+                        "x": 198.12,
+                        "y": 132.03
+                    },
+                    "uuid": "57e28e6b-d513-4c06-82a9-c7ba1f289d36"
+                },
+                {
+                    "description": "Ilha PTH 11 [Gnd] de J8",
+                    "pos": {
+                        "x": 220.98,
+                        "y": 106.68
+                    },
+                    "uuid": "157361b2-60fb-4b05-84ce-31985ecc6c75"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Conexão ausente entre os itens",
+            "items": [
+                {
+                    "description": "Trilha [Gnd] no B.Cu, comprimento 7,5700 mm",
+                    "pos": {
+                        "x": 198.12,
+                        "y": 132.03
+                    },
+                    "uuid": "57e28e6b-d513-4c06-82a9-c7ba1f289d36"
+                },
+                {
+                    "description": "Ilha PTH CN10_20 [Gnd] de U7",
+                    "pos": {
+                        "x": 178.55,
+                        "y": 89.65
+                    },
+                    "uuid": "d481e59a-2c1e-4801-b9f7-67e6d0aae78d"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Conexão ausente entre os itens",
+            "items": [
+                {
+                    "description": "Ilha PTH 12 [Gnd] de J8",
+                    "pos": {
+                        "x": 220.98,
+                        "y": 104.14
+                    },
+                    "uuid": "ed1952a5-abc8-4ce3-ba4c-5593b944642a"
+                },
+                {
+                    "description": "Ilha PTH 11 [Gnd] de J8",
+                    "pos": {
+                        "x": 220.98,
+                        "y": 106.68
+                    },
+                    "uuid": "157361b2-60fb-4b05-84ce-31985ecc6c75"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Conexão ausente entre os itens",
+            "items": [
+                {
+                    "description": "Ilha 1 [Gnd] de U8 no F.Cu",
+                    "pos": {
+                        "x": 226.65,
+                        "y": 56.82
+                    },
+                    "uuid": "352c582c-8a97-4cfa-b46b-b8bf4afd9fd3"
+                },
+                {
+                    "description": "Ilha 7 [Gnd] de U8 no F.Cu",
+                    "pos": {
+                        "x": 227.3,
+                        "y": 58.42
+                    },
+                    "uuid": "dbc6aaee-7821-4e97-8cdf-c862c040ad96"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Conexão ausente entre os itens",
+            "items": [
+                {
+                    "description": "Ilha 1 [Gnd] de U8 no F.Cu",
+                    "pos": {
+                        "x": 226.65,
+                        "y": 56.82
+                    },
+                    "uuid": "352c582c-8a97-4cfa-b46b-b8bf4afd9fd3"
+                },
+                {
+                    "description": "Ilha 3 [Gnd] de U9 no F.Cu",
+                    "pos": {
+                        "x": 225.925,
+                        "y": 51.3
+                    },
+                    "uuid": "6680df9d-7645-4a18-bfde-e8806770a2de"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Conexão ausente entre os itens",
+            "items": [
+                {
+                    "description": "Ilha PTH CN10_23 [PA8] de U5",
+                    "pos": {
+                        "x": -134.62,
+                        "y": 20.32
+                    },
+                    "uuid": "ea5f147b-012f-42d8-b7c3-8401dd781a88"
+                },
+                {
+                    "description": "Ilha PTH 1 [PA8] de R7",
+                    "pos": {
+                        "x": -95.53,
+                        "y": 56.75
+                    },
+                    "uuid": "753f4ddb-08a2-4fb2-a20c-d880e7eae19a"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Conexão ausente entre os itens",
+            "items": [
+                {
+                    "description": "Ilha PTH 1 [PA8] de R7",
+                    "pos": {
+                        "x": -95.53,
+                        "y": 56.75
+                    },
+                    "uuid": "753f4ddb-08a2-4fb2-a20c-d880e7eae19a"
+                },
+                {
+                    "description": "Trilha [PA8] no B.Cu, comprimento 8,1400 mm",
+                    "pos": {
+                        "x": 165.1,
+                        "y": 106.68
+                    },
+                    "uuid": "d1a1c62a-4267-48e8-af05-6585b552105f"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Conexão ausente entre os itens",
+            "items": [
+                {
+                    "description": "Ilha PTH CN7_18 [VCC] de U5",
+                    "pos": {
+                        "x": -193.04,
+                        "y": 12.7
+                    },
+                    "uuid": "537eaf4c-2078-4b0b-9931-f531baa5261b"
+                },
+                {
+                    "description": "Ilha PTH 2 [VCC] de R7",
+                    "pos": {
+                        "x": -87.91,
+                        "y": 56.75
+                    },
+                    "uuid": "a2801d6f-8357-4fa9-b9e2-9278f1d2142a"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Conexão ausente entre os itens",
+            "items": [
+                {
+                    "description": "Ilha PTH 2 [VCC] de J13",
+                    "pos": {
+                        "x": 71.12,
+                        "y": 43.18
+                    },
+                    "uuid": "4aff1161-dd8f-401f-b7b0-4a4bd2be99c1"
+                },
+                {
+                    "description": "Ilha PTH 1 [VCC] de J13",
+                    "pos": {
+                        "x": 71.12,
+                        "y": 40.64
+                    },
+                    "uuid": "7be43360-670b-4852-9f8d-25b1a8f788e6"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Conexão ausente entre os itens",
+            "items": [
+                {
+                    "description": "Ilha PTH 3 [VCC] de J13",
+                    "pos": {
+                        "x": 71.12,
+                        "y": 45.72
+                    },
+                    "uuid": "f19e85b1-e854-4f29-88ee-e7ef0dcf331c"
+                },
+                {
+                    "description": "Ilha PTH 2 [VCC] de J13",
+                    "pos": {
+                        "x": 71.12,
+                        "y": 43.18
+                    },
+                    "uuid": "4aff1161-dd8f-401f-b7b0-4a4bd2be99c1"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Conexão ausente entre os itens",
+            "items": [
+                {
+                    "description": "Ilha PTH 4 [VCC] de J13",
+                    "pos": {
+                        "x": 71.12,
+                        "y": 48.26
+                    },
+                    "uuid": "32cc6169-649d-4089-b87e-ba6a92e5829d"
+                },
+                {
+                    "description": "Ilha PTH 3 [VCC] de J13",
+                    "pos": {
+                        "x": 71.12,
+                        "y": 45.72
+                    },
+                    "uuid": "f19e85b1-e854-4f29-88ee-e7ef0dcf331c"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Conexão ausente entre os itens",
+            "items": [
+                {
+                    "description": "Ilha PTH 5 [VCC] de J13",
+                    "pos": {
+                        "x": 71.12,
+                        "y": 50.8
+                    },
+                    "uuid": "86f155a2-5547-4bcc-b483-aab52af7b1c6"
+                },
+                {
+                    "description": "Ilha PTH 4 [VCC] de J13",
+                    "pos": {
+                        "x": 71.12,
+                        "y": 48.26
+                    },
+                    "uuid": "32cc6169-649d-4089-b87e-ba6a92e5829d"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Conexão ausente entre os itens",
+            "items": [
+                {
+                    "description": "Ilha PTH 5 [VCC] de J13",
+                    "pos": {
+                        "x": 71.12,
+                        "y": 50.8
+                    },
+                    "uuid": "86f155a2-5547-4bcc-b483-aab52af7b1c6"
+                },
+                {
+                    "description": "Ilha PTH 6 [VCC] de J13",
+                    "pos": {
+                        "x": 71.12,
+                        "y": 53.34
+                    },
+                    "uuid": "f9f59004-ed86-4d7b-9b63-32045584f1ea"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Conexão ausente entre os itens",
+            "items": [
+                {
+                    "description": "Ilha PTH 6 [VCC] de J13",
+                    "pos": {
+                        "x": 71.12,
+                        "y": 53.34
+                    },
+                    "uuid": "f9f59004-ed86-4d7b-9b63-32045584f1ea"
+                },
+                {
+                    "description": "Ilha PTH 7 [VCC] de J13",
+                    "pos": {
+                        "x": 71.12,
+                        "y": 55.88
+                    },
+                    "uuid": "ed55f914-ceec-4808-8e77-41790d67f2df"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Conexão ausente entre os itens",
+            "items": [
+                {
+                    "description": "Ilha PTH 7 [VCC] de J13",
+                    "pos": {
+                        "x": 71.12,
+                        "y": 55.88
+                    },
+                    "uuid": "ed55f914-ceec-4808-8e77-41790d67f2df"
+                },
+                {
+                    "description": "Ilha PTH 8 [VCC] de J13",
+                    "pos": {
+                        "x": 71.12,
+                        "y": 58.42
+                    },
+                    "uuid": "994cfa7a-9cb6-4a11-84fd-ccf26256bd3b"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Conexão ausente entre os itens",
+            "items": [
+                {
+                    "description": "Ilha PTH 7 [VCC] de J13",
+                    "pos": {
+                        "x": 71.12,
+                        "y": 55.88
+                    },
+                    "uuid": "ed55f914-ceec-4808-8e77-41790d67f2df"
+                },
+                {
+                    "description": "Ilha PTH 2 [VCC] de R7",
+                    "pos": {
+                        "x": -87.91,
+                        "y": 56.75
+                    },
+                    "uuid": "a2801d6f-8357-4fa9-b9e2-9278f1d2142a"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Conexão ausente entre os itens",
+            "items": [
+                {
+                    "description": "Ilha PTH 8 [VCC] de J13",
+                    "pos": {
+                        "x": 71.12,
+                        "y": 58.42
+                    },
+                    "uuid": "994cfa7a-9cb6-4a11-84fd-ccf26256bd3b"
+                },
+                {
+                    "description": "Ilha PTH 9 [VCC] de J13",
+                    "pos": {
+                        "x": 71.12,
+                        "y": 60.96
+                    },
+                    "uuid": "e4e9b123-20d7-48f4-9067-f4c5d046da38"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Conexão ausente entre os itens",
+            "items": [
+                {
+                    "description": "Ilha PTH 9 [VCC] de J13",
+                    "pos": {
+                        "x": 71.12,
+                        "y": 60.96
+                    },
+                    "uuid": "e4e9b123-20d7-48f4-9067-f4c5d046da38"
+                },
+                {
+                    "description": "Ilha PTH 10 [VCC] de J13",
+                    "pos": {
+                        "x": 71.12,
+                        "y": 63.5
+                    },
+                    "uuid": "a86f3d09-9048-4718-8e05-c55ecb31aca6"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Conexão ausente entre os itens",
+            "items": [
+                {
+                    "description": "Ilha PTH 10 [VCC] de J13",
+                    "pos": {
+                        "x": 71.12,
+                        "y": 63.5
+                    },
+                    "uuid": "a86f3d09-9048-4718-8e05-c55ecb31aca6"
+                },
+                {
+                    "description": "Ilha 14 [VCC] de U11 no F.Cu",
+                    "pos": {
+                        "x": 84.1425,
+                        "y": 81.87
+                    },
+                    "uuid": "183eb958-9e4f-460c-8911-6cacd7c44559"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Conexão ausente entre os itens",
+            "items": [
+                {
+                    "description": "Ilha PTH CN7_18 [VCC] de U7",
+                    "pos": {
+                        "x": 117.59,
+                        "y": 87.11
+                    },
+                    "uuid": "e5b6db83-694a-4a07-8d0a-08ba52312814"
+                },
+                {
+                    "description": "Ilha 14 [VCC] de U11 no F.Cu",
+                    "pos": {
+                        "x": 84.1425,
+                        "y": 81.87
+                    },
+                    "uuid": "183eb958-9e4f-460c-8911-6cacd7c44559"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Conexão ausente entre os itens",
+            "items": [
+                {
+                    "description": "Trilha [VCC] no B.Cu, comprimento 7,5700 mm",
+                    "pos": {
+                        "x": 190.5,
+                        "y": 132.03
+                    },
+                    "uuid": "7463cb25-a059-4b25-8b8a-d4e6808c58ac"
+                },
+                {
+                    "description": "Ilha PTH CN7_18 [VCC] de U7",
+                    "pos": {
+                        "x": 117.59,
+                        "y": 87.11
+                    },
+                    "uuid": "e5b6db83-694a-4a07-8d0a-08ba52312814"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Conexão ausente entre os itens",
+            "items": [
+                {
+                    "description": "Ilha PTH 2 [VCC] de U6",
+                    "pos": {
+                        "x": 200.66,
+                        "y": 58.42
+                    },
+                    "uuid": "c85afd2d-09e7-4b71-a0eb-bca13a19da9f"
+                },
+                {
+                    "description": "Ilha PTH 5 [VCC] de J4",
+                    "pos": {
+                        "x": 200.66,
+                        "y": 53.34
+                    },
+                    "uuid": "711105ed-a846-4ef7-a82b-396a8171f49b"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Conexão ausente entre os itens",
+            "items": [
+                {
+                    "description": "Ilha PTH 2 [VCC] de U6",
+                    "pos": {
+                        "x": 200.66,
+                        "y": 58.42
+                    },
+                    "uuid": "c85afd2d-09e7-4b71-a0eb-bca13a19da9f"
+                },
+                {
+                    "description": "Trilha [VCC] no B.Cu, comprimento 7,5700 mm",
+                    "pos": {
+                        "x": 190.5,
+                        "y": 132.03
+                    },
+                    "uuid": "7463cb25-a059-4b25-8b8a-d4e6808c58ac"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Conexão ausente entre os itens",
+            "items": [
+                {
+                    "description": "Ilha PTH CN10_14 [PA11] de U5",
+                    "pos": {
+                        "x": -132.08,
+                        "y": 7.62
+                    },
+                    "uuid": "d3e4cca4-9139-4c74-8766-0e1900ef7ea6"
+                },
+                {
+                    "description": "Ilha 5 [PA11] de U4 no F.Cu",
+                    "pos": {
+                        "x": 68.4558,
+                        "y": 127.54
+                    },
+                    "uuid": "e1ae0725-1632-48a3-8988-37f5ccea5f4d"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Conexão ausente entre os itens",
+            "items": [
+                {
+                    "description": "Ilha 5 [PA11] de U4 no F.Cu",
+                    "pos": {
+                        "x": 68.4558,
+                        "y": 127.54
+                    },
+                    "uuid": "e1ae0725-1632-48a3-8988-37f5ccea5f4d"
+                },
+                {
+                    "description": "Trilha [PA11] no B.Cu, comprimento 1,0607 mm",
+                    "pos": {
+                        "x": 179.3,
+                        "y": 81.28
+                    },
+                    "uuid": "92e9bd6c-5a29-4086-a77e-35eedf395e14"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Conexão ausente entre os itens",
+            "items": [
+                {
+                    "description": "Ilha PTH CN10_12 [PA12] de U5",
+                    "pos": {
+                        "x": -132.08,
+                        "y": 5.08
+                    },
+                    "uuid": "531e4b17-e87c-4cef-99d4-94cd907cf672"
+                },
+                {
+                    "description": "Ilha 6 [PA12] de U4 no F.Cu",
+                    "pos": {
+                        "x": 68.4558,
+                        "y": 129.54
+                    },
+                    "uuid": "c789bdf8-65cf-4fdf-8ab6-91e4cec66884"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Conexão ausente entre os itens",
+            "items": [
+                {
+                    "description": "Ilha 6 [PA12] de U4 no F.Cu",
+                    "pos": {
+                        "x": 68.4558,
+                        "y": 129.54
+                    },
+                    "uuid": "c789bdf8-65cf-4fdf-8ab6-91e4cec66884"
+                },
+                {
+                    "description": "Trilha [PA12] no B.Cu, comprimento 1,0607 mm",
+                    "pos": {
+                        "x": 179.3,
+                        "y": 78.74
+                    },
+                    "uuid": "4757dec1-d884-4f11-9775-d035a1ab4481"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Conexão ausente entre os itens",
+            "items": [
+                {
+                    "description": "Ilha PTH CN7_28 [PA0] de U5",
+                    "pos": {
+                        "x": -193.04,
+                        "y": 25.4
+                    },
+                    "uuid": "c91a1370-b051-46fd-b498-243eade5b4bd"
+                },
+                {
+                    "description": "Ilha PTH 1 [PA0] de R6",
+                    "pos": {
+                        "x": -95.53,
+                        "y": 53.6
+                    },
+                    "uuid": "4008fbd7-63a2-45a9-b4a9-86bbb4448415"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Conexão ausente entre os itens",
+            "items": [
+                {
+                    "description": "Ilha PTH 1 [PA0] de J20",
+                    "pos": {
+                        "x": -155.58,
+                        "y": 122.65
+                    },
+                    "uuid": "1ada229a-e0cb-439b-b97a-390ed83808bf"
+                },
+                {
+                    "description": "Ilha PTH 1 [PA0] de C1",
+                    "pos": {
+                        "x": -124.88,
+                        "y": 122.4
+                    },
+                    "uuid": "7db663bc-798d-44df-b70e-892efe5e1e89"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Conexão ausente entre os itens",
+            "items": [
+                {
+                    "description": "Ilha PTH 2 [PA0] de J20",
+                    "pos": {
+                        "x": -155.58,
+                        "y": 125.19
+                    },
+                    "uuid": "63ae858c-6c7a-4b6f-a5c0-3520b509d3a3"
+                },
+                {
+                    "description": "Ilha PTH 1 [PA0] de J20",
+                    "pos": {
+                        "x": -155.58,
+                        "y": 122.65
+                    },
+                    "uuid": "1ada229a-e0cb-439b-b97a-390ed83808bf"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Conexão ausente entre os itens",
+            "items": [
+                {
+                    "description": "Ilha PTH 1 [PA0] de R6",
+                    "pos": {
+                        "x": -95.53,
+                        "y": 53.6
+                    },
+                    "uuid": "4008fbd7-63a2-45a9-b4a9-86bbb4448415"
+                },
+                {
+                    "description": "Ilha PTH 2 [PA0] de R5",
+                    "pos": {
+                        "x": -87.91,
+                        "y": 50.45
+                    },
+                    "uuid": "2716d9ff-e8ed-4177-b1ee-9aca0b5ce595"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Conexão ausente entre os itens",
+            "items": [
+                {
+                    "description": "Ilha PTH 1 [PA0] de R6",
+                    "pos": {
+                        "x": -95.53,
+                        "y": 53.6
+                    },
+                    "uuid": "4008fbd7-63a2-45a9-b4a9-86bbb4448415"
+                },
+                {
+                    "description": "Ilha PTH 1 [PA0] de C1",
+                    "pos": {
+                        "x": -124.88,
+                        "y": 122.4
+                    },
+                    "uuid": "7db663bc-798d-44df-b70e-892efe5e1e89"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Conexão ausente entre os itens",
+            "items": [
+                {
+                    "description": "Ilha PTH 2 [PA0] de R5",
+                    "pos": {
+                        "x": -87.91,
+                        "y": 50.45
+                    },
+                    "uuid": "2716d9ff-e8ed-4177-b1ee-9aca0b5ce595"
+                },
+                {
+                    "description": "Trilha [PA0] no B.Cu, comprimento 2,5400 mm",
+                    "pos": {
+                        "x": 120.13,
+                        "y": 99.81
+                    },
+                    "uuid": "a77dacf5-2514-470f-94d0-2990ffeea6bb"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Conexão ausente entre os itens",
+            "items": [
+                {
+                    "description": "Ilha PTH 2 [PB6] de J11",
+                    "pos": {
+                        "x": -169.38,
+                        "y": 129.8
+                    },
+                    "uuid": "b7276feb-ec50-461c-b037-617e6666a8c2"
+                },
+                {
+                    "description": "Ilha PTH 1 [PB6] de J11",
+                    "pos": {
+                        "x": -166.84,
+                        "y": 129.8
+                    },
+                    "uuid": "bd69c722-2f62-4a58-84dc-7cbc5d7c6cb7"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Conexão ausente entre os itens",
+            "items": [
+                {
+                    "description": "Ilha PTH 1 [PB6] de J11",
+                    "pos": {
+                        "x": -166.84,
+                        "y": 129.8
+                    },
+                    "uuid": "bd69c722-2f62-4a58-84dc-7cbc5d7c6cb7"
+                },
+                {
+                    "description": "Ilha PTH 3 [PB6] de J11",
+                    "pos": {
+                        "x": -166.84,
+                        "y": 132.34
+                    },
+                    "uuid": "f2a54a14-3507-40e2-bd48-bbd48feb3df1"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Conexão ausente entre os itens",
+            "items": [
+                {
+                    "description": "Ilha PTH CN10_17 [PB6] de U5",
+                    "pos": {
+                        "x": -134.62,
+                        "y": 12.7
+                    },
+                    "uuid": "2436526d-bc1b-414b-b999-3ecd85e46693"
+                },
+                {
+                    "description": "Ilha PTH 1 [PB6] de J11",
+                    "pos": {
+                        "x": -166.84,
+                        "y": 129.8
+                    },
+                    "uuid": "bd69c722-2f62-4a58-84dc-7cbc5d7c6cb7"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Conexão ausente entre os itens",
+            "items": [
+                {
+                    "description": "Trilha [PB6] no B.Cu, comprimento 2,5400 mm",
+                    "pos": {
+                        "x": 96.52,
+                        "y": 48.26
+                    },
+                    "uuid": "7d5c2b2c-9ced-4ac2-a198-efb074343f05"
+                },
+                {
+                    "description": "Ilha PTH CN10_17 [PB6] de U5",
+                    "pos": {
+                        "x": -134.62,
+                        "y": 12.7
+                    },
+                    "uuid": "2436526d-bc1b-414b-b999-3ecd85e46693"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Conexão ausente entre os itens",
+            "items": [
+                {
+                    "description": "Ilha PTH 4 [PB7] de J11",
+                    "pos": {
+                        "x": -169.38,
+                        "y": 132.34
+                    },
+                    "uuid": "cc620e8b-1e60-47aa-b666-1a89984a6d50"
+                },
+                {
+                    "description": "Ilha PTH CN7_21 [PB7] de U5",
+                    "pos": {
+                        "x": -195.58,
+                        "y": 17.78
+                    },
+                    "uuid": "26269458-b439-4dc6-82dc-91cc04940dac"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Conexão ausente entre os itens",
+            "items": [
+                {
+                    "description": "Ilha PTH 6 [PB7] de J11",
+                    "pos": {
+                        "x": -169.38,
+                        "y": 134.88
+                    },
+                    "uuid": "48515c0f-20e7-4cfe-9429-51345c8c6ee5"
+                },
+                {
+                    "description": "Ilha PTH 5 [PB7] de J11",
+                    "pos": {
+                        "x": -166.84,
+                        "y": 134.88
+                    },
+                    "uuid": "d72d4616-edcc-40ef-bdfc-26d335a5fb9b"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Conexão ausente entre os itens",
+            "items": [
+                {
+                    "description": "Ilha PTH 6 [PB7] de J11",
+                    "pos": {
+                        "x": -169.38,
+                        "y": 134.88
+                    },
+                    "uuid": "48515c0f-20e7-4cfe-9429-51345c8c6ee5"
+                },
+                {
+                    "description": "Ilha PTH 4 [PB7] de J11",
+                    "pos": {
+                        "x": -169.38,
+                        "y": 132.34
+                    },
+                    "uuid": "cc620e8b-1e60-47aa-b666-1a89984a6d50"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Conexão ausente entre os itens",
+            "items": [
+                {
+                    "description": "Ilha PTH 5 [PB7] de J11",
+                    "pos": {
+                        "x": -166.84,
+                        "y": 134.88
+                    },
+                    "uuid": "d72d4616-edcc-40ef-bdfc-26d335a5fb9b"
+                },
+                {
+                    "description": "Trilha [PB7] no B.Cu, comprimento 22,9870 mm",
+                    "pos": {
+                        "x": 99.187,
+                        "y": 83.947
+                    },
+                    "uuid": "b27f5389-615a-45f3-a6f1-f4d069b807b9"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Conexão ausente entre os itens",
+            "items": [
+                {
+                    "description": "Ilha PTH 1 [PA6] de J1",
+                    "pos": {
+                        "x": -183.18,
+                        "y": 129.8
+                    },
+                    "uuid": "670c5369-067c-4f39-a499-7e39de00aa4d"
+                },
+                {
+                    "description": "Ilha PTH 1 [PA6] de J3",
+                    "pos": {
+                        "x": -178.58,
+                        "y": 129.8
+                    },
+                    "uuid": "f8876390-aac6-4ebd-8a5e-1538561e6edd"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Conexão ausente entre os itens",
+            "items": [
+                {
+                    "description": "Ilha PTH 1 [PA6] de J3",
+                    "pos": {
+                        "x": -178.58,
+                        "y": 129.8
+                    },
+                    "uuid": "f8876390-aac6-4ebd-8a5e-1538561e6edd"
+                },
+                {
+                    "description": "Ilha PTH 1 [PA6] de J12",
+                    "pos": {
+                        "x": -173.98,
+                        "y": 129.8
+                    },
+                    "uuid": "b3a730c0-6b1a-4128-9d6a-44103ce844d2"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Conexão ausente entre os itens",
+            "items": [
+                {
+                    "description": "Ilha PTH CN10_13 [PA6] de U5",
+                    "pos": {
+                        "x": -134.62,
+                        "y": 7.62
+                    },
+                    "uuid": "bd9c18a2-42db-410c-9f91-23aa6c5d8534"
+                },
+                {
+                    "description": "Ilha PTH 1 [PA6] de J12",
+                    "pos": {
+                        "x": -173.98,
+                        "y": 129.8
+                    },
+                    "uuid": "b3a730c0-6b1a-4128-9d6a-44103ce844d2"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Conexão ausente entre os itens",
+            "items": [
+                {
+                    "description": "Trilha [PA6] no B.Cu, comprimento 17,9605 mm",
+                    "pos": {
+                        "x": 167.64,
+                        "y": 60.96
+                    },
+                    "uuid": "b2e0bea3-9f65-47f1-b0b3-c30ee97e858d"
+                },
+                {
+                    "description": "Ilha PTH CN10_13 [PA6] de U5",
+                    "pos": {
+                        "x": -134.62,
+                        "y": 7.62
+                    },
+                    "uuid": "bd9c18a2-42db-410c-9f91-23aa6c5d8534"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Conexão ausente entre os itens",
+            "items": [
+                {
+                    "description": "Ilha PTH 3 [PA5] de J1",
+                    "pos": {
+                        "x": -183.18,
+                        "y": 134.88
+                    },
+                    "uuid": "c35fbe47-09a4-4a2f-996b-5bb305e3c292"
+                },
+                {
+                    "description": "Ilha PTH 3 [PA5] de J3",
+                    "pos": {
+                        "x": -178.58,
+                        "y": 134.88
+                    },
+                    "uuid": "1b2d63b8-7930-4285-bda6-13992f3a682b"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Conexão ausente entre os itens",
+            "items": [
+                {
+                    "description": "Ilha PTH 3 [PA5] de J3",
+                    "pos": {
+                        "x": -178.58,
+                        "y": 134.88
+                    },
+                    "uuid": "1b2d63b8-7930-4285-bda6-13992f3a682b"
+                },
+                {
+                    "description": "Ilha PTH 3 [PA5] de J12",
+                    "pos": {
+                        "x": -173.98,
+                        "y": 134.88
+                    },
+                    "uuid": "6ea584e2-92ab-4db5-af35-2ef2bfd1c794"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Conexão ausente entre os itens",
+            "items": [
+                {
+                    "description": "Ilha PTH CN10_11 [PA5] de U5",
+                    "pos": {
+                        "x": -134.62,
+                        "y": 5.08
+                    },
+                    "uuid": "0aea5d10-9648-46e7-b2f6-c49e2b528926"
+                },
+                {
+                    "description": "Ilha PTH 3 [PA5] de J12",
+                    "pos": {
+                        "x": -173.98,
+                        "y": 134.88
+                    },
+                    "uuid": "6ea584e2-92ab-4db5-af35-2ef2bfd1c794"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Conexão ausente entre os itens",
+            "items": [
+                {
+                    "description": "Ilha PTH CN10_11 [PA5] de U5",
+                    "pos": {
+                        "x": -134.62,
+                        "y": 5.08
+                    },
+                    "uuid": "0aea5d10-9648-46e7-b2f6-c49e2b528926"
+                },
+                {
+                    "description": "Trilha [PA5] no B.Cu, comprimento 3,5921 mm",
+                    "pos": {
+                        "x": 172.72,
+                        "y": 60.96
+                    },
+                    "uuid": "f0e5f526-5198-45b2-ad1e-1ee6ae7b9113"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Conexão ausente entre os itens",
+            "items": [
+                {
+                    "description": "Ilha PTH 2 [PA7] de J1",
+                    "pos": {
+                        "x": -183.18,
+                        "y": 132.34
+                    },
+                    "uuid": "d128a3f1-3c34-4093-9ded-569982c22526"
+                },
+                {
+                    "description": "Ilha PTH 2 [PA7] de J3",
+                    "pos": {
+                        "x": -178.58,
+                        "y": 132.34
+                    },
+                    "uuid": "51d1f23b-28be-4f06-ab8d-fd3e62de02f6"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Conexão ausente entre os itens",
+            "items": [
+                {
+                    "description": "Ilha PTH 2 [PA7] de J3",
+                    "pos": {
+                        "x": -178.58,
+                        "y": 132.34
+                    },
+                    "uuid": "51d1f23b-28be-4f06-ab8d-fd3e62de02f6"
+                },
+                {
+                    "description": "Ilha PTH 2 [PA7] de J12",
+                    "pos": {
+                        "x": -173.98,
+                        "y": 132.34
+                    },
+                    "uuid": "e3e876b9-5d20-4b34-9562-7267c19e9140"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Conexão ausente entre os itens",
+            "items": [
+                {
+                    "description": "Ilha PTH CN10_15 [PA7] de U5",
+                    "pos": {
+                        "x": -134.62,
+                        "y": 10.16
+                    },
+                    "uuid": "68876462-d505-48b0-b02b-140cf595368d"
+                },
+                {
+                    "description": "Ilha PTH 2 [PA7] de J12",
+                    "pos": {
+                        "x": -173.98,
+                        "y": 132.34
+                    },
+                    "uuid": "e3e876b9-5d20-4b34-9562-7267c19e9140"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Conexão ausente entre os itens",
+            "items": [
+                {
+                    "description": "Trilha [PA7] no B.Cu, comprimento 1,6971 mm",
+                    "pos": {
+                        "x": 166.44,
+                        "y": 60.462944
+                    },
+                    "uuid": "7d1c7063-3082-4a95-94a4-f42eacd8047e"
+                },
+                {
+                    "description": "Ilha PTH CN10_15 [PA7] de U5",
+                    "pos": {
+                        "x": -134.62,
+                        "y": 10.16
+                    },
+                    "uuid": "68876462-d505-48b0-b02b-140cf595368d"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Conexão ausente entre os itens",
+            "items": [
+                {
+                    "description": "Ilha PTH 1 [GND] de J17",
+                    "pos": {
+                        "x": -169.38,
+                        "y": 122.65
+                    },
+                    "uuid": "2810d738-e939-4204-bd4d-c21df552fa35"
+                },
+                {
+                    "description": "Ilha PTH 2 [GND] de J17",
+                    "pos": {
+                        "x": -169.38,
+                        "y": 125.19
+                    },
+                    "uuid": "f2cc16cf-59c6-4979-97b8-e4086b9d2b01"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Conexão ausente entre os itens",
+            "items": [
+                {
+                    "description": "Ilha PTH 2 [GND] de J17",
+                    "pos": {
+                        "x": -169.38,
+                        "y": 125.19
+                    },
+                    "uuid": "f2cc16cf-59c6-4979-97b8-e4086b9d2b01"
+                },
+                {
+                    "description": "Ilha PTH 2 [GND] de J19",
+                    "pos": {
+                        "x": -160.18,
+                        "y": 125.19
+                    },
+                    "uuid": "d98f5342-b8cb-41bc-856a-943a73771e1a"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Conexão ausente entre os itens",
+            "items": [
+                {
+                    "description": "Ilha PTH 2 [GND] de J19",
+                    "pos": {
+                        "x": -160.18,
+                        "y": 125.19
+                    },
+                    "uuid": "d98f5342-b8cb-41bc-856a-943a73771e1a"
+                },
+                {
+                    "description": "Ilha PTH 1 [GND] de J19",
+                    "pos": {
+                        "x": -160.18,
+                        "y": 122.65
+                    },
+                    "uuid": "dd8348be-74b6-46dd-86c7-501e8df20e51"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Conexão ausente entre os itens",
+            "items": [
+                {
+                    "description": "Ilha PTH 2 [GND] de J19",
+                    "pos": {
+                        "x": -160.18,
+                        "y": 125.19
+                    },
+                    "uuid": "d98f5342-b8cb-41bc-856a-943a73771e1a"
+                },
+                {
+                    "description": "Ilha PTH 1 [GND] de J15",
+                    "pos": {
+                        "x": -155.72,
+                        "y": 125.19
+                    },
+                    "uuid": "ef2ef710-236e-4890-ac3d-abdb84475b6a"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Conexão ausente entre os itens",
+            "items": [
+                {
+                    "description": "Ilha PTH 2 [GND] de J15",
+                    "pos": {
+                        "x": -155.72,
+                        "y": 127.73
+                    },
+                    "uuid": "fd0335e2-1606-4e7b-9254-30e26ffb53c0"
+                },
+                {
+                    "description": "Ilha PTH 1 [GND] de J15",
+                    "pos": {
+                        "x": -155.72,
+                        "y": 125.19
+                    },
+                    "uuid": "ef2ef710-236e-4890-ac3d-abdb84475b6a"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Conexão ausente entre os itens",
+            "items": [
+                {
+                    "description": "Ilha PTH 2 [GND] de J15",
+                    "pos": {
+                        "x": -155.72,
+                        "y": 127.73
+                    },
+                    "uuid": "fd0335e2-1606-4e7b-9254-30e26ffb53c0"
+                },
+                {
+                    "description": "Ilha PTH 2 [GND] de C2",
+                    "pos": {
+                        "x": -122.38,
+                        "y": 126.55
+                    },
+                    "uuid": "085572a1-7806-4d39-ba26-668863db0056"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Conexão ausente entre os itens",
+            "items": [
+                {
+                    "description": "Ilha PTH 2 [GND] de C1",
+                    "pos": {
+                        "x": -122.38,
+                        "y": 122.4
+                    },
+                    "uuid": "88ac4223-c837-4e46-8bdf-f31341f8232b"
+                },
+                {
+                    "description": "Ilha PTH 2 [GND] de C2",
+                    "pos": {
+                        "x": -122.38,
+                        "y": 126.55
+                    },
+                    "uuid": "085572a1-7806-4d39-ba26-668863db0056"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Conexão ausente entre os itens",
+            "items": [
+                {
+                    "description": "Ilha PTH 2 [GND] de C1",
+                    "pos": {
+                        "x": -122.38,
+                        "y": 122.4
+                    },
+                    "uuid": "88ac4223-c837-4e46-8bdf-f31341f8232b"
+                },
+                {
+                    "description": "Ilha 2 [GND] de S2 no F.Cu",
+                    "pos": {
+                        "x": -99.08,
+                        "y": 97.5
+                    },
+                    "uuid": "c86e60a4-d216-4f18-8353-d9643ecf7f90"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Conexão ausente entre os itens",
+            "items": [
+                {
+                    "description": "Ilha PTH 2 [GND] de C2",
+                    "pos": {
+                        "x": -122.38,
+                        "y": 126.55
+                    },
+                    "uuid": "085572a1-7806-4d39-ba26-668863db0056"
+                },
+                {
+                    "description": "Ilha PTH 2 [GND] de C3",
+                    "pos": {
+                        "x": -122.38,
+                        "y": 130.7
+                    },
+                    "uuid": "909ce5fe-3544-483f-b4ae-afed9eabba43"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Conexão ausente entre os itens",
+            "items": [
+                {
+                    "description": "Ilha 2 [GND] de S1 no F.Cu",
+                    "pos": {
+                        "x": -99.08,
+                        "y": 94.15
+                    },
+                    "uuid": "284d5b02-0794-4fda-999a-952846554cbf"
+                },
+                {
+                    "description": "Ilha 2 [GND] de S2 no F.Cu",
+                    "pos": {
+                        "x": -99.08,
+                        "y": 97.5
+                    },
+                    "uuid": "c86e60a4-d216-4f18-8353-d9643ecf7f90"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Conexão ausente entre os itens",
+            "items": [
+                {
+                    "description": "Ilha 2 [GND] de S1 no F.Cu",
+                    "pos": {
+                        "x": -99.08,
+                        "y": 94.15
+                    },
+                    "uuid": "284d5b02-0794-4fda-999a-952846554cbf"
+                },
+                {
+                    "description": "Ilha PTH 2 [GND] de R6",
+                    "pos": {
+                        "x": -87.91,
+                        "y": 53.6
+                    },
+                    "uuid": "798b2448-d331-4ae1-905f-3c63fed88b65"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Conexão ausente entre os itens",
+            "items": [
+                {
+                    "description": "Ilha PTH CN10_28 [PB14] de U5",
+                    "pos": {
+                        "x": -132.08,
+                        "y": 25.4
+                    },
+                    "uuid": "f291ee7d-fed6-445e-a847-6c43209177e6"
+                },
+                {
+                    "description": "Ilha 13 [PB14] de U4 no F.Cu",
+                    "pos": {
+                        "x": 83.82,
+                        "y": 125.54
+                    },
+                    "uuid": "d4a02394-166f-4bc3-a814-bdf422af5fa7"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Conexão ausente entre os itens",
+            "items": [
+                {
+                    "description": "Ilha 13 [PB14] de U4 no F.Cu",
+                    "pos": {
+                        "x": 83.82,
+                        "y": 125.54
+                    },
+                    "uuid": "d4a02394-166f-4bc3-a814-bdf422af5fa7"
+                },
+                {
+                    "description": "Trilha [PB14] no B.Cu, comprimento 40,6400 mm",
+                    "pos": {
+                        "x": 219.19,
+                        "y": 99.81
+                    },
+                    "uuid": "8fc8e20b-dfe8-4780-8ad9-bfd0ecd78a40"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Conexão ausente entre os itens",
+            "items": [
+                {
+                    "description": "Ilha PTH 9 [PB14] de J8",
+                    "pos": {
+                        "x": 223.52,
+                        "y": 106.68
+                    },
+                    "uuid": "5cc8fdd1-2253-4c06-b529-dfd06e66c1c3"
+                },
+                {
+                    "description": "Ilha PTH 10 [PB14] de J8",
+                    "pos": {
+                        "x": 223.52,
+                        "y": 104.14
+                    },
+                    "uuid": "cc47e5b2-9eee-4860-b54f-2ba9f69f2901"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Conexão ausente entre os itens",
+            "items": [
+                {
+                    "description": "Ilha PTH CN10_30 [PB13] de U5",
+                    "pos": {
+                        "x": -132.08,
+                        "y": 27.94
+                    },
+                    "uuid": "f573166b-c4d0-49db-889e-ec903ba7cf1b"
+                },
+                {
+                    "description": "Ilha 12 [PB13] de U4 no F.Cu",
+                    "pos": {
+                        "x": 83.82,
+                        "y": 127.54
+                    },
+                    "uuid": "8d7b31e0-5c0e-463d-891d-551a8ce55125"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Conexão ausente entre os itens",
+            "items": [
+                {
+                    "description": "Ilha PTH CN10_30 [PB13] de U7",
+                    "pos": {
+                        "x": 178.55,
+                        "y": 102.35
+                    },
+                    "uuid": "899648b5-7abf-4f2c-94af-0ad4e38e749c"
+                },
+                {
+                    "description": "Ilha 12 [PB13] de U4 no F.Cu",
+                    "pos": {
+                        "x": 83.82,
+                        "y": 127.54
+                    },
+                    "uuid": "8d7b31e0-5c0e-463d-891d-551a8ce55125"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Conexão ausente entre os itens",
+            "items": [
+                {
+                    "description": "Ilha PTH 5 [PB13] de J8",
+                    "pos": {
+                        "x": 228.6,
+                        "y": 106.68
+                    },
+                    "uuid": "3f650258-5016-4d82-9753-34d78cb528d3"
+                },
+                {
+                    "description": "Ilha PTH 6 [PB13] de J8",
+                    "pos": {
+                        "x": 228.6,
+                        "y": 104.14
+                    },
+                    "uuid": "07a51432-282e-4e40-bf3d-00019a8552ee"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Conexão ausente entre os itens",
+            "items": [
+                {
+                    "description": "Ilha PTH CN10_26 [PB15] de U5",
+                    "pos": {
+                        "x": -132.08,
+                        "y": 22.86
+                    },
+                    "uuid": "9d396dc3-9f80-429b-b260-cc9b92a63b59"
+                },
+                {
+                    "description": "Ilha 14 [PB15] de U4 no F.Cu",
+                    "pos": {
+                        "x": 83.82,
+                        "y": 123.54
+                    },
+                    "uuid": "7dc70bda-1902-4f14-b4e2-264b30ef4f29"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Conexão ausente entre os itens",
+            "items": [
+                {
+                    "description": "Trilha [PB15] no B.Cu, comprimento 43,1800 mm",
+                    "pos": {
+                        "x": 221.73,
+                        "y": 97.27
+                    },
+                    "uuid": "456e6703-5916-4d8d-a333-55a8ba883091"
+                },
+                {
+                    "description": "Ilha 14 [PB15] de U4 no F.Cu",
+                    "pos": {
+                        "x": 83.82,
+                        "y": 123.54
+                    },
+                    "uuid": "7dc70bda-1902-4f14-b4e2-264b30ef4f29"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Conexão ausente entre os itens",
+            "items": [
+                {
+                    "description": "Ilha PTH 7 [PB15] de J8",
+                    "pos": {
+                        "x": 226.06,
+                        "y": 106.68
+                    },
+                    "uuid": "9192ad3e-1200-491c-9392-14d12be203c0"
+                },
+                {
+                    "description": "Ilha PTH 8 [PB15] de J8",
+                    "pos": {
+                        "x": 226.06,
+                        "y": 104.14
+                    },
+                    "uuid": "c157a28e-8110-436d-8c1e-7b0991034e95"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Conexão ausente entre os itens",
+            "items": [
+                {
+                    "description": "Ilha PTH CN10_34 [PC4] de U5",
+                    "pos": {
+                        "x": -132.08,
+                        "y": 33.02
+                    },
+                    "uuid": "a6d5f093-edb9-49a6-8f2e-e932efd2da3a"
+                },
+                {
+                    "description": "Ilha 4 [PC4] de U4 no F.Cu",
+                    "pos": {
+                        "x": 68.4558,
+                        "y": 125.54
+                    },
+                    "uuid": "8bdf81dd-0625-4f37-a5fb-1ebc32fc5fbd"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Conexão ausente entre os itens",
+            "items": [
+                {
+                    "description": "Trilha [PC4] no B.Cu, comprimento 2,5314 mm",
+                    "pos": {
+                        "x": 180.34,
+                        "y": 109.22
+                    },
+                    "uuid": "43e72e18-3701-4185-b628-dc76f589988d"
+                },
+                {
+                    "description": "Ilha 4 [PC4] de U4 no F.Cu",
+                    "pos": {
+                        "x": 68.4558,
+                        "y": 125.54
+                    },
+                    "uuid": "8bdf81dd-0625-4f37-a5fb-1ebc32fc5fbd"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Conexão ausente entre os itens",
+            "items": [
+                {
+                    "description": "Trilha [PC4] no B.Cu, comprimento 10,1600 mm",
+                    "pos": {
+                        "x": 233.68,
+                        "y": 106.68
+                    },
+                    "uuid": "6b24b9b6-3721-4553-919b-8b231fffd5bd"
+                },
+                {
+                    "description": "Ilha PTH 2 [PC4] de J8",
+                    "pos": {
+                        "x": 233.68,
+                        "y": 104.14
+                    },
+                    "uuid": "23b8b1b0-206d-4f4d-aae9-38a8832fd44e"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Conexão ausente entre os itens",
+            "items": [
+                {
+                    "description": "Ilha PTH CN10_16 [PB12] de U5",
+                    "pos": {
+                        "x": -132.08,
+                        "y": 10.16
+                    },
+                    "uuid": "9d3c6ad2-6062-47f3-ada6-6c8e72fc6143"
+                },
+                {
+                    "description": "Ilha 15 [PB12] de U4 no F.Cu",
+                    "pos": {
+                        "x": 83.82,
+                        "y": 121.54
+                    },
+                    "uuid": "7b01fbf1-c8a2-4e42-9194-7b4d59dc38e3"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Conexão ausente entre os itens",
+            "items": [
+                {
+                    "description": "Ilha 15 [PB12] de U4 no F.Cu",
+                    "pos": {
+                        "x": 83.82,
+                        "y": 121.54
+                    },
+                    "uuid": "7b01fbf1-c8a2-4e42-9194-7b4d59dc38e3"
+                },
+                {
+                    "description": "Trilha [PB12] no B.Cu, comprimento 2,5314 mm",
+                    "pos": {
+                        "x": 180.34,
+                        "y": 86.36
+                    },
+                    "uuid": "10e50e3c-dff5-4e87-b547-074e2ba87873"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Conexão ausente entre os itens",
+            "items": [
+                {
+                    "description": "Ilha PTH 3 [PB12] de J8",
+                    "pos": {
+                        "x": 231.14,
+                        "y": 106.68
+                    },
+                    "uuid": "4edc53d1-de70-4d39-b48b-eb10fce558f4"
+                },
+                {
+                    "description": "Trilha [PB12] no B.Cu, comprimento 15,2400 mm",
+                    "pos": {
+                        "x": 231.14,
+                        "y": 104.14
+                    },
+                    "uuid": "c3ac57f6-f77c-4612-adbb-f2cf75714885"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Conexão ausente entre os itens",
+            "items": [
+                {
+                    "description": "Ilha PTH CN10_6 [PC5] de U5",
+                    "pos": {
+                        "x": -132.08,
+                        "y": -2.54
+                    },
+                    "uuid": "a2aad8fe-00c3-4999-89fd-8a4ef757f11c"
+                },
+                {
+                    "description": "Trilha [PC5] no B.Cu, comprimento 3,5800 mm",
+                    "pos": {
+                        "x": 182.13,
+                        "y": 71.87
+                    },
+                    "uuid": "3fbba64b-d208-444f-aeed-36b30fac832d"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Conexão ausente entre os itens",
+            "items": [
+                {
+                    "description": "Ilha PTH CN7_30 [PA1] de U5",
+                    "pos": {
+                        "x": -193.04,
+                        "y": 27.94
+                    },
+                    "uuid": "d4702ed0-8649-48b6-8e83-838faeded77f"
+                },
+                {
+                    "description": "Ilha PTH 1 [PA1] de J21",
+                    "pos": {
+                        "x": -150.98,
+                        "y": 122.65
+                    },
+                    "uuid": "3f4a34ed-5512-4092-91fb-a341ee080f9f"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Conexão ausente entre os itens",
+            "items": [
+                {
+                    "description": "Ilha PTH 1 [PA1] de J21",
+                    "pos": {
+                        "x": -150.98,
+                        "y": 122.65
+                    },
+                    "uuid": "3f4a34ed-5512-4092-91fb-a341ee080f9f"
+                },
+                {
+                    "description": "Ilha PTH 2 [PA1] de J21",
+                    "pos": {
+                        "x": -150.98,
+                        "y": 125.19
+                    },
+                    "uuid": "0d0e4820-ff5c-413b-8ff2-84715507d20e"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Conexão ausente entre os itens",
+            "items": [
+                {
+                    "description": "Ilha PTH 2 [PA1] de J21",
+                    "pos": {
+                        "x": -150.98,
+                        "y": 125.19
+                    },
+                    "uuid": "0d0e4820-ff5c-413b-8ff2-84715507d20e"
+                },
+                {
+                    "description": "Ilha PTH 1 [PA1] de C3",
+                    "pos": {
+                        "x": -124.88,
+                        "y": 130.7
+                    },
+                    "uuid": "dfaa8405-2a7c-45c1-9906-6d41a25cddc6"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Conexão ausente entre os itens",
+            "items": [
+                {
+                    "description": "Ilha PTH 1 [PA1] de C3",
+                    "pos": {
+                        "x": -124.88,
+                        "y": 130.7
+                    },
+                    "uuid": "dfaa8405-2a7c-45c1-9906-6d41a25cddc6"
+                },
+                {
+                    "description": "Ilha 1 [PA1] de S2 no F.Cu",
+                    "pos": {
+                        "x": -110.93,
+                        "y": 97.5
+                    },
+                    "uuid": "c08dfdcc-412f-48d5-a913-6c5e58111c49"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Conexão ausente entre os itens",
+            "items": [
+                {
+                    "description": "Ilha 1 [PA1] de S2 no F.Cu",
+                    "pos": {
+                        "x": -110.93,
+                        "y": 97.5
+                    },
+                    "uuid": "c08dfdcc-412f-48d5-a913-6c5e58111c49"
+                },
+                {
+                    "description": "Ilha PTH 1 [PA1] de R9",
+                    "pos": {
+                        "x": -95.53,
+                        "y": 63.05
+                    },
+                    "uuid": "0c4b3c07-71d6-41a4-8e15-6c2cf8d2d5d4"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Conexão ausente entre os itens",
+            "items": [
+                {
+                    "description": "Trilha [PA1] no B.Cu, comprimento 5,3882 mm",
+                    "pos": {
+                        "x": 87.63,
+                        "y": 124.42
+                    },
+                    "uuid": "76fba882-b428-4811-8d25-edffb84264fa"
+                },
+                {
+                    "description": "Ilha PTH 1 [PA1] de R9",
+                    "pos": {
+                        "x": -95.53,
+                        "y": 63.05
+                    },
+                    "uuid": "0c4b3c07-71d6-41a4-8e15-6c2cf8d2d5d4"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Conexão ausente entre os itens",
+            "items": [
+                {
+                    "description": "Ilha PTH CN7_21 [SDA] de U7",
+                    "pos": {
+                        "x": 115.05,
+                        "y": 92.19
+                    },
+                    "uuid": "2fcc5331-6be6-4e58-959f-c1487afcd24c"
+                },
+                {
+                    "description": "Ilha 3 [SDA] de U8 no F.Cu",
+                    "pos": {
+                        "x": 227.95,
+                        "y": 56.82
+                    },
+                    "uuid": "ab929c28-8d11-4041-9394-7402b5fe4b46"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Conexão ausente entre os itens",
+            "items": [
+                {
+                    "description": "Ilha PTH CN10_17 [SCK] de U7",
+                    "pos": {
+                        "x": 176.01,
+                        "y": 87.11
+                    },
+                    "uuid": "c24311d3-1ca2-497a-9203-3e325a3a0f35"
+                },
+                {
+                    "description": "Ilha 4 [SCK] de U8 no F.Cu",
+                    "pos": {
+                        "x": 228.6,
+                        "y": 56.82
+                    },
+                    "uuid": "f3bd57b8-809d-40be-a339-ee3bc4f6bd13"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Conexão ausente entre os itens",
+            "items": [
+                {
+                    "description": "Ilha 11 [CS_LLS] de U11 no F.Cu",
+                    "pos": {
+                        "x": 84.1425,
+                        "y": 83.82
+                    },
+                    "uuid": "addabe92-a5a9-4320-a9ef-98a0ece533b1"
+                },
+                {
+                    "description": "Ilha 2 [CS_LLS] de J17 no F.Cu",
+                    "pos": {
+                        "x": 100.945,
+                        "y": 95.855
+                    },
+                    "uuid": "05e96306-e6c5-4d48-b328-aa9b0e9f2ad4"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Conexão ausente entre os itens",
+            "items": [
+                {
+                    "description": "Ilha 5 [DO_LLS] de U11 no F.Cu",
+                    "pos": {
+                        "x": 78.4175,
+                        "y": 84.47
+                    },
+                    "uuid": "43b44093-4ff1-471c-b23c-080ef903517a"
+                },
+                {
+                    "description": "Ilha 7 [DO_LLS] de J17 no F.Cu",
+                    "pos": {
+                        "x": 106.445,
+                        "y": 95.855
+                    },
+                    "uuid": "10ddf25e-c93a-4af0-aea2-d1fa874d91f8"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Conexão ausente entre os itens",
+            "items": [
+                {
+                    "description": "Ilha 3 [DI_LLS] de U11 no F.Cu",
+                    "pos": {
+                        "x": 78.4175,
+                        "y": 83.17
+                    },
+                    "uuid": "7bbb8f96-3712-4c96-b1d5-013d19014da1"
+                },
+                {
+                    "description": "Ilha 3 [DI_LLS] de J17 no F.Cu",
+                    "pos": {
+                        "x": 102.045,
+                        "y": 95.855
+                    },
+                    "uuid": "7cf1adb3-08a6-42df-90af-a6aa1c41cd41"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Conexão ausente entre os itens",
+            "items": [
+                {
+                    "description": "Ilha 8 [SCK_LLS] de U11 no F.Cu",
+                    "pos": {
+                        "x": 84.1425,
+                        "y": 85.77
+                    },
+                    "uuid": "eea7a95c-3686-4914-b9ba-4ce51765fb1c"
+                },
+                {
+                    "description": "Ilha 5 [SCK_LLS] de J17 no F.Cu",
+                    "pos": {
+                        "x": 104.245,
+                        "y": 95.855
+                    },
+                    "uuid": "fd0f3dd1-f4e2-4b40-b7de-1bdb5af51a75"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        }
+    ],
+    "violations": [
+        {
+            "description": "Itens encurtando duas redes (redes SDA e PB7)",
+            "items": [
+                {
+                    "description": "Ilha PTH CN7_21 [SDA] de U7",
+                    "pos": {
+                        "x": 115.05,
+                        "y": 92.19
+                    },
+                    "uuid": "2fcc5331-6be6-4e58-959f-c1487afcd24c"
+                },
+                {
+                    "description": "Trilha [PB7] no B.Cu, comprimento 7,6200 mm",
+                    "pos": {
+                        "x": 107.43,
+                        "y": 92.19
+                    },
+                    "uuid": "47ebbffa-6f72-4290-9a8b-2ec1bcccce8b"
+                }
+            ],
+            "severity": "error",
+            "type": "shorting_items"
+        },
+        {
+            "description": "Itens encurtando duas redes (redes SCK e PB6)",
+            "items": [
+                {
+                    "description": "Ilha PTH CN10_17 [SCK] de U7",
+                    "pos": {
+                        "x": 176.01,
+                        "y": 87.11
+                    },
+                    "uuid": "c24311d3-1ca2-497a-9203-3e325a3a0f35"
+                },
+                {
+                    "description": "Trilha [PB6] no B.Cu, comprimento 65,7185 mm",
+                    "pos": {
+                        "x": 176.01,
+                        "y": 87.11
+                    },
+                    "uuid": "f11db7d5-7799-473e-8d67-c1deedc4529f"
+                }
+            ],
+            "severity": "error",
+            "type": "shorting_items"
+        },
+        {
+            "description": "Itens encurtando duas redes (redes GND e PA0)",
+            "items": [
+                {
+                    "description": "Ilha PTH 1 [GND] de J15",
+                    "pos": {
+                        "x": -155.72,
+                        "y": 125.19
+                    },
+                    "uuid": "ef2ef710-236e-4890-ac3d-abdb84475b6a"
+                },
+                {
+                    "description": "Ilha PTH 2 [PA0] de J20",
+                    "pos": {
+                        "x": -155.58,
+                        "y": 125.19
+                    },
+                    "uuid": "63ae858c-6c7a-4b6f-a5c0-3520b509d3a3"
+                }
+            ],
+            "severity": "error",
+            "type": "shorting_items"
+        },
+        {
+            "description": "Sobreposição do pedaço",
+            "items": [
+                {
+                    "description": "Footprint U1",
+                    "pos": {
+                        "x": 194.31,
+                        "y": 116.84
+                    },
+                    "uuid": "37bd12cd-89fa-4a9a-877e-7fcde303a4ba"
+                },
+                {
+                    "description": "Footprint J2",
+                    "pos": {
+                        "x": 198.12,
+                        "y": 124.46
+                    },
+                    "uuid": "e7e5c74a-07df-47cf-a8ee-481f26418950"
+                }
+            ],
+            "severity": "error",
+            "type": "courtyards_overlap"
+        },
+        {
+            "description": "Sobreposição do pedaço",
+            "items": [
+                {
+                    "description": "Footprint J15",
+                    "pos": {
+                        "x": -155.72,
+                        "y": 125.19
+                    },
+                    "uuid": "4ae5ca74-8bec-4473-9218-45454f0a8dbf"
+                },
+                {
+                    "description": "Footprint J20",
+                    "pos": {
+                        "x": -155.58,
+                        "y": 122.65
+                    },
+                    "uuid": "ad1a00f1-700a-45da-8346-a7a2337451cf"
+                }
+            ],
+            "severity": "error",
+            "type": "courtyards_overlap"
+        },
+        {
+            "description": "Violação do isolamento da borda da placa (board setup constraints edge isolamento 0,5000 mm; atual 0,0000 mm)",
+            "items": [
+                {
+                    "description": "Retângulo no Edge.Cuts",
+                    "pos": {
+                        "x": 46.8,
+                        "y": 36.6
+                    },
+                    "uuid": "c63c0e07-c16b-4bed-8276-5bfd98f67baf"
+                },
+                {
+                    "description": "Ilha PTH SH [<no net>] de J23",
+                    "pos": {
+                        "x": 147.09,
+                        "y": 136.4
+                    },
+                    "uuid": "07849055-ac26-4394-9a73-dcecabe9a518"
+                }
+            ],
+            "severity": "error",
+            "type": "copper_edge_clearance"
+        },
+        {
+            "description": "Violação do isolamento da borda da placa (board setup constraints edge isolamento 0,5000 mm; atual 0,0000 mm)",
+            "items": [
+                {
+                    "description": "Retângulo no Edge.Cuts",
+                    "pos": {
+                        "x": 46.8,
+                        "y": 36.6
+                    },
+                    "uuid": "c63c0e07-c16b-4bed-8276-5bfd98f67baf"
+                },
+                {
+                    "description": "Ilha PTH SH [<no net>] de J23",
+                    "pos": {
+                        "x": 162.79,
+                        "y": 136.4
+                    },
+                    "uuid": "bd41609e-4347-4005-86bb-0eb54c47a237"
+                }
+            ],
+            "severity": "error",
+            "type": "copper_edge_clearance"
+        },
+        {
+            "description": "Violação do isolamento da borda da placa (board setup constraints edge isolamento 0,5000 mm; atual 0,0000 mm)",
+            "items": [
+                {
+                    "description": "Retângulo no Edge.Cuts",
+                    "pos": {
+                        "x": 46.8,
+                        "y": 36.6
+                    },
+                    "uuid": "c63c0e07-c16b-4bed-8276-5bfd98f67baf"
+                },
+                {
+                    "description": "Ilha PTH SH [<no net>] de J25",
+                    "pos": {
+                        "x": 101.37,
+                        "y": 136.4
+                    },
+                    "uuid": "4ad66ed0-d1d8-4cd8-80b9-9744cec6d0e9"
+                }
+            ],
+            "severity": "error",
+            "type": "copper_edge_clearance"
+        },
+        {
+            "description": "Violação do isolamento da borda da placa (board setup constraints edge isolamento 0,5000 mm; atual 0,0000 mm)",
+            "items": [
+                {
+                    "description": "Retângulo no Edge.Cuts",
+                    "pos": {
+                        "x": 46.8,
+                        "y": 36.6
+                    },
+                    "uuid": "c63c0e07-c16b-4bed-8276-5bfd98f67baf"
+                },
+                {
+                    "description": "Ilha PTH SH [<no net>] de J25",
+                    "pos": {
+                        "x": 117.07,
+                        "y": 136.4
+                    },
+                    "uuid": "e485d054-9807-48ab-bfe1-343168b87205"
+                }
+            ],
+            "severity": "error",
+            "type": "copper_edge_clearance"
+        },
+        {
+            "description": "A abertura da máscara de solda de trás conecta itens com redes diferentes",
+            "items": [
+                {
+                    "description": "Trilha [PB6] no B.Cu, comprimento 65,7185 mm",
+                    "pos": {
+                        "x": 176.01,
+                        "y": 87.11
+                    },
+                    "uuid": "f11db7d5-7799-473e-8d67-c1deedc4529f"
+                },
+                {
+                    "description": "Ilha PTH CN10_17 [SCK] de U7",
+                    "pos": {
+                        "x": 176.01,
+                        "y": 87.11
+                    },
+                    "uuid": "c24311d3-1ca2-497a-9203-3e325a3a0f35"
+                }
+            ],
+            "severity": "error",
+            "type": "solder_mask_bridge"
+        },
+        {
+            "description": "A abertura da máscara de solda de trás conecta itens com redes diferentes",
+            "items": [
+                {
+                    "description": "Trilha [PB7] no B.Cu, comprimento 7,6200 mm",
+                    "pos": {
+                        "x": 107.43,
+                        "y": 92.19
+                    },
+                    "uuid": "47ebbffa-6f72-4290-9a8b-2ec1bcccce8b"
+                },
+                {
+                    "description": "Ilha PTH CN7_21 [SDA] de U7",
+                    "pos": {
+                        "x": 115.05,
+                        "y": 92.19
+                    },
+                    "uuid": "2fcc5331-6be6-4e58-959f-c1487afcd24c"
+                }
+            ],
+            "severity": "error",
+            "type": "solder_mask_bridge"
+        },
+        {
+            "description": "A abertura da máscara de solda da frente conecta itens com redes diferentes",
+            "items": [
+                {
+                    "description": "Ilha PTH 1 [GND] de J15",
+                    "pos": {
+                        "x": -155.72,
+                        "y": 125.19
+                    },
+                    "uuid": "ef2ef710-236e-4890-ac3d-abdb84475b6a"
+                },
+                {
+                    "description": "Ilha PTH 2 [PA0] de J20",
+                    "pos": {
+                        "x": -155.58,
+                        "y": 125.19
+                    },
+                    "uuid": "63ae858c-6c7a-4b6f-a5c0-3520b509d3a3"
+                }
+            ],
+            "severity": "error",
+            "type": "solder_mask_bridge"
+        },
+        {
+            "description": "A abertura da máscara de solda de trás conecta itens com redes diferentes",
+            "items": [
+                {
+                    "description": "Ilha PTH 1 [GND] de J15",
+                    "pos": {
+                        "x": -155.72,
+                        "y": 125.19
+                    },
+                    "uuid": "ef2ef710-236e-4890-ac3d-abdb84475b6a"
+                },
+                {
+                    "description": "Ilha PTH 2 [PA0] de J20",
+                    "pos": {
+                        "x": -155.58,
+                        "y": 125.19
+                    },
+                    "uuid": "63ae858c-6c7a-4b6f-a5c0-3520b509d3a3"
+                }
+            ],
+            "severity": "error",
+            "type": "solder_mask_bridge"
+        },
+        {
+            "description": "A trilha tem uma extremidade desconectada",
+            "items": [
+                {
+                    "description": "Trilha [PB7] no B.Cu, comprimento 3,5921 mm",
+                    "pos": {
+                        "x": 101.727,
+                        "y": 86.487
+                    },
+                    "uuid": "ca575908-ab45-43a7-b744-b2bb9642844f"
+                }
+            ],
+            "severity": "warning",
+            "type": "track_dangling"
+        },
+        {
+            "description": "A serigrafia foi cortada pela borda da placa",
+            "items": [
+                {
+                    "description": "Retângulo no Edge.Cuts",
+                    "pos": {
+                        "x": 46.8,
+                        "y": 36.6
+                    },
+                    "uuid": "c63c0e07-c16b-4bed-8276-5bfd98f67baf"
+                },
+                {
+                    "description": "Segmento de J24 em F.Silkscreen",
+                    "pos": {
+                        "x": 124.02,
+                        "y": 126.21
+                    },
+                    "uuid": "e4ea29d5-f6d1-4048-ada3-5a4bd6378463"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_edge_clearance"
+        },
+        {
+            "description": "A serigrafia foi cortada pela borda da placa",
+            "items": [
+                {
+                    "description": "Retângulo no Edge.Cuts",
+                    "pos": {
+                        "x": 46.8,
+                        "y": 36.6
+                    },
+                    "uuid": "c63c0e07-c16b-4bed-8276-5bfd98f67baf"
+                },
+                {
+                    "description": "Segmento de J24 em F.Silkscreen",
+                    "pos": {
+                        "x": 140.14,
+                        "y": 126.21
+                    },
+                    "uuid": "88b5be20-0104-420a-8f97-3baa82c87ef5"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_edge_clearance"
+        },
+        {
+            "description": "A serigrafia foi cortada pela borda da placa",
+            "items": [
+                {
+                    "description": "Retângulo no Edge.Cuts",
+                    "pos": {
+                        "x": 46.8,
+                        "y": 36.6
+                    },
+                    "uuid": "c63c0e07-c16b-4bed-8276-5bfd98f67baf"
+                },
+                {
+                    "description": "Campo de referência do PS1",
+                    "pos": {
+                        "x": 46.785,
+                        "y": 107.225
+                    },
+                    "uuid": "d8177d6e-f02f-4c21-a891-6b4aeb8077f4"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_edge_clearance"
+        },
+        {
+            "description": "A serigrafia foi cortada pela borda da placa",
+            "items": [
+                {
+                    "description": "Retângulo no Edge.Cuts",
+                    "pos": {
+                        "x": 46.8,
+                        "y": 36.6
+                    },
+                    "uuid": "c63c0e07-c16b-4bed-8276-5bfd98f67baf"
+                },
+                {
+                    "description": "Segmento de U7 em F.Silkscreen",
+                    "pos": {
+                        "x": 111.8,
+                        "y": 114.05
+                    },
+                    "uuid": "89b0cbb6-7be5-49cb-b61d-785d8308b143"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_edge_clearance"
+        },
+        {
+            "description": "A serigrafia foi cortada pela borda da placa",
+            "items": [
+                {
+                    "description": "Retângulo no Edge.Cuts",
+                    "pos": {
+                        "x": 46.8,
+                        "y": 36.6
+                    },
+                    "uuid": "c63c0e07-c16b-4bed-8276-5bfd98f67baf"
+                },
+                {
+                    "description": "Segmento de U7 em F.Silkscreen",
+                    "pos": {
+                        "x": 181.8,
+                        "y": 36.55
+                    },
+                    "uuid": "49822324-c92e-42ea-90ab-b98fa45b8f67"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_edge_clearance"
+        },
+        {
+            "description": "A serigrafia foi cortada pela borda da placa",
+            "items": [
+                {
+                    "description": "Retângulo no Edge.Cuts",
+                    "pos": {
+                        "x": 46.8,
+                        "y": 36.6
+                    },
+                    "uuid": "c63c0e07-c16b-4bed-8276-5bfd98f67baf"
+                },
+                {
+                    "description": "Arco de U7 em F.Silkscreen",
+                    "pos": {
+                        "x": 113.300001,
+                        "y": 36.550001
+                    },
+                    "uuid": "d4c0742b-e0c2-4333-a875-cd78a8a6e98a"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_edge_clearance"
+        },
+        {
+            "description": "A serigrafia foi cortada pela borda da placa",
+            "items": [
+                {
+                    "description": "Retângulo no Edge.Cuts",
+                    "pos": {
+                        "x": 46.8,
+                        "y": 36.6
+                    },
+                    "uuid": "c63c0e07-c16b-4bed-8276-5bfd98f67baf"
+                },
+                {
+                    "description": "Arco de U7 em F.Silkscreen",
+                    "pos": {
+                        "x": 180.3,
+                        "y": 36.55
+                    },
+                    "uuid": "8b4c8822-cfa6-4d95-ae54-bd872db7f4d3"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_edge_clearance"
+        },
+        {
+            "description": "A serigrafia foi cortada pela borda da placa",
+            "items": [
+                {
+                    "description": "Retângulo no Edge.Cuts",
+                    "pos": {
+                        "x": 46.8,
+                        "y": 36.6
+                    },
+                    "uuid": "c63c0e07-c16b-4bed-8276-5bfd98f67baf"
+                },
+                {
+                    "description": "Segmento de U3 em F.Silkscreen",
+                    "pos": {
+                        "x": 91.313,
+                        "y": 34.671
+                    },
+                    "uuid": "54679a64-692f-4c93-b9f5-5c4de2c484b8"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_edge_clearance"
+        },
+        {
+            "description": "A serigrafia foi cortada pela borda da placa",
+            "items": [
+                {
+                    "description": "Retângulo no Edge.Cuts",
+                    "pos": {
+                        "x": 46.8,
+                        "y": 36.6
+                    },
+                    "uuid": "c63c0e07-c16b-4bed-8276-5bfd98f67baf"
+                },
+                {
+                    "description": "Segmento de U3 em F.Silkscreen",
+                    "pos": {
+                        "x": 106.807,
+                        "y": 46.609
+                    },
+                    "uuid": "479de949-b959-4b1f-8e12-50ecc486d615"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_edge_clearance"
+        },
+        {
+            "description": "A serigrafia foi cortada pela borda da placa",
+            "items": [
+                {
+                    "description": "Retângulo no Edge.Cuts",
+                    "pos": {
+                        "x": 46.8,
+                        "y": 36.6
+                    },
+                    "uuid": "c63c0e07-c16b-4bed-8276-5bfd98f67baf"
+                },
+                {
+                    "description": "Círculo de U3 em F.Silkscreen",
+                    "pos": {
+                        "x": 93.853,
+                        "y": 37.719
+                    },
+                    "uuid": "1f1cf6e9-87f7-459d-bf91-23c3d8956160"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_edge_clearance"
+        },
+        {
+            "description": "A serigrafia foi cortada pela borda da placa",
+            "items": [
+                {
+                    "description": "Retângulo no Edge.Cuts",
+                    "pos": {
+                        "x": 46.8,
+                        "y": 36.6
+                    },
+                    "uuid": "c63c0e07-c16b-4bed-8276-5bfd98f67baf"
+                },
+                {
+                    "description": "Círculo de U3 em F.Silkscreen",
+                    "pos": {
+                        "x": 104.267,
+                        "y": 37.719
+                    },
+                    "uuid": "b74f6c3d-b17b-4e00-ba82-3bfe5512b339"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_edge_clearance"
+        },
+        {
+            "description": "Furo feito muito próximo de outro furo (board setup constraints mín 0,2495 mm; atual 0,0000 mm)",
+            "items": [
+                {
+                    "description": "Ilha PTH 2 [PA0] de J20",
+                    "pos": {
+                        "x": -155.58,
+                        "y": 125.19
+                    },
+                    "uuid": "63ae858c-6c7a-4b6f-a5c0-3520b509d3a3"
+                },
+                {
+                    "description": "Ilha PTH 1 [GND] de J15",
+                    "pos": {
+                        "x": -155.72,
+                        "y": 125.19
+                    },
+                    "uuid": "ef2ef710-236e-4890-ac3d-abdb84475b6a"
+                }
+            ],
+            "severity": "warning",
+            "type": "hole_to_hole"
+        },
+        {
+            "description": "A serigrafia foi cortado pela máscara de solda",
+            "items": [
+                {
+                    "description": "Campo de referência do S6",
+                    "pos": {
+                        "x": -109.63,
+                        "y": 108.765
+                    },
+                    "uuid": "80da2ebb-421c-4057-b798-278e47329a9b"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_over_copper"
+        },
+        {
+            "description": "A serigrafia foi cortado pela máscara de solda",
+            "items": [
+                {
+                    "description": "Campo de referência do S2",
+                    "pos": {
+                        "x": -109.63,
+                        "y": 95.365
+                    },
+                    "uuid": "6f8a4d5d-5743-42c6-a64e-cc19021110e6"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_over_copper"
+        },
+        {
+            "description": "A serigrafia foi cortado pela máscara de solda",
+            "items": [
+                {
+                    "description": "Campo de referência do J15",
+                    "pos": {
+                        "x": -155.72,
+                        "y": 122.42
+                    },
+                    "uuid": "9b3ff1a9-8667-4b84-addd-b0edc2ad776d"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_over_copper"
+        },
+        {
+            "description": "A serigrafia foi cortado pela máscara de solda",
+            "items": [
+                {
+                    "description": "Campo de referência do S4",
+                    "pos": {
+                        "x": -109.63,
+                        "y": 102.065
+                    },
+                    "uuid": "26a4fb34-2486-490b-af52-6229b7ea9273"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_over_copper"
+        },
+        {
+            "description": "A serigrafia foi cortado pela máscara de solda",
+            "items": [
+                {
+                    "description": "Segmento de U8 em F.Silkscreen",
+                    "pos": {
+                        "x": 228.7,
+                        "y": 58.695
+                    },
+                    "uuid": "0c21f731-f0f7-41c2-831c-56a23fc559b8"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_over_copper"
+        },
+        {
+            "description": "A serigrafia foi cortado pela máscara de solda",
+            "items": [
+                {
+                    "description": "Campo de referência do S3",
+                    "pos": {
+                        "x": -109.63,
+                        "y": 98.715
+                    },
+                    "uuid": "fc7d9bf9-9770-40af-af13-7c7a957640bb"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_over_copper"
+        },
+        {
+            "description": "A serigrafia foi cortado pela máscara de solda",
+            "items": [
+                {
+                    "description": "Campo de referência do S5",
+                    "pos": {
+                        "x": -109.63,
+                        "y": 105.415
+                    },
+                    "uuid": "3a1e67de-78d0-4492-8c8d-960424abed5f"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_over_copper"
+        },
+        {
+            "description": "Sobreposição da serigrafia",
+            "items": [
+                {
+                    "description": "Campo de referência do R8",
+                    "pos": {
+                        "x": -91.72,
+                        "y": 57.98
+                    },
+                    "uuid": "4dce2bb9-a767-411b-8b95-da4d7550d434"
+                },
+                {
+                    "description": "Retângulo de R7 em F.Silkscreen",
+                    "pos": {
+                        "x": -93.64,
+                        "y": 55.83
+                    },
+                    "uuid": "9975d14f-5ba4-4aff-ac34-88c5d7eea837"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_overlap"
+        },
+        {
+            "description": "Sobreposição da serigrafia",
+            "items": [
+                {
+                    "description": "Campo de referência do R9",
+                    "pos": {
+                        "x": -91.72,
+                        "y": 61.13
+                    },
+                    "uuid": "c6e70815-5a3b-41bc-9bcd-c0f99c337d3c"
+                },
+                {
+                    "description": "Retângulo de R8 em F.Silkscreen",
+                    "pos": {
+                        "x": -93.64,
+                        "y": 58.98
+                    },
+                    "uuid": "f96e4ba3-6daa-4fde-85b3-55a430cd3a77"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_overlap"
+        },
+        {
+            "description": "Sobreposição da serigrafia",
+            "items": [
+                {
+                    "description": "Campo de referência do R3",
+                    "pos": {
+                        "x": -91.72,
+                        "y": 42.23
+                    },
+                    "uuid": "73dc4ac4-c0f7-4f29-863b-7283e56f0369"
+                },
+                {
+                    "description": "Retângulo de R2 em F.Silkscreen",
+                    "pos": {
+                        "x": -93.64,
+                        "y": 40.08
+                    },
+                    "uuid": "eba999ee-af53-4a5a-bfea-4a5e7ed48458"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_overlap"
+        },
+        {
+            "description": "Sobreposição da serigrafia",
+            "items": [
+                {
+                    "description": "Retângulo de R3 em F.Silkscreen",
+                    "pos": {
+                        "x": -93.64,
+                        "y": 43.23
+                    },
+                    "uuid": "3c4031ea-7508-4aa4-8f17-c5799d9fc224"
+                },
+                {
+                    "description": "Campo de referência do R4",
+                    "pos": {
+                        "x": -91.72,
+                        "y": 45.38
+                    },
+                    "uuid": "9b327b70-2d13-4324-92a0-f7974bb88b86"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_overlap"
+        },
+        {
+            "description": "Sobreposição da serigrafia",
+            "items": [
+                {
+                    "description": "Campo de referência do R5",
+                    "pos": {
+                        "x": -91.72,
+                        "y": 48.53
+                    },
+                    "uuid": "1ee66855-77de-449a-9fdd-267ea5559f7d"
+                },
+                {
+                    "description": "Retângulo de R4 em F.Silkscreen",
+                    "pos": {
+                        "x": -93.64,
+                        "y": 46.38
+                    },
+                    "uuid": "c68f8177-4c29-43ad-be6b-0f078dbb1bfc"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_overlap"
+        },
+        {
+            "description": "Sobreposição da serigrafia",
+            "items": [
+                {
+                    "description": "Campo de referência do R6",
+                    "pos": {
+                        "x": -91.72,
+                        "y": 51.68
+                    },
+                    "uuid": "9dca78d2-b6d3-491e-a60a-54b9ba53f74f"
+                },
+                {
+                    "description": "Retângulo de R5 em F.Silkscreen",
+                    "pos": {
+                        "x": -93.64,
+                        "y": 49.53
+                    },
+                    "uuid": "d86816e0-8c08-44b1-9b2c-25a24c79ef6b"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_overlap"
+        },
+        {
+            "description": "Sobreposição da serigrafia",
+            "items": [
+                {
+                    "description": "Retângulo de R6 em F.Silkscreen",
+                    "pos": {
+                        "x": -93.64,
+                        "y": 52.68
+                    },
+                    "uuid": "1a4f968f-f401-4d63-9bfb-9a55ed61a665"
+                },
+                {
+                    "description": "Campo de referência do R7",
+                    "pos": {
+                        "x": -91.72,
+                        "y": 54.83
+                    },
+                    "uuid": "e7b195ee-7b96-4a76-9a1e-a48149938224"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_overlap"
+        },
+        {
+            "description": "Sobreposição da serigrafia",
+            "items": [
+                {
+                    "description": "Campo de referência do J1",
+                    "pos": {
+                        "x": -183.18,
+                        "y": 127.03
+                    },
+                    "uuid": "89dbd8bb-a14e-426e-a275-b7a103131b1f"
+                },
+                {
+                    "description": "Segmento de J14 em F.Silkscreen",
+                    "pos": {
+                        "x": -184.51,
+                        "y": 126.52
+                    },
+                    "uuid": "92f9bd45-949b-4c83-a659-b9fb2d2aa79e"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_overlap"
+        },
+        {
+            "description": "Sobreposição da serigrafia",
+            "items": [
+                {
+                    "description": "Segmento de J16 em F.Silkscreen",
+                    "pos": {
+                        "x": -175.31,
+                        "y": 126.52
+                    },
+                    "uuid": "5a93ea87-b369-4af5-b534-bca4c0c090da"
+                },
+                {
+                    "description": "Campo de referência do J12",
+                    "pos": {
+                        "x": -173.98,
+                        "y": 127.03
+                    },
+                    "uuid": "d50547e6-684a-4231-b693-d960e5c0a8c9"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_overlap"
+        },
+        {
+            "description": "Sobreposição da serigrafia",
+            "items": [
+                {
+                    "description": "Retângulo de R1 em F.Silkscreen",
+                    "pos": {
+                        "x": -93.64,
+                        "y": 36.93
+                    },
+                    "uuid": "490534d2-7124-4bd2-81d1-b10b6c7d963a"
+                },
+                {
+                    "description": "Campo de referência do R2",
+                    "pos": {
+                        "x": -91.72,
+                        "y": 39.08
+                    },
+                    "uuid": "bad70c34-b0c3-4dd0-a567-1daaa90ded7a"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_overlap"
+        },
+        {
+            "description": "Sobreposição da serigrafia",
+            "items": [
+                {
+                    "description": "Segmento de J15 em F.Silkscreen",
+                    "pos": {
+                        "x": -154.39,
+                        "y": 126.46
+                    },
+                    "uuid": "09197bc1-c785-47f2-ba9b-8f6e3995fc7f"
+                },
+                {
+                    "description": "Segmento de J20 em F.Silkscreen",
+                    "pos": {
+                        "x": -156.91,
+                        "y": 126.52
+                    },
+                    "uuid": "fcad8fc7-c29b-4e08-a40b-7d802a5c4280"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_overlap"
+        },
+        {
+            "description": "Sobreposição da serigrafia",
+            "items": [
+                {
+                    "description": "Segmento de J17 em F.Silkscreen",
+                    "pos": {
+                        "x": -170.71,
+                        "y": 126.52
+                    },
+                    "uuid": "0dc905fb-364f-4c9c-8f44-dbe5a7b95f71"
+                },
+                {
+                    "description": "Campo de referência do J11",
+                    "pos": {
+                        "x": -168.11,
+                        "y": 127.03
+                    },
+                    "uuid": "df35d598-60db-459c-948a-ee3945d0bd06"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_overlap"
+        },
+        {
+            "description": "Sobreposição da serigrafia",
+            "items": [
+                {
+                    "description": "Segmento de J15 em F.Silkscreen",
+                    "pos": {
+                        "x": -157.05,
+                        "y": 126.46
+                    },
+                    "uuid": "830e519a-f8b4-49b8-bcbd-d173ed62aba7"
+                },
+                {
+                    "description": "Segmento de J20 em F.Silkscreen",
+                    "pos": {
+                        "x": -156.91,
+                        "y": 123.92
+                    },
+                    "uuid": "c6fd9a5b-45e1-480b-9b8b-bc9ddb94b65b"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_overlap"
+        },
+        {
+            "description": "Sobreposição da serigrafia",
+            "items": [
+                {
+                    "description": "Segmento de J15 em F.Silkscreen",
+                    "pos": {
+                        "x": -157.05,
+                        "y": 126.46
+                    },
+                    "uuid": "830e519a-f8b4-49b8-bcbd-d173ed62aba7"
+                },
+                {
+                    "description": "Segmento de J20 em F.Silkscreen",
+                    "pos": {
+                        "x": -156.91,
+                        "y": 126.52
+                    },
+                    "uuid": "fcad8fc7-c29b-4e08-a40b-7d802a5c4280"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_overlap"
+        },
+        {
+            "description": "Sobreposição da serigrafia",
+            "items": [
+                {
+                    "description": "Segmento de J15 em F.Silkscreen",
+                    "pos": {
+                        "x": -155.72,
+                        "y": 123.86
+                    },
+                    "uuid": "3a3591d9-9316-4955-b117-50f98dd1f679"
+                },
+                {
+                    "description": "Segmento de J20 em F.Silkscreen",
+                    "pos": {
+                        "x": -156.91,
+                        "y": 123.92
+                    },
+                    "uuid": "49eb468f-73a0-4349-9954-2d780096ca75"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_overlap"
+        },
+        {
+            "description": "Sobreposição da serigrafia",
+            "items": [
+                {
+                    "description": "Segmento de J20 em F.Silkscreen",
+                    "pos": {
+                        "x": -156.91,
+                        "y": 123.92
+                    },
+                    "uuid": "49eb468f-73a0-4349-9954-2d780096ca75"
+                },
+                {
+                    "description": "Segmento de J15 em F.Silkscreen",
+                    "pos": {
+                        "x": -154.39,
+                        "y": 123.86
+                    },
+                    "uuid": "87149e3f-ccb7-43c4-baad-c074dd0c9e4f"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_overlap"
+        },
+        {
+            "description": "Sobreposição da serigrafia",
+            "items": [
+                {
+                    "description": "Segmento de C2 em F.Silkscreen",
+                    "pos": {
+                        "x": -121.61,
+                        "y": 127.97
+                    },
+                    "uuid": "a35232d9-3344-487c-851a-29ad01013f17"
+                },
+                {
+                    "description": "Campo de referência do C3",
+                    "pos": {
+                        "x": -123.63,
+                        "y": 128.15
+                    },
+                    "uuid": "e88eaeef-a6a8-432a-9049-6f4a327bac7d"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_overlap"
+        },
+        {
+            "description": "Sobreposição da serigrafia",
+            "items": [
+                {
+                    "description": "Segmento de C1 em F.Silkscreen",
+                    "pos": {
+                        "x": -121.61,
+                        "y": 123.82
+                    },
+                    "uuid": "176c6ce0-a7e4-47b0-919a-ed62c5ed36f7"
+                },
+                {
+                    "description": "Campo de referência do C2",
+                    "pos": {
+                        "x": -123.63,
+                        "y": 124.0
+                    },
+                    "uuid": "6f18f700-4741-49dd-89b7-2602ef6c2220"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_overlap"
+        },
+        {
+            "description": "Sobreposição da serigrafia",
+            "items": [
+                {
+                    "description": "Texto do footprint de U3 (BME/P280)",
+                    "pos": {
+                        "x": 90.551,
+                        "y": 38.735
+                    },
+                    "uuid": "06521351-0ba7-4836-acdd-2242acf9b17b"
+                },
+                {
+                    "description": "Segmento de U3 em F.Silkscreen",
+                    "pos": {
+                        "x": 91.313,
+                        "y": 34.671
+                    },
+                    "uuid": "54679a64-692f-4c93-b9f5-5c4de2c484b8"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_overlap"
+        },
+        {
+            "description": "Sobreposição da serigrafia",
+            "items": [
+                {
+                    "description": "Segmento de U2 em F.Silkscreen",
+                    "pos": {
+                        "x": 103.632,
+                        "y": 59.055
+                    },
+                    "uuid": "4420220d-3df7-42c8-b683-0ae49e16f197"
+                },
+                {
+                    "description": "Campo de referência do U2",
+                    "pos": {
+                        "x": 104.267,
+                        "y": 60.96
+                    },
+                    "uuid": "ba2af5ad-6571-4fe0-bf68-2e945ca05926"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_overlap"
+        }
+    ]
+}

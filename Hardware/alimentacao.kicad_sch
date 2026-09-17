@@ -1916,7 +1916,7 @@
 			)
 		)
 	)
-	(hierarchical_label "Gnd"
+	(hierarchical_label "GND"
 		(shape output)
 		(at 101.6 73.66 0)
 		(effects

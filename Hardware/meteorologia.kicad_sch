@@ -37,7 +37,7 @@
 	)
 	(hierarchical_label "RAIN_PULSE"
 		(shape output)
-		(at 101.6 38.1 0)
+		(at 101.6 38.1 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -48,7 +48,7 @@
 	)
 	(hierarchical_label "WIND_SPEED_PULSE"
 		(shape output)
-		(at 101.6 69.85 0)
+		(at 101.6 69.85 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -58,8 +58,8 @@
 		(uuid "c8323432-ad03-495b-a6fe-edd2c939cacb")
 	)
 	(hierarchical_label "WIND_DIR_ADC"
-		(shape output)
-		(at 101.6 101.6 0)
+		(shape passive)
+		(at 101.6 101.6 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -217,7 +217,7 @@
 				(justify left top)
 			)
 		)
-		(pin "WIND_DIR_ADC" output
+		(pin "WIND_DIR_ADC" passive
 			(at 73.66 101.6 0)
 			(uuid "b28a7ae6-5a3f-44b1-9e5d-486ff659ad8e")
 			(effects
@@ -234,11 +234,13 @@
 				)
 			)
 		)
-	)
+	(pin "VREF_SENSOR" input (at 30.48 101.6 180) (effects (font (size 1.27 1.27)) ) (uuid "2cbb9131-2930-5496-ae7b-48f7c02269d0")))
 	(sheet_instances
 		(path "/"
 			(page "1")
 		)
 	)
 	(embedded_fonts no)
+(hierarchical_label "VREF_SENSOR" (shape input) (at 15.24 101.6 0) (effects (font (size 1.0 1.0)) (justify right)) (uuid "2a947738-6b74-5eec-a5bb-404ab0ac179b"))
+(wire (pts (xy 15.24 101.6) (xy 30.48 101.6)) (stroke (width 0) (type default)) (uuid "d3403a51-e3b0-52a5-95b0-b8cba66ce3c8"))
 )

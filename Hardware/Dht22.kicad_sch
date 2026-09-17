@@ -751,7 +751,7 @@
 			)
 		)
 	)
-	(global_label "Gnd"
+	(global_label "GND"
 		(shape input)
 		(at 147.32 68.58 270)
 		(fields_autoplaced yes)
@@ -795,7 +795,7 @@
 			)
 		)
 	)
-	(global_label "Gnd"
+	(global_label "GND"
 		(shape input)
 		(at 138.43 72.39 90)
 		(fields_autoplaced yes)
