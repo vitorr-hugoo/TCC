@@ -5069,6 +5069,16 @@
 	)
 	(wire
 		(pts
+			(xy 182.88 80.01) (xy 198.12 80.01)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "593e9268-79ba-4b98-887b-2640aa1f4a55")
+	)
+	(wire
+		(pts
 			(xy 104.14 182.88) (xy 109.22 182.88)
 		)
 		(stroke
@@ -5136,6 +5146,26 @@
 			(type default)
 		)
 		(uuid "6c154955-1491-4781-b9b1-c931ae8d60ab")
+	)
+	(wire
+		(pts
+			(xy 182.88 87.63) (xy 198.12 87.63)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6c4fda4b-6c02-40f5-8540-8f7db8199585")
+	)
+	(wire
+		(pts
+			(xy 182.88 72.39) (xy 198.12 72.39)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "742e64e7-a48e-4417-9df8-678c5e472026")
 	)
 	(wire
 		(pts
@@ -6575,6 +6605,26 @@
 			)
 		)
 	)
+	(global_label "RAIN_PULSE"
+		(shape input)
+		(at 198.12 72.39 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "bb3081bc-1195-4027-ae8b-f80ef5fbd071")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 198.12 72.39 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+	)
 	(global_label "PB7"
 		(shape input)
 		(at 48.26 72.39 180)
@@ -6659,6 +6709,26 @@
 					(size 1.27 1.27)
 				)
 				(justify left)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "WIND_SPEED_PULSE"
+		(shape input)
+		(at 198.12 80.01 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "cbd346d1-dad3-44cd-8b87-7980d26a3d95")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 198.12 80.01 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
 				(hide yes)
 			)
 		)
@@ -6967,6 +7037,26 @@
 					(size 1.27 1.27)
 				)
 				(justify left)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "WIND_DIR_ADC"
+		(shape input)
+		(at 198.12 87.63 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "f9956aa0-4204-4bd3-886e-699760eaa664")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 198.12 87.63 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
 				(hide yes)
 			)
 		)
@@ -9989,6 +10079,78 @@
 				(path "/0c305a6e-f9cd-49a1-b146-c2956e5469b6"
 					(reference "#PWR015")
 					(unit 1)
+				)
+			)
+		)
+	)
+	(sheet
+		(at 139.7 64.77)
+		(size 43.18 33.02)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "058dce74-971b-49d7-82f0-384e20be985c")
+		(property "Sheetname" "METEOROLOGIA"
+			(at 139.7 64.0584 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "Sensores_meteorologicos/meteorologia.kicad_sch"
+			(at 139.7 98.5522 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(pin "RAIN_PULSE" output
+			(at 182.88 72.39 0)
+			(uuid "3735eb0d-f554-4b3a-94b1-b397634529be")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "WIND_SPEED_PULSE" output
+			(at 182.88 80.01 0)
+			(uuid "6bcd22e6-7650-4c31-9e69-1bc399ac3843")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "WIND_DIR_ADC" output
+			(at 182.88 87.63 0)
+			(uuid "5364e60a-f02f-496c-b605-159eaea8c53d")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(instances
+			(project "esquematico_V4"
+				(path "/0c305a6e-f9cd-49a1-b146-c2956e5469b6"
+					(page "9")
 				)
 			)
 		)

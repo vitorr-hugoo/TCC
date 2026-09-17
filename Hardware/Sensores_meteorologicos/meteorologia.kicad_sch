@@ -1,0 +1,244 @@
+(kicad_sch
+	(version 20250114)
+	(generator "eeschema")
+	(generator_version "9.0")
+	(uuid "d32c4171-1939-4f08-9cf7-9e0d865ba055")
+	(paper "A4")
+	(lib_symbols)
+	(text "Folha de integração dos sensores meteorológicos.\nCada subfolha contém o conector RJ11 e seu condicionamento dedicado."
+		(exclude_from_sim no)
+		(at 30.48 20.32 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left top)
+		)
+		(uuid "983f0457-4fe4-4bbb-9b7c-1915ac37b259")
+	)
+	(wire
+		(pts
+			(xy 73.66 38.1) (xy 101.6 38.1)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "76a46013-b269-4c01-87c6-7e4519af1693")
+	)
+	(wire
+		(pts
+			(xy 73.66 101.6) (xy 101.6 101.6)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c9c77288-e6c9-40a5-8ebb-1921d91ec8eb")
+	)
+	(wire
+		(pts
+			(xy 73.66 69.85) (xy 101.6 69.85)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e1dc2004-e62b-4a5a-aa92-35c092aaeaf4")
+	)
+	(hierarchical_label "RAIN_PULSE"
+		(shape output)
+		(at 101.6 38.1 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "25e4168b-6d53-4d15-b1ed-3d7fa38e52bb")
+	)
+	(hierarchical_label "WIND_DIR_ADC"
+		(shape output)
+		(at 101.6 101.6 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "6fd1245e-7af2-41a4-8bd8-bfe59d5d01b0")
+	)
+	(hierarchical_label "WIND_SPEED_PULSE"
+		(shape output)
+		(at 101.6 69.85 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "c8323432-ad03-495b-a6fe-edd2c939cacb")
+	)
+	(sheet
+		(at 30.48 93.98)
+		(size 43.18 15.24)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "4ef75fdb-90eb-437a-af55-0afcbbe28aca")
+		(property "Sheetname" "BIRUTA"
+			(at 30.48 93.2684 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "biruta.kicad_sch"
+			(at 30.48 109.9316 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(pin "WIND_DIR_ADC" output
+			(at 73.66 101.6 0)
+			(uuid "b28a7ae6-5a3f-44b1-9e5d-486ff659ad8e")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(instances
+			(project "esquematico_V4"
+				(path "/0c305a6e-f9cd-49a1-b146-c2956e5469b6/058dce74-971b-49d7-82f0-384e20be985c"
+					(page "12")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 30.48 62.23)
+		(size 43.18 15.24)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "9f29de2e-b04a-471a-b3f5-0032147ee0d6")
+		(property "Sheetname" "ANEMOMETRO"
+			(at 30.48 61.5184 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "anemometro.kicad_sch"
+			(at 30.48 78.1816 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(pin "WIND_SPEED_PULSE" output
+			(at 73.66 69.85 0)
+			(uuid "895752ce-5319-4eef-8a2e-06e984890c38")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(instances
+			(project "esquematico_V4"
+				(path "/0c305a6e-f9cd-49a1-b146-c2956e5469b6/058dce74-971b-49d7-82f0-384e20be985c"
+					(page "11")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 30.48 30.48)
+		(size 43.18 15.24)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "e9242eb5-e685-47a2-8464-3e1e52960bb8")
+		(property "Sheetname" "PLUVIOMETRO"
+			(at 30.48 29.7684 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "pluviometro.kicad_sch"
+			(at 30.48 46.4316 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(pin "RAIN_PULSE" output
+			(at 73.66 38.1 0)
+			(uuid "f3cf9c64-b089-4666-8e0c-2cd3ce786475")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(instances
+			(project "esquematico_V4"
+				(path "/0c305a6e-f9cd-49a1-b146-c2956e5469b6/058dce74-971b-49d7-82f0-384e20be985c"
+					(page "10")
+				)
+			)
+		)
+	)
+	(sheet_instances
+		(path "/"
+			(page "1")
+		)
+	)
+	(embedded_fonts no)
+)

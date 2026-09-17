@@ -758,6 +758,22 @@
     [
       "34d78a87-9b09-4795-98a5-fe6ea1a123f9",
       "DHT22"
+    ],
+    [
+      "058dce74-971b-49d7-82f0-384e20be985c",
+      "METEOROLOGIA"
+    ],
+    [
+      "e9242eb5-e685-47a2-8464-3e1e52960bb8",
+      "PLUVIOMETRO"
+    ],
+    [
+      "9f29de2e-b04a-471a-b3f5-0032147ee0d6",
+      "ANEMOMETRO"
+    ],
+    [
+      "4ef75fdb-90eb-437a-af55-0afcbbe28aca",
+      "BIRUTA"
     ]
   ],
   "text_variables": {}
