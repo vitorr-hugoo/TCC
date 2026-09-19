@@ -1,39 +1,28 @@
-# Saidas de compilacao do STM32
-/Firmware/STM32/Debug/
-/Firmware/STM32/Release/
-/Firmware/STM32/build/
-
-# Estado local do workspace Eclipse/STM32CubeIDE
+# Saidas de compilacao e estado local do STM32CubeIDE
+/firmware/stm32/Debug/
+/firmware/stm32/Release/
+/firmware/stm32/build/
+/firmware/stm32/*.launch
 .metadata/
 
-# Cache do Python
+# Area descartavel do projeto e caches de ferramentas
+/work/
+/.easyeda_cache/
 __pycache__/
 *.py[cod]
 
-# Backups manuais antigos
-/Firmware/STM32/docs/backups/
-
-# Estado local e backups do KiCad
+# Estado local, backups e recuperacao do KiCad
 *.kicad_prl
 *.lck
 *-backups/
 fp-info-cache
-# Arquivos de recuperacao automatica do KiCad
-#auto_saved_files#
+\#auto_saved_files#
 _autosave-*
+
+# Configuracoes locais e credenciais
+/firmware/gateway-esp32/gateway_credentials.h
+/firmware/.arduino/
 
 # Arquivos do Windows
 Thumbs.db
 Desktop.ini
-
-# Cache local do Python
-__pycache__/
-*.py[cod]
-
-# Arquivos de recuperação locais do KiCad
-/Hardware/\#auto_saved_files\#
-/Hardware/_autosave-*.kicad_sch
-
-# Configuração local do gateway ESP32
-/Firmware/Gateway ESP32/gateway_credentials.h
-/Firmware/.arduino/
