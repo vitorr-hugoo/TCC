@@ -22,6 +22,15 @@ _autosave-*
 # Configuracoes locais e credenciais
 /firmware/gateway-esp32/gateway_credentials.h
 /firmware/.arduino/
+.env
+.env.*
+!.env.example
+**/gateway_credentials.h
+**/*credentials.local.*
+**/*secrets.local.*
+*.pem
+*.p12
+*.pfx
 
 # Arquivos do Windows
 Thumbs.db
