@@ -1,0 +1,1429 @@
+{
+  "data_catalogo": "2026-09-18 America/Sao_Paulo",
+  "testes_aprovados": 146,
+  "testes": [
+    {
+      "teste": "J61 positivo / JP60 pad1",
+      "resultado": "PASS",
+      "detalhe": [
+        [
+          "J61",
+          "1"
+        ],
+        [
+          "JP60",
+          "1"
+        ]
+      ]
+    },
+    {
+      "teste": "J61 positivo / JP60 pad1 (sem derivações)",
+      "resultado": "PASS",
+      "detalhe": null
+    },
+    {
+      "teste": "J60 centro / JP60 pad3",
+      "resultado": "PASS",
+      "detalhe": [
+        [
+          "J60",
+          "1"
+        ],
+        [
+          "JP60",
+          "3"
+        ]
+      ]
+    },
+    {
+      "teste": "J60 centro / JP60 pad3 (sem derivações)",
+      "resultado": "PASS",
+      "detalhe": null
+    },
+    {
+      "teste": "JP60 comum / entrada fusível",
+      "resultado": "PASS",
+      "detalhe": [
+        [
+          "F60",
+          "1"
+        ],
+        [
+          "JP60",
+          "2"
+        ]
+      ]
+    },
+    {
+      "teste": "JP60 comum / entrada fusível (sem derivações)",
+      "resultado": "PASS",
+      "detalhe": null
+    },
+    {
+      "teste": "Após fusível / TVS / dois drenos PMOS",
+      "resultado": "PASS",
+      "detalhe": [
+        [
+          "D60",
+          "2"
+        ],
+        [
+          "F60",
+          "2"
+        ],
+        [
+          "Q60",
+          "2"
+        ],
+        [
+          "Q60",
+          "4"
+        ]
+      ]
+    },
+    {
+      "teste": "Após fusível / TVS / dois drenos PMOS (sem derivações)",
+      "resultado": "PASS",
+      "detalhe": null
+    },
+    {
+      "teste": "Gate / anodo zener / pull-down",
+      "resultado": "PASS",
+      "detalhe": [
+        [
+          "D61",
+          "2"
+        ],
+        [
+          "Q60",
+          "1"
+        ],
+        [
+          "R60",
+          "1"
+        ]
+      ]
+    },
+    {
+      "teste": "Gate / anodo zener / pull-down (sem derivações)",
+      "resultado": "PASS",
+      "detalhe": null
+    },
+    {
+      "teste": "VIN_MAIN protegido e EN U60",
+      "resultado": "PASS",
+      "detalhe": [
+        [
+          "C60",
+          "1"
+        ],
+        [
+          "C61",
+          "1"
+        ],
+        [
+          "C62",
+          "1"
+        ],
+        [
+          "C63",
+          "1"
+        ],
+        [
+          "D61",
+          "1"
+        ],
+        [
+          "Q60",
+          "3"
+        ],
+        [
+          "TP60",
+          "1"
+        ],
+        [
+          "U60",
+          "2"
+        ],
+        [
+          "U60",
+          "3"
+        ]
+      ]
+    },
+    {
+      "teste": "VIN_MAIN protegido e EN U60 (sem derivações)",
+      "resultado": "PASS",
+      "detalhe": null
+    },
+    {
+      "teste": "Bootstrap de U60",
+      "resultado": "PASS",
+      "detalhe": [
+        [
+          "C64",
+          "1"
+        ],
+        [
+          "U60",
+          "6"
+        ]
+      ]
+    },
+    {
+      "teste": "Bootstrap de U60 (sem derivações)",
+      "resultado": "PASS",
+      "detalhe": null
+    },
+    {
+      "teste": "SW U60 somente L e bootstrap",
+      "resultado": "PASS",
+      "detalhe": [
+        [
+          "C64",
+          "2"
+        ],
+        [
+          "L60",
+          "1"
+        ],
+        [
+          "U60",
+          "5"
+        ]
+      ]
+    },
+    {
+      "teste": "SW U60 somente L e bootstrap (sem derivações)",
+      "resultado": "PASS",
+      "detalhe": null
+    },
+    {
+      "teste": "5V: sense pós L60 / entrada U61",
+      "resultado": "PASS",
+      "detalhe": [
+        [
+          "C65",
+          "1"
+        ],
+        [
+          "C66",
+          "1"
+        ],
+        [
+          "C67",
+          "1"
+        ],
+        [
+          "L60",
+          "2"
+        ],
+        [
+          "TP61",
+          "1"
+        ],
+        [
+          "U60",
+          "1"
+        ],
+        [
+          "U61",
+          "1"
+        ],
+        [
+          "U61",
+          "4"
+        ]
+      ]
+    },
+    {
+      "teste": "SW U61 somente indutor",
+      "resultado": "PASS",
+      "detalhe": [
+        [
+          "L61",
+          "1"
+        ],
+        [
+          "U61",
+          "3"
+        ]
+      ]
+    },
+    {
+      "teste": "SW U61 somente indutor (sem derivações)",
+      "resultado": "PASS",
+      "detalhe": null
+    },
+    {
+      "teste": "3V3: saída e início divisor",
+      "resultado": "PASS",
+      "detalhe": [
+        [
+          "C68",
+          "1"
+        ],
+        [
+          "C69",
+          "1"
+        ],
+        [
+          "C70",
+          "1"
+        ],
+        [
+          "L61",
+          "2"
+        ],
+        [
+          "R61",
+          "1"
+        ],
+        [
+          "TP62",
+          "1"
+        ],
+        [
+          "U9",
+          "1"
+        ]
+      ]
+    },
+    {
+      "teste": "Divisor série 300k+150k",
+      "resultado": "PASS",
+      "detalhe": [
+        [
+          "R61",
+          "2"
+        ],
+        [
+          "R62",
+          "1"
+        ]
+      ]
+    },
+    {
+      "teste": "Divisor série 300k+150k (sem derivações)",
+      "resultado": "PASS",
+      "detalhe": null
+    },
+    {
+      "teste": "FB U61 e capacitor feed-forward",
+      "resultado": "PASS",
+      "detalhe": [
+        [
+          "C70",
+          "2"
+        ],
+        [
+          "R62",
+          "2"
+        ],
+        [
+          "R63",
+          "1"
+        ],
+        [
+          "U61",
+          "5"
+        ]
+      ]
+    },
+    {
+      "teste": "FB U61 e capacitor feed-forward (sem derivações)",
+      "resultado": "PASS",
+      "detalhe": null
+    },
+    {
+      "teste": "Terra comum e negativos",
+      "resultado": "PASS",
+      "detalhe": [
+        [
+          "C60",
+          "2"
+        ],
+        [
+          "C61",
+          "2"
+        ],
+        [
+          "C62",
+          "2"
+        ],
+        [
+          "C63",
+          "2"
+        ],
+        [
+          "C65",
+          "2"
+        ],
+        [
+          "C66",
+          "2"
+        ],
+        [
+          "C67",
+          "2"
+        ],
+        [
+          "C68",
+          "2"
+        ],
+        [
+          "C69",
+          "2"
+        ],
+        [
+          "D60",
+          "1"
+        ],
+        [
+          "J60",
+          "2"
+        ],
+        [
+          "J61",
+          "2"
+        ],
+        [
+          "R60",
+          "2"
+        ],
+        [
+          "R63",
+          "2"
+        ],
+        [
+          "TP63",
+          "1"
+        ],
+        [
+          "U60",
+          "4"
+        ],
+        [
+          "U61",
+          "2"
+        ]
+      ]
+    },
+    {
+      "teste": "Sete redes distintas com JP60 aberto",
+      "resultado": "PASS",
+      "detalhe": null
+    },
+    {
+      "teste": "Contato chaveado P4 não utilizado",
+      "resultado": "PASS",
+      "detalhe": null
+    },
+    {
+      "teste": "Sem regulador antigo U10 em paralelo",
+      "resultado": "PASS",
+      "detalhe": null
+    },
+    {
+      "teste": "Capacitor opcional C69 DNP",
+      "resultado": "PASS",
+      "detalhe": null
+    },
+    {
+      "teste": "ENs sem dependência do MCU",
+      "resultado": "PASS",
+      "detalhe": null
+    },
+    {
+      "teste": "3V3 não conectado às saídas 3V3 da Nucleo",
+      "resultado": "PASS",
+      "detalhe": null
+    },
+    {
+      "teste": "Nucleo alimentada por E5V CN7_6",
+      "resultado": "FAIL",
+      "detalhe": null
+    },
+    {
+      "teste": "Saída CN7_18 da Nucleo isolada",
+      "resultado": "FAIL",
+      "detalhe": null
+    },
+    {
+      "teste": "J60: footprint existe",
+      "resultado": "PASS",
+      "detalhe": "Hardware_Power:DC-IN-TH_DC-005-2.0_C22459640"
+    },
+    {
+      "teste": "J60: números dos pinos coincidem com pads",
+      "resultado": "PASS",
+      "detalhe": {
+        "pins": [
+          "1",
+          "2",
+          "3"
+        ],
+        "pads": [
+          "1",
+          "2",
+          "3"
+        ]
+      }
+    },
+    {
+      "teste": "J60: modelo 3D local",
+      "resultado": "PASS",
+      "detalhe": "D:\\TCC\\Hardware\\libraries\\Hardware_Power\\Hardware_Power.3dshapes\\DC-IN-TH_DC-005-2.0_C22459640.wrl"
+    },
+    {
+      "teste": "J60: código JLC e MPN consistentes",
+      "resultado": "PASS",
+      "detalhe": null
+    },
+    {
+      "teste": "J60: disponibilidade de pré-compra positiva",
+      "resultado": "PASS",
+      "detalhe": null
+    },
+    {
+      "teste": "J61: footprint existe",
+      "resultado": "PASS",
+      "detalhe": "Connector_JST:JST_XH_B2B-XH-A_1x02_P2.50mm_Vertical"
+    },
+    {
+      "teste": "J61: números dos pinos coincidem com pads",
+      "resultado": "PASS",
+      "detalhe": {
+        "pins": [
+          "1",
+          "2"
+        ],
+        "pads": [
+          "1",
+          "2"
+        ]
+      }
+    },
+    {
+      "teste": "J61: código JLC e MPN consistentes",
+      "resultado": "PASS",
+      "detalhe": null
+    },
+    {
+      "teste": "J61: disponibilidade de pré-compra positiva",
+      "resultado": "PASS",
+      "detalhe": null
+    },
+    {
+      "teste": "JP60: footprint existe",
+      "resultado": "PASS",
+      "detalhe": "Jumper:SolderJumper-3_P2.0mm_Open_TrianglePad1.0x1.5mm_NumberLabels"
+    },
+    {
+      "teste": "JP60: números dos pinos coincidem com pads",
+      "resultado": "PASS",
+      "detalhe": {
+        "pins": [
+          "1",
+          "2",
+          "3"
+        ],
+        "pads": [
+          "1",
+          "2",
+          "3"
+        ]
+      }
+    },
+    {
+      "teste": "F60: footprint existe",
+      "resultado": "PASS",
+      "detalhe": "Fuse:Fuse_1206_3216Metric"
+    },
+    {
+      "teste": "F60: números dos pinos coincidem com pads",
+      "resultado": "PASS",
+      "detalhe": {
+        "pins": [
+          "1",
+          "2"
+        ],
+        "pads": [
+          "1",
+          "2"
+        ]
+      }
+    },
+    {
+      "teste": "F60: código JLC e MPN consistentes",
+      "resultado": "PASS",
+      "detalhe": null
+    },
+    {
+      "teste": "F60: disponibilidade de pré-compra positiva",
+      "resultado": "PASS",
+      "detalhe": null
+    },
+    {
+      "teste": "D60: footprint existe",
+      "resultado": "PASS",
+      "detalhe": "Diode_SMD:D_SMB"
+    },
+    {
+      "teste": "D60: números dos pinos coincidem com pads",
+      "resultado": "PASS",
+      "detalhe": {
+        "pins": [
+          "1",
+          "2"
+        ],
+        "pads": [
+          "1",
+          "2"
+        ]
+      }
+    },
+    {
+      "teste": "D60: código JLC e MPN consistentes",
+      "resultado": "PASS",
+      "detalhe": null
+    },
+    {
+      "teste": "D60: disponibilidade de pré-compra positiva",
+      "resultado": "PASS",
+      "detalhe": null
+    },
+    {
+      "teste": "Q60: footprint existe",
+      "resultado": "PASS",
+      "detalhe": "Hardware_Power:SOT-223-4_L6.5-W3.5-P2.30-LS7.0-BR"
+    },
+    {
+      "teste": "Q60: números dos pinos coincidem com pads",
+      "resultado": "PASS",
+      "detalhe": {
+        "pins": [
+          "1",
+          "2",
+          "3",
+          "4"
+        ],
+        "pads": [
+          "1",
+          "2",
+          "3",
+          "4"
+        ]
+      }
+    },
+    {
+      "teste": "Q60: modelo 3D local",
+      "resultado": "PASS",
+      "detalhe": "D:\\TCC\\Hardware\\libraries\\Hardware_Power\\Hardware_Power.3dshapes\\SOT-223-4P_L6.5-W3.5-H1.6-LS7.0-P2.30.wrl"
+    },
+    {
+      "teste": "Q60: código JLC e MPN consistentes",
+      "resultado": "PASS",
+      "detalhe": null
+    },
+    {
+      "teste": "Q60: disponibilidade de pré-compra positiva",
+      "resultado": "PASS",
+      "detalhe": null
+    },
+    {
+      "teste": "D61: footprint existe",
+      "resultado": "PASS",
+      "detalhe": "Diode_SMD:D_SOD-123"
+    },
+    {
+      "teste": "D61: números dos pinos coincidem com pads",
+      "resultado": "PASS",
+      "detalhe": {
+        "pins": [
+          "1",
+          "2"
+        ],
+        "pads": [
+          "1",
+          "2"
+        ]
+      }
+    },
+    {
+      "teste": "D61: código JLC e MPN consistentes",
+      "resultado": "PASS",
+      "detalhe": null
+    },
+    {
+      "teste": "D61: disponibilidade de pré-compra positiva",
+      "resultado": "PASS",
+      "detalhe": null
+    },
+    {
+      "teste": "R60: footprint existe",
+      "resultado": "PASS",
+      "detalhe": "Resistor_SMD:R_0603_1608Metric"
+    },
+    {
+      "teste": "R60: números dos pinos coincidem com pads",
+      "resultado": "PASS",
+      "detalhe": {
+        "pins": [
+          "1",
+          "2"
+        ],
+        "pads": [
+          "1",
+          "2"
+        ]
+      }
+    },
+    {
+      "teste": "R60: código JLC e MPN consistentes",
+      "resultado": "PASS",
+      "detalhe": null
+    },
+    {
+      "teste": "R60: disponibilidade de pré-compra positiva",
+      "resultado": "PASS",
+      "detalhe": null
+    },
+    {
+      "teste": "C60: footprint existe",
+      "resultado": "PASS",
+      "detalhe": "Capacitor_SMD:CP_Elec_6.3x5.8"
+    },
+    {
+      "teste": "C60: números dos pinos coincidem com pads",
+      "resultado": "PASS",
+      "detalhe": {
+        "pins": [
+          "1",
+          "2"
+        ],
+        "pads": [
+          "1",
+          "2"
+        ]
+      }
+    },
+    {
+      "teste": "C60: código JLC e MPN consistentes",
+      "resultado": "PASS",
+      "detalhe": null
+    },
+    {
+      "teste": "C60: disponibilidade de pré-compra positiva",
+      "resultado": "PASS",
+      "detalhe": null
+    },
+    {
+      "teste": "C61: footprint existe",
+      "resultado": "PASS",
+      "detalhe": "Capacitor_SMD:C_1206_3216Metric"
+    },
+    {
+      "teste": "C61: números dos pinos coincidem com pads",
+      "resultado": "PASS",
+      "detalhe": {
+        "pins": [
+          "1",
+          "2"
+        ],
+        "pads": [
+          "1",
+          "2"
+        ]
+      }
+    },
+    {
+      "teste": "C61: código JLC e MPN consistentes",
+      "resultado": "PASS",
+      "detalhe": null
+    },
+    {
+      "teste": "C61: disponibilidade de pré-compra positiva",
+      "resultado": "PASS",
+      "detalhe": null
+    },
+    {
+      "teste": "C62: footprint existe",
+      "resultado": "PASS",
+      "detalhe": "Capacitor_SMD:C_1206_3216Metric"
+    },
+    {
+      "teste": "C62: números dos pinos coincidem com pads",
+      "resultado": "PASS",
+      "detalhe": {
+        "pins": [
+          "1",
+          "2"
+        ],
+        "pads": [
+          "1",
+          "2"
+        ]
+      }
+    },
+    {
+      "teste": "C62: código JLC e MPN consistentes",
+      "resultado": "PASS",
+      "detalhe": null
+    },
+    {
+      "teste": "C62: disponibilidade de pré-compra positiva",
+      "resultado": "PASS",
+      "detalhe": null
+    },
+    {
+      "teste": "C63: footprint existe",
+      "resultado": "PASS",
+      "detalhe": "Capacitor_SMD:C_0603_1608Metric"
+    },
+    {
+      "teste": "C63: números dos pinos coincidem com pads",
+      "resultado": "PASS",
+      "detalhe": {
+        "pins": [
+          "1",
+          "2"
+        ],
+        "pads": [
+          "1",
+          "2"
+        ]
+      }
+    },
+    {
+      "teste": "C63: código JLC e MPN consistentes",
+      "resultado": "PASS",
+      "detalhe": null
+    },
+    {
+      "teste": "C63: disponibilidade de pré-compra positiva",
+      "resultado": "PASS",
+      "detalhe": null
+    },
+    {
+      "teste": "TP60: footprint existe",
+      "resultado": "PASS",
+      "detalhe": "TestPoint:TestPoint_Pad_D1.5mm"
+    },
+    {
+      "teste": "TP60: números dos pinos coincidem com pads",
+      "resultado": "PASS",
+      "detalhe": {
+        "pins": [
+          "1"
+        ],
+        "pads": [
+          "1"
+        ]
+      }
+    },
+    {
+      "teste": "U60: footprint existe",
+      "resultado": "PASS",
+      "detalhe": "Package_TO_SOT_SMD:TSOT-23-6"
+    },
+    {
+      "teste": "U60: números dos pinos coincidem com pads",
+      "resultado": "PASS",
+      "detalhe": {
+        "pins": [
+          "1",
+          "2",
+          "3",
+          "4",
+          "5",
+          "6"
+        ],
+        "pads": [
+          "1",
+          "2",
+          "3",
+          "4",
+          "5",
+          "6"
+        ]
+      }
+    },
+    {
+      "teste": "U60: código JLC e MPN consistentes",
+      "resultado": "PASS",
+      "detalhe": null
+    },
+    {
+      "teste": "U60: disponibilidade de pré-compra positiva",
+      "resultado": "PASS",
+      "detalhe": null
+    },
+    {
+      "teste": "L60: footprint existe",
+      "resultado": "PASS",
+      "detalhe": "Inductor_SMD:L_Sunlord_MWSA0603S"
+    },
+    {
+      "teste": "L60: números dos pinos coincidem com pads",
+      "resultado": "PASS",
+      "detalhe": {
+        "pins": [
+          "1",
+          "2"
+        ],
+        "pads": [
+          "1",
+          "2"
+        ]
+      }
+    },
+    {
+      "teste": "L60: código JLC e MPN consistentes",
+      "resultado": "PASS",
+      "detalhe": null
+    },
+    {
+      "teste": "L60: disponibilidade de pré-compra positiva",
+      "resultado": "PASS",
+      "detalhe": null
+    },
+    {
+      "teste": "C64: footprint existe",
+      "resultado": "PASS",
+      "detalhe": "Capacitor_SMD:C_0603_1608Metric"
+    },
+    {
+      "teste": "C64: números dos pinos coincidem com pads",
+      "resultado": "PASS",
+      "detalhe": {
+        "pins": [
+          "1",
+          "2"
+        ],
+        "pads": [
+          "1",
+          "2"
+        ]
+      }
+    },
+    {
+      "teste": "C64: código JLC e MPN consistentes",
+      "resultado": "PASS",
+      "detalhe": null
+    },
+    {
+      "teste": "C64: disponibilidade de pré-compra positiva",
+      "resultado": "PASS",
+      "detalhe": null
+    },
+    {
+      "teste": "C65: footprint existe",
+      "resultado": "PASS",
+      "detalhe": "Capacitor_SMD:C_1206_3216Metric"
+    },
+    {
+      "teste": "C65: números dos pinos coincidem com pads",
+      "resultado": "PASS",
+      "detalhe": {
+        "pins": [
+          "1",
+          "2"
+        ],
+        "pads": [
+          "1",
+          "2"
+        ]
+      }
+    },
+    {
+      "teste": "C65: código JLC e MPN consistentes",
+      "resultado": "PASS",
+      "detalhe": null
+    },
+    {
+      "teste": "C65: disponibilidade de pré-compra positiva",
+      "resultado": "PASS",
+      "detalhe": null
+    },
+    {
+      "teste": "C66: footprint existe",
+      "resultado": "PASS",
+      "detalhe": "Capacitor_SMD:C_1206_3216Metric"
+    },
+    {
+      "teste": "C66: números dos pinos coincidem com pads",
+      "resultado": "PASS",
+      "detalhe": {
+        "pins": [
+          "1",
+          "2"
+        ],
+        "pads": [
+          "1",
+          "2"
+        ]
+      }
+    },
+    {
+      "teste": "C66: código JLC e MPN consistentes",
+      "resultado": "PASS",
+      "detalhe": null
+    },
+    {
+      "teste": "C66: disponibilidade de pré-compra positiva",
+      "resultado": "PASS",
+      "detalhe": null
+    },
+    {
+      "teste": "TP61: footprint existe",
+      "resultado": "PASS",
+      "detalhe": "TestPoint:TestPoint_Pad_D1.5mm"
+    },
+    {
+      "teste": "TP61: números dos pinos coincidem com pads",
+      "resultado": "PASS",
+      "detalhe": {
+        "pins": [
+          "1"
+        ],
+        "pads": [
+          "1"
+        ]
+      }
+    },
+    {
+      "teste": "U61: footprint existe",
+      "resultado": "PASS",
+      "detalhe": "Package_TO_SOT_SMD:SOT-23-5"
+    },
+    {
+      "teste": "U61: números dos pinos coincidem com pads",
+      "resultado": "PASS",
+      "detalhe": {
+        "pins": [
+          "1",
+          "2",
+          "3",
+          "4",
+          "5"
+        ],
+        "pads": [
+          "1",
+          "2",
+          "3",
+          "4",
+          "5"
+        ]
+      }
+    },
+    {
+      "teste": "U61: código JLC e MPN consistentes",
+      "resultado": "PASS",
+      "detalhe": null
+    },
+    {
+      "teste": "U61: disponibilidade de pré-compra positiva",
+      "resultado": "PASS",
+      "detalhe": null
+    },
+    {
+      "teste": "C67: footprint existe",
+      "resultado": "PASS",
+      "detalhe": "Capacitor_SMD:C_0805_2012Metric"
+    },
+    {
+      "teste": "C67: números dos pinos coincidem com pads",
+      "resultado": "PASS",
+      "detalhe": {
+        "pins": [
+          "1",
+          "2"
+        ],
+        "pads": [
+          "1",
+          "2"
+        ]
+      }
+    },
+    {
+      "teste": "C67: código JLC e MPN consistentes",
+      "resultado": "PASS",
+      "detalhe": null
+    },
+    {
+      "teste": "C67: disponibilidade de pré-compra positiva",
+      "resultado": "PASS",
+      "detalhe": null
+    },
+    {
+      "teste": "L61: footprint existe",
+      "resultado": "PASS",
+      "detalhe": "Inductor_SMD:L_Sunlord_MWSA0402S"
+    },
+    {
+      "teste": "L61: números dos pinos coincidem com pads",
+      "resultado": "PASS",
+      "detalhe": {
+        "pins": [
+          "1",
+          "2"
+        ],
+        "pads": [
+          "1",
+          "2"
+        ]
+      }
+    },
+    {
+      "teste": "L61: código JLC e MPN consistentes",
+      "resultado": "PASS",
+      "detalhe": null
+    },
+    {
+      "teste": "L61: disponibilidade de pré-compra positiva",
+      "resultado": "PASS",
+      "detalhe": null
+    },
+    {
+      "teste": "C68: footprint existe",
+      "resultado": "PASS",
+      "detalhe": "Capacitor_SMD:C_0805_2012Metric"
+    },
+    {
+      "teste": "C68: números dos pinos coincidem com pads",
+      "resultado": "PASS",
+      "detalhe": {
+        "pins": [
+          "1",
+          "2"
+        ],
+        "pads": [
+          "1",
+          "2"
+        ]
+      }
+    },
+    {
+      "teste": "C68: código JLC e MPN consistentes",
+      "resultado": "PASS",
+      "detalhe": null
+    },
+    {
+      "teste": "C68: disponibilidade de pré-compra positiva",
+      "resultado": "PASS",
+      "detalhe": null
+    },
+    {
+      "teste": "C69: footprint existe",
+      "resultado": "PASS",
+      "detalhe": "Capacitor_SMD:C_1206_3216Metric"
+    },
+    {
+      "teste": "C69: números dos pinos coincidem com pads",
+      "resultado": "PASS",
+      "detalhe": {
+        "pins": [
+          "1",
+          "2"
+        ],
+        "pads": [
+          "1",
+          "2"
+        ]
+      }
+    },
+    {
+      "teste": "C69: código JLC e MPN consistentes",
+      "resultado": "PASS",
+      "detalhe": null
+    },
+    {
+      "teste": "C69: disponibilidade de pré-compra positiva",
+      "resultado": "PASS",
+      "detalhe": null
+    },
+    {
+      "teste": "R61: footprint existe",
+      "resultado": "PASS",
+      "detalhe": "Resistor_SMD:R_0603_1608Metric"
+    },
+    {
+      "teste": "R61: números dos pinos coincidem com pads",
+      "resultado": "PASS",
+      "detalhe": {
+        "pins": [
+          "1",
+          "2"
+        ],
+        "pads": [
+          "1",
+          "2"
+        ]
+      }
+    },
+    {
+      "teste": "R61: código JLC e MPN consistentes",
+      "resultado": "PASS",
+      "detalhe": null
+    },
+    {
+      "teste": "R61: disponibilidade de pré-compra positiva",
+      "resultado": "PASS",
+      "detalhe": null
+    },
+    {
+      "teste": "R62: footprint existe",
+      "resultado": "PASS",
+      "detalhe": "Resistor_SMD:R_0603_1608Metric"
+    },
+    {
+      "teste": "R62: números dos pinos coincidem com pads",
+      "resultado": "PASS",
+      "detalhe": {
+        "pins": [
+          "1",
+          "2"
+        ],
+        "pads": [
+          "1",
+          "2"
+        ]
+      }
+    },
+    {
+      "teste": "R62: código JLC e MPN consistentes",
+      "resultado": "PASS",
+      "detalhe": null
+    },
+    {
+      "teste": "R62: disponibilidade de pré-compra positiva",
+      "resultado": "PASS",
+      "detalhe": null
+    },
+    {
+      "teste": "R63: footprint existe",
+      "resultado": "PASS",
+      "detalhe": "Resistor_SMD:R_0603_1608Metric"
+    },
+    {
+      "teste": "R63: números dos pinos coincidem com pads",
+      "resultado": "PASS",
+      "detalhe": {
+        "pins": [
+          "1",
+          "2"
+        ],
+        "pads": [
+          "1",
+          "2"
+        ]
+      }
+    },
+    {
+      "teste": "R63: código JLC e MPN consistentes",
+      "resultado": "PASS",
+      "detalhe": null
+    },
+    {
+      "teste": "R63: disponibilidade de pré-compra positiva",
+      "resultado": "PASS",
+      "detalhe": null
+    },
+    {
+      "teste": "C70: footprint existe",
+      "resultado": "PASS",
+      "detalhe": "Capacitor_SMD:C_0603_1608Metric"
+    },
+    {
+      "teste": "C70: números dos pinos coincidem com pads",
+      "resultado": "PASS",
+      "detalhe": {
+        "pins": [
+          "1",
+          "2"
+        ],
+        "pads": [
+          "1",
+          "2"
+        ]
+      }
+    },
+    {
+      "teste": "C70: código JLC e MPN consistentes",
+      "resultado": "PASS",
+      "detalhe": null
+    },
+    {
+      "teste": "C70: disponibilidade de pré-compra positiva",
+      "resultado": "PASS",
+      "detalhe": null
+    },
+    {
+      "teste": "TP62: footprint existe",
+      "resultado": "PASS",
+      "detalhe": "TestPoint:TestPoint_Pad_D1.5mm"
+    },
+    {
+      "teste": "TP62: números dos pinos coincidem com pads",
+      "resultado": "PASS",
+      "detalhe": {
+        "pins": [
+          "1"
+        ],
+        "pads": [
+          "1"
+        ]
+      }
+    },
+    {
+      "teste": "TP63: footprint existe",
+      "resultado": "PASS",
+      "detalhe": "TestPoint:TestPoint_Pad_D1.5mm"
+    },
+    {
+      "teste": "TP63: números dos pinos coincidem com pads",
+      "resultado": "PASS",
+      "detalhe": {
+        "pins": [
+          "1"
+        ],
+        "pads": [
+          "1"
+        ]
+      }
+    },
+    {
+      "teste": "Sem novas violações ERC no projeto",
+      "resultado": "PASS",
+      "detalhe": []
+    },
+    {
+      "teste": "Folha alimentação: zero violações ERC",
+      "resultado": "PASS",
+      "detalhe": null
+    },
+    {
+      "teste": "Capacitância nominal 3V3 contabilizada",
+      "resultado": "PASS",
+      "detalhe": [
+        {
+          "ref": "C10",
+          "uF": 0.1
+        },
+        {
+          "ref": "C68",
+          "uF": 10.0
+        },
+        {
+          "ref": "C2",
+          "uF": 0.1
+        },
+        {
+          "ref": "C12",
+          "uF": 10.0
+        },
+        {
+          "ref": "C9",
+          "uF": 10.0
+        },
+        {
+          "ref": "C41",
+          "uF": 0.1
+        },
+        {
+          "ref": "C6",
+          "uF": 10.0
+        },
+        {
+          "ref": "C31",
+          "uF": 0.1
+        },
+        {
+          "ref": "C11",
+          "uF": 0.1
+        }
+      ]
+    }
+  ],
+  "erc_antes": {
+    "error": 71,
+    "warning": 27
+  },
+  "erc_depois": {
+    "error": 49,
+    "warning": 27
+  },
+  "novas_violacoes_erc": [],
+  "erc_por_folha": {
+    "/": 52,
+    "/mcu/": 2,
+    "/BMP280/": 5,
+    "/BH1750/": 3,
+    "/Cartao SD/": 7,
+    "/LORA Module/": 6,
+    "/DHT22/": 1
+  },
+  "capacitancia_nominal_3V3_uF": 40.5,
+  "capacitores_3V3": [
+    {
+      "ref": "C10",
+      "uF": 0.1
+    },
+    {
+      "ref": "C68",
+      "uF": 10.0
+    },
+    {
+      "ref": "C2",
+      "uF": 0.1
+    },
+    {
+      "ref": "C12",
+      "uF": 10.0
+    },
+    {
+      "ref": "C9",
+      "uF": 10.0
+    },
+    {
+      "ref": "C41",
+      "uF": 0.1
+    },
+    {
+      "ref": "C6",
+      "uF": 10.0
+    },
+    {
+      "ref": "C31",
+      "uF": 0.1
+    },
+    {
+      "ref": "C11",
+      "uF": 0.1
+    }
+  ],
+  "subtotal_componentes_USD": 2.8466,
+  "componentes_fisicos_folha": 30,
+  "pecas_compradas_montadas": 24,
+  "hashes_sha256": {
+    "alimentacao.kicad_sch": "2c02d940f348d443b4a364a5605fcc83b7f663b82622ed07942e0b472bdcf60a",
+    "esquematico_V4.kicad_sch": "3de4dfec17f5799943d4467dd68e0249d2f6f3043805c1099bb613df06cfad51",
+    "bh1750.kicad_sch": "6c9c292b7db16c42dce01f491682bf190315184cae5bd27c0c926c8ef1a80ee7",
+    "mcu.kicad_sch": "74b455fafde5af5b9fb18900fab18f3d62ac87ccafa91ff28f2acd59c0aa6bb5",
+    "esquematico_V4.kicad_pcb": "890850e432666d2d1016b86fbb53ee156ec74229a604a02aa7fd9ec40817b1ca",
+    "netlist.xml": "c8b8a57b58609a4fb49aa3d9044e1eb1c4122c642d3afe1e589e54b3e869825e"
+  },
+  "testes_reprovados": [
+    {
+      "teste": "Nucleo alimentada por E5V CN7_6",
+      "resultado": "FAIL",
+      "detalhe": null
+    },
+    {
+      "teste": "Saída CN7_18 da Nucleo isolada",
+      "resultado": "FAIL",
+      "detalhe": null
+    }
+  ]
+}

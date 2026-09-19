@@ -6,6 +6,10 @@
 # Estado local do workspace Eclipse/STM32CubeIDE
 .metadata/
 
+# Cache do Python
+__pycache__/
+*.py[cod]
+
 # Backups manuais antigos
 /Firmware/STM32/docs/backups/
 

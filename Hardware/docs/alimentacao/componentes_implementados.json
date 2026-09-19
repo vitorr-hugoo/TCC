@@ -1,0 +1,342 @@
+[
+  {
+    "reference": "J60",
+    "part": "P4",
+    "value": "P4 / DC-005-2.0",
+    "lib": "Hardware_Power:DC-005-2.0_C22459640",
+    "footprint": "Hardware_Power:DC-IN-TH_DC-005-2.0_C22459640",
+    "lcsc": "C22459640",
+    "role": "Fonte externa SELV regulada 12V, centro positivo; nao ligar painel diretamente",
+    "dnp": false
+  },
+  {
+    "reference": "J61",
+    "part": "JST",
+    "value": "J_PWR / JST-XH",
+    "lib": "Connector_Generic:Conn_01x02",
+    "footprint": "Connector_JST:JST_XH_B2B-XH-A_1x02_P2.50mm_Vertical",
+    "lcsc": "C158012",
+    "role": "Placa de energia externa: p1=BUS nominal12V apos LVD, p2=GND",
+    "dnp": false
+  },
+  {
+    "reference": "JP60",
+    "part": "JP",
+    "value": "SEL_FONTE",
+    "lib": "Jumper:SolderJumper_3_Open",
+    "footprint": "Jumper:SolderJumper-3_P2.0mm_Open_TrianglePad1.0x1.5mm_NumberLabels",
+    "lcsc": "",
+    "role": "1-2 = J61; 2-3 = J60; aberto de fabrica, fechar na configuracao",
+    "dnp": false
+  },
+  {
+    "reference": "F60",
+    "part": "F",
+    "value": "1.5A / 32V lento",
+    "lib": "Device:Fuse",
+    "footprint": "Fuse:Fuse_1206_3216Metric",
+    "lcsc": "C553929",
+    "role": "Protecao local; fonte externa limitada a <=2A; VRLA requer fusivel junto a bateria",
+    "dnp": false
+  },
+  {
+    "reference": "D60",
+    "part": "TVS",
+    "value": "SMBJ16CA",
+    "lib": "Device:D_TVS",
+    "footprint": "Diode_SMD:D_SMB",
+    "lcsc": "C3001977",
+    "role": "TVS bidirecional depois do fusivel e antes do PMOS; surtos limitados",
+    "dnp": false
+  },
+  {
+    "reference": "Q60",
+    "part": "Q",
+    "value": "DMP6023LE-13",
+    "lib": "Hardware_Power:DMP6023LE-13",
+    "footprint": "Hardware_Power:SOT-223-4_L6.5-W3.5-P2.30-LS7.0-BR",
+    "lcsc": "C154901",
+    "role": "Reverse polarity: 2/4 drains toward source connector; 3 source toward buck; NOT reverse-current blocker",
+    "dnp": false
+  },
+  {
+    "reference": "D61",
+    "part": "Z",
+    "value": "BZT52C10 / 10V",
+    "lib": "Device:D_Zener",
+    "footprint": "Diode_SMD:D_SOD-123",
+    "lcsc": "C19077408",
+    "role": "Limita |VGS|; catodo1 na source3; anodo2 no gate1",
+    "dnp": false
+  },
+  {
+    "reference": "R60",
+    "part": "100k",
+    "value": "100k / 1%",
+    "lib": "Device:R",
+    "footprint": "Resistor_SMD:R_0603_1608Metric",
+    "lcsc": "C25803",
+    "role": "Pull-down do gate; I tip ~20uA @12V com zener10V",
+    "dnp": false
+  },
+  {
+    "reference": "C60",
+    "part": "47u",
+    "value": "47u / 35V",
+    "lib": "Device:C_Polarized",
+    "footprint": "Capacitor_SMD:CP_Elec_6.3x5.8",
+    "lcsc": "C87068",
+    "role": "Bulk/amortecimento do cabo; positivo p1; ESR ajuda hot-plug",
+    "dnp": false
+  },
+  {
+    "reference": "C61",
+    "part": "10u",
+    "value": "10u / 50V",
+    "lib": "Device:C",
+    "footprint": "Capacitor_SMD:C_1206_3216Metric",
+    "lcsc": "C13585",
+    "role": "MLCC de entrada do AP63205; junto ao VIN/GND",
+    "dnp": false
+  },
+  {
+    "reference": "C62",
+    "part": "10u",
+    "value": "10u / 50V",
+    "lib": "Device:C",
+    "footprint": "Capacitor_SMD:C_1206_3216Metric",
+    "lcsc": "C13585",
+    "role": "Reserva de capacitancia efetiva sob bias 16V",
+    "dnp": false
+  },
+  {
+    "reference": "C63",
+    "part": "100n",
+    "value": "100n / 50V",
+    "lib": "Device:C",
+    "footprint": "Capacitor_SMD:C_0603_1608Metric",
+    "lcsc": "C14663",
+    "role": "Desacoplamento HF junto ao CI",
+    "dnp": false
+  },
+  {
+    "reference": "TP60",
+    "part": "TP",
+    "value": "VIN_MAIN",
+    "lib": "Connector:TestPoint",
+    "footprint": "TestPoint:TestPoint_Pad_D1.5mm",
+    "lcsc": "",
+    "role": "",
+    "dnp": false
+  },
+  {
+    "reference": "#FLG060",
+    "part": "FLAG",
+    "value": "PWR_FLAG",
+    "lib": "power:PWR_FLAG",
+    "footprint": "",
+    "lcsc": "",
+    "role": "",
+    "dnp": false
+  },
+  {
+    "reference": "#FLG061",
+    "part": "FLAG",
+    "value": "PWR_FLAG",
+    "lib": "power:PWR_FLAG",
+    "footprint": "",
+    "lcsc": "",
+    "role": "",
+    "dnp": false
+  },
+  {
+    "reference": "U60",
+    "part": "BUCK5",
+    "value": "AP63205WU-7",
+    "lib": "Regulator_Switching:AP63205WU",
+    "footprint": "Package_TO_SOT_SMD:TSOT-23-6",
+    "lcsc": "C2071056",
+    "role": "Converte VIN_MAIN para5V; EN ligado aVIN; FB direto na saida filtrada",
+    "dnp": false
+  },
+  {
+    "reference": "L60",
+    "part": "L5",
+    "value": "4u7 / MWSA0603S",
+    "lib": "Device:L",
+    "footprint": "Inductor_SMD:L_Sunlord_MWSA0603S",
+    "lcsc": "C408447",
+    "role": "Armazena energia e filtra SW; blindado; nao e bead",
+    "dnp": false
+  },
+  {
+    "reference": "C64",
+    "part": "100n",
+    "value": "100n / 50V",
+    "lib": "Device:C",
+    "footprint": "Capacitor_SMD:C_0603_1608Metric",
+    "lcsc": "C14663",
+    "role": "Bootstrap entre BST6 e SW5; nunca aGND",
+    "dnp": false
+  },
+  {
+    "reference": "C65",
+    "part": "22u",
+    "value": "22u / 25V",
+    "lib": "Device:C",
+    "footprint": "Capacitor_SMD:C_1206_3216Metric",
+    "lcsc": "C12891",
+    "role": "Saida5V; 22uF25V em paralelo comC66",
+    "dnp": false
+  },
+  {
+    "reference": "C66",
+    "part": "22u",
+    "value": "22u / 25V",
+    "lib": "Device:C",
+    "footprint": "Capacitor_SMD:C_1206_3216Metric",
+    "lcsc": "C12891",
+    "role": "Saida5V; Ctotal44uFnominal",
+    "dnp": false
+  },
+  {
+    "reference": "TP61",
+    "part": "TP",
+    "value": "+5V",
+    "lib": "Connector:TestPoint",
+    "footprint": "TestPoint:TestPoint_Pad_D1.5mm",
+    "lcsc": "",
+    "role": "",
+    "dnp": false
+  },
+  {
+    "reference": "#FLG062",
+    "part": "FLAG",
+    "value": "PWR_FLAG",
+    "lib": "power:PWR_FLAG",
+    "footprint": "",
+    "lcsc": "",
+    "role": "",
+    "dnp": false
+  },
+  {
+    "reference": "U61",
+    "part": "BUCK3",
+    "value": "TLV62569DBVR",
+    "lib": "Regulator_Switching:TLV62569DBV",
+    "footprint": "Package_TO_SOT_SMD:SOT-23-5",
+    "lcsc": "C141836",
+    "role": "Buck5V->3V3; R61+R62=450k, R63=100k; EN sempre ligado",
+    "dnp": false
+  },
+  {
+    "reference": "C67",
+    "part": "10uLV",
+    "value": "10u / 25V",
+    "lib": "Device:C",
+    "footprint": "Capacitor_SMD:C_0805_2012Metric",
+    "lcsc": "C15850",
+    "role": "Entrada local U61; alem dos capacitores da saida5V",
+    "dnp": false
+  },
+  {
+    "reference": "L61",
+    "part": "L3",
+    "value": "2u2 / MWSA0402S",
+    "lib": "Device:L",
+    "footprint": "Inductor_SMD:L_Sunlord_MWSA0402S",
+    "lcsc": "C408335",
+    "role": "2.2uH blindado; LC aprovado pela matriz do datasheetTI",
+    "dnp": false
+  },
+  {
+    "reference": "C68",
+    "part": "10uLV",
+    "value": "10u / 25V",
+    "lib": "Device:C",
+    "footprint": "Capacitor_SMD:C_0805_2012Metric",
+    "lcsc": "C15850",
+    "role": "Saida3V3 local; mais30.5uF das folhas existentes =40.5uF nominais",
+    "dnp": false
+  },
+  {
+    "reference": "C69",
+    "part": "22u",
+    "value": "22u / 25V",
+    "lib": "Device:C",
+    "footprint": "Capacitor_SMD:C_1206_3216Metric",
+    "lcsc": "C12891",
+    "role": "DNP: reserva, nao montar sem rever estabilidade e capacitancia total",
+    "dnp": true
+  },
+  {
+    "reference": "R61",
+    "part": "300k",
+    "value": "300k / 1%",
+    "lib": "Device:R",
+    "footprint": "Resistor_SMD:R_0603_1608Metric",
+    "lcsc": "C23024",
+    "role": "Metade superior do divisor, junto aR62 forma450k",
+    "dnp": false
+  },
+  {
+    "reference": "R62",
+    "part": "150k",
+    "value": "150k / 1%",
+    "lib": "Device:R",
+    "footprint": "Resistor_SMD:R_0603_1608Metric",
+    "lcsc": "C22807",
+    "role": "Serie com300k; resistoresBasic para reduzir taxa de montagem",
+    "dnp": false
+  },
+  {
+    "reference": "R63",
+    "part": "100k",
+    "value": "100k / 1%",
+    "lib": "Device:R",
+    "footprint": "Resistor_SMD:R_0603_1608Metric",
+    "lcsc": "C25803",
+    "role": "Perna inferior do divisor; Vout0.6*(1+450k/100k)=3.3V",
+    "dnp": false
+  },
+  {
+    "reference": "C70",
+    "part": "6p8",
+    "value": "6p8 / 50V",
+    "lib": "Device:C",
+    "footprint": "Capacitor_SMD:C_0603_1608Metric",
+    "lcsc": "C1679",
+    "role": "Feed-forward em paralelo comR61+R62; resposta de transientes",
+    "dnp": false
+  },
+  {
+    "reference": "TP62",
+    "part": "TP",
+    "value": "+3V3",
+    "lib": "Connector:TestPoint",
+    "footprint": "TestPoint:TestPoint_Pad_D1.5mm",
+    "lcsc": "",
+    "role": "",
+    "dnp": false
+  },
+  {
+    "reference": "#FLG063",
+    "part": "FLAG",
+    "value": "PWR_FLAG",
+    "lib": "power:PWR_FLAG",
+    "footprint": "",
+    "lcsc": "",
+    "role": "",
+    "dnp": false
+  },
+  {
+    "reference": "TP63",
+    "part": "TP",
+    "value": "GND",
+    "lib": "Connector:TestPoint",
+    "footprint": "TestPoint:TestPoint_Pad_D1.5mm",
+    "lcsc": "",
+    "role": "",
+    "dnp": false
+  }
+]

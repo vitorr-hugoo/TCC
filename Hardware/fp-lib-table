@@ -1,4 +1,5 @@
 (fp_lib_table
   (version 7)
   (lib (name "Sensores_Meteo")(type "KiCad")(uri "${KIPRJMOD}/libraries/Sensores_Meteo/Sensores_Meteo.pretty")(options "")(descr "Footprints locais dos conectores meteorológicos"))
+  (lib (name "Hardware_Power")(type "KiCad")(uri "${KIPRJMOD}/libraries/Hardware_Power/Hardware_Power.pretty")(options "")(descr "Alimentacao - importados EasyEDA, pinagem revisada"))
 )

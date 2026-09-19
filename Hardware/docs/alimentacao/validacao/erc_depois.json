@@ -1,0 +1,1280 @@
+{
+    "$schema": "https://schemas.kicad.org/erc.v1.json",
+    "coordinate_units": "mm",
+    "date": "2026-09-19T12:37:54-0300",
+    "kicad_version": "9.0.6",
+    "sheets": [
+        {
+            "path": "/",
+            "uuid_path": "/0c305a6e-f9cd-49a1-b146-c2956e5469b6",
+            "violations": [
+                {
+                    "description": "Pino sem conexão",
+                    "items": [
+                        {
+                            "description": "Pino Lora_MISO da folha hierárquica",
+                            "pos": {
+                                "x": 0.9525,
+                                "y": 0.6096
+                            },
+                            "uuid": "64a0c12e-42ae-40f8-a80f-0c4db2103d49"
+                        }
+                    ],
+                    "severity": "error",
+                    "type": "pin_not_connected"
+                },
+                {
+                    "description": "Pino sem conexão",
+                    "items": [
+                        {
+                            "description": "Pino Lora_MOSI da folha hierárquica",
+                            "pos": {
+                                "x": 0.9525,
+                                "y": 0.635
+                            },
+                            "uuid": "c0ce3e6f-8bcb-4d6f-b3ee-2bb6be1b7aa7"
+                        }
+                    ],
+                    "severity": "error",
+                    "type": "pin_not_connected"
+                },
+                {
+                    "description": "Pino sem conexão",
+                    "items": [
+                        {
+                            "description": "Pino Lora_NSS da folha hierárquica",
+                            "pos": {
+                                "x": 0.9525,
+                                "y": 0.6604
+                            },
+                            "uuid": "a184599a-c84d-40ee-89b2-f1b2ae0f212d"
+                        }
+                    ],
+                    "severity": "error",
+                    "type": "pin_not_connected"
+                },
+                {
+                    "description": "Pino sem conexão",
+                    "items": [
+                        {
+                            "description": "Pino Lora_RST da folha hierárquica",
+                            "pos": {
+                                "x": 0.9525,
+                                "y": 0.6858
+                            },
+                            "uuid": "c5e5f557-9d5b-48e7-972f-b7ec3566f3f9"
+                        }
+                    ],
+                    "severity": "error",
+                    "type": "pin_not_connected"
+                },
+                {
+                    "description": "Pino sem conexão",
+                    "items": [
+                        {
+                            "description": "Pino Lora_SCK da folha hierárquica",
+                            "pos": {
+                                "x": 0.9525,
+                                "y": 0.7112
+                            },
+                            "uuid": "b3acb8cc-b1fb-4eeb-af04-5dd75c4b5d3e"
+                        }
+                    ],
+                    "severity": "error",
+                    "type": "pin_not_connected"
+                },
+                {
+                    "description": "Pino sem conexão",
+                    "items": [
+                        {
+                            "description": "Pino Lora_DIO0 da folha hierárquica",
+                            "pos": {
+                                "x": 1.2827,
+                                "y": 0.6731
+                            },
+                            "uuid": "d286214f-fc6b-4018-89b3-754c4a81f054"
+                        }
+                    ],
+                    "severity": "error",
+                    "type": "pin_not_connected"
+                },
+                {
+                    "description": "Pino sem conexão",
+                    "items": [
+                        {
+                            "description": "Pino Lora_DIO1 da folha hierárquica",
+                            "pos": {
+                                "x": 1.2827,
+                                "y": 0.6985
+                            },
+                            "uuid": "e01de21f-b0f9-4547-8003-81a3589ac906"
+                        }
+                    ],
+                    "severity": "error",
+                    "type": "pin_not_connected"
+                },
+                {
+                    "description": "Pino sem conexão",
+                    "items": [
+                        {
+                            "description": "Pino Lora_DIO2 da folha hierárquica",
+                            "pos": {
+                                "x": 1.2827,
+                                "y": 0.7239
+                            },
+                            "uuid": "d737049d-7e11-45d0-bd99-0030cf10d5c0"
+                        }
+                    ],
+                    "severity": "error",
+                    "type": "pin_not_connected"
+                },
+                {
+                    "description": "O rótulo não está conectado em nada",
+                    "items": [
+                        {
+                            "description": "Rótulo hierárquico 'MCU_MOSI'",
+                            "pos": {
+                                "x": 0.762,
+                                "y": 0.5207
+                            },
+                            "uuid": "ec33abd0-8c1c-4be4-83ba-e06ce023303f"
+                        }
+                    ],
+                    "severity": "error",
+                    "type": "label_dangling"
+                },
+                {
+                    "description": "O rótulo não está conectado em nada",
+                    "items": [
+                        {
+                            "description": "Rótulo hierárquico 'SD_SCK'",
+                            "pos": {
+                                "x": 0.762,
+                                "y": 0.9017
+                            },
+                            "uuid": "4b48a28b-7bd5-4556-b1b4-0e292ed4e118"
+                        }
+                    ],
+                    "severity": "error",
+                    "type": "label_dangling"
+                },
+                {
+                    "description": "O rótulo não está conectado em nada",
+                    "items": [
+                        {
+                            "description": "Rótulo hierárquico 'SD_MISO'",
+                            "pos": {
+                                "x": 1.0795,
+                                "y": 0.7239
+                            },
+                            "uuid": "3f5fe37f-466c-4bf9-8364-3a635bbbca8a"
+                        }
+                    ],
+                    "severity": "error",
+                    "type": "label_dangling"
+                },
+                {
+                    "description": "O rótulo não está conectado em nada",
+                    "items": [
+                        {
+                            "description": "Rótulo hierárquico 'BH_SDA'",
+                            "pos": {
+                                "x": 2.1971,
+                                "y": 0.9779
+                            },
+                            "uuid": "12bd614d-5050-4412-a63c-266bd6b843eb"
+                        }
+                    ],
+                    "severity": "error",
+                    "type": "label_dangling"
+                },
+                {
+                    "description": "O rótulo não está conectado em nada",
+                    "items": [
+                        {
+                            "description": "Rótulo hierárquico 'BMP_SDA'",
+                            "pos": {
+                                "x": 0.4445,
+                                "y": 0.9144
+                            },
+                            "uuid": "c87490c9-1652-4e37-9928-f09c5816f0b0"
+                        }
+                    ],
+                    "severity": "error",
+                    "type": "label_dangling"
+                },
+                {
+                    "description": "O rótulo não está conectado em nada",
+                    "items": [
+                        {
+                            "description": "Rótulo hierárquico 'BH_SDA'",
+                            "pos": {
+                                "x": 0.4445,
+                                "y": 0.9652
+                            },
+                            "uuid": "8851af45-2bdf-49c8-a38b-99c07bc02e03"
+                        }
+                    ],
+                    "severity": "error",
+                    "type": "label_dangling"
+                },
+                {
+                    "description": "O rótulo não está conectado em nada",
+                    "items": [
+                        {
+                            "description": "Rótulo hierárquico 'SD_SCK'",
+                            "pos": {
+                                "x": 1.4224,
+                                "y": 0.635
+                            },
+                            "uuid": "ac1758c7-436a-43dc-b326-7020a3d0d1cf"
+                        }
+                    ],
+                    "severity": "error",
+                    "type": "label_dangling"
+                },
+                {
+                    "description": "O rótulo não está conectado em nada",
+                    "items": [
+                        {
+                            "description": "Rótulo hierárquico 'SD_MISO'",
+                            "pos": {
+                                "x": 1.4224,
+                                "y": 0.6604
+                            },
+                            "uuid": "f0b19d65-4005-4dc5-a4bf-e1f5128e13e8"
+                        }
+                    ],
+                    "severity": "error",
+                    "type": "label_dangling"
+                },
+                {
+                    "description": "O rótulo não está conectado em nada",
+                    "items": [
+                        {
+                            "description": "Rótulo hierárquico 'MCU_MOSI'",
+                            "pos": {
+                                "x": 1.4224,
+                                "y": 0.6858
+                            },
+                            "uuid": "ec7fd0c4-785a-4330-b519-e12c481e933e"
+                        }
+                    ],
+                    "severity": "error",
+                    "type": "label_dangling"
+                },
+                {
+                    "description": "O rótulo não está conectado em nada",
+                    "items": [
+                        {
+                            "description": "Rótulo hierárquico 'Lora_DIO0'",
+                            "pos": {
+                                "x": 1.4097,
+                                "y": 0.7874
+                            },
+                            "uuid": "c2d2a94b-696b-4707-b998-fa043571c662"
+                        }
+                    ],
+                    "severity": "error",
+                    "type": "label_dangling"
+                },
+                {
+                    "description": "O rótulo não está conectado em nada",
+                    "items": [
+                        {
+                            "description": "Rótulo hierárquico 'Lora_DIO1'",
+                            "pos": {
+                                "x": 1.4097,
+                                "y": 0.8128
+                            },
+                            "uuid": "1aaa15ff-124a-4d48-8a9e-ea32cb730057"
+                        }
+                    ],
+                    "severity": "error",
+                    "type": "label_dangling"
+                },
+                {
+                    "description": "O rótulo não está conectado em nada",
+                    "items": [
+                        {
+                            "description": "Rótulo hierárquico 'BMP_SCK'",
+                            "pos": {
+                                "x": 1.4478,
+                                "y": 0.9652
+                            },
+                            "uuid": "8b9ebc59-4f54-4f94-830a-0a725281a93b"
+                        }
+                    ],
+                    "severity": "error",
+                    "type": "label_dangling"
+                },
+                {
+                    "description": "O rótulo não está conectado em nada",
+                    "items": [
+                        {
+                            "description": "Rótulo hierárquico 'BH_SCK'",
+                            "pos": {
+                                "x": 1.4478,
+                                "y": 1.016
+                            },
+                            "uuid": "2a9b253a-0753-46c2-98b8-66e8d632c23d"
+                        }
+                    ],
+                    "severity": "error",
+                    "type": "label_dangling"
+                },
+                {
+                    "description": "O rótulo não está conectado em nada",
+                    "items": [
+                        {
+                            "description": "Rótulo hierárquico 'Lora_NSS'",
+                            "pos": {
+                                "x": 1.397,
+                                "y": 1.0922
+                            },
+                            "uuid": "ab3f594e-c17b-44cf-a67d-2b6790a95122"
+                        }
+                    ],
+                    "severity": "error",
+                    "type": "label_dangling"
+                },
+                {
+                    "description": "O rótulo não está conectado em nada",
+                    "items": [
+                        {
+                            "description": "Rótulo hierárquico 'Lora_SCK'",
+                            "pos": {
+                                "x": 1.397,
+                                "y": 1.1176
+                            },
+                            "uuid": "993c0bb0-4d92-4327-93b5-74ed550f0342"
+                        }
+                    ],
+                    "severity": "error",
+                    "type": "label_dangling"
+                },
+                {
+                    "description": "O rótulo não está conectado em nada",
+                    "items": [
+                        {
+                            "description": "Rótulo hierárquico 'Lora_MISO'",
+                            "pos": {
+                                "x": 1.397,
+                                "y": 1.143
+                            },
+                            "uuid": "b3822d74-7285-4da6-a96d-ae165ca36341"
+                        }
+                    ],
+                    "severity": "error",
+                    "type": "label_dangling"
+                },
+                {
+                    "description": "O rótulo não está conectado em nada",
+                    "items": [
+                        {
+                            "description": "Rótulo hierárquico 'Lora_MOSI'",
+                            "pos": {
+                                "x": 1.397,
+                                "y": 1.1684
+                            },
+                            "uuid": "b8728ed6-1b5e-495b-89a7-f68b8da87c49"
+                        }
+                    ],
+                    "severity": "error",
+                    "type": "label_dangling"
+                },
+                {
+                    "description": "O rótulo não está conectado em nada",
+                    "items": [
+                        {
+                            "description": "Rótulo hierárquico 'Lora_RST'",
+                            "pos": {
+                                "x": 1.9685,
+                                "y": 0.5842
+                            },
+                            "uuid": "135b1967-e555-4023-bc77-87d4feed2030"
+                        }
+                    ],
+                    "severity": "error",
+                    "type": "label_dangling"
+                },
+                {
+                    "description": "O rótulo não está conectado em nada",
+                    "items": [
+                        {
+                            "description": "Rótulo hierárquico 'SD_CS'",
+                            "pos": {
+                                "x": 1.9685,
+                                "y": 0.6096
+                            },
+                            "uuid": "ab8715fe-80ed-491f-9eb0-fc9e2bde5e9a"
+                        }
+                    ],
+                    "severity": "error",
+                    "type": "label_dangling"
+                },
+                {
+                    "description": "O rótulo não está conectado em nada",
+                    "items": [
+                        {
+                            "description": "Rótulo hierárquico 'Lora_MISO'",
+                            "pos": {
+                                "x": 1.1049,
+                                "y": 0.8509
+                            },
+                            "uuid": "85efa6e5-9ac0-4095-a888-b54f5e916189"
+                        }
+                    ],
+                    "severity": "error",
+                    "type": "label_dangling"
+                },
+                {
+                    "description": "O rótulo não está conectado em nada",
+                    "items": [
+                        {
+                            "description": "Rótulo hierárquico 'Lora_MOSI'",
+                            "pos": {
+                                "x": 1.1049,
+                                "y": 0.8763
+                            },
+                            "uuid": "993d728a-57c1-435f-b5d8-2f809347ef94"
+                        }
+                    ],
+                    "severity": "error",
+                    "type": "label_dangling"
+                },
+                {
+                    "description": "O rótulo não está conectado em nada",
+                    "items": [
+                        {
+                            "description": "Rótulo hierárquico 'Lora_SCK'",
+                            "pos": {
+                                "x": 1.1049,
+                                "y": 0.9017
+                            },
+                            "uuid": "7ce20c79-50ea-4e29-a190-6114b284ad8d"
+                        }
+                    ],
+                    "severity": "error",
+                    "type": "label_dangling"
+                },
+                {
+                    "description": "O rótulo não está conectado em nada",
+                    "items": [
+                        {
+                            "description": "Rótulo hierárquico 'Lora_DIO2'",
+                            "pos": {
+                                "x": 1.7272,
+                                "y": 0.8255
+                            },
+                            "uuid": "8fad1a51-b33d-4c33-9389-82caaaf5f235"
+                        }
+                    ],
+                    "severity": "error",
+                    "type": "label_dangling"
+                },
+                {
+                    "description": "O rótulo não está conectado em nada",
+                    "items": [
+                        {
+                            "description": "Rótulo hierárquico 'Lora_DIO1'",
+                            "pos": {
+                                "x": 1.7272,
+                                "y": 0.8509
+                            },
+                            "uuid": "6476183a-fa90-4ae0-a0c0-128525f8764e"
+                        }
+                    ],
+                    "severity": "error",
+                    "type": "label_dangling"
+                },
+                {
+                    "description": "O rótulo não está conectado em nada",
+                    "items": [
+                        {
+                            "description": "Rótulo hierárquico 'Lora_DIO0'",
+                            "pos": {
+                                "x": 1.7272,
+                                "y": 0.8763
+                            },
+                            "uuid": "4631901f-37be-4c30-85b8-82d296d08f56"
+                        }
+                    ],
+                    "severity": "error",
+                    "type": "label_dangling"
+                },
+                {
+                    "description": "Extremidade do fio não conectado",
+                    "items": [
+                        {
+                            "description": "Fio horizontal, comprimento 0,0254 mm",
+                            "pos": {
+                                "x": 1.1176,
+                                "y": 0.508
+                            },
+                            "uuid": "d220fa60-b77a-40cf-b917-96b340ece03c"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "unconnected_wire_endpoint"
+                },
+                {
+                    "description": "O rótulo global não está conectado em nenhum outro lugar no esquema",
+                    "items": [
+                        {
+                            "description": "Rótulo global 'PA8'",
+                            "pos": {
+                                "x": 1.4859,
+                                "y": 0.7112
+                            },
+                            "uuid": "75ff4613-af4f-4e30-b84a-c2d6874f3eb3"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "global_label_dangling"
+                },
+                {
+                    "description": "O rótulo global não está conectado em nenhum outro lugar no esquema",
+                    "items": [
+                        {
+                            "description": "Rótulo global 'PA11'",
+                            "pos": {
+                                "x": 1.4859,
+                                "y": 0.7874
+                            },
+                            "uuid": "9ebdc6d3-d40a-49c5-9fec-592076f11e27"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "global_label_dangling"
+                },
+                {
+                    "description": "Extremidade do fio não conectado",
+                    "items": [
+                        {
+                            "description": "Fio horizontal, comprimento 0,0127 mm",
+                            "pos": {
+                                "x": 1.1176,
+                                "y": 1.27
+                            },
+                            "uuid": "e2031590-d356-4293-8d4c-c4b29c2d4aef"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "unconnected_wire_endpoint"
+                },
+                {
+                    "description": "O rótulo global não está conectado em nenhum outro lugar no esquema",
+                    "items": [
+                        {
+                            "description": "Rótulo global 'PA12'",
+                            "pos": {
+                                "x": 1.4859,
+                                "y": 0.8128
+                            },
+                            "uuid": "f1aa6adc-9b96-4801-902c-406003e3dc26"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "global_label_dangling"
+                },
+                {
+                    "description": "O rótulo global não está conectado em nenhum outro lugar no esquema",
+                    "items": [
+                        {
+                            "description": "Rótulo global 'PB12'",
+                            "pos": {
+                                "x": 1.4859,
+                                "y": 1.0922
+                            },
+                            "uuid": "528d6bcd-b5ec-4109-a36e-30c9872f0f58"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "global_label_dangling"
+                },
+                {
+                    "description": "O rótulo global não está conectado em nenhum outro lugar no esquema",
+                    "items": [
+                        {
+                            "description": "Rótulo global 'PB13'",
+                            "pos": {
+                                "x": 1.4859,
+                                "y": 1.1176
+                            },
+                            "uuid": "d282fc3c-3e33-4a18-b2f8-16fb805a086b"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "global_label_dangling"
+                },
+                {
+                    "description": "O rótulo global não está conectado em nenhum outro lugar no esquema",
+                    "items": [
+                        {
+                            "description": "Rótulo global 'PB14'",
+                            "pos": {
+                                "x": 1.4859,
+                                "y": 1.143
+                            },
+                            "uuid": "37e3d852-81b4-46aa-b981-36561f00d28f"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "global_label_dangling"
+                },
+                {
+                    "description": "O rótulo global não está conectado em nenhum outro lugar no esquema",
+                    "items": [
+                        {
+                            "description": "Rótulo global 'PB15'",
+                            "pos": {
+                                "x": 1.4859,
+                                "y": 1.1684
+                            },
+                            "uuid": "2e4ba39b-46c7-4dac-8dca-bc6d3af63561"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "global_label_dangling"
+                },
+                {
+                    "description": "O rótulo global não está conectado em nenhum outro lugar no esquema",
+                    "items": [
+                        {
+                            "description": "Rótulo global 'PC4'",
+                            "pos": {
+                                "x": 1.8923,
+                                "y": 0.5842
+                            },
+                            "uuid": "0f45cbff-b0dd-482e-8208-86fa09399500"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "global_label_dangling"
+                },
+                {
+                    "description": "O rótulo global não está conectado em nenhum outro lugar no esquema",
+                    "items": [
+                        {
+                            "description": "Rótulo global 'PB14'",
+                            "pos": {
+                                "x": 0.8509,
+                                "y": 0.8509
+                            },
+                            "uuid": "dbfa239d-cbc3-4ce4-96a6-b40cb696bf9e"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "global_label_dangling"
+                },
+                {
+                    "description": "O rótulo global não está conectado em nenhum outro lugar no esquema",
+                    "items": [
+                        {
+                            "description": "Rótulo global 'PB15'",
+                            "pos": {
+                                "x": 0.8509,
+                                "y": 0.8763
+                            },
+                            "uuid": "70d32e6f-8e0f-4025-af1e-1801b42353d5"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "global_label_dangling"
+                },
+                {
+                    "description": "O rótulo global não está conectado em nenhum outro lugar no esquema",
+                    "items": [
+                        {
+                            "description": "Rótulo global 'PB13'",
+                            "pos": {
+                                "x": 0.8509,
+                                "y": 0.9017
+                            },
+                            "uuid": "89e1c194-3f74-4a02-b15b-e9dd753eda11"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "global_label_dangling"
+                },
+                {
+                    "description": "O rótulo global não está conectado em nenhum outro lugar no esquema",
+                    "items": [
+                        {
+                            "description": "Rótulo global 'PB12'",
+                            "pos": {
+                                "x": 0.8509,
+                                "y": 0.9271
+                            },
+                            "uuid": "088db185-ada5-450e-84f4-58f74cc553f9"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "global_label_dangling"
+                },
+                {
+                    "description": "O rótulo global não está conectado em nenhum outro lugar no esquema",
+                    "items": [
+                        {
+                            "description": "Rótulo global 'PC4'",
+                            "pos": {
+                                "x": 0.8509,
+                                "y": 0.9525
+                            },
+                            "uuid": "065bfa7d-d598-483e-9bd7-726c61ad209a"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "global_label_dangling"
+                },
+                {
+                    "description": "O rótulo global não está conectado em nenhum outro lugar no esquema",
+                    "items": [
+                        {
+                            "description": "Rótulo global 'DIO2'",
+                            "pos": {
+                                "x": 1.8796,
+                                "y": 0.8255
+                            },
+                            "uuid": "8ec4bd3d-a3f4-4cfc-a6e1-b75bc51bab40"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "global_label_dangling"
+                },
+                {
+                    "description": "O rótulo global não está conectado em nenhum outro lugar no esquema",
+                    "items": [
+                        {
+                            "description": "Rótulo global 'ANT_EXT'",
+                            "pos": {
+                                "x": 1.7272,
+                                "y": 1.1176
+                            },
+                            "uuid": "976a19f8-0e6e-4a0c-8b41-f6629ecee55c"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "global_label_dangling"
+                },
+                {
+                    "description": "O rótulo global não está conectado em nenhum outro lugar no esquema",
+                    "items": [
+                        {
+                            "description": "Rótulo global 'PA12'",
+                            "pos": {
+                                "x": 1.8796,
+                                "y": 0.8509
+                            },
+                            "uuid": "344f6ff5-1ed3-478e-bc51-5c5c4e4a799d"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "global_label_dangling"
+                },
+                {
+                    "description": "O rótulo global não está conectado em nenhum outro lugar no esquema",
+                    "items": [
+                        {
+                            "description": "Rótulo global 'PA11'",
+                            "pos": {
+                                "x": 1.8796,
+                                "y": 0.8763
+                            },
+                            "uuid": "57feb757-e8bf-4753-bfa6-f7b8c50c2560"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "global_label_dangling"
+                }
+            ]
+        },
+        {
+            "path": "/mcu/",
+            "uuid_path": "/0c305a6e-f9cd-49a1-b146-c2956e5469b6/a23dea8e-0c82-454e-9219-5e250a611b0f",
+            "violations": [
+                {
+                    "description": "Ambos os BH_SDA e BMP_SDA estão ligados aos mesmos itens; o BH_SDA será utilizado na netlist",
+                    "items": [
+                        {
+                            "description": "Rótulo hierárquico 'BH_SDA'",
+                            "pos": {
+                                "x": 0.4445,
+                                "y": 0.9652
+                            },
+                            "uuid": "8851af45-2bdf-49c8-a38b-99c07bc02e03"
+                        },
+                        {
+                            "description": "Rótulo hierárquico 'BMP_SDA'",
+                            "pos": {
+                                "x": 0.4445,
+                                "y": 0.9144
+                            },
+                            "uuid": "c87490c9-1652-4e37-9928-f09c5816f0b0"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "multiple_net_names"
+                },
+                {
+                    "description": "Ambos os BH_SCK e BMP_SCK estão ligados aos mesmos itens; o BH_SCK será utilizado na netlist",
+                    "items": [
+                        {
+                            "description": "Rótulo hierárquico 'BH_SCK'",
+                            "pos": {
+                                "x": 1.4478,
+                                "y": 1.016
+                            },
+                            "uuid": "2a9b253a-0753-46c2-98b8-66e8d632c23d"
+                        },
+                        {
+                            "description": "Rótulo hierárquico 'BMP_SCK'",
+                            "pos": {
+                                "x": 1.4478,
+                                "y": 0.9652
+                            },
+                            "uuid": "8b9ebc59-4f54-4f94-830a-0a725281a93b"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "multiple_net_names"
+                }
+            ]
+        },
+        {
+            "path": "/alimentacao/",
+            "uuid_path": "/0c305a6e-f9cd-49a1-b146-c2956e5469b6/19a3c20f-53ab-4562-aabc-58e6e99571a0",
+            "violations": []
+        },
+        {
+            "path": "/BMP280/",
+            "uuid_path": "/0c305a6e-f9cd-49a1-b146-c2956e5469b6/0abc4084-0cd9-43a4-88f9-87e0e6566acc",
+            "violations": [
+                {
+                    "description": "o rótulo hierárquico BMP_CSB não tem pino correspondente na folha da folha principal",
+                    "items": [
+                        {
+                            "description": "Rótulo hierárquico 'BMP_CSB'",
+                            "pos": {
+                                "x": 1.3716,
+                                "y": 0.7493
+                            },
+                            "uuid": "2fa0c20e-e1c4-4707-87dc-52fad1a5e44d"
+                        }
+                    ],
+                    "severity": "error",
+                    "type": "hier_label_mismatch"
+                },
+                {
+                    "description": "o rótulo hierárquico BMP_SDO não tem pino correspondente na folha da folha principal",
+                    "items": [
+                        {
+                            "description": "Rótulo hierárquico 'BMP_SDO'",
+                            "pos": {
+                                "x": 1.397,
+                                "y": 0.7493
+                            },
+                            "uuid": "14e57d50-bdc7-4a57-9e2c-b08f03877f90"
+                        }
+                    ],
+                    "severity": "error",
+                    "type": "hier_label_mismatch"
+                },
+                {
+                    "description": "o rótulo hierárquico BMP_SDA não tem pino correspondente na folha da folha principal",
+                    "items": [
+                        {
+                            "description": "Rótulo hierárquico 'BMP_SDA'",
+                            "pos": {
+                                "x": 1.4224,
+                                "y": 0.7493
+                            },
+                            "uuid": "1b81849e-d704-456b-924a-4266b5132d87"
+                        }
+                    ],
+                    "severity": "error",
+                    "type": "hier_label_mismatch"
+                },
+                {
+                    "description": "o rótulo hierárquico BMP_SCK não tem pino correspondente na folha da folha principal",
+                    "items": [
+                        {
+                            "description": "Rótulo hierárquico 'BMP_SCK'",
+                            "pos": {
+                                "x": 1.4478,
+                                "y": 0.7493
+                            },
+                            "uuid": "43f42fbd-f6ca-4027-b3e5-a21bf4894f95"
+                        }
+                    ],
+                    "severity": "error",
+                    "type": "hier_label_mismatch"
+                },
+                {
+                    "description": "O pino da entrada de energia não foi acionado por nenhum pino de energia da saída",
+                    "items": [
+                        {
+                            "description": "Symbol U8 Pino 8 [VDD, Power input, Line]",
+                            "pos": {
+                                "x": 1.4986,
+                                "y": 1.0922
+                            },
+                            "uuid": "b3eeaf25-32c7-43a4-9b32-d329e83a63ad"
+                        }
+                    ],
+                    "severity": "error",
+                    "type": "power_pin_not_driven"
+                }
+            ]
+        },
+        {
+            "path": "/BH1750/",
+            "uuid_path": "/0c305a6e-f9cd-49a1-b146-c2956e5469b6/c5455acd-00c4-4dde-ab9a-382e33c5bf3a",
+            "violations": [
+                {
+                    "description": "o rótulo hierárquico BH_SDA não tem pino correspondente na folha da folha principal",
+                    "items": [
+                        {
+                            "description": "Rótulo hierárquico 'BH_SDA'",
+                            "pos": {
+                                "x": 2.1971,
+                                "y": 0.9779
+                            },
+                            "uuid": "12bd614d-5050-4412-a63c-266bd6b843eb"
+                        }
+                    ],
+                    "severity": "error",
+                    "type": "hier_label_mismatch"
+                },
+                {
+                    "description": "o rótulo hierárquico BH_ADDR não tem pino correspondente na folha da folha principal",
+                    "items": [
+                        {
+                            "description": "Rótulo hierárquico 'BH_ADDR'",
+                            "pos": {
+                                "x": 2.1971,
+                                "y": 1.0287
+                            },
+                            "uuid": "b97e4346-1acd-4092-9b9a-bebd30d9f54b"
+                        }
+                    ],
+                    "severity": "error",
+                    "type": "hier_label_mismatch"
+                },
+                {
+                    "description": "o rótulo hierárquico BH_SCK não tem pino correspondente na folha da folha principal",
+                    "items": [
+                        {
+                            "description": "Rótulo hierárquico 'BH_SCK'",
+                            "pos": {
+                                "x": 2.1971,
+                                "y": 1.0795
+                            },
+                            "uuid": "2406681f-14de-4c83-868f-50bc11efd5a0"
+                        }
+                    ],
+                    "severity": "error",
+                    "type": "hier_label_mismatch"
+                }
+            ]
+        },
+        {
+            "path": "/Cartao SD/",
+            "uuid_path": "/0c305a6e-f9cd-49a1-b146-c2956e5469b6/8495f6b1-74a6-413b-a199-5ab08c5254ba",
+            "violations": [
+                {
+                    "description": "o rótulo hierárquico MCU_MOSI não tem pino correspondente na folha da folha principal",
+                    "items": [
+                        {
+                            "description": "Rótulo hierárquico 'MCU_MOSI'",
+                            "pos": {
+                                "x": 0.762,
+                                "y": 0.5207
+                            },
+                            "uuid": "ec33abd0-8c1c-4be4-83ba-e06ce023303f"
+                        }
+                    ],
+                    "severity": "error",
+                    "type": "hier_label_mismatch"
+                },
+                {
+                    "description": "O pino de entrada não foi acionado por nenhum pino de saída",
+                    "items": [
+                        {
+                            "description": "Symbol U11 Pino 2 [Input, Line]",
+                            "pos": {
+                                "x": 0.9017,
+                                "y": 0.5207
+                            },
+                            "uuid": "988f4f28-8f6f-4af6-a5e4-619eea76aa79"
+                        }
+                    ],
+                    "severity": "error",
+                    "type": "pin_not_driven"
+                },
+                {
+                    "description": "o rótulo hierárquico SD_SCK não tem pino correspondente na folha da folha principal",
+                    "items": [
+                        {
+                            "description": "Rótulo hierárquico 'SD_SCK'",
+                            "pos": {
+                                "x": 0.762,
+                                "y": 0.9017
+                            },
+                            "uuid": "4b48a28b-7bd5-4556-b1b4-0e292ed4e118"
+                        }
+                    ],
+                    "severity": "error",
+                    "type": "hier_label_mismatch"
+                },
+                {
+                    "description": "O pino de entrada não foi acionado por nenhum pino de saída",
+                    "items": [
+                        {
+                            "description": "Symbol U11 Pino 9 [Input, Line]",
+                            "pos": {
+                                "x": 0.9017,
+                                "y": 0.9017
+                            },
+                            "uuid": "89e15f77-a11c-465c-a77b-a8f4c230f0a5"
+                        }
+                    ],
+                    "severity": "error",
+                    "type": "pin_not_driven"
+                },
+                {
+                    "description": "o rótulo hierárquico SD_MISO não tem pino correspondente na folha da folha principal",
+                    "items": [
+                        {
+                            "description": "Rótulo hierárquico 'SD_MISO'",
+                            "pos": {
+                                "x": 1.0795,
+                                "y": 0.7239
+                            },
+                            "uuid": "3f5fe37f-466c-4bf9-8364-3a635bbbca8a"
+                        }
+                    ],
+                    "severity": "error",
+                    "type": "hier_label_mismatch"
+                },
+                {
+                    "description": "o rótulo hierárquico SD_CS não tem pino correspondente na folha da folha principal",
+                    "items": [
+                        {
+                            "description": "Rótulo hierárquico 'SD_CS'",
+                            "pos": {
+                                "x": 0.762,
+                                "y": 1.1684
+                            },
+                            "uuid": "f5e6fe6d-bcc9-44e4-8c18-d7c49ec54ea6"
+                        }
+                    ],
+                    "severity": "error",
+                    "type": "hier_label_mismatch"
+                },
+                {
+                    "description": "o rótulo hierárquico SD_CD não tem pino correspondente na folha da folha principal",
+                    "items": [
+                        {
+                            "description": "Rótulo hierárquico 'SD_CD'",
+                            "pos": {
+                                "x": 1.5113,
+                                "y": 0.8763
+                            },
+                            "uuid": "cd3af744-7aa2-46f4-8bac-1e83bbbe2d3b"
+                        }
+                    ],
+                    "severity": "error",
+                    "type": "hier_label_mismatch"
+                }
+            ]
+        },
+        {
+            "path": "/LORA Module/",
+            "uuid_path": "/0c305a6e-f9cd-49a1-b146-c2956e5469b6/1fd7a678-c9b9-4a6a-ab50-58dfcf2b1932",
+            "violations": [
+                {
+                    "description": "Os pinos do tipo Unspecified e Unspecified estão conectados",
+                    "items": [
+                        {
+                            "description": "Symbol U12 Pino 1 [GND, Unspecified, Line]",
+                            "pos": {
+                                "x": 1.3208,
+                                "y": 0.8255
+                            },
+                            "uuid": "995b4f84-c63a-4134-b4b5-bb23ac84c847"
+                        },
+                        {
+                            "description": "Symbol U12 Pino 8 [GND, Unspecified, Line]",
+                            "pos": {
+                                "x": 1.3208,
+                                "y": 1.0033
+                            },
+                            "uuid": "ad4b9ded-cf23-41d1-806b-ec63463e025a"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "pin_to_pin"
+                },
+                {
+                    "description": "Os pinos do tipo Unspecified e Passive estão conectados",
+                    "items": [
+                        {
+                            "description": "Symbol U12 Pino 5 [NSS, Unspecified, Line]",
+                            "pos": {
+                                "x": 1.3208,
+                                "y": 0.9271
+                            },
+                            "uuid": "67df5b2f-066b-4719-a8f3-4bb209399648"
+                        },
+                        {
+                            "description": "Symbol R14 Pino 2 [Passive, Line]",
+                            "pos": {
+                                "x": 1.2446,
+                                "y": 0.7874
+                            },
+                            "uuid": "830e9495-573d-4801-876e-c11139ce1a2f"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "pin_to_pin"
+                },
+                {
+                    "description": "Os pinos do tipo Unspecified e Passive estão conectados",
+                    "items": [
+                        {
+                            "description": "Symbol U12 Pino 6 [NRESET, Unspecified, Line]",
+                            "pos": {
+                                "x": 1.3208,
+                                "y": 0.9525
+                            },
+                            "uuid": "a13ea137-ad7f-4efe-a4f0-655b9f82e71b"
+                        },
+                        {
+                            "description": "Symbol R15 Pino 2 [Passive, Line]",
+                            "pos": {
+                                "x": 1.1938,
+                                "y": 0.7874
+                            },
+                            "uuid": "d0112f62-494d-4847-a34c-22d946c33c9c"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "pin_to_pin"
+                },
+                {
+                    "description": "Os pinos do tipo Unspecified e Power input estão conectados",
+                    "items": [
+                        {
+                            "description": "Symbol U12 Pino 8 [GND, Unspecified, Line]",
+                            "pos": {
+                                "x": 1.3208,
+                                "y": 1.0033
+                            },
+                            "uuid": "ad4b9ded-cf23-41d1-806b-ec63463e025a"
+                        },
+                        {
+                            "description": "Symbol #PWR010 Pino 1 [Power input, Line]",
+                            "pos": {
+                                "x": 1.2954,
+                                "y": 1.0414
+                            },
+                            "uuid": "835fa062-6299-4990-97d6-325c68e3b060"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "pin_to_pin"
+                },
+                {
+                    "description": "Os pinos do tipo Unspecified e Power input estão conectados",
+                    "items": [
+                        {
+                            "description": "Symbol U12 Pino 13 [VCC, Unspecified, Line]",
+                            "pos": {
+                                "x": 1.5748,
+                                "y": 0.9017
+                            },
+                            "uuid": "be878949-1e28-4955-be5c-dce5be086ca7"
+                        },
+                        {
+                            "description": "Symbol #PWR042 Pino 1 [Power input, Line]",
+                            "pos": {
+                                "x": 1.6129,
+                                "y": 0.7874
+                            },
+                            "uuid": "1be11c81-cc10-4c56-9ae2-0ae9488e383e"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "pin_to_pin"
+                },
+                {
+                    "description": "Os pinos do tipo Unspecified e Power input estão conectados",
+                    "items": [
+                        {
+                            "description": "Symbol U12 Pino 10 [GND, Unspecified, Line]",
+                            "pos": {
+                                "x": 1.5748,
+                                "y": 0.9779
+                            },
+                            "uuid": "cc2722bb-f272-409e-8219-310db2767806"
+                        },
+                        {
+                            "description": "Symbol #PWR09 Pino 1 [Power input, Line]",
+                            "pos": {
+                                "x": 1.6129,
+                                "y": 1.0414
+                            },
+                            "uuid": "fde54673-3128-4431-8fa5-c307e9213a8a"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "pin_to_pin"
+                }
+            ]
+        },
+        {
+            "path": "/DHT22/",
+            "uuid_path": "/0c305a6e-f9cd-49a1-b146-c2956e5469b6/34d78a87-9b09-4795-98a5-fe6ea1a123f9",
+            "violations": [
+                {
+                    "description": "o rótulo hierárquico PA8 não tem pino correspondente na folha da folha principal",
+                    "items": [
+                        {
+                            "description": "Rótulo hierárquico 'PA8'",
+                            "pos": {
+                                "x": 1.3335,
+                                "y": 0.7239
+                            },
+                            "uuid": "f602f0c3-8ba5-4dee-b042-d3478c60ba35"
+                        }
+                    ],
+                    "severity": "error",
+                    "type": "hier_label_mismatch"
+                }
+            ]
+        },
+        {
+            "path": "/METEOROLOGIA/",
+            "uuid_path": "/0c305a6e-f9cd-49a1-b146-c2956e5469b6/058dce74-971b-49d7-82f0-384e20be985c",
+            "violations": []
+        },
+        {
+            "path": "/METEOROLOGIA/PLUVIOMETRO/",
+            "uuid_path": "/0c305a6e-f9cd-49a1-b146-c2956e5469b6/058dce74-971b-49d7-82f0-384e20be985c/e9242eb5-e685-47a2-8464-3e1e52960bb8",
+            "violations": []
+        },
+        {
+            "path": "/METEOROLOGIA/ANEMOMETRO/",
+            "uuid_path": "/0c305a6e-f9cd-49a1-b146-c2956e5469b6/058dce74-971b-49d7-82f0-384e20be985c/9f29de2e-b04a-471a-b3f5-0032147ee0d6",
+            "violations": []
+        },
+        {
+            "path": "/METEOROLOGIA/BIRUTA/",
+            "uuid_path": "/0c305a6e-f9cd-49a1-b146-c2956e5469b6/058dce74-971b-49d7-82f0-384e20be985c/4ef75fdb-90eb-437a-af55-0afcbbe28aca",
+            "violations": []
+        }
+    ],
+    "source": "esquematico_V4.kicad_sch"
+}
