@@ -4487,15 +4487,12 @@
 		(color 0 0 0 0)
 		(uuid "017fe5a3-37d2-4bdb-b0f0-5778753628b6")
 	)
-
 	(junction
 		(at 59.69 143.51)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "54607e1b-163d-4ad9-bfab-0ab223807033")
 	)
-
-
 	(junction
 		(at 27.94 49.53)
 		(diameter 0)
@@ -4508,86 +4505,18 @@
 		(color 0 0 0 0)
 		(uuid "98413089-c577-453a-aace-368ed53aab62")
 	)
-
 	(junction
 		(at 27.94 52.07)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "a503c4dd-0da6-456d-a06e-7ecc13c39051")
 	)
-
 	(junction
 		(at 59.69 138.43)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "d4007f56-95cd-48ae-a26c-5f14a6b60004")
 	)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 	(wire
 		(pts
 			(xy 48.26 27.94) (xy 46.99 27.94)
@@ -4597,6 +4526,16 @@
 			(type default)
 		)
 		(uuid "061e23d4-5226-4638-8b7e-7a83bbb617bd")
+	)
+	(wire
+		(pts
+			(xy 137.16 86.36) (xy 137.16 80.01)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "09608045-bc5f-4cba-9b88-6bffab0a403c")
 	)
 	(wire
 		(pts
@@ -4618,9 +4557,6 @@
 		)
 		(uuid "0dbffedb-e76a-4b7d-8b6e-366c688e97b5")
 	)
-
-
-
 	(wire
 		(pts
 			(xy 41.91 25.4) (xy 41.91 22.86)
@@ -4631,8 +4567,6 @@
 		)
 		(uuid "24843db1-bba1-4d89-8d87-a439a215a413")
 	)
-
-
 	(wire
 		(pts
 			(xy 48.26 33.02) (xy 46.99 33.02)
@@ -4643,7 +4577,6 @@
 		)
 		(uuid "2743ea1d-5436-460a-b033-bd2c9cd2050d")
 	)
-
 	(wire
 		(pts
 			(xy 55.88 143.51) (xy 59.69 143.51)
@@ -4654,16 +4587,26 @@
 		)
 		(uuid "2b0aa718-a52d-4329-a0d1-4247ec684344")
 	)
-
-
-
-
-
-
-
-
-
-
+	(wire
+		(pts
+			(xy 121.92 25.4) (xy 121.92 15.24)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3292248e-b874-5ffe-8754-5ae9540408f6")
+	)
+	(wire
+		(pts
+			(xy 137.16 80.01) (xy 139.7 80.01)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "37c24ab5-1f73-44ef-81fa-07547eb44dbd")
+	)
 	(wire
 		(pts
 			(xy 59.69 138.43) (xy 63.5 138.43)
@@ -4674,7 +4617,16 @@
 		)
 		(uuid "43c82f1a-69e0-4364-aa84-b2032d369744")
 	)
-
+	(wire
+		(pts
+			(xy 133.35 30.48) (xy 172.72 30.48)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "44fca5c9-9fe6-53ec-990a-834ff67ec91a")
+	)
 	(wire
 		(pts
 			(xy 224.79 96.52) (xy 224.79 100.33)
@@ -4695,9 +4647,6 @@
 		)
 		(uuid "593e9268-79ba-4b98-887b-2640aa1f4a55")
 	)
-
-
-
 	(wire
 		(pts
 			(xy 41.91 25.4) (xy 48.26 25.4)
@@ -4708,7 +4657,6 @@
 		)
 		(uuid "642e6bb5-f4fc-4d1a-b0fd-cb1ac74d8c7a")
 	)
-
 	(wire
 		(pts
 			(xy 27.94 52.07) (xy 27.94 54.61)
@@ -4719,7 +4667,6 @@
 		)
 		(uuid "6a36029c-4e8d-4115-a20b-4dbabd8818f2")
 	)
-
 	(wire
 		(pts
 			(xy 182.88 87.63) (xy 198.12 87.63)
@@ -4732,6 +4679,16 @@
 	)
 	(wire
 		(pts
+			(xy 133.35 40.64) (xy 172.72 40.64)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6cb01fdb-1f7c-5c40-bbd3-acb57c935048")
+	)
+	(wire
+		(pts
 			(xy 182.88 72.39) (xy 198.12 72.39)
 		)
 		(stroke
@@ -4740,9 +4697,6 @@
 		)
 		(uuid "742e64e7-a48e-4417-9df8-678c5e472026")
 	)
-
-
-
 	(wire
 		(pts
 			(xy 59.69 143.51) (xy 63.5 143.51)
@@ -4753,8 +4707,6 @@
 		)
 		(uuid "8298384a-9308-48ef-86ee-1c7db48ec217")
 	)
-
-
 	(wire
 		(pts
 			(xy 40.64 49.53) (xy 40.64 52.07)
@@ -4785,7 +4737,6 @@
 		)
 		(uuid "9ec5c665-7dd5-4c11-87bd-ae196564cc65")
 	)
-
 	(wire
 		(pts
 			(xy 59.69 143.51) (xy 59.69 144.78)
@@ -4796,12 +4747,6 @@
 		)
 		(uuid "a897e394-a5d4-48c3-8f1b-7b64af437139")
 	)
-
-
-
-
-
-
 	(wire
 		(pts
 			(xy 27.94 49.53) (xy 27.94 52.07)
@@ -4832,7 +4777,16 @@
 		)
 		(uuid "c93cf004-4cf0-40fd-8872-27062d9645f4")
 	)
-
+	(wire
+		(pts
+			(xy 133.35 35.56) (xy 172.72 35.56)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "cb7fc3ee-050a-5b87-b2db-49cbf5c4428c")
+	)
 	(wire
 		(pts
 			(xy 222.25 96.52) (xy 222.25 100.33)
@@ -4843,7 +4797,6 @@
 		)
 		(uuid "ce66515c-13ac-4694-afa5-73a98f90223b")
 	)
-
 	(wire
 		(pts
 			(xy 40.64 52.07) (xy 40.64 54.61)
@@ -4854,7 +4807,6 @@
 		)
 		(uuid "d03104f1-adfc-4b5e-b04c-7cf21c8559e4")
 	)
-
 	(wire
 		(pts
 			(xy 219.71 96.52) (xy 219.71 100.33)
@@ -4875,10 +4827,6 @@
 		)
 		(uuid "d6644cba-afef-4ea0-96f2-61525ae4e77b")
 	)
-
-
-
-
 	(wire
 		(pts
 			(xy 43.18 49.53) (xy 40.64 49.53)
@@ -4899,9 +4847,16 @@
 		)
 		(uuid "e61d6014-03d0-46c5-accf-7d25404d2aa0")
 	)
-
-
-
+	(wire
+		(pts
+			(xy 137.16 86.36) (xy 134.62 86.36)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e8fac71a-f1d1-5690-9aa7-66205e08e46b")
+	)
 	(global_label "PB6"
 		(shape input)
 		(at 46.99 30.48 180)
@@ -4946,9 +4901,46 @@
 			)
 		)
 	)
-
-
-
+	(global_label "WIND_SPEED_PULSE"
+		(shape passive)
+		(at 172.72 35.56 0)
+		(effects
+			(font
+				(size 1 1)
+			)
+			(justify left)
+		)
+		(uuid "05229489-9b8b-5209-b8e5-98ce760a77e8")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 172.72 35.56 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "WIND_DIR_ADC"
+		(shape passive)
+		(at 172.72 40.64 0)
+		(effects
+			(font
+				(size 1 1)
+			)
+			(justify left)
+		)
+		(uuid "0d658b2e-a727-5187-ab71-ccf3f847ca2c")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 172.72 40.64 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+	)
 	(global_label "PC5"
 		(shape input)
 		(at 259.08 96.52 90)
@@ -5037,9 +5029,6 @@
 			)
 		)
 	)
-
-
-
 	(global_label "GND"
 		(shape input)
 		(at 24.13 35.56 0)
@@ -5062,8 +5051,6 @@
 			)
 		)
 	)
-
-
 	(global_label "PA5"
 		(shape input)
 		(at 256.54 96.52 90)
@@ -5082,6 +5069,26 @@
 					(size 1.27 1.27)
 				)
 				(justify left)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "RAIN_PULSE"
+		(shape passive)
+		(at 172.72 30.48 0)
+		(effects
+			(font
+				(size 1 1)
+			)
+			(justify left)
+		)
+		(uuid "4883b994-ef8e-5984-81f3-b793b776b7ba")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 172.72 30.48 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
 				(hide yes)
 			)
 		)
@@ -5108,7 +5115,6 @@
 			)
 		)
 	)
-
 	(global_label "GND"
 		(shape input)
 		(at 46.99 27.94 180)
@@ -5131,8 +5137,6 @@
 			)
 		)
 	)
-
-
 	(global_label "PC5"
 		(shape input)
 		(at 224.79 96.52 90)
@@ -5155,8 +5159,6 @@
 			)
 		)
 	)
-
-
 	(global_label "PB7"
 		(shape input)
 		(at 26.67 49.53 180)
@@ -5201,9 +5203,6 @@
 			)
 		)
 	)
-
-
-
 	(global_label "PB7"
 		(shape input)
 		(at 24.13 33.02 0)
@@ -5226,7 +5225,6 @@
 			)
 		)
 	)
-
 	(global_label "+3V3"
 		(shape input)
 		(at 24.13 25.4 0)
@@ -5271,7 +5269,6 @@
 			)
 		)
 	)
-
 	(global_label "GND"
 		(shape input)
 		(at 46.99 35.56 180)
@@ -5294,7 +5291,6 @@
 			)
 		)
 	)
-
 	(global_label "GND"
 		(shape input)
 		(at 26.67 67.31 0)
@@ -5339,10 +5335,6 @@
 			)
 		)
 	)
-
-
-
-
 	(global_label "PA7"
 		(shape input)
 		(at 254 96.52 90)
@@ -5365,7 +5357,6 @@
 			)
 		)
 	)
-
 	(global_label "GND"
 		(shape input)
 		(at 24.13 27.94 0)
@@ -5410,7 +5401,6 @@
 			)
 		)
 	)
-
 	(global_label "GND"
 		(shape input)
 		(at 48.26 77.47 180)
@@ -5497,6 +5487,26 @@
 			)
 		)
 	)
+	(global_label "VREF_SENSOR"
+		(shape passive)
+		(at 121.92 15.24 90)
+		(effects
+			(font
+				(size 1 1)
+			)
+			(justify left)
+		)
+		(uuid "c1d88788-3f8e-532e-8413-efb0b9c7f7e3")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 121.92 15.24 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+	)
 	(global_label "GND"
 		(shape input)
 		(at 48.26 67.31 180)
@@ -5519,7 +5529,6 @@
 			)
 		)
 	)
-
 	(global_label "PA6"
 		(shape input)
 		(at 217.17 96.52 90)
@@ -5584,8 +5593,6 @@
 			)
 		)
 	)
-
-
 	(global_label "PB6"
 		(shape input)
 		(at 26.67 69.85 0)
@@ -5696,8 +5703,6 @@
 			)
 		)
 	)
-
-
 	(global_label "GND"
 		(shape input)
 		(at 63.5 143.51 0)
@@ -5716,6 +5721,26 @@
 					(size 1.27 1.27)
 				)
 				(justify left)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "VREF_SENSOR"
+		(shape passive)
+		(at 134.62 86.36 180)
+		(effects
+			(font
+				(size 1 1)
+			)
+			(justify right)
+		)
+		(uuid "ee0c1b82-4d8e-5a4b-9f20-01528012dbd9")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 134.62 86.36 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
 				(hide yes)
 			)
 		)
@@ -5742,7 +5767,6 @@
 			)
 		)
 	)
-
 	(global_label "PB6"
 		(shape input)
 		(at 43.18 49.53 0)
@@ -5785,7 +5809,6 @@
 			)
 		)
 	)
-
 	(symbol
 		(lib_id "power:+3V3")
 		(at 43.18 63.5 0)
@@ -5852,11 +5875,6 @@
 			)
 		)
 	)
-
-
-
-
-
 	(symbol
 		(lib_id "power:+3V3")
 		(at 59.69 138.43 0)
@@ -5923,10 +5941,6 @@
 			)
 		)
 	)
-
-
-
-
 	(symbol
 		(lib_id "biblioteca_modulos:module_bme280")
 		(at 48.26 72.39 0)
@@ -6075,7 +6089,6 @@
 			)
 		)
 	)
-
 	(symbol
 		(lib_id "Connector:Conn_01x05_Socket")
 		(at 19.05 30.48 0)
@@ -6233,7 +6246,6 @@
 			)
 		)
 	)
-
 	(symbol
 		(lib_id "power:+3V3")
 		(at 41.91 22.86 0)
@@ -6300,9 +6312,6 @@
 			)
 		)
 	)
-
-
-
 	(symbol
 		(lib_id "biblioteca_modulos:module_bh1750")
 		(at 48.26 27.94 0)
@@ -6543,9 +6552,6 @@
 			)
 		)
 	)
-
-
-
 	(symbol
 		(lib_id "Connector_Generic:Conn_02x03_Top_Bottom")
 		(at 35.56 52.07 180)
@@ -6626,7 +6632,6 @@
 			)
 		)
 	)
-
 	(sheet
 		(at 139.7 64.77)
 		(size 43.18 33.02)
@@ -6691,6 +6696,15 @@
 				(justify right)
 			)
 		)
+		(pin "VREF_SENSOR" input
+			(at 139.7 80.01 180)
+			(uuid "5f9dbe91-01fe-5f7c-9261-9172a782fc27")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(instances
 			(project "esquematico_V4"
 				(path "/0c305a6e-f9cd-49a1-b146-c2956e5469b6"
@@ -6698,7 +6712,7 @@
 				)
 			)
 		)
-	(pin "VREF_SENSOR" input (at 139.7 80.01 180) (effects (font (size 1.27 1.27)) ) (uuid "5f9dbe91-01fe-5f7c-9261-9172a782fc27")))
+	)
 	(sheet
 		(at 33.02 93.98)
 		(size 38.1 20.32)
@@ -6857,6 +6871,86 @@
 				(justify left top)
 			)
 		)
+		(pin "Lora_DIO0" input
+			(at 128.27 67.31 0)
+			(uuid "d286214f-fc6b-4018-89b3-754c4a81f054")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "Lora_DIO1" input
+			(at 128.27 69.85 0)
+			(uuid "e01de21f-b0f9-4547-8003-81a3589ac906")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "Lora_DIO2" input
+			(at 128.27 72.39 0)
+			(uuid "d737049d-7e11-45d0-bd99-0030cf10d5c0")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "Lora_MISO" bidirectional
+			(at 95.25 60.96 180)
+			(uuid "64a0c12e-42ae-40f8-a80f-0c4db2103d49")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "Lora_MOSI" bidirectional
+			(at 95.25 63.5 180)
+			(uuid "c0ce3e6f-8bcb-4d6f-b3ee-2bb6be1b7aa7")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "Lora_NSS" output
+			(at 95.25 66.04 180)
+			(uuid "a184599a-c84d-40ee-89b2-f1b2ae0f212d")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "Lora_RST" input
+			(at 95.25 68.58 180)
+			(uuid "c5e5f557-9d5b-48e7-972f-b7ec3566f3f9")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "Lora_SCK" input
+			(at 95.25 71.12 180)
+			(uuid "b3acb8cc-b1fb-4eeb-af04-5dd75c4b5d3e")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
 		(instances
 			(project "esquematico_V4"
 				(path "/0c305a6e-f9cd-49a1-b146-c2956e5469b6"
@@ -6983,6 +7077,42 @@
 				(justify left top)
 			)
 		)
+		(pin "RAIN_PULSE" input
+			(at 133.35 30.48 0)
+			(uuid "9aa95beb-1182-5176-81c2-4bc02beb36f5")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "WIND_SPEED_PULSE" input
+			(at 133.35 35.56 0)
+			(uuid "2915cab9-e66b-530d-8dda-155f0d0f6e91")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "WIND_DIR_ADC" input
+			(at 133.35 40.64 0)
+			(uuid "3471ce05-e57e-58b6-be29-55aaff1fa927")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "VREF_SENSOR" output
+			(at 121.92 25.4 90)
+			(uuid "963f7061-aa69-57d0-921f-2897f1ad4b5e")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(instances
 			(project "esquematico_V4"
 				(path "/0c305a6e-f9cd-49a1-b146-c2956e5469b6"
@@ -6990,7 +7120,7 @@
 				)
 			)
 		)
-	(pin "RAIN_PULSE" input (at 133.35 30.48 0) (effects (font (size 1.27 1.27)) ) (uuid "9aa95beb-1182-5176-81c2-4bc02beb36f5"))(pin "WIND_SPEED_PULSE" input (at 133.35 35.56 0) (effects (font (size 1.27 1.27)) ) (uuid "2915cab9-e66b-530d-8dda-155f0d0f6e91"))(pin "WIND_DIR_ADC" input (at 133.35 40.64 0) (effects (font (size 1.27 1.27)) ) (uuid "3471ce05-e57e-58b6-be29-55aaff1fa927"))(pin "VREF_SENSOR" output (at 121.92 25.4 90) (effects (font (size 1.27 1.27)) ) (uuid "963f7061-aa69-57d0-921f-2897f1ad4b5e")))
+	)
 	(sheet
 		(at 91.44 93.98)
 		(size 29.21 16.51)
@@ -7039,14 +7169,4 @@
 		)
 	)
 	(embedded_fonts no)
-(wire (pts (xy 133.35 30.48) (xy 172.72 30.48)) (stroke (width 0) (type default)) (uuid "44fca5c9-9fe6-53ec-990a-834ff67ec91a"))
-(global_label "RAIN_PULSE" (shape passive) (at 172.72 30.48 0) (effects (font (size 1.0 1.0)) (justify left)) (uuid "4883b994-ef8e-5984-81f3-b793b776b7ba"))
-(wire (pts (xy 133.35 35.56) (xy 172.72 35.56)) (stroke (width 0) (type default)) (uuid "cb7fc3ee-050a-5b87-b2db-49cbf5c4428c"))
-(global_label "WIND_SPEED_PULSE" (shape passive) (at 172.72 35.56 0) (effects (font (size 1.0 1.0)) (justify left)) (uuid "05229489-9b8b-5209-b8e5-98ce760a77e8"))
-(wire (pts (xy 133.35 40.64) (xy 172.72 40.64)) (stroke (width 0) (type default)) (uuid "6cb01fdb-1f7c-5c40-bbd3-acb57c935048"))
-(global_label "WIND_DIR_ADC" (shape passive) (at 172.72 40.64 0) (effects (font (size 1.0 1.0)) (justify left)) (uuid "0d658b2e-a727-5187-ab71-ccf3f847ca2c"))
-(wire (pts (xy 121.92 25.4) (xy 121.92 15.24)) (stroke (width 0) (type default)) (uuid "3292248e-b874-5ffe-8754-5ae9540408f6"))
-(global_label "VREF_SENSOR" (shape passive) (at 121.92 15.24 90) (effects (font (size 1.0 1.0)) (justify left)) (uuid "c1d88788-3f8e-532e-8413-efb0b9c7f7e3"))
-(wire (pts (xy 139.7 80.01) (xy 124.46 80.01)) (stroke (width 0) (type default)) (uuid "e8fac71a-f1d1-5690-9aa7-66205e08e46b"))
-(global_label "VREF_SENSOR" (shape passive) (at 124.46 80.01 180) (effects (font (size 1.0 1.0)) (justify right)) (uuid "ee0c1b82-4d8e-5a4b-9f20-01528012dbd9"))
 )

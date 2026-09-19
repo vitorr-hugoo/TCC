@@ -1,1033 +1,2894 @@
-(kicad_sch (version 20250114) (generator "eeschema") (generator_version "9.0") (uuid "a078bb99-6aea-4e57-a281-b0b2bc449706") (paper "A4")
-(title_block (title "BIRUTA - divisor ratiometrico e protecao ADC") (date "2026-09-16") (rev "METEO-1") (company "TCC - Estacao meteorologica"))
-(lib_symbols
-(symbol "Connector:TestPoint"
-		(pin_numbers
-			(hide yes)
-		)
-		(pin_names
-			(offset 0.762)
-			(hide yes)
-		)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(property "Reference" "TP"
-			(at 0 6.858 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "TestPoint"
-			(at 0 5.08 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 5.08 0 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 5.08 0 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "test point"
-			(at 0 0 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "ki_keywords" "test point tp"
-			(at 0 0 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "ki_fp_filters" "Pin* Test*"
-			(at 0 0 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(symbol "TestPoint_0_1"
-			(circle
-				(center 0 3.302)
-				(radius 0.762)
-				(stroke
-					(width 0)
-					(type default)
-				)
-				(fill
-					(type none)
-				)
-			)
-		)
-		(symbol "TestPoint_1_1"
-			(pin passive line
-				(at 0 0 90)
-				(length 2.54)
-				(name "1"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "1"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
-		)
-		(embedded_fonts no)
+(kicad_sch
+	(version 20250114)
+	(generator "eeschema")
+	(generator_version "9.0")
+	(uuid "a078bb99-6aea-4e57-a281-b0b2bc449706")
+	(paper "A4")
+	(title_block
+		(title "BIRUTA - divisor ratiometrico e protecao ADC")
+		(date "2026-09-16")
+		(rev "METEO-1")
+		(company "TCC - Estacao meteorologica")
 	)
-(symbol "Device:C"
-		(pin_numbers
-			(hide yes)
-		)
-		(pin_names
-			(offset 0.254)
-		)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(property "Reference" "C"
-			(at 0.635 2.54 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "C"
-			(at 0.635 -2.54 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" ""
-			(at 0.9652 -3.81 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
+	(lib_symbols
+		(symbol "Connector:TestPoint"
+			(pin_numbers
 				(hide yes)
 			)
-		)
-		(property "Datasheet" "~"
-			(at 0 0 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
+			(pin_names
+				(offset 0.762)
 				(hide yes)
 			)
-		)
-		(property "Description" "Unpolarized capacitor"
-			(at 0 0 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "ki_keywords" "cap capacitor"
-			(at 0 0 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "ki_fp_filters" "C_*"
-			(at 0 0 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(symbol "C_0_1"
-			(polyline
-				(pts
-					(xy -2.032 0.762) (xy 2.032 0.762)
-				)
-				(stroke
-					(width 0.508)
-					(type default)
-				)
-				(fill
-					(type none)
-				)
-			)
-			(polyline
-				(pts
-					(xy -2.032 -0.762) (xy 2.032 -0.762)
-				)
-				(stroke
-					(width 0.508)
-					(type default)
-				)
-				(fill
-					(type none)
-				)
-			)
-		)
-		(symbol "C_1_1"
-			(pin passive line
-				(at 0 3.81 270)
-				(length 2.794)
-				(name "~"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "1"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
-			(pin passive line
-				(at 0 -3.81 90)
-				(length 2.794)
-				(name "~"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "2"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
-		)
-		(embedded_fonts no)
-	)
-(symbol "Device:D_Zener"
-		(pin_numbers
-			(hide yes)
-		)
-		(pin_names
-			(offset 1.016)
-			(hide yes)
-		)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(property "Reference" "D"
-			(at 0 2.54 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "D_Zener"
-			(at 0 -2.54 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 0 0 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 0 0 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Zener diode"
-			(at 0 0 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "ki_keywords" "diode"
-			(at 0 0 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "ki_fp_filters" "TO-???* *_Diode_* *SingleDiode* D_*"
-			(at 0 0 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(symbol "D_Zener_0_1"
-			(polyline
-				(pts
-					(xy -1.27 -1.27) (xy -1.27 1.27) (xy -0.762 1.27)
-				)
-				(stroke
-					(width 0.254)
-					(type default)
-				)
-				(fill
-					(type none)
-				)
-			)
-			(polyline
-				(pts
-					(xy 1.27 0) (xy -1.27 0)
-				)
-				(stroke
-					(width 0)
-					(type default)
-				)
-				(fill
-					(type none)
-				)
-			)
-			(polyline
-				(pts
-					(xy 1.27 -1.27) (xy 1.27 1.27) (xy -1.27 0) (xy 1.27 -1.27)
-				)
-				(stroke
-					(width 0.254)
-					(type default)
-				)
-				(fill
-					(type none)
-				)
-			)
-		)
-		(symbol "D_Zener_1_1"
-			(pin passive line
-				(at -3.81 0 0)
-				(length 2.54)
-				(name "K"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "1"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
-			(pin passive line
-				(at 3.81 0 180)
-				(length 2.54)
-				(name "A"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "2"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
-		)
-		(embedded_fonts no)
-	)
-(symbol "Device:R"
-		(pin_numbers
-			(hide yes)
-		)
-		(pin_names
-			(offset 0)
-		)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(property "Reference" "R"
-			(at 2.032 0 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "R"
-			(at 0 0 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at -1.778 0 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 0 0 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Resistor"
-			(at 0 0 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "ki_keywords" "R res resistor"
-			(at 0 0 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "ki_fp_filters" "R_*"
-			(at 0 0 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(symbol "R_0_1"
-			(rectangle
-				(start -1.016 -2.54)
-				(end 1.016 2.54)
-				(stroke
-					(width 0.254)
-					(type default)
-				)
-				(fill
-					(type none)
-				)
-			)
-		)
-		(symbol "R_1_1"
-			(pin passive line
-				(at 0 3.81 270)
-				(length 1.27)
-				(name "~"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "1"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
-			(pin passive line
-				(at 0 -3.81 90)
-				(length 1.27)
-				(name "~"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "2"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
-		)
-		(embedded_fonts no)
-	)
-(symbol "Sensores_Meteo:BAS70-04"
-		(pin_names
-			(offset 0)
-		)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(property "Reference" "D"
-			(at 2.54 -5.08 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "BAS70-04"
-			(at -6.35 3.175 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Package_TO_SOT_SMD:SOT-23"
-			(at 1.905 3.175 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://assets.nexperia.com/documents/data-sheet/BAS70-04.pdf" (at 0 0 0) (effects (font (size 1.0 1.0)) (hide yes)))
-		(property "Description" "Dual series Schottky: 1=A1, 2=K2, 3=K1/A2; SOT-23" (at 0 0 0) (effects (font (size 1.0 1.0)) (hide yes)))
-		(property "ki_keywords" "schottky diode"
-			(at 0 0 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "ki_fp_filters" "SOT?23*"
-			(at 0 0 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(symbol "BAS70-04_0_1"
-			(polyline
-				(pts
-					(xy -4.445 1.27) (xy -4.445 -1.27) (xy -2.54 0) (xy -4.445 1.27)
-				)
-				(stroke
-					(width 0)
-					(type default)
-				)
-				(fill
-					(type none)
-				)
-			)
-			(polyline
-				(pts
-					(xy -3.81 0) (xy -1.27 0)
-				)
-				(stroke
-					(width 0)
-					(type default)
-				)
-				(fill
-					(type none)
-				)
-			)
-			(polyline
-				(pts
-					(xy -3.175 -1.27) (xy -3.175 -1.016)
-				)
-				(stroke
-					(width 0)
-					(type default)
-				)
-				(fill
-					(type none)
-				)
-			)
-			(polyline
-				(pts
-					(xy -2.54 1.27) (xy -1.905 1.27)
-				)
-				(stroke
-					(width 0)
-					(type default)
-				)
-				(fill
-					(type none)
-				)
-			)
-			(polyline
-				(pts
-					(xy -2.54 -1.27) (xy -3.175 -1.27)
-				)
-				(stroke
-					(width 0)
-					(type default)
-				)
-				(fill
-					(type none)
-				)
-			)
-			(polyline
-				(pts
-					(xy -2.54 -1.27) (xy -2.54 1.27)
-				)
-				(stroke
-					(width 0)
-					(type default)
-				)
-				(fill
-					(type none)
-				)
-			)
-			(polyline
-				(pts
-					(xy -1.905 1.27) (xy -1.905 1.016)
-				)
-				(stroke
-					(width 0)
-					(type default)
-				)
-				(fill
-					(type none)
-				)
-			)
-			(polyline
-				(pts
-					(xy -1.905 0) (xy 1.905 0)
-				)
-				(stroke
-					(width 0)
-					(type default)
-				)
-				(fill
-					(type none)
-				)
-			)
-			(circle
-				(center 0 0)
-				(radius 0.254)
-				(stroke
-					(width 0)
-					(type default)
-				)
-				(fill
-					(type outline)
-				)
-			)
-			(polyline
-				(pts
-					(xy 1.27 0) (xy 3.81 0)
-				)
-				(stroke
-					(width 0)
-					(type default)
-				)
-				(fill
-					(type none)
-				)
-			)
-			(polyline
-				(pts
-					(xy 1.905 1.27) (xy 1.905 -1.27) (xy 3.81 0) (xy 1.905 1.27)
-				)
-				(stroke
-					(width 0)
-					(type default)
-				)
-				(fill
-					(type none)
-				)
-			)
-			(polyline
-				(pts
-					(xy 3.175 -1.27) (xy 3.175 -1.016)
-				)
-				(stroke
-					(width 0)
-					(type default)
-				)
-				(fill
-					(type none)
-				)
-			)
-			(polyline
-				(pts
-					(xy 3.81 1.27) (xy 4.445 1.27)
-				)
-				(stroke
-					(width 0)
-					(type default)
-				)
-				(fill
-					(type none)
-				)
-			)
-			(polyline
-				(pts
-					(xy 3.81 -1.27) (xy 3.175 -1.27)
-				)
-				(stroke
-					(width 0)
-					(type default)
-				)
-				(fill
-					(type none)
-				)
-			)
-			(polyline
-				(pts
-					(xy 3.81 -1.27) (xy 3.81 1.27)
-				)
-				(stroke
-					(width 0)
-					(type default)
-				)
-				(fill
-					(type none)
-				)
-			)
-			(polyline
-				(pts
-					(xy 4.445 1.27) (xy 4.445 1.016)
-				)
-				(stroke
-					(width 0)
-					(type default)
-				)
-				(fill
-					(type none)
-				)
-			)
-		)
-		(symbol "BAS70-04_1_1"
-			(pin passive line
-				(at -7.62 0 0)
-				(length 3.81)
-				(name "A"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "1"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
-			(pin passive line
-				(at 0 -5.08 90)
-				(length 5.08)
-				(name "COM"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "3"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
-			(pin passive line
-				(at 7.62 0 180)
-				(length 3.81)
-				(name "K"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "2"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
-		)
-		(embedded_fonts no)
-	)
-(symbol "Sensores_Meteo:PCB-6P6C-90"
-			(pin_names (offset 1.016))
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
-			(property "Reference" "RJ" (at 0 10.16 0) (effects (font (size 1.27 1.27))))
-			(property "Value" "PCB-6P6C-90" (at 0 7.62 0) (effects (font (size 1.27 1.27))))
-			(property "Footprint" "Sensores_Meteo:RJ11-TH_PCB-6P6C-90" (at 0 0 0) (effects (font (size 1.27 1.27)) (hide yes)))
-			(property "Datasheet" "https://lcsc.com/product-detail/Ethernet-Connectors-Modular-Connectors_Shenzhen-Cankemeng-PCB-6P6C-90degree-Boundless-gray-Full-gold_C189750.html" (at 0 0 0) (effects (font (size 1.27 1.27)) (hide yes)))
-			(property "MPN" "R-RJ11R06P-A800" (at 0 0 0) (effects (font (size 1.27 1.27)) (hide yes)))
-			(property "LCSC Part" "C189750" (at 0 0 0) (effects (font (size 1.27 1.27)) (hide yes)))
-			(symbol "PCB-6P6C-90_0_1"
-				(rectangle (start -5.08 7.62) (end 5.08 -7.62) (stroke (width 0.254) (type default)) (fill (type background)))
-				(polyline (pts (xy -5.08 5.08) (xy -2.54 5.08) (xy -2.54 2.54) (xy 0 2.54) (xy 0 0) (xy 2.54 0) (xy 2.54 -2.54) (xy 5.08 -2.54)) (stroke (width 0) (type default)) (fill (type none)))
-				(pin passive line (at 10.16 -6.35 180) (length 5.08) (name "1" (effects (font (size 1.27 1.27)))) (number "1" (effects (font (size 1.27 1.27)))))
-				(pin passive line (at 10.16 -3.81 180) (length 5.08) (name "2" (effects (font (size 1.27 1.27)))) (number "2" (effects (font (size 1.27 1.27)))))
-				(pin passive line (at 10.16 -1.27 180) (length 5.08) (name "3" (effects (font (size 1.27 1.27)))) (number "3" (effects (font (size 1.27 1.27)))))
-				(pin passive line (at 10.16 1.27 180) (length 5.08) (name "4" (effects (font (size 1.27 1.27)))) (number "4" (effects (font (size 1.27 1.27)))))
-				(pin passive line (at 10.16 3.81 180) (length 5.08) (name "5" (effects (font (size 1.27 1.27)))) (number "5" (effects (font (size 1.27 1.27)))))
-				(pin passive line (at 10.16 6.35 180) (length 5.08) (name "6" (effects (font (size 1.27 1.27)))) (number "6" (effects (font (size 1.27 1.27)))))
+			(property "Reference" "TP"
+				(at 0 6.858 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "TestPoint"
+				(at 0 5.08 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 5.08 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "~"
+				(at 5.08 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "test point"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "test point tp"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "Pin* Test*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "TestPoint_0_1"
+				(circle
+					(center 0 3.302)
+					(radius 0.762)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "TestPoint_1_1"
+				(pin passive line
+					(at 0 0 90)
+					(length 2.54)
+					(name "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
 			)
 			(embedded_fonts no)
-		))
-(text "MISOL WH-SP-WD: rede resistiva passiva; 8 chaves / ate 16 codigos; cabo ~2 m." (at 20.32 20.32 0) (effects (font (size 1.27 1.27)) (justify left top)) (uuid "3a664b29-c6cd-5df5-a3d7-06d1115da2f5"))
-(text "1  CONECTOR / DIVISOR" (at 20.32 38.1 0) (effects (font (size 1.27 1.27)) (justify left top)) (uuid "7143d130-b54d-531b-b487-b31ff9e1854b"))
-(text "2  LIMITACAO / CLAMP" (at 111.76 38.1 0) (effects (font (size 1.27 1.27)) (justify left top)) (uuid "aa2e37d0-5fa5-54bb-bd51-4259a2c19ef9"))
-(text "3  FILTRO / ADC" (at 203.2 38.1 0) (effects (font (size 1.27 1.27)) (justify left top)) (uuid "0b703673-82ea-5265-972a-b255be724e40"))
-(symbol (lib_id "Sensores_Meteo:PCB-6P6C-90") (at 35.56 81.28 0) (unit 1) (exclude_from_sim no) (in_bom yes) (on_board yes) (dnp no) (uuid "f219c2a7-eb7b-4c19-8ebe-925c739f9cef")
-(property "Reference" "J32" (at 35.56 71.12 0) (effects (font (size 1.0 1.0)) ))
-(property "Value" "R-RJ11R06P-A800" (at 35.56 73.66 0) (effects (font (size 1.0 1.0)) ))
-(property "Footprint" "Sensores_Meteo:RJ11-TH_PCB-6P6C-90" (at 35.56 81.28 0) (effects (font (size 1.0 1.0)) (hide yes)))
-(property "Datasheet" "https://www.lcsc.com/product-detail/C189750.html" (at 35.56 81.28 0) (effects (font (size 1.0 1.0)) (hide yes)))
-(property "Manufacturer" "Ckmtw" (at 35.56 81.28 0) (effects (font (size 1.0 1.0)) (hide yes)))
-(property "MPN" "R-RJ11R06P-A800" (at 35.56 81.28 0) (effects (font (size 1.0 1.0)) (hide yes)))
-(property "LCSC" "C189750" (at 35.56 81.28 0) (effects (font (size 1.0 1.0)) (hide yes)))
-(property "LCSC Part" "C189750" (at 35.56 81.28 0) (effects (font (size 1.0 1.0)) (hide yes)))
-(property "Rating" "6P6C; p3=return; p4=signal; THT" (at 35.56 81.28 0) (effects (font (size 1.0 1.0)) (hide yes)))
-(property "Function" "RJ11 individual; contatos centrais" (at 35.56 81.28 0) (effects (font (size 1.0 1.0)) (hide yes)))
-(instances (project "esquematico_V4" (path "/0c305a6e-f9cd-49a1-b146-c2956e5469b6/058dce74-971b-49d7-82f0-384e20be985c/4ef75fdb-90eb-437a-af55-0afcbbe28aca" (reference "J32") (unit 1)))))
-(no_connect (at 45.72 74.93) (uuid "57760c47-e124-5ea0-ac37-6cb25954b9e3"))
-(no_connect (at 45.72 77.47) (uuid "bb18ff2e-19f7-5832-91ed-28bdb7fa428a"))
-(no_connect (at 45.72 85.09) (uuid "09ab42f3-1dcf-5af3-aee1-655e32f86d8e"))
-(no_connect (at 45.72 87.63) (uuid "5ac65754-d77c-507c-8e57-6fdebf653c2e"))
-(wire (pts (xy 45.72 82.55) (xy 50.8 82.55)) (stroke (width 0) (type default)) (uuid "458a4cbb-100a-5678-ada9-8cb12933bca0"))
-(wire (pts (xy 50.8 82.55) (xy 50.8 116.84)) (stroke (width 0) (type default)) (uuid "a0cd0fef-85e7-5c75-ba08-65b409278aa9"))
-(global_label "GND" (shape passive) (at 50.8 116.84 0) (effects (font (size 1.0 1.0)) (justify left)) (uuid "ab3cf1fc-98d0-522e-906f-93c63c2633b0"))
-(wire (pts (xy 45.72 80.01) (xy 66.04 80.01)) (stroke (width 0) (type default)) (uuid "bf8654d1-95d8-55c4-be65-f7f653df5baf"))
-(wire (pts (xy 66.04 80.01) (xy 86.36 80.01)) (stroke (width 0) (type default)) (uuid "d7f49ee9-b3a4-59e3-9e01-b3442c67948c"))
-(wire (pts (xy 86.36 80.01) (xy 118.11 80.01)) (stroke (width 0) (type default)) (uuid "a65d504c-1d56-5745-a491-ef0cb1f3d535"))
-(label "WIND_DIR_RAW"  (at 53.34 80.01 0) (effects (font (size 1.0 1.0)) (justify left)) (uuid "796bb14b-c4a2-5830-919c-a98de3313714"))
-(symbol (lib_id "Device:D_Zener") (at 66.04 99.06 270) (unit 1) (exclude_from_sim no) (in_bom yes) (on_board yes) (dnp no) (uuid "0df91eb8-4016-5392-b4f6-51aa13068789")
-(property "Reference" "D50" (at 66.04 92.71 0) (effects (font (size 1.0 1.0)) ))
-(property "Value" "PESD5V0S1UL" (at 66.04 95.25 0) (effects (font (size 1.0 1.0)) ))
-(property "Footprint" "Diode_SMD:D_SOD-882" (at 66.04 99.06 0) (effects (font (size 1.0 1.0)) (hide yes)))
-(property "Datasheet" "https://assets.nexperia.com/documents/data-sheet/PESD5V0S1UL.pdf" (at 66.04 99.06 0) (effects (font (size 1.0 1.0)) (hide yes)))
-(property "Manufacturer" "Nexperia" (at 66.04 99.06 0) (effects (font (size 1.0 1.0)) (hide yes)))
-(property "MPN" "PESD5V0S1UL,315" (at 66.04 99.06 0) (effects (font (size 1.0 1.0)) (hide yes)))
-(property "LCSC" "C85402" (at 66.04 99.06 0) (effects (font (size 1.0 1.0)) (hide yes)))
-(property "LCSC Part" "C85402" (at 66.04 99.06 0) (effects (font (size 1.0 1.0)) (hide yes)))
-(property "Rating" "VRWM=5V; IR max 1uA at 5V/25C; see datasheet" (at 66.04 99.06 0) (effects (font (size 1.0 1.0)) (hide yes)))
-(property "Function" "Protecao primaria; inclui fuga na tolerancia do ADC" (at 66.04 99.06 0) (effects (font (size 1.0 1.0)) (hide yes)))
-(instances (project "esquematico_V4" (path "/0c305a6e-f9cd-49a1-b146-c2956e5469b6/058dce74-971b-49d7-82f0-384e20be985c/4ef75fdb-90eb-437a-af55-0afcbbe28aca" (reference "D50") (unit 1)))))
-(wire (pts (xy 66.04 80.01) (xy 66.04 95.25)) (stroke (width 0) (type default)) (uuid "60e5a1c8-fdcb-5462-8357-ae4e23d59947"))
-(wire (pts (xy 66.04 102.87) (xy 66.04 111.76)) (stroke (width 0) (type default)) (uuid "e41c0350-2ad2-56ea-aece-a85e35f4cac0"))
-(global_label "GND" (shape passive) (at 66.04 111.76 0) (effects (font (size 1.0 1.0)) (justify left)) (uuid "1594d7a6-7b45-503e-ba7f-9946b18d95d9"))
-(junction (at 66.04 80.01) (diameter 0) (color 0 0 0 0) (uuid "d321e013-d81c-5cd8-bfee-d00848f77cd1"))
-(symbol (lib_id "Device:R") (at 86.36 60.96 0) (unit 1) (exclude_from_sim no) (in_bom yes) (on_board yes) (dnp no) (uuid "dda97596-0f87-5db8-a6f1-08dcedb381c7")
-(property "Reference" "R50" (at 90.17 58.42 0) (effects (font (size 1.0 1.0)) ))
-(property "Value" "10k" (at 90.17 60.96 0) (effects (font (size 1.0 1.0)) ))
-(property "Footprint" "Resistor_SMD:R_0603_1608Metric" (at 86.36 60.96 0) (effects (font (size 1.0 1.0)) (hide yes)))
-(property "Datasheet" "https://www.lcsc.com/product-detail/C25804.html" (at 86.36 60.96 0) (effects (font (size 1.0 1.0)) (hide yes)))
-(property "Manufacturer" "UNI-ROYAL" (at 86.36 60.96 0) (effects (font (size 1.0 1.0)) (hide yes)))
-(property "MPN" "0603WAF1002T5E" (at 86.36 60.96 0) (effects (font (size 1.0 1.0)) (hide yes)))
-(property "LCSC" "C25804" (at 86.36 60.96 0) (effects (font (size 1.0 1.0)) (hide yes)))
-(property "LCSC Part" "C25804" (at 86.36 60.96 0) (effects (font (size 1.0 1.0)) (hide yes)))
-(property "Rating" "1%; 0.1W; 75V" (at 86.36 60.96 0) (effects (font (size 1.0 1.0)) (hide yes)))
-(property "Function" "Referencia do divisor; mesma fonte de VREF+ do ADC" (at 86.36 60.96 0) (effects (font (size 1.0 1.0)) (hide yes)))
-(instances (project "esquematico_V4" (path "/0c305a6e-f9cd-49a1-b146-c2956e5469b6/058dce74-971b-49d7-82f0-384e20be985c/4ef75fdb-90eb-437a-af55-0afcbbe28aca" (reference "R50") (unit 1)))))
-(hierarchical_label "VREF_SENSOR" (shape input) (at 60.96 50.8 0) (effects (font (size 1.0 1.0)) (justify right)) (uuid "cd948559-651c-5c60-9e4a-0180cc0fcfd4"))
-(wire (pts (xy 60.96 50.8) (xy 86.36 50.8)) (stroke (width 0) (type default)) (uuid "db00bf5a-ec3d-50c3-85b2-b0525c022322"))
-(wire (pts (xy 86.36 50.8) (xy 86.36 57.15)) (stroke (width 0) (type default)) (uuid "661e89b1-18b3-5b42-ab7a-a74876924e9b"))
-(wire (pts (xy 86.36 64.77) (xy 86.36 80.01)) (stroke (width 0) (type default)) (uuid "3db56d4a-c334-5350-b541-54f5b1386a15"))
-(junction (at 86.36 80.01) (diameter 0) (color 0 0 0 0) (uuid "a4745200-6aa3-5897-a51d-f99c89beae92"))
-(symbol (lib_id "Device:R") (at 121.92 80.01 90) (unit 1) (exclude_from_sim no) (in_bom yes) (on_board yes) (dnp no) (uuid "616f3f03-0f02-57a1-a220-c89f75f6d361")
-(property "Reference" "R51" (at 121.92 73.66 0) (effects (font (size 1.0 1.0)) ))
-(property "Value" "10k" (at 121.92 76.2 0) (effects (font (size 1.0 1.0)) ))
-(property "Footprint" "Resistor_SMD:R_0603_1608Metric" (at 121.92 80.01 0) (effects (font (size 1.0 1.0)) (hide yes)))
-(property "Datasheet" "https://www.lcsc.com/product-detail/C25804.html" (at 121.92 80.01 0) (effects (font (size 1.0 1.0)) (hide yes)))
-(property "Manufacturer" "UNI-ROYAL" (at 121.92 80.01 0) (effects (font (size 1.0 1.0)) (hide yes)))
-(property "MPN" "0603WAF1002T5E" (at 121.92 80.01 0) (effects (font (size 1.0 1.0)) (hide yes)))
-(property "LCSC" "C25804" (at 121.92 80.01 0) (effects (font (size 1.0 1.0)) (hide yes)))
-(property "LCSC Part" "C25804" (at 121.92 80.01 0) (effects (font (size 1.0 1.0)) (hide yes)))
-(property "Rating" "1%; 0.1W; 75V" (at 121.92 80.01 0) (effects (font (size 1.0 1.0)) (hide yes)))
-(property "Function" "Isola a protecao secundaria do divisor" (at 121.92 80.01 0) (effects (font (size 1.0 1.0)) (hide yes)))
-(instances (project "esquematico_V4" (path "/0c305a6e-f9cd-49a1-b146-c2956e5469b6/058dce74-971b-49d7-82f0-384e20be985c/4ef75fdb-90eb-437a-af55-0afcbbe28aca" (reference "R51") (unit 1)))))
-(wire (pts (xy 125.73 80.01) (xy 157.48 80.01)) (stroke (width 0) (type default)) (uuid "b0c9917d-14c5-5620-ba62-b4b8a831d600"))
-(wire (pts (xy 157.48 80.01) (xy 186.69 80.01)) (stroke (width 0) (type default)) (uuid "4a62b417-85eb-566f-91cf-459898f24040"))
-(symbol (lib_id "Sensores_Meteo:BAS70-04") (at 157.48 58.42 0) (unit 1) (exclude_from_sim no) (in_bom yes) (on_board yes) (dnp no) (uuid "406a9269-c365-5c02-b092-872d6a4dae13")
-(property "Reference" "D51" (at 157.48 52.07 0) (effects (font (size 1.0 1.0)) ))
-(property "Value" "BAS70-04" (at 157.48 54.61 0) (effects (font (size 1.0 1.0)) ))
-(property "Footprint" "Package_TO_SOT_SMD:SOT-23" (at 157.48 58.42 0) (effects (font (size 1.0 1.0)) (hide yes)))
-(property "Datasheet" "https://assets.nexperia.com/documents/data-sheet/BAS70-04.pdf" (at 157.48 58.42 0) (effects (font (size 1.0 1.0)) (hide yes)))
-(property "Manufacturer" "Nexperia" (at 157.48 58.42 0) (effects (font (size 1.0 1.0)) (hide yes)))
-(property "MPN" "BAS70-04,215" (at 157.48 58.42 0) (effects (font (size 1.0 1.0)) (hide yes)))
-(property "LCSC" "C389351" (at 157.48 58.42 0) (effects (font (size 1.0 1.0)) (hide yes)))
-(property "LCSC Part" "C389351" (at 157.48 58.42 0) (effects (font (size 1.0 1.0)) (hide yes)))
-(property "Rating" "IR max 100nA at 50V/25C; 1=GND, 2=3V3, 3=signal" (at 157.48 58.42 0) (effects (font (size 1.0 1.0)) (hide yes)))
-(property "Function" "Clamp para 3V3 digital; nao injeta diretamente na referencia analogica" (at 157.48 58.42 0) (effects (font (size 1.0 1.0)) (hide yes)))
-(instances (project "esquematico_V4" (path "/0c305a6e-f9cd-49a1-b146-c2956e5469b6/058dce74-971b-49d7-82f0-384e20be985c/4ef75fdb-90eb-437a-af55-0afcbbe28aca" (reference "D51") (unit 1)))))
-(wire (pts (xy 157.48 63.5) (xy 157.48 80.01)) (stroke (width 0) (type default)) (uuid "98a62ce5-efa1-54c7-a6e2-01e91d3b8e7b"))
-(wire (pts (xy 149.86 58.42) (xy 144.78 58.42)) (stroke (width 0) (type default)) (uuid "2006350e-74ed-5631-ad1b-33884fe3c37a"))
-(global_label "GND" (shape passive) (at 144.78 58.42 0) (effects (font (size 1.0 1.0)) (justify left)) (uuid "78c2fc14-73cc-534b-b78f-178b88b5f5a2"))
-(wire (pts (xy 165.1 58.42) (xy 172.72 58.42)) (stroke (width 0) (type default)) (uuid "ab229d49-fd5c-545c-96ba-21b1e4e275cf"))
-(global_label "+3V3" (shape passive) (at 172.72 58.42 0) (effects (font (size 1.0 1.0)) (justify left)) (uuid "a704513a-68e8-50c3-be93-2e7c4b43fb4f"))
-(junction (at 157.48 80.01) (diameter 0) (color 0 0 0 0) (uuid "ec8f19a3-3a08-51e0-ba1d-376eab3d8056"))
-(symbol (lib_id "Device:R") (at 190.5 80.01 90) (unit 1) (exclude_from_sim no) (in_bom yes) (on_board yes) (dnp no) (uuid "6109a7b1-974e-5999-92cc-c756307bf321")
-(property "Reference" "R52" (at 190.5 73.66 0) (effects (font (size 1.0 1.0)) ))
-(property "Value" "1k" (at 190.5 76.2 0) (effects (font (size 1.0 1.0)) ))
-(property "Footprint" "Resistor_SMD:R_0603_1608Metric" (at 190.5 80.01 0) (effects (font (size 1.0 1.0)) (hide yes)))
-(property "Datasheet" "https://www.lcsc.com/product-detail/C21190.html" (at 190.5 80.01 0) (effects (font (size 1.0 1.0)) (hide yes)))
-(property "Manufacturer" "UNI-ROYAL" (at 190.5 80.01 0) (effects (font (size 1.0 1.0)) (hide yes)))
-(property "MPN" "0603WAF1001T5E" (at 190.5 80.01 0) (effects (font (size 1.0 1.0)) (hide yes)))
-(property "LCSC" "C21190" (at 190.5 80.01 0) (effects (font (size 1.0 1.0)) (hide yes)))
-(property "LCSC Part" "C21190" (at 190.5 80.01 0) (effects (font (size 1.0 1.0)) (hide yes)))
-(property "Rating" "1%; 0.1W; 75V" (at 190.5 80.01 0) (effects (font (size 1.0 1.0)) (hide yes)))
-(property "Function" "Limita corrente residual no PA0 depois do clamp" (at 190.5 80.01 0) (effects (font (size 1.0 1.0)) (hide yes)))
-(instances (project "esquematico_V4" (path "/0c305a6e-f9cd-49a1-b146-c2956e5469b6/058dce74-971b-49d7-82f0-384e20be985c/4ef75fdb-90eb-437a-af55-0afcbbe28aca" (reference "R52") (unit 1)))))
-(wire (pts (xy 194.31 80.01) (xy 213.36 80.01)) (stroke (width 0) (type default)) (uuid "a22bd451-8a2d-579e-b501-30da1a41526c"))
-(wire (pts (xy 213.36 80.01) (xy 233.68 80.01)) (stroke (width 0) (type default)) (uuid "a6497cf9-8d02-5ef5-ba2e-f520d028c6de"))
-(wire (pts (xy 233.68 80.01) (xy 251.46 80.01)) (stroke (width 0) (type default)) (uuid "8328284a-8159-520b-805b-4345f3173dea"))
-(symbol (lib_id "Device:C") (at 213.36 99.06 0) (unit 1) (exclude_from_sim no) (in_bom yes) (on_board yes) (dnp no) (uuid "9deaf77c-6d60-505f-b787-7fdc1ee2dd70")
-(property "Reference" "C50" (at 217.17 96.52 0) (effects (font (size 1.0 1.0)) ))
-(property "Value" "10n" (at 217.17 99.06 0) (effects (font (size 1.0 1.0)) ))
-(property "Footprint" "Capacitor_SMD:C_0603_1608Metric" (at 213.36 99.06 0) (effects (font (size 1.0 1.0)) (hide yes)))
-(property "Datasheet" "https://www.lcsc.com/product-detail/C57112.html" (at 213.36 99.06 0) (effects (font (size 1.0 1.0)) (hide yes)))
-(property "Manufacturer" "FH" (at 213.36 99.06 0) (effects (font (size 1.0 1.0)) (hide yes)))
-(property "MPN" "0603B103K500NT" (at 213.36 99.06 0) (effects (font (size 1.0 1.0)) (hide yes)))
-(property "LCSC" "C57112" (at 213.36 99.06 0) (effects (font (size 1.0 1.0)) (hide yes)))
-(property "LCSC Part" "C57112" (at 213.36 99.06 0) (effects (font (size 1.0 1.0)) (hide yes)))
-(property "Rating" "10%; 50V; X7R" (at 213.36 99.06 0) (effects (font (size 1.0 1.0)) (hide yes)))
-(property "Function" "Filtro / reservatorio de carga do ADC" (at 213.36 99.06 0) (effects (font (size 1.0 1.0)) (hide yes)))
-(instances (project "esquematico_V4" (path "/0c305a6e-f9cd-49a1-b146-c2956e5469b6/058dce74-971b-49d7-82f0-384e20be985c/4ef75fdb-90eb-437a-af55-0afcbbe28aca" (reference "C50") (unit 1)))))
-(wire (pts (xy 213.36 80.01) (xy 213.36 95.25)) (stroke (width 0) (type default)) (uuid "a0bd526d-d94d-500d-9a13-9fd3c56d37ca"))
-(wire (pts (xy 213.36 102.87) (xy 213.36 111.76)) (stroke (width 0) (type default)) (uuid "ee974443-639c-51d0-9d92-c813aebd9f17"))
-(global_label "GND" (shape passive) (at 213.36 111.76 0) (effects (font (size 1.0 1.0)) (justify left)) (uuid "8b31917f-54ca-580a-8441-48d911e95b3b"))
-(junction (at 213.36 80.01) (diameter 0) (color 0 0 0 0) (uuid "8dd76983-85b0-5a35-affb-8a24e525073c"))
-(hierarchical_label "WIND_DIR_ADC" (shape passive) (at 251.46 80.01 180) (effects (font (size 1.0 1.0)) (justify left)) (uuid "2d89464c-7c60-5808-903c-89dc04f404fe"))
-(symbol (lib_id "Connector:TestPoint") (at 66.04 69.85 0) (unit 1) (exclude_from_sim no) (in_bom no) (on_board yes) (dnp no) (uuid "5b8ffcac-99b1-5732-abdb-efa293498ecf")
-(property "Reference" "TP50" (at 69.85 67.31 0) (effects (font (size 1.0 1.0)) ))
-(property "Value" "WIND_DIR_RAW" (at 69.85 69.85 0) (effects (font (size 1.0 1.0)) ))
-(property "Footprint" "TestPoint:TestPoint_Pad_D1.5mm" (at 66.04 69.85 0) (effects (font (size 1.0 1.0)) (hide yes)))
-(property "Datasheet" "" (at 66.04 69.85 0) (effects (font (size 1.0 1.0)) (hide yes)))
-(property "Manufacturer" "" (at 66.04 69.85 0) (effects (font (size 1.0 1.0)) (hide yes)))
-(property "MPN" "" (at 66.04 69.85 0) (effects (font (size 1.0 1.0)) (hide yes)))
-(property "LCSC" "" (at 66.04 69.85 0) (effects (font (size 1.0 1.0)) (hide yes)))
-(property "LCSC Part" "" (at 66.04 69.85 0) (effects (font (size 1.0 1.0)) (hide yes)))
-(property "Rating" "Copper pad; no purchased component" (at 66.04 69.85 0) (effects (font (size 1.0 1.0)) (hide yes)))
-(property "Function" "WIND_DIR_RAW" (at 66.04 69.85 0) (effects (font (size 1.0 1.0)) (hide yes)))
-(instances (project "esquematico_V4" (path "/0c305a6e-f9cd-49a1-b146-c2956e5469b6/058dce74-971b-49d7-82f0-384e20be985c/4ef75fdb-90eb-437a-af55-0afcbbe28aca" (reference "TP50") (unit 1)))))
-(wire (pts (xy 66.04 69.85) (xy 66.04 80.01)) (stroke (width 0) (type default)) (uuid "2542cedd-7d9e-5f8d-84e0-8050b23ac854"))
-(symbol (lib_id "Connector:TestPoint") (at 233.68 95.25 0) (unit 1) (exclude_from_sim no) (in_bom no) (on_board yes) (dnp no) (uuid "bc6ce421-fe3a-583b-86fd-f57e4b83e73b")
-(property "Reference" "TP51" (at 237.49 92.71 0) (effects (font (size 1.0 1.0)) ))
-(property "Value" "WIND_DIR_ADC" (at 237.49 95.25 0) (effects (font (size 1.0 1.0)) ))
-(property "Footprint" "TestPoint:TestPoint_Pad_D1.5mm" (at 233.68 95.25 0) (effects (font (size 1.0 1.0)) (hide yes)))
-(property "Datasheet" "" (at 233.68 95.25 0) (effects (font (size 1.0 1.0)) (hide yes)))
-(property "Manufacturer" "" (at 233.68 95.25 0) (effects (font (size 1.0 1.0)) (hide yes)))
-(property "MPN" "" (at 233.68 95.25 0) (effects (font (size 1.0 1.0)) (hide yes)))
-(property "LCSC" "" (at 233.68 95.25 0) (effects (font (size 1.0 1.0)) (hide yes)))
-(property "LCSC Part" "" (at 233.68 95.25 0) (effects (font (size 1.0 1.0)) (hide yes)))
-(property "Rating" "Copper pad; no purchased component" (at 233.68 95.25 0) (effects (font (size 1.0 1.0)) (hide yes)))
-(property "Function" "WIND_DIR_ADC" (at 233.68 95.25 0) (effects (font (size 1.0 1.0)) (hide yes)))
-(instances (project "esquematico_V4" (path "/0c305a6e-f9cd-49a1-b146-c2956e5469b6/058dce74-971b-49d7-82f0-384e20be985c/4ef75fdb-90eb-437a-af55-0afcbbe28aca" (reference "TP51") (unit 1)))))
-(wire (pts (xy 233.68 95.25) (xy 233.68 80.01)) (stroke (width 0) (type default)) (uuid "6e6c8da6-6cda-51fd-afc7-cce4080dd5f6"))
-(junction (at 233.68 80.01) (diameter 0) (color 0 0 0 0) (uuid "11f5317e-49c0-5a2a-8182-df4b3da0abc7"))
-(symbol (lib_id "Connector:TestPoint") (at 101.6 50.8 0) (unit 1) (exclude_from_sim no) (in_bom no) (on_board yes) (dnp no) (uuid "08b7e4c1-3230-526d-bf1c-c43cbb629315")
-(property "Reference" "TP52" (at 105.41 48.26 0) (effects (font (size 1.0 1.0)) ))
-(property "Value" "VREF_SENSOR" (at 105.41 50.8 0) (effects (font (size 1.0 1.0)) ))
-(property "Footprint" "TestPoint:TestPoint_Pad_D1.5mm" (at 101.6 50.8 0) (effects (font (size 1.0 1.0)) (hide yes)))
-(property "Datasheet" "" (at 101.6 50.8 0) (effects (font (size 1.0 1.0)) (hide yes)))
-(property "Manufacturer" "" (at 101.6 50.8 0) (effects (font (size 1.0 1.0)) (hide yes)))
-(property "MPN" "" (at 101.6 50.8 0) (effects (font (size 1.0 1.0)) (hide yes)))
-(property "LCSC" "" (at 101.6 50.8 0) (effects (font (size 1.0 1.0)) (hide yes)))
-(property "LCSC Part" "" (at 101.6 50.8 0) (effects (font (size 1.0 1.0)) (hide yes)))
-(property "Rating" "Copper pad; no purchased component" (at 101.6 50.8 0) (effects (font (size 1.0 1.0)) (hide yes)))
-(property "Function" "VREF_SENSOR" (at 101.6 50.8 0) (effects (font (size 1.0 1.0)) (hide yes)))
-(instances (project "esquematico_V4" (path "/0c305a6e-f9cd-49a1-b146-c2956e5469b6/058dce74-971b-49d7-82f0-384e20be985c/4ef75fdb-90eb-437a-af55-0afcbbe28aca" (reference "TP52") (unit 1)))))
-(wire (pts (xy 101.6 50.8) (xy 86.36 50.8)) (stroke (width 0) (type default)) (uuid "2d2d68d7-7aa7-5545-9570-e789743e589b"))
-(junction (at 86.36 50.8) (diameter 0) (color 0 0 0 0) (uuid "d3a0086e-f9e3-5b53-aec4-33bf7718c8c8"))
-(symbol (lib_id "Connector:TestPoint") (at 81.28 111.76 0) (unit 1) (exclude_from_sim no) (in_bom no) (on_board yes) (dnp no) (uuid "db6f2146-df0a-5a69-bb82-2b6a9bfc80c6")
-(property "Reference" "TP53" (at 85.09 109.22 0) (effects (font (size 1.0 1.0)) ))
-(property "Value" "GND" (at 85.09 111.76 0) (effects (font (size 1.0 1.0)) ))
-(property "Footprint" "TestPoint:TestPoint_Pad_D1.5mm" (at 81.28 111.76 0) (effects (font (size 1.0 1.0)) (hide yes)))
-(property "Datasheet" "" (at 81.28 111.76 0) (effects (font (size 1.0 1.0)) (hide yes)))
-(property "Manufacturer" "" (at 81.28 111.76 0) (effects (font (size 1.0 1.0)) (hide yes)))
-(property "MPN" "" (at 81.28 111.76 0) (effects (font (size 1.0 1.0)) (hide yes)))
-(property "LCSC" "" (at 81.28 111.76 0) (effects (font (size 1.0 1.0)) (hide yes)))
-(property "LCSC Part" "" (at 81.28 111.76 0) (effects (font (size 1.0 1.0)) (hide yes)))
-(property "Rating" "Copper pad; no purchased component" (at 81.28 111.76 0) (effects (font (size 1.0 1.0)) (hide yes)))
-(property "Function" "GND" (at 81.28 111.76 0) (effects (font (size 1.0 1.0)) (hide yes)))
-(instances (project "esquematico_V4" (path "/0c305a6e-f9cd-49a1-b146-c2956e5469b6/058dce74-971b-49d7-82f0-384e20be985c/4ef75fdb-90eb-437a-af55-0afcbbe28aca" (reference "TP53") (unit 1)))))
-(global_label "GND" (shape passive) (at 81.28 111.76 0) (effects (font (size 1.0 1.0)) (justify left)) (uuid "898a8233-5aa6-59be-b6f4-de89b299920d"))
-(text "R50=10k 1%; ADC ideal=4095*R_sensor/(10000+R_sensor).\nR51/R52 estao APOS o divisor: nao entram na relacao DC ideal.\nRfonte maxima ~20,23k; tau maxima ~202 us; validar tempo ADC (144 ciclos)." (at 20.32 134.62 0) (effects (font (size 1.27 1.27)) (justify left top)) (uuid "a539af0e-e569-53f6-a019-eaeb2d66f387"))
-(text "VREF_SENSOR vem de U5 CN10_7 (AVDD). Nao unir ao 3V3 digital por etiqueta.\nC50 junto ao PA0; retorno GND curto. Medir offsets por fuga e temperatura.\nA LUT ativa do firmware tem 16 entradas; 8 e o numero de amostras por leitura." (at 20.32 157.48 0) (effects (font (size 1.27 1.27)) (justify left top)) (uuid "f06a2197-8154-5d0d-b182-d7abc08f2175"))
-(embedded_fonts no))
+		)
+		(symbol "Device:C"
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 0.254)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "C"
+				(at 0.635 2.54 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Value" "C"
+				(at 0.635 -2.54 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Footprint" ""
+				(at 0.9652 -3.81 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "~"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Unpolarized capacitor"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "cap capacitor"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "C_*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "C_0_1"
+				(polyline
+					(pts
+						(xy -2.032 0.762) (xy 2.032 0.762)
+					)
+					(stroke
+						(width 0.508)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -2.032 -0.762) (xy 2.032 -0.762)
+					)
+					(stroke
+						(width 0.508)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "C_1_1"
+				(pin passive line
+					(at 0 3.81 270)
+					(length 2.794)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 0 -3.81 90)
+					(length 2.794)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+		(symbol "Device:D_Zener"
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 1.016)
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "D"
+				(at 0 2.54 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "D_Zener"
+				(at 0 -2.54 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "~"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Zener diode"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "diode"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "TO-???* *_Diode_* *SingleDiode* D_*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "D_Zener_0_1"
+				(polyline
+					(pts
+						(xy -1.27 -1.27) (xy -1.27 1.27) (xy -0.762 1.27)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 1.27 0) (xy -1.27 0)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 1.27 -1.27) (xy 1.27 1.27) (xy -1.27 0) (xy 1.27 -1.27)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "D_Zener_1_1"
+				(pin passive line
+					(at -3.81 0 0)
+					(length 2.54)
+					(name "K"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 3.81 0 180)
+					(length 2.54)
+					(name "A"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+		(symbol "Device:R"
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 0)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "R"
+				(at 2.032 0 90)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "R"
+				(at 0 0 90)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at -1.778 0 90)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "~"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Resistor"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "R res resistor"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "R_*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "R_0_1"
+				(rectangle
+					(start -1.016 -2.54)
+					(end 1.016 2.54)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "R_1_1"
+				(pin passive line
+					(at 0 3.81 270)
+					(length 1.27)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 0 -3.81 90)
+					(length 1.27)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+		(symbol "Sensores_Meteo:BAS70-04"
+			(pin_names
+				(offset 0)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "D"
+				(at 2.54 -5.08 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Value" "BAS70-04"
+				(at -6.35 3.175 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Footprint" "Package_TO_SOT_SMD:SOT-23"
+				(at 1.905 3.175 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "https://assets.nexperia.com/documents/data-sheet/BAS70-04.pdf"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1 1)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Dual series Schottky: 1=A1, 2=K2, 3=K1/A2; SOT-23"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1 1)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "schottky diode"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "SOT?23*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "BAS70-04_0_1"
+				(polyline
+					(pts
+						(xy -4.445 1.27) (xy -4.445 -1.27) (xy -2.54 0) (xy -4.445 1.27)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -3.81 0) (xy -1.27 0)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -3.175 -1.27) (xy -3.175 -1.016)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -2.54 1.27) (xy -1.905 1.27)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -2.54 -1.27) (xy -3.175 -1.27)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -2.54 -1.27) (xy -2.54 1.27)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -1.905 1.27) (xy -1.905 1.016)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -1.905 0) (xy 1.905 0)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(circle
+					(center 0 0)
+					(radius 0.254)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type outline)
+					)
+				)
+				(polyline
+					(pts
+						(xy 1.27 0) (xy 3.81 0)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 1.905 1.27) (xy 1.905 -1.27) (xy 3.81 0) (xy 1.905 1.27)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 3.175 -1.27) (xy 3.175 -1.016)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 3.81 1.27) (xy 4.445 1.27)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 3.81 -1.27) (xy 3.175 -1.27)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 3.81 -1.27) (xy 3.81 1.27)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 4.445 1.27) (xy 4.445 1.016)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "BAS70-04_1_1"
+				(pin passive line
+					(at -7.62 0 0)
+					(length 3.81)
+					(name "A"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 0 -5.08 90)
+					(length 5.08)
+					(name "COM"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 7.62 0 180)
+					(length 3.81)
+					(name "K"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+		(symbol "Sensores_Meteo:PCB-6P6C-90"
+			(pin_names
+				(offset 1.016)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "RJ"
+				(at 0 10.16 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "PCB-6P6C-90"
+				(at 0 7.62 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" "Sensores_Meteo:RJ11-TH_PCB-6P6C-90"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "https://lcsc.com/product-detail/Ethernet-Connectors-Modular-Connectors_Shenzhen-Cankemeng-PCB-6P6C-90degree-Boundless-gray-Full-gold_C189750.html"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "MPN" "R-RJ11R06P-A800"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "LCSC Part" "C189750"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "PCB-6P6C-90_0_1"
+				(rectangle
+					(start -5.08 7.62)
+					(end 5.08 -7.62)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type background)
+					)
+				)
+				(polyline
+					(pts
+						(xy -5.08 5.08) (xy -2.54 5.08) (xy -2.54 2.54) (xy 0 2.54) (xy 0 0) (xy 2.54 0) (xy 2.54 -2.54)
+						(xy 5.08 -2.54)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(pin passive line
+					(at 10.16 6.35 180)
+					(length 5.08)
+					(name "6"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "6"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 10.16 3.81 180)
+					(length 5.08)
+					(name "5"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "5"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 10.16 1.27 180)
+					(length 5.08)
+					(name "4"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "4"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 10.16 -1.27 180)
+					(length 5.08)
+					(name "3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 10.16 -3.81 180)
+					(length 5.08)
+					(name "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 10.16 -6.35 180)
+					(length 5.08)
+					(name "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+	)
+	(text "3  FILTRO / ADC"
+		(exclude_from_sim no)
+		(at 203.2 38.1 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left top)
+		)
+		(uuid "0b703673-82ea-5265-972a-b255be724e40")
+	)
+	(text "MISOL WH-SP-WD: rede resistiva passiva; 8 chaves / ate 16 codigos; cabo ~2 m."
+		(exclude_from_sim no)
+		(at 20.32 20.32 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left top)
+		)
+		(uuid "3a664b29-c6cd-5df5-a3d7-06d1115da2f5")
+	)
+	(text "1  CONECTOR / DIVISOR"
+		(exclude_from_sim no)
+		(at 20.32 38.1 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left top)
+		)
+		(uuid "7143d130-b54d-531b-b487-b31ff9e1854b")
+	)
+	(text "R50=10k 1%; ADC ideal=4095*R_sensor/(10000+R_sensor).\nR51/R52 estao APOS o divisor: nao entram na relacao DC ideal.\nRfonte maxima ~20,23k; tau maxima ~202 us; validar tempo ADC (144 ciclos)."
+		(exclude_from_sim no)
+		(at 20.32 134.62 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left top)
+		)
+		(uuid "a539af0e-e569-53f6-a019-eaeb2d66f387")
+	)
+	(text "2  LIMITACAO / CLAMP"
+		(exclude_from_sim no)
+		(at 111.76 38.1 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left top)
+		)
+		(uuid "aa2e37d0-5fa5-54bb-bd51-4259a2c19ef9")
+	)
+	(text "VREF_SENSOR vem de U5 CN10_7 (AVDD). Nao unir ao 3V3 digital por etiqueta.\nC50 junto ao PA0; retorno GND curto. Medir offsets por fuga e temperatura.\nA LUT ativa do firmware tem 16 entradas; 8 e o numero de amostras por leitura."
+		(exclude_from_sim no)
+		(at 20.32 157.48 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left top)
+		)
+		(uuid "f06a2197-8154-5d0d-b182-d7abc08f2175")
+	)
+	(junction
+		(at 233.68 80.01)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "11f5317e-49c0-5a2a-8182-df4b3da0abc7")
+	)
+	(junction
+		(at 213.36 80.01)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "8dd76983-85b0-5a35-affb-8a24e525073c")
+	)
+	(junction
+		(at 86.36 80.01)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "a4745200-6aa3-5897-a51d-f99c89beae92")
+	)
+	(junction
+		(at 66.04 80.01)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "d321e013-d81c-5cd8-bfee-d00848f77cd1")
+	)
+	(junction
+		(at 86.36 50.8)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "d3a0086e-f9e3-5b53-aec4-33bf7718c8c8")
+	)
+	(junction
+		(at 157.48 80.01)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "ec8f19a3-3a08-51e0-ba1d-376eab3d8056")
+	)
+	(no_connect
+		(at 45.72 85.09)
+		(uuid "09ab42f3-1dcf-5af3-aee1-655e32f86d8e")
+	)
+	(no_connect
+		(at 45.72 74.93)
+		(uuid "57760c47-e124-5ea0-ac37-6cb25954b9e3")
+	)
+	(no_connect
+		(at 45.72 87.63)
+		(uuid "5ac65754-d77c-507c-8e57-6fdebf653c2e")
+	)
+	(no_connect
+		(at 45.72 77.47)
+		(uuid "bb18ff2e-19f7-5832-91ed-28bdb7fa428a")
+	)
+	(wire
+		(pts
+			(xy 149.86 58.42) (xy 144.78 58.42)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2006350e-74ed-5631-ad1b-33884fe3c37a")
+	)
+	(wire
+		(pts
+			(xy 66.04 69.85) (xy 66.04 80.01)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2542cedd-7d9e-5f8d-84e0-8050b23ac854")
+	)
+	(wire
+		(pts
+			(xy 101.6 50.8) (xy 86.36 50.8)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2d2d68d7-7aa7-5545-9570-e789743e589b")
+	)
+	(wire
+		(pts
+			(xy 86.36 64.77) (xy 86.36 80.01)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3db56d4a-c334-5350-b541-54f5b1386a15")
+	)
+	(wire
+		(pts
+			(xy 45.72 82.55) (xy 50.8 82.55)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "458a4cbb-100a-5678-ada9-8cb12933bca0")
+	)
+	(wire
+		(pts
+			(xy 157.48 80.01) (xy 186.69 80.01)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "4a62b417-85eb-566f-91cf-459898f24040")
+	)
+	(wire
+		(pts
+			(xy 66.04 80.01) (xy 66.04 95.25)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "60e5a1c8-fdcb-5462-8357-ae4e23d59947")
+	)
+	(wire
+		(pts
+			(xy 86.36 50.8) (xy 86.36 57.15)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "661e89b1-18b3-5b42-ab7a-a74876924e9b")
+	)
+	(wire
+		(pts
+			(xy 233.68 95.25) (xy 233.68 80.01)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6e6c8da6-6cda-51fd-afc7-cce4080dd5f6")
+	)
+	(wire
+		(pts
+			(xy 233.68 80.01) (xy 251.46 80.01)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8328284a-8159-520b-805b-4345f3173dea")
+	)
+	(wire
+		(pts
+			(xy 157.48 63.5) (xy 157.48 80.01)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "98a62ce5-efa1-54c7-a6e2-01e91d3b8e7b")
+	)
+	(wire
+		(pts
+			(xy 213.36 80.01) (xy 213.36 95.25)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a0bd526d-d94d-500d-9a13-9fd3c56d37ca")
+	)
+	(wire
+		(pts
+			(xy 50.8 82.55) (xy 50.8 116.84)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a0cd0fef-85e7-5c75-ba08-65b409278aa9")
+	)
+	(wire
+		(pts
+			(xy 194.31 80.01) (xy 213.36 80.01)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a22bd451-8a2d-579e-b501-30da1a41526c")
+	)
+	(wire
+		(pts
+			(xy 213.36 80.01) (xy 233.68 80.01)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a6497cf9-8d02-5ef5-ba2e-f520d028c6de")
+	)
+	(wire
+		(pts
+			(xy 86.36 80.01) (xy 118.11 80.01)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a65d504c-1d56-5745-a491-ef0cb1f3d535")
+	)
+	(wire
+		(pts
+			(xy 165.1 58.42) (xy 172.72 58.42)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ab229d49-fd5c-545c-96ba-21b1e4e275cf")
+	)
+	(wire
+		(pts
+			(xy 125.73 80.01) (xy 157.48 80.01)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b0c9917d-14c5-5620-ba62-b4b8a831d600")
+	)
+	(wire
+		(pts
+			(xy 213.36 113.03) (xy 213.36 102.87)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "bd04a293-b1fe-495d-8dcd-7606bcc46344")
+	)
+	(wire
+		(pts
+			(xy 45.72 80.01) (xy 66.04 80.01)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "bf8654d1-95d8-55c4-be65-f7f653df5baf")
+	)
+	(wire
+		(pts
+			(xy 66.04 80.01) (xy 86.36 80.01)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d7f49ee9-b3a4-59e3-9e01-b3442c67948c")
+	)
+	(wire
+		(pts
+			(xy 60.96 50.8) (xy 86.36 50.8)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "db00bf5a-ec3d-50c3-85b2-b0525c022322")
+	)
+	(wire
+		(pts
+			(xy 66.04 102.87) (xy 66.04 111.76)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e41c0350-2ad2-56ea-aece-a85e35f4cac0")
+	)
+	(wire
+		(pts
+			(xy 214.63 113.03) (xy 213.36 113.03)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ec67864d-3efc-49f8-ad74-6af3b4061be7")
+	)
+	(label "WIND_DIR_RAW"
+		(at 53.34 80.01 0)
+		(effects
+			(font
+				(size 1 1)
+			)
+			(justify left)
+		)
+		(uuid "796bb14b-c4a2-5830-919c-a98de3313714")
+	)
+	(global_label "GND"
+		(shape passive)
+		(at 66.04 111.76 0)
+		(effects
+			(font
+				(size 1 1)
+			)
+			(justify left)
+		)
+		(uuid "1594d7a6-7b45-503e-ba7f-9946b18d95d9")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 66.04 111.76 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "GND"
+		(shape passive)
+		(at 144.78 58.42 0)
+		(effects
+			(font
+				(size 1 1)
+			)
+			(justify left)
+		)
+		(uuid "78c2fc14-73cc-534b-b78f-178b88b5f5a2")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 144.78 58.42 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "GND"
+		(shape passive)
+		(at 81.28 111.76 0)
+		(effects
+			(font
+				(size 1 1)
+			)
+			(justify left)
+		)
+		(uuid "898a8233-5aa6-59be-b6f4-de89b299920d")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 81.28 111.76 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "GND"
+		(shape passive)
+		(at 214.63 113.03 0)
+		(effects
+			(font
+				(size 1 1)
+			)
+			(justify left)
+		)
+		(uuid "8b31917f-54ca-580a-8441-48d911e95b3b")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 214.63 113.03 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "+3V3"
+		(shape passive)
+		(at 172.72 58.42 0)
+		(effects
+			(font
+				(size 1 1)
+			)
+			(justify left)
+		)
+		(uuid "a704513a-68e8-50c3-be93-2e7c4b43fb4f")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 172.72 58.42 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "GND"
+		(shape passive)
+		(at 50.8 116.84 0)
+		(effects
+			(font
+				(size 1 1)
+			)
+			(justify left)
+		)
+		(uuid "ab3cf1fc-98d0-522e-906f-93c63c2633b0")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 50.8 116.84 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+	)
+	(hierarchical_label "WIND_DIR_ADC"
+		(shape passive)
+		(at 251.46 80.01 0)
+		(effects
+			(font
+				(size 1 1)
+			)
+			(justify left)
+		)
+		(uuid "2d89464c-7c60-5808-903c-89dc04f404fe")
+	)
+	(hierarchical_label "VREF_SENSOR"
+		(shape input)
+		(at 60.96 50.8 180)
+		(effects
+			(font
+				(size 1 1)
+			)
+			(justify right)
+		)
+		(uuid "cd948559-651c-5c60-9e4a-0180cc0fcfd4")
+	)
+	(symbol
+		(lib_id "Connector:TestPoint")
+		(at 101.6 50.8 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board yes)
+		(dnp no)
+		(uuid "08b7e4c1-3230-526d-bf1c-c43cbb629315")
+		(property "Reference" "TP52"
+			(at 105.41 48.26 0)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Value" "VREF_SENSOR"
+			(at 105.41 50.8 0)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Footprint" "TestPoint:TestPoint_Pad_D1.5mm"
+			(at 101.6 50.8 0)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 101.6 50.8 0)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 101.6 50.8 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer" ""
+			(at 101.6 50.8 0)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" ""
+			(at 101.6 50.8 0)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" ""
+			(at 101.6 50.8 0)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC Part" ""
+			(at 101.6 50.8 0)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(hide yes)
+			)
+		)
+		(property "Rating" "Copper pad; no purchased component"
+			(at 101.6 50.8 0)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(hide yes)
+			)
+		)
+		(property "Function" "VREF_SENSOR"
+			(at 101.6 50.8 0)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "883c036f-720c-400e-bda7-3d3d302ab1f2")
+		)
+		(instances
+			(project "esquematico_V4"
+				(path "/0c305a6e-f9cd-49a1-b146-c2956e5469b6/058dce74-971b-49d7-82f0-384e20be985c/4ef75fdb-90eb-437a-af55-0afcbbe28aca"
+					(reference "TP52")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:D_Zener")
+		(at 66.04 99.06 270)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "0df91eb8-4016-5392-b4f6-51aa13068789")
+		(property "Reference" "D50"
+			(at 66.04 92.71 0)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Value" "PESD5V0S1UL"
+			(at 66.04 95.25 0)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Footprint" "Diode_SMD:D_SOD-882"
+			(at 66.04 99.06 0)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://assets.nexperia.com/documents/data-sheet/PESD5V0S1UL.pdf"
+			(at 66.04 99.06 0)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 66.04 99.06 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer" "Nexperia"
+			(at 66.04 99.06 0)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" "PESD5V0S1UL,315"
+			(at 66.04 99.06 0)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C85402"
+			(at 66.04 99.06 0)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC Part" "C85402"
+			(at 66.04 99.06 0)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(hide yes)
+			)
+		)
+		(property "Rating" "VRWM=5V; IR max 1uA at 5V/25C; see datasheet"
+			(at 66.04 99.06 0)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(hide yes)
+			)
+		)
+		(property "Function" "Protecao primaria; inclui fuga na tolerancia do ADC"
+			(at 66.04 99.06 0)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "dad8d247-4927-4402-80a9-dc094bab339c")
+		)
+		(pin "1"
+			(uuid "03df484e-07b7-4729-8c25-d755c5ae99e8")
+		)
+		(instances
+			(project "esquematico_V4"
+				(path "/0c305a6e-f9cd-49a1-b146-c2956e5469b6/058dce74-971b-49d7-82f0-384e20be985c/4ef75fdb-90eb-437a-af55-0afcbbe28aca"
+					(reference "D50")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Sensores_Meteo:BAS70-04")
+		(at 157.48 58.42 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "406a9269-c365-5c02-b092-872d6a4dae13")
+		(property "Reference" "D51"
+			(at 157.48 52.07 0)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Value" "BAS70-04"
+			(at 157.48 54.61 0)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Footprint" "Package_TO_SOT_SMD:SOT-23"
+			(at 157.48 58.42 0)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://assets.nexperia.com/documents/data-sheet/BAS70-04.pdf"
+			(at 157.48 58.42 0)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 157.48 58.42 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer" "Nexperia"
+			(at 157.48 58.42 0)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" "BAS70-04,215"
+			(at 157.48 58.42 0)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C389351"
+			(at 157.48 58.42 0)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC Part" "C389351"
+			(at 157.48 58.42 0)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(hide yes)
+			)
+		)
+		(property "Rating" "IR max 100nA at 50V/25C; 1=GND, 2=3V3, 3=signal"
+			(at 157.48 58.42 0)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(hide yes)
+			)
+		)
+		(property "Function" "Clamp para 3V3 digital; nao injeta diretamente na referencia analogica"
+			(at 157.48 58.42 0)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "90388dcc-ec79-4224-9709-ca73f9bcf134")
+		)
+		(pin "3"
+			(uuid "59a5af11-dd36-480f-ac4b-00a5c0172191")
+		)
+		(pin "2"
+			(uuid "ba244108-8c54-4c01-8aa9-438829c399a0")
+		)
+		(instances
+			(project "esquematico_V4"
+				(path "/0c305a6e-f9cd-49a1-b146-c2956e5469b6/058dce74-971b-49d7-82f0-384e20be985c/4ef75fdb-90eb-437a-af55-0afcbbe28aca"
+					(reference "D51")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector:TestPoint")
+		(at 66.04 69.85 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board yes)
+		(dnp no)
+		(uuid "5b8ffcac-99b1-5732-abdb-efa293498ecf")
+		(property "Reference" "TP50"
+			(at 69.85 67.31 0)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Value" "WIND_DIR_RAW"
+			(at 69.85 69.85 0)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Footprint" "TestPoint:TestPoint_Pad_D1.5mm"
+			(at 66.04 69.85 0)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 66.04 69.85 0)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 66.04 69.85 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer" ""
+			(at 66.04 69.85 0)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" ""
+			(at 66.04 69.85 0)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" ""
+			(at 66.04 69.85 0)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC Part" ""
+			(at 66.04 69.85 0)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(hide yes)
+			)
+		)
+		(property "Rating" "Copper pad; no purchased component"
+			(at 66.04 69.85 0)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(hide yes)
+			)
+		)
+		(property "Function" "WIND_DIR_RAW"
+			(at 66.04 69.85 0)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "3b9641a9-21c4-4484-9cd7-9d3b2baf49c8")
+		)
+		(instances
+			(project "esquematico_V4"
+				(path "/0c305a6e-f9cd-49a1-b146-c2956e5469b6/058dce74-971b-49d7-82f0-384e20be985c/4ef75fdb-90eb-437a-af55-0afcbbe28aca"
+					(reference "TP50")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R")
+		(at 190.5 80.01 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "6109a7b1-974e-5999-92cc-c756307bf321")
+		(property "Reference" "R52"
+			(at 190.5 73.66 0)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Value" "1k"
+			(at 190.5 76.2 0)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
+			(at 190.5 80.01 0)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.lcsc.com/product-detail/C21190.html"
+			(at 190.5 80.01 0)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 190.5 80.01 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer" "UNI-ROYAL"
+			(at 190.5 80.01 0)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" "0603WAF1001T5E"
+			(at 190.5 80.01 0)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C21190"
+			(at 190.5 80.01 0)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC Part" "C21190"
+			(at 190.5 80.01 0)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(hide yes)
+			)
+		)
+		(property "Rating" "1%; 0.1W; 75V"
+			(at 190.5 80.01 0)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(hide yes)
+			)
+		)
+		(property "Function" "Limita corrente residual no PA0 depois do clamp"
+			(at 190.5 80.01 0)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "fdcf38e8-abff-4a69-a9f3-96088900979b")
+		)
+		(pin "2"
+			(uuid "5cb2a2ca-4e83-46fe-a635-4261e18151ab")
+		)
+		(instances
+			(project "esquematico_V4"
+				(path "/0c305a6e-f9cd-49a1-b146-c2956e5469b6/058dce74-971b-49d7-82f0-384e20be985c/4ef75fdb-90eb-437a-af55-0afcbbe28aca"
+					(reference "R52")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R")
+		(at 121.92 80.01 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "616f3f03-0f02-57a1-a220-c89f75f6d361")
+		(property "Reference" "R51"
+			(at 125.73 77.47 0)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Value" "10k"
+			(at 121.92 76.2 0)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
+			(at 121.92 80.01 0)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.lcsc.com/product-detail/C25804.html"
+			(at 121.92 80.01 0)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 121.92 80.01 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer" "UNI-ROYAL"
+			(at 121.92 80.01 0)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" "0603WAF1002T5E"
+			(at 121.92 80.01 0)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C25804"
+			(at 121.92 80.01 0)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC Part" "C25804"
+			(at 121.92 80.01 0)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(hide yes)
+			)
+		)
+		(property "Rating" "1%; 0.1W; 75V"
+			(at 121.92 80.01 0)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(hide yes)
+			)
+		)
+		(property "Function" "Isola a protecao secundaria do divisor"
+			(at 121.92 80.01 0)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "a73aa664-01c7-4088-b407-0d0892c7b888")
+		)
+		(pin "1"
+			(uuid "4784c436-8365-4471-b666-442394cc5937")
+		)
+		(instances
+			(project "esquematico_V4"
+				(path "/0c305a6e-f9cd-49a1-b146-c2956e5469b6/058dce74-971b-49d7-82f0-384e20be985c/4ef75fdb-90eb-437a-af55-0afcbbe28aca"
+					(reference "R51")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:C")
+		(at 213.36 99.06 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "9deaf77c-6d60-505f-b787-7fdc1ee2dd70")
+		(property "Reference" "C50"
+			(at 217.17 96.52 0)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Value" "10n"
+			(at 217.17 99.06 0)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
+			(at 213.36 99.06 0)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.lcsc.com/product-detail/C57112.html"
+			(at 213.36 99.06 0)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 213.36 99.06 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer" "FH"
+			(at 213.36 99.06 0)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" "0603B103K500NT"
+			(at 213.36 99.06 0)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C57112"
+			(at 213.36 99.06 0)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC Part" "C57112"
+			(at 213.36 99.06 0)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(hide yes)
+			)
+		)
+		(property "Rating" "10%; 50V; X7R"
+			(at 213.36 99.06 0)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(hide yes)
+			)
+		)
+		(property "Function" "Filtro / reservatorio de carga do ADC"
+			(at 213.36 99.06 0)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "cc9ef810-0119-47da-8f3d-6a339a28f602")
+		)
+		(pin "2"
+			(uuid "c01d2f43-b8b0-4aae-ae79-53e7dfb1f9fe")
+		)
+		(instances
+			(project "esquematico_V4"
+				(path "/0c305a6e-f9cd-49a1-b146-c2956e5469b6/058dce74-971b-49d7-82f0-384e20be985c/4ef75fdb-90eb-437a-af55-0afcbbe28aca"
+					(reference "C50")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector:TestPoint")
+		(at 233.68 95.25 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board yes)
+		(dnp no)
+		(uuid "bc6ce421-fe3a-583b-86fd-f57e4b83e73b")
+		(property "Reference" "TP51"
+			(at 237.49 92.71 0)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Value" "WIND_DIR_ADC"
+			(at 237.49 95.25 0)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Footprint" "TestPoint:TestPoint_Pad_D1.5mm"
+			(at 233.68 95.25 0)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 233.68 95.25 0)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 233.68 95.25 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer" ""
+			(at 233.68 95.25 0)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" ""
+			(at 233.68 95.25 0)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" ""
+			(at 233.68 95.25 0)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC Part" ""
+			(at 233.68 95.25 0)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(hide yes)
+			)
+		)
+		(property "Rating" "Copper pad; no purchased component"
+			(at 233.68 95.25 0)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(hide yes)
+			)
+		)
+		(property "Function" "WIND_DIR_ADC"
+			(at 233.68 95.25 0)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "064c6c73-e7e6-4397-b9e8-6425feb1977a")
+		)
+		(instances
+			(project "esquematico_V4"
+				(path "/0c305a6e-f9cd-49a1-b146-c2956e5469b6/058dce74-971b-49d7-82f0-384e20be985c/4ef75fdb-90eb-437a-af55-0afcbbe28aca"
+					(reference "TP51")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector:TestPoint")
+		(at 81.28 111.76 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board yes)
+		(dnp no)
+		(uuid "db6f2146-df0a-5a69-bb82-2b6a9bfc80c6")
+		(property "Reference" "TP53"
+			(at 85.09 109.22 0)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Value" "GND"
+			(at 87.376 111.76 0)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Footprint" "TestPoint:TestPoint_Pad_D1.5mm"
+			(at 81.28 111.76 0)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 81.28 111.76 0)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 81.28 111.76 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer" ""
+			(at 81.28 111.76 0)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" ""
+			(at 81.28 111.76 0)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" ""
+			(at 81.28 111.76 0)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC Part" ""
+			(at 81.28 111.76 0)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(hide yes)
+			)
+		)
+		(property "Rating" "Copper pad; no purchased component"
+			(at 81.28 111.76 0)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(hide yes)
+			)
+		)
+		(property "Function" "GND"
+			(at 81.28 111.76 0)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "dcfb5fed-7fc2-4742-927e-2256d5adfea9")
+		)
+		(instances
+			(project "esquematico_V4"
+				(path "/0c305a6e-f9cd-49a1-b146-c2956e5469b6/058dce74-971b-49d7-82f0-384e20be985c/4ef75fdb-90eb-437a-af55-0afcbbe28aca"
+					(reference "TP53")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R")
+		(at 86.36 60.96 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "dda97596-0f87-5db8-a6f1-08dcedb381c7")
+		(property "Reference" "R50"
+			(at 90.17 58.42 0)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Value" "10k"
+			(at 90.17 60.96 0)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
+			(at 86.36 60.96 0)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.lcsc.com/product-detail/C25804.html"
+			(at 86.36 60.96 0)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 86.36 60.96 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer" "UNI-ROYAL"
+			(at 86.36 60.96 0)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" "0603WAF1002T5E"
+			(at 86.36 60.96 0)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C25804"
+			(at 86.36 60.96 0)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC Part" "C25804"
+			(at 86.36 60.96 0)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(hide yes)
+			)
+		)
+		(property "Rating" "1%; 0.1W; 75V"
+			(at 86.36 60.96 0)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(hide yes)
+			)
+		)
+		(property "Function" "Referencia do divisor; mesma fonte de VREF+ do ADC"
+			(at 86.36 60.96 0)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "1ae93804-da19-43da-891c-29443dca7590")
+		)
+		(pin "1"
+			(uuid "83f14680-d58b-4a32-91c3-61906a585930")
+		)
+		(instances
+			(project "esquematico_V4"
+				(path "/0c305a6e-f9cd-49a1-b146-c2956e5469b6/058dce74-971b-49d7-82f0-384e20be985c/4ef75fdb-90eb-437a-af55-0afcbbe28aca"
+					(reference "R50")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Sensores_Meteo:PCB-6P6C-90")
+		(at 35.56 81.28 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "f219c2a7-eb7b-4c19-8ebe-925c739f9cef")
+		(property "Reference" "J32"
+			(at 35.56 71.12 0)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Value" "R-RJ11R06P-A800"
+			(at 35.56 73.66 0)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Footprint" "Sensores_Meteo:RJ11-TH_PCB-6P6C-90"
+			(at 35.56 81.28 0)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.lcsc.com/product-detail/C189750.html"
+			(at 35.56 81.28 0)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 35.56 81.28 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer" "Ckmtw"
+			(at 35.56 81.28 0)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" "R-RJ11R06P-A800"
+			(at 35.56 81.28 0)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C189750"
+			(at 35.56 81.28 0)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC Part" "C189750"
+			(at 35.56 81.28 0)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(hide yes)
+			)
+		)
+		(property "Rating" "6P6C; p3=return; p4=signal; THT"
+			(at 35.56 81.28 0)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(hide yes)
+			)
+		)
+		(property "Function" "RJ11 individual; contatos centrais"
+			(at 35.56 81.28 0)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(hide yes)
+			)
+		)
+		(pin "6"
+			(uuid "b7f0e1b1-3358-44d3-877e-c0cacdf2a916")
+		)
+		(pin "1"
+			(uuid "7e037471-f7d6-4298-b190-1ab7cd3403bb")
+		)
+		(pin "3"
+			(uuid "cddb0312-5b6c-47bc-a036-7703865772f5")
+		)
+		(pin "5"
+			(uuid "46e7939a-937b-4918-a2ac-a32ad3f1420b")
+		)
+		(pin "2"
+			(uuid "c11f3a79-3a55-4490-8c08-3bd09014db6b")
+		)
+		(pin "4"
+			(uuid "f42ac40c-3048-43d2-ac8e-cd1251b1933e")
+		)
+		(instances
+			(project "esquematico_V4"
+				(path "/0c305a6e-f9cd-49a1-b146-c2956e5469b6/058dce74-971b-49d7-82f0-384e20be985c/4ef75fdb-90eb-437a-af55-0afcbbe28aca"
+					(reference "J32")
+					(unit 1)
+				)
+			)
+		)
+	)
+)
