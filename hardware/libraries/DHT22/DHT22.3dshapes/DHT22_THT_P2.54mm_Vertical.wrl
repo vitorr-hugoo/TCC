@@ -1,0 +1,8 @@
+#VRML V2.0 utf8
+# Simplified mechanical representation for the DHT22 / AM2302 footprint.
+Shape {
+  appearance Appearance {
+    material Material { diffuseColor 0.86 0.86 0.86 }
+  }
+  geometry Box { size 15.4 25.3 7.8 }
+}

@@ -7,7 +7,7 @@
 	(lib_symbols)
 	(text "Folha de integração dos sensores meteorológicos.\nCada subfolha contém o conector RJ11 e seu condicionamento dedicado."
 		(exclude_from_sim no)
-		(at 30.48 20.32 0)
+		(at 119.38 44.45 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -18,7 +18,17 @@
 	)
 	(wire
 		(pts
-			(xy 73.66 38.1) (xy 101.6 38.1)
+			(xy 109.22 124.46) (xy 119.38 124.46)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "0791e031-f68a-4b15-a599-5ff0a3ae91de")
+	)
+	(wire
+		(pts
+			(xy 162.56 62.23) (xy 190.5 62.23)
 		)
 		(stroke
 			(width 0)
@@ -28,7 +38,7 @@
 	)
 	(wire
 		(pts
-			(xy 73.66 101.6) (xy 101.6 101.6)
+			(xy 162.56 123.19) (xy 190.5 123.19)
 		)
 		(stroke
 			(width 0)
@@ -38,17 +48,7 @@
 	)
 	(wire
 		(pts
-			(xy 15.24 101.6) (xy 30.48 101.6)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "d3403a51-e3b0-52a5-95b0-b8cba66ce3c8")
-	)
-	(wire
-		(pts
-			(xy 73.66 69.85) (xy 101.6 69.85)
+			(xy 162.56 91.44) (xy 190.5 91.44)
 		)
 		(stroke
 			(width 0)
@@ -58,7 +58,7 @@
 	)
 	(hierarchical_label "RAIN_PULSE"
 		(shape output)
-		(at 101.6 38.1 0)
+		(at 190.5 62.23 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -67,9 +67,9 @@
 		)
 		(uuid "25e4168b-6d53-4d15-b1ed-3d7fa38e52bb")
 	)
-	(hierarchical_label "VREF_SENSOR"
+	(hierarchical_label "AVREF_SENSOR"
 		(shape input)
-		(at 15.24 101.6 180)
+		(at 109.22 124.46 180)
 		(effects
 			(font
 				(size 1 1)
@@ -80,7 +80,7 @@
 	)
 	(hierarchical_label "WIND_DIR_ADC"
 		(shape passive)
-		(at 101.6 101.6 0)
+		(at 190.5 123.19 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -91,7 +91,7 @@
 	)
 	(hierarchical_label "WIND_SPEED_PULSE"
 		(shape output)
-		(at 101.6 69.85 0)
+		(at 190.5 91.44 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -101,7 +101,7 @@
 		(uuid "c8323432-ad03-495b-a6fe-edd2c939cacb")
 	)
 	(sheet
-		(at 30.48 93.98)
+		(at 119.38 115.57)
 		(size 43.18 15.24)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -117,7 +117,7 @@
 		)
 		(uuid "4ef75fdb-90eb-437a-af55-0afcbbe28aca")
 		(property "Sheetname" "BIRUTA"
-			(at 30.48 93.2684 0)
+			(at 119.38 114.8584 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -126,7 +126,7 @@
 			)
 		)
 		(property "Sheetfile" "biruta.kicad_sch"
-			(at 30.48 109.9316 0)
+			(at 119.38 131.5216 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -135,7 +135,7 @@
 			)
 		)
 		(pin "WIND_DIR_ADC" passive
-			(at 73.66 101.6 0)
+			(at 162.56 123.19 0)
 			(uuid "b28a7ae6-5a3f-44b1-9e5d-486ff659ad8e")
 			(effects
 				(font
@@ -144,17 +144,18 @@
 				(justify right)
 			)
 		)
-		(pin "VREF_SENSOR" input
-			(at 30.48 101.6 180)
+		(pin "AVREF_SENSOR" input
+			(at 119.38 124.46 180)
 			(uuid "2cbb9131-2930-5496-ae7b-48f7c02269d0")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(justify left)
 			)
 		)
 		(instances
-			(project "esquematico_V4"
+			(project "estacao-meteorologica"
 				(path "/0c305a6e-f9cd-49a1-b146-c2956e5469b6/058dce74-971b-49d7-82f0-384e20be985c"
 					(page "12")
 				)
@@ -162,7 +163,7 @@
 		)
 	)
 	(sheet
-		(at 30.48 62.23)
+		(at 119.38 83.82)
 		(size 43.18 15.24)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -178,7 +179,7 @@
 		)
 		(uuid "9f29de2e-b04a-471a-b3f5-0032147ee0d6")
 		(property "Sheetname" "ANEMOMETRO"
-			(at 30.48 61.5184 0)
+			(at 119.38 83.1084 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -187,7 +188,7 @@
 			)
 		)
 		(property "Sheetfile" "anemometro.kicad_sch"
-			(at 30.48 78.1816 0)
+			(at 119.38 99.7716 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -196,7 +197,7 @@
 			)
 		)
 		(pin "WIND_SPEED_PULSE" output
-			(at 73.66 69.85 0)
+			(at 162.56 91.44 0)
 			(uuid "895752ce-5319-4eef-8a2e-06e984890c38")
 			(effects
 				(font
@@ -206,7 +207,7 @@
 			)
 		)
 		(instances
-			(project "esquematico_V4"
+			(project "estacao-meteorologica"
 				(path "/0c305a6e-f9cd-49a1-b146-c2956e5469b6/058dce74-971b-49d7-82f0-384e20be985c"
 					(page "11")
 				)
@@ -214,7 +215,7 @@
 		)
 	)
 	(sheet
-		(at 30.48 30.48)
+		(at 119.38 54.61)
 		(size 43.18 15.24)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -230,7 +231,7 @@
 		)
 		(uuid "e9242eb5-e685-47a2-8464-3e1e52960bb8")
 		(property "Sheetname" "PLUVIOMETRO"
-			(at 30.48 29.7684 0)
+			(at 119.38 53.8984 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -239,7 +240,7 @@
 			)
 		)
 		(property "Sheetfile" "pluviometro.kicad_sch"
-			(at 30.48 46.4316 0)
+			(at 119.38 70.5616 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -248,7 +249,7 @@
 			)
 		)
 		(pin "RAIN_PULSE" output
-			(at 73.66 38.1 0)
+			(at 162.56 62.23 0)
 			(uuid "f3cf9c64-b089-4666-8e0c-2cd3ce786475")
 			(effects
 				(font
@@ -258,7 +259,7 @@
 			)
 		)
 		(instances
-			(project "esquematico_V4"
+			(project "estacao-meteorologica"
 				(path "/0c305a6e-f9cd-49a1-b146-c2956e5469b6/058dce74-971b-49d7-82f0-384e20be985c"
 					(page "10")
 				)

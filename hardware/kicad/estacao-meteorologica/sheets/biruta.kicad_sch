@@ -1060,7 +1060,7 @@
 	)
 	(text "3  FILTRO / ADC"
 		(exclude_from_sim no)
-		(at 203.2 38.1 0)
+		(at 203.708 42.672 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -1069,9 +1069,9 @@
 		)
 		(uuid "0b703673-82ea-5265-972a-b255be724e40")
 	)
-	(text "MISOL WH-SP-WD: rede resistiva passiva; 8 chaves / ate 16 codigos; cabo ~2 m."
+	(text "MISOL WH-SP-WD: rede resistiva passiva; 8 chaves / ate 16 codigos; cabo ~2 m.\nJ32: p2=direcao do vento; p5=GND. p3=+3V3 e p4=Anem/Pluv_Sig sao passagem reservada, sem conexao aos condicionamentos."
 		(exclude_from_sim no)
-		(at 20.32 20.32 0)
+		(at 21.082 34.29 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -1082,7 +1082,7 @@
 	)
 	(text "1  CONECTOR / DIVISOR"
 		(exclude_from_sim no)
-		(at 20.32 38.1 0)
+		(at 20.828 42.672 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -1091,9 +1091,9 @@
 		)
 		(uuid "7143d130-b54d-531b-b487-b31ff9e1854b")
 	)
-	(text "R50=10k 1%; ADC ideal=4095*R_sensor/(10000+R_sensor).\nR51/R52 estao APOS o divisor: nao entram na relacao DC ideal.\nRfonte maxima ~20,23k; tau maxima ~202 us; validar tempo ADC (144 ciclos)."
+	(text "R50=10k 1%; ADC ideal=4095*R_sensor/(10000+R_sensor).\nR51/R52 estao APOS o divisor: nao entram na relacao DC ideal.\nRfonte maxima ~20,23k; C50=100n: tau maxima ~2,02 ms; validar tempo ADC (144 ciclos)."
 		(exclude_from_sim no)
-		(at 20.32 134.62 0)
+		(at 23.114 118.872 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -1104,7 +1104,7 @@
 	)
 	(text "2  LIMITACAO / CLAMP"
 		(exclude_from_sim no)
-		(at 111.76 38.1 0)
+		(at 112.268 42.672 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -1113,9 +1113,9 @@
 		)
 		(uuid "aa2e37d0-5fa5-54bb-bd51-4259a2c19ef9")
 	)
-	(text "VREF_SENSOR vem de U5 CN10_7 (AVDD). Nao unir ao 3V3 digital por etiqueta.\nC50 junto ao PA0; retorno GND curto. Medir offsets por fuga e temperatura.\nA LUT ativa do firmware tem 16 entradas; 8 e o numero de amostras por leitura."
+	(text "AVREF_SENSOR deve vir de VDDA/AVDD do STM32, apos o filtro analogico; nao unir ao 3V3 digital por etiqueta.\nC50 junto ao PA0; retorno GND curto. Medir offsets por fuga e temperatura.\nA LUT ativa do firmware tem 16 entradas; 8 e o numero de amostras por leitura."
 		(exclude_from_sim no)
-		(at 20.32 157.48 0)
+		(at 22.86 132.588 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -1125,10 +1125,10 @@
 		(uuid "f06a2197-8154-5d0d-b182-d7abc08f2175")
 	)
 	(junction
-		(at 233.68 80.01)
+		(at 49.53 82.55)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "11f5317e-49c0-5a2a-8182-df4b3da0abc7")
+		(uuid "85ed2bd7-d0f7-40de-a6e5-ae795ddff853")
 	)
 	(junction
 		(at 213.36 80.01)
@@ -1141,6 +1141,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "a4745200-6aa3-5897-a51d-f99c89beae92")
+	)
+	(junction
+		(at 232.41 80.01)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "a631b19e-fac9-483e-b6bb-cfd36493da3b")
 	)
 	(junction
 		(at 66.04 80.01)
@@ -1161,20 +1167,32 @@
 		(uuid "ec8f19a3-3a08-51e0-ba1d-376eab3d8056")
 	)
 	(no_connect
-		(at 45.72 85.09)
-		(uuid "09ab42f3-1dcf-5af3-aee1-655e32f86d8e")
-	)
-	(no_connect
-		(at 45.72 74.93)
+		(at 45.72 72.39)
 		(uuid "57760c47-e124-5ea0-ac37-6cb25954b9e3")
 	)
 	(no_connect
-		(at 45.72 87.63)
+		(at 45.72 85.09)
 		(uuid "5ac65754-d77c-507c-8e57-6fdebf653c2e")
 	)
-	(no_connect
-		(at 45.72 77.47)
-		(uuid "bb18ff2e-19f7-5832-91ed-28bdb7fa428a")
+	(wire
+		(pts
+			(xy 60.96 80.01) (xy 66.04 80.01)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "041a2283-fd39-4263-85ba-bd34bc5daab3")
+	)
+	(wire
+		(pts
+			(xy 49.53 74.93) (xy 49.53 60.96)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "09a5aadf-1fbb-49bb-8be2-cd90fa36f889")
 	)
 	(wire
 		(pts
@@ -1198,7 +1216,7 @@
 	)
 	(wire
 		(pts
-			(xy 101.6 50.8) (xy 86.36 50.8)
+			(xy 90.17 50.8) (xy 86.36 50.8)
 		)
 		(stroke
 			(width 0)
@@ -1218,16 +1236,6 @@
 	)
 	(wire
 		(pts
-			(xy 45.72 82.55) (xy 50.8 82.55)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "458a4cbb-100a-5678-ada9-8cb12933bca0")
-	)
-	(wire
-		(pts
 			(xy 157.48 80.01) (xy 186.69 80.01)
 		)
 		(stroke
@@ -1235,6 +1243,36 @@
 			(type default)
 		)
 		(uuid "4a62b417-85eb-566f-91cf-459898f24040")
+	)
+	(wire
+		(pts
+			(xy 49.53 82.55) (xy 60.96 82.55)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "4e246008-e739-47b4-9788-3d669996fbdf")
+	)
+	(wire
+		(pts
+			(xy 232.41 80.01) (xy 251.46 80.01)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "53e219d8-7c92-4af7-a0da-dc8463f8cdcc")
+	)
+	(wire
+		(pts
+			(xy 45.72 82.55) (xy 49.53 82.55)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5a72175d-9e16-47ea-8dd6-9d779cee3f2e")
 	)
 	(wire
 		(pts
@@ -1258,7 +1296,7 @@
 	)
 	(wire
 		(pts
-			(xy 233.68 95.25) (xy 233.68 80.01)
+			(xy 232.41 95.25) (xy 232.41 80.01)
 		)
 		(stroke
 			(width 0)
@@ -1268,13 +1306,23 @@
 	)
 	(wire
 		(pts
-			(xy 233.68 80.01) (xy 251.46 80.01)
+			(xy 60.96 82.55) (xy 60.96 80.01)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "8328284a-8159-520b-805b-4345f3173dea")
+		(uuid "83db9767-c33e-4cd9-96cd-af0a7a6792a9")
+	)
+	(wire
+		(pts
+			(xy 49.53 60.96) (xy 50.8 60.96)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "942c91f4-89d6-4a32-92d8-a6c29f37e2b8")
 	)
 	(wire
 		(pts
@@ -1298,16 +1346,6 @@
 	)
 	(wire
 		(pts
-			(xy 50.8 82.55) (xy 50.8 116.84)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "a0cd0fef-85e7-5c75-ba08-65b409278aa9")
-	)
-	(wire
-		(pts
 			(xy 194.31 80.01) (xy 213.36 80.01)
 		)
 		(stroke
@@ -1318,7 +1356,17 @@
 	)
 	(wire
 		(pts
-			(xy 213.36 80.01) (xy 233.68 80.01)
+			(xy 45.72 74.93) (xy 49.53 74.93)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a22caf58-3642-4a40-b078-c62b3b43f4f2")
+	)
+	(wire
+		(pts
+			(xy 213.36 80.01) (xy 232.41 80.01)
 		)
 		(stroke
 			(width 0)
@@ -1348,6 +1396,16 @@
 	)
 	(wire
 		(pts
+			(xy 49.53 83.82) (xy 49.53 82.55)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ae9d5740-2dcc-4aec-b931-2bf63fd14f62")
+	)
+	(wire
+		(pts
 			(xy 125.73 80.01) (xy 157.48 80.01)
 		)
 		(stroke
@@ -1368,16 +1426,6 @@
 	)
 	(wire
 		(pts
-			(xy 45.72 80.01) (xy 66.04 80.01)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "bf8654d1-95d8-55c4-be65-f7f653df5baf")
-	)
-	(wire
-		(pts
 			(xy 66.04 80.01) (xy 86.36 80.01)
 		)
 		(stroke
@@ -1388,7 +1436,7 @@
 	)
 	(wire
 		(pts
-			(xy 60.96 50.8) (xy 86.36 50.8)
+			(xy 82.55 50.8) (xy 86.36 50.8)
 		)
 		(stroke
 			(width 0)
@@ -1417,7 +1465,7 @@
 		(uuid "ec67864d-3efc-49f8-ad74-6af3b4061be7")
 	)
 	(label "WIND_DIR_RAW"
-		(at 53.34 80.01 0)
+		(at 49.53 83.82 0)
 		(effects
 			(font
 				(size 1 1)
@@ -1446,14 +1494,56 @@
 			)
 		)
 	)
-	(global_label "GND"
+	(global_label "Anem{slash}Pluv_Sig"
+		(shape output)
+		(at 45.72 77.47 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "375e479c-9cff-4497-8b94-6b7bd042ad78")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 63.0379 77.47 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "+3V3"
 		(shape passive)
-		(at 144.78 58.42 0)
+		(at 45.72 80.01 0)
 		(effects
 			(font
 				(size 1 1)
 			)
 			(justify left)
+		)
+		(uuid "579a276a-2ff9-4e95-b6ca-a066ab04755f")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 45.72 80.01 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "GND"
+		(shape passive)
+		(at 144.78 58.42 180)
+		(effects
+			(font
+				(size 1 1)
+			)
+			(justify right)
 		)
 		(uuid "78c2fc14-73cc-534b-b78f-178b88b5f5a2")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
@@ -1528,7 +1618,7 @@
 	)
 	(global_label "GND"
 		(shape passive)
-		(at 50.8 116.84 0)
+		(at 50.8 60.96 0)
 		(effects
 			(font
 				(size 1 1)
@@ -1537,7 +1627,7 @@
 		)
 		(uuid "ab3cf1fc-98d0-522e-906f-93c63c2633b0")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 50.8 116.84 0)
+			(at 50.8 60.96 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1557,9 +1647,9 @@
 		)
 		(uuid "2d89464c-7c60-5808-903c-89dc04f404fe")
 	)
-	(hierarchical_label "VREF_SENSOR"
+	(hierarchical_label "AVREF_SENSOR"
 		(shape input)
-		(at 60.96 50.8 180)
+		(at 82.55 50.8 180)
 		(effects
 			(font
 				(size 1 1)
@@ -1570,7 +1660,7 @@
 	)
 	(symbol
 		(lib_id "Connector:TestPoint")
-		(at 101.6 50.8 0)
+		(at 90.17 50.8 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom no)
@@ -1578,15 +1668,15 @@
 		(dnp no)
 		(uuid "08b7e4c1-3230-526d-bf1c-c43cbb629315")
 		(property "Reference" "TP52"
-			(at 105.41 48.26 0)
+			(at 93.98 48.26 0)
 			(effects
 				(font
 					(size 1 1)
 				)
 			)
 		)
-		(property "Value" "VREF_SENSOR"
-			(at 105.41 50.8 0)
+		(property "Value" "AVREF_SENSOR"
+			(at 96.52 52.07 0)
 			(effects
 				(font
 					(size 1 1)
@@ -1594,7 +1684,7 @@
 			)
 		)
 		(property "Footprint" "TestPoint:TestPoint_Pad_D1.5mm"
-			(at 101.6 50.8 0)
+			(at 90.17 50.8 0)
 			(effects
 				(font
 					(size 1 1)
@@ -1603,7 +1693,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 101.6 50.8 0)
+			(at 90.17 50.8 0)
 			(effects
 				(font
 					(size 1 1)
@@ -1612,7 +1702,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 101.6 50.8 0)
+			(at 90.17 50.8 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1620,7 +1710,7 @@
 			)
 		)
 		(property "Manufacturer" ""
-			(at 101.6 50.8 0)
+			(at 90.17 50.8 0)
 			(effects
 				(font
 					(size 1 1)
@@ -1629,7 +1719,7 @@
 			)
 		)
 		(property "MPN" ""
-			(at 101.6 50.8 0)
+			(at 90.17 50.8 0)
 			(effects
 				(font
 					(size 1 1)
@@ -1638,7 +1728,7 @@
 			)
 		)
 		(property "LCSC" ""
-			(at 101.6 50.8 0)
+			(at 90.17 50.8 0)
 			(effects
 				(font
 					(size 1 1)
@@ -1647,7 +1737,7 @@
 			)
 		)
 		(property "LCSC Part" ""
-			(at 101.6 50.8 0)
+			(at 90.17 50.8 0)
 			(effects
 				(font
 					(size 1 1)
@@ -1656,7 +1746,7 @@
 			)
 		)
 		(property "Rating" "Copper pad; no purchased component"
-			(at 101.6 50.8 0)
+			(at 90.17 50.8 0)
 			(effects
 				(font
 					(size 1 1)
@@ -1664,8 +1754,8 @@
 				(hide yes)
 			)
 		)
-		(property "Function" "VREF_SENSOR"
-			(at 101.6 50.8 0)
+		(property "Function" "AVREF_SENSOR"
+			(at 90.17 50.8 0)
 			(effects
 				(font
 					(size 1 1)
@@ -2055,7 +2145,7 @@
 		(dnp no)
 		(uuid "6109a7b1-974e-5999-92cc-c756307bf321")
 		(property "Reference" "R52"
-			(at 190.5 73.66 0)
+			(at 190.5 77.47 90)
 			(effects
 				(font
 					(size 1 1)
@@ -2063,7 +2153,7 @@
 			)
 		)
 		(property "Value" "1k"
-			(at 190.5 76.2 0)
+			(at 190.754 82.55 90)
 			(effects
 				(font
 					(size 1 1)
@@ -2175,7 +2265,7 @@
 		(dnp no)
 		(uuid "616f3f03-0f02-57a1-a220-c89f75f6d361")
 		(property "Reference" "R51"
-			(at 125.73 77.47 0)
+			(at 122.174 77.724 90)
 			(effects
 				(font
 					(size 1 1)
@@ -2183,7 +2273,7 @@
 			)
 		)
 		(property "Value" "10k"
-			(at 121.92 76.2 0)
+			(at 122.174 82.55 90)
 			(effects
 				(font
 					(size 1 1)
@@ -2302,8 +2392,8 @@
 				)
 			)
 		)
-		(property "Value" "10n"
-			(at 217.17 99.06 0)
+		(property "Value" "100n"
+			(at 217.932 99.568 0)
 			(effects
 				(font
 					(size 1 1)
@@ -2407,7 +2497,7 @@
 	)
 	(symbol
 		(lib_id "Connector:TestPoint")
-		(at 233.68 95.25 0)
+		(at 232.41 95.25 180)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom no)
@@ -2415,7 +2505,7 @@
 		(dnp no)
 		(uuid "bc6ce421-fe3a-583b-86fd-f57e4b83e73b")
 		(property "Reference" "TP51"
-			(at 237.49 92.71 0)
+			(at 238.252 98.044 0)
 			(effects
 				(font
 					(size 1 1)
@@ -2423,7 +2513,7 @@
 			)
 		)
 		(property "Value" "WIND_DIR_ADC"
-			(at 237.49 95.25 0)
+			(at 238.252 95.504 0)
 			(effects
 				(font
 					(size 1 1)
@@ -2431,7 +2521,7 @@
 			)
 		)
 		(property "Footprint" "TestPoint:TestPoint_Pad_D1.5mm"
-			(at 233.68 95.25 0)
+			(at 232.41 95.25 0)
 			(effects
 				(font
 					(size 1 1)
@@ -2440,7 +2530,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 233.68 95.25 0)
+			(at 232.41 95.25 0)
 			(effects
 				(font
 					(size 1 1)
@@ -2449,7 +2539,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 233.68 95.25 0)
+			(at 232.41 95.25 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2457,7 +2547,7 @@
 			)
 		)
 		(property "Manufacturer" ""
-			(at 233.68 95.25 0)
+			(at 232.41 95.25 0)
 			(effects
 				(font
 					(size 1 1)
@@ -2466,7 +2556,7 @@
 			)
 		)
 		(property "MPN" ""
-			(at 233.68 95.25 0)
+			(at 232.41 95.25 0)
 			(effects
 				(font
 					(size 1 1)
@@ -2475,7 +2565,7 @@
 			)
 		)
 		(property "LCSC" ""
-			(at 233.68 95.25 0)
+			(at 232.41 95.25 0)
 			(effects
 				(font
 					(size 1 1)
@@ -2484,7 +2574,7 @@
 			)
 		)
 		(property "LCSC Part" ""
-			(at 233.68 95.25 0)
+			(at 232.41 95.25 0)
 			(effects
 				(font
 					(size 1 1)
@@ -2493,7 +2583,7 @@
 			)
 		)
 		(property "Rating" "Copper pad; no purchased component"
-			(at 233.68 95.25 0)
+			(at 232.41 95.25 0)
 			(effects
 				(font
 					(size 1 1)
@@ -2502,7 +2592,7 @@
 			)
 		)
 		(property "Function" "WIND_DIR_ADC"
-			(at 233.68 95.25 0)
+			(at 232.41 95.25 0)
 			(effects
 				(font
 					(size 1 1)
@@ -2761,7 +2851,7 @@
 	)
 	(symbol
 		(lib_id "Sensores_Meteo:PCB-6P6C-90")
-		(at 35.56 81.28 0)
+		(at 35.56 78.74 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -2769,7 +2859,7 @@
 		(dnp no)
 		(uuid "f219c2a7-eb7b-4c19-8ebe-925c739f9cef")
 		(property "Reference" "J32"
-			(at 35.56 71.12 0)
+			(at 34.544 67.818 0)
 			(effects
 				(font
 					(size 1 1)
@@ -2777,7 +2867,7 @@
 			)
 		)
 		(property "Value" "R-RJ11R06P-A800"
-			(at 35.56 73.66 0)
+			(at 33.274 70.104 0)
 			(effects
 				(font
 					(size 1 1)
@@ -2785,7 +2875,7 @@
 			)
 		)
 		(property "Footprint" "Sensores_Meteo:RJ11-TH_PCB-6P6C-90"
-			(at 35.56 81.28 0)
+			(at 35.56 78.74 0)
 			(effects
 				(font
 					(size 1 1)
@@ -2794,7 +2884,7 @@
 			)
 		)
 		(property "Datasheet" "https://www.lcsc.com/product-detail/C189750.html"
-			(at 35.56 81.28 0)
+			(at 35.56 78.74 0)
 			(effects
 				(font
 					(size 1 1)
@@ -2803,7 +2893,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 35.56 81.28 0)
+			(at 35.56 78.74 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2811,7 +2901,7 @@
 			)
 		)
 		(property "Manufacturer" "Ckmtw"
-			(at 35.56 81.28 0)
+			(at 35.56 78.74 0)
 			(effects
 				(font
 					(size 1 1)
@@ -2820,7 +2910,7 @@
 			)
 		)
 		(property "MPN" "R-RJ11R06P-A800"
-			(at 35.56 81.28 0)
+			(at 35.56 78.74 0)
 			(effects
 				(font
 					(size 1 1)
@@ -2829,7 +2919,7 @@
 			)
 		)
 		(property "LCSC" "C189750"
-			(at 35.56 81.28 0)
+			(at 35.56 78.74 0)
 			(effects
 				(font
 					(size 1 1)
@@ -2838,7 +2928,7 @@
 			)
 		)
 		(property "LCSC Part" "C189750"
-			(at 35.56 81.28 0)
+			(at 35.56 78.74 0)
 			(effects
 				(font
 					(size 1 1)
@@ -2846,8 +2936,8 @@
 				(hide yes)
 			)
 		)
-		(property "Rating" "6P6C; p3=return; p4=signal; THT"
-			(at 35.56 81.28 0)
+		(property "Rating" "6P6C; p2=direcao; p5=GND; p3=+3V3 e p4=passagem reservada; THT"
+			(at 35.56 78.74 0)
 			(effects
 				(font
 					(size 1 1)
@@ -2855,8 +2945,8 @@
 				(hide yes)
 			)
 		)
-		(property "Function" "RJ11 individual; contatos centrais"
-			(at 35.56 81.28 0)
+		(property "Function" "Conector da biruta; p3/p4 apenas passagem Anem/Pluv, sem conexao aos condicionamentos"
+			(at 35.56 78.74 0)
 			(effects
 				(font
 					(size 1 1)
