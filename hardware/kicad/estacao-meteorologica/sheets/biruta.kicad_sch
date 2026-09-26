@@ -1539,7 +1539,7 @@
 		)
 		(uuid "ecb74b09-871e-47f8-8724-acbe2ed2eeb1")
 	)
-	(global_label "Sinal_2"
+	(global_label "SENS_SPARE"
 		(shape input)
 		(at 45.72 77.47 0)
 		(fields_autoplaced yes)
@@ -1632,7 +1632,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "08b7e4c1-3230-526d-bf1c-c43cbb629315")
-		(property "Reference" "TP52"
+		(property "Reference" "TP503"
 			(at 93.98 48.26 0)
 			(effects
 				(font
@@ -1702,16 +1702,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC Part" "N/A"
-			(at 90.17 50.8 0)
-			(effects
-				(font
-					(size 1 1)
-				)
-				(hide yes)
-			)
-		)
-		(property "Rating" "Copper pad; no purchased component"
+		(property "Specification" "Copper pad; no purchased component"
 			(at 90.17 50.8 0)
 			(effects
 				(font
@@ -1729,42 +1720,23 @@
 				(hide yes)
 			)
 		)
-		(property "Modelo 3D" "N/A - geometria de cobre, sem corpo"
-			(at 90.17 50.8 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "CREATOR" ""
-			(at 90.17 50.8 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "VERIFIER" ""
-			(at 90.17 50.8 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
 		(pin "1"
 			(uuid "883c036f-720c-400e-bda7-3d3d302ab1f2")
 		)
 		(instances
 			(project "esquematico_V4"
 				(path "/0c305a6e-f9cd-49a1-b146-c2956e5469b6/058dce74-971b-49d7-82f0-384e20be985c/4ef75fdb-90eb-437a-af55-0afcbbe28aca"
-					(reference "TP52")
+					(reference "TP503")
 					(unit 1)
 				)
+			)
+		)
+	
+		(property "Assembly" "PCB — sem compra"
+			(at 0 0 0)
+			(effects
+				(font (size 1.27 1.27))
+				(hide yes)
 			)
 		)
 	)
@@ -1777,7 +1749,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "0df91eb8-4016-5392-b4f6-51aa13068789")
-		(property "Reference" "D50"
+		(property "Reference" "D501"
 			(at 61.976 94.742 0)
 			(effects
 				(font
@@ -1847,16 +1819,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC Part" "C85402"
-			(at 66.04 99.06 0)
-			(effects
-				(font
-					(size 1 1)
-				)
-				(hide yes)
-			)
-		)
-		(property "Rating" "VRWM=5V; IR max 1uA at 5V/25C; see datasheet"
+		(property "Specification" "VRWM=5V; IR max 1uA at 5V/25C; see datasheet"
 			(at 66.04 99.06 0)
 			(effects
 				(font
@@ -1874,34 +1837,7 @@
 				(hide yes)
 			)
 		)
-		(property "Modelo 3D" "${KICAD9_3DMODEL_DIR}/Diode_SMD.3dshapes/D_SOD-882.step"
-			(at 66.04 99.06 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Status_Ficha" "Conferido no catalogo em 2026-09-24; verificar estoque ao comprar"
-			(at 66.04 99.06 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "CREATOR" ""
-			(at 66.04 99.06 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "VERIFIER" ""
+		(property "Verification" "Conferido no catalogo em 2026-09-24; verificar estoque ao comprar"
 			(at 66.04 99.06 0)
 			(effects
 				(font
@@ -1919,9 +1855,17 @@
 		(instances
 			(project "esquematico_V4"
 				(path "/0c305a6e-f9cd-49a1-b146-c2956e5469b6/058dce74-971b-49d7-82f0-384e20be985c/4ef75fdb-90eb-437a-af55-0afcbbe28aca"
-					(reference "D50")
+					(reference "D501")
 					(unit 1)
 				)
+			)
+		)
+	
+		(property "Assembly" "SMT"
+			(at 0 0 0)
+			(effects
+				(font (size 1.27 1.27))
+				(hide yes)
 			)
 		)
 	)
@@ -2000,7 +1944,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "406a9269-c365-5c02-b092-872d6a4dae13")
-		(property "Reference" "D51"
+		(property "Reference" "D502"
 			(at 157.48 52.07 0)
 			(effects
 				(font
@@ -2070,16 +2014,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC Part" "C389351"
-			(at 157.48 58.42 0)
-			(effects
-				(font
-					(size 1 1)
-				)
-				(hide yes)
-			)
-		)
-		(property "Rating" "IR max 100nA at 50V/25C; 1=GND, 2=3V3, 3=signal"
+		(property "Specification" "IR max 100nA at 50V/25C; 1=GND, 2=3V3, 3=signal"
 			(at 157.48 58.42 0)
 			(effects
 				(font
@@ -2097,34 +2032,7 @@
 				(hide yes)
 			)
 		)
-		(property "Modelo 3D" "${KICAD9_3DMODEL_DIR}/Package_TO_SOT_SMD.3dshapes/SOT-23.step"
-			(at 157.48 58.42 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Status_Ficha" "Conferido no catalogo em 2026-09-24; verificar estoque ao comprar"
-			(at 157.48 58.42 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "CREATOR" ""
-			(at 157.48 58.42 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "VERIFIER" ""
+		(property "Verification" "Conferido no catalogo em 2026-09-24; verificar estoque ao comprar"
 			(at 157.48 58.42 0)
 			(effects
 				(font
@@ -2145,9 +2053,17 @@
 		(instances
 			(project "esquematico_V4"
 				(path "/0c305a6e-f9cd-49a1-b146-c2956e5469b6/058dce74-971b-49d7-82f0-384e20be985c/4ef75fdb-90eb-437a-af55-0afcbbe28aca"
-					(reference "D51")
+					(reference "D502")
 					(unit 1)
 				)
+			)
+		)
+	
+		(property "Assembly" "SMT"
+			(at 0 0 0)
+			(effects
+				(font (size 1.27 1.27))
+				(hide yes)
 			)
 		)
 	)
@@ -2226,7 +2142,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "5b8ffcac-99b1-5732-abdb-efa293498ecf")
-		(property "Reference" "TP50"
+		(property "Reference" "TP501"
 			(at 69.85 67.31 0)
 			(effects
 				(font
@@ -2234,7 +2150,7 @@
 				)
 			)
 		)
-		(property "Value" "WIND_DIR_RAW"
+		(property "Value" "SENS_WIND_DIR_RAW"
 			(at 69.85 69.85 0)
 			(effects
 				(font
@@ -2296,7 +2212,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC Part" "N/A"
+		(property "Specification" "Copper pad; no purchased component"
 			(at 66.04 69.85 0)
 			(effects
 				(font
@@ -2305,47 +2221,11 @@
 				(hide yes)
 			)
 		)
-		(property "Rating" "Copper pad; no purchased component"
+		(property "Function" "SENS_WIND_DIR_RAW"
 			(at 66.04 69.85 0)
 			(effects
 				(font
 					(size 1 1)
-				)
-				(hide yes)
-			)
-		)
-		(property "Function" "WIND_DIR_RAW"
-			(at 66.04 69.85 0)
-			(effects
-				(font
-					(size 1 1)
-				)
-				(hide yes)
-			)
-		)
-		(property "Modelo 3D" "N/A - geometria de cobre, sem corpo"
-			(at 66.04 69.85 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "CREATOR" ""
-			(at 66.04 69.85 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "VERIFIER" ""
-			(at 66.04 69.85 0)
-			(effects
-				(font
-					(size 1.27 1.27)
 				)
 				(hide yes)
 			)
@@ -2356,9 +2236,17 @@
 		(instances
 			(project "esquematico_V4"
 				(path "/0c305a6e-f9cd-49a1-b146-c2956e5469b6/058dce74-971b-49d7-82f0-384e20be985c/4ef75fdb-90eb-437a-af55-0afcbbe28aca"
-					(reference "TP50")
+					(reference "TP501")
 					(unit 1)
 				)
+			)
+		)
+	
+		(property "Assembly" "PCB — sem compra"
+			(at 0 0 0)
+			(effects
+				(font (size 1.27 1.27))
+				(hide yes)
 			)
 		)
 	)
@@ -2371,7 +2259,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "6109a7b1-974e-5999-92cc-c756307bf321")
-		(property "Reference" "R52"
+		(property "Reference" "R503"
 			(at 190.5 77.47 90)
 			(effects
 				(font
@@ -2379,7 +2267,7 @@
 				)
 			)
 		)
-		(property "Value" "1k"
+		(property "Value" "1 kΩ"
 			(at 190.754 82.55 90)
 			(effects
 				(font
@@ -2441,16 +2329,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC Part" "C21190"
-			(at 190.5 80.01 0)
-			(effects
-				(font
-					(size 1 1)
-				)
-				(hide yes)
-			)
-		)
-		(property "Rating" "1%; 0.1W; 75V"
+		(property "Specification" "1%; 0.1W; 75V"
 			(at 190.5 80.01 0)
 			(effects
 				(font
@@ -2468,35 +2347,8 @@
 				(hide yes)
 			)
 		)
-		(property "Modelo 3D" "${KICAD9_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0603_1608Metric.step"
+		(property "Verification" "Conferido no catalogo em 2026-09-24; verificar estoque ao comprar"
 			(at 190.5 80.01 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Status_Ficha" "Conferido no catalogo em 2026-09-24; verificar estoque ao comprar"
-			(at 190.5 80.01 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "CREATOR" ""
-			(at 190.5 80.01 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "VERIFIER" ""
-			(at 190.5 80.01 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2513,9 +2365,17 @@
 		(instances
 			(project "esquematico_V4"
 				(path "/0c305a6e-f9cd-49a1-b146-c2956e5469b6/058dce74-971b-49d7-82f0-384e20be985c/4ef75fdb-90eb-437a-af55-0afcbbe28aca"
-					(reference "R52")
+					(reference "R503")
 					(unit 1)
 				)
+			)
+		)
+	
+		(property "Assembly" "SMT"
+			(at 0 0 0)
+			(effects
+				(font (size 1.27 1.27))
+				(hide yes)
 			)
 		)
 	)
@@ -2528,7 +2388,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "616f3f03-0f02-57a1-a220-c89f75f6d361")
-		(property "Reference" "R51"
+		(property "Reference" "R502"
 			(at 122.174 77.724 90)
 			(effects
 				(font
@@ -2536,7 +2396,7 @@
 				)
 			)
 		)
-		(property "Value" "10k"
+		(property "Value" "10 kΩ"
 			(at 122.174 82.55 90)
 			(effects
 				(font
@@ -2598,16 +2458,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC Part" "C25804"
-			(at 121.92 80.01 0)
-			(effects
-				(font
-					(size 1 1)
-				)
-				(hide yes)
-			)
-		)
-		(property "Rating" "1%; 0.1W; 75V"
+		(property "Specification" "1%; 0.1W; 75V"
 			(at 121.92 80.01 0)
 			(effects
 				(font
@@ -2625,35 +2476,8 @@
 				(hide yes)
 			)
 		)
-		(property "Modelo 3D" "${KICAD9_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0603_1608Metric.step"
+		(property "Verification" "Conferido no catalogo em 2026-09-24; verificar estoque ao comprar"
 			(at 121.92 80.01 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Status_Ficha" "Conferido no catalogo em 2026-09-24; verificar estoque ao comprar"
-			(at 121.92 80.01 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "CREATOR" ""
-			(at 121.92 80.01 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "VERIFIER" ""
-			(at 121.92 80.01 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2670,9 +2494,17 @@
 		(instances
 			(project "esquematico_V4"
 				(path "/0c305a6e-f9cd-49a1-b146-c2956e5469b6/058dce74-971b-49d7-82f0-384e20be985c/4ef75fdb-90eb-437a-af55-0afcbbe28aca"
-					(reference "R51")
+					(reference "R502")
 					(unit 1)
 				)
+			)
+		)
+	
+		(property "Assembly" "SMT"
+			(at 0 0 0)
+			(effects
+				(font (size 1.27 1.27))
+				(hide yes)
 			)
 		)
 	)
@@ -2685,7 +2517,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "9deaf77c-6d60-505f-b787-7fdc1ee2dd70")
-		(property "Reference" "C50"
+		(property "Reference" "C501"
 			(at 217.17 96.52 0)
 			(effects
 				(font
@@ -2693,7 +2525,7 @@
 				)
 			)
 		)
-		(property "Value" "100n"
+		(property "Value" "100 nF"
 			(at 217.932 99.568 0)
 			(effects
 				(font
@@ -2755,16 +2587,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC Part" "C14663"
-			(at 213.36 99.06 0)
-			(effects
-				(font
-					(size 1 1)
-				)
-				(hide yes)
-			)
-		)
-		(property "Rating" "10%; 50V; X7R"
+		(property "Specification" "10%; 50V; X7R"
 			(at 213.36 99.06 0)
 			(effects
 				(font
@@ -2782,34 +2605,7 @@
 				(hide yes)
 			)
 		)
-		(property "Modelo 3D" "${KICAD9_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0603_1608Metric.step"
-			(at 213.36 99.06 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Status_Ficha" "Conferido no catalogo em 2026-09-24; verificar estoque ao comprar"
-			(at 213.36 99.06 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "CREATOR" ""
-			(at 213.36 99.06 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "VERIFIER" ""
+		(property "Verification" "Conferido no catalogo em 2026-09-24; verificar estoque ao comprar"
 			(at 213.36 99.06 0)
 			(effects
 				(font
@@ -2827,9 +2623,17 @@
 		(instances
 			(project "esquematico_V4"
 				(path "/0c305a6e-f9cd-49a1-b146-c2956e5469b6/058dce74-971b-49d7-82f0-384e20be985c/4ef75fdb-90eb-437a-af55-0afcbbe28aca"
-					(reference "C50")
+					(reference "C501")
 					(unit 1)
 				)
+			)
+		)
+	
+		(property "Assembly" "SMT"
+			(at 0 0 0)
+			(effects
+				(font (size 1.27 1.27))
+				(hide yes)
 			)
 		)
 	)
@@ -2908,7 +2712,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "bc6ce421-fe3a-583b-86fd-f57e4b83e73b")
-		(property "Reference" "TP51"
+		(property "Reference" "TP502"
 			(at 238.252 98.044 0)
 			(effects
 				(font
@@ -2978,16 +2782,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC Part" "N/A"
-			(at 232.41 95.25 0)
-			(effects
-				(font
-					(size 1 1)
-				)
-				(hide yes)
-			)
-		)
-		(property "Rating" "Copper pad; no purchased component"
+		(property "Specification" "Copper pad; no purchased component"
 			(at 232.41 95.25 0)
 			(effects
 				(font
@@ -3005,42 +2800,23 @@
 				(hide yes)
 			)
 		)
-		(property "Modelo 3D" "N/A - geometria de cobre, sem corpo"
-			(at 232.41 95.25 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "CREATOR" ""
-			(at 232.41 95.25 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "VERIFIER" ""
-			(at 232.41 95.25 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
 		(pin "1"
 			(uuid "064c6c73-e7e6-4397-b9e8-6425feb1977a")
 		)
 		(instances
 			(project "esquematico_V4"
 				(path "/0c305a6e-f9cd-49a1-b146-c2956e5469b6/058dce74-971b-49d7-82f0-384e20be985c/4ef75fdb-90eb-437a-af55-0afcbbe28aca"
-					(reference "TP51")
+					(reference "TP502")
 					(unit 1)
 				)
+			)
+		)
+	
+		(property "Assembly" "PCB — sem compra"
+			(at 0 0 0)
+			(effects
+				(font (size 1.27 1.27))
+				(hide yes)
 			)
 		)
 	)
@@ -3185,7 +2961,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "db6f2146-df0a-5a69-bb82-2b6a9bfc80c6")
-		(property "Reference" "TP53"
+		(property "Reference" "TP504"
 			(at 85.09 109.22 0)
 			(effects
 				(font
@@ -3255,16 +3031,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC Part" "N/A"
-			(at 81.28 111.76 0)
-			(effects
-				(font
-					(size 1 1)
-				)
-				(hide yes)
-			)
-		)
-		(property "Rating" "Copper pad; no purchased component"
+		(property "Specification" "Copper pad; no purchased component"
 			(at 81.28 111.76 0)
 			(effects
 				(font
@@ -3282,42 +3049,23 @@
 				(hide yes)
 			)
 		)
-		(property "Modelo 3D" "N/A - geometria de cobre, sem corpo"
-			(at 81.28 111.76 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "CREATOR" ""
-			(at 81.28 111.76 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "VERIFIER" ""
-			(at 81.28 111.76 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
 		(pin "1"
 			(uuid "dcfb5fed-7fc2-4742-927e-2256d5adfea9")
 		)
 		(instances
 			(project "esquematico_V4"
 				(path "/0c305a6e-f9cd-49a1-b146-c2956e5469b6/058dce74-971b-49d7-82f0-384e20be985c/4ef75fdb-90eb-437a-af55-0afcbbe28aca"
-					(reference "TP53")
+					(reference "TP504")
 					(unit 1)
 				)
+			)
+		)
+	
+		(property "Assembly" "PCB — sem compra"
+			(at 0 0 0)
+			(effects
+				(font (size 1.27 1.27))
+				(hide yes)
 			)
 		)
 	)
@@ -3330,7 +3078,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "dda97596-0f87-5db8-a6f1-08dcedb381c7")
-		(property "Reference" "R50"
+		(property "Reference" "R501"
 			(at 90.17 58.42 0)
 			(effects
 				(font
@@ -3338,7 +3086,7 @@
 				)
 			)
 		)
-		(property "Value" "10k"
+		(property "Value" "10 kΩ"
 			(at 90.17 60.96 0)
 			(effects
 				(font
@@ -3400,16 +3148,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC Part" "C25804"
-			(at 86.36 60.96 0)
-			(effects
-				(font
-					(size 1 1)
-				)
-				(hide yes)
-			)
-		)
-		(property "Rating" "1%; 0.1W; 75V"
+		(property "Specification" "1%; 0.1W; 75V"
 			(at 86.36 60.96 0)
 			(effects
 				(font
@@ -3427,34 +3166,7 @@
 				(hide yes)
 			)
 		)
-		(property "Modelo 3D" "${KICAD9_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0603_1608Metric.step"
-			(at 86.36 60.96 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Status_Ficha" "Conferido no catalogo em 2026-09-24; verificar estoque ao comprar"
-			(at 86.36 60.96 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "CREATOR" ""
-			(at 86.36 60.96 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "VERIFIER" ""
+		(property "Verification" "Conferido no catalogo em 2026-09-24; verificar estoque ao comprar"
 			(at 86.36 60.96 0)
 			(effects
 				(font
@@ -3472,9 +3184,17 @@
 		(instances
 			(project "esquematico_V4"
 				(path "/0c305a6e-f9cd-49a1-b146-c2956e5469b6/058dce74-971b-49d7-82f0-384e20be985c/4ef75fdb-90eb-437a-af55-0afcbbe28aca"
-					(reference "R50")
+					(reference "R501")
 					(unit 1)
 				)
+			)
+		)
+	
+		(property "Assembly" "SMT"
+			(at 0 0 0)
+			(effects
+				(font (size 1.27 1.27))
+				(hide yes)
 			)
 		)
 	)
@@ -3487,7 +3207,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "f219c2a7-eb7b-4c19-8ebe-925c739f9cef")
-		(property "Reference" "J32"
+		(property "Reference" "J501"
 			(at 34.544 67.818 0)
 			(effects
 				(font
@@ -3495,7 +3215,7 @@
 				)
 			)
 		)
-		(property "Value" "R-RJ11R06P-A800"
+		(property "Value" "RJ11 6P6C, 90°"
 			(at 33.274 70.104 0)
 			(effects
 				(font
@@ -3557,16 +3277,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC Part" "C189750"
-			(at 35.56 78.74 0)
-			(effects
-				(font
-					(size 1 1)
-				)
-				(hide yes)
-			)
-		)
-		(property "Rating" "6P6C; p2=GND; p3=+3V3; p4=direcao do vento; p1/p5/p6=NC; THT"
+		(property "Specification" "6P6C; p2=GND; p3=+3V3; p4=direcao do vento; p1/p5/p6=NC; THT"
 			(at 35.56 78.74 0)
 			(effects
 				(font
@@ -3584,34 +3295,7 @@
 				(hide yes)
 			)
 		)
-		(property "Modelo 3D" "${KIPRJMOD}/../../libraries/Sensores_Meteo/Sensores_Meteo.3dshapes/RJ11-TH_PCB-6P6C-90.step"
-			(at 35.56 78.74 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Status_Ficha" "Conferido no catalogo em 2026-09-24; verificar estoque ao comprar"
-			(at 35.56 78.74 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "CREATOR" ""
-			(at 35.56 78.74 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "VERIFIER" ""
+		(property "Verification" "Conferido no catalogo em 2026-09-24; verificar estoque ao comprar"
 			(at 35.56 78.74 0)
 			(effects
 				(font
@@ -3641,9 +3325,17 @@
 		(instances
 			(project "esquematico_V4"
 				(path "/0c305a6e-f9cd-49a1-b146-c2956e5469b6/058dce74-971b-49d7-82f0-384e20be985c/4ef75fdb-90eb-437a-af55-0afcbbe28aca"
-					(reference "J32")
+					(reference "J501")
 					(unit 1)
 				)
+			)
+		)
+	
+		(property "Assembly" "SMT"
+			(at 0 0 0)
+			(effects
+				(font (size 1.27 1.27))
+				(hide yes)
 			)
 		)
 	)

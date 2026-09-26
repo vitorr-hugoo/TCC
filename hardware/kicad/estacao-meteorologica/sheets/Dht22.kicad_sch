@@ -841,7 +841,7 @@
 		)
 		(uuid "feacde14-c5f4-4f79-a472-2e829be6a99e")
 	)
-	(hierarchical_label "DHT_SIG"
+	(hierarchical_label "DHT22_DATA"
 		(shape bidirectional)
 		(at 133.35 72.39 90)
 		(effects
@@ -861,7 +861,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "1beaa693-8353-4e19-a955-931c5d29e675")
-		(property "Reference" "R7"
+		(property "Reference" "R231"
 			(at 129.286 73.914 90)
 			(effects
 				(font
@@ -869,7 +869,7 @@
 				)
 			)
 		)
-		(property "Value" "10k"
+		(property "Value" "10 kΩ"
 			(at 129.54 76.454 90)
 			(effects
 				(font
@@ -931,16 +931,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC Part" "C25804"
-			(at 129.54 78.74 0)
-			(effects
-				(font
-					(size 1 1)
-				)
-				(hide yes)
-			)
-		)
-		(property "Rating" "1%; 0.1W; 75V"
+		(property "Specification" "1%; 0.1W; 75V"
 			(at 129.54 78.74 0)
 			(effects
 				(font
@@ -958,35 +949,8 @@
 				(hide yes)
 			)
 		)
-		(property "Modelo 3D" "${KICAD9_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0603_1608Metric.step"
+		(property "Verification" "Conferido no catalogo em 2026-09-24; verificar estoque ao comprar"
 			(at 129.54 78.74 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Status_Ficha" "Conferido no catalogo em 2026-09-24; verificar estoque ao comprar"
-			(at 129.54 78.74 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "CREATOR" ""
-			(at 129.54 78.74 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "VERIFIER" ""
-			(at 129.54 78.74 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1003,9 +967,17 @@
 		(instances
 			(project "esquematico_V4"
 				(path "/0c305a6e-f9cd-49a1-b146-c2956e5469b6/34d78a87-9b09-4795-98a5-fe6ea1a123f9"
-					(reference "R7")
+					(reference "R231")
 					(unit 1)
 				)
+			)
+		)
+	
+		(property "Assembly" "SMT"
+			(at 0 0 0)
+			(effects
+				(font (size 1.27 1.27))
+				(hide yes)
 			)
 		)
 	)
@@ -1215,7 +1187,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "ba6302e3-ef38-46bb-a667-b8b84690ddcf")
-		(property "Reference" "U1"
+		(property "Reference" "U231"
 			(at 142.24 93.9799 90)
 			(effects
 				(font
@@ -1291,17 +1263,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC Part" "C83988"
-			(at 133.35 95.25 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify bottom)
-				(hide yes)
-			)
-		)
-		(property "Rating" "3,3 V a 5,0 V; SIP-4"
+		(property "Specification" "3,3 V a 5,0 V; SIP-4"
 			(at 133.35 95.25 0)
 			(effects
 				(font
@@ -1321,35 +1283,8 @@
 				(hide yes)
 			)
 		)
-		(property "Modelo 3D" "${KIPRJMOD}/../../libraries/DHT22/DHT22.3dshapes/DHT22_THT_P2.54mm_Vertical.wrl"
+		(property "Verification" "Conferido no catalogo em 2026-09-24; verificar estoque ao comprar"
 			(at 133.35 95.25 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Status_Ficha" "Conferido no catalogo em 2026-09-24; verificar estoque ao comprar"
-			(at 133.35 95.25 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "CREATOR" ""
-			(at 133.35 95.25 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "VERIFIER" ""
-			(at 133.35 95.25 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1372,9 +1307,17 @@
 		(instances
 			(project "esquematico_V4"
 				(path "/0c305a6e-f9cd-49a1-b146-c2956e5469b6/34d78a87-9b09-4795-98a5-fe6ea1a123f9"
-					(reference "U1")
+					(reference "U231")
 					(unit 1)
 				)
+			)
+		)
+	
+		(property "Assembly" "THT — montagem manual"
+			(at 0 0 0)
+			(effects
+				(font (size 1.27 1.27))
+				(hide yes)
 			)
 		)
 	)
@@ -1387,7 +1330,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "c276dada-2ab1-459c-aba7-2b886f2ab026")
-		(property "Reference" "C3"
+		(property "Reference" "C231"
 			(at 124.46 84.074 0)
 			(effects
 				(font
@@ -1395,7 +1338,7 @@
 				)
 			)
 		)
-		(property "Value" "100n"
+		(property "Value" "100 nF"
 			(at 124.206 86.36 0)
 			(effects
 				(font
@@ -1457,16 +1400,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC Part" "C14663"
-			(at 119.38 86.36 0)
-			(effects
-				(font
-					(size 1 1)
-				)
-				(hide yes)
-			)
-		)
-		(property "Rating" "10%; 50V; X7R"
+		(property "Specification" "10%; 50V; X7R"
 			(at 119.38 86.36 0)
 			(effects
 				(font
@@ -1484,34 +1418,7 @@
 				(hide yes)
 			)
 		)
-		(property "Modelo 3D" "${KICAD9_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0603_1608Metric.step"
-			(at 119.38 86.36 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Status_Ficha" "Conferido no catalogo em 2026-09-24; verificar estoque ao comprar"
-			(at 119.38 86.36 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "CREATOR" ""
-			(at 119.38 86.36 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "VERIFIER" ""
+		(property "Verification" "Conferido no catalogo em 2026-09-24; verificar estoque ao comprar"
 			(at 119.38 86.36 0)
 			(effects
 				(font
@@ -1529,9 +1436,17 @@
 		(instances
 			(project "estacao-meteorologica"
 				(path "/0c305a6e-f9cd-49a1-b146-c2956e5469b6/34d78a87-9b09-4795-98a5-fe6ea1a123f9"
-					(reference "C3")
+					(reference "C231")
 					(unit 1)
 				)
+			)
+		)
+	
+		(property "Assembly" "SMT"
+			(at 0 0 0)
+			(effects
+				(font (size 1.27 1.27))
+				(hide yes)
 			)
 		)
 	)

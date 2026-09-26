@@ -178,7 +178,7 @@
 			(color 0 0 0 0.0000)
 		)
 		(uuid "9f29de2e-b04a-471a-b3f5-0032147ee0d6")
-		(property "Sheetname" "ANEMOMETRO"
+		(property "Sheetname" "ANEMÔMETRO"
 			(at 119.38 83.1084 0)
 			(effects
 				(font
@@ -230,7 +230,7 @@
 			(color 0 0 0 0.0000)
 		)
 		(uuid "e9242eb5-e685-47a2-8464-3e1e52960bb8")
-		(property "Sheetname" "PLUVIOMETRO"
+		(property "Sheetname" "PLUVIÔMETRO"
 			(at 119.38 53.8984 0)
 			(effects
 				(font
