@@ -1,0 +1,57 @@
+#VRML V2.0 utf8
+#
+# Visualizacao mecanica simplificada do socket SOFNG TF-15x15 (LCSC C111196).
+# Baseada no envelope do datasheet: 14.75 x 14.50 x 1.90 mm.
+# Esta representacao serve somente ao visualizador 3D do KiCad; o footprint e
+# o datasheet continuam sendo a referencia para fabricacao e interferencias.
+
+WorldInfo {
+  title "SOFNG TF-15x15 - modelo 3D simplificado para visualizacao"
+  info [ "LCSC C111196", "Envelope: 14.75 x 14.50 x 1.90 mm" ]
+}
+
+# Carcaca metalica, elevada a partir da face superior da placa.
+Transform {
+  translation 0 0 0.90
+  children [
+    Shape {
+      appearance Appearance {
+        material Material { diffuseColor 0.52 0.55 0.58 specularColor 0.35 0.35 0.35 shininess 0.55 }
+      }
+      geometry Box { size 14.75 14.50 1.80 }
+    }
+  ]
+}
+
+# Rebaixo escuro que identifica a abertura do cartao no topo da carcaca.
+Transform {
+  translation -0.90 0.55 1.81
+  children [
+    Shape {
+      appearance Appearance { material Material { diffuseColor 0.10 0.12 0.14 } }
+      geometry Box { size 11.30 11.80 0.03 }
+    }
+  ]
+}
+
+# Guia/atuador plastico do mecanismo push-push, no lado direito.
+Transform {
+  translation 6.35 2.40 1.92
+  children [
+    Shape {
+      appearance Appearance { material Material { diffuseColor 0.18 0.20 0.22 } }
+      geometry Box { size 1.10 4.80 0.15 }
+    }
+  ]
+}
+
+# Lábio frontal que indica a entrada do cartao (direcao +Y do footprint).
+Transform {
+  translation -1.00 7.12 1.10
+  children [
+    Shape {
+      appearance Appearance { material Material { diffuseColor 0.34 0.36 0.38 } }
+      geometry Box { size 11.60 0.26 0.85 }
+    }
+  ]
+}

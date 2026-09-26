@@ -3773,7 +3773,7 @@
 				)
 			)
 		)
-		(property "Value" "microSD socket"
+		(property "Value" "microSD socket, TF-15x15"
 			(at 240.665 66.04 0)
 			(effects
 				(font
@@ -3781,7 +3781,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Hardware_SD_Interface:microSD_HC_Molex_104031-0811"
+		(property "Footprint" "Hardware_SD_Interface:microSD_SOFNG_TF-15x15"
 			(at 292.1 67.31 0)
 			(effects
 				(font
@@ -3790,7 +3790,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://www.molex.com/content/dam/molex/molex-dot-com/products/automated/en-us/productspecificationpdf/104/104031/PS-104031-001-001.pdf?inline="
+		(property "Datasheet" "https://datasheet.lcsc.com/datasheet/pdf/38dcce1bae4dd4ca995533b0c0352a82.pdf?productCode=C111196"
 			(at 242.57 82.55 0)
 			(effects
 				(font
@@ -3799,7 +3799,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Molex microSD socket, push-pull, SMT, 1.42 mm height, mechanical card-detect"
+		(property "Description" "SOFNG TF-15x15, socket microSD SMD push-push, 14.50 x 14.75 x 1.90 mm, com detecção mecânica"
 			(at 240.03 85.09 0)
 			(effects
 				(font
@@ -3808,7 +3808,7 @@
 				(hide yes)
 			)
 		)
-		(property "MPN" "104031-0811"
+		(property "MPN" "TF-15x15"
 			(at 36.83 10.16 0)
 			(effects
 				(font
@@ -3817,7 +3817,7 @@
 				(hide yes)
 			)
 		)
-		(property "Specification" "10 V; 0.5 A; -25 °C to +85 °C; SMT"
+		(property "Specification" "25 mA; 24 VDC; -25 °C a +85 °C; 6500 ciclos sem carga; SMD"
 			(at 36.83 10.16 0)
 			(effects
 				(font
@@ -3826,7 +3826,7 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer" "Molex"
+		(property "Manufacturer" "SOFNG"
 			(at 36.83 10.16 0)
 			(effects
 				(font
@@ -3835,7 +3835,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" "C585350"
+		(property "LCSC" "C111196"
 			(at 240.03 85.09 0)
 			(effects
 				(font
@@ -3844,7 +3844,7 @@
 				(hide yes)
 			)
 		)
-		(property "Verification" "Conferido no catálogo da JLCPCB em 2026-09-25; C585350; confirmar estoque antes da compra"
+		(property "Verification" "Footprint conferido no datasheet SOFNG/LCSC C111196 em 2026-09-26; confirmar estoque antes da compra"
 			(at 240.03 85.09 0)
 			(effects
 				(font
@@ -3853,25 +3853,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC Part" "C585350"
-			(at 240.03 85.09 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Modelo 3D" "${KIPRJMOD}/../../libraries/Hardware_SD_Interface/Hardware_SD_Interface.3dshapes/1040310811.step"
-			(at 240.03 85.09 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Function" "Conector de interface."
+		(property "Function" "Socket microSD para armazenamento SPI; contatos 1-8 e detecção mecânica."
 			(at 0 0 0)
 			(effects
 				(font
