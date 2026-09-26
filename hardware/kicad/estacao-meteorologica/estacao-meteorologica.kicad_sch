@@ -3022,10 +3022,6 @@
 		(uuid "d4ef6d58-9571-41d7-a472-27c5a7230dbe")
 	)
 	(no_connect
-		(at 85.09 142.24)
-		(uuid "834f5c4e-4894-4bcf-a5f3-0179ff9db35d")
-	)
-	(no_connect
 		(at 210.82 125.73)
 		(uuid "fbfb69ec-bfb7-46e7-b5b4-0498b81dbe11")
 	)
@@ -3291,6 +3287,16 @@
 	)
 	(wire
 		(pts
+			(xy 85.09 142.24) (xy 115.57 142.24)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d60ef49f-1bc4-4b41-b401-e6730d83f945")
+	)
+	(wire
+		(pts
 			(xy 78.74 25.4) (xy 88.9 25.4)
 		)
 		(stroke
@@ -3458,7 +3464,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "MountingHole"
+		(property "Value" "Furo M3 / Ø3,2 mm"
 			(at 22.86 185.4199 0)
 			(effects
 				(font
@@ -3467,7 +3473,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "MountingHole:MountingHole_3.2mm_M3"
 			(at 20.32 184.15 0)
 			(effects
 				(font
@@ -3476,7 +3482,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "N/A — furo não metalizado Ø3,2 mm para parafuso/espaçador M3."
 			(at 20.32 184.15 0)
 			(effects
 				(font
@@ -3485,7 +3491,97 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Mounting Hole without connection"
+		(property "Description" "Furo de montagem NPTH Ø3,2 mm para parafuso ou espaçador M3; sem conexão elétrica."
+			(at 20.32 184.15 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Status_Ficha" "Conferido: não entra na BOM. Validar posição, keepout e altura do espaçador M3 contra o gabinete antes do roteamento."
+			(at 20.32 184.15 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "CREATOR" ""
+			(at 20.32 184.15 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "VERIFIER" ""
+			(at 20.32 184.15 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" "N/A — recurso mecânico da PCB"
+			(at 20.32 184.15 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "N/A"
+			(at 20.32 184.15 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "N/A"
+			(at 20.32 184.15 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC Part" "N/A"
+			(at 20.32 184.15 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Function" "Fixação mecânica da PCB ao gabinete ou espaçadores M3."
+			(at 20.32 184.15 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Assembly" "Não comprar — recurso fabricado diretamente na PCB."
+			(at 20.32 184.15 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Modelo 3D" "N/A — um furo NPTH não possui corpo físico 3D; o parafuso/espaçador pertence ao conjunto mecânico."
 			(at 20.32 184.15 0)
 			(effects
 				(font
@@ -3522,7 +3618,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "MountingHole"
+		(property "Value" "Furo M3 / Ø3,2 mm"
 			(at 22.86 177.7999 0)
 			(effects
 				(font
@@ -3531,7 +3627,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "MountingHole:MountingHole_3.2mm_M3"
 			(at 20.32 176.53 0)
 			(effects
 				(font
@@ -3540,7 +3636,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "N/A — furo não metalizado Ø3,2 mm para parafuso/espaçador M3."
 			(at 20.32 176.53 0)
 			(effects
 				(font
@@ -3549,7 +3645,97 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Mounting Hole without connection"
+		(property "Description" "Furo de montagem NPTH Ø3,2 mm para parafuso ou espaçador M3; sem conexão elétrica."
+			(at 20.32 176.53 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Status_Ficha" "Conferido: não entra na BOM. Validar posição, keepout e altura do espaçador M3 contra o gabinete antes do roteamento."
+			(at 20.32 176.53 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "CREATOR" ""
+			(at 20.32 176.53 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "VERIFIER" ""
+			(at 20.32 176.53 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" "N/A — recurso mecânico da PCB"
+			(at 20.32 176.53 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "N/A"
+			(at 20.32 176.53 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "N/A"
+			(at 20.32 176.53 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC Part" "N/A"
+			(at 20.32 176.53 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Function" "Fixação mecânica da PCB ao gabinete ou espaçadores M3."
+			(at 20.32 176.53 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Assembly" "Não comprar — recurso fabricado diretamente na PCB."
+			(at 20.32 176.53 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Modelo 3D" "N/A — um furo NPTH não possui corpo físico 3D; o parafuso/espaçador pertence ao conjunto mecânico."
 			(at 20.32 176.53 0)
 			(effects
 				(font
@@ -3586,7 +3772,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "MountingHole"
+		(property "Value" "Furo M3 / Ø3,2 mm"
 			(at 41.91 185.4199 0)
 			(effects
 				(font
@@ -3595,7 +3781,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "MountingHole:MountingHole_3.2mm_M3"
 			(at 39.37 184.15 0)
 			(effects
 				(font
@@ -3604,7 +3790,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "N/A — furo não metalizado Ø3,2 mm para parafuso/espaçador M3."
 			(at 39.37 184.15 0)
 			(effects
 				(font
@@ -3613,7 +3799,97 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Mounting Hole without connection"
+		(property "Description" "Furo de montagem NPTH Ø3,2 mm para parafuso ou espaçador M3; sem conexão elétrica."
+			(at 39.37 184.15 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Status_Ficha" "Conferido: não entra na BOM. Validar posição, keepout e altura do espaçador M3 contra o gabinete antes do roteamento."
+			(at 39.37 184.15 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "CREATOR" ""
+			(at 39.37 184.15 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "VERIFIER" ""
+			(at 39.37 184.15 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" "N/A — recurso mecânico da PCB"
+			(at 39.37 184.15 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "N/A"
+			(at 39.37 184.15 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "N/A"
+			(at 39.37 184.15 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC Part" "N/A"
+			(at 39.37 184.15 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Function" "Fixação mecânica da PCB ao gabinete ou espaçadores M3."
+			(at 39.37 184.15 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Assembly" "Não comprar — recurso fabricado diretamente na PCB."
+			(at 39.37 184.15 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Modelo 3D" "N/A — um furo NPTH não possui corpo físico 3D; o parafuso/espaçador pertence ao conjunto mecânico."
 			(at 39.37 184.15 0)
 			(effects
 				(font
@@ -3650,7 +3926,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "MountingHole"
+		(property "Value" "Furo M3 / Ø3,2 mm"
 			(at 41.91 177.7999 0)
 			(effects
 				(font
@@ -3659,7 +3935,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "MountingHole:MountingHole_3.2mm_M3"
 			(at 39.37 176.53 0)
 			(effects
 				(font
@@ -3668,7 +3944,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "N/A — furo não metalizado Ø3,2 mm para parafuso/espaçador M3."
 			(at 39.37 176.53 0)
 			(effects
 				(font
@@ -3677,7 +3953,97 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Mounting Hole without connection"
+		(property "Description" "Furo de montagem NPTH Ø3,2 mm para parafuso ou espaçador M3; sem conexão elétrica."
+			(at 39.37 176.53 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Status_Ficha" "Conferido: não entra na BOM. Validar posição, keepout e altura do espaçador M3 contra o gabinete antes do roteamento."
+			(at 39.37 176.53 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "CREATOR" ""
+			(at 39.37 176.53 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "VERIFIER" ""
+			(at 39.37 176.53 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" "N/A — recurso mecânico da PCB"
+			(at 39.37 176.53 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "N/A"
+			(at 39.37 176.53 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "N/A"
+			(at 39.37 176.53 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC Part" "N/A"
+			(at 39.37 176.53 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Function" "Fixação mecânica da PCB ao gabinete ou espaçadores M3."
+			(at 39.37 176.53 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Assembly" "Não comprar — recurso fabricado diretamente na PCB."
+			(at 39.37 176.53 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Modelo 3D" "N/A — um furo NPTH não possui corpo físico 3D; o parafuso/espaçador pertence ao conjunto mecânico."
 			(at 39.37 176.53 0)
 			(effects
 				(font
@@ -3944,7 +4310,7 @@
 				(justify left top)
 			)
 		)
-		(pin "Lora_DIO0" input
+		(pin "Lora_DIO0" output
 			(at 85.09 134.62 0)
 			(uuid "d286214f-fc6b-4018-89b3-754c4a81f054")
 			(effects
@@ -3954,7 +4320,7 @@
 				(justify right)
 			)
 		)
-		(pin "Lora_DIO1" input
+		(pin "Lora_DIO1" output
 			(at 85.09 138.43 0)
 			(uuid "e01de21f-b0f9-4547-8003-81a3589ac906")
 			(effects
@@ -3964,7 +4330,7 @@
 				(justify right)
 			)
 		)
-		(pin "Lora_DIO2" input
+		(pin "Lora_DIO2" output
 			(at 85.09 142.24 0)
 			(uuid "d737049d-7e11-45d0-bd99-0030cf10d5c0")
 			(effects
@@ -3974,7 +4340,7 @@
 				(justify right)
 			)
 		)
-		(pin "Lora_MISO" bidirectional
+		(pin "Lora_MISO" output
 			(at 85.09 115.57 0)
 			(uuid "64a0c12e-42ae-40f8-a80f-0c4db2103d49")
 			(effects
@@ -3984,7 +4350,7 @@
 				(justify right)
 			)
 		)
-		(pin "Lora_MOSI" bidirectional
+		(pin "Lora_MOSI" input
 			(at 85.09 119.38 0)
 			(uuid "c0ce3e6f-8bcb-4d6f-b3ee-2bb6be1b7aa7")
 			(effects
@@ -3994,7 +4360,7 @@
 				(justify right)
 			)
 		)
-		(pin "Lora_NSS" output
+		(pin "Lora_NSS" input
 			(at 85.09 123.19 0)
 			(uuid "a184599a-c84d-40ee-89b2-f1b2ae0f212d")
 			(effects
@@ -4280,7 +4646,7 @@
 				(justify left)
 			)
 		)
-		(pin "Lora_MISO" bidirectional
+		(pin "Lora_MISO" input
 			(at 115.57 115.57 180)
 			(uuid "416560a5-d9d1-4ace-8e8e-611eaeb920f5")
 			(effects
@@ -4290,7 +4656,7 @@
 				(justify left)
 			)
 		)
-		(pin "Lora_MOSI" bidirectional
+		(pin "Lora_MOSI" output
 			(at 115.57 119.38 180)
 			(uuid "62aeec63-454f-4d8a-a633-090fce84b73a")
 			(effects
@@ -4310,7 +4676,7 @@
 				(justify left)
 			)
 		)
-		(pin "Lora_RST" input
+		(pin "Lora_RST" output
 			(at 115.57 127 180)
 			(uuid "b8817e07-7560-41a7-a0d2-8a1f83180955")
 			(effects
@@ -4320,7 +4686,7 @@
 				(justify left)
 			)
 		)
-		(pin "Lora_SCK" input
+		(pin "Lora_SCK" output
 			(at 115.57 130.81 180)
 			(uuid "d8db343d-3cce-4f5f-a7a6-a16147d4b2a4")
 			(effects
@@ -4383,6 +4749,16 @@
 		(pin "I2C1_SDA" bidirectional
 			(at 115.57 73.66 180)
 			(uuid "bb18706b-7a8c-4047-9a6d-798a7012895c")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "Lora_DIO2" input
+			(at 115.57 142.24 180)
+			(uuid "f84fdefa-f614-43ff-bc31-447612c234ab")
 			(effects
 				(font
 					(size 1.27 1.27)

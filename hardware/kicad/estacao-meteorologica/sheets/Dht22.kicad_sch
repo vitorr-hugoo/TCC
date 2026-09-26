@@ -36,11 +36,10 @@
 					(font
 						(size 1.27 1.27)
 					)
-					(justify bottom)
 					(hide yes)
 				)
 			)
-			(property "Datasheet" "https://www.lcsc.com/product-detail/C83988.html"
+			(property "Datasheet" "https://www.lcsc.com/datasheet/lcsc_datasheet_1810051021_Aosong--Guangzhou-Elec-AM2302_C83988.pdf"
 				(at 0 0 0)
 				(effects
 					(font
@@ -49,7 +48,7 @@
 					(hide yes)
 				)
 			)
-			(property "Description" "Sensor digital de temperatura e umidade DHT22/AM2302; SIP-4; 3,3 V a 5,0 V"
+			(property "Description" "0%RH~99.9%RH 16bit 3.3V~5.5V 300uA Single-bus ±0.5℃ ±2%RH SIP-4 Temperature and Humidity Sensor RoHS"
 				(at 0 0 0)
 				(effects
 					(font
@@ -58,123 +57,57 @@
 					(hide yes)
 				)
 			)
-			(property "MF" "Aosong Electronics"
+			(property "Manufacturer" "Aosong (Guangzhou) Elec"
 				(at 0 0 0)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(justify bottom)
 					(hide yes)
 				)
 			)
-			(property "MAXIMUM_PACKAGE_HEIGHT" "7.8 mm"
+			(property "MPN" "AM2302"
 				(at 0 0 0)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(justify bottom)
 					(hide yes)
 				)
 			)
-			(property "CREATOR" "KARTHIK"
+			(property "LCSC" "C83988"
 				(at 0 0 0)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(justify bottom)
 					(hide yes)
 				)
 			)
-			(property "Price" "None"
+			(property "LCSC Part" "C83988"
 				(at 0 0 0)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(justify bottom)
 					(hide yes)
 				)
 			)
-			(property "Package" "Package"
+			(property "Rating" "3,3 V a 5,0 V; SIP-4"
 				(at 0 0 0)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(justify bottom)
 					(hide yes)
 				)
 			)
-			(property "Check_prices" "https://www.snapeda.com/parts/DHT22/Aosong+Electronics/view-part/?ref=eda"
+			(property "Function" "Medição de temperatura e umidade; barramento single-wire bidirecional"
 				(at 0 0 0)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(justify bottom)
-					(hide yes)
-				)
-			)
-			(property "STANDARD" "IPC-7351B"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify bottom)
-					(hide yes)
-				)
-			)
-			(property "SnapEDA_Link" "https://www.snapeda.com/parts/DHT22/Aosong+Electronics/view-part/?ref=snap"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify bottom)
-					(hide yes)
-				)
-			)
-			(property "MP" "DHT22"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify bottom)
-					(hide yes)
-				)
-			)
-			(property "Description_1" "Capacitive-type humidity and temperature module/sensor"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify bottom)
-					(hide yes)
-				)
-			)
-			(property "Availability" "Not in stock"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify bottom)
-					(hide yes)
-				)
-			)
-			(property "MANUFACTURER" "Aosong Electronics"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify bottom)
 					(hide yes)
 				)
 			)
@@ -953,7 +886,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://www.lcsc.com/product-detail/C25804.html"
+		(property "Datasheet" "https://www.lcsc.com/datasheet/lcsc_datasheet_2206010045_UNI-ROYAL-Uniroyal-Elec-0603WAF1002T5E_C25804.pdf"
 			(at 129.54 78.74 0)
 			(effects
 				(font
@@ -962,7 +895,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Resistor de filme espesso 10 kOhm, 1%, 0,1 W, encapsulamento 0603"
+		(property "Description" "Resistor SMD 10 kohm, 1%, 0,1 W, 0603"
 			(at 129.54 78.74 0)
 			(effects
 				(font
@@ -971,7 +904,7 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer" "UNI-ROYAL"
+		(property "Manufacturer" "UNI-ROYAL(Uniroyal Elec)"
 			(at 129.54 78.74 0)
 			(effects
 				(font
@@ -1021,6 +954,42 @@
 			(effects
 				(font
 					(size 1 1)
+				)
+				(hide yes)
+			)
+		)
+		(property "Modelo 3D" "${KICAD9_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0603_1608Metric.step"
+			(at 129.54 78.74 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Status_Ficha" "Conferido no catalogo em 2026-09-24; verificar estoque ao comprar"
+			(at 129.54 78.74 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "CREATOR" ""
+			(at 129.54 78.74 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "VERIFIER" ""
+			(at 129.54 78.74 90)
+			(effects
+				(font
+					(size 1.27 1.27)
 				)
 				(hide yes)
 			)
@@ -1274,7 +1243,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://www.lcsc.com/product-detail/C83988.html"
+		(property "Datasheet" "https://www.lcsc.com/datasheet/lcsc_datasheet_1810051021_Aosong--Guangzhou-Elec-AM2302_C83988.pdf"
 			(at 133.35 95.25 0)
 			(effects
 				(font
@@ -1283,7 +1252,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Sensor digital de temperatura e umidade DHT22/AM2302; SIP-4; 3,3 V a 5,0 V"
+		(property "Description" "0%RH~99.9%RH 16bit 3.3V~5.5V 300uA Single-bus ±0.5℃ ±2%RH SIP-4 Temperature and Humidity Sensor RoHS"
 			(at 133.35 95.25 0)
 			(effects
 				(font
@@ -1292,7 +1261,7 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer" "Aosong"
+		(property "Manufacturer" "Aosong (Guangzhou) Elec"
 			(at 133.35 95.25 0)
 			(effects
 				(font
@@ -1352,6 +1321,42 @@
 				(hide yes)
 			)
 		)
+		(property "Modelo 3D" "${KIPRJMOD}/../../libraries/DHT22/DHT22.3dshapes/DHT22_THT_P2.54mm_Vertical.wrl"
+			(at 133.35 95.25 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Status_Ficha" "Conferido no catalogo em 2026-09-24; verificar estoque ao comprar"
+			(at 133.35 95.25 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "CREATOR" ""
+			(at 133.35 95.25 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "VERIFIER" ""
+			(at 133.35 95.25 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "3"
 			(uuid "09719278-4a77-4fb2-bce8-dadbf3a830b4")
 		)
@@ -1407,7 +1412,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://www.lcsc.com/product-detail/C14663.html"
+		(property "Datasheet" "https://www.lcsc.com/datasheet/lcsc_datasheet_2211101700_YAGEO-CC0603KRX7R9BB104_C14663.pdf"
 			(at 119.38 86.36 0)
 			(effects
 				(font
@@ -1416,7 +1421,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Capacitor ceramico 100 nF, 10%, 50 V, X7R, encapsulamento 0603"
+		(property "Description" "Capacitor ceramico 100 nF, 50 V, X7R, 10%, 0603"
 			(at 119.38 86.36 0)
 			(effects
 				(font
@@ -1475,6 +1480,42 @@
 			(effects
 				(font
 					(size 1 1)
+				)
+				(hide yes)
+			)
+		)
+		(property "Modelo 3D" "${KICAD9_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0603_1608Metric.step"
+			(at 119.38 86.36 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Status_Ficha" "Conferido no catalogo em 2026-09-24; verificar estoque ao comprar"
+			(at 119.38 86.36 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "CREATOR" ""
+			(at 119.38 86.36 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "VERIFIER" ""
+			(at 119.38 86.36 0)
+			(effects
+				(font
+					(size 1.27 1.27)
 				)
 				(hide yes)
 			)

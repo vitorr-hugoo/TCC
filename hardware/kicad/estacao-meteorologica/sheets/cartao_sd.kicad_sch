@@ -130,7 +130,7 @@
 						)
 					)
 				)
-				(pin tri_state line
+				(pin output line
 					(at 7.62 0 180)
 					(length 3.81)
 					(name "~"
@@ -198,7 +198,7 @@
 						)
 					)
 				)
-				(pin tri_state line
+				(pin output line
 					(at 7.62 0 180)
 					(length 3.81)
 					(name "~"
@@ -266,7 +266,7 @@
 						)
 					)
 				)
-				(pin tri_state line
+				(pin output line
 					(at 7.62 0 180)
 					(length 3.81)
 					(name "~"
@@ -334,7 +334,7 @@
 						)
 					)
 				)
-				(pin tri_state line
+				(pin output line
 					(at 7.62 0 180)
 					(length 3.81)
 					(name "~"
@@ -696,7 +696,7 @@
 						)
 					)
 				)
-				(pin bidirectional line
+				(pin output line
 					(at -22.86 -5.08 0)
 					(length 3.81)
 					(name "DAT0"
@@ -1158,7 +1158,7 @@
 						(type none)
 					)
 				)
-				(pin unspecified line
+				(pin passive line
 					(at -19.05 8.89 0)
 					(length 2.54)
 					(name "WP/CD"
@@ -1176,7 +1176,7 @@
 						)
 					)
 				)
-				(pin unspecified line
+				(pin passive line
 					(at -19.05 6.35 0)
 					(length 2.54)
 					(name "DAT2_IN"
@@ -1194,7 +1194,7 @@
 						)
 					)
 				)
-				(pin unspecified line
+				(pin passive line
 					(at -19.05 3.81 0)
 					(length 2.54)
 					(name "DAT3_IN"
@@ -1212,7 +1212,7 @@
 						)
 					)
 				)
-				(pin unspecified line
+				(pin passive line
 					(at -19.05 1.27 0)
 					(length 2.54)
 					(name "CMD_IN"
@@ -1230,7 +1230,7 @@
 						)
 					)
 				)
-				(pin unspecified line
+				(pin passive line
 					(at -19.05 -1.27 0)
 					(length 2.54)
 					(name "CLK_IN"
@@ -1248,7 +1248,7 @@
 						)
 					)
 				)
-				(pin unspecified line
+				(pin passive line
 					(at -19.05 -3.81 0)
 					(length 2.54)
 					(name "DAT0_IN"
@@ -1266,7 +1266,7 @@
 						)
 					)
 				)
-				(pin unspecified line
+				(pin passive line
 					(at -19.05 -6.35 0)
 					(length 2.54)
 					(name "DAT1_IN"
@@ -1284,7 +1284,7 @@
 						)
 					)
 				)
-				(pin unspecified line
+				(pin passive line
 					(at -19.05 -8.89 0)
 					(length 2.54)
 					(name "GND"
@@ -1302,7 +1302,7 @@
 						)
 					)
 				)
-				(pin unspecified line
+				(pin passive line
 					(at -19.05 -11.43 0)
 					(length 2.54)
 					(name "RDAT3_GND"
@@ -1320,7 +1320,7 @@
 						)
 					)
 				)
-				(pin unspecified line
+				(pin passive line
 					(at -2.54 13.97 270)
 					(length 2.54)
 					(name "GND"
@@ -1338,7 +1338,7 @@
 						)
 					)
 				)
-				(pin unspecified line
+				(pin passive line
 					(at 2.54 13.97 270)
 					(length 2.54)
 					(name "GND"
@@ -1356,7 +1356,7 @@
 						)
 					)
 				)
-				(pin unspecified line
+				(pin passive line
 					(at 19.05 6.35 180)
 					(length 2.54)
 					(name "DAT2_EX"
@@ -1374,7 +1374,7 @@
 						)
 					)
 				)
-				(pin unspecified line
+				(pin passive line
 					(at 19.05 3.81 180)
 					(length 2.54)
 					(name "DAT3_EX"
@@ -1392,7 +1392,7 @@
 						)
 					)
 				)
-				(pin unspecified line
+				(pin passive line
 					(at 19.05 1.27 180)
 					(length 2.54)
 					(name "CMD_EX"
@@ -1410,7 +1410,7 @@
 						)
 					)
 				)
-				(pin unspecified line
+				(pin passive line
 					(at 19.05 -1.27 180)
 					(length 2.54)
 					(name "CLK_EX"
@@ -1428,7 +1428,7 @@
 						)
 					)
 				)
-				(pin unspecified line
+				(pin passive line
 					(at 19.05 -3.81 180)
 					(length 2.54)
 					(name "DAT0_EX"
@@ -1446,7 +1446,7 @@
 						)
 					)
 				)
-				(pin unspecified line
+				(pin passive line
 					(at 19.05 -6.35 180)
 					(length 2.54)
 					(name "DAT1_EX"
@@ -1464,7 +1464,7 @@
 						)
 					)
 				)
-				(pin unspecified line
+				(pin passive line
 					(at 19.05 -8.89 180)
 					(length 2.54)
 					(name "RDAT_VCC"
@@ -1482,7 +1482,7 @@
 						)
 					)
 				)
-				(pin unspecified line
+				(pin passive line
 					(at 19.05 -11.43 180)
 					(length 2.54)
 					(name "VCC"
@@ -1741,10 +1741,22 @@
 		(uuid "5b509c36-4ce3-4f11-b36d-061923470d93")
 	)
 	(junction
+		(at 203.2 57.15)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "022a0402-afa2-4eb2-b6f4-bd9950f7cea1")
+	)
+	(junction
 		(at 46.99 127)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "14efd46f-9b3e-4966-80fe-9448b3785472")
+	)
+	(junction
+		(at 210.82 57.15)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "1affeef2-8ea5-4a29-8ffa-a27cc2504467")
 	)
 	(junction
 		(at 203.2 71.12)
@@ -1759,6 +1771,12 @@
 		(uuid "6f926eeb-51f0-47f4-a904-279ade867369")
 	)
 	(junction
+		(at 215.6676 64.77)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "8956aff6-6f5b-49f1-a5bd-1aebfbfff5c2")
+	)
+	(junction
 		(at 86.36 31.75)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -1771,28 +1789,10 @@
 		(uuid "9c68b875-2cee-4ff7-bbc1-6cb46bc131b8")
 	)
 	(junction
-		(at 76.2 40.64)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "9cdb43f9-052d-4d34-9b8a-b8981fb4fa31")
-	)
-	(junction
 		(at 153.67 93.98)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "c5f464fe-e3b4-426b-89e7-618fb1d4e0e0")
-	)
-	(junction
-		(at 76.2 31.75)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "d4c7eac9-2c46-4a8b-b830-887064bbdba6")
-	)
-	(junction
-		(at 86.36 40.64)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "edcba8ab-02fd-4f44-8836-2dfc4f293c7d")
 	)
 	(junction
 		(at 180.34 97.79)
@@ -1824,7 +1824,7 @@
 	)
 	(wire
 		(pts
-			(xy 203.2 71.12) (xy 203.2 68.58)
+			(xy 203.2 71.12) (xy 203.2 57.15)
 		)
 		(stroke
 			(width 0)
@@ -1851,16 +1851,6 @@
 			(type default)
 		)
 		(uuid "05732ef2-c56c-40a5-a376-77584e37d6cd")
-	)
-	(wire
-		(pts
-			(xy 86.36 40.64) (xy 86.36 41.91)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "0ae7e388-dfce-4ffb-96e8-cf0c119855aa")
 	)
 	(wire
 		(pts
@@ -1891,16 +1881,6 @@
 			(type default)
 		)
 		(uuid "1bc41253-374a-446d-bd3a-d0211c1d645b")
-	)
-	(wire
-		(pts
-			(xy 66.04 39.37) (xy 66.04 40.64)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "1be8a0ca-994d-49c2-999c-1c26c1e1174d")
 	)
 	(wire
 		(pts
@@ -2044,7 +2024,7 @@
 	)
 	(wire
 		(pts
-			(xy 86.36 39.37) (xy 86.36 40.64)
+			(xy 86.36 39.37) (xy 86.36 41.91)
 		)
 		(stroke
 			(width 0)
@@ -2081,16 +2061,6 @@
 			(type default)
 		)
 		(uuid "4db06e40-e229-4361-8c3f-ec1d9ecaf919")
-	)
-	(wire
-		(pts
-			(xy 66.04 40.64) (xy 76.2 40.64)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "579b7134-d2d0-403a-b6d5-ecfd18b2a8bf")
 	)
 	(wire
 		(pts
@@ -2164,16 +2134,6 @@
 	)
 	(wire
 		(pts
-			(xy 76.2 40.64) (xy 86.36 40.64)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "7f1dfe99-145c-4d74-82ab-53ecae06a46e")
-	)
-	(wire
-		(pts
 			(xy 46.99 127) (xy 54.61 127)
 		)
 		(stroke
@@ -2181,6 +2141,16 @@
 			(type default)
 		)
 		(uuid "82cafe3f-20b1-44eb-9615-1742ad1feae3")
+	)
+	(wire
+		(pts
+			(xy 210.82 64.77) (xy 215.6676 64.77)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8644056a-c040-41e0-b12a-9f9fabb3686a")
 	)
 	(wire
 		(pts
@@ -2221,6 +2191,16 @@
 			(type default)
 		)
 		(uuid "913682bc-42b0-44bf-b06c-b4b92e4447c6")
+	)
+	(wire
+		(pts
+			(xy 210.82 57.15) (xy 220.98 57.15)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "960b49b6-9e1e-4db9-89fc-30614aa13060")
 	)
 	(wire
 		(pts
@@ -2274,13 +2254,13 @@
 	)
 	(wire
 		(pts
-			(xy 76.2 39.37) (xy 76.2 40.64)
+			(xy 203.2 57.15) (xy 203.2 52.07)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "a3b9c1b1-d207-489b-a7e1-a9f9abe4564b")
+		(uuid "a331fe85-1d2a-45a9-adb0-b22cbab14253")
 	)
 	(wire
 		(pts
@@ -2291,6 +2271,16 @@
 			(type default)
 		)
 		(uuid "b9ec44c3-4017-4146-b716-dab8baf42dc2")
+	)
+	(wire
+		(pts
+			(xy 203.2 57.15) (xy 210.82 57.15)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "bcbc5bf0-3e53-4c05-bb5f-b126235e765a")
 	)
 	(wire
 		(pts
@@ -2364,23 +2354,13 @@
 	)
 	(wire
 		(pts
-			(xy 76.2 31.75) (xy 86.36 31.75)
+			(xy 215.6676 64.77) (xy 220.98 64.77)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "d1c4d47f-2427-4ef7-a3b2-b3cdba646e15")
-	)
-	(wire
-		(pts
-			(xy 66.04 31.75) (xy 76.2 31.75)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "d349c2d7-3161-4ead-8619-722e3cfa7d9a")
+		(uuid "d0ed5d38-d0bc-47ec-843d-b86092d7fb5d")
 	)
 	(wire
 		(pts
@@ -3131,7 +3111,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://www.ti.com/lit/ds/symlink/sn74lvc125a.pdf"
+		(property "Datasheet" "https://www.lcsc.com/datasheet/lcsc_datasheet_1811011925_Texas-Instruments-SN74LVC125APWR_C7813.pdf"
 			(at 62.23 100.33 0)
 			(effects
 				(font
@@ -3140,7 +3120,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Quad buffer, 3-state outputs, 1.65 V to 3.6 V, TSSOP-14"
+		(property "Description" "-40℃~+125℃ 1 1.65V~3.6V 2.5ns@3.3V,50pF 24mA 24mA 4 40uA 74LVC Tri-State Unidirectional TSSOP-14 Buffers, Drivers, Receivers, Transceivers RoHS"
 			(at 62.23 100.33 0)
 			(effects
 				(font
@@ -3772,6 +3752,42 @@
 		)
 		(property "Manufacturer" "Texas Instruments"
 			(at -35.56 10.16 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Modelo 3D" "${KICAD9_3DMODEL_DIR}/Package_SO.3dshapes/TSSOP-14_4.4x5mm_P0.65mm.step"
+			(at 62.23 100.33 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Status_Ficha" "Conferido no catalogo em 2026-09-24; verificar estoque ao comprar"
+			(at 62.23 100.33 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "CREATOR" ""
+			(at 62.23 100.33 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "VERIFIER" ""
+			(at 62.23 100.33 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3832,7 +3848,7 @@
 	)
 	(symbol
 		(lib_id "Device:C")
-		(at 76.2 35.56 0)
+		(at 220.98 60.96 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -3840,7 +3856,7 @@
 		(dnp no)
 		(uuid "2fec4b22-cf98-48f2-989e-9fa7f0210a01")
 		(property "Reference" "C7"
-			(at 78.74 34.29 0)
+			(at 223.52 59.69 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3849,7 +3865,7 @@
 			)
 		)
 		(property "Value" "10u / 50V"
-			(at 78.74 36.83 0)
+			(at 215.9 54.61 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3858,7 +3874,7 @@
 			)
 		)
 		(property "Footprint" "Capacitor_SMD:C_1206_3216Metric"
-			(at 77.1652 39.37 0)
+			(at 221.9452 64.77 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3867,7 +3883,7 @@
 			)
 		)
 		(property "Datasheet" "https://www.lcsc.com/datasheet/lcsc_datasheet_2304140030_Samsung-Electro-Mechanics-CL31A106KBHNNNE_C13585.pdf"
-			(at 76.2 35.56 0)
+			(at 220.98 60.96 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3875,53 +3891,8 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "MLCC, X5R, 10 uF, 50 V, ±10 %, 1206"
-			(at 76.2 35.56 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "LCSC" "C13585"
-			(at -41.91 0 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Rating" "X5R; 10 uF; 50 V; ±10 %; 1206"
-			(at -41.91 0 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "LCSC Part" "C13585"
-			(at -41.91 0 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "MPN" "CL31A106KBHNNNE"
-			(at -41.91 0 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer" "Samsung Electro-Mechanics"
-			(at -41.91 0 0)
+		(property "Description" "10uF 50V X5R ±10% 1206 Multilayer Ceramic Capacitors MLCC - SMD/SMT RoHS"
+			(at 220.98 60.96 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3930,7 +3901,7 @@
 			)
 		)
 		(property "LCSC" "C13585"
-			(at -41.91 0 0)
+			(at 102.87 25.4 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3939,7 +3910,7 @@
 			)
 		)
 		(property "Rating" "X5R; 10 uF; 50 V; ±10 %; 1206"
-			(at -41.91 0 0)
+			(at 102.87 25.4 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3948,7 +3919,7 @@
 			)
 		)
 		(property "LCSC Part" "C13585"
-			(at -41.91 0 0)
+			(at 102.87 25.4 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3957,7 +3928,7 @@
 			)
 		)
 		(property "MPN" "CL31A106KBHNNNE"
-			(at -41.91 0 0)
+			(at 102.87 25.4 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3966,7 +3937,88 @@
 			)
 		)
 		(property "Manufacturer" "Samsung Electro-Mechanics"
-			(at -41.91 0 0)
+			(at 102.87 25.4 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C13585"
+			(at 102.87 25.4 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Rating" "X5R; 10 uF; 50 V; ±10 %; 1206"
+			(at 102.87 25.4 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC Part" "C13585"
+			(at 102.87 25.4 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" "CL31A106KBHNNNE"
+			(at 102.87 25.4 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "Samsung Electro-Mechanics"
+			(at 102.87 25.4 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Modelo 3D" "${KICAD9_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_1206_3216Metric.step"
+			(at 220.98 60.96 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Status_Ficha" "Conferido no catalogo em 2026-09-24; verificar estoque ao comprar"
+			(at 220.98 60.96 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "CREATOR" ""
+			(at 220.98 60.96 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "VERIFIER" ""
+			(at 220.98 60.96 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4023,7 +4075,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://www.st.com/resource/en/datasheet/emif06-msd02n16.pdf"
+		(property "Datasheet" "https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/2309061517_STMicroelectronics-EMIF06-MSD02N16_C5267594.pdf"
 			(at 128.27 85.09 0)
 			(effects
 				(font
@@ -4032,7 +4084,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "6-channel EMI filter with ESD protection for microSD/T-Flash interface"
+		(property "Description" "-40℃~+85℃ 20pF 45Ω Yes QFN-16L EMI/RFI Filters (LC, RC Networks) RoHS"
 			(at 128.27 85.09 0)
 			(effects
 				(font
@@ -4087,6 +4139,42 @@
 			)
 		)
 		(property "Rating" "6 channels; 45 Ohm series; 20 pF; IEC 61000-4-2 level 4"
+			(at 128.27 85.09 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Modelo 3D" "${KIPRJMOD}/../../libraries/Hardware_SD/Hardware_SD.3dshapes/QFN-16L_L3.5-W1.2-P0.40_EMIF06-MSD02N16.wrl"
+			(at 128.27 85.09 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Status_Ficha" "Conferido no catalogo em 2026-09-24; verificar estoque ao comprar"
+			(at 128.27 85.09 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "CREATOR" ""
+			(at 128.27 85.09 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "VERIFIER" ""
 			(at 128.27 85.09 0)
 			(effects
 				(font
@@ -4198,7 +4286,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://www.lcsc.com/product-detail/C25804.html"
+		(property "Datasheet" "https://www.lcsc.com/datasheet/lcsc_datasheet_2206010045_UNI-ROYAL-Uniroyal-Elec-0603WAF1002T5E_C25804.pdf"
 			(at 46.99 123.19 0)
 			(effects
 				(font
@@ -4207,7 +4295,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Thick-film resistor, 10 kOhm, ±1 %, 0.1 W, 0603"
+		(property "Description" "Resistor SMD 10 kohm, 1%, 0,1 W, 0603"
 			(at 46.99 123.19 0)
 			(effects
 				(font
@@ -4243,7 +4331,7 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer" "UNI-ROYAL"
+		(property "Manufacturer" "UNI-ROYAL(Uniroyal Elec)"
 			(at -35.56 10.16 0)
 			(effects
 				(font
@@ -4299,6 +4387,42 @@
 		)
 		(property "MPN" "0603WAF1002T5E"
 			(at -35.56 10.16 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Modelo 3D" "${KICAD9_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0603_1608Metric.step"
+			(at 46.99 123.19 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Status_Ficha" "Conferido no catalogo em 2026-09-24; verificar estoque ao comprar"
+			(at 46.99 123.19 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "CREATOR" ""
+			(at 46.99 123.19 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "VERIFIER" ""
+			(at 46.99 123.19 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4737,6 +4861,60 @@
 				(hide yes)
 			)
 		)
+		(property "LCSC" "Nao confirmado"
+			(at 240.03 85.09 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC Part" "Nao confirmado"
+			(at 240.03 85.09 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Status_Ficha" "MPN e geometria preservados; fornecimento LCSC nao confirmado, nao substituir por socket diferente"
+			(at 240.03 85.09 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Modelo 3D" "PENDENTE: ${KICAD9_3DMODEL_DIR}/Connector_Card.3dshapes/microSD_HC_Molex_104031-0811.step"
+			(at 240.03 85.09 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "CREATOR" ""
+			(at 240.03 85.09 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "VERIFIER" ""
+			(at 240.03 85.09 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "5"
 			(uuid "88ec68a5-6f31-4601-807c-01d3abc12783")
 		)
@@ -4815,7 +4993,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://www.lcsc.com/product-detail/C14663.html"
+		(property "Datasheet" "https://www.lcsc.com/datasheet/lcsc_datasheet_2211101700_YAGEO-CC0603KRX7R9BB104_C14663.pdf"
 			(at 156.21 101.6 0)
 			(effects
 				(font
@@ -4824,7 +5002,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "MLCC, X7R, 100 nF, 50 V, ±10 %, 0603"
+		(property "Description" "Capacitor ceramico 100 nF, 50 V, X7R, 10%, 0603"
 			(at 156.21 101.6 0)
 			(effects
 				(font
@@ -4916,6 +5094,42 @@
 		)
 		(property "MPN" "CC0603KRX7R9BB104"
 			(at 48.26 66.04 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Modelo 3D" "${KICAD9_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0603_1608Metric.step"
+			(at 156.21 101.6 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Status_Ficha" "Conferido no catalogo em 2026-09-24; verificar estoque ao comprar"
+			(at 156.21 101.6 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "CREATOR" ""
+			(at 156.21 101.6 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "VERIFIER" ""
+			(at 156.21 101.6 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5236,7 +5450,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://www.ti.com/lit/ds/symlink/sn74lvc125a.pdf"
+		(property "Datasheet" "https://www.lcsc.com/datasheet/lcsc_datasheet_1811011925_Texas-Instruments-SN74LVC125APWR_C7813.pdf"
 			(at 106.68 31.75 0)
 			(effects
 				(font
@@ -5245,7 +5459,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Quad buffer, 3-state outputs, 1.65 V to 3.6 V, TSSOP-14"
+		(property "Description" "-40℃~+125℃ 1 1.65V~3.6V 2.5ns@3.3V,50pF 24mA 24mA 4 40uA 74LVC Tri-State Unidirectional TSSOP-14 Buffers, Drivers, Receivers, Transceivers RoHS"
 			(at 106.68 31.75 0)
 			(effects
 				(font
@@ -5877,6 +6091,42 @@
 		)
 		(property "Manufacturer" "Texas Instruments"
 			(at -41.91 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Modelo 3D" "${KICAD9_3DMODEL_DIR}/Package_SO.3dshapes/TSSOP-14_4.4x5mm_P0.65mm.step"
+			(at 106.68 31.75 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Status_Ficha" "Conferido no catalogo em 2026-09-24; verificar estoque ao comprar"
+			(at 106.68 31.75 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "CREATOR" ""
+			(at 106.68 31.75 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "VERIFIER" ""
+			(at 106.68 31.75 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5971,7 +6221,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://www.lcsc.com/product-detail/C25804.html"
+		(property "Datasheet" "https://www.lcsc.com/datasheet/lcsc_datasheet_2206010045_UNI-ROYAL-Uniroyal-Elec-0603WAF1002T5E_C25804.pdf"
 			(at 180.34 80.01 0)
 			(effects
 				(font
@@ -5980,7 +6230,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Thick-film resistor, 10 kOhm, ±1 %, 0.1 W, 0603"
+		(property "Description" "Resistor SMD 10 kohm, 1%, 0,1 W, 0603"
 			(at 180.34 80.01 0)
 			(effects
 				(font
@@ -6016,7 +6266,7 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer" "UNI-ROYAL"
+		(property "Manufacturer" "UNI-ROYAL(Uniroyal Elec)"
 			(at 35.56 10.16 0)
 			(effects
 				(font
@@ -6072,6 +6322,42 @@
 		)
 		(property "MPN" "0603WAF1002T5E"
 			(at 35.56 10.16 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Modelo 3D" "${KICAD9_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0603_1608Metric.step"
+			(at 180.34 80.01 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Status_Ficha" "Conferido no catalogo em 2026-09-24; verificar estoque ao comprar"
+			(at 180.34 80.01 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "CREATOR" ""
+			(at 180.34 80.01 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "VERIFIER" ""
+			(at 180.34 80.01 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6128,7 +6414,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://www.ti.com/lit/ds/symlink/sn74lvc125a.pdf"
+		(property "Datasheet" "https://www.lcsc.com/datasheet/lcsc_datasheet_1811011925_Texas-Instruments-SN74LVC125APWR_C7813.pdf"
 			(at 62.23 82.55 0)
 			(effects
 				(font
@@ -6137,7 +6423,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Quad buffer, 3-state outputs, 1.65 V to 3.6 V, TSSOP-14"
+		(property "Description" "-40℃~+125℃ 1 1.65V~3.6V 2.5ns@3.3V,50pF 24mA 24mA 4 40uA 74LVC Tri-State Unidirectional TSSOP-14 Buffers, Drivers, Receivers, Transceivers RoHS"
 			(at 62.23 82.55 0)
 			(effects
 				(font
@@ -6769,6 +7055,42 @@
 		)
 		(property "Manufacturer" "Texas Instruments"
 			(at -35.56 10.16 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Modelo 3D" "${KICAD9_3DMODEL_DIR}/Package_SO.3dshapes/TSSOP-14_4.4x5mm_P0.65mm.step"
+			(at 62.23 82.55 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Status_Ficha" "Conferido no catalogo em 2026-09-24; verificar estoque ao comprar"
+			(at 62.23 82.55 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "CREATOR" ""
+			(at 62.23 82.55 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "VERIFIER" ""
+			(at 62.23 82.55 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6894,6 +7216,71 @@
 		)
 	)
 	(symbol
+		(lib_id "power:GND")
+		(at 215.6676 64.77 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "72f9adef-bddd-4d51-9020-33971d991e4b")
+		(property "Reference" "#PWR070"
+			(at 215.6676 71.12 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 218.7156 67.818 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 215.6676 64.77 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 215.6676 64.77 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 215.6676 64.77 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "9ac04a16-b88d-438c-bd85-8b44dce42208")
+		)
+		(instances
+			(project "estacao-meteorologica"
+				(path "/0c305a6e-f9cd-49a1-b146-c2956e5469b6/8495f6b1-74a6-413b-a199-5ab08c5254ba"
+					(reference "#PWR070")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "74xx:74LVC125")
 		(at 62.23 62.23 0)
 		(unit 1)
@@ -6928,7 +7315,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://www.ti.com/lit/ds/symlink/sn74lvc125a.pdf"
+		(property "Datasheet" "https://www.lcsc.com/datasheet/lcsc_datasheet_1811011925_Texas-Instruments-SN74LVC125APWR_C7813.pdf"
 			(at 62.23 62.23 0)
 			(effects
 				(font
@@ -6937,7 +7324,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Quad buffer, 3-state outputs, 1.65 V to 3.6 V, TSSOP-14"
+		(property "Description" "-40℃~+125℃ 1 1.65V~3.6V 2.5ns@3.3V,50pF 24mA 24mA 4 40uA 74LVC Tri-State Unidirectional TSSOP-14 Buffers, Drivers, Receivers, Transceivers RoHS"
 			(at 62.23 62.23 0)
 			(effects
 				(font
@@ -7569,6 +7956,42 @@
 		)
 		(property "Manufacturer" "Texas Instruments"
 			(at -35.56 10.16 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Modelo 3D" "${KICAD9_3DMODEL_DIR}/Package_SO.3dshapes/TSSOP-14_4.4x5mm_P0.65mm.step"
+			(at 62.23 62.23 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Status_Ficha" "Conferido no catalogo em 2026-09-24; verificar estoque ao comprar"
+			(at 62.23 62.23 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "CREATOR" ""
+			(at 62.23 62.23 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "VERIFIER" ""
+			(at 62.23 62.23 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7759,7 +8182,7 @@
 	)
 	(symbol
 		(lib_id "power:+3V3")
-		(at 203.2 68.58 0)
+		(at 203.2 52.07 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -7768,7 +8191,7 @@
 		(fields_autoplaced yes)
 		(uuid "aa702f0a-08f8-4278-afba-e7e9c4c6aa63")
 		(property "Reference" "#PWR028"
-			(at 203.2 72.39 0)
+			(at 203.2 55.88 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7777,7 +8200,7 @@
 			)
 		)
 		(property "Value" "+3V3"
-			(at 203.2 63.5 0)
+			(at 203.2 46.99 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7785,7 +8208,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 203.2 68.58 0)
+			(at 203.2 52.07 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7794,7 +8217,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 203.2 68.58 0)
+			(at 203.2 52.07 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7803,7 +8226,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"+3V3\""
-			(at 203.2 68.58 0)
+			(at 203.2 52.07 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7924,7 +8347,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://www.lcsc.com/product-detail/C14663.html"
+		(property "Datasheet" "https://www.lcsc.com/datasheet/lcsc_datasheet_2211101700_YAGEO-CC0603KRX7R9BB104_C14663.pdf"
 			(at 86.36 35.56 0)
 			(effects
 				(font
@@ -7933,7 +8356,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "MLCC, X7R, 100 nF, 50 V, ±10 %, 0603"
+		(property "Description" "Capacitor ceramico 100 nF, 50 V, X7R, 10%, 0603"
 			(at 86.36 35.56 0)
 			(effects
 				(font
@@ -8025,6 +8448,42 @@
 		)
 		(property "MPN" "CC0603KRX7R9BB104"
 			(at -41.91 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Modelo 3D" "${KICAD9_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0603_1608Metric.step"
+			(at 86.36 35.56 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Status_Ficha" "Conferido no catalogo em 2026-09-24; verificar estoque ao comprar"
+			(at 86.36 35.56 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "CREATOR" ""
+			(at 86.36 35.56 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "VERIFIER" ""
+			(at 86.36 35.56 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8180,7 +8639,7 @@
 	)
 	(symbol
 		(lib_id "Device:C")
-		(at 66.04 35.56 0)
+		(at 210.82 60.96 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -8188,7 +8647,7 @@
 		(dnp no)
 		(uuid "eb358646-a9aa-45cc-b8bf-43c6bb2d0edf")
 		(property "Reference" "C9"
-			(at 68.834 34.29 0)
+			(at 213.614 59.69 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8197,7 +8656,7 @@
 			)
 		)
 		(property "Value" "100n"
-			(at 68.834 36.83 0)
+			(at 213.614 62.23 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8206,7 +8665,7 @@
 			)
 		)
 		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
-			(at 67.0052 39.37 0)
+			(at 211.7852 64.77 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8214,8 +8673,8 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://www.lcsc.com/product-detail/C14663.html"
-			(at 66.04 35.56 0)
+		(property "Datasheet" "https://www.lcsc.com/datasheet/lcsc_datasheet_2211101700_YAGEO-CC0603KRX7R9BB104_C14663.pdf"
+			(at 210.82 60.96 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8223,53 +8682,8 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "MLCC, X7R, 100 nF, 50 V, ±10 %, 0603"
-			(at 66.04 35.56 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "LCSC" "C14663"
-			(at -41.91 0 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "LCSC Part" "C14663"
-			(at -41.91 0 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Rating" "X7R; 100 nF; 50 V; ±10 %; 0603"
-			(at -41.91 0 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer" "YAGEO"
-			(at -41.91 0 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "MPN" "CC0603KRX7R9BB104"
-			(at -41.91 0 0)
+		(property "Description" "Capacitor ceramico 100 nF, 50 V, X7R, 10%, 0603"
+			(at 210.82 60.96 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8278,7 +8692,7 @@
 			)
 		)
 		(property "LCSC" "C14663"
-			(at -41.91 0 0)
+			(at 102.87 25.4 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8287,7 +8701,7 @@
 			)
 		)
 		(property "LCSC Part" "C14663"
-			(at -41.91 0 0)
+			(at 102.87 25.4 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8296,7 +8710,7 @@
 			)
 		)
 		(property "Rating" "X7R; 100 nF; 50 V; ±10 %; 0603"
-			(at -41.91 0 0)
+			(at 102.87 25.4 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8305,7 +8719,7 @@
 			)
 		)
 		(property "Manufacturer" "YAGEO"
-			(at -41.91 0 0)
+			(at 102.87 25.4 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8314,7 +8728,88 @@
 			)
 		)
 		(property "MPN" "CC0603KRX7R9BB104"
-			(at -41.91 0 0)
+			(at 102.87 25.4 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C14663"
+			(at 102.87 25.4 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC Part" "C14663"
+			(at 102.87 25.4 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Rating" "X7R; 100 nF; 50 V; ±10 %; 0603"
+			(at 102.87 25.4 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "YAGEO"
+			(at 102.87 25.4 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" "CC0603KRX7R9BB104"
+			(at 102.87 25.4 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Modelo 3D" "${KICAD9_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0603_1608Metric.step"
+			(at 210.82 60.96 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Status_Ficha" "Conferido no catalogo em 2026-09-24; verificar estoque ao comprar"
+			(at 210.82 60.96 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "CREATOR" ""
+			(at 210.82 60.96 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "VERIFIER" ""
+			(at 210.82 60.96 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8436,7 +8931,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://www.ti.com/lit/ds/symlink/sn74lvc125a.pdf"
+		(property "Datasheet" "https://www.lcsc.com/datasheet/lcsc_datasheet_1811011925_Texas-Instruments-SN74LVC125APWR_C7813.pdf"
 			(at 62.23 127 0)
 			(effects
 				(font
@@ -8445,7 +8940,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Quad buffer, 3-state outputs, 1.65 V to 3.6 V, TSSOP-14"
+		(property "Description" "-40℃~+125℃ 1 1.65V~3.6V 2.5ns@3.3V,50pF 24mA 24mA 4 40uA 74LVC Tri-State Unidirectional TSSOP-14 Buffers, Drivers, Receivers, Transceivers RoHS"
 			(at 62.23 127 0)
 			(effects
 				(font
@@ -9077,6 +9572,42 @@
 		)
 		(property "Manufacturer" "Texas Instruments"
 			(at -35.56 10.16 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Modelo 3D" "${KICAD9_3DMODEL_DIR}/Package_SO.3dshapes/TSSOP-14_4.4x5mm_P0.65mm.step"
+			(at 62.23 127 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Status_Ficha" "Conferido no catalogo em 2026-09-24; verificar estoque ao comprar"
+			(at 62.23 127 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "CREATOR" ""
+			(at 62.23 127 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "VERIFIER" ""
+			(at 62.23 127 0)
 			(effects
 				(font
 					(size 1.27 1.27)

@@ -1,5 +1,7 @@
 (fp_lib_table
   (version 7)
+	(lib (name "Hardware_MCU")(type "KiCad")(uri "${KIPRJMOD}/../../libraries/Hardware_MCU/Hardware_MCU.pretty")(options "")(descr "MCU - suporte vertical CR2032 e modelo 3D local"))
+  (lib (name "Hardware_LoRa")(type "KiCad")(uri "${KIPRJMOD}/../../libraries/Hardware_LoRa/Hardware_LoRa.pretty")(options "")(descr "LoRa1276-C1, U.FL e ESD RF; modelos STEP locais"))
   (lib (name "Sensores_Meteo")(type "KiCad")(uri "${KIPRJMOD}/../../libraries/Sensores_Meteo/Sensores_Meteo.pretty")(options "")(descr "Footprints locais dos conectores meteorológicos"))
   (lib (name "DHT22")(type "KiCad")(uri "${KIPRJMOD}/../../libraries/DHT22/DHT22.pretty")(options "")(descr "Sensor local DHT22/AM2302 e seu modelo 3D"))
   (lib (name "Hardware_Power")(type "KiCad")(uri "${KIPRJMOD}/../../libraries/Hardware_Power/Hardware_Power.pretty")(options "")(descr "Alimentacao - importados EasyEDA, pinagem revisada"))

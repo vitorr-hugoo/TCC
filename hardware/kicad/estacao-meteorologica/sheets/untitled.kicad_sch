@@ -1328,7 +1328,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://www.bosch-sensortec.com/media/boschsensortec/downloads/datasheets/bst-bmp280-ds001.pdf"
+		(property "Datasheet" "https://www.lcsc.com/datasheet/lcsc_datasheet_2007021612_Bosch-Sensortec-BMP280_C83291.pdf"
 			(at 139.7 106.68 0)
 			(effects
 				(font
@@ -1337,7 +1337,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Sensor barométrico digital absoluto, I2C/SPI, LGA-8"
+		(property "Description" "-40℃~+85℃ 0.12hpa 1.5pa/K 1.71V~3.6V 1hpa 300nA 30Kpa~1.1bar I2C、SPI LGA-8(2x2.5) Pressure Sensors RoHS"
 			(at 139.7 106.68 0)
 			(effects
 				(font
@@ -1393,6 +1393,42 @@
 		)
 		(property "Function" "Sensor de pressão; CSB em alto e SDO em baixo selecionam I2C, endereço 0x76."
 			(at 139.7 106.68 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Modelo 3D" "${KICAD9_3DMODEL_DIR}/Package_LGA.3dshapes/Bosch_LGA-8_2x2.5mm_P0.65mm_ClockwisePinNumbering.step"
+			(at 139.7 106.68 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Status_Ficha" "Conferido no catalogo em 2026-09-24; verificar estoque ao comprar"
+			(at 139.7 106.68 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "CREATOR" ""
+			(at 139.7 106.68 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "VERIFIER" ""
+			(at 139.7 106.68 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1467,7 +1503,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://www.lcsc.com/product-detail/C25804.html"
+		(property "Datasheet" "https://www.lcsc.com/datasheet/lcsc_datasheet_2206010045_UNI-ROYAL-Uniroyal-Elec-0603WAF1002T5E_C25804.pdf"
 			(at 130.81 93.98 0)
 			(effects
 				(font
@@ -1476,7 +1512,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Resistor de filme espesso, 10 kOhm, 1%, 0,1 W, 0603"
+		(property "Description" "Resistor SMD 10 kohm, 1%, 0,1 W, 0603"
 			(at 130.81 93.98 0)
 			(effects
 				(font
@@ -1485,7 +1521,7 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer" "UNI-ROYAL"
+		(property "Manufacturer" "UNI-ROYAL(Uniroyal Elec)"
 			(at 130.81 93.98 0)
 			(effects
 				(font
@@ -1532,6 +1568,42 @@
 		)
 		(property "Function" "Pull-down opcional de SDO; hoje está em paralelo ao strap direto para GND da folha raiz."
 			(at 130.81 93.98 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Modelo 3D" "${KICAD9_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0603_1608Metric.step"
+			(at 130.81 93.98 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Status_Ficha" "Conferido no catalogo em 2026-09-24; verificar estoque ao comprar"
+			(at 130.81 93.98 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "CREATOR" ""
+			(at 130.81 93.98 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "VERIFIER" ""
+			(at 130.81 93.98 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1591,7 +1663,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://www.lcsc.com/product-detail/C14663.html"
+		(property "Datasheet" "https://www.lcsc.com/datasheet/lcsc_datasheet_2211101700_YAGEO-CC0603KRX7R9BB104_C14663.pdf"
 			(at 162.56 114.3 0)
 			(effects
 				(font
@@ -1600,7 +1672,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Capacitor cerâmico 100 nF, X7R, 50 V, 0603"
+		(property "Description" "Capacitor ceramico 100 nF, 50 V, X7R, 10%, 0603"
 			(at 162.56 114.3 0)
 			(effects
 				(font
@@ -1663,6 +1735,42 @@
 				(hide yes)
 			)
 		)
+		(property "Modelo 3D" "${KICAD9_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0603_1608Metric.step"
+			(at 162.56 114.3 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Status_Ficha" "Conferido no catalogo em 2026-09-24; verificar estoque ao comprar"
+			(at 162.56 114.3 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "CREATOR" ""
+			(at 162.56 114.3 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "VERIFIER" ""
+			(at 162.56 114.3 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "a737799f-ddc0-4c2d-b92f-e25946d7a4c7")
 		)
@@ -1714,7 +1822,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://www.lcsc.com/product-detail/C14663.html"
+		(property "Datasheet" "https://www.lcsc.com/datasheet/lcsc_datasheet_2211101700_YAGEO-CC0603KRX7R9BB104_C14663.pdf"
 			(at 152.4 114.3 0)
 			(effects
 				(font
@@ -1723,7 +1831,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Capacitor cerâmico 100 nF, X7R, 50 V, 0603"
+		(property "Description" "Capacitor ceramico 100 nF, 50 V, X7R, 10%, 0603"
 			(at 152.4 114.3 0)
 			(effects
 				(font
@@ -1778,6 +1886,42 @@
 			)
 		)
 		(property "Function" "Desacoplamento local de VDD do BMP280."
+			(at 152.4 114.3 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Modelo 3D" "${KICAD9_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0603_1608Metric.step"
+			(at 152.4 114.3 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Status_Ficha" "Conferido no catalogo em 2026-09-24; verificar estoque ao comprar"
+			(at 152.4 114.3 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "CREATOR" ""
+			(at 152.4 114.3 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "VERIFIER" ""
 			(at 152.4 114.3 0)
 			(effects
 				(font
@@ -1967,7 +2111,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://www.lcsc.com/product-detail/C25804.html"
+		(property "Datasheet" "https://www.lcsc.com/datasheet/lcsc_datasheet_2206010045_UNI-ROYAL-Uniroyal-Elec-0603WAF1002T5E_C25804.pdf"
 			(at 128.27 83.82 0)
 			(effects
 				(font
@@ -1976,7 +2120,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Resistor de filme espesso, 10 kOhm, 1%, 0,1 W, 0603"
+		(property "Description" "Resistor SMD 10 kohm, 1%, 0,1 W, 0603"
 			(at 128.27 83.82 0)
 			(effects
 				(font
@@ -1985,7 +2129,7 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer" "UNI-ROYAL"
+		(property "Manufacturer" "UNI-ROYAL(Uniroyal Elec)"
 			(at 128.27 83.82 0)
 			(effects
 				(font
@@ -2032,6 +2176,42 @@
 		)
 		(property "Function" "Pull-up opcional de CSB; hoje está em paralelo ao strap direto para +3V3 da folha raiz."
 			(at 128.27 83.82 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Modelo 3D" "${KICAD9_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0603_1608Metric.step"
+			(at 128.27 83.82 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Status_Ficha" "Conferido no catalogo em 2026-09-24; verificar estoque ao comprar"
+			(at 128.27 83.82 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "CREATOR" ""
+			(at 128.27 83.82 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "VERIFIER" ""
+			(at 128.27 83.82 90)
 			(effects
 				(font
 					(size 1.27 1.27)

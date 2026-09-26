@@ -1,5 +1,6 @@
 (sym_lib_table
   (version 7)
+  (lib (name "Hardware_LoRa")(type "KiCad")(uri "${KIPRJMOD}/../../libraries/Hardware_LoRa/Hardware_LoRa.kicad_sym")(options "")(descr "LoRa1276-C1 915MHz, conector U.FL e protecao ESD RF"))
   (lib (name "Sensores_Meteo")(type "KiCad")(uri "${KIPRJMOD}/../../libraries/Sensores_Meteo/Sensores_Meteo.kicad_sym")(options "")(descr "Biblioteca local dos conectores meteorológicos"))
   (lib (name "DHT22")(type "KiCad")(uri "${KIPRJMOD}/../../libraries/DHT22/DHT22.kicad_sym")(options "")(descr "Sensor local DHT22/AM2302"))
   (lib (name "Hardware_MCU")(type "KiCad")(uri "${KIPRJMOD}/../../libraries/Hardware_MCU/Hardware_MCU.kicad_sym")(options "")(descr "Interface Morpho CN7/CN10 da Nucleo-F446RE; AVDD exportado"))

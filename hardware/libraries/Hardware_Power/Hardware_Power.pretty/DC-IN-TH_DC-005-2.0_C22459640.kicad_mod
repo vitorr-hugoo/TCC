@@ -25,7 +25,7 @@
 	
 	
 	
-	(model "${KIPRJMOD}/libraries/Hardware_Power/Hardware_Power.3dshapes/DC-IN-TH_DC-005-2.0_C22459640.wrl"
+	(model "${KIPRJMOD}/../../libraries/Hardware_Power/Hardware_Power.3dshapes/DC-IN-TH_DC-005-2.0_C22459640.step"
 		(offset (xyz 0.000 0.000 0.000))
 		(scale (xyz 1 1 1))
 		(rotate (xyz 0 0 0))
