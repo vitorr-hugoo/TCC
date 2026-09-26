@@ -530,222 +530,96 @@
       "exclude_dnp": false,
       "fields_ordered": [
         {
-          "group_by": false,
-          "label": "Reference",
-          "name": "Reference",
-          "show": true
+                "label": "Reference",
+                "name": "Reference",
+                "group_by": false,
+                "show": true
         },
         {
-          "group_by": false,
-          "label": "Qty",
-          "name": "${QUANTITY}",
-          "show": true
+                "label": "Qty",
+                "name": "${QUANTITY}",
+                "group_by": false,
+                "show": true
         },
         {
-          "group_by": true,
-          "label": "Value",
-          "name": "Value",
-          "show": true
+                "label": "Value",
+                "name": "Value",
+                "group_by": true,
+                "show": true
         },
         {
-          "group_by": true,
-          "label": "DNP",
-          "name": "${DNP}",
-          "show": true
+                "label": "Description",
+                "name": "Description",
+                "group_by": true,
+                "show": true
         },
         {
-          "group_by": true,
-          "label": "Exclude from BOM",
-          "name": "${EXCLUDE_FROM_BOM}",
-          "show": true
+                "label": "Function",
+                "name": "Function",
+                "group_by": true,
+                "show": true
         },
         {
-          "group_by": true,
-          "label": "Exclude from Board",
-          "name": "${EXCLUDE_FROM_BOARD}",
-          "show": true
+                "label": "Manufacturer",
+                "name": "Manufacturer",
+                "group_by": true,
+                "show": true
         },
         {
-          "group_by": true,
-          "label": "Footprint",
-          "name": "Footprint",
-          "show": true
+                "label": "MPN",
+                "name": "MPN",
+                "group_by": true,
+                "show": true
         },
         {
-          "group_by": false,
-          "label": "Datasheet",
-          "name": "Datasheet",
-          "show": true
+                "label": "LCSC",
+                "name": "LCSC",
+                "group_by": true,
+                "show": true
         },
         {
-          "group_by": false,
-          "label": "CREATOR",
-          "name": "CREATOR",
-          "show": false
+                "label": "Specification",
+                "name": "Specification",
+                "group_by": true,
+                "show": true
         },
         {
-          "group_by": false,
-          "label": "Check_prices",
-          "name": "Check_prices",
-          "show": false
+                "label": "Datasheet",
+                "name": "Datasheet",
+                "group_by": false,
+                "show": true
         },
         {
-          "group_by": false,
-          "label": "Description_1",
-          "name": "Description_1",
-          "show": false
+                "label": "Footprint",
+                "name": "Footprint",
+                "group_by": true,
+                "show": true
         },
         {
-          "group_by": false,
-          "label": "MANUFACTURER",
-          "name": "MANUFACTURER",
-          "show": false
+                "label": "Assembly",
+                "name": "Assembly",
+                "group_by": true,
+                "show": true
         },
         {
-          "group_by": false,
-          "label": "MAXIMUM_PACKAGE_HEIGHT",
-          "name": "MAXIMUM_PACKAGE_HEIGHT",
-          "show": false
+                "label": "DNP",
+                "name": "${DNP}",
+                "group_by": true,
+                "show": true
         },
         {
-          "group_by": false,
-          "label": "MF",
-          "name": "MF",
-          "show": false
+                "label": "Exclude from BOM",
+                "name": "${EXCLUDE_FROM_BOM}",
+                "group_by": true,
+                "show": false
         },
         {
-          "group_by": false,
-          "label": "MP",
-          "name": "MP",
-          "show": false
-        },
-        {
-          "group_by": false,
-          "label": "PARTREV",
-          "name": "PARTREV",
-          "show": false
-        },
-        {
-          "group_by": false,
-          "label": "Package",
-          "name": "Package",
-          "show": false
-        },
-        {
-          "group_by": false,
-          "label": "Price",
-          "name": "Price",
-          "show": false
-        },
-        {
-          "group_by": false,
-          "label": "Purchase-URL",
-          "name": "Purchase-URL",
-          "show": false
-        },
-        {
-          "group_by": false,
-          "label": "STANDARD",
-          "name": "STANDARD",
-          "show": false
-        },
-        {
-          "group_by": false,
-          "label": "SnapEDA_Link",
-          "name": "SnapEDA_Link",
-          "show": false
-        },
-        {
-          "group_by": false,
-          "label": "VERIFIER",
-          "name": "VERIFIER",
-          "show": false
-        },
-        {
-          "group_by": false,
-          "label": "Availability",
-          "name": "Availability",
-          "show": false
-        },
-        {
-          "group_by": false,
-          "label": "Descrição",
-          "name": "Description",
-          "show": false
-        },
-        {
-          "group_by": false,
-          "label": "#",
-          "name": "${ITEM_NUMBER}",
-          "show": false
-        },
-        {
-          "group_by": false,
-          "label": "Fabricante / MPN",
-          "name": "Fabricante / MPN",
-          "show": false
-        },
-        {
-          "group_by": false,
-          "label": "Function",
-          "name": "Function",
-          "show": false
-        },
-        {
-          "group_by": false,
-          "label": "Rating",
-          "name": "Rating",
-          "show": false
-        },
-        {
-          "group_by": false,
-          "label": "LCSC",
-          "name": "LCSC",
-          "show": false
-        },
-        {
-          "group_by": false,
-          "label": "MPN",
-          "name": "MPN",
-          "show": false
-        },
-        {
-          "group_by": false,
-          "label": "Status_Ficha",
-          "name": "Status_Ficha",
-          "show": false
-        },
-        {
-          "group_by": false,
-          "label": "3D Model",
-          "name": "3D Model",
-          "show": false
-        },
-        {
-          "group_by": false,
-          "label": "LCSC Part",
-          "name": "LCSC Part",
-          "show": false
-        },
-        {
-          "group_by": false,
-          "label": "Modelo 3D",
-          "name": "Modelo 3D",
-          "show": false
-        },
-        {
-          "group_by": false,
-          "label": "Assembly",
-          "name": "Assembly",
-          "show": false
-        },
-        {
-          "group_by": false,
-          "label": "Manufacturer",
-          "name": "Manufacturer",
-          "show": false
+                "label": "Exclude from Board",
+                "name": "${EXCLUDE_FROM_BOARD}",
+                "group_by": true,
+                "show": false
         }
-      ],
+],
       "filter_string": "",
       "group_symbols": true,
       "include_excluded_from_bom": true,
@@ -800,43 +674,43 @@
     ],
     [
       "a23dea8e-0c82-454e-9219-5e250a611b0f",
-      "mcu"
+      "MCU E DEPURAÇÃO"
     ],
     [
       "19a3c20f-53ab-4562-aabc-58e6e99571a0",
-      "alimentacao"
+      "ALIMENTAÇÃO"
     ],
     [
       "0abc4084-0cd9-43a4-88f9-87e0e6566acc",
-      "BMP280"
+      "SENSOR BMP280"
     ],
     [
       "c5455acd-00c4-4dde-ab9a-382e33c5bf3a",
-      "BH1750"
+      "SENSOR BH1750"
     ],
     [
       "8495f6b1-74a6-413b-a199-5ab08c5254ba",
-      "Cartao SD"
+      "CARTÃO microSD"
     ],
     [
       "1fd7a678-c9b9-4a6a-ab50-58dfcf2b1932",
-      "LORA Module"
+      "RÁDIO LoRa"
     ],
     [
       "34d78a87-9b09-4795-98a5-fe6ea1a123f9",
-      "DHT22"
+      "SENSOR DHT22"
     ],
     [
       "058dce74-971b-49d7-82f0-384e20be985c",
-      "METEOROLOGIA"
+      "INTERFACES METEOROLÓGICAS"
     ],
     [
       "e9242eb5-e685-47a2-8464-3e1e52960bb8",
-      "PLUVIOMETRO"
+      "PLUVIÔMETRO"
     ],
     [
       "9f29de2e-b04a-471a-b3f5-0032147ee0d6",
-      "ANEMOMETRO"
+      "ANEMÔMETRO"
     ],
     [
       "4ef75fdb-90eb-437a-af55-0afcbbe28aca",

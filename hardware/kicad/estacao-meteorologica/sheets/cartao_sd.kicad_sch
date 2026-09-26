@@ -591,7 +591,7 @@
 				(pin bidirectional line
 					(at -22.86 10.16 0)
 					(length 3.81)
-					(name "DAT2"
+					(name "SD_CARD_DAT2"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -717,7 +717,7 @@
 				(pin bidirectional line
 					(at -22.86 -7.62 0)
 					(length 3.81)
-					(name "DAT1"
+					(name "SD_CARD_DAT1"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -2452,7 +2452,7 @@
 		)
 		(uuid "fc7d12ec-68fe-45aa-8630-49a12e5dc661")
 	)
-	(global_label "SCK_LLS"
+	(global_label "SD_SCK_BUF"
 		(shape output)
 		(at 78.74 100.33 0)
 		(fields_autoplaced yes)
@@ -2474,7 +2474,7 @@
 			)
 		)
 	)
-	(global_label "DAT2"
+	(global_label "SD_CARD_DAT2"
 		(shape input)
 		(at 199.39 74.93 180)
 		(fields_autoplaced yes)
@@ -2496,7 +2496,7 @@
 			)
 		)
 	)
-	(global_label "DI_LLS"
+	(global_label "SD_MOSI_BUF"
 		(shape input)
 		(at 104.14 83.82 180)
 		(fields_autoplaced yes)
@@ -2518,7 +2518,7 @@
 			)
 		)
 	)
-	(global_label "CS_LLS"
+	(global_label "SD_CS_BUF"
 		(shape input)
 		(at 104.14 81.28 180)
 		(fields_autoplaced yes)
@@ -2540,7 +2540,7 @@
 			)
 		)
 	)
-	(global_label "DAT2"
+	(global_label "SD_CARD_DAT2"
 		(shape output)
 		(at 152.4 78.74 0)
 		(fields_autoplaced yes)
@@ -2562,7 +2562,7 @@
 			)
 		)
 	)
-	(global_label "DAT1"
+	(global_label "SD_CARD_DAT1"
 		(shape output)
 		(at 152.4 91.44 0)
 		(fields_autoplaced yes)
@@ -2584,7 +2584,7 @@
 			)
 		)
 	)
-	(global_label "DO_LLS"
+	(global_label "SD_MISO_BUF"
 		(shape output)
 		(at 104.14 88.9 180)
 		(fields_autoplaced yes)
@@ -2606,7 +2606,7 @@
 			)
 		)
 	)
-	(global_label "DI_LLS"
+	(global_label "SD_MOSI_BUF"
 		(shape output)
 		(at 78.74 62.23 0)
 		(fields_autoplaced yes)
@@ -2628,7 +2628,7 @@
 			)
 		)
 	)
-	(global_label "SD_CLK_CARD"
+	(global_label "SD_CARD_SCK"
 		(shape passive)
 		(at 152.4 86.36 0)
 		(fields_autoplaced yes)
@@ -2650,7 +2650,7 @@
 			)
 		)
 	)
-	(global_label "SD_DO_CARD"
+	(global_label "SD_CARD_MISO"
 		(shape output)
 		(at 199.39 90.17 180)
 		(fields_autoplaced yes)
@@ -2672,7 +2672,7 @@
 			)
 		)
 	)
-	(global_label "D_CMD_CARD"
+	(global_label "SD_CARD_MOSI"
 		(shape passive)
 		(at 199.39 80.01 180)
 		(fields_autoplaced yes)
@@ -2694,7 +2694,7 @@
 			)
 		)
 	)
-	(global_label "SD_DO_CARD"
+	(global_label "SD_CARD_MISO"
 		(shape input)
 		(at 152.4 88.9 0)
 		(fields_autoplaced yes)
@@ -2716,7 +2716,7 @@
 			)
 		)
 	)
-	(global_label "SD_CS_CARD"
+	(global_label "SD_CARD_CS"
 		(shape output)
 		(at 152.4 81.28 0)
 		(fields_autoplaced yes)
@@ -2738,7 +2738,7 @@
 			)
 		)
 	)
-	(global_label "DAT1"
+	(global_label "SD_CARD_DAT1"
 		(shape input)
 		(at 199.39 92.71 180)
 		(fields_autoplaced yes)
@@ -2760,7 +2760,7 @@
 			)
 		)
 	)
-	(global_label "SD_CS_CARD"
+	(global_label "SD_CARD_CS"
 		(shape input)
 		(at 199.39 77.47 180)
 		(fields_autoplaced yes)
@@ -2782,7 +2782,7 @@
 			)
 		)
 	)
-	(global_label "D_CMD_CARD"
+	(global_label "SD_CARD_MOSI"
 		(shape passive)
 		(at 152.4 83.82 0)
 		(fields_autoplaced yes)
@@ -2804,7 +2804,7 @@
 			)
 		)
 	)
-	(global_label "SCK_LLS"
+	(global_label "SD_SCK_BUF"
 		(shape input)
 		(at 104.14 86.36 180)
 		(fields_autoplaced yes)
@@ -2826,7 +2826,7 @@
 			)
 		)
 	)
-	(global_label "SD_CLK_CARD"
+	(global_label "SD_CARD_SCK"
 		(shape passive)
 		(at 199.39 85.09 180)
 		(fields_autoplaced yes)
@@ -2848,7 +2848,7 @@
 			)
 		)
 	)
-	(global_label "CS_LLS"
+	(global_label "SD_CS_BUF"
 		(shape output)
 		(at 78.74 127 0)
 		(fields_autoplaced yes)
@@ -2870,7 +2870,7 @@
 			)
 		)
 	)
-	(global_label "DO_LLS"
+	(global_label "SD_MISO_BUF"
 		(shape input)
 		(at 40.64 82.55 180)
 		(fields_autoplaced yes)
@@ -2925,7 +2925,7 @@
 		)
 		(uuid "cd3af744-7aa2-46f4-8bac-1e83bbbe2d3b")
 	)
-	(hierarchical_label "MCU_MOSI"
+	(hierarchical_label "SD_SPI_MOSI"
 		(shape input)
 		(at 40.64 62.23 180)
 		(effects
@@ -2936,7 +2936,7 @@
 		)
 		(uuid "ec33abd0-8c1c-4be4-83ba-e06ce023303f")
 	)
-	(hierarchical_label "SD_CS"
+	(hierarchical_label "SD_SPI_CS"
 		(shape input)
 		(at 40.64 127 180)
 		(effects
@@ -3086,7 +3086,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "272d3de7-2912-414b-9eb6-41ee58427539")
-		(property "Reference" "U11"
+		(property "Reference" "U801"
 			(at 53.848 92.71 0)
 			(effects
 				(font
@@ -3138,16 +3138,7 @@
 				(hide yes)
 			)
 		)
-		(property "Rating" "VCC 1.65 V to 3.6 V; 24 mA; TSSOP-14"
-			(at -35.56 10.16 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "LCSC Part" "C7813"
+		(property "Specification" "VCC 1.65 V to 3.6 V; 24 mA; TSSOP-14"
 			(at -35.56 10.16 0)
 			(effects
 				(font
@@ -3174,619 +3165,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" "C7813"
-			(at -35.56 10.16 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Rating" "VCC 1.65 V to 3.6 V; 24 mA; TSSOP-14"
-			(at -35.56 10.16 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "LCSC Part" "C7813"
-			(at -35.56 10.16 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "MPN" "SN74LVC125APWR"
-			(at -35.56 10.16 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer" "Texas Instruments"
-			(at -35.56 10.16 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "LCSC" "C7813"
-			(at -35.56 10.16 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Rating" "VCC 1.65 V to 3.6 V; 24 mA; TSSOP-14"
-			(at -35.56 10.16 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "LCSC Part" "C7813"
-			(at -35.56 10.16 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "MPN" "SN74LVC125APWR"
-			(at -35.56 10.16 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer" "Texas Instruments"
-			(at -35.56 10.16 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "LCSC" "C7813"
-			(at -35.56 10.16 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Rating" "VCC 1.65 V to 3.6 V; 24 mA; TSSOP-14"
-			(at -35.56 10.16 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "LCSC Part" "C7813"
-			(at -35.56 10.16 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "MPN" "SN74LVC125APWR"
-			(at -35.56 10.16 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer" "Texas Instruments"
-			(at -35.56 10.16 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "LCSC" "C7813"
-			(at -35.56 10.16 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Rating" "VCC 1.65 V to 3.6 V; 24 mA; TSSOP-14"
-			(at -35.56 10.16 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "LCSC Part" "C7813"
-			(at -35.56 10.16 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "MPN" "SN74LVC125APWR"
-			(at -35.56 10.16 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer" "Texas Instruments"
-			(at -35.56 10.16 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "LCSC" "C7813"
-			(at -35.56 10.16 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Rating" "VCC 1.65 V to 3.6 V; 24 mA; TSSOP-14"
-			(at -35.56 10.16 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "LCSC Part" "C7813"
-			(at -35.56 10.16 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "MPN" "SN74LVC125APWR"
-			(at -35.56 10.16 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer" "Texas Instruments"
-			(at -35.56 10.16 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "LCSC" "C7813"
-			(at -35.56 10.16 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Rating" "VCC 1.65 V to 3.6 V; 24 mA; TSSOP-14"
-			(at -35.56 10.16 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "LCSC Part" "C7813"
-			(at -35.56 10.16 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "MPN" "SN74LVC125APWR"
-			(at -35.56 10.16 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer" "Texas Instruments"
-			(at -35.56 10.16 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "LCSC" "C7813"
-			(at -35.56 10.16 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Rating" "VCC 1.65 V to 3.6 V; 24 mA; TSSOP-14"
-			(at -35.56 10.16 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "LCSC Part" "C7813"
-			(at -35.56 10.16 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "MPN" "SN74LVC125APWR"
-			(at -35.56 10.16 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer" "Texas Instruments"
-			(at -35.56 10.16 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "LCSC" "C7813"
-			(at -35.56 10.16 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Rating" "VCC 1.65 V to 3.6 V; 24 mA; TSSOP-14"
-			(at -35.56 10.16 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "LCSC Part" "C7813"
-			(at -35.56 10.16 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "MPN" "SN74LVC125APWR"
-			(at -35.56 10.16 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer" "Texas Instruments"
-			(at -35.56 10.16 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "LCSC" "C7813"
-			(at -35.56 10.16 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Rating" "VCC 1.65 V to 3.6 V; 24 mA; TSSOP-14"
-			(at -35.56 10.16 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "LCSC Part" "C7813"
-			(at -35.56 10.16 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "MPN" "SN74LVC125APWR"
-			(at -35.56 10.16 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer" "Texas Instruments"
-			(at -35.56 10.16 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "LCSC" "C7813"
-			(at -35.56 10.16 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Rating" "VCC 1.65 V to 3.6 V; 24 mA; TSSOP-14"
-			(at -35.56 10.16 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "LCSC Part" "C7813"
-			(at -35.56 10.16 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "MPN" "SN74LVC125APWR"
-			(at -35.56 10.16 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer" "Texas Instruments"
-			(at -35.56 10.16 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "LCSC" "C7813"
-			(at -35.56 10.16 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Rating" "VCC 1.65 V to 3.6 V; 24 mA; TSSOP-14"
-			(at -35.56 10.16 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "LCSC Part" "C7813"
-			(at -35.56 10.16 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "MPN" "SN74LVC125APWR"
-			(at -35.56 10.16 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer" "Texas Instruments"
-			(at -35.56 10.16 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "LCSC" "C7813"
-			(at -35.56 10.16 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Rating" "VCC 1.65 V to 3.6 V; 24 mA; TSSOP-14"
-			(at -35.56 10.16 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "LCSC Part" "C7813"
-			(at -35.56 10.16 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "MPN" "SN74LVC125APWR"
-			(at -35.56 10.16 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer" "Texas Instruments"
-			(at -35.56 10.16 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "LCSC" "C7813"
-			(at -35.56 10.16 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Rating" "VCC 1.65 V to 3.6 V; 24 mA; TSSOP-14"
-			(at -35.56 10.16 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "LCSC Part" "C7813"
-			(at -35.56 10.16 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "MPN" "SN74LVC125APWR"
-			(at -35.56 10.16 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer" "Texas Instruments"
-			(at -35.56 10.16 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Modelo 3D" "${KICAD9_3DMODEL_DIR}/Package_SO.3dshapes/TSSOP-14_4.4x5mm_P0.65mm.step"
-			(at 62.23 100.33 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Status_Ficha" "Conferido no catalogo em 2026-09-24; verificar estoque ao comprar"
-			(at 62.23 100.33 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "CREATOR" ""
-			(at 62.23 100.33 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "VERIFIER" ""
+		(property "Verification" "Conferido no catalogo em 2026-09-24; verificar estoque ao comprar"
 			(at 62.23 100.33 0)
 			(effects
 				(font
@@ -3840,9 +3219,24 @@
 		(instances
 			(project ""
 				(path "/0c305a6e-f9cd-49a1-b146-c2956e5469b6/8495f6b1-74a6-413b-a199-5ab08c5254ba"
-					(reference "U11")
+					(reference "U801")
 					(unit 3)
 				)
+			)
+		)
+	
+		(property "Function" "Circuito integrado ou módulo funcional."
+			(at 0 0 0)
+			(effects
+				(font (size 1.27 1.27))
+				(hide yes)
+			)
+		)
+		(property "Assembly" "SMT"
+			(at 0 0 0)
+			(effects
+				(font (size 1.27 1.27))
+				(hide yes)
 			)
 		)
 	)
@@ -3855,7 +3249,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "2fec4b22-cf98-48f2-989e-9fa7f0210a01")
-		(property "Reference" "C7"
+		(property "Reference" "C801"
 			(at 223.52 59.69 0)
 			(effects
 				(font
@@ -3864,7 +3258,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "10u / 50V"
+		(property "Value" "10 µF, 50 V"
 			(at 215.9 54.61 0)
 			(effects
 				(font
@@ -3909,16 +3303,7 @@
 				(hide yes)
 			)
 		)
-		(property "Rating" "X5R; 10 uF; 50 V; ±10 %; 1206"
-			(at 102.87 25.4 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "LCSC Part" "C13585"
+		(property "Specification" "X5R; 10 uF; 50 V; ±10 %; 1206"
 			(at 102.87 25.4 0)
 			(effects
 				(font
@@ -3945,79 +3330,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" "C13585"
-			(at 102.87 25.4 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Rating" "X5R; 10 uF; 50 V; ±10 %; 1206"
-			(at 102.87 25.4 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "LCSC Part" "C13585"
-			(at 102.87 25.4 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "MPN" "CL31A106KBHNNNE"
-			(at 102.87 25.4 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer" "Samsung Electro-Mechanics"
-			(at 102.87 25.4 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Modelo 3D" "${KICAD9_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_1206_3216Metric.step"
-			(at 220.98 60.96 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Status_Ficha" "Conferido no catalogo em 2026-09-24; verificar estoque ao comprar"
-			(at 220.98 60.96 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "CREATOR" ""
-			(at 220.98 60.96 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "VERIFIER" ""
+		(property "Verification" "Conferido no catalogo em 2026-09-24; verificar estoque ao comprar"
 			(at 220.98 60.96 0)
 			(effects
 				(font
@@ -4035,9 +3348,24 @@
 		(instances
 			(project "estacao-meteorologica"
 				(path "/0c305a6e-f9cd-49a1-b146-c2956e5469b6/8495f6b1-74a6-413b-a199-5ab08c5254ba"
-					(reference "C7")
+					(reference "C801")
 					(unit 1)
 				)
+			)
+		)
+	
+		(property "Function" "Capacitor de desacoplamento ou filtro local."
+			(at 0 0 0)
+			(effects
+				(font (size 1.27 1.27))
+				(hide yes)
+			)
+		)
+		(property "Assembly" "SMT"
+			(at 0 0 0)
+			(effects
+				(font (size 1.27 1.27))
+				(hide yes)
 			)
 		)
 	)
@@ -4050,7 +3378,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "32bcd750-cf48-4630-aaea-2645908411fe")
-		(property "Reference" "U39"
+		(property "Reference" "U802"
 			(at 143.002 68.072 0)
 			(effects
 				(font
@@ -4120,7 +3448,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC Part" "C5267594"
+		(property "Specification" "6 channels; 45 Ohm series; 20 pF; IEC 61000-4-2 level 4"
 			(at 128.27 85.09 0)
 			(effects
 				(font
@@ -4129,52 +3457,7 @@
 				(hide yes)
 			)
 		)
-		(property "3D Model" "${KIPRJMOD}/../../libraries/Hardware_SD/Hardware_SD.3dshapes/QFN-16L_L3.5-W1.2-P0.40_EMIF06-MSD02N16.step"
-			(at 128.27 85.09 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Rating" "6 channels; 45 Ohm series; 20 pF; IEC 61000-4-2 level 4"
-			(at 128.27 85.09 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Modelo 3D" "${KIPRJMOD}/../../libraries/Hardware_SD/Hardware_SD.3dshapes/QFN-16L_L3.5-W1.2-P0.40_EMIF06-MSD02N16.wrl"
-			(at 128.27 85.09 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Status_Ficha" "Conferido no catalogo em 2026-09-24; verificar estoque ao comprar"
-			(at 128.27 85.09 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "CREATOR" ""
-			(at 128.27 85.09 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "VERIFIER" ""
+		(property "Verification" "Conferido no catalogo em 2026-09-24; verificar estoque ao comprar"
 			(at 128.27 85.09 0)
 			(effects
 				(font
@@ -4243,9 +3526,24 @@
 		(instances
 			(project "estacao-meteorologica"
 				(path "/0c305a6e-f9cd-49a1-b146-c2956e5469b6/8495f6b1-74a6-413b-a199-5ab08c5254ba"
-					(reference "U39")
+					(reference "U802")
 					(unit 1)
 				)
+			)
+		)
+	
+		(property "Function" "Circuito integrado ou módulo funcional."
+			(at 0 0 0)
+			(effects
+				(font (size 1.27 1.27))
+				(hide yes)
+			)
+		)
+		(property "Assembly" "SMT"
+			(at 0 0 0)
+			(effects
+				(font (size 1.27 1.27))
+				(hide yes)
 			)
 		)
 	)
@@ -4259,7 +3557,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "34c3deaf-ed90-4c57-8dd8-46c67c1be64d")
-		(property "Reference" "R17"
+		(property "Reference" "R801"
 			(at 49.53 121.9199 0)
 			(effects
 				(font
@@ -4268,7 +3566,7 @@
 				(justify right)
 			)
 		)
-		(property "Value" "10k"
+		(property "Value" "10 kΩ"
 			(at 49.53 124.4599 0)
 			(effects
 				(font
@@ -4313,16 +3611,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC Part" "C25804"
-			(at -35.56 10.16 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Rating" "10 kOhm; ±1 %; 0.1 W; 0603"
+		(property "Specification" "10 kOhm; ±1 %; 0.1 W; 0603"
 			(at -35.56 10.16 0)
 			(effects
 				(font
@@ -4349,79 +3638,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" "C25804"
-			(at -35.56 10.16 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "LCSC Part" "C25804"
-			(at -35.56 10.16 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Rating" "10 kOhm; ±1 %; 0.1 W; 0603"
-			(at -35.56 10.16 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer" "UNI-ROYAL"
-			(at -35.56 10.16 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "MPN" "0603WAF1002T5E"
-			(at -35.56 10.16 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Modelo 3D" "${KICAD9_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0603_1608Metric.step"
-			(at 46.99 123.19 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Status_Ficha" "Conferido no catalogo em 2026-09-24; verificar estoque ao comprar"
-			(at 46.99 123.19 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "CREATOR" ""
-			(at 46.99 123.19 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "VERIFIER" ""
+		(property "Verification" "Conferido no catalogo em 2026-09-24; verificar estoque ao comprar"
 			(at 46.99 123.19 0)
 			(effects
 				(font
@@ -4439,9 +3656,24 @@
 		(instances
 			(project "esquematico_V4"
 				(path "/0c305a6e-f9cd-49a1-b146-c2956e5469b6/8495f6b1-74a6-413b-a199-5ab08c5254ba"
-					(reference "R17")
+					(reference "R801")
 					(unit 1)
 				)
+			)
+		)
+	
+		(property "Function" "Resistor de polarização, filtro ou configuração."
+			(at 0 0 0)
+			(effects
+				(font (size 1.27 1.27))
+				(hide yes)
+			)
+		)
+		(property "Assembly" "SMT"
+			(at 0 0 0)
+			(effects
+				(font (size 1.27 1.27))
+				(hide yes)
 			)
 		)
 	)
@@ -4521,7 +3753,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "3c95a2de-705e-482d-8e74-94ac4762c495")
-		(property "Reference" "J17"
+		(property "Reference" "J801"
 			(at 240.665 63.5 0)
 			(effects
 				(font
@@ -4529,7 +3761,7 @@
 				)
 			)
 		)
-		(property "Value" "104031-0811"
+		(property "Value" "microSD socket"
 			(at 240.665 66.04 0)
 			(effects
 				(font
@@ -4573,277 +3805,7 @@
 				(hide yes)
 			)
 		)
-		(property "Rating" "10 V; 0.5 A; -25 °C to +85 °C; SMT"
-			(at 36.83 10.16 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer" "Molex"
-			(at 36.83 10.16 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "MPN" "104031-0811"
-			(at 36.83 10.16 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Rating" "10 V; 0.5 A; -25 °C to +85 °C; SMT"
-			(at 36.83 10.16 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer" "Molex"
-			(at 36.83 10.16 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "MPN" "104031-0811"
-			(at 36.83 10.16 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Rating" "10 V; 0.5 A; -25 °C to +85 °C; SMT"
-			(at 36.83 10.16 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer" "Molex"
-			(at 36.83 10.16 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "MPN" "104031-0811"
-			(at 36.83 10.16 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Rating" "10 V; 0.5 A; -25 °C to +85 °C; SMT"
-			(at 36.83 10.16 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer" "Molex"
-			(at 36.83 10.16 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "MPN" "104031-0811"
-			(at 36.83 10.16 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Rating" "10 V; 0.5 A; -25 °C to +85 °C; SMT"
-			(at 36.83 10.16 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer" "Molex"
-			(at 36.83 10.16 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "MPN" "104031-0811"
-			(at 36.83 10.16 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Rating" "10 V; 0.5 A; -25 °C to +85 °C; SMT"
-			(at 36.83 10.16 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer" "Molex"
-			(at 36.83 10.16 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "MPN" "104031-0811"
-			(at 36.83 10.16 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Rating" "10 V; 0.5 A; -25 °C to +85 °C; SMT"
-			(at 36.83 10.16 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer" "Molex"
-			(at 36.83 10.16 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "MPN" "104031-0811"
-			(at 36.83 10.16 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Rating" "10 V; 0.5 A; -25 °C to +85 °C; SMT"
-			(at 36.83 10.16 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer" "Molex"
-			(at 36.83 10.16 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "MPN" "104031-0811"
-			(at 36.83 10.16 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Rating" "10 V; 0.5 A; -25 °C to +85 °C; SMT"
-			(at 36.83 10.16 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer" "Molex"
-			(at 36.83 10.16 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "MPN" "104031-0811"
-			(at 36.83 10.16 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Rating" "10 V; 0.5 A; -25 °C to +85 °C; SMT"
-			(at 36.83 10.16 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer" "Molex"
-			(at 36.83 10.16 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "MPN" "104031-0811"
-			(at 36.83 10.16 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Rating" "10 V; 0.5 A; -25 °C to +85 °C; SMT"
+		(property "Specification" "10 V; 0.5 A; -25 °C to +85 °C; SMT"
 			(at 36.83 10.16 0)
 			(effects
 				(font
@@ -4870,43 +3832,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC Part" "Nao confirmado"
-			(at 240.03 85.09 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Status_Ficha" "MPN e geometria preservados; fornecimento LCSC nao confirmado, nao substituir por socket diferente"
-			(at 240.03 85.09 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Modelo 3D" "PENDENTE: ${KICAD9_3DMODEL_DIR}/Connector_Card.3dshapes/microSD_HC_Molex_104031-0811.step"
-			(at 240.03 85.09 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "CREATOR" ""
-			(at 240.03 85.09 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "VERIFIER" ""
+		(property "Verification" "MPN e geometria preservados; fornecimento LCSC nao confirmado, nao substituir por socket diferente"
 			(at 240.03 85.09 0)
 			(effects
 				(font
@@ -4951,9 +3877,24 @@
 		(instances
 			(project ""
 				(path "/0c305a6e-f9cd-49a1-b146-c2956e5469b6/8495f6b1-74a6-413b-a199-5ab08c5254ba"
-					(reference "J17")
+					(reference "J801")
 					(unit 1)
 				)
+			)
+		)
+	
+		(property "Function" "Conector de interface."
+			(at 0 0 0)
+			(effects
+				(font (size 1.27 1.27))
+				(hide yes)
+			)
+		)
+		(property "Assembly" "SMT"
+			(at 0 0 0)
+			(effects
+				(font (size 1.27 1.27))
+				(hide yes)
 			)
 		)
 	)
@@ -4966,7 +3907,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "3d752dae-7774-46ec-8a6b-61f18e3d724c")
-		(property "Reference" "C10"
+		(property "Reference" "C804"
 			(at 159.004 100.33 0)
 			(effects
 				(font
@@ -4975,7 +3916,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "100n"
+		(property "Value" "100 nF"
 			(at 159.004 102.87 0)
 			(effects
 				(font
@@ -5020,16 +3961,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC Part" "C14663"
-			(at 48.26 66.04 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Rating" "X7R; 100 nF; 50 V; ±10 %; 0603"
+		(property "Specification" "X7R; 100 nF; 50 V; ±10 %; 0603"
 			(at 48.26 66.04 0)
 			(effects
 				(font
@@ -5056,79 +3988,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" "C14663"
-			(at 48.26 66.04 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "LCSC Part" "C14663"
-			(at 48.26 66.04 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Rating" "X7R; 100 nF; 50 V; ±10 %; 0603"
-			(at 48.26 66.04 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer" "YAGEO"
-			(at 48.26 66.04 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "MPN" "CC0603KRX7R9BB104"
-			(at 48.26 66.04 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Modelo 3D" "${KICAD9_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0603_1608Metric.step"
-			(at 156.21 101.6 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Status_Ficha" "Conferido no catalogo em 2026-09-24; verificar estoque ao comprar"
-			(at 156.21 101.6 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "CREATOR" ""
-			(at 156.21 101.6 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "VERIFIER" ""
+		(property "Verification" "Conferido no catalogo em 2026-09-24; verificar estoque ao comprar"
 			(at 156.21 101.6 0)
 			(effects
 				(font
@@ -5146,9 +4006,24 @@
 		(instances
 			(project "estacao-meteorologica"
 				(path "/0c305a6e-f9cd-49a1-b146-c2956e5469b6/8495f6b1-74a6-413b-a199-5ab08c5254ba"
-					(reference "C10")
+					(reference "C804")
 					(unit 1)
 				)
+			)
+		)
+	
+		(property "Function" "Capacitor de desacoplamento ou filtro local."
+			(at 0 0 0)
+			(effects
+				(font (size 1.27 1.27))
+				(hide yes)
+			)
+		)
+		(property "Assembly" "SMT"
+			(at 0 0 0)
+			(effects
+				(font (size 1.27 1.27))
+				(hide yes)
 			)
 		)
 	)
@@ -5425,7 +4300,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "561cda1a-48f7-48ee-9a9f-84096982834f")
-		(property "Reference" "U11"
+		(property "Reference" "U801"
 			(at 106.68 21.59 90)
 			(effects
 				(font
@@ -5477,16 +4352,7 @@
 				(hide yes)
 			)
 		)
-		(property "Rating" "VCC 1.65 V to 3.6 V; 24 mA; TSSOP-14"
-			(at -41.91 0 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "LCSC Part" "C7813"
+		(property "Specification" "VCC 1.65 V to 3.6 V; 24 mA; TSSOP-14"
 			(at -41.91 0 0)
 			(effects
 				(font
@@ -5513,620 +4379,8 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" "C7813"
-			(at -41.91 0 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Rating" "VCC 1.65 V to 3.6 V; 24 mA; TSSOP-14"
-			(at -41.91 0 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "LCSC Part" "C7813"
-			(at -41.91 0 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "MPN" "SN74LVC125APWR"
-			(at -41.91 0 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer" "Texas Instruments"
-			(at -41.91 0 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "LCSC" "C7813"
-			(at -41.91 0 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Rating" "VCC 1.65 V to 3.6 V; 24 mA; TSSOP-14"
-			(at -41.91 0 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "LCSC Part" "C7813"
-			(at -41.91 0 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "MPN" "SN74LVC125APWR"
-			(at -41.91 0 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer" "Texas Instruments"
-			(at -41.91 0 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "LCSC" "C7813"
-			(at -41.91 0 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Rating" "VCC 1.65 V to 3.6 V; 24 mA; TSSOP-14"
-			(at -41.91 0 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "LCSC Part" "C7813"
-			(at -41.91 0 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "MPN" "SN74LVC125APWR"
-			(at -41.91 0 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer" "Texas Instruments"
-			(at -41.91 0 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "LCSC" "C7813"
-			(at -41.91 0 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Rating" "VCC 1.65 V to 3.6 V; 24 mA; TSSOP-14"
-			(at -41.91 0 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "LCSC Part" "C7813"
-			(at -41.91 0 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "MPN" "SN74LVC125APWR"
-			(at -41.91 0 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer" "Texas Instruments"
-			(at -41.91 0 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "LCSC" "C7813"
-			(at -41.91 0 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Rating" "VCC 1.65 V to 3.6 V; 24 mA; TSSOP-14"
-			(at -41.91 0 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "LCSC Part" "C7813"
-			(at -41.91 0 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "MPN" "SN74LVC125APWR"
-			(at -41.91 0 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer" "Texas Instruments"
-			(at -41.91 0 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "LCSC" "C7813"
-			(at -41.91 0 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Rating" "VCC 1.65 V to 3.6 V; 24 mA; TSSOP-14"
-			(at -41.91 0 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "LCSC Part" "C7813"
-			(at -41.91 0 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "MPN" "SN74LVC125APWR"
-			(at -41.91 0 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer" "Texas Instruments"
-			(at -41.91 0 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "LCSC" "C7813"
-			(at -41.91 0 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Rating" "VCC 1.65 V to 3.6 V; 24 mA; TSSOP-14"
-			(at -41.91 0 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "LCSC Part" "C7813"
-			(at -41.91 0 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "MPN" "SN74LVC125APWR"
-			(at -41.91 0 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer" "Texas Instruments"
-			(at -41.91 0 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "LCSC" "C7813"
-			(at -41.91 0 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Rating" "VCC 1.65 V to 3.6 V; 24 mA; TSSOP-14"
-			(at -41.91 0 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "LCSC Part" "C7813"
-			(at -41.91 0 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "MPN" "SN74LVC125APWR"
-			(at -41.91 0 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer" "Texas Instruments"
-			(at -41.91 0 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "LCSC" "C7813"
-			(at -41.91 0 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Rating" "VCC 1.65 V to 3.6 V; 24 mA; TSSOP-14"
-			(at -41.91 0 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "LCSC Part" "C7813"
-			(at -41.91 0 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "MPN" "SN74LVC125APWR"
-			(at -41.91 0 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer" "Texas Instruments"
-			(at -41.91 0 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "LCSC" "C7813"
-			(at -41.91 0 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Rating" "VCC 1.65 V to 3.6 V; 24 mA; TSSOP-14"
-			(at -41.91 0 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "LCSC Part" "C7813"
-			(at -41.91 0 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "MPN" "SN74LVC125APWR"
-			(at -41.91 0 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer" "Texas Instruments"
-			(at -41.91 0 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "LCSC" "C7813"
-			(at -41.91 0 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Rating" "VCC 1.65 V to 3.6 V; 24 mA; TSSOP-14"
-			(at -41.91 0 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "LCSC Part" "C7813"
-			(at -41.91 0 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "MPN" "SN74LVC125APWR"
-			(at -41.91 0 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer" "Texas Instruments"
-			(at -41.91 0 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "LCSC" "C7813"
-			(at -41.91 0 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Rating" "VCC 1.65 V to 3.6 V; 24 mA; TSSOP-14"
-			(at -41.91 0 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "LCSC Part" "C7813"
-			(at -41.91 0 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "MPN" "SN74LVC125APWR"
-			(at -41.91 0 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer" "Texas Instruments"
-			(at -41.91 0 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "LCSC" "C7813"
-			(at -41.91 0 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Rating" "VCC 1.65 V to 3.6 V; 24 mA; TSSOP-14"
-			(at -41.91 0 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "LCSC Part" "C7813"
-			(at -41.91 0 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "MPN" "SN74LVC125APWR"
-			(at -41.91 0 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer" "Texas Instruments"
-			(at -41.91 0 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Modelo 3D" "${KICAD9_3DMODEL_DIR}/Package_SO.3dshapes/TSSOP-14_4.4x5mm_P0.65mm.step"
+		(property "Verification" "Conferido no catalogo em 2026-09-24; verificar estoque ao comprar"
 			(at 106.68 31.75 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Status_Ficha" "Conferido no catalogo em 2026-09-24; verificar estoque ao comprar"
-			(at 106.68 31.75 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "CREATOR" ""
-			(at 106.68 31.75 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "VERIFIER" ""
-			(at 106.68 31.75 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6179,9 +4433,24 @@
 		(instances
 			(project ""
 				(path "/0c305a6e-f9cd-49a1-b146-c2956e5469b6/8495f6b1-74a6-413b-a199-5ab08c5254ba"
-					(reference "U11")
+					(reference "U801")
 					(unit 5)
 				)
+			)
+		)
+	
+		(property "Function" "Circuito integrado ou módulo funcional."
+			(at 0 0 0)
+			(effects
+				(font (size 1.27 1.27))
+				(hide yes)
+			)
+		)
+		(property "Assembly" "SMT"
+			(at 0 0 0)
+			(effects
+				(font (size 1.27 1.27))
+				(hide yes)
 			)
 		)
 	)
@@ -6194,7 +4463,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "5f662112-f56a-4638-9269-48cae1a1dedd")
-		(property "Reference" "R18"
+		(property "Reference" "R802"
 			(at 174.498 78.74 0)
 			(effects
 				(font
@@ -6203,7 +4472,7 @@
 				(justify right)
 			)
 		)
-		(property "Value" "10k"
+		(property "Value" "10 kΩ"
 			(at 174.498 81.28 0)
 			(effects
 				(font
@@ -6248,16 +4517,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC Part" "C25804"
-			(at 35.56 10.16 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Rating" "10 kOhm; ±1 %; 0.1 W; 0603"
+		(property "Specification" "10 kOhm; ±1 %; 0.1 W; 0603"
 			(at 35.56 10.16 0)
 			(effects
 				(font
@@ -6284,79 +4544,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" "C25804"
-			(at 35.56 10.16 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "LCSC Part" "C25804"
-			(at 35.56 10.16 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Rating" "10 kOhm; ±1 %; 0.1 W; 0603"
-			(at 35.56 10.16 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer" "UNI-ROYAL"
-			(at 35.56 10.16 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "MPN" "0603WAF1002T5E"
-			(at 35.56 10.16 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Modelo 3D" "${KICAD9_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0603_1608Metric.step"
-			(at 180.34 80.01 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Status_Ficha" "Conferido no catalogo em 2026-09-24; verificar estoque ao comprar"
-			(at 180.34 80.01 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "CREATOR" ""
-			(at 180.34 80.01 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "VERIFIER" ""
+		(property "Verification" "Conferido no catalogo em 2026-09-24; verificar estoque ao comprar"
 			(at 180.34 80.01 0)
 			(effects
 				(font
@@ -6374,9 +4562,24 @@
 		(instances
 			(project "esquematico_V4"
 				(path "/0c305a6e-f9cd-49a1-b146-c2956e5469b6/8495f6b1-74a6-413b-a199-5ab08c5254ba"
-					(reference "R18")
+					(reference "R802")
 					(unit 1)
 				)
+			)
+		)
+	
+		(property "Function" "Resistor de polarização, filtro ou configuração."
+			(at 0 0 0)
+			(effects
+				(font (size 1.27 1.27))
+				(hide yes)
+			)
+		)
+		(property "Assembly" "SMT"
+			(at 0 0 0)
+			(effects
+				(font (size 1.27 1.27))
+				(hide yes)
 			)
 		)
 	)
@@ -6389,7 +4592,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "6af92a5a-a910-498e-b2cc-c14faba00f8a")
-		(property "Reference" "U11"
+		(property "Reference" "U801"
 			(at 53.34 74.168 0)
 			(effects
 				(font
@@ -6441,16 +4644,7 @@
 				(hide yes)
 			)
 		)
-		(property "Rating" "VCC 1.65 V to 3.6 V; 24 mA; TSSOP-14"
-			(at -35.56 10.16 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "LCSC Part" "C7813"
+		(property "Specification" "VCC 1.65 V to 3.6 V; 24 mA; TSSOP-14"
 			(at -35.56 10.16 0)
 			(effects
 				(font
@@ -6477,619 +4671,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" "C7813"
-			(at -35.56 10.16 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Rating" "VCC 1.65 V to 3.6 V; 24 mA; TSSOP-14"
-			(at -35.56 10.16 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "LCSC Part" "C7813"
-			(at -35.56 10.16 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "MPN" "SN74LVC125APWR"
-			(at -35.56 10.16 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer" "Texas Instruments"
-			(at -35.56 10.16 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "LCSC" "C7813"
-			(at -35.56 10.16 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Rating" "VCC 1.65 V to 3.6 V; 24 mA; TSSOP-14"
-			(at -35.56 10.16 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "LCSC Part" "C7813"
-			(at -35.56 10.16 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "MPN" "SN74LVC125APWR"
-			(at -35.56 10.16 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer" "Texas Instruments"
-			(at -35.56 10.16 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "LCSC" "C7813"
-			(at -35.56 10.16 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Rating" "VCC 1.65 V to 3.6 V; 24 mA; TSSOP-14"
-			(at -35.56 10.16 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "LCSC Part" "C7813"
-			(at -35.56 10.16 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "MPN" "SN74LVC125APWR"
-			(at -35.56 10.16 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer" "Texas Instruments"
-			(at -35.56 10.16 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "LCSC" "C7813"
-			(at -35.56 10.16 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Rating" "VCC 1.65 V to 3.6 V; 24 mA; TSSOP-14"
-			(at -35.56 10.16 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "LCSC Part" "C7813"
-			(at -35.56 10.16 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "MPN" "SN74LVC125APWR"
-			(at -35.56 10.16 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer" "Texas Instruments"
-			(at -35.56 10.16 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "LCSC" "C7813"
-			(at -35.56 10.16 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Rating" "VCC 1.65 V to 3.6 V; 24 mA; TSSOP-14"
-			(at -35.56 10.16 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "LCSC Part" "C7813"
-			(at -35.56 10.16 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "MPN" "SN74LVC125APWR"
-			(at -35.56 10.16 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer" "Texas Instruments"
-			(at -35.56 10.16 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "LCSC" "C7813"
-			(at -35.56 10.16 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Rating" "VCC 1.65 V to 3.6 V; 24 mA; TSSOP-14"
-			(at -35.56 10.16 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "LCSC Part" "C7813"
-			(at -35.56 10.16 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "MPN" "SN74LVC125APWR"
-			(at -35.56 10.16 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer" "Texas Instruments"
-			(at -35.56 10.16 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "LCSC" "C7813"
-			(at -35.56 10.16 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Rating" "VCC 1.65 V to 3.6 V; 24 mA; TSSOP-14"
-			(at -35.56 10.16 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "LCSC Part" "C7813"
-			(at -35.56 10.16 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "MPN" "SN74LVC125APWR"
-			(at -35.56 10.16 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer" "Texas Instruments"
-			(at -35.56 10.16 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "LCSC" "C7813"
-			(at -35.56 10.16 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Rating" "VCC 1.65 V to 3.6 V; 24 mA; TSSOP-14"
-			(at -35.56 10.16 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "LCSC Part" "C7813"
-			(at -35.56 10.16 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "MPN" "SN74LVC125APWR"
-			(at -35.56 10.16 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer" "Texas Instruments"
-			(at -35.56 10.16 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "LCSC" "C7813"
-			(at -35.56 10.16 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Rating" "VCC 1.65 V to 3.6 V; 24 mA; TSSOP-14"
-			(at -35.56 10.16 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "LCSC Part" "C7813"
-			(at -35.56 10.16 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "MPN" "SN74LVC125APWR"
-			(at -35.56 10.16 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer" "Texas Instruments"
-			(at -35.56 10.16 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "LCSC" "C7813"
-			(at -35.56 10.16 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Rating" "VCC 1.65 V to 3.6 V; 24 mA; TSSOP-14"
-			(at -35.56 10.16 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "LCSC Part" "C7813"
-			(at -35.56 10.16 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "MPN" "SN74LVC125APWR"
-			(at -35.56 10.16 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer" "Texas Instruments"
-			(at -35.56 10.16 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "LCSC" "C7813"
-			(at -35.56 10.16 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Rating" "VCC 1.65 V to 3.6 V; 24 mA; TSSOP-14"
-			(at -35.56 10.16 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "LCSC Part" "C7813"
-			(at -35.56 10.16 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "MPN" "SN74LVC125APWR"
-			(at -35.56 10.16 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer" "Texas Instruments"
-			(at -35.56 10.16 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "LCSC" "C7813"
-			(at -35.56 10.16 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Rating" "VCC 1.65 V to 3.6 V; 24 mA; TSSOP-14"
-			(at -35.56 10.16 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "LCSC Part" "C7813"
-			(at -35.56 10.16 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "MPN" "SN74LVC125APWR"
-			(at -35.56 10.16 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer" "Texas Instruments"
-			(at -35.56 10.16 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "LCSC" "C7813"
-			(at -35.56 10.16 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Rating" "VCC 1.65 V to 3.6 V; 24 mA; TSSOP-14"
-			(at -35.56 10.16 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "LCSC Part" "C7813"
-			(at -35.56 10.16 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "MPN" "SN74LVC125APWR"
-			(at -35.56 10.16 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer" "Texas Instruments"
-			(at -35.56 10.16 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Modelo 3D" "${KICAD9_3DMODEL_DIR}/Package_SO.3dshapes/TSSOP-14_4.4x5mm_P0.65mm.step"
-			(at 62.23 82.55 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Status_Ficha" "Conferido no catalogo em 2026-09-24; verificar estoque ao comprar"
-			(at 62.23 82.55 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "CREATOR" ""
-			(at 62.23 82.55 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "VERIFIER" ""
+		(property "Verification" "Conferido no catalogo em 2026-09-24; verificar estoque ao comprar"
 			(at 62.23 82.55 0)
 			(effects
 				(font
@@ -7143,9 +4725,24 @@
 		(instances
 			(project ""
 				(path "/0c305a6e-f9cd-49a1-b146-c2956e5469b6/8495f6b1-74a6-413b-a199-5ab08c5254ba"
-					(reference "U11")
+					(reference "U801")
 					(unit 2)
 				)
+			)
+		)
+	
+		(property "Function" "Circuito integrado ou módulo funcional."
+			(at 0 0 0)
+			(effects
+				(font (size 1.27 1.27))
+				(hide yes)
+			)
+		)
+		(property "Assembly" "SMT"
+			(at 0 0 0)
+			(effects
+				(font (size 1.27 1.27))
+				(hide yes)
 			)
 		)
 	)
@@ -7290,7 +4887,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "7fa88133-6a97-4fe1-b3d4-27dd0bad44c1")
-		(property "Reference" "U11"
+		(property "Reference" "U801"
 			(at 62.23 53.34 0)
 			(effects
 				(font
@@ -7342,16 +4939,7 @@
 				(hide yes)
 			)
 		)
-		(property "Rating" "VCC 1.65 V to 3.6 V; 24 mA; TSSOP-14"
-			(at -35.56 10.16 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "LCSC Part" "C7813"
+		(property "Specification" "VCC 1.65 V to 3.6 V; 24 mA; TSSOP-14"
 			(at -35.56 10.16 0)
 			(effects
 				(font
@@ -7378,619 +4966,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" "C7813"
-			(at -35.56 10.16 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Rating" "VCC 1.65 V to 3.6 V; 24 mA; TSSOP-14"
-			(at -35.56 10.16 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "LCSC Part" "C7813"
-			(at -35.56 10.16 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "MPN" "SN74LVC125APWR"
-			(at -35.56 10.16 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer" "Texas Instruments"
-			(at -35.56 10.16 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "LCSC" "C7813"
-			(at -35.56 10.16 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Rating" "VCC 1.65 V to 3.6 V; 24 mA; TSSOP-14"
-			(at -35.56 10.16 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "LCSC Part" "C7813"
-			(at -35.56 10.16 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "MPN" "SN74LVC125APWR"
-			(at -35.56 10.16 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer" "Texas Instruments"
-			(at -35.56 10.16 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "LCSC" "C7813"
-			(at -35.56 10.16 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Rating" "VCC 1.65 V to 3.6 V; 24 mA; TSSOP-14"
-			(at -35.56 10.16 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "LCSC Part" "C7813"
-			(at -35.56 10.16 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "MPN" "SN74LVC125APWR"
-			(at -35.56 10.16 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer" "Texas Instruments"
-			(at -35.56 10.16 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "LCSC" "C7813"
-			(at -35.56 10.16 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Rating" "VCC 1.65 V to 3.6 V; 24 mA; TSSOP-14"
-			(at -35.56 10.16 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "LCSC Part" "C7813"
-			(at -35.56 10.16 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "MPN" "SN74LVC125APWR"
-			(at -35.56 10.16 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer" "Texas Instruments"
-			(at -35.56 10.16 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "LCSC" "C7813"
-			(at -35.56 10.16 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Rating" "VCC 1.65 V to 3.6 V; 24 mA; TSSOP-14"
-			(at -35.56 10.16 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "LCSC Part" "C7813"
-			(at -35.56 10.16 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "MPN" "SN74LVC125APWR"
-			(at -35.56 10.16 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer" "Texas Instruments"
-			(at -35.56 10.16 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "LCSC" "C7813"
-			(at -35.56 10.16 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Rating" "VCC 1.65 V to 3.6 V; 24 mA; TSSOP-14"
-			(at -35.56 10.16 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "LCSC Part" "C7813"
-			(at -35.56 10.16 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "MPN" "SN74LVC125APWR"
-			(at -35.56 10.16 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer" "Texas Instruments"
-			(at -35.56 10.16 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "LCSC" "C7813"
-			(at -35.56 10.16 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Rating" "VCC 1.65 V to 3.6 V; 24 mA; TSSOP-14"
-			(at -35.56 10.16 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "LCSC Part" "C7813"
-			(at -35.56 10.16 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "MPN" "SN74LVC125APWR"
-			(at -35.56 10.16 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer" "Texas Instruments"
-			(at -35.56 10.16 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "LCSC" "C7813"
-			(at -35.56 10.16 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Rating" "VCC 1.65 V to 3.6 V; 24 mA; TSSOP-14"
-			(at -35.56 10.16 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "LCSC Part" "C7813"
-			(at -35.56 10.16 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "MPN" "SN74LVC125APWR"
-			(at -35.56 10.16 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer" "Texas Instruments"
-			(at -35.56 10.16 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "LCSC" "C7813"
-			(at -35.56 10.16 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Rating" "VCC 1.65 V to 3.6 V; 24 mA; TSSOP-14"
-			(at -35.56 10.16 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "LCSC Part" "C7813"
-			(at -35.56 10.16 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "MPN" "SN74LVC125APWR"
-			(at -35.56 10.16 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer" "Texas Instruments"
-			(at -35.56 10.16 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "LCSC" "C7813"
-			(at -35.56 10.16 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Rating" "VCC 1.65 V to 3.6 V; 24 mA; TSSOP-14"
-			(at -35.56 10.16 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "LCSC Part" "C7813"
-			(at -35.56 10.16 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "MPN" "SN74LVC125APWR"
-			(at -35.56 10.16 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer" "Texas Instruments"
-			(at -35.56 10.16 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "LCSC" "C7813"
-			(at -35.56 10.16 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Rating" "VCC 1.65 V to 3.6 V; 24 mA; TSSOP-14"
-			(at -35.56 10.16 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "LCSC Part" "C7813"
-			(at -35.56 10.16 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "MPN" "SN74LVC125APWR"
-			(at -35.56 10.16 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer" "Texas Instruments"
-			(at -35.56 10.16 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "LCSC" "C7813"
-			(at -35.56 10.16 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Rating" "VCC 1.65 V to 3.6 V; 24 mA; TSSOP-14"
-			(at -35.56 10.16 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "LCSC Part" "C7813"
-			(at -35.56 10.16 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "MPN" "SN74LVC125APWR"
-			(at -35.56 10.16 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer" "Texas Instruments"
-			(at -35.56 10.16 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "LCSC" "C7813"
-			(at -35.56 10.16 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Rating" "VCC 1.65 V to 3.6 V; 24 mA; TSSOP-14"
-			(at -35.56 10.16 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "LCSC Part" "C7813"
-			(at -35.56 10.16 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "MPN" "SN74LVC125APWR"
-			(at -35.56 10.16 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer" "Texas Instruments"
-			(at -35.56 10.16 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Modelo 3D" "${KICAD9_3DMODEL_DIR}/Package_SO.3dshapes/TSSOP-14_4.4x5mm_P0.65mm.step"
-			(at 62.23 62.23 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Status_Ficha" "Conferido no catalogo em 2026-09-24; verificar estoque ao comprar"
-			(at 62.23 62.23 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "CREATOR" ""
-			(at 62.23 62.23 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "VERIFIER" ""
+		(property "Verification" "Conferido no catalogo em 2026-09-24; verificar estoque ao comprar"
 			(at 62.23 62.23 0)
 			(effects
 				(font
@@ -8044,9 +5020,24 @@
 		(instances
 			(project ""
 				(path "/0c305a6e-f9cd-49a1-b146-c2956e5469b6/8495f6b1-74a6-413b-a199-5ab08c5254ba"
-					(reference "U11")
+					(reference "U801")
 					(unit 1)
 				)
+			)
+		)
+	
+		(property "Function" "Circuito integrado ou módulo funcional."
+			(at 0 0 0)
+			(effects
+				(font (size 1.27 1.27))
+				(hide yes)
+			)
+		)
+		(property "Assembly" "SMT"
+			(at 0 0 0)
+			(effects
+				(font (size 1.27 1.27))
+				(hide yes)
 			)
 		)
 	)
@@ -8320,7 +5311,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "bb393572-7f76-49fb-983d-40ef93242664")
-		(property "Reference" "C8"
+		(property "Reference" "C802"
 			(at 89.154 34.29 0)
 			(effects
 				(font
@@ -8329,7 +5320,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "100n"
+		(property "Value" "100 nF"
 			(at 89.154 36.83 0)
 			(effects
 				(font
@@ -8374,16 +5365,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC Part" "C14663"
-			(at -41.91 0 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Rating" "X7R; 100 nF; 50 V; ±10 %; 0603"
+		(property "Specification" "X7R; 100 nF; 50 V; ±10 %; 0603"
 			(at -41.91 0 0)
 			(effects
 				(font
@@ -8410,79 +5392,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" "C14663"
-			(at -41.91 0 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "LCSC Part" "C14663"
-			(at -41.91 0 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Rating" "X7R; 100 nF; 50 V; ±10 %; 0603"
-			(at -41.91 0 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer" "YAGEO"
-			(at -41.91 0 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "MPN" "CC0603KRX7R9BB104"
-			(at -41.91 0 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Modelo 3D" "${KICAD9_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0603_1608Metric.step"
-			(at 86.36 35.56 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Status_Ficha" "Conferido no catalogo em 2026-09-24; verificar estoque ao comprar"
-			(at 86.36 35.56 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "CREATOR" ""
-			(at 86.36 35.56 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "VERIFIER" ""
+		(property "Verification" "Conferido no catalogo em 2026-09-24; verificar estoque ao comprar"
 			(at 86.36 35.56 0)
 			(effects
 				(font
@@ -8500,9 +5410,24 @@
 		(instances
 			(project ""
 				(path "/0c305a6e-f9cd-49a1-b146-c2956e5469b6/8495f6b1-74a6-413b-a199-5ab08c5254ba"
-					(reference "C8")
+					(reference "C802")
 					(unit 1)
 				)
+			)
+		)
+	
+		(property "Function" "Capacitor de desacoplamento ou filtro local."
+			(at 0 0 0)
+			(effects
+				(font (size 1.27 1.27))
+				(hide yes)
+			)
+		)
+		(property "Assembly" "SMT"
+			(at 0 0 0)
+			(effects
+				(font (size 1.27 1.27))
+				(hide yes)
 			)
 		)
 	)
@@ -8646,7 +5571,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "eb358646-a9aa-45cc-b8bf-43c6bb2d0edf")
-		(property "Reference" "C9"
+		(property "Reference" "C803"
 			(at 213.614 59.69 0)
 			(effects
 				(font
@@ -8655,7 +5580,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "100n"
+		(property "Value" "100 nF"
 			(at 213.614 62.23 0)
 			(effects
 				(font
@@ -8700,16 +5625,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC Part" "C14663"
-			(at 102.87 25.4 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Rating" "X7R; 100 nF; 50 V; ±10 %; 0603"
+		(property "Specification" "X7R; 100 nF; 50 V; ±10 %; 0603"
 			(at 102.87 25.4 0)
 			(effects
 				(font
@@ -8736,79 +5652,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" "C14663"
-			(at 102.87 25.4 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "LCSC Part" "C14663"
-			(at 102.87 25.4 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Rating" "X7R; 100 nF; 50 V; ±10 %; 0603"
-			(at 102.87 25.4 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer" "YAGEO"
-			(at 102.87 25.4 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "MPN" "CC0603KRX7R9BB104"
-			(at 102.87 25.4 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Modelo 3D" "${KICAD9_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0603_1608Metric.step"
-			(at 210.82 60.96 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Status_Ficha" "Conferido no catalogo em 2026-09-24; verificar estoque ao comprar"
-			(at 210.82 60.96 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "CREATOR" ""
-			(at 210.82 60.96 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "VERIFIER" ""
+		(property "Verification" "Conferido no catalogo em 2026-09-24; verificar estoque ao comprar"
 			(at 210.82 60.96 0)
 			(effects
 				(font
@@ -8826,9 +5670,24 @@
 		(instances
 			(project "estacao-meteorologica"
 				(path "/0c305a6e-f9cd-49a1-b146-c2956e5469b6/8495f6b1-74a6-413b-a199-5ab08c5254ba"
-					(reference "C9")
+					(reference "C803")
 					(unit 1)
 				)
+			)
+		)
+	
+		(property "Function" "Capacitor de desacoplamento ou filtro local."
+			(at 0 0 0)
+			(effects
+				(font (size 1.27 1.27))
+				(hide yes)
+			)
+		)
+		(property "Assembly" "SMT"
+			(at 0 0 0)
+			(effects
+				(font (size 1.27 1.27))
+				(hide yes)
 			)
 		)
 	)
@@ -8906,7 +5765,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "fb6d180b-7690-4730-8f7a-808095bc1378")
-		(property "Reference" "U11"
+		(property "Reference" "U801"
 			(at 55.626 106.934 0)
 			(effects
 				(font
@@ -8958,16 +5817,7 @@
 				(hide yes)
 			)
 		)
-		(property "Rating" "VCC 1.65 V to 3.6 V; 24 mA; TSSOP-14"
-			(at -35.56 10.16 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "LCSC Part" "C7813"
+		(property "Specification" "VCC 1.65 V to 3.6 V; 24 mA; TSSOP-14"
 			(at -35.56 10.16 0)
 			(effects
 				(font
@@ -8994,619 +5844,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" "C7813"
-			(at -35.56 10.16 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Rating" "VCC 1.65 V to 3.6 V; 24 mA; TSSOP-14"
-			(at -35.56 10.16 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "LCSC Part" "C7813"
-			(at -35.56 10.16 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "MPN" "SN74LVC125APWR"
-			(at -35.56 10.16 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer" "Texas Instruments"
-			(at -35.56 10.16 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "LCSC" "C7813"
-			(at -35.56 10.16 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Rating" "VCC 1.65 V to 3.6 V; 24 mA; TSSOP-14"
-			(at -35.56 10.16 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "LCSC Part" "C7813"
-			(at -35.56 10.16 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "MPN" "SN74LVC125APWR"
-			(at -35.56 10.16 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer" "Texas Instruments"
-			(at -35.56 10.16 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "LCSC" "C7813"
-			(at -35.56 10.16 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Rating" "VCC 1.65 V to 3.6 V; 24 mA; TSSOP-14"
-			(at -35.56 10.16 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "LCSC Part" "C7813"
-			(at -35.56 10.16 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "MPN" "SN74LVC125APWR"
-			(at -35.56 10.16 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer" "Texas Instruments"
-			(at -35.56 10.16 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "LCSC" "C7813"
-			(at -35.56 10.16 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Rating" "VCC 1.65 V to 3.6 V; 24 mA; TSSOP-14"
-			(at -35.56 10.16 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "LCSC Part" "C7813"
-			(at -35.56 10.16 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "MPN" "SN74LVC125APWR"
-			(at -35.56 10.16 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer" "Texas Instruments"
-			(at -35.56 10.16 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "LCSC" "C7813"
-			(at -35.56 10.16 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Rating" "VCC 1.65 V to 3.6 V; 24 mA; TSSOP-14"
-			(at -35.56 10.16 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "LCSC Part" "C7813"
-			(at -35.56 10.16 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "MPN" "SN74LVC125APWR"
-			(at -35.56 10.16 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer" "Texas Instruments"
-			(at -35.56 10.16 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "LCSC" "C7813"
-			(at -35.56 10.16 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Rating" "VCC 1.65 V to 3.6 V; 24 mA; TSSOP-14"
-			(at -35.56 10.16 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "LCSC Part" "C7813"
-			(at -35.56 10.16 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "MPN" "SN74LVC125APWR"
-			(at -35.56 10.16 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer" "Texas Instruments"
-			(at -35.56 10.16 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "LCSC" "C7813"
-			(at -35.56 10.16 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Rating" "VCC 1.65 V to 3.6 V; 24 mA; TSSOP-14"
-			(at -35.56 10.16 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "LCSC Part" "C7813"
-			(at -35.56 10.16 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "MPN" "SN74LVC125APWR"
-			(at -35.56 10.16 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer" "Texas Instruments"
-			(at -35.56 10.16 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "LCSC" "C7813"
-			(at -35.56 10.16 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Rating" "VCC 1.65 V to 3.6 V; 24 mA; TSSOP-14"
-			(at -35.56 10.16 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "LCSC Part" "C7813"
-			(at -35.56 10.16 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "MPN" "SN74LVC125APWR"
-			(at -35.56 10.16 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer" "Texas Instruments"
-			(at -35.56 10.16 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "LCSC" "C7813"
-			(at -35.56 10.16 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Rating" "VCC 1.65 V to 3.6 V; 24 mA; TSSOP-14"
-			(at -35.56 10.16 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "LCSC Part" "C7813"
-			(at -35.56 10.16 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "MPN" "SN74LVC125APWR"
-			(at -35.56 10.16 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer" "Texas Instruments"
-			(at -35.56 10.16 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "LCSC" "C7813"
-			(at -35.56 10.16 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Rating" "VCC 1.65 V to 3.6 V; 24 mA; TSSOP-14"
-			(at -35.56 10.16 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "LCSC Part" "C7813"
-			(at -35.56 10.16 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "MPN" "SN74LVC125APWR"
-			(at -35.56 10.16 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer" "Texas Instruments"
-			(at -35.56 10.16 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "LCSC" "C7813"
-			(at -35.56 10.16 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Rating" "VCC 1.65 V to 3.6 V; 24 mA; TSSOP-14"
-			(at -35.56 10.16 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "LCSC Part" "C7813"
-			(at -35.56 10.16 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "MPN" "SN74LVC125APWR"
-			(at -35.56 10.16 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer" "Texas Instruments"
-			(at -35.56 10.16 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "LCSC" "C7813"
-			(at -35.56 10.16 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Rating" "VCC 1.65 V to 3.6 V; 24 mA; TSSOP-14"
-			(at -35.56 10.16 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "LCSC Part" "C7813"
-			(at -35.56 10.16 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "MPN" "SN74LVC125APWR"
-			(at -35.56 10.16 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer" "Texas Instruments"
-			(at -35.56 10.16 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "LCSC" "C7813"
-			(at -35.56 10.16 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Rating" "VCC 1.65 V to 3.6 V; 24 mA; TSSOP-14"
-			(at -35.56 10.16 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "LCSC Part" "C7813"
-			(at -35.56 10.16 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "MPN" "SN74LVC125APWR"
-			(at -35.56 10.16 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer" "Texas Instruments"
-			(at -35.56 10.16 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Modelo 3D" "${KICAD9_3DMODEL_DIR}/Package_SO.3dshapes/TSSOP-14_4.4x5mm_P0.65mm.step"
-			(at 62.23 127 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Status_Ficha" "Conferido no catalogo em 2026-09-24; verificar estoque ao comprar"
-			(at 62.23 127 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "CREATOR" ""
-			(at 62.23 127 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "VERIFIER" ""
+		(property "Verification" "Conferido no catalogo em 2026-09-24; verificar estoque ao comprar"
 			(at 62.23 127 0)
 			(effects
 				(font
@@ -9660,9 +5898,24 @@
 		(instances
 			(project ""
 				(path "/0c305a6e-f9cd-49a1-b146-c2956e5469b6/8495f6b1-74a6-413b-a199-5ab08c5254ba"
-					(reference "U11")
+					(reference "U801")
 					(unit 4)
 				)
+			)
+		)
+	
+		(property "Function" "Circuito integrado ou módulo funcional."
+			(at 0 0 0)
+			(effects
+				(font (size 1.27 1.27))
+				(hide yes)
+			)
+		)
+		(property "Assembly" "SMT"
+			(at 0 0 0)
+			(effects
+				(font (size 1.27 1.27))
+				(hide yes)
 			)
 		)
 	)

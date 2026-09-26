@@ -3455,7 +3455,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "6aeaa5fc-870b-4c24-9c5e-8e40852798c1")
-		(property "Reference" "H2"
+		(property "Reference" "H902"
 			(at 22.86 182.8799 0)
 			(effects
 				(font
@@ -3464,7 +3464,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "Furo M3 / Ø3,2 mm"
+		(property "Value" "M3 NPTH, Ø3.2 mm"
 			(at 22.86 185.4199 0)
 			(effects
 				(font
@@ -3500,25 +3500,7 @@
 				(hide yes)
 			)
 		)
-		(property "Status_Ficha" "Conferido: não entra na BOM. Validar posição, keepout e altura do espaçador M3 contra o gabinete antes do roteamento."
-			(at 20.32 184.15 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "CREATOR" ""
-			(at 20.32 184.15 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "VERIFIER" ""
+		(property "Verification" "Conferido: não entra na BOM. Validar posição, keepout e altura do espaçador M3 contra o gabinete antes do roteamento."
 			(at 20.32 184.15 0)
 			(effects
 				(font
@@ -3554,15 +3536,6 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC Part" "N/A"
-			(at 20.32 184.15 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
 		(property "Function" "Fixação mecânica da PCB ao gabinete ou espaçadores M3."
 			(at 20.32 184.15 0)
 			(effects
@@ -3581,21 +3554,20 @@
 				(hide yes)
 			)
 		)
-		(property "Modelo 3D" "N/A — um furo NPTH não possui corpo físico 3D; o parafuso/espaçador pertence ao conjunto mecânico."
-			(at 20.32 184.15 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
 		(instances
 			(project ""
 				(path "/0c305a6e-f9cd-49a1-b146-c2956e5469b6"
-					(reference "H2")
+					(reference "H902")
 					(unit 1)
 				)
+			)
+		)
+	
+		(property "Specification" "M3 NPTH, Ø3.2 mm"
+			(at 0 0 0)
+			(effects
+				(font (size 1.27 1.27))
+				(hide yes)
 			)
 		)
 	)
@@ -3609,7 +3581,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "7059bbae-a30c-4dcd-8946-d468e9d1f085")
-		(property "Reference" "H1"
+		(property "Reference" "H901"
 			(at 22.86 175.2599 0)
 			(effects
 				(font
@@ -3618,7 +3590,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "Furo M3 / Ø3,2 mm"
+		(property "Value" "M3 NPTH, Ø3.2 mm"
 			(at 22.86 177.7999 0)
 			(effects
 				(font
@@ -3654,25 +3626,7 @@
 				(hide yes)
 			)
 		)
-		(property "Status_Ficha" "Conferido: não entra na BOM. Validar posição, keepout e altura do espaçador M3 contra o gabinete antes do roteamento."
-			(at 20.32 176.53 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "CREATOR" ""
-			(at 20.32 176.53 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "VERIFIER" ""
+		(property "Verification" "Conferido: não entra na BOM. Validar posição, keepout e altura do espaçador M3 contra o gabinete antes do roteamento."
 			(at 20.32 176.53 0)
 			(effects
 				(font
@@ -3708,15 +3662,6 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC Part" "N/A"
-			(at 20.32 176.53 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
 		(property "Function" "Fixação mecânica da PCB ao gabinete ou espaçadores M3."
 			(at 20.32 176.53 0)
 			(effects
@@ -3735,21 +3680,20 @@
 				(hide yes)
 			)
 		)
-		(property "Modelo 3D" "N/A — um furo NPTH não possui corpo físico 3D; o parafuso/espaçador pertence ao conjunto mecânico."
-			(at 20.32 176.53 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
 		(instances
 			(project ""
 				(path "/0c305a6e-f9cd-49a1-b146-c2956e5469b6"
-					(reference "H1")
+					(reference "H901")
 					(unit 1)
 				)
+			)
+		)
+	
+		(property "Specification" "M3 NPTH, Ø3.2 mm"
+			(at 0 0 0)
+			(effects
+				(font (size 1.27 1.27))
+				(hide yes)
 			)
 		)
 	)
@@ -3763,7 +3707,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "b39f5a9e-73b4-4ebf-94d8-25271cfa764c")
-		(property "Reference" "H4"
+		(property "Reference" "H904"
 			(at 41.91 182.8799 0)
 			(effects
 				(font
@@ -3772,7 +3716,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "Furo M3 / Ø3,2 mm"
+		(property "Value" "M3 NPTH, Ø3.2 mm"
 			(at 41.91 185.4199 0)
 			(effects
 				(font
@@ -3808,25 +3752,7 @@
 				(hide yes)
 			)
 		)
-		(property "Status_Ficha" "Conferido: não entra na BOM. Validar posição, keepout e altura do espaçador M3 contra o gabinete antes do roteamento."
-			(at 39.37 184.15 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "CREATOR" ""
-			(at 39.37 184.15 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "VERIFIER" ""
+		(property "Verification" "Conferido: não entra na BOM. Validar posição, keepout e altura do espaçador M3 contra o gabinete antes do roteamento."
 			(at 39.37 184.15 0)
 			(effects
 				(font
@@ -3862,15 +3788,6 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC Part" "N/A"
-			(at 39.37 184.15 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
 		(property "Function" "Fixação mecânica da PCB ao gabinete ou espaçadores M3."
 			(at 39.37 184.15 0)
 			(effects
@@ -3889,21 +3806,20 @@
 				(hide yes)
 			)
 		)
-		(property "Modelo 3D" "N/A — um furo NPTH não possui corpo físico 3D; o parafuso/espaçador pertence ao conjunto mecânico."
-			(at 39.37 184.15 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
 		(instances
 			(project "estacao-meteorologica"
 				(path "/0c305a6e-f9cd-49a1-b146-c2956e5469b6"
-					(reference "H4")
+					(reference "H904")
 					(unit 1)
 				)
+			)
+		)
+	
+		(property "Specification" "M3 NPTH, Ø3.2 mm"
+			(at 0 0 0)
+			(effects
+				(font (size 1.27 1.27))
+				(hide yes)
 			)
 		)
 	)
@@ -3917,7 +3833,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "f9ea8a96-1ac5-445f-88ee-da057a795bd3")
-		(property "Reference" "H3"
+		(property "Reference" "H903"
 			(at 41.91 175.2599 0)
 			(effects
 				(font
@@ -3926,7 +3842,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "Furo M3 / Ø3,2 mm"
+		(property "Value" "M3 NPTH, Ø3.2 mm"
 			(at 41.91 177.7999 0)
 			(effects
 				(font
@@ -3962,25 +3878,7 @@
 				(hide yes)
 			)
 		)
-		(property "Status_Ficha" "Conferido: não entra na BOM. Validar posição, keepout e altura do espaçador M3 contra o gabinete antes do roteamento."
-			(at 39.37 176.53 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "CREATOR" ""
-			(at 39.37 176.53 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "VERIFIER" ""
+		(property "Verification" "Conferido: não entra na BOM. Validar posição, keepout e altura do espaçador M3 contra o gabinete antes do roteamento."
 			(at 39.37 176.53 0)
 			(effects
 				(font
@@ -4016,15 +3914,6 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC Part" "N/A"
-			(at 39.37 176.53 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
 		(property "Function" "Fixação mecânica da PCB ao gabinete ou espaçadores M3."
 			(at 39.37 176.53 0)
 			(effects
@@ -4043,21 +3932,20 @@
 				(hide yes)
 			)
 		)
-		(property "Modelo 3D" "N/A — um furo NPTH não possui corpo físico 3D; o parafuso/espaçador pertence ao conjunto mecânico."
-			(at 39.37 176.53 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
 		(instances
 			(project "estacao-meteorologica"
 				(path "/0c305a6e-f9cd-49a1-b146-c2956e5469b6"
-					(reference "H3")
+					(reference "H903")
 					(unit 1)
 				)
+			)
+		)
+	
+		(property "Specification" "M3 NPTH, Ø3.2 mm"
+			(at 0 0 0)
+			(effects
+				(font (size 1.27 1.27))
+				(hide yes)
 			)
 		)
 	)
@@ -4077,7 +3965,7 @@
 			(color 0 0 0 0.0000)
 		)
 		(uuid "058dce74-971b-49d7-82f0-384e20be985c")
-		(property "Sheetname" "METEOROLOGIA"
+		(property "Sheetname" "INTERFACES METEOROLÓGICAS"
 			(at 210.82 38.6584 0)
 			(effects
 				(font
@@ -4159,7 +4047,7 @@
 			(color 0 0 0 0.0000)
 		)
 		(uuid "0abc4084-0cd9-43a4-88f9-87e0e6566acc")
-		(property "Sheetname" "BMP280"
+		(property "Sheetname" "SENSOR BMP280"
 			(at 69.85 76.7584 0)
 			(effects
 				(font
@@ -4168,7 +4056,7 @@
 				(justify left bottom)
 			)
 		)
-		(property "Sheetfile" "sheets/untitled.kicad_sch"
+		(property "Sheetfile" "sheets/bmp280.kicad_sch"
 			(at 69.85 98.3746 0)
 			(effects
 				(font
@@ -4220,7 +4108,7 @@
 			(color 0 0 0 0.0000)
 		)
 		(uuid "19a3c20f-53ab-4562-aabc-58e6e99571a0")
-		(property "Sheetname" "alimentacao"
+		(property "Sheetname" "ALIMENTAÇÃO"
 			(at 55.88 17.78 0)
 			(effects
 				(font
@@ -4292,7 +4180,7 @@
 			(color 0 0 0 0.0000)
 		)
 		(uuid "1fd7a678-c9b9-4a6a-ab50-58dfcf2b1932")
-		(property "Sheetname" "LORA Module"
+		(property "Sheetname" "RÁDIO LoRa"
 			(at 67.31 109.7784 0)
 			(effects
 				(font
@@ -4301,7 +4189,7 @@
 				(justify left bottom)
 			)
 		)
-		(property "Sheetfile" "sheets/Lora_module.kicad_sch"
+		(property "Sheetfile" "sheets/lora.kicad_sch"
 			(at 67.31 150.4446 0)
 			(effects
 				(font
@@ -4310,7 +4198,7 @@
 				(justify left top)
 			)
 		)
-		(pin "Lora_DIO0" output
+		(pin "LORA_DIO0" output
 			(at 85.09 134.62 0)
 			(uuid "d286214f-fc6b-4018-89b3-754c4a81f054")
 			(effects
@@ -4320,7 +4208,7 @@
 				(justify right)
 			)
 		)
-		(pin "Lora_DIO1" output
+		(pin "LORA_DIO1" output
 			(at 85.09 138.43 0)
 			(uuid "e01de21f-b0f9-4547-8003-81a3589ac906")
 			(effects
@@ -4330,7 +4218,7 @@
 				(justify right)
 			)
 		)
-		(pin "Lora_DIO2" output
+		(pin "LORA_DIO2" output
 			(at 85.09 142.24 0)
 			(uuid "d737049d-7e11-45d0-bd99-0030cf10d5c0")
 			(effects
@@ -4340,7 +4228,7 @@
 				(justify right)
 			)
 		)
-		(pin "Lora_MISO" output
+		(pin "LORA_SPI_MISO" output
 			(at 85.09 115.57 0)
 			(uuid "64a0c12e-42ae-40f8-a80f-0c4db2103d49")
 			(effects
@@ -4350,7 +4238,7 @@
 				(justify right)
 			)
 		)
-		(pin "Lora_MOSI" input
+		(pin "LORA_SPI_MOSI" input
 			(at 85.09 119.38 0)
 			(uuid "c0ce3e6f-8bcb-4d6f-b3ee-2bb6be1b7aa7")
 			(effects
@@ -4360,7 +4248,7 @@
 				(justify right)
 			)
 		)
-		(pin "Lora_NSS" input
+		(pin "LORA_NSS" input
 			(at 85.09 123.19 0)
 			(uuid "a184599a-c84d-40ee-89b2-f1b2ae0f212d")
 			(effects
@@ -4370,7 +4258,7 @@
 				(justify right)
 			)
 		)
-		(pin "Lora_RST" input
+		(pin "LORA_RST" input
 			(at 85.09 127 0)
 			(uuid "c5e5f557-9d5b-48e7-972f-b7ec3566f3f9")
 			(effects
@@ -4380,7 +4268,7 @@
 				(justify right)
 			)
 		)
-		(pin "Lora_SCK" input
+		(pin "LORA_SPI_SCK" input
 			(at 85.09 130.81 0)
 			(uuid "b3acb8cc-b1fb-4eeb-af04-5dd75c4b5d3e")
 			(effects
@@ -4414,7 +4302,7 @@
 			(color 0 0 0 0.0000)
 		)
 		(uuid "34d78a87-9b09-4795-98a5-fe6ea1a123f9")
-		(property "Sheetname" "DHT22"
+		(property "Sheetname" "SENSOR DHT22"
 			(at 210.82 80.5684 0)
 			(effects
 				(font
@@ -4423,7 +4311,7 @@
 				(justify left bottom)
 			)
 		)
-		(property "Sheetfile" "sheets/Dht22.kicad_sch"
+		(property "Sheetfile" "sheets/dht22.kicad_sch"
 			(at 210.82 93.2946 0)
 			(effects
 				(font
@@ -4432,7 +4320,7 @@
 				(justify left top)
 			)
 		)
-		(pin "DHT_SIG" bidirectional
+		(pin "DHT22_DATA" bidirectional
 			(at 210.82 87.63 180)
 			(uuid "49f81962-9a82-478a-bdf2-f562cd183b78")
 			(effects
@@ -4466,7 +4354,7 @@
 			(color 0 0 0 0.0000)
 		)
 		(uuid "8495f6b1-74a6-413b-a199-5ab08c5254ba")
-		(property "Sheetname" "Cartao SD"
+		(property "Sheetname" "CARTÃO microSD"
 			(at 210.82 112.3184 0)
 			(effects
 				(font
@@ -4484,7 +4372,7 @@
 				(justify left top)
 			)
 		)
-		(pin "MCU_MOSI" input
+		(pin "SD_SPI_MOSI" input
 			(at 210.82 120.65 180)
 			(uuid "7fe5ccfb-c559-46ce-b27e-c50ebe39fc3a")
 			(effects
@@ -4504,7 +4392,7 @@
 				(justify left)
 			)
 		)
-		(pin "SD_CS" input
+		(pin "SD_SPI_CS" input
 			(at 210.82 130.81 180)
 			(uuid "1c23039e-49b2-4471-90ac-39f6445b977a")
 			(effects
@@ -4558,7 +4446,7 @@
 			(color 0 0 0 0.0000)
 		)
 		(uuid "a23dea8e-0c82-454e-9219-5e250a611b0f")
-		(property "Sheetname" "mcu"
+		(property "Sheetname" "MCU E DEPURAÇÃO"
 			(at 115.57 38.6584 0)
 			(effects
 				(font
@@ -4606,7 +4494,7 @@
 				(justify right)
 			)
 		)
-		(pin "DHT_SIG" bidirectional
+		(pin "DHT22_DATA" bidirectional
 			(at 182.88 87.63 0)
 			(uuid "6a43b861-e4d6-4a04-b88a-577662722a71")
 			(effects
@@ -4626,7 +4514,7 @@
 				(justify right)
 			)
 		)
-		(pin "Lora_DIO0" input
+		(pin "LORA_DIO0" input
 			(at 115.57 134.62 180)
 			(uuid "68df7f0e-1858-4661-bc03-c1383b1e62b0")
 			(effects
@@ -4636,7 +4524,7 @@
 				(justify left)
 			)
 		)
-		(pin "Lora_DIO1" input
+		(pin "LORA_DIO1" input
 			(at 115.57 138.43 180)
 			(uuid "002e3c08-c14a-4ecc-a927-4248a9864f5b")
 			(effects
@@ -4646,7 +4534,7 @@
 				(justify left)
 			)
 		)
-		(pin "Lora_MISO" input
+		(pin "LORA_SPI_MISO" input
 			(at 115.57 115.57 180)
 			(uuid "416560a5-d9d1-4ace-8e8e-611eaeb920f5")
 			(effects
@@ -4656,7 +4544,7 @@
 				(justify left)
 			)
 		)
-		(pin "Lora_MOSI" output
+		(pin "LORA_SPI_MOSI" output
 			(at 115.57 119.38 180)
 			(uuid "62aeec63-454f-4d8a-a633-090fce84b73a")
 			(effects
@@ -4666,7 +4554,7 @@
 				(justify left)
 			)
 		)
-		(pin "Lora_NSS" output
+		(pin "LORA_NSS" output
 			(at 115.57 123.19 180)
 			(uuid "0267b42c-c754-436e-b170-d127ed45bf11")
 			(effects
@@ -4676,7 +4564,7 @@
 				(justify left)
 			)
 		)
-		(pin "Lora_RST" output
+		(pin "LORA_RST" output
 			(at 115.57 127 180)
 			(uuid "b8817e07-7560-41a7-a0d2-8a1f83180955")
 			(effects
@@ -4686,7 +4574,7 @@
 				(justify left)
 			)
 		)
-		(pin "Lora_SCK" output
+		(pin "LORA_SPI_SCK" output
 			(at 115.57 130.81 180)
 			(uuid "d8db343d-3cce-4f5f-a7a6-a16147d4b2a4")
 			(effects
@@ -4696,7 +4584,7 @@
 				(justify left)
 			)
 		)
-		(pin "MCU_MOSI" input
+		(pin "SD_SPI_MOSI" input
 			(at 182.88 120.65 0)
 			(uuid "0e9e3f4a-9f07-44f9-826c-687da0f39705")
 			(effects
@@ -4706,7 +4594,7 @@
 				(justify right)
 			)
 		)
-		(pin "SD_CS" input
+		(pin "SD_SPI_CS" input
 			(at 182.88 130.81 0)
 			(uuid "e0120754-474e-40ef-bc6e-d50bd36e1c36")
 			(effects
@@ -4756,7 +4644,7 @@
 				(justify left)
 			)
 		)
-		(pin "Lora_DIO2" input
+		(pin "LORA_DIO2" input
 			(at 115.57 142.24 180)
 			(uuid "f84fdefa-f614-43ff-bc31-447612c234ab")
 			(effects
@@ -4790,7 +4678,7 @@
 			(color 0 0 0 0.0000)
 		)
 		(uuid "c5455acd-00c4-4dde-ab9a-382e33c5bf3a")
-		(property "Sheetname" "BH1750"
+		(property "Sheetname" "SENSOR BH1750"
 			(at 72.39 52.6284 0)
 			(effects
 				(font
