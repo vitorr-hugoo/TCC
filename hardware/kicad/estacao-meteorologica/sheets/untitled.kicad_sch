@@ -724,10 +724,10 @@
 		)
 	)
 	(junction
-		(at 144.78 93.98)
+		(at 152.4 109.22)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "0e5269aa-fb0e-4c7b-8f4b-52618c3c3e83")
+		(uuid "1567c63f-2d61-41e3-90fc-52035bdb19c9")
 	)
 	(junction
 		(at 139.7 93.98)
@@ -736,16 +736,10 @@
 		(uuid "37a1f1f6-5376-4938-8a91-d30afe72f435")
 	)
 	(junction
-		(at 157.48 90.17)
+		(at 158.75 102.87)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "58d1c405-0edd-49a3-8ff7-a708747b4194")
-	)
-	(junction
-		(at 157.48 83.82)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "be0e360e-8fe6-475a-a635-72f379d15020")
+		(uuid "bf9e2a26-4f81-406c-a9aa-9ea324330b13")
 	)
 	(junction
 		(at 137.16 83.82)
@@ -754,38 +748,16 @@
 		(uuid "c06a3f3a-1dc3-41d9-82e9-3b93eb46feed")
 	)
 	(junction
-		(at 157.48 93.98)
+		(at 158.75 106.68)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "c3af14f5-e315-4937-b45f-3c6e60668ebb")
+		(uuid "c2bcd917-7726-46ff-b7cf-a67d09f0037a")
 	)
 	(junction
 		(at 129.54 109.22)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "c98c8099-a8ce-461e-b9b3-5b7bb27ab944")
-	)
-	(junction
-		(at 157.48 106.68)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "e0d1b186-02af-44c0-8d0b-8c9e97f56244")
-	)
-	(junction
-		(at 142.24 90.17)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "f8b6dc23-e017-4c96-b58c-826263b273d5")
-	)
-	(wire
-		(pts
-			(xy 157.48 83.82) (xy 157.48 90.17)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "07eb41e7-d78e-43f3-9b70-5ad61f49c72e")
 	)
 	(wire
 		(pts
@@ -809,27 +781,17 @@
 	)
 	(wire
 		(pts
-			(xy 157.48 93.98) (xy 157.48 106.68)
+			(xy 124.46 83.82) (xy 118.11 83.82)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "2803725e-0343-4ce7-a25d-afefc71471a1")
+		(uuid "2b96e320-5738-4c5b-8640-242dbaee9fa0")
 	)
 	(wire
 		(pts
-			(xy 147.32 90.17) (xy 142.24 90.17)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "3319a933-59fa-4e32-b3dc-5877374feecc")
-	)
-	(wire
-		(pts
-			(xy 144.78 74.93) (xy 144.78 93.98)
+			(xy 144.78 74.93) (xy 144.78 96.52)
 		)
 		(stroke
 			(width 0)
@@ -849,6 +811,16 @@
 	)
 	(wire
 		(pts
+			(xy 158.75 102.87) (xy 158.75 106.68)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3c840d60-dd43-4e4e-8ae1-3363d9877ef7")
+	)
+	(wire
+		(pts
 			(xy 124.46 93.98) (xy 124.46 96.52)
 		)
 		(stroke
@@ -856,56 +828,6 @@
 			(type default)
 		)
 		(uuid "3d15141f-f0b9-4ab5-a9a0-263b6eea4d35")
-	)
-	(wire
-		(pts
-			(xy 154.94 93.98) (xy 157.48 93.98)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "45f23d19-b038-4182-a9fd-abae59f7f557")
-	)
-	(wire
-		(pts
-			(xy 142.24 90.17) (xy 142.24 96.52)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "49630911-dd44-4f36-b539-43c2c5e77997")
-	)
-	(wire
-		(pts
-			(xy 147.32 83.82) (xy 137.16 83.82)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "4966f0bf-60d2-42cc-a0f7-2427eb958294")
-	)
-	(wire
-		(pts
-			(xy 144.78 93.98) (xy 144.78 96.52)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "49806dc2-7fc9-4e8c-a95f-628122aa09d5")
-	)
-	(wire
-		(pts
-			(xy 157.48 81.28) (xy 157.48 83.82)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "54810f73-24a0-42d6-9f98-9ae20573bb65")
 	)
 	(wire
 		(pts
@@ -939,33 +861,13 @@
 	)
 	(wire
 		(pts
-			(xy 147.32 93.98) (xy 144.78 93.98)
+			(xy 132.08 83.82) (xy 137.16 83.82)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "7517cac4-8b6d-46a4-982e-32ddf0344f44")
-	)
-	(wire
-		(pts
-			(xy 154.94 90.17) (xy 157.48 90.17)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "8908c107-cfbc-41f2-b853-fd100abf1e03")
-	)
-	(wire
-		(pts
-			(xy 157.48 90.17) (xy 157.48 93.98)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "89c7087f-16e0-461f-8210-72e7fd5f980e")
+		(uuid "802a402c-993e-46b0-8dda-0b2349680a83")
 	)
 	(wire
 		(pts
@@ -1019,7 +921,27 @@
 	)
 	(wire
 		(pts
-			(xy 142.24 74.93) (xy 142.24 90.17)
+			(xy 152.4 102.87) (xy 158.75 102.87)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a6ce8fbe-7f42-47ba-80fe-7a83448431f5")
+	)
+	(wire
+		(pts
+			(xy 158.75 106.68) (xy 162.56 106.68)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a7028040-19da-454b-8ec3-50baf201ef84")
+	)
+	(wire
+		(pts
+			(xy 142.24 74.93) (xy 142.24 96.52)
 		)
 		(stroke
 			(width 0)
@@ -1049,23 +971,33 @@
 	)
 	(wire
 		(pts
-			(xy 157.48 106.68) (xy 162.56 106.68)
+			(xy 158.75 100.33) (xy 158.75 102.87)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "db74dd3f-2584-4bcc-a8c5-e8269196f604")
+		(uuid "b7857361-7aa2-4816-af34-3cd4bae7a16f")
 	)
 	(wire
 		(pts
-			(xy 154.94 83.82) (xy 157.48 83.82)
+			(xy 118.11 83.82) (xy 118.11 82.55)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "df8a062a-d236-4e51-8b6b-367c8180d13f")
+		(uuid "be90f426-3027-4d06-9fcd-be66dda5d3bf")
+	)
+	(wire
+		(pts
+			(xy 152.4 109.22) (xy 152.4 102.87)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d3eca150-ab83-4226-bfc3-ea98a97d4607")
 	)
 	(wire
 		(pts
@@ -1079,7 +1011,7 @@
 	)
 	(wire
 		(pts
-			(xy 149.86 106.68) (xy 157.48 106.68)
+			(xy 149.86 106.68) (xy 158.75 106.68)
 		)
 		(stroke
 			(width 0)
@@ -1097,40 +1029,51 @@
 		)
 		(uuid "fadfd26f-fd54-446e-ae5b-9e0350e72639")
 	)
-	(hierarchical_label "BMP_SDO"
+	(global_label "BMP_SDO"
 		(shape input)
 		(at 139.7 74.93 90)
+		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
 			(justify left)
 		)
-		(uuid "14e57d50-bdc7-4a57-9e2c-b08f03877f90")
-	)
-	(hierarchical_label "BMP_SDA"
-		(shape bidirectional)
-		(at 142.24 74.93 90)
-		(effects
-			(font
-				(size 1.27 1.27)
+		(uuid "1bf1a539-5137-484f-a6f6-fe32fc50afd5")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 139.7 63.1758 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
 			)
-			(justify left)
 		)
-		(uuid "1b81849e-d704-456b-924a-4266b5132d87")
 	)
-	(hierarchical_label "BMP_CSB"
+	(global_label "BMP_CSB"
 		(shape input)
 		(at 137.16 74.93 90)
+		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
 			(justify left)
 		)
-		(uuid "2fa0c20e-e1c4-4707-87dc-52fad1a5e44d")
+		(uuid "4adccbf7-4ca0-4620-b748-b5fd762f0e34")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 137.16 63.2363 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
 	)
-	(hierarchical_label "BMP_SCK"
+	(hierarchical_label "I2C1_SCL"
 		(shape bidirectional)
 		(at 144.78 74.93 90)
 		(effects
@@ -1139,7 +1082,18 @@
 			)
 			(justify left)
 		)
-		(uuid "43f42fbd-f6ca-4027-b3e5-a21bf4894f95")
+		(uuid "28c07649-119b-4954-becc-c295050e41f6")
+	)
+	(hierarchical_label "I2C1_SDA"
+		(shape bidirectional)
+		(at 142.24 74.93 90)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "8f5a4333-f3c9-40a5-ad79-2101dcd96a53")
 	)
 	(symbol
 		(lib_id "power:GND")
@@ -1209,16 +1163,16 @@
 	)
 	(symbol
 		(lib_id "power:+3V3")
-		(at 157.48 81.28 0)
+		(at 158.75 100.33 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "15438167-86ca-4d11-870e-c9c4610910ed")
-		(property "Reference" "#PWR015"
-			(at 157.48 85.09 0)
+		(uuid "12a4b9be-dec9-4bb9-ab83-1af272192860")
+		(property "Reference" "#PWR026"
+			(at 158.75 104.14 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1227,7 +1181,7 @@
 			)
 		)
 		(property "Value" "+3V3"
-			(at 157.48 76.2 0)
+			(at 158.75 95.25 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1235,7 +1189,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 157.48 81.28 0)
+			(at 158.75 100.33 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1244,7 +1198,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 157.48 81.28 0)
+			(at 158.75 100.33 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1253,7 +1207,73 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"+3V3\""
-			(at 157.48 81.28 0)
+			(at 158.75 100.33 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "142702a7-06df-4517-a497-40867a4608f1")
+		)
+		(instances
+			(project "estacao-meteorologica"
+				(path "/0c305a6e-f9cd-49a1-b146-c2956e5469b6/0abc4084-0cd9-43a4-88f9-87e0e6566acc"
+					(reference "#PWR026")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:+3V3")
+		(at 118.11 82.55 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "15438167-86ca-4d11-870e-c9c4610910ed")
+		(property "Reference" "#PWR015"
+			(at 118.11 86.36 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "+3V3"
+			(at 118.11 77.47 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 118.11 82.55 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 118.11 82.55 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+3V3\""
+			(at 118.11 82.55 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1265,78 +1285,9 @@
 			(uuid "6ea6d378-41c0-4552-9941-f86b20d89f4d")
 		)
 		(instances
-			(project ""
+			(project "estacao-meteorologica"
 				(path "/0c305a6e-f9cd-49a1-b146-c2956e5469b6/0abc4084-0cd9-43a4-88f9-87e0e6566acc"
 					(reference "#PWR015")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:R")
-		(at 151.13 90.17 270)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "3169708f-9fb8-46be-9e79-c89c31ba3a83")
-		(property "Reference" "R2"
-			(at 149.987 85.979 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "10k"
-			(at 149.479 88.265 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" ""
-			(at 151.13 88.392 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 151.13 90.17 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Resistor"
-			(at 151.13 90.17 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "2"
-			(uuid "e3384201-6a81-4c05-9759-a4b20b70a37a")
-		)
-		(pin "1"
-			(uuid "98f41eaf-ebae-421d-96bd-95c0ff3c1836")
-		)
-		(instances
-			(project "esquematico_V4"
-				(path "/0c305a6e-f9cd-49a1-b146-c2956e5469b6/0abc4084-0cd9-43a4-88f9-87e0e6566acc"
-					(reference "R2")
 					(unit 1)
 				)
 			)
@@ -1377,7 +1328,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://ae-bst.resource.bosch.com/media/_tech/media/datasheets/BST-BMP280-DS001.pdf"
+		(property "Datasheet" "https://www.lcsc.com/datasheet/lcsc_datasheet_2007021612_Bosch-Sensortec-BMP280_C83291.pdf"
 			(at 139.7 106.68 0)
 			(effects
 				(font
@@ -1386,8 +1337,98 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Absolute Barometric Pressure Sensor, LGA-8"
+		(property "Description" "-40℃~+85℃ 0.12hpa 1.5pa/K 1.71V~3.6V 1hpa 300nA 30Kpa~1.1bar I2C、SPI LGA-8(2x2.5) Pressure Sensors RoHS"
 			(at 139.7 106.68 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "Bosch Sensortec"
+			(at 139.7 106.68 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" "BMP280"
+			(at 139.7 106.68 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C83291"
+			(at 139.7 106.68 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC Part" "C83291"
+			(at 139.7 106.68 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Rating" "1,71 a 3,6 V; -40 a +85 °C; LGA-8"
+			(at 139.7 106.68 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Function" "Sensor de pressão; CSB em alto e SDO em baixo selecionam I2C, endereço 0x76."
+			(at 139.7 106.68 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Modelo 3D" "${KICAD9_3DMODEL_DIR}/Package_LGA.3dshapes/Bosch_LGA-8_2x2.5mm_P0.65mm_ClockwisePinNumbering.step"
+			(at 139.7 106.68 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Status_Ficha" "Conferido no catalogo em 2026-09-24; verificar estoque ao comprar"
+			(at 139.7 106.68 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "CREATOR" ""
+			(at 139.7 106.68 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "VERIFIER" ""
+			(at 139.7 106.68 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1430,73 +1471,6 @@
 	)
 	(symbol
 		(lib_id "Device:R")
-		(at 151.13 93.98 90)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "611802c2-885a-4536-ade4-c439d7434f6f")
-		(property "Reference" "R1"
-			(at 151.638 96.774 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "10k"
-			(at 151.638 99.314 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 151.13 95.758 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 151.13 93.98 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Resistor"
-			(at 151.13 93.98 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "2"
-			(uuid "4b378e34-0e09-4b20-ab17-ccf7a9b6c504")
-		)
-		(pin "1"
-			(uuid "6a103088-0492-4c2d-af44-02446d0d7d77")
-		)
-		(instances
-			(project ""
-				(path "/0c305a6e-f9cd-49a1-b146-c2956e5469b6/0abc4084-0cd9-43a4-88f9-87e0e6566acc"
-					(reference "R1")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:R")
 		(at 130.81 93.98 90)
 		(unit 1)
 		(exclude_from_sim no)
@@ -1520,7 +1494,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
 			(at 130.81 95.758 90)
 			(effects
 				(font
@@ -1529,7 +1503,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://www.lcsc.com/datasheet/lcsc_datasheet_2206010045_UNI-ROYAL-Uniroyal-Elec-0603WAF1002T5E_C25804.pdf"
 			(at 130.81 93.98 0)
 			(effects
 				(font
@@ -1538,8 +1512,98 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Resistor"
+		(property "Description" "Resistor SMD 10 kohm, 1%, 0,1 W, 0603"
 			(at 130.81 93.98 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "UNI-ROYAL(Uniroyal Elec)"
+			(at 130.81 93.98 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" "0603WAF1002T5E"
+			(at 130.81 93.98 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C25804"
+			(at 130.81 93.98 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC Part" "C25804"
+			(at 130.81 93.98 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Rating" "10 kOhm; 1%; 0,1 W; 75 V; 0603"
+			(at 130.81 93.98 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Function" "Pull-down opcional de SDO; hoje está em paralelo ao strap direto para GND da folha raiz."
+			(at 130.81 93.98 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Modelo 3D" "${KICAD9_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0603_1608Metric.step"
+			(at 130.81 93.98 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Status_Ficha" "Conferido no catalogo em 2026-09-24; verificar estoque ao comprar"
+			(at 130.81 93.98 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "CREATOR" ""
+			(at 130.81 93.98 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "VERIFIER" ""
+			(at 130.81 93.98 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1590,7 +1654,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
 			(at 163.5252 118.11 0)
 			(effects
 				(font
@@ -1599,7 +1663,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://www.lcsc.com/datasheet/lcsc_datasheet_2211101700_YAGEO-CC0603KRX7R9BB104_C14663.pdf"
 			(at 162.56 114.3 0)
 			(effects
 				(font
@@ -1608,7 +1672,97 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Unpolarized capacitor"
+		(property "Description" "Capacitor ceramico 100 nF, 50 V, X7R, 10%, 0603"
+			(at 162.56 114.3 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "YAGEO"
+			(at 162.56 114.3 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" "CC0603KRX7R9BB104"
+			(at 162.56 114.3 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C14663"
+			(at 162.56 114.3 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC Part" "C14663"
+			(at 162.56 114.3 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Rating" "100 nF; X7R; 50 V; 0603"
+			(at 162.56 114.3 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Function" "Desacoplamento local de VDDIO do BMP280."
+			(at 162.56 114.3 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Modelo 3D" "${KICAD9_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0603_1608Metric.step"
+			(at 162.56 114.3 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Status_Ficha" "Conferido no catalogo em 2026-09-24; verificar estoque ao comprar"
+			(at 162.56 114.3 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "CREATOR" ""
+			(at 162.56 114.3 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "VERIFIER" ""
 			(at 162.56 114.3 0)
 			(effects
 				(font
@@ -1659,7 +1813,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
 			(at 153.3652 118.11 0)
 			(effects
 				(font
@@ -1668,7 +1822,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://www.lcsc.com/datasheet/lcsc_datasheet_2211101700_YAGEO-CC0603KRX7R9BB104_C14663.pdf"
 			(at 152.4 114.3 0)
 			(effects
 				(font
@@ -1677,7 +1831,97 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Unpolarized capacitor"
+		(property "Description" "Capacitor ceramico 100 nF, 50 V, X7R, 10%, 0603"
+			(at 152.4 114.3 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "YAGEO"
+			(at 152.4 114.3 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" "CC0603KRX7R9BB104"
+			(at 152.4 114.3 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C14663"
+			(at 152.4 114.3 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC Part" "C14663"
+			(at 152.4 114.3 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Rating" "100 nF; X7R; 50 V; 0603"
+			(at 152.4 114.3 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Function" "Desacoplamento local de VDD do BMP280."
+			(at 152.4 114.3 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Modelo 3D" "${KICAD9_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0603_1608Metric.step"
+			(at 152.4 114.3 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Status_Ficha" "Conferido no catalogo em 2026-09-24; verificar estoque ao comprar"
+			(at 152.4 114.3 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "CREATOR" ""
+			(at 152.4 114.3 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "VERIFIER" ""
 			(at 152.4 114.3 0)
 			(effects
 				(font
@@ -1835,7 +2079,7 @@
 	)
 	(symbol
 		(lib_id "Device:R")
-		(at 151.13 83.82 90)
+		(at 128.27 83.82 90)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -1843,7 +2087,7 @@
 		(dnp no)
 		(uuid "d0fafb50-188f-4ad3-a34a-c2e96b172de0")
 		(property "Reference" "R3"
-			(at 147.828 78.486 90)
+			(at 124.968 78.486 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1851,24 +2095,15 @@
 			)
 		)
 		(property "Value" "10k"
-			(at 147.828 81.026 90)
+			(at 124.968 81.026 90)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 			)
 		)
-		(property "Footprint" ""
-			(at 151.13 85.598 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 151.13 83.82 0)
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
+			(at 128.27 85.598 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1876,8 +2111,107 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Resistor"
-			(at 151.13 83.82 0)
+		(property "Datasheet" "https://www.lcsc.com/datasheet/lcsc_datasheet_2206010045_UNI-ROYAL-Uniroyal-Elec-0603WAF1002T5E_C25804.pdf"
+			(at 128.27 83.82 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor SMD 10 kohm, 1%, 0,1 W, 0603"
+			(at 128.27 83.82 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "UNI-ROYAL(Uniroyal Elec)"
+			(at 128.27 83.82 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" "0603WAF1002T5E"
+			(at 128.27 83.82 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C25804"
+			(at 128.27 83.82 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC Part" "C25804"
+			(at 128.27 83.82 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Rating" "10 kOhm; 1%; 0,1 W; 75 V; 0603"
+			(at 128.27 83.82 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Function" "Pull-up opcional de CSB; hoje está em paralelo ao strap direto para +3V3 da folha raiz."
+			(at 128.27 83.82 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Modelo 3D" "${KICAD9_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0603_1608Metric.step"
+			(at 128.27 83.82 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Status_Ficha" "Conferido no catalogo em 2026-09-24; verificar estoque ao comprar"
+			(at 128.27 83.82 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "CREATOR" ""
+			(at 128.27 83.82 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "VERIFIER" ""
+			(at 128.27 83.82 90)
 			(effects
 				(font
 					(size 1.27 1.27)

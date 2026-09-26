@@ -144,6 +144,155 @@
 			)
 			(embedded_fonts no)
 		)
+		(symbol "Device:FerriteBead"
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 0)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "FB"
+				(at -3.81 0.635 90)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "FerriteBead"
+				(at 3.81 0 90)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at -1.778 0 90)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "~"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Ferrite bead"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "L ferrite bead inductor filter"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "Inductor_* L_* *Ferrite*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "FerriteBead_0_1"
+				(polyline
+					(pts
+						(xy -2.7686 0.4064) (xy -1.7018 2.2606) (xy 2.7686 -0.3048) (xy 1.6764 -2.159) (xy -2.7686 0.4064)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 1.27) (xy 0 1.2954)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 -1.27) (xy 0 -1.2192)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "FerriteBead_1_1"
+				(pin passive line
+					(at 0 3.81 270)
+					(length 2.54)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 0 -3.81 90)
+					(length 2.54)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
 		(symbol "Device:R"
 			(pin_numbers
 				(hide yes)
@@ -268,7 +417,7 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "LoRa1276_C1:LORA1276-C1-915MHZ"
+		(symbol "Hardware_LoRa:LORA1276-C1-915MHZ"
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
@@ -288,7 +437,7 @@
 					)
 				)
 			)
-			(property "Footprint" "LoRa1276_C1:COMM-SMD_LORA1276-C1-915MHZ"
+			(property "Footprint" "Hardware_LoRa:COMM-SMD_LORA1276-C1-915MHZ"
 				(at 0 -16.51 0)
 				(effects
 					(font
@@ -297,7 +446,7 @@
 					(hide yes)
 				)
 			)
-			(property "Datasheet" "https://www.lcsc.com/datasheet/C3001531.pdf"
+			(property "Datasheet" "https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/2204251600_G-NiceRF-lora1276-C1-915MHz_C3001531.pdf"
 				(at 0 -19.05 0)
 				(effects
 					(font
@@ -306,7 +455,7 @@
 					(hide yes)
 				)
 			)
-			(property "Description" ""
+			(property "Description" "Modulo LoRa NiceRF LoRa1276-C1, SX1276, banda 915 MHz, interface SPI 3,3 V, RF 50 ohm"
 				(at 0 0 0)
 				(effects
 					(font
@@ -315,7 +464,7 @@
 					(hide yes)
 				)
 			)
-			(property "Manufacturer" "G-NiceRF(思为无线)"
+			(property "Manufacturer" "G-NiceRF"
 				(at 0 -21.59 0)
 				(effects
 					(font
@@ -335,6 +484,15 @@
 			)
 			(property "LCSC Part" "C3001531"
 				(at 0 -26.67 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "LCSC" "C3001531"
+				(at 0 0 0)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -365,7 +523,7 @@
 						(type none)
 					)
 				)
-				(pin unspecified line
+				(pin power_in line
 					(at -12.7 8.89 0)
 					(length 2.54)
 					(name "GND"
@@ -383,7 +541,7 @@
 						)
 					)
 				)
-				(pin unspecified line
+				(pin tri_state line
 					(at -12.7 6.35 0)
 					(length 2.54)
 					(name "MISO"
@@ -401,7 +559,7 @@
 						)
 					)
 				)
-				(pin unspecified line
+				(pin input line
 					(at -12.7 3.81 0)
 					(length 2.54)
 					(name "MOSI"
@@ -419,7 +577,7 @@
 						)
 					)
 				)
-				(pin unspecified line
+				(pin input line
 					(at -12.7 1.27 0)
 					(length 2.54)
 					(name "SCK"
@@ -437,7 +595,7 @@
 						)
 					)
 				)
-				(pin unspecified line
+				(pin input line
 					(at -12.7 -1.27 0)
 					(length 2.54)
 					(name "NSS"
@@ -455,7 +613,7 @@
 						)
 					)
 				)
-				(pin unspecified line
+				(pin bidirectional line
 					(at -12.7 -3.81 0)
 					(length 2.54)
 					(name "NRESET"
@@ -473,7 +631,7 @@
 						)
 					)
 				)
-				(pin unspecified line
+				(pin bidirectional line
 					(at -12.7 -6.35 0)
 					(length 2.54)
 					(name "DIO5"
@@ -491,7 +649,7 @@
 						)
 					)
 				)
-				(pin unspecified line
+				(pin power_in line
 					(at -12.7 -8.89 0)
 					(length 2.54)
 					(name "GND"
@@ -509,7 +667,7 @@
 						)
 					)
 				)
-				(pin unspecified line
+				(pin bidirectional line
 					(at 12.7 8.89 180)
 					(length 2.54)
 					(name "DIO2"
@@ -527,7 +685,7 @@
 						)
 					)
 				)
-				(pin unspecified line
+				(pin bidirectional line
 					(at 12.7 6.35 180)
 					(length 2.54)
 					(name "DIO1"
@@ -545,7 +703,7 @@
 						)
 					)
 				)
-				(pin unspecified line
+				(pin bidirectional line
 					(at 12.7 3.81 180)
 					(length 2.54)
 					(name "DIO0"
@@ -563,7 +721,7 @@
 						)
 					)
 				)
-				(pin unspecified line
+				(pin power_in line
 					(at 12.7 1.27 180)
 					(length 2.54)
 					(name "VCC"
@@ -581,7 +739,7 @@
 						)
 					)
 				)
-				(pin unspecified line
+				(pin bidirectional line
 					(at 12.7 -1.27 180)
 					(length 2.54)
 					(name "DIO4"
@@ -599,7 +757,7 @@
 						)
 					)
 				)
-				(pin unspecified line
+				(pin bidirectional line
 					(at 12.7 -3.81 180)
 					(length 2.54)
 					(name "DIO3"
@@ -617,7 +775,7 @@
 						)
 					)
 				)
-				(pin unspecified line
+				(pin power_in line
 					(at 12.7 -6.35 180)
 					(length 2.54)
 					(name "GND"
@@ -635,7 +793,7 @@
 						)
 					)
 				)
-				(pin unspecified line
+				(pin passive line
 					(at 12.7 -8.89 180)
 					(length 2.54)
 					(name "ANT"
@@ -646,6 +804,398 @@
 						)
 					)
 					(number "9"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+		(symbol "Hardware_LoRa:PESD5V0R1BSFYL"
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 1.016)
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "D"
+				(at 0 2.54 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "PESD5V0R1BSFYL"
+				(at 0 -2.54 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" "Hardware_LoRa:SOD-962_L0.6-W0.3-BI"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "https://assets.nexperia.com/documents/data-sheet/PESD5V0R1BSF.pdf"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Protecao ESD bidirecional RF, VRWM 5 V, 0,1 pF tip., 0,15 pF max., DSN0603-2/SOD962"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "MPN" "PESD5V0R1BSFYL"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Manufacturer" "Nexperia"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "LCSC" "C461221"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "LCSC Part" "C461221"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "diode TVS thyrector"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "TO-???* *_Diode_* *SingleDiode* D_*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "PESD5V0R1BSFYL_0_1"
+				(polyline
+					(pts
+						(xy -2.54 1.27) (xy -2.54 -1.27) (xy 2.54 1.27) (xy 2.54 -1.27) (xy -2.54 1.27)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0.508 1.27) (xy 0 1.27) (xy 0 -1.27) (xy -0.508 -1.27)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 1.27 0) (xy -1.27 0)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "PESD5V0R1BSFYL_1_1"
+				(pin passive line
+					(at -3.81 0 0)
+					(length 2.54)
+					(name "A1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 3.81 0 180)
+					(length 2.54)
+					(name "A2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+		(symbol "Hardware_LoRa:U.FL-R-SMT-1_10"
+			(pin_names
+				(offset 1.016)
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "J"
+				(at 0.254 3.048 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "U.FL-R-SMT-1(10)"
+				(at 2.921 0 90)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" "Hardware_LoRa:U.FL_Hirose_U.FL-R-SMT-1_Vertical"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "https://www.lcsc.com/datasheet/lcsc_datasheet_2304140030_HRS-Hirose-U-FL-R-SMT-1-10_C88373.pdf"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Conector coaxial U.FL de placa, 50 ohm, Hirose U.FL-R-SMT-1(10), SMD"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Manufacturer" "HRS(Hirose)"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "MPN" "U.FL-R-SMT-1(10)"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "LCSC" "C88373"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "LCSC Part" "C88373"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "BNC SMA SMB SMC LEMO coaxial connector CINCH RCA MCX MMCX U.FL UMRF"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "*BNC* *SMA* *SMB* *SMC* *Cinch* *LEMO* *UMRF* *MCX* *U.FL*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "U.FL-R-SMT-1_10_0_1"
+				(polyline
+					(pts
+						(xy -2.54 0) (xy -0.508 0)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(arc
+					(start 1.778 0)
+					(mid 0.222 -1.8079)
+					(end -1.778 -0.508)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(arc
+					(start -1.778 0.508)
+					(mid 0.2221 1.8084)
+					(end 1.778 0)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(circle
+					(center 0 0)
+					(radius 0.508)
+					(stroke
+						(width 0.2032)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 -2.54) (xy 0 -1.778)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "U.FL-R-SMT-1_10_1_1"
+				(pin passive line
+					(at -5.08 0 0)
+					(length 2.54)
+					(name "In"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 0 -5.08 90)
+					(length 2.54)
+					(name "Ext"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -882,6 +1432,195 @@
 			)
 			(embedded_fonts no)
 		)
+		(symbol "power:PWR_FLAG"
+			(power)
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 0)
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "#FLG"
+				(at 0 1.905 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Value" "PWR_FLAG"
+				(at 0 3.81 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "~"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Special symbol for telling ERC where power comes from"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "flag power"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "PWR_FLAG_0_0"
+				(pin power_out line
+					(at 0 0 90)
+					(length 0)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(symbol "PWR_FLAG_0_1"
+				(polyline
+					(pts
+						(xy 0 0) (xy 0 1.27) (xy -1.016 1.905) (xy 0 2.54) (xy 1.016 1.905) (xy 0 1.27)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+	)
+	(text "NSS: pull-up mantem radio deselecionado na partida. NRESET ativo em LOW; liberar apos reset."
+		(exclude_from_sim no)
+		(at 76.2 153.67 0)
+		(effects
+			(font
+				(size 1 1)
+			)
+			(justify left)
+		)
+		(uuid "0fc44261-f88f-4865-90ba-0f184f59ece8")
+	)
+	(text "DIO0 -> PA11; DIO1 -> PA12; DIO2 -> PB0 (EXTI0). DIO3/4/5 reservados, sem conexao."
+		(exclude_from_sim no)
+		(at 76.2 158.75 0)
+		(effects
+			(font
+				(size 1 1)
+			)
+			(justify left)
+		)
+		(uuid "18623632-24b3-4769-859b-2a0ea50b516d")
+	)
+	(text "LoRa 915 MHz | SPI 3,3 V | antena externa U.FL"
+		(exclude_from_sim no)
+		(at 76.2 36.83 0)
+		(effects
+			(font
+				(size 1 1)
+			)
+			(justify left)
+		)
+		(uuid "27611540-e398-4ed7-8cbe-ef11f4d891a3")
+	)
+	(text "D70: protecao ESD de baixa capacitancia; nao protege contra descarga atmosferica direta."
+		(exclude_from_sim no)
+		(at 76.2 179.07 0)
+		(effects
+			(font
+				(size 1 1)
+			)
+			(justify left)
+		)
+		(uuid "538b40d8-91d0-4266-b3ce-9463280d9885")
+	)
+	(text "Antena/pigtail 915 MHz, 50 ohm, U.FL compativel (nao MHF4). Nao transmitir sem antena."
+		(exclude_from_sim no)
+		(at 76.2 173.99 0)
+		(effects
+			(font
+				(size 1 1)
+			)
+			(justify left)
+		)
+		(uuid "78bc2f9c-ee0b-4b45-9eb4-02939c072bc5")
+	)
+	(text "FB70 filtra a alimentacao local. C11/C12: 100 nF + 10 uF junto ao VCC do modulo."
+		(exclude_from_sim no)
+		(at 76.2 43.18 0)
+		(effects
+			(font
+				(size 1 1)
+			)
+			(justify left)
+		)
+		(uuid "95f0d168-7a0c-4999-99bd-6b522c1ca6c9")
+	)
+	(text "Firmware pendente: configurar PB0/DIO2 e revisar reset em open-drain/alta impedancia."
+		(exclude_from_sim no)
+		(at 76.2 163.83 0)
+		(effects
+			(font
+				(size 1 1)
+			)
+			(justify left)
+		)
+		(uuid "df6227a7-0ae0-44db-a895-810553da11f5")
+	)
+	(text "PCB: RF_ANT_915 curta, impedancia 50 ohm; D70 junto ao U.FL e retorno GND curto com vias."
+		(exclude_from_sim no)
+		(at 76.2 168.91 0)
+		(effects
+			(font
+				(size 1 1)
+			)
+			(justify left)
+		)
+		(uuid "f43b3dd9-bd98-476b-b2e5-013835745dfc")
 	)
 	(junction
 		(at 215.9 92.71)
@@ -894,6 +1633,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "0261d928-6b66-497f-bc0d-077fb44dc9ae")
+	)
+	(junction
+		(at 215.9 60.96)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "093a8536-bc88-4cd6-9ee2-f3cd6ea8bb4c")
 	)
 	(junction
 		(at 129.54 100.33)
@@ -914,6 +1659,12 @@
 		(uuid "90f15b00-7a9c-4c5b-a784-43bc5f73409c")
 	)
 	(junction
+		(at 190.5 121.92)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "e2e05b0f-1190-49e5-bc3f-9b8737f28495")
+	)
+	(junction
 		(at 124.46 68.58)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -930,6 +1681,36 @@
 	(no_connect
 		(at 157.48 95.25)
 		(uuid "5128ce96-1ce6-4b23-856e-2e37a4d7a0df")
+	)
+	(wire
+		(pts
+			(xy 190.5 135.89) (xy 190.5 140.97)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "03159206-854b-4fdd-9bce-a3d4008ec3b1")
+	)
+	(wire
+		(pts
+			(xy 190.5 121.92) (xy 205.74 121.92)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "0417c404-42c2-4c70-9322-a9ec88b8261c")
+	)
+	(wire
+		(pts
+			(xy 190.5 57.15) (xy 190.5 60.96)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "10f47eca-64cc-43d3-a29c-8c6d0f7ae652")
 	)
 	(wire
 		(pts
@@ -983,6 +1764,16 @@
 	)
 	(wire
 		(pts
+			(xy 215.9 60.96) (xy 220.98 60.96)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "277347b5-ff34-4b75-aff0-403d96336c60")
+	)
+	(wire
+		(pts
 			(xy 161.29 90.17) (xy 161.29 78.74)
 		)
 		(stroke
@@ -990,6 +1781,16 @@
 			(type default)
 		)
 		(uuid "29a0d170-3d02-47d2-a0c8-4d65a2637060")
+	)
+	(wire
+		(pts
+			(xy 190.5 121.92) (xy 190.5 128.27)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2c17dc22-cacd-4edf-a368-9aaee37d47c5")
 	)
 	(wire
 		(pts
@@ -1023,6 +1824,16 @@
 	)
 	(wire
 		(pts
+			(xy 210.82 127) (xy 210.82 140.97)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "38aedf84-a82d-497f-95be-b0ce931737ac")
+	)
+	(wire
+		(pts
 			(xy 204.47 92.71) (xy 215.9 92.71)
 		)
 		(stroke
@@ -1030,6 +1841,16 @@
 			(type default)
 		)
 		(uuid "398e753a-da90-4a20-88e8-fa63d21c3867")
+	)
+	(wire
+		(pts
+			(xy 180.34 121.92) (xy 190.5 121.92)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "436909bd-ee58-45ef-866e-c2312cfe54ac")
 	)
 	(wire
 		(pts
@@ -1143,13 +1964,23 @@
 	)
 	(wire
 		(pts
-			(xy 157.48 111.76) (xy 172.72 111.76)
+			(xy 157.48 111.76) (xy 180.34 111.76)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
 		(uuid "bbfcc891-1a7f-448d-9c2a-fcf95c474543")
+	)
+	(wire
+		(pts
+			(xy 180.34 111.76) (xy 180.34 121.92)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c67bf408-34d3-4027-a0e1-a0b48b3877c3")
 	)
 	(wire
 		(pts
@@ -1223,6 +2054,16 @@
 	)
 	(wire
 		(pts
+			(xy 207.01 60.96) (xy 215.9 60.96)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e6cd690a-5bed-4708-8f6f-84e7b79a1ae8")
+	)
+	(wire
+		(pts
 			(xy 110.49 90.17) (xy 132.08 90.17)
 		)
 		(stroke
@@ -1240,6 +2081,16 @@
 			(type default)
 		)
 		(uuid "f2f14248-5b8e-4733-a44c-15ae6d04d72c")
+	)
+	(wire
+		(pts
+			(xy 190.5 60.96) (xy 199.39 60.96)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f63ef8a0-0ed2-4f55-a8a5-cabf2182a2d2")
 	)
 	(wire
 		(pts
@@ -1271,203 +2122,55 @@
 		)
 		(uuid "f8681181-1e16-4711-a6ba-6e940225de68")
 	)
-	(global_label "PC4"
-		(shape input)
-		(at 85.09 95.25 180)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "065bfa7d-d598-483e-9bd7-726c61ad209a")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 78.3553 95.25 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-				(hide yes)
-			)
-		)
-	)
-	(global_label "PB12"
-		(shape input)
-		(at 85.09 92.71 180)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "088db185-ada5-450e-84f4-58f74cc553f9")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 77.1458 92.71 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-				(hide yes)
-			)
-		)
-	)
-	(global_label "PA12"
-		(shape input)
-		(at 187.96 85.09 0)
-		(fields_autoplaced yes)
+	(label "VCC_LORA"
+		(at 161.29 78.74 0)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
 			(justify left)
 		)
-		(uuid "344f6ff5-1ed3-478e-bc51-5c5c4e4a799d")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 195.7228 85.09 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
+		(uuid "0098bd2d-4f81-4dd8-b906-98d29baa2a62")
 	)
-	(global_label "PA11"
-		(shape input)
-		(at 187.96 87.63 0)
-		(fields_autoplaced yes)
+	(label "VCC_LORA"
+		(at 204.47 80.01 0)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
 			(justify left)
 		)
-		(uuid "57feb757-e8bf-4753-bfa6-f7b8c50c2560")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 195.7228 87.63 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
+		(uuid "0308b71f-45cd-467e-ad28-7fdbfb1a0a47")
 	)
-	(global_label "PB15"
-		(shape input)
-		(at 85.09 87.63 180)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "70d32e6f-8e0f-4025-af1e-1801b42353d5")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 77.1458 87.63 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-				(hide yes)
-			)
-		)
-	)
-	(global_label "PB13"
-		(shape input)
-		(at 85.09 90.17 180)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "89e1c194-3f74-4a02-b15b-e9dd753eda11")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 77.1458 90.17 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-				(hide yes)
-			)
-		)
-	)
-	(global_label "DIO2"
-		(shape input)
-		(at 187.96 82.55 0)
-		(fields_autoplaced yes)
+	(label "VCC_LORA"
+		(at 220.98 60.96 0)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
 			(justify left)
 		)
-		(uuid "8ec4bd3d-a3f4-4cfc-a6e1-b75bc51bab40")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 195.36 82.55 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
+		(uuid "a291a600-467b-4775-92c9-bd240f5548c0")
 	)
-	(global_label "ANT_EXT"
-		(shape input)
-		(at 172.72 111.76 0)
-		(fields_autoplaced yes)
+	(label "RF_ANT_915"
+		(at 180.34 111.76 0)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
 			(justify left)
 		)
-		(uuid "976a19f8-0e6e-4a0c-8b41-f6629ecee55c")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 183.3856 111.76 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
+		(uuid "b46f3e57-c609-46a6-a143-a48cb44d15fb")
 	)
-	(global_label "PB14"
-		(shape input)
-		(at 85.09 85.09 180)
-		(fields_autoplaced yes)
+	(label "VCC_LORA"
+		(at 124.46 63.5 0)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
-			(justify right)
+			(justify left)
 		)
-		(uuid "dbfa239d-cbc3-4ce4-96a6-b40cb696bf9e")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 77.1458 85.09 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-				(hide yes)
-			)
-		)
+		(uuid "d2a70c3f-b52c-447d-bd35-44f8c3a47bb2")
 	)
 	(hierarchical_label "Lora_RST"
 		(shape input)
@@ -1481,7 +2184,7 @@
 		(uuid "17ad767e-6d8e-4b1f-989b-11ed5cdf26e1")
 	)
 	(hierarchical_label "Lora_DIO0"
-		(shape input)
+		(shape output)
 		(at 172.72 87.63 0)
 		(effects
 			(font
@@ -1492,7 +2195,7 @@
 		(uuid "4631901f-37be-4c30-85b8-82d296d08f56")
 	)
 	(hierarchical_label "Lora_DIO1"
-		(shape input)
+		(shape output)
 		(at 172.72 85.09 0)
 		(effects
 			(font
@@ -1514,7 +2217,7 @@
 		(uuid "7ce20c79-50ea-4e29-a190-6114b284ad8d")
 	)
 	(hierarchical_label "Lora_MISO"
-		(shape bidirectional)
+		(shape output)
 		(at 110.49 85.09 180)
 		(effects
 			(font
@@ -1525,7 +2228,7 @@
 		(uuid "85efa6e5-9ac0-4095-a888-b54f5e916189")
 	)
 	(hierarchical_label "Lora_DIO2"
-		(shape input)
+		(shape output)
 		(at 172.72 82.55 0)
 		(effects
 			(font
@@ -1536,7 +2239,7 @@
 		(uuid "8fad1a51-b33d-4c33-9389-82caaaf5f235")
 	)
 	(hierarchical_label "Lora_MOSI"
-		(shape bidirectional)
+		(shape input)
 		(at 110.49 87.63 180)
 		(effects
 			(font
@@ -1547,7 +2250,7 @@
 		(uuid "993d728a-57c1-435f-b5d8-2f809347ef94")
 	)
 	(hierarchical_label "Lora_NSS"
-		(shape output)
+		(shape input)
 		(at 110.49 92.71 180)
 		(effects
 			(font
@@ -1624,7 +2327,7 @@
 		)
 	)
 	(symbol
-		(lib_id "LoRa1276_C1:LORA1276-C1-915MHZ")
+		(lib_id "Hardware_LoRa:LORA1276-C1-915MHZ")
 		(at 144.78 91.44 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -1649,7 +2352,7 @@
 				)
 			)
 		)
-		(property "Footprint" "LoRa1276_C1:COMM-SMD_LORA1276-C1-915MHZ"
+		(property "Footprint" "Hardware_LoRa:COMM-SMD_LORA1276-C1-915MHZ"
 			(at 144.78 107.95 0)
 			(effects
 				(font
@@ -1658,7 +2361,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://www.lcsc.com/datasheet/C3001531.pdf"
+		(property "Datasheet" "https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/2204251600_G-NiceRF-lora1276-C1-915MHz_C3001531.pdf"
 			(at 144.78 110.49 0)
 			(effects
 				(font
@@ -1667,7 +2370,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Modulo LoRa NiceRF LoRa1276-C1, SX1276, banda 915 MHz, interface SPI 3,3 V, RF 50 ohm"
 			(at 144.78 91.44 0)
 			(effects
 				(font
@@ -1676,7 +2379,7 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer" "G-NiceRF(思为无线)"
+		(property "Manufacturer" "G-NiceRF"
 			(at 144.78 113.03 0)
 			(effects
 				(font
@@ -1696,6 +2399,51 @@
 		)
 		(property "LCSC Part" "C3001531"
 			(at 144.78 118.11 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C3001531"
+			(at 144.78 91.44 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Modelo 3D" "${KIPRJMOD}/../../libraries/Hardware_LoRa/Hardware_LoRa.3dshapes/COMM-SMD_LORA1276-C1-915MHZ.step"
+			(at 144.78 91.44 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Status_Ficha" "Conferido no catalogo em 2026-09-24; verificar estoque ao comprar"
+			(at 144.78 91.44 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "CREATOR" ""
+			(at 144.78 91.44 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "VERIFIER" ""
+			(at 144.78 91.44 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1788,7 +2536,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
 			(at 205.4352 91.44 0)
 			(effects
 				(font
@@ -1797,7 +2545,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://www.lcsc.com/datasheet/lcsc_datasheet_2211101700_YAGEO-CC0603KRX7R9BB104_C14663.pdf"
 			(at 204.47 87.63 0)
 			(effects
 				(font
@@ -1806,7 +2554,79 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Unpolarized capacitor"
+		(property "Description" "Capacitor ceramico 100 nF, 50 V, X7R, 10%, 0603"
+			(at 204.47 87.63 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" "CC0603KRX7R9BB104"
+			(at 204.47 87.63 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "YAGEO"
+			(at 204.47 87.63 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C14663"
+			(at 204.47 87.63 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC Part" "C14663"
+			(at 204.47 87.63 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Modelo 3D" "${KICAD9_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0603_1608Metric.step"
+			(at 204.47 87.63 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Status_Ficha" "Conferido no catalogo em 2026-09-24; verificar estoque ao comprar"
+			(at 204.47 87.63 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "CREATOR" ""
+			(at 204.47 87.63 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "VERIFIER" ""
 			(at 204.47 87.63 0)
 			(effects
 				(font
@@ -1825,6 +2645,130 @@
 			(project ""
 				(path "/0c305a6e-f9cd-49a1-b146-c2956e5469b6/1fd7a678-c9b9-4a6a-ab50-58dfcf2b1932"
 					(reference "C11")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:PWR_FLAG")
+		(at 215.9 60.96 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board no)
+		(dnp no)
+		(uuid "37d87e6b-3987-4cd6-a2bf-7b67aff3aa7c")
+		(property "Reference" "#FLG0701"
+			(at 215.9 52.07 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "PWR_FLAG"
+			(at 215.9 55.88 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 215.9 60.96 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 215.9 60.96 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 215.9 60.96 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "716b235d-c73f-42d3-bc25-d70ea6859378")
+		)
+		(instances
+			(project "estacao-meteorologica"
+				(path "/0c305a6e-f9cd-49a1-b146-c2956e5469b6/1fd7a678-c9b9-4a6a-ab50-58dfcf2b1932"
+					(reference "#FLG0701")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 190.5 140.97 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board no)
+		(dnp no)
+		(uuid "3a4694b9-cbd5-46d1-988e-80e5a08ce943")
+		(property "Reference" "#PWR0703"
+			(at 190.5 147.32 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 190.5 146.05 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 190.5 140.97 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 190.5 140.97 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 190.5 140.97 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "20e7fb5f-af51-43bd-9362-3213edf1500a")
+		)
+		(instances
+			(project "estacao-meteorologica"
+				(path "/0c305a6e-f9cd-49a1-b146-c2956e5469b6/1fd7a678-c9b9-4a6a-ab50-58dfcf2b1932"
+					(reference "#PWR0703")
 					(unit 1)
 				)
 			)
@@ -1857,7 +2801,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
 			(at 117.602 74.93 90)
 			(effects
 				(font
@@ -1866,7 +2810,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://www.lcsc.com/datasheet/lcsc_datasheet_2206010045_UNI-ROYAL-Uniroyal-Elec-0603WAF1002T5E_C25804.pdf"
 			(at 119.38 74.93 0)
 			(effects
 				(font
@@ -1875,7 +2819,79 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Resistor"
+		(property "Description" "Resistor SMD 10 kohm, 1%, 0,1 W, 0603"
+			(at 119.38 74.93 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" "0603WAF1002T5E"
+			(at 119.38 74.93 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "UNI-ROYAL(Uniroyal Elec)"
+			(at 119.38 74.93 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C25804"
+			(at 119.38 74.93 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC Part" "C25804"
+			(at 119.38 74.93 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Modelo 3D" "${KICAD9_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0603_1608Metric.step"
+			(at 119.38 74.93 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Status_Ficha" "Conferido no catalogo em 2026-09-24; verificar estoque ao comprar"
+			(at 119.38 74.93 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "CREATOR" ""
+			(at 119.38 74.93 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "VERIFIER" ""
 			(at 119.38 74.93 0)
 			(effects
 				(font
@@ -1900,17 +2916,32 @@
 		)
 	)
 	(symbol
-		(lib_id "power:+3V3")
-		(at 161.29 78.74 0)
+		(lib_id "Hardware_LoRa:PESD5V0R1BSFYL")
+		(at 190.5 132.08 90)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "5d680a85-9ecf-4d23-aa34-ef3b4a66a4d3")
-		(property "Reference" "#PWR042"
-			(at 161.29 82.55 0)
+		(uuid "4f8cec08-9990-463f-8ae1-102ee936a134")
+		(property "Reference" "D70"
+			(at 176.53 130.81 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "PESD5V0R1BSFYL"
+			(at 175.26 134.62 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Hardware_LoRa:SOD-962_L0.6-W0.3-BI"
+			(at 190.5 132.08 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1918,8 +2949,131 @@
 				(hide yes)
 			)
 		)
-		(property "Value" "+3V3"
-			(at 161.29 73.66 0)
+		(property "Datasheet" "https://assets.nexperia.com/documents/data-sheet/PESD5V0R1BSF.pdf"
+			(at 190.5 132.08 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Protecao ESD bidirecional RF, VRWM 5 V, 0,1 pF tip., 0,15 pF max., DSN0603-2/SOD962"
+			(at 190.5 132.08 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" "PESD5V0R1BSFYL"
+			(at 190.5 132.08 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "Nexperia"
+			(at 190.5 132.08 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C461221"
+			(at 190.5 132.08 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC Part" "C461221"
+			(at 190.5 132.08 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Modelo 3D" "${KIPRJMOD}/../../libraries/Hardware_LoRa/Hardware_LoRa.3dshapes/SOD-962_L0.6-W0.3-H0.3-P0.38.step"
+			(at 190.5 132.08 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Status_Ficha" "Conferido no catalogo em 2026-09-24; verificar estoque ao comprar"
+			(at 190.5 132.08 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "CREATOR" ""
+			(at 190.5 132.08 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "VERIFIER" ""
+			(at 190.5 132.08 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "3f7afdac-5122-4efd-b517-2e7fe799b207")
+		)
+		(pin "1"
+			(uuid "21857b60-c371-4cb2-8496-14aede5c1815")
+		)
+		(instances
+			(project "estacao-meteorologica"
+				(path "/0c305a6e-f9cd-49a1-b146-c2956e5469b6/1fd7a678-c9b9-4a6a-ab50-58dfcf2b1932"
+					(reference "D70")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 210.82 140.97 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board no)
+		(dnp no)
+		(uuid "567ab5a6-d0d9-43fc-b538-6ec03610b373")
+		(property "Reference" "#PWR0702"
+			(at 210.82 147.32 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 210.82 146.05 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1927,39 +3081,36 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 161.29 78.74 0)
+			(at 210.82 140.97 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Datasheet" ""
-			(at 161.29 78.74 0)
+			(at 210.82 140.97 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
-		(property "Description" "Power symbol creates a global label with name \"+3V3\""
-			(at 161.29 78.74 0)
+		(property "Description" ""
+			(at 210.82 140.97 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(pin "1"
-			(uuid "1be11c81-cc10-4c56-9ae2-0ae9488e383e")
+			(uuid "7a144786-332b-47ef-9893-e31512568e20")
 		)
 		(instances
-			(project ""
+			(project "estacao-meteorologica"
 				(path "/0c305a6e-f9cd-49a1-b146-c2956e5469b6/1fd7a678-c9b9-4a6a-ab50-58dfcf2b1932"
-					(reference "#PWR042")
+					(reference "#PWR0702")
 					(unit 1)
 				)
 			)
@@ -2059,7 +3210,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_1206_3216Metric"
 			(at 216.8652 91.44 0)
 			(effects
 				(font
@@ -2068,7 +3219,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://www.lcsc.com/datasheet/lcsc_datasheet_2304140030_Samsung-Electro-Mechanics-CL31A106KBHNNNE_C13585.pdf"
 			(at 215.9 87.63 0)
 			(effects
 				(font
@@ -2077,7 +3228,79 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Unpolarized capacitor"
+		(property "Description" "10uF 50V X5R ±10% 1206 Multilayer Ceramic Capacitors MLCC - SMD/SMT RoHS"
+			(at 215.9 87.63 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" "CL31A106KBHNNNE"
+			(at 215.9 87.63 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "Samsung Electro-Mechanics"
+			(at 215.9 87.63 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C13585"
+			(at 215.9 87.63 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC Part" "C13585"
+			(at 215.9 87.63 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Modelo 3D" "${KICAD9_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_1206_3216Metric.step"
+			(at 215.9 87.63 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Status_Ficha" "Conferido no catalogo em 2026-09-24; verificar estoque ao comprar"
+			(at 215.9 87.63 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "CREATOR" ""
+			(at 215.9 87.63 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "VERIFIER" ""
 			(at 215.9 87.63 0)
 			(effects
 				(font
@@ -2096,72 +3319,6 @@
 			(project "esquematico_V4"
 				(path "/0c305a6e-f9cd-49a1-b146-c2956e5469b6/1fd7a678-c9b9-4a6a-ab50-58dfcf2b1932"
 					(reference "C12")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:+3V3")
-		(at 204.47 80.01 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "98abab3b-15d2-407b-909c-fced5914538c")
-		(property "Reference" "#PWR011"
-			(at 204.47 83.82 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "+3V3"
-			(at 204.47 74.93 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 204.47 80.01 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 204.47 80.01 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"+3V3\""
-			(at 204.47 80.01 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "2665e03c-595d-4b91-89b2-2435279b464f")
-		)
-		(instances
-			(project "esquematico_V4"
-				(path "/0c305a6e-f9cd-49a1-b146-c2956e5469b6/1fd7a678-c9b9-4a6a-ab50-58dfcf2b1932"
-					(reference "#PWR011")
 					(unit 1)
 				)
 			)
@@ -2195,7 +3352,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
 			(at 122.682 74.93 90)
 			(effects
 				(font
@@ -2204,7 +3361,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://www.lcsc.com/datasheet/lcsc_datasheet_2206010045_UNI-ROYAL-Uniroyal-Elec-0603WAF1002T5E_C25804.pdf"
 			(at 124.46 74.93 0)
 			(effects
 				(font
@@ -2213,7 +3370,79 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Resistor"
+		(property "Description" "Resistor SMD 10 kohm, 1%, 0,1 W, 0603"
+			(at 124.46 74.93 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" "0603WAF1002T5E"
+			(at 124.46 74.93 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "UNI-ROYAL(Uniroyal Elec)"
+			(at 124.46 74.93 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C25804"
+			(at 124.46 74.93 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC Part" "C25804"
+			(at 124.46 74.93 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Modelo 3D" "${KICAD9_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0603_1608Metric.step"
+			(at 124.46 74.93 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Status_Ficha" "Conferido no catalogo em 2026-09-24; verificar estoque ao comprar"
+			(at 124.46 74.93 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "CREATOR" ""
+			(at 124.46 74.93 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "VERIFIER" ""
 			(at 124.46 74.93 0)
 			(effects
 				(font
@@ -2238,17 +3467,155 @@
 		)
 	)
 	(symbol
-		(lib_id "power:+3V3")
-		(at 124.46 63.5 0)
+		(lib_id "Hardware_LoRa:U.FL-R-SMT-1_10")
+		(at 210.82 121.92 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "c2eaa1e3-7a1b-404f-aff2-d08d6689485d")
-		(property "Reference" "#PWR06"
-			(at 124.46 67.31 0)
+		(uuid "b02d7892-0e56-40bf-bd45-7e96f8a0c32a")
+		(property "Reference" "J70"
+			(at 210.82 115.57 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "U.FL / 50 ohm"
+			(at 210.82 118.11 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Hardware_LoRa:U.FL_Hirose_U.FL-R-SMT-1_Vertical"
+			(at 210.82 121.92 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.lcsc.com/datasheet/lcsc_datasheet_2304140030_HRS-Hirose-U-FL-R-SMT-1-10_C88373.pdf"
+			(at 210.82 121.92 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Conector coaxial U.FL de placa, 50 ohm, Hirose U.FL-R-SMT-1(10), SMD"
+			(at 210.82 121.92 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" "U.FL-R-SMT-1(10)"
+			(at 210.82 121.92 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "HRS(Hirose)"
+			(at 210.82 121.92 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C88373"
+			(at 210.82 121.92 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC Part" "C88373"
+			(at 210.82 121.92 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Modelo 3D" "${KIPRJMOD}/../../libraries/Hardware_LoRa/Hardware_LoRa.3dshapes/U.FL_Hirose_U.FL-R-SMT-1_Vertical.step"
+			(at 210.82 121.92 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Status_Ficha" "Conferido no catalogo em 2026-09-24; verificar estoque ao comprar"
+			(at 210.82 121.92 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "CREATOR" ""
+			(at 210.82 121.92 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "VERIFIER" ""
+			(at 210.82 121.92 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "aca1133d-2958-48bb-bc2c-5a66736f5dfd")
+		)
+		(pin "1"
+			(uuid "98167c1f-0430-4e97-9ef5-11d0bee1b3ae")
+		)
+		(instances
+			(project "estacao-meteorologica"
+				(path "/0c305a6e-f9cd-49a1-b146-c2956e5469b6/1fd7a678-c9b9-4a6a-ab50-58dfcf2b1932"
+					(reference "J70")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:+3V3")
+		(at 190.5 57.15 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board no)
+		(dnp no)
+		(uuid "d6361a91-db1e-45bd-b99d-5375c418297a")
+		(property "Reference" "#PWR0701"
+			(at 190.5 50.8 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2257,7 +3624,7 @@
 			)
 		)
 		(property "Value" "+3V3"
-			(at 124.46 58.42 0)
+			(at 190.5 53.34 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2265,39 +3632,36 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 124.46 63.5 0)
+			(at 190.5 57.15 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Datasheet" ""
-			(at 124.46 63.5 0)
+			(at 190.5 57.15 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
-		(property "Description" "Power symbol creates a global label with name \"+3V3\""
-			(at 124.46 63.5 0)
+		(property "Description" ""
+			(at 190.5 57.15 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(pin "1"
-			(uuid "95d13e2c-98a4-4830-a5f8-cc475f098819")
+			(uuid "66feb9a3-5587-425f-90d4-0ea3d94dc353")
 		)
 		(instances
-			(project "esquematico_V4"
+			(project "estacao-meteorologica"
 				(path "/0c305a6e-f9cd-49a1-b146-c2956e5469b6/1fd7a678-c9b9-4a6a-ab50-58dfcf2b1932"
-					(reference "#PWR06")
+					(reference "#PWR0701")
 					(unit 1)
 				)
 			)
@@ -2364,6 +3728,145 @@
 			(project "esquematico_V4"
 				(path "/0c305a6e-f9cd-49a1-b146-c2956e5469b6/1fd7a678-c9b9-4a6a-ab50-58dfcf2b1932"
 					(reference "#PWR010")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:FerriteBead")
+		(at 203.2 60.96 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "f07de96a-d38c-407a-a080-bb7f214effd1")
+		(property "Reference" "FB70"
+			(at 203.2 54.61 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "120R @100MHz / 2A"
+			(at 203.2 57.15 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Inductor_SMD:L_0603_1608Metric"
+			(at 203.2 60.96 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.lcsc.com/datasheet/lcsc_datasheet_2304140030_Murata-Electronics-BLM18PG121SN1D_C14709.pdf"
+			(at 203.2 60.96 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Ferrite bead 120 ohm a 100 MHz, 2 A, DCR max. 50 mohm, 0603"
+			(at 203.2 60.96 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" "BLM18PG121SN1D"
+			(at 203.2 60.96 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "Murata Electronics"
+			(at 203.2 60.96 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C14709"
+			(at 203.2 60.96 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC Part" "C14709"
+			(at 203.2 60.96 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Modelo 3D" "${KICAD9_3DMODEL_DIR}/Inductor_SMD.3dshapes/L_0603_1608Metric.step"
+			(at 203.2 60.96 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Status_Ficha" "Conferido no catalogo em 2026-09-24; verificar estoque ao comprar"
+			(at 203.2 60.96 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "CREATOR" ""
+			(at 203.2 60.96 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "VERIFIER" ""
+			(at 203.2 60.96 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "ee065a5d-e9d9-4b92-8558-36b6f2a2ad50")
+		)
+		(pin "2"
+			(uuid "0769f01a-130d-4b63-8e1f-beea46eba7ad")
+		)
+		(instances
+			(project "estacao-meteorologica"
+				(path "/0c305a6e-f9cd-49a1-b146-c2956e5469b6/1fd7a678-c9b9-4a6a-ab50-58dfcf2b1932"
+					(reference "FB70")
 					(unit 1)
 				)
 			)
