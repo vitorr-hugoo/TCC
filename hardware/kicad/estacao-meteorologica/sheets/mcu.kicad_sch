@@ -9973,7 +9973,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "CR2032 holder, vertical"
+		(property "Value" "CR1225 holder, horizontal"
 			(at 209.55 38.7984 0)
 			(effects
 				(font
@@ -9982,7 +9982,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Hardware_MCU:BT_Holder_MPD_BS-5_Vertical"
+		(property "Footprint" "Hardware_Battery:BT_Holder_MYOUNG_BS-12-B4AK025-R"
 			(at 205.74 37.846 90)
 			(effects
 				(font
@@ -9991,7 +9991,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://www.batteryholders.com/uploads/parts/BS-5/datasheets/BS-5-datasheet.pdf"
+		(property "Datasheet" "https://www.lcsc.com/datasheet/C20606807.pdf"
 			(at 205.74 37.846 90)
 			(effects
 				(font
@@ -10000,7 +10000,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Suporte vertical THT para uma CR2032/BR2032; dois terminais positivos e um negativo; 17,8 mm acima da PCB."
+		(property "Description" "Suporte horizontal SMT completo para CR1225; dois terminais, positivo e negativo; 24,1 x 12,7 x 4,7 mm."
 			(at 205.74 39.37 0)
 			(effects
 				(font
@@ -10009,7 +10009,7 @@
 				(hide yes)
 			)
 		)
-		(property "Verification" "Conferido com desenho mecânico e STEP oficial do MPD BS-5. Item LCSC C6869743 de montagem manual; confirmar estoque antes da compra."
+		(property "Verification" "Conferido com desenho mecânico MYOUNG WD-CP-0239. Item LCSC C20606807; confirmar estoque antes da compra."
 			(at 205.74 39.37 0)
 			(effects
 				(font
@@ -10018,7 +10018,7 @@
 				(hide yes)
 			)
 		)
-		(property "MPN" "BS-5"
+		(property "MPN" "BS-12-B4AK025-R"
 			(at 205.74 39.37 0)
 			(effects
 				(font
@@ -10027,7 +10027,7 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer" "MPD (Memory Protection Devices)"
+		(property "Manufacturer" "MYOUNG"
 			(at 205.74 39.37 0)
 			(effects
 				(font
@@ -10036,7 +10036,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" "C6869743"
+		(property "LCSC" "C20606807"
 			(at 205.74 39.37 0)
 			(effects
 				(font
@@ -10054,7 +10054,7 @@
 				(hide yes)
 			)
 		)
-		(property "Specification" "CR2032/BR2032, 3 V; THT; 3 furos Ø0,9 mm; dois pads + e um pad −."
+		(property "Specification" "CR1225, 3 V; SMT; dois pads 3,15 x 4,00 mm em passo de 15,8 mm; perfil do suporte 4,7 mm."
 			(at 205.74 39.37 0)
 			(effects
 				(font
@@ -10063,7 +10063,7 @@
 				(hide yes)
 			)
 		)
-		(property "Assembly" "Manual — suporte PTH vertical."
+		(property "Assembly" "SMT — montar o suporte vazio em reflow; inserir a CR1225 apenas após a montagem."
 			(at 205.74 39.37 0)
 			(effects
 				(font

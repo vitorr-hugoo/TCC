@@ -1,0 +1,43 @@
+#VRML V2.0 utf8
+# Approximate local 3D model from MYOUNG drawing WD-CP-0239.
+# Origin: centre of the CR1225 cell; dimensions are in millimetres.
+
+Transform {
+  children [
+    # LCP holder rails
+    Transform { translation -9.6 0 1.15 children [
+      Shape { appearance Appearance { material Material { diffuseColor 0.92 0.92 0.92 } }
+        geometry Box { size 4.9 12.7 2.3 } }
+    ] }
+    Transform { translation 9.6 0 1.15 children [
+      Shape { appearance Appearance { material Material { diffuseColor 0.92 0.92 0.92 } }
+        geometry Box { size 4.9 12.7 2.3 } }
+    ] }
+    Transform { translation 0 -5.55 1.0 children [
+      Shape { appearance Appearance { material Material { diffuseColor 0.92 0.92 0.92 } }
+        geometry Box { size 14.0 1.6 2.0 } }
+    ] }
+    Transform { translation 0 5.55 1.0 children [
+      Shape { appearance Appearance { material Material { diffuseColor 0.92 0.92 0.92 } }
+        geometry Box { size 14.0 1.6 2.0 } }
+    ] }
+    # Tin-plated terminal tabs
+    Transform { translation -7.9 0 1.55 children [
+      Shape { appearance Appearance { material Material { diffuseColor 0.68 0.68 0.70 } }
+        geometry Box { size 3.15 4.0 0.30 } }
+    ] }
+    Transform { translation 7.9 0 1.55 children [
+      Shape { appearance Appearance { material Material { diffuseColor 0.68 0.68 0.70 } }
+        geometry Box { size 3.15 4.0 0.30 } }
+    ] }
+    # CR1225 cell, 12.5 mm diameter by 2.5 mm nominal
+    Transform {
+      translation 0 0 3.15
+      rotation 1 0 0 1.570796
+      children [
+        Shape { appearance Appearance { material Material { diffuseColor 0.72 0.74 0.76 } }
+          geometry Cylinder { radius 6.25 height 2.5 } }
+      ]
+    }
+  ]
+}

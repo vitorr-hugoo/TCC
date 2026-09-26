@@ -1054,210 +1054,6 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "Sensores_Meteo:PCB-6P6C-90"
-			(pin_names
-				(offset 1.016)
-			)
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(property "Reference" "RJ"
-				(at 0 10.16 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Value" "PCB-6P6C-90"
-				(at 0 7.62 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Footprint" "Sensores_Meteo:RJ11-TH_PCB-6P6C-90"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Datasheet" "https://lcsc.com/product-detail/Ethernet-Connectors-Modular-Connectors_Shenzhen-Cankemeng-PCB-6P6C-90degree-Boundless-gray-Full-gold_C189750.html"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Description" ""
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "MPN" "R-RJ11R06P-A800"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "LCSC Part" "C189750"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(symbol "PCB-6P6C-90_0_1"
-				(rectangle
-					(start -5.08 7.62)
-					(end 5.08 -7.62)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type background)
-					)
-				)
-				(polyline
-					(pts
-						(xy -5.08 5.08) (xy -2.54 5.08) (xy -2.54 2.54) (xy 0 2.54) (xy 0 0) (xy 2.54 0) (xy 2.54 -2.54)
-						(xy 5.08 -2.54)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(pin passive line
-					(at 10.16 6.35 180)
-					(length 5.08)
-					(name "6"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "6"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 10.16 3.81 180)
-					(length 5.08)
-					(name "5"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "5"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 10.16 1.27 180)
-					(length 5.08)
-					(name "4"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "4"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 10.16 -1.27 180)
-					(length 5.08)
-					(name "3"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "3"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 10.16 -3.81 180)
-					(length 5.08)
-					(name "2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 10.16 -6.35 180)
-					(length 5.08)
-					(name "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-			(embedded_fonts no)
-		)
 		(symbol "power:+3V3"
 			(power)
 			(pin_numbers
@@ -1593,22 +1389,6 @@
 		(color 0 0 0 0)
 		(uuid "bd15bc26-cd96-5994-bdce-5aba9a7a5e13")
 	)
-	(no_connect
-		(at 45.72 85.09)
-		(uuid "11023a8b-83a6-5ba2-8002-eb0b5d968d70")
-	)
-	(no_connect
-		(at 45.72 87.63)
-		(uuid "40138b62-fd86-5521-a745-d31746bf39bc")
-	)
-	(no_connect
-		(at 45.72 77.47)
-		(uuid "49b60855-03e6-507a-819b-866b2a083d83")
-	)
-	(no_connect
-		(at 45.72 74.93)
-		(uuid "fa96dce2-f95b-5d09-8d18-d8886bcf8212")
-	)
 	(wire
 		(pts
 			(xy 187.96 69.85) (xy 187.96 60.96)
@@ -1731,16 +1511,6 @@
 	)
 	(wire
 		(pts
-			(xy 45.72 82.55) (xy 48.26 82.55)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "6f3e222d-0803-402b-b246-a0789c02e903")
-	)
-	(wire
-		(pts
 			(xy 52.07 77.47) (xy 52.07 80.01)
 		)
 		(stroke
@@ -1748,16 +1518,6 @@
 			(type default)
 		)
 		(uuid "7be82639-b80d-4ca0-b375-7706336d8fe6")
-	)
-	(wire
-		(pts
-			(xy 48.26 101.6) (xy 48.26 107.95)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "81c7624d-c6db-47f7-a901-caf26dea587c")
 	)
 	(wire
 		(pts
@@ -1781,16 +1541,6 @@
 	)
 	(wire
 		(pts
-			(xy 48.26 82.55) (xy 48.26 93.98)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "8e31cd63-50e0-5f9b-b869-e1c364fe8473")
-	)
-	(wire
-		(pts
 			(xy 66.04 80.01) (xy 66.04 95.25)
 		)
 		(stroke
@@ -1798,16 +1548,6 @@
 			(type default)
 		)
 		(uuid "9055f1a5-da3a-5fbc-91a1-0e6e6346f730")
-	)
-	(wire
-		(pts
-			(xy 46.99 107.95) (xy 48.26 107.95)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "94bb3403-5a0b-4648-9a43-352acaddd0a0")
 	)
 	(wire
 		(pts
@@ -1928,6 +1668,28 @@
 			(justify left)
 		)
 		(uuid "b012dae5-878d-5715-84ef-33ea287bbcd1")
+	)
+	(global_label "SENS_WIND_SPEED_RAW"
+		(shape passive)
+		(at 45.72 80.01 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "0a34f1f7-39ed-4211-a0ba-9220aeec89d3")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 21.5306 80.01 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
 	)
 	(hierarchical_label "WIND_SPEED_PULSE"
 		(shape output)
@@ -3812,215 +3574,6 @@
 	)
 	(symbol
 		(lib_id "power:+3V3")
-		(at 46.99 107.95 90)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "bc02f31a-b3bd-4cbc-80ce-deb8a77c5899")
-		(property "Reference" "#PWR05"
-			(at 50.8 107.95 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "+3V3"
-			(at 43.18 107.9499 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" ""
-			(at 46.99 107.95 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 46.99 107.95 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"+3V3\""
-			(at 46.99 107.95 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "08cd8adb-7d55-463d-b555-183650f929b3")
-		)
-		(instances
-			(project ""
-				(path "/0c305a6e-f9cd-49a1-b146-c2956e5469b6/058dce74-971b-49d7-82f0-384e20be985c/9f29de2e-b04a-471a-b3f5-0032147ee0d6"
-					(reference "#PWR05")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Sensores_Meteo:PCB-6P6C-90")
-		(at 35.56 81.28 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "be461c66-7d40-49cc-8c85-d27e3dc38f0e")
-		(property "Reference" "J401"
-			(at 35.814 67.31 0)
-			(effects
-				(font
-					(size 1 1)
-				)
-			)
-		)
-		(property "Value" "RJ11 6P6C, 90°"
-			(at 35.306 72.136 0)
-			(effects
-				(font
-					(size 1 1)
-				)
-			)
-		)
-		(property "Footprint" "Sensores_Meteo:RJ11-TH_PCB-6P6C-90"
-			(at 35.56 81.28 0)
-			(effects
-				(font
-					(size 1 1)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://www.lcsc.com/datasheet/lcsc_datasheet_1811141141_Ckmtw-Shenzhen-Cankemeng-R-RJ11R06P-A800_C189750.pdf"
-			(at 35.56 81.28 0)
-			(effects
-				(font
-					(size 1 1)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "0℃~+70℃ 1 Gold Harpoon Contact (Plastic) Non-LED Phosphor bronze RJ11 Jack Right Angle Unshielded 插件 Ethernet Connectors / Modular Connectors (RJ45 RJ11) RoHS"
-			(at 35.56 81.28 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer" "Ckmtw(Shenzhen Cankemeng)"
-			(at 35.56 81.28 0)
-			(effects
-				(font
-					(size 1 1)
-				)
-				(hide yes)
-			)
-		)
-		(property "MPN" "R-RJ11R06P-A800"
-			(at 35.56 81.28 0)
-			(effects
-				(font
-					(size 1 1)
-				)
-				(hide yes)
-			)
-		)
-		(property "LCSC" "C189750"
-			(at 35.56 81.28 0)
-			(effects
-				(font
-					(size 1 1)
-				)
-				(hide yes)
-			)
-		)
-		(property "Specification" "6P6C; p3=+3V3 via R42; p4=sinal; THT"
-			(at 35.56 81.28 0)
-			(effects
-				(font
-					(size 1 1)
-				)
-				(hide yes)
-			)
-		)
-		(property "Function" "Conector do anemometro; reed externo entre p3 e p4"
-			(at 35.56 81.28 0)
-			(effects
-				(font
-					(size 1 1)
-				)
-				(hide yes)
-			)
-		)
-		(property "Verification" "Conferido no catalogo em 2026-09-24; verificar estoque ao comprar"
-			(at 35.56 81.28 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Assembly" "SMT"
-			(at 0 0 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "6"
-			(uuid "8adc9bdd-bd79-4114-9464-6bb3a309aabf")
-		)
-		(pin "5"
-			(uuid "4b9f7bf1-1d4d-45a3-8ce4-0b3398ed0a0f")
-		)
-		(pin "3"
-			(uuid "2754ec2e-69b4-4894-ac44-d73970a6059c")
-		)
-		(pin "1"
-			(uuid "ae5725d2-dd89-4fe4-8f6c-4b7844223e36")
-		)
-		(pin "4"
-			(uuid "ceb77e6b-5af6-4c77-82c6-8d9926bdd211")
-		)
-		(pin "2"
-			(uuid "e3d44f0a-6b55-46a3-ac4a-a033b02ce8f1")
-		)
-		(instances
-			(project "esquematico_V4"
-				(path "/0c305a6e-f9cd-49a1-b146-c2956e5469b6/058dce74-971b-49d7-82f0-384e20be985c/9f29de2e-b04a-471a-b3f5-0032147ee0d6"
-					(reference "J401")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:+3V3")
 		(at 220.98 50.8 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -4080,136 +3633,6 @@
 			(project "estacao-meteorologica"
 				(path "/0c305a6e-f9cd-49a1-b146-c2956e5469b6/058dce74-971b-49d7-82f0-384e20be985c/9f29de2e-b04a-471a-b3f5-0032147ee0d6"
 					(reference "#PWR042")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:R")
-		(at 48.26 97.79 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "efc7a2b6-3339-4d9a-acb2-e5a0c82d16f1")
-		(property "Reference" "R403"
-			(at 52.07 95.25 0)
-			(effects
-				(font
-					(size 1 1)
-				)
-			)
-		)
-		(property "Value" "1 kΩ"
-			(at 52.07 97.79 0)
-			(effects
-				(font
-					(size 1 1)
-				)
-			)
-		)
-		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
-			(at 48.26 97.79 0)
-			(effects
-				(font
-					(size 1 1)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://www.lcsc.com/datasheet/lcsc_datasheet_2206010130_UNI-ROYAL-Uniroyal-Elec-0603WAF1001T5E_C21190.pdf"
-			(at 48.26 97.79 0)
-			(effects
-				(font
-					(size 1 1)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Resistor SMD 1 kohm, 1%, 0,1 W, 0603"
-			(at 48.26 97.79 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer" "UNI-ROYAL(Uniroyal Elec)"
-			(at 48.26 97.79 0)
-			(effects
-				(font
-					(size 1 1)
-				)
-				(hide yes)
-			)
-		)
-		(property "MPN" "0603WAF1001T5E"
-			(at 48.26 97.79 0)
-			(effects
-				(font
-					(size 1 1)
-				)
-				(hide yes)
-			)
-		)
-		(property "LCSC" "C21190"
-			(at 48.26 97.79 0)
-			(effects
-				(font
-					(size 1 1)
-				)
-				(hide yes)
-			)
-		)
-		(property "Specification" "1%; 0.1W; 75V"
-			(at 48.26 97.79 0)
-			(effects
-				(font
-					(size 1 1)
-				)
-				(hide yes)
-			)
-		)
-		(property "Function" "Resistor serie da alimentacao do cabo; limita corrente pelo reed e pelo TVS"
-			(at 48.26 97.79 0)
-			(effects
-				(font
-					(size 1 1)
-				)
-				(hide yes)
-			)
-		)
-		(property "Verification" "Conferido no catalogo em 2026-09-24; verificar estoque ao comprar"
-			(at 48.26 97.79 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Assembly" "SMT"
-			(at 0 0 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "d775b3b5-7349-4d85-9700-eb25bd88b3d3")
-		)
-		(pin "2"
-			(uuid "701aff1a-1cd0-42e1-a27b-07e3a628f558")
-		)
-		(instances
-			(project "estacao-meteorologica"
-				(path "/0c305a6e-f9cd-49a1-b146-c2956e5469b6/058dce74-971b-49d7-82f0-384e20be985c/9f29de2e-b04a-471a-b3f5-0032147ee0d6"
-					(reference "R403")
 					(unit 1)
 				)
 			)
