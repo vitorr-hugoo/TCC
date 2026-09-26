@@ -2046,6 +2046,15 @@
 				(hide yes)
 			)
 		)
+		(property "Assembly" "SMT"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "8390144f-963e-4ffa-90ac-704e7f3aa474")
 		)
@@ -2058,14 +2067,6 @@
 					(reference "R402")
 					(unit 1)
 				)
-			)
-		)
-	
-		(property "Assembly" "SMT"
-			(at 0 0 0)
-			(effects
-				(font (size 1.27 1.27))
-				(hide yes)
 			)
 		)
 	)
@@ -2241,6 +2242,15 @@
 				(hide yes)
 			)
 		)
+		(property "Assembly" "SMT"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "27980c35-879b-409b-9c71-f2ee3194fca7")
 		)
@@ -2262,14 +2272,6 @@
 					(reference "U401")
 					(unit 1)
 				)
-			)
-		)
-	
-		(property "Assembly" "SMT"
-			(at 0 0 0)
-			(effects
-				(font (size 1.27 1.27))
-				(hide yes)
 			)
 		)
 	)
@@ -2370,6 +2372,15 @@
 				(hide yes)
 			)
 		)
+		(property "Assembly" "PCB — sem compra"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "36ce55c7-9a9c-43b5-b783-47d5864a4d5f")
 		)
@@ -2379,14 +2390,6 @@
 					(reference "TP401")
 					(unit 1)
 				)
-			)
-		)
-	
-		(property "Assembly" "PCB — sem compra"
-			(at 0 0 0)
-			(effects
-				(font (size 1.27 1.27))
-				(hide yes)
 			)
 		)
 	)
@@ -2562,6 +2565,15 @@
 				(hide yes)
 			)
 		)
+		(property "Assembly" "SMT"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "f0f8c931-f410-4cea-b8f0-3f5ac6bdf55e")
 		)
@@ -2577,14 +2589,6 @@
 					(reference "D402")
 					(unit 1)
 				)
-			)
-		)
-	
-		(property "Assembly" "SMT"
-			(at 0 0 0)
-			(effects
-				(font (size 1.27 1.27))
-				(hide yes)
 			)
 		)
 	)
@@ -2826,6 +2830,15 @@
 				(hide yes)
 			)
 		)
+		(property "Assembly" "SMT"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "2"
 			(uuid "9b08d3e8-c6eb-4f2e-bf09-88574407706b")
 		)
@@ -2838,14 +2851,6 @@
 					(reference "C402")
 					(unit 1)
 				)
-			)
-		)
-	
-		(property "Assembly" "SMT"
-			(at 0 0 0)
-			(effects
-				(font (size 1.27 1.27))
-				(hide yes)
 			)
 		)
 	)
@@ -3153,6 +3158,15 @@
 				(hide yes)
 			)
 		)
+		(property "Assembly" "SMT"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "6a151f00-6f9e-4e44-9138-2073ecc748e5")
 		)
@@ -3165,14 +3179,6 @@
 					(reference "R401")
 					(unit 1)
 				)
-			)
-		)
-	
-		(property "Assembly" "SMT"
-			(at 0 0 0)
-			(effects
-				(font (size 1.27 1.27))
-				(hide yes)
 			)
 		)
 	)
@@ -3405,6 +3411,15 @@
 				(hide yes)
 			)
 		)
+		(property "Assembly" "PCB — sem compra"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "357dc1cf-f6d7-495f-b016-fed94c5c94d3")
 		)
@@ -3414,14 +3429,6 @@
 					(reference "TP404")
 					(unit 1)
 				)
-			)
-		)
-	
-		(property "Assembly" "PCB — sem compra"
-			(at 0 0 0)
-			(effects
-				(font (size 1.27 1.27))
-				(hide yes)
 			)
 		)
 	)
@@ -3522,6 +3529,15 @@
 				(hide yes)
 			)
 		)
+		(property "Assembly" "PCB — sem compra"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "74830254-415a-4f88-9df9-eed1d7106ad9")
 		)
@@ -3531,14 +3547,6 @@
 					(reference "TP402")
 					(unit 1)
 				)
-			)
-		)
-	
-		(property "Assembly" "PCB — sem compra"
-			(at 0 0 0)
-			(effects
-				(font (size 1.27 1.27))
-				(hide yes)
 			)
 		)
 	)
@@ -3648,6 +3656,15 @@
 				(hide yes)
 			)
 		)
+		(property "Assembly" "SMT"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "2"
 			(uuid "a185f2ea-da88-49ef-9729-608d063e5752")
 		)
@@ -3660,14 +3677,6 @@
 					(reference "D401")
 					(unit 1)
 				)
-			)
-		)
-	
-		(property "Assembly" "SMT"
-			(at 0 0 0)
-			(effects
-				(font (size 1.27 1.27))
-				(hide yes)
 			)
 		)
 	)
@@ -3777,6 +3786,15 @@
 				(hide yes)
 			)
 		)
+		(property "Assembly" "SMT"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "db979943-4a87-47ae-82b9-06b6ca323f4b")
 		)
@@ -3789,14 +3807,6 @@
 					(reference "C401")
 					(unit 1)
 				)
-			)
-		)
-	
-		(property "Assembly" "SMT"
-			(at 0 0 0)
-			(effects
-				(font (size 1.27 1.27))
-				(hide yes)
 			)
 		)
 	)
@@ -3973,6 +3983,15 @@
 				(hide yes)
 			)
 		)
+		(property "Assembly" "SMT"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "6"
 			(uuid "8adc9bdd-bd79-4114-9464-6bb3a309aabf")
 		)
@@ -3997,14 +4016,6 @@
 					(reference "J401")
 					(unit 1)
 				)
-			)
-		)
-	
-		(property "Assembly" "SMT"
-			(at 0 0 0)
-			(effects
-				(font (size 1.27 1.27))
-				(hide yes)
 			)
 		)
 	)
@@ -4180,6 +4191,15 @@
 				(hide yes)
 			)
 		)
+		(property "Assembly" "SMT"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "d775b3b5-7349-4d85-9700-eb25bd88b3d3")
 		)
@@ -4192,14 +4212,6 @@
 					(reference "R403")
 					(unit 1)
 				)
-			)
-		)
-	
-		(property "Assembly" "SMT"
-			(at 0 0 0)
-			(effects
-				(font (size 1.27 1.27))
-				(hide yes)
 			)
 		)
 	)
@@ -4300,6 +4312,15 @@
 				(hide yes)
 			)
 		)
+		(property "Assembly" "PCB — sem compra"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "b62a59d8-b958-47e0-8285-f3ebe1955727")
 		)
@@ -4309,14 +4330,6 @@
 					(reference "TP403")
 					(unit 1)
 				)
-			)
-		)
-	
-		(property "Assembly" "PCB — sem compra"
-			(at 0 0 0)
-			(effects
-				(font (size 1.27 1.27))
-				(hide yes)
 			)
 		)
 	)

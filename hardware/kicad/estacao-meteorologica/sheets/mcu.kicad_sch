@@ -5596,7 +5596,7 @@
 			)
 		)
 	)
-	(global_label "VDDA"
+	(global_label "AVREF_SENSOR"
 		(shape passive)
 		(at 161.29 55.88 90)
 		(fields_autoplaced yes)
@@ -5640,7 +5640,7 @@
 			)
 		)
 	)
-	(global_label "VDDA"
+	(global_label "AVREF_SENSOR"
 		(shape passive)
 		(at 93.98 21.59 0)
 		(fields_autoplaced yes)
@@ -6535,6 +6535,33 @@
 				(hide yes)
 			)
 		)
+		(property "Function" "Resistor de polarização, filtro ou configuração."
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Specification" "10 kΩ"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Assembly" "SMT"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "66e6e9de-4b35-4497-bff2-f8b52063b13f")
 		)
@@ -6547,28 +6574,6 @@
 					(reference "R103")
 					(unit 1)
 				)
-			)
-		)
-	
-		(property "Function" "Resistor de polarização, filtro ou configuração."
-			(at 0 0 0)
-			(effects
-				(font (size 1.27 1.27))
-				(hide yes)
-			)
-		)
-		(property "Specification" "10 kΩ"
-			(at 0 0 0)
-			(effects
-				(font (size 1.27 1.27))
-				(hide yes)
-			)
-		)
-		(property "Assembly" "SMT"
-			(at 0 0 0)
-			(effects
-				(font (size 1.27 1.27))
-				(hide yes)
 			)
 		)
 	)
@@ -6663,6 +6668,33 @@
 				(hide yes)
 			)
 		)
+		(property "Function" "Resistor de polarização, filtro ou configuração."
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Specification" "10 kΩ"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Assembly" "SMT"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "7a94c4ec-284f-4f81-919e-53c36e1839fc")
 		)
@@ -6675,28 +6707,6 @@
 					(reference "R102")
 					(unit 1)
 				)
-			)
-		)
-	
-		(property "Function" "Resistor de polarização, filtro ou configuração."
-			(at 0 0 0)
-			(effects
-				(font (size 1.27 1.27))
-				(hide yes)
-			)
-		)
-		(property "Specification" "10 kΩ"
-			(at 0 0 0)
-			(effects
-				(font (size 1.27 1.27))
-				(hide yes)
-			)
-		)
-		(property "Assembly" "SMT"
-			(at 0 0 0)
-			(effects
-				(font (size 1.27 1.27))
-				(hide yes)
 			)
 		)
 	)
@@ -6797,6 +6807,24 @@
 				(hide yes)
 			)
 		)
+		(property "Specification" "9pF"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Assembly" "SMT"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "8f45f343-3375-4254-b01e-4b9e8283481f")
 		)
@@ -6809,21 +6837,6 @@
 					(reference "C112")
 					(unit 1)
 				)
-			)
-		)
-	
-		(property "Specification" "9pF"
-			(at 0 0 0)
-			(effects
-				(font (size 1.27 1.27))
-				(hide yes)
-			)
-		)
-		(property "Assembly" "SMT"
-			(at 0 0 0)
-			(effects
-				(font (size 1.27 1.27))
-				(hide yes)
 			)
 		)
 	)
@@ -7134,6 +7147,15 @@
 				(hide yes)
 			)
 		)
+		(property "Assembly" "SMT"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "228593de-13a7-4032-8ab9-3029814e7498")
 		)
@@ -7146,14 +7168,6 @@
 					(reference "Y101")
 					(unit 1)
 				)
-			)
-		)
-	
-		(property "Assembly" "SMT"
-			(at 0 0 0)
-			(effects
-				(font (size 1.27 1.27))
-				(hide yes)
 			)
 		)
 	)
@@ -7255,6 +7269,24 @@
 				(hide yes)
 			)
 		)
+		(property "Function" "Conector de interface."
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Specification" "Header, 1x03, P2.54 mm"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "3"
 			(uuid "b0d149a6-c2f8-4490-b5d4-c2887724b525")
 		)
@@ -7270,21 +7302,6 @@
 					(reference "J103")
 					(unit 1)
 				)
-			)
-		)
-	
-		(property "Function" "Conector de interface."
-			(at 0 0 0)
-			(effects
-				(font (size 1.27 1.27))
-				(hide yes)
-			)
-		)
-		(property "Specification" "Header, 1x03, P2.54 mm"
-			(at 0 0 0)
-			(effects
-				(font (size 1.27 1.27))
-				(hide yes)
 			)
 		)
 	)
@@ -7377,6 +7394,33 @@
 				(hide yes)
 			)
 		)
+		(property "Function" "Filtro de ferrite na alimentação."
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Specification" "Ferrite bead"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Assembly" "SMT"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "2"
 			(uuid "cc6882ad-eb6f-433f-916c-a3ec9387694c")
 		)
@@ -7389,28 +7433,6 @@
 					(reference "FB101")
 					(unit 1)
 				)
-			)
-		)
-	
-		(property "Function" "Filtro de ferrite na alimentação."
-			(at 0 0 0)
-			(effects
-				(font (size 1.27 1.27))
-				(hide yes)
-			)
-		)
-		(property "Specification" "Ferrite bead"
-			(at 0 0 0)
-			(effects
-				(font (size 1.27 1.27))
-				(hide yes)
-			)
-		)
-		(property "Assembly" "SMT"
-			(at 0 0 0)
-			(effects
-				(font (size 1.27 1.27))
-				(hide yes)
 			)
 		)
 	)
@@ -7571,6 +7593,33 @@
 				(hide yes)
 			)
 		)
+		(property "Function" "Resistor de polarização, filtro ou configuração."
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Specification" "4.7k"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Assembly" "SMT"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "2"
 			(uuid "505f7aa1-3797-4817-aa0b-4fc9c1810121")
 		)
@@ -7583,28 +7632,6 @@
 					(reference "R104")
 					(unit 1)
 				)
-			)
-		)
-	
-		(property "Function" "Resistor de polarização, filtro ou configuração."
-			(at 0 0 0)
-			(effects
-				(font (size 1.27 1.27))
-				(hide yes)
-			)
-		)
-		(property "Specification" "4.7k"
-			(at 0 0 0)
-			(effects
-				(font (size 1.27 1.27))
-				(hide yes)
-			)
-		)
-		(property "Assembly" "SMT"
-			(at 0 0 0)
-			(effects
-				(font (size 1.27 1.27))
-				(hide yes)
 			)
 		)
 	)
@@ -7705,6 +7732,24 @@
 				(hide yes)
 			)
 		)
+		(property "Specification" "9pF"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Assembly" "SMT"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "c0156ee0-4d3c-4b84-a815-d75d837fdbe6")
 		)
@@ -7717,21 +7762,6 @@
 					(reference "C111")
 					(unit 1)
 				)
-			)
-		)
-	
-		(property "Specification" "9pF"
-			(at 0 0 0)
-			(effects
-				(font (size 1.27 1.27))
-				(hide yes)
-			)
-		)
-		(property "Assembly" "SMT"
-			(at 0 0 0)
-			(effects
-				(font (size 1.27 1.27))
-				(hide yes)
 			)
 		)
 	)
@@ -7833,6 +7863,24 @@
 				(hide yes)
 			)
 		)
+		(property "Function" "Conector de interface."
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Specification" "Header, 1x06, P2.54 mm"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "5"
 			(uuid "86581973-919c-441e-a545-15830411448f")
 		)
@@ -7857,21 +7905,6 @@
 					(reference "J102")
 					(unit 1)
 				)
-			)
-		)
-	
-		(property "Function" "Conector de interface."
-			(at 0 0 0)
-			(effects
-				(font (size 1.27 1.27))
-				(hide yes)
-			)
-		)
-		(property "Specification" "Header, 1x06, P2.54 mm"
-			(at 0 0 0)
-			(effects
-				(font (size 1.27 1.27))
-				(hide yes)
 			)
 		)
 	)
@@ -7966,6 +7999,33 @@
 				(hide yes)
 			)
 		)
+		(property "Function" "Resistor de polarização, filtro ou configuração."
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Specification" "4.7k"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Assembly" "SMT"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "971da2b1-34c6-46ff-a998-69bd8a9064b0")
 		)
@@ -7978,28 +8038,6 @@
 					(reference "R101")
 					(unit 1)
 				)
-			)
-		)
-	
-		(property "Function" "Resistor de polarização, filtro ou configuração."
-			(at 0 0 0)
-			(effects
-				(font (size 1.27 1.27))
-				(hide yes)
-			)
-		)
-		(property "Specification" "4.7k"
-			(at 0 0 0)
-			(effects
-				(font (size 1.27 1.27))
-				(hide yes)
-			)
-		)
-		(property "Assembly" "SMT"
-			(at 0 0 0)
-			(effects
-				(font (size 1.27 1.27))
-				(hide yes)
 			)
 		)
 	)
@@ -8109,6 +8147,15 @@
 				(hide yes)
 			)
 		)
+		(property "Assembly" "SMT"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "5cca7c9b-b2cd-4dff-a832-4f365a7404b2")
 		)
@@ -8127,14 +8174,6 @@
 					(reference "Y102")
 					(unit 1)
 				)
-			)
-		)
-	
-		(property "Assembly" "SMT"
-			(at 0 0 0)
-			(effects
-				(font (size 1.27 1.27))
-				(hide yes)
 			)
 		)
 	)
@@ -8294,6 +8333,33 @@
 				(hide yes)
 			)
 		)
+		(property "Function" "Capacitor de desacoplamento ou filtro local."
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Specification" "100 nF"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Assembly" "SMT"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "acfab2dd-af7b-4a94-a7b8-0aab5969428b")
 		)
@@ -8306,28 +8372,6 @@
 					(reference "C114")
 					(unit 1)
 				)
-			)
-		)
-	
-		(property "Function" "Capacitor de desacoplamento ou filtro local."
-			(at 0 0 0)
-			(effects
-				(font (size 1.27 1.27))
-				(hide yes)
-			)
-		)
-		(property "Specification" "100 nF"
-			(at 0 0 0)
-			(effects
-				(font (size 1.27 1.27))
-				(hide yes)
-			)
-		)
-		(property "Assembly" "SMT"
-			(at 0 0 0)
-			(effects
-				(font (size 1.27 1.27))
-				(hide yes)
 			)
 		)
 	)
@@ -8487,6 +8531,33 @@
 				(hide yes)
 			)
 		)
+		(property "Function" "Capacitor de desacoplamento ou filtro local."
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Specification" "100 nF"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Assembly" "SMT"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "f74ea891-8933-4c8e-a05f-5c3c4561bcf2")
 		)
@@ -8499,28 +8570,6 @@
 					(reference "C102")
 					(unit 1)
 				)
-			)
-		)
-	
-		(property "Function" "Capacitor de desacoplamento ou filtro local."
-			(at 0 0 0)
-			(effects
-				(font (size 1.27 1.27))
-				(hide yes)
-			)
-		)
-		(property "Specification" "100 nF"
-			(at 0 0 0)
-			(effects
-				(font (size 1.27 1.27))
-				(hide yes)
-			)
-		)
-		(property "Assembly" "SMT"
-			(at 0 0 0)
-			(effects
-				(font (size 1.27 1.27))
-				(hide yes)
 			)
 		)
 	)
@@ -8615,6 +8664,33 @@
 				(hide yes)
 			)
 		)
+		(property "Function" "Capacitor de desacoplamento ou filtro local."
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Specification" "4.7 µF"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Assembly" "SMT"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "b76ddda4-e3f7-49ca-9304-8e1a39404dfd")
 		)
@@ -8627,28 +8703,6 @@
 					(reference "C105")
 					(unit 1)
 				)
-			)
-		)
-	
-		(property "Function" "Capacitor de desacoplamento ou filtro local."
-			(at 0 0 0)
-			(effects
-				(font (size 1.27 1.27))
-				(hide yes)
-			)
-		)
-		(property "Specification" "4.7 µF"
-			(at 0 0 0)
-			(effects
-				(font (size 1.27 1.27))
-				(hide yes)
-			)
-		)
-		(property "Assembly" "SMT"
-			(at 0 0 0)
-			(effects
-				(font (size 1.27 1.27))
-				(hide yes)
 			)
 		)
 	)
@@ -8743,6 +8797,33 @@
 				(hide yes)
 			)
 		)
+		(property "Function" "Capacitor de desacoplamento ou filtro local."
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Specification" "100 nF"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Assembly" "SMT"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "7236582e-ada3-4c61-9cfa-88b99ad510c8")
 		)
@@ -8755,28 +8836,6 @@
 					(reference "C104")
 					(unit 1)
 				)
-			)
-		)
-	
-		(property "Function" "Capacitor de desacoplamento ou filtro local."
-			(at 0 0 0)
-			(effects
-				(font (size 1.27 1.27))
-				(hide yes)
-			)
-		)
-		(property "Specification" "100 nF"
-			(at 0 0 0)
-			(effects
-				(font (size 1.27 1.27))
-				(hide yes)
-			)
-		)
-		(property "Assembly" "SMT"
-			(at 0 0 0)
-			(effects
-				(font (size 1.27 1.27))
-				(hide yes)
 			)
 		)
 	)
@@ -8865,6 +8924,33 @@
 		)
 		(property "Verification" "Conferido no catalogo em 2026-09-24; verificar estoque ao comprar"
 			(at 153.67 109.22 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Function" "Circuito integrado ou módulo funcional."
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Specification" "STM32F446RET6"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Assembly" "SMT"
+			(at 0 0 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9070,28 +9156,6 @@
 					(reference "U101")
 					(unit 1)
 				)
-			)
-		)
-	
-		(property "Function" "Circuito integrado ou módulo funcional."
-			(at 0 0 0)
-			(effects
-				(font (size 1.27 1.27))
-				(hide yes)
-			)
-		)
-		(property "Specification" "STM32F446RET6"
-			(at 0 0 0)
-			(effects
-				(font (size 1.27 1.27))
-				(hide yes)
-			)
-		)
-		(property "Assembly" "SMT"
-			(at 0 0 0)
-			(effects
-				(font (size 1.27 1.27))
-				(hide yes)
 			)
 		)
 	)
@@ -9384,6 +9448,33 @@
 				(hide yes)
 			)
 		)
+		(property "Function" "Capacitor de desacoplamento ou filtro local."
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Specification" "1 µF"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Assembly" "SMT"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "967d0be1-9dc3-4a05-af5b-858895d86173")
 		)
@@ -9396,28 +9487,6 @@
 					(reference "C107")
 					(unit 1)
 				)
-			)
-		)
-	
-		(property "Function" "Capacitor de desacoplamento ou filtro local."
-			(at 0 0 0)
-			(effects
-				(font (size 1.27 1.27))
-				(hide yes)
-			)
-		)
-		(property "Specification" "1 µF"
-			(at 0 0 0)
-			(effects
-				(font (size 1.27 1.27))
-				(hide yes)
-			)
-		)
-		(property "Assembly" "SMT"
-			(at 0 0 0)
-			(effects
-				(font (size 1.27 1.27))
-				(hide yes)
 			)
 		)
 	)
@@ -9512,6 +9581,33 @@
 				(hide yes)
 			)
 		)
+		(property "Function" "Capacitor de desacoplamento ou filtro local."
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Specification" "10 nF"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Assembly" "SMT"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "2f754b91-725f-4a8b-9b0d-4a6e2d404f42")
 		)
@@ -9524,28 +9620,6 @@
 					(reference "C108")
 					(unit 1)
 				)
-			)
-		)
-	
-		(property "Function" "Capacitor de desacoplamento ou filtro local."
-			(at 0 0 0)
-			(effects
-				(font (size 1.27 1.27))
-				(hide yes)
-			)
-		)
-		(property "Specification" "10 nF"
-			(at 0 0 0)
-			(effects
-				(font (size 1.27 1.27))
-				(hide yes)
-			)
-		)
-		(property "Assembly" "SMT"
-			(at 0 0 0)
-			(effects
-				(font (size 1.27 1.27))
-				(hide yes)
 			)
 		)
 	)
@@ -9647,6 +9721,24 @@
 				(hide yes)
 			)
 		)
+		(property "Specification" "15pF"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Assembly" "SMT"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "a6a27fa1-5a32-4320-9bd2-594d9fb2de73")
 		)
@@ -9659,21 +9751,6 @@
 					(reference "C109")
 					(unit 1)
 				)
-			)
-		)
-	
-		(property "Specification" "15pF"
-			(at 0 0 0)
-			(effects
-				(font (size 1.27 1.27))
-				(hide yes)
-			)
-		)
-		(property "Assembly" "SMT"
-			(at 0 0 0)
-			(effects
-				(font (size 1.27 1.27))
-				(hide yes)
 			)
 		)
 	)
@@ -9835,6 +9912,33 @@
 				(hide yes)
 			)
 		)
+		(property "Function" "Capacitor de desacoplamento ou filtro local."
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Specification" "100 nF"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Assembly" "SMT"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "ba0c92af-122e-4c29-95ed-508e19ffe2f9")
 		)
@@ -9847,28 +9951,6 @@
 					(reference "C113")
 					(unit 1)
 				)
-			)
-		)
-	
-		(property "Function" "Capacitor de desacoplamento ou filtro local."
-			(at 0 0 0)
-			(effects
-				(font (size 1.27 1.27))
-				(hide yes)
-			)
-		)
-		(property "Specification" "100 nF"
-			(at 0 0 0)
-			(effects
-				(font (size 1.27 1.27))
-				(hide yes)
-			)
-		)
-		(property "Assembly" "SMT"
-			(at 0 0 0)
-			(effects
-				(font (size 1.27 1.27))
-				(hide yes)
 			)
 		)
 	)
@@ -10102,6 +10184,24 @@
 				(hide yes)
 			)
 		)
+		(property "Specification" "15pF"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Assembly" "SMT"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "f9b20587-d21e-430d-a35a-1f3757bd346c")
 		)
@@ -10114,21 +10214,6 @@
 					(reference "C110")
 					(unit 1)
 				)
-			)
-		)
-	
-		(property "Specification" "15pF"
-			(at 0 0 0)
-			(effects
-				(font (size 1.27 1.27))
-				(hide yes)
-			)
-		)
-		(property "Assembly" "SMT"
-			(at 0 0 0)
-			(effects
-				(font (size 1.27 1.27))
-				(hide yes)
 			)
 		)
 	)
@@ -10487,6 +10572,33 @@
 				(hide yes)
 			)
 		)
+		(property "Function" "Capacitor de desacoplamento ou filtro local."
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Specification" "100 nF"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Assembly" "SMT"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "8ae5baf0-984c-4d9e-8bcd-f82374e6b5c1")
 		)
@@ -10499,28 +10611,6 @@
 					(reference "C103")
 					(unit 1)
 				)
-			)
-		)
-	
-		(property "Function" "Capacitor de desacoplamento ou filtro local."
-			(at 0 0 0)
-			(effects
-				(font (size 1.27 1.27))
-				(hide yes)
-			)
-		)
-		(property "Specification" "100 nF"
-			(at 0 0 0)
-			(effects
-				(font (size 1.27 1.27))
-				(hide yes)
-			)
-		)
-		(property "Assembly" "SMT"
-			(at 0 0 0)
-			(effects
-				(font (size 1.27 1.27))
-				(hide yes)
 			)
 		)
 	)
@@ -10681,6 +10771,33 @@
 				(hide yes)
 			)
 		)
+		(property "Function" "Capacitor de desacoplamento ou filtro local."
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Specification" "4.7 µF"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Assembly" "SMT"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "15165e44-2cb4-4da4-9b38-cadf08ebebb4")
 		)
@@ -10693,28 +10810,6 @@
 					(reference "C106")
 					(unit 1)
 				)
-			)
-		)
-	
-		(property "Function" "Capacitor de desacoplamento ou filtro local."
-			(at 0 0 0)
-			(effects
-				(font (size 1.27 1.27))
-				(hide yes)
-			)
-		)
-		(property "Specification" "4.7 µF"
-			(at 0 0 0)
-			(effects
-				(font (size 1.27 1.27))
-				(hide yes)
-			)
-		)
-		(property "Assembly" "SMT"
-			(at 0 0 0)
-			(effects
-				(font (size 1.27 1.27))
-				(hide yes)
 			)
 		)
 	)
@@ -10809,6 +10904,33 @@
 				(hide yes)
 			)
 		)
+		(property "Function" "Capacitor de desacoplamento ou filtro local."
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Specification" "100 nF"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Assembly" "SMT"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "f042ce7a-bccd-4f9f-bac4-611bfbfa4536")
 		)
@@ -10821,28 +10943,6 @@
 					(reference "C101")
 					(unit 1)
 				)
-			)
-		)
-	
-		(property "Function" "Capacitor de desacoplamento ou filtro local."
-			(at 0 0 0)
-			(effects
-				(font (size 1.27 1.27))
-				(hide yes)
-			)
-		)
-		(property "Specification" "100 nF"
-			(at 0 0 0)
-			(effects
-				(font (size 1.27 1.27))
-				(hide yes)
-			)
-		)
-		(property "Assembly" "SMT"
-			(at 0 0 0)
-			(effects
-				(font (size 1.27 1.27))
-				(hide yes)
 			)
 		)
 	)
@@ -11013,6 +11113,24 @@
 				(hide yes)
 			)
 		)
+		(property "Function" "Conector de interface."
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Specification" "Header, 1x02, P2.54 mm"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "7a54dea6-19eb-4866-a302-91377d3a5f62")
 		)
@@ -11025,21 +11143,6 @@
 					(reference "J101")
 					(unit 1)
 				)
-			)
-		)
-	
-		(property "Function" "Conector de interface."
-			(at 0 0 0)
-			(effects
-				(font (size 1.27 1.27))
-				(hide yes)
-			)
-		)
-		(property "Specification" "Header, 1x02, P2.54 mm"
-			(at 0 0 0)
-			(effects
-				(font (size 1.27 1.27))
-				(hide yes)
 			)
 		)
 	)
@@ -11134,6 +11237,33 @@
 				(hide yes)
 			)
 		)
+		(property "Function" "Chave/botão de interface local."
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Specification" "Tactile switch, SPST"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Assembly" "SMT"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "2"
 			(uuid "17dd4099-abec-4e63-9bd2-831bfc0837c5")
 		)
@@ -11146,28 +11276,6 @@
 					(reference "SW101")
 					(unit 1)
 				)
-			)
-		)
-	
-		(property "Function" "Chave/botão de interface local."
-			(at 0 0 0)
-			(effects
-				(font (size 1.27 1.27))
-				(hide yes)
-			)
-		)
-		(property "Specification" "Tactile switch, SPST"
-			(at 0 0 0)
-			(effects
-				(font (size 1.27 1.27))
-				(hide yes)
-			)
-		)
-		(property "Assembly" "SMT"
-			(at 0 0 0)
-			(effects
-				(font (size 1.27 1.27))
-				(hide yes)
 			)
 		)
 	)

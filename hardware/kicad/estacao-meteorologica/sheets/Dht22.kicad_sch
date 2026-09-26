@@ -958,6 +958,15 @@
 				(hide yes)
 			)
 		)
+		(property "Assembly" "SMT"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "2"
 			(uuid "8e6b4f18-2c46-45b5-ad72-0ba4b7ffb687")
 		)
@@ -970,14 +979,6 @@
 					(reference "R231")
 					(unit 1)
 				)
-			)
-		)
-	
-		(property "Assembly" "SMT"
-			(at 0 0 0)
-			(effects
-				(font (size 1.27 1.27))
-				(hide yes)
 			)
 		)
 	)
@@ -1292,6 +1293,15 @@
 				(hide yes)
 			)
 		)
+		(property "Assembly" "THT — montagem manual"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "3"
 			(uuid "09719278-4a77-4fb2-bce8-dadbf3a830b4")
 		)
@@ -1310,14 +1320,6 @@
 					(reference "U231")
 					(unit 1)
 				)
-			)
-		)
-	
-		(property "Assembly" "THT — montagem manual"
-			(at 0 0 0)
-			(effects
-				(font (size 1.27 1.27))
-				(hide yes)
 			)
 		)
 	)
@@ -1427,6 +1429,15 @@
 				(hide yes)
 			)
 		)
+		(property "Assembly" "SMT"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "8519c204-d54b-4e63-8100-34c2b42c4c1d")
 		)
@@ -1439,14 +1450,6 @@
 					(reference "C231")
 					(unit 1)
 				)
-			)
-		)
-	
-		(property "Assembly" "SMT"
-			(at 0 0 0)
-			(effects
-				(font (size 1.27 1.27))
-				(hide yes)
 			)
 		)
 	)

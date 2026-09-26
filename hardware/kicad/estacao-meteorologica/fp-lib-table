@@ -7,4 +7,5 @@
   (lib (name "Hardware_Power")(type "KiCad")(uri "${KIPRJMOD}/../../libraries/Hardware_Power/Hardware_Power.pretty")(options "")(descr "Alimentacao - importados EasyEDA, pinagem revisada"))
   (lib (name "Hardware_Sensors")(type "KiCad")(uri "${KIPRJMOD}/../../libraries/Hardware_Sensors/Hardware_Sensors.pretty")(options "")(descr "Sensores embarcados - footprints e modelos 3D locais"))
   (lib (name "Hardware_SD")(type "KiCad")(uri "${KIPRJMOD}/../../libraries/Hardware_SD/Hardware_SD.pretty")(options "")(descr "Cartao microSD - protecao ESD/EMI e modelos 3D locais"))
+  (lib (name "Hardware_SD_Interface")(type "KiCad")(uri "${KIPRJMOD}/../../libraries/Hardware_SD_Interface/Hardware_SD_Interface.pretty")(options "")(descr "Socket microSD Molex e buffer SPI; modelos e simbolos locais"))
 )
