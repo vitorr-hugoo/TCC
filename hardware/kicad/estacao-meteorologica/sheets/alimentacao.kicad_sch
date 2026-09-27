@@ -2127,7 +2127,7 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "Regulator_Switching:AP63205WU"
+		(symbol "Regulator_Switching:AP63203WU"
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
@@ -2139,7 +2139,7 @@
 					)
 				)
 			)
-			(property "Value" "AP63205WU"
+			(property "Value" "AP63203WU"
 				(at 2.54 6.35 0)
 				(effects
 					(font
@@ -2192,7 +2192,7 @@
 					(hide yes)
 				)
 			)
-			(symbol "AP63205WU_0_1"
+			(symbol "AP63203WU_0_1"
 				(rectangle
 					(start -7.62 5.08)
 					(end 7.62 -5.08)
@@ -2205,7 +2205,7 @@
 					)
 				)
 			)
-			(symbol "AP63205WU_1_1"
+			(symbol "AP63203WU_1_1"
 				(pin power_in line
 					(at -10.16 2.54 0)
 					(length 2.54)
@@ -2307,182 +2307,6 @@
 						)
 					)
 					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-			(embedded_fonts no)
-		)
-		(symbol "Regulator_Switching:TLV62569DBV"
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(property "Reference" "U"
-				(at -5.08 6.35 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left)
-				)
-			)
-			(property "Value" "TLV62569DBV"
-				(at 0 6.35 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left)
-				)
-			)
-			(property "Footprint" "Package_TO_SOT_SMD:SOT-23-5"
-				(at 1.27 -6.35 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-						(italic yes)
-					)
-					(justify left)
-					(hide yes)
-				)
-			)
-			(property "Datasheet" "http://www.ti.com/lit/ds/symlink/tlv62569.pdf"
-				(at -6.35 11.43 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Description" "High Efficiency Synchronous Buck Converter, Adjustable Output 0.6V-5.5V, 2A, SOT-23-5"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "ki_keywords" "Step-Down Buck DC-DC Regulator Adjustable"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "ki_fp_filters" "SOT?23*"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(symbol "TLV62569DBV_0_1"
-				(rectangle
-					(start -5.08 5.08)
-					(end 5.08 -5.08)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type background)
-					)
-				)
-			)
-			(symbol "TLV62569DBV_1_1"
-				(pin power_in line
-					(at -7.62 2.54 0)
-					(length 2.54)
-					(name "VIN"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "4"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin input line
-					(at -7.62 0 0)
-					(length 2.54)
-					(name "EN"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin power_in line
-					(at 0 -7.62 90)
-					(length 2.54)
-					(name "GND"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin power_out line
-					(at 7.62 2.54 180)
-					(length 2.54)
-					(name "SW"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "3"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin input line
-					(at 7.62 0 180)
-					(length 2.54)
-					(name "FB"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "5"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -2617,7 +2441,7 @@
 		)
 		(uuid "0b6ed4e3-015a-522e-9b98-35a4e1ced79d")
 	)
-	(text "L60=4,7uH; C65+C66=44uF nominais; FB ligado APOS L60.\nC61/C62/C63 fisicamente junto a U60, apesar de desenhados acima.\nAlvo inicial: 5V externo <=0,5A + carga do buck3V3; validar termica."
+	(text "L601=3,9uH; C606+C607=44uF nominais na saida +3V3; FB ligado APOS L601.\nCin e Cboot fisicamente junto a U601; manter a malha VIN-CIN-GND curta.\nAlvo inicial: +3V3 <=1A; validar ripple, partida e termica."
 		(exclude_from_sim no)
 		(at 20.32 226.06 0)
 		(effects
@@ -2628,7 +2452,7 @@
 		)
 		(uuid "257fe2e8-de67-5ce0-91f3-c7e2928d9604")
 	)
-	(text "WEBENCH U61: C67=4,7uF (Ceff 3,7uF); C68+C69+C70=11uF Ceff total.\nAlvo3V3 <=1A; validar carga/termica. Sem LED permanente.\nNAO unir +3V3 a fonte externa/USB sem analisar retorno."
+	(text "AP63203: VIN3,8-32V -> +3V3 fixos; CI ate 2A, validar limite termico da placa.\nC606+C607 sao os capacitores principais da saida; usar capacitancia efetiva, nao apenas nominal.\nNAO unir +3V3 a fonte externa/USB sem analisar retorno."
 		(exclude_from_sim no)
 		(at 220.98 246.38 0)
 		(effects
@@ -2661,7 +2485,7 @@
 		)
 		(uuid "82c2d5ca-a689-58ce-9e7a-0ba6e709c01e")
 	)
-	(text "REFERENCIAS: Diodes AP63205 DS41326 Fig.21/Tab.3; TI TLV62569 SLVSDG1C sec.8.2/10.\nLAYOUT: malhas VIN-CIN-GND curtas; SW minimo; FB longe deSW; planoGND continuo.\nDetalhes, BOM/LCSC e limites: docs/alimentacao/README.md"
+	(text "REFERENCIAS: Diodes AP63203 DS41326 — configuracao tipica de 3,3V e layout recomendado.\nLAYOUT: malhas VIN-CIN-GND curtas; SW minimo; FB longe de SW; plano GND continuo.\nDecisao/BOM/LCSC e limites: docs/engineering/hardware/Desenvolvimento/ESTUDO_ALIMENTACAO_12V_PARA_3V3_SEM_ESTAGIO_5V.md"
 		(exclude_from_sim no)
 		(at 20.32 254 0)
 		(effects
@@ -2694,7 +2518,7 @@
 		)
 		(uuid "d3e2b067-08cf-5709-8b91-954f3ce406f3")
 	)
-	(text "2  BUCK 5 V  |  CI 2 A / VALIDAR TERMICA"
+	(text "BUCK UNICO 3V3  |  CI 2 A / VALIDAR TERMICA"
 		(exclude_from_sim no)
 		(at 20.32 137.16 0)
 		(effects
@@ -2705,7 +2529,7 @@
 		)
 		(uuid "d67026a4-ee4f-5be3-aab5-4cc1c01c9845")
 	)
-	(text "FB: medir apos L60"
+	(text "FB: medir apos L601"
 		(exclude_from_sim no)
 		(at 137.16 215.9 0)
 		(effects
@@ -2715,12 +2539,6 @@
 			(justify right)
 		)
 		(uuid "fb9fd816-0d14-5880-932c-94a89c14abe3")
-	)
-	(junction
-		(at 388.62 172.72)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "0875cdaa-8fee-55c5-a851-a43984b6128f")
 	)
 	(junction
 		(at 180.34 172.72)
@@ -2741,28 +2559,10 @@
 		(uuid "25a5ad9d-0f79-5e10-b00a-82a0a535e5cf")
 	)
 	(junction
-		(at 377.19 172.72)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "3d1f7c28-5602-4eaa-a85f-b8fde04bf1a6")
-	)
-	(junction
 		(at 195.58 172.72)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "3dd5e83f-ccc5-55d1-a24e-ab59b34204a7")
-	)
-	(junction
-		(at 359.41 172.72)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "4074d79d-8adf-4d0c-a0bb-6554d1c46519")
-	)
-	(junction
-		(at 226.06 172.72)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "506a54ca-97df-4fb3-887f-0a178aba3941")
 	)
 	(junction
 		(at 304.8 69.85)
@@ -2771,10 +2571,16 @@
 		(uuid "52b22cca-f27d-5a74-844e-f2a3700142dc")
 	)
 	(junction
-		(at 280.67 213.36)
+		(at 200.66 172.72)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "6b8f0628-9e91-44ec-b469-2c16037448da")
+		(uuid "598d3ac5-0a07-407e-b1b1-6d5ac04ba4f5")
+	)
+	(junction
+		(at 195.58 220.98)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "6b302707-bc29-46a5-b717-74bd8e4b7dfb")
 	)
 	(junction
 		(at 154.94 172.72)
@@ -2789,12 +2595,6 @@
 		(uuid "90bb1074-8d40-5eb5-bb0d-99e6a4783615")
 	)
 	(junction
-		(at 302.26 213.36)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "95f2e383-6841-599e-882c-a0a30cd6c9d8")
-	)
-	(junction
 		(at 137.16 69.85)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -2807,34 +2607,10 @@
 		(uuid "a3668383-33a4-5a73-9ad8-138bdc741d73")
 	)
 	(junction
-		(at 238.76 172.72)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "b23a6332-56e3-5b55-929d-9c7adc23385d")
-	)
-	(junction
 		(at 167.64 69.85)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "b65dc10d-1428-5025-a45e-88ee417f7992")
-	)
-	(junction
-		(at 335.28 172.72)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "d7d87753-a5af-40d8-a58f-25eb123f06fb")
-	)
-	(junction
-		(at 302.26 172.72)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "d8980f52-4e4f-56cc-b3ed-0755138612fb")
-	)
-	(junction
-		(at 359.41 203.2)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "d91c94de-1eb8-446c-a95b-dcac75942896")
 	)
 	(junction
 		(at 254 69.85)
@@ -2872,6 +2648,16 @@
 	)
 	(wire
 		(pts
+			(xy 200.66 172.72) (xy 203.2 172.72)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "03c922c4-10ee-4281-8bad-7566457cdda3")
+	)
+	(wire
+		(pts
 			(xy 254 69.85) (xy 254 88.9)
 		)
 		(stroke
@@ -2899,16 +2685,6 @@
 			(type default)
 		)
 		(uuid "06dd4d3b-93bb-54ac-b8f1-2afa3bcc0ab3")
-	)
-	(wire
-		(pts
-			(xy 359.41 195.58) (xy 359.41 203.2)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "07bbea6e-ffa6-550b-8c7e-40b1b991f1fa")
 	)
 	(wire
 		(pts
@@ -2949,26 +2725,6 @@
 			(type default)
 		)
 		(uuid "10c62cbf-3a58-5521-9456-f6503d687626")
-	)
-	(wire
-		(pts
-			(xy 226.06 195.58) (xy 226.06 207.01)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "1332040b-dbab-56a4-bb42-63f8cf5f4d32")
-	)
-	(wire
-		(pts
-			(xy 264.16 172.72) (xy 280.67 172.72)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "14328c39-ac67-55d3-9e15-a6f135a43a48")
 	)
 	(wire
 		(pts
@@ -3022,16 +2778,6 @@
 	)
 	(wire
 		(pts
-			(xy 302.26 232.41) (xy 302.26 238.76)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "24d5ba0e-5df1-592b-b75f-a5a97c31234a")
-	)
-	(wire
-		(pts
 			(xy 35.56 93.98) (xy 63.5 93.98)
 		)
 		(stroke
@@ -3039,16 +2785,6 @@
 			(type default)
 		)
 		(uuid "26989293-770f-5df0-adb0-19be106bc9dc")
-	)
-	(wire
-		(pts
-			(xy 335.28 195.58) (xy 335.28 203.2)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "27ae62e0-1d66-4332-8b23-530fc20486a6")
 	)
 	(wire
 		(pts
@@ -3072,36 +2808,6 @@
 	)
 	(wire
 		(pts
-			(xy 269.24 213.36) (xy 280.67 213.36)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "3b91158c-bfda-57e0-9c82-c225f5477f22")
-	)
-	(wire
-		(pts
-			(xy 335.28 172.72) (xy 335.28 187.96)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "3e50c475-dfa9-438b-84ba-4cab13985910")
-	)
-	(wire
-		(pts
-			(xy 302.26 213.36) (xy 302.26 224.79)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "3e947ed5-49f8-590d-aa0e-29a4a3e97c9a")
-	)
-	(wire
-		(pts
 			(xy 358.14 72.39) (xy 355.6 72.39)
 		)
 		(stroke
@@ -3109,6 +2815,16 @@
 			(type default)
 		)
 		(uuid "3edc43d8-022c-46af-9ec1-7099b311d147")
+	)
+	(wire
+		(pts
+			(xy 195.58 220.98) (xy 213.36 220.98)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "438d8b1a-e3c0-4672-9611-c3f97a02aebc")
 	)
 	(wire
 		(pts
@@ -3142,16 +2858,6 @@
 	)
 	(wire
 		(pts
-			(xy 256.54 182.88) (xy 256.54 207.01)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "48aff368-f97a-5500-9128-1ecf6b806293")
-	)
-	(wire
-		(pts
 			(xy 180.34 172.72) (xy 180.34 186.69)
 		)
 		(stroke
@@ -3169,16 +2875,6 @@
 			(type default)
 		)
 		(uuid "4ba298aa-0b94-5a23-abd0-7bf9a9a090d1")
-	)
-	(wire
-		(pts
-			(xy 280.67 213.36) (xy 302.26 213.36)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "4c1669b5-aedf-46dd-be24-c390bc68db26")
 	)
 	(wire
 		(pts
@@ -3232,16 +2928,6 @@
 	)
 	(wire
 		(pts
-			(xy 288.29 172.72) (xy 302.26 172.72)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "5545e1fb-7dd1-55e2-acbd-5458edf421d5")
-	)
-	(wire
-		(pts
 			(xy 88.9 175.26) (xy 88.9 191.77)
 		)
 		(stroke
@@ -3249,26 +2935,6 @@
 			(type default)
 		)
 		(uuid "57d0ce22-62ae-5bbe-b5e5-eedac1694267")
-	)
-	(wire
-		(pts
-			(xy 264.16 175.26) (xy 269.24 175.26)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "58d57a64-4845-5350-88b6-a61cdd5a88b7")
-	)
-	(wire
-		(pts
-			(xy 302.26 172.72) (xy 335.28 172.72)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "5b5bb1b9-9e15-58cf-a279-016dd2a7ea7e")
 	)
 	(wire
 		(pts
@@ -3292,16 +2958,6 @@
 	)
 	(wire
 		(pts
-			(xy 373.38 228.6) (xy 391.16 228.6)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "6069bcb7-6b4e-5749-b3af-36223c04bd44")
-	)
-	(wire
-		(pts
 			(xy 355.6 59.69) (xy 355.6 69.85)
 		)
 		(stroke
@@ -3322,16 +2978,6 @@
 	)
 	(wire
 		(pts
-			(xy 388.62 172.72) (xy 391.16 172.72)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "66876fd5-2308-5d84-9440-3b167c462b43")
-	)
-	(wire
-		(pts
 			(xy 355.6 72.39) (xy 355.6 69.85)
 		)
 		(stroke
@@ -3342,16 +2988,6 @@
 	)
 	(wire
 		(pts
-			(xy 302.26 172.72) (xy 302.26 193.04)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "66e5a230-8b0c-53a8-a92f-1b71f3e880e8")
-	)
-	(wire
-		(pts
 			(xy 55.88 177.8) (xy 66.04 177.8)
 		)
 		(stroke
@@ -3359,16 +2995,6 @@
 			(type default)
 		)
 		(uuid "67f3e8b5-e037-5b88-9124-2ec1bfd6a00b")
-	)
-	(wire
-		(pts
-			(xy 335.28 203.2) (xy 359.41 203.2)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "685e00d0-da9c-4042-ae5a-59c5b913ced8")
 	)
 	(wire
 		(pts
@@ -3402,16 +3028,6 @@
 	)
 	(wire
 		(pts
-			(xy 238.76 172.72) (xy 248.92 172.72)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "6f4337ab-59e0-55a3-aba0-101b6c7a9bb6")
-	)
-	(wire
-		(pts
 			(xy 182.88 113.03) (xy 182.88 118.11)
 		)
 		(stroke
@@ -3442,16 +3058,6 @@
 	)
 	(wire
 		(pts
-			(xy 226.06 172.72) (xy 226.06 187.96)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "7a3024a7-2537-5bae-9e92-8359b8a8205b")
-	)
-	(wire
-		(pts
 			(xy 76.2 182.88) (xy 76.2 205.74)
 		)
 		(stroke
@@ -3479,16 +3085,6 @@
 			(type default)
 		)
 		(uuid "82cacd21-b254-52cc-9944-163d6b643343")
-	)
-	(wire
-		(pts
-			(xy 223.52 172.72) (xy 226.06 172.72)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "8694a1a4-2e80-44ca-8934-3e28083c1a3b")
 	)
 	(wire
 		(pts
@@ -3532,13 +3128,13 @@
 	)
 	(wire
 		(pts
-			(xy 359.41 203.2) (xy 359.41 208.28)
+			(xy 195.58 220.98) (xy 195.58 223.52)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "91690486-994c-442a-867e-23950cc62bc8")
+		(uuid "93179ec4-4772-4e19-ab9c-44c2b0827496")
 	)
 	(wire
 		(pts
@@ -3552,16 +3148,6 @@
 	)
 	(wire
 		(pts
-			(xy 302.26 200.66) (xy 302.26 213.36)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "96919c37-631e-50c7-a854-3792ee6e4be9")
-	)
-	(wire
-		(pts
 			(xy 128.27 172.72) (xy 135.89 172.72)
 		)
 		(stroke
@@ -3569,16 +3155,6 @@
 			(type default)
 		)
 		(uuid "9854d0cc-0f38-5d47-87c9-e93d8d5ba116")
-	)
-	(wire
-		(pts
-			(xy 377.19 172.72) (xy 388.62 172.72)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "991f04a2-2f9a-4af8-a8be-1ddf5e6c579e")
 	)
 	(wire
 		(pts
@@ -3599,16 +3175,6 @@
 			(type default)
 		)
 		(uuid "a0c43e99-eecb-5956-8742-9b4c7bae3121")
-	)
-	(wire
-		(pts
-			(xy 377.19 203.2) (xy 359.41 203.2)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "a15be6cc-b825-4155-8c55-e2ae09c2fe18")
 	)
 	(wire
 		(pts
@@ -3642,16 +3208,6 @@
 	)
 	(wire
 		(pts
-			(xy 280.67 212.09) (xy 280.67 213.36)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "a2f15734-0f08-4571-b0c8-978bf978ea57")
-	)
-	(wire
-		(pts
 			(xy 36.83 59.69) (xy 43.18 59.69)
 		)
 		(stroke
@@ -3669,16 +3225,6 @@
 			(type default)
 		)
 		(uuid "a58c7f99-f5df-55ef-8cde-82f75b83b8c2")
-	)
-	(wire
-		(pts
-			(xy 335.28 172.72) (xy 359.41 172.72)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "a75a2166-45b9-4cc1-b61e-1f73ee861425")
 	)
 	(wire
 		(pts
@@ -3742,16 +3288,6 @@
 	)
 	(wire
 		(pts
-			(xy 377.19 195.58) (xy 377.19 203.2)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "c31ac7d8-aed8-495f-a146-b0901a36f08d")
-	)
-	(wire
-		(pts
 			(xy 55.88 172.72) (xy 66.04 172.72)
 		)
 		(stroke
@@ -3759,16 +3295,6 @@
 			(type default)
 		)
 		(uuid "c9956ec3-84dc-5c18-ad08-25ed64ec34b4")
-	)
-	(wire
-		(pts
-			(xy 359.41 172.72) (xy 359.41 187.96)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "ca677996-3adf-5678-b667-7732aaf42860")
 	)
 	(wire
 		(pts
@@ -3782,36 +3308,6 @@
 	)
 	(wire
 		(pts
-			(xy 238.76 175.26) (xy 248.92 175.26)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "e0a6ac6c-fb9c-5980-b7a3-e79af508cb77")
-	)
-	(wire
-		(pts
-			(xy 359.41 172.72) (xy 377.19 172.72)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "e0ccfac5-8d7e-424f-a9ca-381287130616")
-	)
-	(wire
-		(pts
-			(xy 269.24 175.26) (xy 269.24 213.36)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "e11f918d-15a5-510d-b19c-9f9b73139a1c")
-	)
-	(wire
-		(pts
 			(xy 279.4 69.85) (xy 279.4 88.9)
 		)
 		(stroke
@@ -3819,26 +3315,6 @@
 			(type default)
 		)
 		(uuid "e8b8a985-9165-5f8f-b136-b5d492c282d8")
-	)
-	(wire
-		(pts
-			(xy 226.06 172.72) (xy 238.76 172.72)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "eaab283d-7fe4-5cb4-983b-7e8ab62218c9")
-	)
-	(wire
-		(pts
-			(xy 377.19 187.96) (xy 377.19 172.72)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "ebdc387b-0680-4c76-b21e-27dc5beb2611")
 	)
 	(wire
 		(pts
@@ -3870,26 +3346,6 @@
 		)
 		(uuid "f42f5c71-79b4-57b2-9bbb-37e29eef6df9")
 	)
-	(wire
-		(pts
-			(xy 388.62 160.02) (xy 388.62 172.72)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "f59188bf-3ff5-5901-80ef-1a8b6d3ba84c")
-	)
-	(wire
-		(pts
-			(xy 238.76 172.72) (xy 238.76 175.26)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "f77dbe10-29a6-5e97-8f41-7c69823eea53")
-	)
 	(label "VIN_MAIN"
 		(at 27.94 172.72 0)
 		(effects
@@ -3919,16 +3375,6 @@
 			(justify left)
 		)
 		(uuid "6b0c5136-be3e-5aea-b92f-fd2756f2015e")
-	)
-	(label "FB_3V3"
-		(at 280.67 212.09 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "caeb9206-9bd4-5fe2-b077-59500f5fe8cf")
 	)
 	(label "VIN_MAIN"
 		(at 358.14 72.39 0)
@@ -3980,46 +3426,6 @@
 			)
 		)
 	)
-	(global_label "+5V"
-		(shape passive)
-		(at 223.52 172.72 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "4a72b812-9ffd-52c8-9588-1bd62c8939aa")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 223.52 172.72 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-	)
-	(global_label "GND"
-		(shape passive)
-		(at 359.41 208.28 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "4d81837f-f0fb-58fd-b03e-8b003ad41f50")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 359.41 208.28 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-	)
 	(global_label "GND"
 		(shape passive)
 		(at 137.16 113.03 0)
@@ -4032,26 +3438,6 @@
 		(uuid "5219bdb3-8e5a-5b24-9a5d-4c40f3e0a45f")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
 			(at 137.16 113.03 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-	)
-	(global_label "GND"
-		(shape passive)
-		(at 256.54 207.01 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "60dba77e-3e9a-5911-9550-f543545f6f6d")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 256.54 207.01 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4082,16 +3468,16 @@
 	)
 	(global_label "GND"
 		(shape passive)
-		(at 373.38 228.6 0)
+		(at 195.58 223.52 270)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
-			(justify left)
+			(justify right)
 		)
 		(uuid "7c19c61e-bd90-543e-925f-262efe51e4d7")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 373.38 228.6 0)
+			(at 195.58 223.52 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4112,26 +3498,6 @@
 		(uuid "8eb75393-1eea-5668-8fc1-c57be72c9083")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
 			(at 279.4 113.03 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-	)
-	(global_label "GND"
-		(shape passive)
-		(at 226.06 207.01 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "9459ad92-9937-57a7-80f5-0d0ef0fc1435")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 226.06 207.01 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4242,26 +3608,6 @@
 	)
 	(global_label "GND"
 		(shape passive)
-		(at 302.26 238.76 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "d8c1468f-cb81-5ecc-a993-c11e61e95f19")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 302.26 238.76 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-	)
-	(global_label "GND"
-		(shape passive)
 		(at 154.94 205.74 0)
 		(effects
 			(font
@@ -4302,7 +3648,7 @@
 	)
 	(hierarchical_label "GND"
 		(shape passive)
-		(at 391.16 228.6 0)
+		(at 213.36 220.98 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -4313,25 +3659,14 @@
 	)
 	(hierarchical_label "+3V3"
 		(shape output)
-		(at 391.16 172.72 0)
+		(at 203.2 172.72 0)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
 			(justify left)
 		)
-		(uuid "b5f2b877-f661-52de-8597-92d09d3e374b")
-	)
-	(hierarchical_label "+5V"
-		(shape output)
-		(at 200.66 172.72 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "fc5f717e-ac7f-556f-95f6-636a82f34b21")
+		(uuid "814acaf8-d4b5-4553-90c2-5dd1293b25e4")
 	)
 	(symbol
 		(lib_id "Device:Fuse")
@@ -4553,7 +3888,7 @@
 				(hide yes)
 			)
 		)
-		(property "Function" "Saida5V; 22uF25V em paralelo comC66"
+		(property "Function" "Saida +3V3; capacitor principal apos L601"
 			(at 154.94 190.5 0)
 			(effects
 				(font
@@ -4597,7 +3932,7 @@
 	)
 	(symbol
 		(lib_id "Connector:TestPoint")
-		(at 388.62 160.02 0)
+		(at 195.58 160.02 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom no)
@@ -4605,7 +3940,7 @@
 		(dnp no)
 		(uuid "0c1eed8e-fe4f-52ce-8dcf-25b02424c0e4")
 		(property "Reference" "TP603"
-			(at 383.54 149.86 0)
+			(at 190.5 149.86 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4614,7 +3949,7 @@
 			)
 		)
 		(property "Value" "+3V3"
-			(at 383.54 152.4 0)
+			(at 190.5 152.4 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4623,7 +3958,7 @@
 			)
 		)
 		(property "Footprint" "TestPoint:TestPoint_Pad_D1.5mm"
-			(at 388.62 160.02 0)
+			(at 195.58 160.02 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4632,7 +3967,7 @@
 			)
 		)
 		(property "Datasheet" "N/A - geometria definida no footprint"
-			(at 388.62 160.02 0)
+			(at 195.58 160.02 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4641,7 +3976,7 @@
 			)
 		)
 		(property "Description" "Ponto de teste em cobre, pad circular de 1,5 mm; rede +3V3"
-			(at 388.62 160.02 0)
+			(at 195.58 160.02 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4650,7 +3985,7 @@
 			)
 		)
 		(property "Manufacturer" "N/A"
-			(at 388.62 160.02 0)
+			(at 195.58 160.02 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4659,7 +3994,7 @@
 			)
 		)
 		(property "MPN" "N/A - elemento de cobre da PCB"
-			(at 388.62 160.02 0)
+			(at 195.58 160.02 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4668,7 +4003,7 @@
 			)
 		)
 		(property "LCSC" "N/A"
-			(at 388.62 160.02 0)
+			(at 195.58 160.02 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4677,7 +4012,7 @@
 			)
 		)
 		(property "Specification" "Cobre exposto; nao comprar"
-			(at 388.62 160.02 0)
+			(at 195.58 160.02 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4686,7 +4021,7 @@
 			)
 		)
 		(property "Function" ""
-			(at 388.62 160.02 0)
+			(at 195.58 160.02 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4695,7 +4030,7 @@
 			)
 		)
 		(property "Assembly" "PCB — sem compra"
-			(at 0 0 0)
+			(at -193.04 0 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4707,251 +4042,9 @@
 			(uuid "140b9d64-f1a2-4b08-a4e0-010fac249d6e")
 		)
 		(instances
-			(project "esquematico_V4"
-				(path "/0c305a6e-f9cd-49a1-b146-c2956e5469b6/19a3c20f-53ab-4562-aabc-58e6e99571a0"
-					(reference "TP603")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:PWR_FLAG")
-		(at 391.16 172.72 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom no)
-		(on_board no)
-		(dnp no)
-		(uuid "0ea8a14e-f156-5528-be73-2b143bd2c9ec")
-		(property "Reference" "#FLG063"
-			(at 391.16 162.56 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "PWR_FLAG"
-			(at 391.16 165.1 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Footprint" ""
-			(at 391.16 172.72 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 391.16 172.72 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 391.16 172.72 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Manufacturer" ""
-			(at 391.16 172.72 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "MPN" ""
-			(at 391.16 172.72 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "LCSC" ""
-			(at 391.16 172.72 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Specification" "Declaracao ERC, nao componente"
-			(at 391.16 172.72 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Function" ""
-			(at 391.16 172.72 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "2008def8-1b9b-47c3-9fdc-19f6d3ce173a")
-		)
-		(instances
-			(project "esquematico_V4"
-				(path "/0c305a6e-f9cd-49a1-b146-c2956e5469b6/19a3c20f-53ab-4562-aabc-58e6e99571a0"
-					(reference "#FLG063")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:C")
-		(at 335.28 191.77 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "1087d24e-42f0-4cb2-a8c1-345e1469c7d2")
-		(property "Reference" "C610"
-			(at 339.09 190.5 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "10 µF, 6.3 V"
-			(at 339.09 193.04 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
-			(at 335.28 191.77 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/2304140030_Murata-Electronics-GRJ155R60J106ME11D_C469527.pdf"
-			(at 335.28 191.77 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "10uF 6.3V X5R ±20% 0402 Multilayer Ceramic Capacitors MLCC - SMD/SMT RoHS"
-			(at 335.28 191.77 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer" "Murata Electronics"
-			(at 335.28 191.77 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "MPN" "GRJ155R60J106ME11D"
-			(at 335.28 191.77 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "LCSC" "C469527"
-			(at 335.28 191.77 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Specification" "X5R; 10uF/6.3V; 1 de 3, Ceff total 11uF conforme WEBENCH"
-			(at 335.28 191.77 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Function" "Saida local +3V3; 1 de 3 capacitores em paralelo"
-			(at 335.28 191.77 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Verification" "Conferido no catalogo em 2026-09-24; verificar estoque ao comprar"
-			(at 335.28 191.77 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Assembly" "SMT"
-			(at 0 0 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "c980dc0f-4b78-46de-b22b-8ac5e0c3d627")
-		)
-		(pin "2"
-			(uuid "dd1ba7c0-01d4-48df-8da4-46ebbcfc20b0")
-		)
-		(instances
 			(project "estacao-meteorologica"
 				(path "/0c305a6e-f9cd-49a1-b146-c2956e5469b6/19a3c20f-53ab-4562-aabc-58e6e99571a0"
-					(reference "C610")
+					(reference "TP603")
 					(unit 1)
 				)
 			)
@@ -5089,7 +4182,7 @@
 	)
 	(symbol
 		(lib_id "Connector:TestPoint")
-		(at 373.38 228.6 0)
+		(at 195.58 220.98 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom no)
@@ -5097,7 +4190,7 @@
 		(dnp no)
 		(uuid "340fce4f-fa00-5e13-ae8e-c99bfcb6399a")
 		(property "Reference" "TP604"
-			(at 369.57 218.44 0)
+			(at 191.77 210.82 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5106,7 +4199,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 369.57 220.98 0)
+			(at 191.77 213.36 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5115,7 +4208,7 @@
 			)
 		)
 		(property "Footprint" "TestPoint:TestPoint_Pad_D1.5mm"
-			(at 373.38 228.6 0)
+			(at 195.58 220.98 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5124,7 +4217,7 @@
 			)
 		)
 		(property "Datasheet" "N/A - geometria definida no footprint"
-			(at 373.38 228.6 0)
+			(at 195.58 220.98 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5133,7 +4226,7 @@
 			)
 		)
 		(property "Description" "Ponto de teste em cobre, pad circular de 1,5 mm; rede GND"
-			(at 373.38 228.6 0)
+			(at 195.58 220.98 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5142,7 +4235,7 @@
 			)
 		)
 		(property "Manufacturer" "N/A"
-			(at 373.38 228.6 0)
+			(at 195.58 220.98 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5151,7 +4244,7 @@
 			)
 		)
 		(property "MPN" "N/A - elemento de cobre da PCB"
-			(at 373.38 228.6 0)
+			(at 195.58 220.98 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5160,7 +4253,7 @@
 			)
 		)
 		(property "LCSC" "N/A"
-			(at 373.38 228.6 0)
+			(at 195.58 220.98 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5169,7 +4262,7 @@
 			)
 		)
 		(property "Specification" "Cobre exposto; nao comprar"
-			(at 373.38 228.6 0)
+			(at 195.58 220.98 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5178,7 +4271,7 @@
 			)
 		)
 		(property "Function" ""
-			(at 373.38 228.6 0)
+			(at 195.58 220.98 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5187,7 +4280,7 @@
 			)
 		)
 		(property "Assembly" "PCB — sem compra"
-			(at 0 0 0)
+			(at -177.8 -7.62 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5598,138 +4691,6 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:C")
-		(at 226.06 191.77 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "4e55e348-fadf-5c3d-826f-acd2a2e0ead2")
-		(property "Reference" "C608"
-			(at 229.87 190.5 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "4.7 µF, 25 V"
-			(at 229.87 193.04 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
-			(at 226.06 191.77 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://ds.yuden.co.jp/TYCOMPAS/ap/sm/detail?pn=MSAST21GAB5475MTNA01&u=M"
-			(at 226.06 191.77 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "25V 4.7uF X5R ±20% 0805 Multilayer Ceramic Capacitors MLCC - SMD/SMT RoHS"
-			(at 226.06 191.77 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer" "Taiyo Yuden"
-			(at 226.06 191.77 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "MPN" "MSAST21GAB5475MTNA01"
-			(at 226.06 191.77 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "LCSC" "C7307475"
-			(at 226.06 191.77 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Specification" "X5R; 4.7uF/25V; Ceff 3.7uF conforme WEBENCH"
-			(at 226.06 191.77 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Function" "Entrada local de U61; manter junto aos pinos VIN/GND"
-			(at 226.06 191.77 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Verification" "Conferido no catalogo em 2026-09-24; verificar estoque ao comprar"
-			(at 226.06 191.77 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Assembly" "SMT"
-			(at 0 0 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "31bc1f60-0f0c-4678-aa29-29996aac33ef")
-		)
-		(pin "2"
-			(uuid "d0acbee1-2620-4083-9bca-1af802b19c06")
-		)
-		(instances
-			(project "esquematico_V4"
-				(path "/0c305a6e-f9cd-49a1-b146-c2956e5469b6/19a3c20f-53ab-4562-aabc-58e6e99571a0"
-					(reference "C608")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "Hardware_Power:DC-005-2.0_C22459640")
 		(at 30.48 55.88 0)
 		(unit 1)
@@ -6086,7 +5047,7 @@
 				(hide yes)
 			)
 		)
-		(property "Function" "MLCC de entrada do AP63205; junto ao VIN/GND"
+		(property "Function" "MLCC de entrada do AP63203; junto ao VIN/GND"
 			(at 279.4 92.71 0)
 			(effects
 				(font
@@ -6369,147 +5330,6 @@
 		)
 	)
 	(symbol
-		(lib_id "Regulator_Switching:TLV62569DBV")
-		(at 256.54 175.26 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "8e9bae1a-4776-5f6b-a417-bd5e0fb3f33e")
-		(property "Reference" "U602"
-			(at 242.57 155 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "TLV62569DBVR"
-			(at 242.57 157.54 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Package_TO_SOT_SMD:SOT-23-5"
-			(at 256.54 175.26 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://www.lcsc.com/datasheet/lcsc_datasheet_1809251629_Texas-Instruments-TLV62569DBVR_C141836.pdf"
-			(at 256.54 175.26 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "-40℃~+125℃@(TJ) 1 1.5MHz 2.5V~5.5V 2A 600mV~5.5V Adjustable Buck Buck Built-in Yes SOT-23-5 DC-DC Converters RoHS"
-			(at 256.54 175.26 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer" "Texas Instruments"
-			(at 256.54 175.26 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "MPN" "TLV62569DBVR"
-			(at 256.54 175.26 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "LCSC" "C141836"
-			(at 256.54 175.26 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Specification" "2A CI; VIN2.5-5.5V; 1.5MHz; IQtip35uA; sem PG"
-			(at 256.54 175.26 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Function" "Buck5V->3V3; R62=453k, R63=100k; EN sempre ligado"
-			(at 256.54 175.26 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Verification" "Conferido no catalogo em 2026-09-24; verificar estoque ao comprar"
-			(at 256.54 175.26 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Assembly" "SMT"
-			(at 0 0 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "77b04e77-2487-40be-b022-51a35c0626dc")
-		)
-		(pin "4"
-			(uuid "1c8f6d30-23a3-48a1-9563-86c58141cabc")
-		)
-		(pin "5"
-			(uuid "6c4f74d0-9c14-413c-a609-d2af53914e47")
-		)
-		(pin "2"
-			(uuid "c9fd856b-9c69-44dc-8bf9-8c9c3111dd47")
-		)
-		(pin "3"
-			(uuid "4045c4ca-21d1-43fa-84d0-4be70c3e0f8b")
-		)
-		(instances
-			(project "esquematico_V4"
-				(path "/0c305a6e-f9cd-49a1-b146-c2956e5469b6/19a3c20f-53ab-4562-aabc-58e6e99571a0"
-					(reference "U602")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "Device:C")
 		(at 304.8 92.71 0)
 		(unit 1)
@@ -6642,137 +5462,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:L")
-		(at 284.48 172.72 90)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "9d9f5ad5-90fb-5ada-b3d4-a7f9e7e0e948")
-		(property "Reference" "L602"
-			(at 284.48 160.02 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "2.2 µH"
-			(at 284.48 162.56 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Hardware_Power:L_Abracon_ASPI-0530HI"
-			(at 284.48 172.72 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/2312271924_Abracon-LLC-ASPI-0530HI-2R2M-T2_C7217567.pdf"
-			(at 284.48 172.72 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "2.2uH 35mΩ 5.5A 9A ±20% SMD,5.7x5.3mm Power Inductors RoHS"
-			(at 284.48 172.72 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer" "Abracon LLC"
-			(at 284.48 172.72 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "MPN" "ASPI-0530HI-2R2M-T2"
-			(at 284.48 172.72 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "LCSC" "C7217567"
-			(at 284.48 172.72 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Specification" "L=2.2uH +/-20%; DCRmax35mOhm; Isat9A; Irms5.5A"
-			(at 284.48 172.72 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Function" "Indutor blindado do WEBENCH; pad recomendado 7.0x3.0, pads 2.5x3.0mm"
-			(at 284.48 172.72 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Verification" "Conferido no catalogo em 2026-09-24; verificar estoque ao comprar"
-			(at 284.48 172.72 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Assembly" "SMT"
-			(at 0 0 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "03e08ad0-8eac-495e-9aa9-9693526e0189")
-		)
-		(pin "2"
-			(uuid "3b483551-117f-4a25-87b9-3915a486a83a")
-		)
-		(instances
-			(project "esquematico_V4"
-				(path "/0c305a6e-f9cd-49a1-b146-c2956e5469b6/19a3c20f-53ab-4562-aabc-58e6e99571a0"
-					(reference "L602")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Regulator_Switching:AP63205WU")
+		(lib_id "Regulator_Switching:AP63203WU")
 		(at 76.2 175.26 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -6789,7 +5479,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "AP63205WU-7"
+		(property "Value" "AP63203WU-7"
 			(at 63.5 157.54 0)
 			(effects
 				(font
@@ -6807,7 +5497,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://www.lcsc.com/datasheet/lcsc_datasheet_2210280930_Diodes-Incorporated-AP63205WU-7_C2071056.pdf"
+		(property "Datasheet" "https://www.diodes.com/datasheet/download/AP63200-AP63201-AP63203-AP63205.pdf"
 			(at 76.2 175.26 0)
 			(effects
 				(font
@@ -6816,7 +5506,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "-40℃~+85℃@(TA) 1 1.1MHz 22uA 2A 3.8V~32V 5V Buck Built-in Fixed Overcurrent Protection、Light load efficient mode、Cycle-by-cycle current limiting、Hiccup current limiting、EMI optimization (spread spectrum) Step-down type Yes TSOT-23-6 DC-DC Converters RoHS"
+		(property "Description" "Buck sincrono fixo 3,3V; VIN 3,8-32V; 2A; 1,1MHz; TSOT-23-6; protecao contra sobrecorrente e spread-spectrum EMI; RoHS"
 			(at 76.2 175.26 0)
 			(effects
 				(font
@@ -6834,7 +5524,7 @@
 				(hide yes)
 			)
 		)
-		(property "MPN" "AP63205WU-7"
+		(property "MPN" "AP63203WU-7"
 			(at 76.2 175.26 0)
 			(effects
 				(font
@@ -6843,7 +5533,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" "C2071056"
+		(property "LCSC" "C780769"
 			(at 76.2 175.26 0)
 			(effects
 				(font
@@ -6852,7 +5542,7 @@
 				(hide yes)
 			)
 		)
-		(property "Specification" "5V fixos; 2A CI; VIN3.8-32V; 1.1MHz; IQtip22uA"
+		(property "Specification" "3,3V fixos; 2A CI; VIN3,8-32V; 1,1MHz; IQ tipico 22uA"
 			(at 76.2 175.26 0)
 			(effects
 				(font
@@ -6861,7 +5551,7 @@
 				(hide yes)
 			)
 		)
-		(property "Function" "Converte VIN_MAIN para5V; EN ligado aVIN; FB direto na saida filtrada"
+		(property "Function" "Converte VIN_MAIN diretamente para +3V3; EN ligado a VIN; FB direto na saida filtrada"
 			(at 76.2 175.26 0)
 			(effects
 				(font
@@ -6870,7 +5560,7 @@
 				(hide yes)
 			)
 		)
-		(property "Verification" "Conferido no catalogo em 2026-09-24; verificar estoque ao comprar"
+		(property "Verification" "Ficha do fabricante e catalogo LCSC conferidos em 2026-09-27; verificar estoque ao comprar"
 			(at 76.2 175.26 0)
 			(effects
 				(font
@@ -6910,126 +5600,6 @@
 			(project "esquematico_V4"
 				(path "/0c305a6e-f9cd-49a1-b146-c2956e5469b6/19a3c20f-53ab-4562-aabc-58e6e99571a0"
 					(reference "U601")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Connector:TestPoint")
-		(at 195.58 160.02 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom no)
-		(on_board yes)
-		(dnp no)
-		(uuid "9e41323e-2f4e-5e19-9197-995f8045de93")
-		(property "Reference" "TP602"
-			(at 193.04 149.86 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "+5V"
-			(at 193.04 152.4 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "TestPoint:TestPoint_Pad_D1.5mm"
-			(at 195.58 160.02 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "N/A - geometria definida no footprint"
-			(at 195.58 160.02 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Ponto de teste em cobre, pad circular de 1,5 mm; rede +5V"
-			(at 195.58 160.02 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer" "N/A"
-			(at 195.58 160.02 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "MPN" "N/A - elemento de cobre da PCB"
-			(at 195.58 160.02 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "LCSC" "N/A"
-			(at 195.58 160.02 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Specification" "Cobre exposto; nao comprar"
-			(at 195.58 160.02 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Function" ""
-			(at 195.58 160.02 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Assembly" "PCB — sem compra"
-			(at 0 0 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "c3a30242-218c-48f7-a513-5e32fbf25cbd")
-		)
-		(instances
-			(project "esquematico_V4"
-				(path "/0c305a6e-f9cd-49a1-b146-c2956e5469b6/19a3c20f-53ab-4562-aabc-58e6e99571a0"
-					(reference "TP602")
 					(unit 1)
 				)
 			)
@@ -7150,138 +5720,6 @@
 			(project "esquematico_V4"
 				(path "/0c305a6e-f9cd-49a1-b146-c2956e5469b6/19a3c20f-53ab-4562-aabc-58e6e99571a0"
 					(reference "TP601")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:R")
-		(at 302.26 196.85 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "a2fa57f1-7f68-502f-aeed-e54e3a3d5ce3")
-		(property "Reference" "R602"
-			(at 306.07 195.58 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "453 kΩ, 1 %"
-			(at 306.07 198.12 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
-			(at 302.26 196.85 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/2304140030_Vishay-Intertech-CRCW0603453KFKEA_C2079749.pdf"
-			(at 302.26 196.85 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "-55℃~+155℃ 100mW 453kΩ 75V Thick Film Resistor ±1% ±100ppm/℃ 0603 Chip Resistor - Surface Mount RoHS"
-			(at 302.26 196.85 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer" "Vishay Intertech"
-			(at 302.26 196.85 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "MPN" "CRCW0603453KFKEA"
-			(at 302.26 196.85 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "LCSC" "C2079749"
-			(at 302.26 196.85 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Specification" "0.1W; 75V"
-			(at 302.26 196.85 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Function" "Braço superior do divisor de FB; Vout nominal 3.318V"
-			(at 302.26 196.85 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Verification" "Conferido no catalogo em 2026-09-24; verificar estoque ao comprar"
-			(at 302.26 196.85 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Assembly" "SMT"
-			(at 0 0 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "cf4b8b67-18f5-4501-86bf-2dd5c39688e3")
-		)
-		(pin "2"
-			(uuid "9deaddac-c815-4fc6-9460-79d74a55d5ce")
-		)
-		(instances
-			(project "esquematico_V4"
-				(path "/0c305a6e-f9cd-49a1-b146-c2956e5469b6/19a3c20f-53ab-4562-aabc-58e6e99571a0"
-					(reference "R602")
 					(unit 1)
 				)
 			)
@@ -7487,7 +5925,7 @@
 				(hide yes)
 			)
 		)
-		(property "Function" "Saida5V; Ctotal44uFnominal"
+		(property "Function" "Saida +3V3; Ctotal 44uF nominal; capacitor principal apos L601"
 			(at 180.34 190.5 0)
 			(effects
 				(font
@@ -7660,138 +6098,6 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:C")
-		(at 377.19 191.77 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "d6e06bb1-44fd-4bc0-8020-322c2b13b052")
-		(property "Reference" "C611"
-			(at 381 190.5 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "10 µF, 6.3 V"
-			(at 381 193.04 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
-			(at 377.19 191.77 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/2304140030_Murata-Electronics-GRJ155R60J106ME11D_C469527.pdf"
-			(at 377.19 191.77 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "10uF 6.3V X5R ±20% 0402 Multilayer Ceramic Capacitors MLCC - SMD/SMT RoHS"
-			(at 377.19 191.77 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer" "Murata Electronics"
-			(at 377.19 191.77 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "MPN" "GRJ155R60J106ME11D"
-			(at 377.19 191.77 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "LCSC" "C469527"
-			(at 377.19 191.77 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Specification" "X5R; 10uF/6.3V; 1 de 3, Ceff total 11uF conforme WEBENCH"
-			(at 377.19 191.77 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Function" "Saida local +3V3; 1 de 3 capacitores em paralelo"
-			(at 377.19 191.77 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Verification" "Conferido no catalogo em 2026-09-24; verificar estoque ao comprar"
-			(at 377.19 191.77 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Assembly" "SMT"
-			(at 0 0 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "2b00ebd0-345f-4aae-b03e-e9028e8e0228")
-		)
-		(pin "2"
-			(uuid "8fea2049-ca1d-42c5-bb6d-c7bf523e4aaa")
-		)
-		(instances
-			(project "estacao-meteorologica"
-				(path "/0c305a6e-f9cd-49a1-b146-c2956e5469b6/19a3c20f-53ab-4562-aabc-58e6e99571a0"
-					(reference "C611")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "Device:R")
 		(at 182.88 109.22 0)
 		(unit 1)
@@ -7940,7 +6246,7 @@
 				)
 			)
 		)
-		(property "Value" "4.7 µH"
+		(property "Value" "3.9 µH"
 			(at 124.46 162.56 90)
 			(effects
 				(font
@@ -7948,7 +6254,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Inductor_SMD:L_Sunlord_MWSA0603S"
+		(property "Footprint" "Inductor_SMD:L_APV_ANR5040"
 			(at 124.46 172.72 0)
 			(effects
 				(font
@@ -7957,7 +6263,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://www.lcsc.com/datasheet/lcsc_datasheet_2310251550_Sunlord-MWSA0603S-4R7MT_C408447.pdf"
+		(property "Datasheet" "https://www.lcsc.com/product-detail/Power-Inductors_APV-ANR5040T3R9M_C7427132.html"
 			(at 124.46 172.72 0)
 			(effects
 				(font
@@ -7966,7 +6272,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "33mΩ 4.7uH 6A 9A ±20% SMD,7x6.6mm Power Inductors RoHS"
+		(property "Description" "Indutor de potencia blindado 3,9uH ±20%; Irms 3,7A; Isat 4,2A; SMD 5x5mm; RoHS"
 			(at 124.46 172.72 0)
 			(effects
 				(font
@@ -7975,7 +6281,7 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer" "Sunlord"
+		(property "Manufacturer" "APV"
 			(at 124.46 172.72 0)
 			(effects
 				(font
@@ -7984,7 +6290,7 @@
 				(hide yes)
 			)
 		)
-		(property "MPN" "MWSA0603S-4R7MT"
+		(property "MPN" "ANR5040T3R9M"
 			(at 124.46 172.72 0)
 			(effects
 				(font
@@ -7993,7 +6299,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" "C408447"
+		(property "LCSC" "C7427132"
 			(at 124.46 172.72 0)
 			(effects
 				(font
@@ -8002,7 +6308,7 @@
 				(hide yes)
 			)
 		)
-		(property "Specification" "Isat min7.2A/tip9A; Irms min5A; DCRmax33mOhm"
+		(property "Specification" "L=3,9uH ±20%; Irms 3,7A; Isat 4,2A; indutor blindado; corpo 5x5x4mm"
 			(at 124.46 172.72 0)
 			(effects
 				(font
@@ -8020,7 +6326,7 @@
 				(hide yes)
 			)
 		)
-		(property "Verification" "Conferido no catalogo em 2026-09-24; verificar estoque ao comprar"
+		(property "Verification" "Ficha do fabricante e catalogo LCSC conferidos em 2026-09-27; verificar estoque ao comprar"
 			(at 124.46 172.72 0)
 			(effects
 				(font
@@ -8048,138 +6354,6 @@
 			(project "esquematico_V4"
 				(path "/0c305a6e-f9cd-49a1-b146-c2956e5469b6/19a3c20f-53ab-4562-aabc-58e6e99571a0"
 					(reference "L601")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:C")
-		(at 359.41 191.77 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "ec8d45cd-fd0d-554d-9ad6-12736e729139")
-		(property "Reference" "C609"
-			(at 363.22 190.5 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "10 µF, 6.3 V"
-			(at 363.22 193.04 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
-			(at 359.41 191.77 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/2304140030_Murata-Electronics-GRJ155R60J106ME11D_C469527.pdf"
-			(at 359.41 191.77 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "10uF 6.3V X5R ±20% 0402 Multilayer Ceramic Capacitors MLCC - SMD/SMT RoHS"
-			(at 359.41 191.77 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer" "Murata Electronics"
-			(at 359.41 191.77 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "MPN" "GRJ155R60J106ME11D"
-			(at 359.41 191.77 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "LCSC" "C469527"
-			(at 359.41 191.77 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Specification" "X5R; 10uF/6.3V; 1 de 3, Ceff total 11uF conforme WEBENCH"
-			(at 359.41 191.77 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Function" "Saida local +3V3; 1 de 3 capacitores em paralelo"
-			(at 359.41 191.77 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Verification" "Conferido no catalogo em 2026-09-24; verificar estoque ao comprar"
-			(at 359.41 191.77 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Assembly" "SMT"
-			(at 0 0 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "e71c9fd9-dd72-4a6b-92e4-096cb851fe08")
-		)
-		(pin "2"
-			(uuid "1c09f017-84a2-4b71-a750-29bc9e15ac5e")
-		)
-		(instances
-			(project "esquematico_V4"
-				(path "/0c305a6e-f9cd-49a1-b146-c2956e5469b6/19a3c20f-53ab-4562-aabc-58e6e99571a0"
-					(reference "C609")
 					(unit 1)
 				)
 			)
@@ -8290,138 +6464,6 @@
 			(project "esquematico_V4"
 				(path "/0c305a6e-f9cd-49a1-b146-c2956e5469b6/19a3c20f-53ab-4562-aabc-58e6e99571a0"
 					(reference "#FLG061")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:R")
-		(at 302.26 228.6 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "f45b5c88-69be-5f41-bfb4-b4885564435b")
-		(property "Reference" "R603"
-			(at 306.07 227.33 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "100 kΩ, 1 %"
-			(at 306.07 229.87 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
-			(at 302.26 228.6 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://www.lcsc.com/datasheet/lcsc_datasheet_2304140030_Vishay-Intertech-CRCW0402100KFKED_C481918.pdf"
-			(at 302.26 228.6 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "-55℃~+155℃ 100kΩ 50V 63mW Thick Film Resistor ±1% ±100ppm/℃ 0402 Chip Resistor - Surface Mount RoHS"
-			(at 302.26 228.6 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer" "Vishay Intertech"
-			(at 302.26 228.6 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "MPN" "CRCW0402100KFKED"
-			(at 302.26 228.6 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "LCSC" "C481918"
-			(at 302.26 228.6 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Specification" "0.063W; 50V"
-			(at 302.26 228.6 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Function" "Braço inferior do divisor de FB; Vout nominal 3.318V"
-			(at 302.26 228.6 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Verification" "Conferido no catalogo em 2026-09-24; verificar estoque ao comprar"
-			(at 302.26 228.6 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Assembly" "SMT"
-			(at 0 0 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "2"
-			(uuid "e0f674a0-16bc-4a7a-ac9c-71c68206f48b")
-		)
-		(pin "1"
-			(uuid "6375e0dd-a539-4812-92ef-8e03e63df833")
-		)
-		(instances
-			(project "esquematico_V4"
-				(path "/0c305a6e-f9cd-49a1-b146-c2956e5469b6/19a3c20f-53ab-4562-aabc-58e6e99571a0"
-					(reference "R603")
 					(unit 1)
 				)
 			)

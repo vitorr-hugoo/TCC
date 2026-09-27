@@ -3,13 +3,13 @@
 	(generator "pcbnew")
 	(generator_version "9.0")
 	(general
-		(thickness 1.6)
+		(thickness 1.69)
 		(legacy_teardrops no)
 	)
 	(paper "A4")
 	(layers
 		(0 "F.Cu" signal)
-		(2 "B.Cu" signal)
+		(2 "B.Cu" power)
 		(9 "F.Adhes" user "F.Adhesive")
 		(11 "B.Adhes" user "B.Adhesive")
 		(13 "F.Paste" user)
@@ -34,6 +34,45 @@
 		(45 "User.4" user)
 	)
 	(setup
+		(stackup
+			(layer "F.SilkS"
+				(type "Top Silk Screen")
+			)
+			(layer "F.Paste"
+				(type "Top Solder Paste")
+			)
+			(layer "F.Mask"
+				(type "Top Solder Mask")
+				(thickness 0.01)
+			)
+			(layer "F.Cu"
+				(type "copper")
+				(thickness 0.035)
+			)
+			(layer "dielectric 1"
+				(type "core")
+				(thickness 1.6)
+				(material "FR4")
+				(epsilon_r 4.5)
+				(loss_tangent 0.02)
+			)
+			(layer "B.Cu"
+				(type "copper")
+				(thickness 0.035)
+			)
+			(layer "B.Mask"
+				(type "Bottom Solder Mask")
+				(thickness 0.01)
+			)
+			(layer "B.Paste"
+				(type "Bottom Solder Paste")
+			)
+			(layer "B.SilkS"
+				(type "Bottom Silk Screen")
+			)
+			(copper_finish "None")
+			(dielectric_constraints no)
+		)
 		(pad_to_mask_clearance 0)
 		(allow_soldermask_bridges_in_footprints no)
 		(tenting front back)
@@ -12853,7 +12892,7 @@
 				)
 			)
 		)
-		(property "Value" "AP63205WU-7"
+		(property "Value" "AP63203WU-7"
 			(at 0 2.4 0)
 			(layer "F.Fab")
 			(uuid "ee3e68ca-83bb-4158-a105-d2ddf16814ed")
@@ -12864,7 +12903,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "https://www.lcsc.com/datasheet/lcsc_datasheet_2210280930_Diodes-Incorporated-AP63205WU-7_C2071056.pdf"
+		(property "Datasheet" "https://www.diodes.com/datasheet/download/AP63200-AP63201-AP63203-AP63205.pdf"
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -12876,7 +12915,7 @@
 				)
 			)
 		)
-		(property "Description" "-40℃~+85℃@(TA) 1 1.1MHz 22uA 2A 3.8V~32V 5V Buck Built-in Fixed Overcurrent Protection、Light load efficient mode、Cycle-by-cycle current limiting、Hiccup current limiting、EMI optimization (spread spectrum) Step-down type Yes TSOT-23-6 DC-DC Converters RoHS"
+		(property "Description" "Buck sincrono fixo 3,3V; VIN 3,8-32V; 2A; 1,1MHz; TSOT-23-6; protecao contra sobrecorrente e spread-spectrum EMI; RoHS"
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -12901,7 +12940,7 @@
 				)
 			)
 		)
-		(property "MPN" "AP63205WU-7"
+		(property "MPN" "AP63203WU-7"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -12914,7 +12953,7 @@
 				)
 			)
 		)
-		(property "LCSC" "C2071056"
+		(property "LCSC" "C780769"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -12927,7 +12966,7 @@
 				)
 			)
 		)
-		(property "LCSC Part" "C2071056"
+		(property "LCSC Part" "C780769"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -12940,7 +12979,7 @@
 				)
 			)
 		)
-		(property "Rating" "5V fixos; 2A CI; VIN3.8-32V; 1.1MHz; IQtip22uA"
+		(property "Rating" "3,3V fixos; 2A CI; VIN3,8-32V; 1,1MHz; IQ tipico 22uA"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -12953,7 +12992,7 @@
 				)
 			)
 		)
-		(property "Function" "Converte VIN_MAIN para5V; EN ligado aVIN; FB direto na saida filtrada"
+		(property "Function" "Converte VIN_MAIN diretamente para +3V3; EN ligado a VIN; FB direto na saida filtrada"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -12979,7 +13018,7 @@
 				)
 			)
 		)
-		(property "Status_Ficha" "Conferido no catalogo em 2026-09-24; verificar estoque ao comprar"
+		(property "Status_Ficha" "Ficha do fabricante e catalogo LCSC conferidos em 2026-09-27; verificar estoque ao comprar"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -13018,7 +13057,7 @@
 				)
 			)
 		)
-		(property "Specification" "5V fixos; 2A CI; VIN3.8-32V; 1.1MHz; IQtip22uA"
+		(property "Specification" "3,3V fixos; 2A CI; VIN3,8-32V; 1,1MHz; IQ tipico 22uA"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -13031,7 +13070,7 @@
 				)
 			)
 		)
-		(property "Verification" "Conferido no catalogo em 2026-09-24; verificar estoque ao comprar"
+		(property "Verification" "Ficha do fabricante e catalogo LCSC conferidos em 2026-09-27; verificar estoque ao comprar"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -18316,14 +18355,14 @@
 			)
 		)
 	)
-	(footprint "Inductor_SMD:L_Sunlord_MWSA0603S"
+	(footprint "Inductor_SMD:L_APV_ANR5040"
 		(layer "F.Cu")
 		(uuid "6bb40c47-3145-4428-b03f-9b99e351200b")
 		(at 80.1 72.3)
-		(descr "Inductor, Sunlord, MWSA0603S, 7.0x6.6x2.8mm, (https://sunlordinc.com/Download.aspx?file=L1VwbG9hZEZpbGVzL1BERl9DYXQvMjAyMjExMTUxNDQ4MDU0NTQucGRm&lan=en), generated with kicad-footprint-generator gen_inductor.py")
-		(tags "mwsa")
+		(descr "Inductor, APV, ANR5040, 5.0x5.0x4.0mm, (http://en.apvind.com/public/upload/20240407/3375c395e460caa8519b4d637d9113ce.pdf), generated with kicad-footprint-generator gen_inductor.py")
+		(tags "wirewound power shielded")
 		(property "Reference" "L601"
-			(at 0 -4.25 0)
+			(at 0 -3.45 0)
 			(layer "F.SilkS")
 			(uuid "6410760f-7605-416e-a073-b03f7edefc7c")
 			(effects
@@ -18333,8 +18372,8 @@
 				)
 			)
 		)
-		(property "Value" "4.7 µH"
-			(at 0 4.25 0)
+		(property "Value" "3.9 µH"
+			(at 0 3.45 0)
 			(layer "F.Fab")
 			(uuid "d6e483f8-6dd6-4dc4-a0b8-36f45f1f6ddc")
 			(effects
@@ -18344,7 +18383,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "https://www.lcsc.com/datasheet/lcsc_datasheet_2310251550_Sunlord-MWSA0603S-4R7MT_C408447.pdf"
+		(property "Datasheet" "https://www.lcsc.com/product-detail/Power-Inductors_APV-ANR5040T3R9M_C7427132.html"
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -18356,7 +18395,7 @@
 				)
 			)
 		)
-		(property "Description" "33mΩ 4.7uH 6A 9A ±20% SMD,7x6.6mm Power Inductors RoHS"
+		(property "Description" "Indutor de potencia blindado 3,9uH ±20%; Irms 3,7A; Isat 4,2A; SMD 5x5mm; RoHS"
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -18368,7 +18407,7 @@
 				)
 			)
 		)
-		(property "Manufacturer" "Sunlord"
+		(property "Manufacturer" "APV"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -18381,7 +18420,7 @@
 				)
 			)
 		)
-		(property "MPN" "MWSA0603S-4R7MT"
+		(property "MPN" "ANR5040T3R9M"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -18394,7 +18433,7 @@
 				)
 			)
 		)
-		(property "LCSC" "C408447"
+		(property "LCSC" "C7427132"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -18407,7 +18446,7 @@
 				)
 			)
 		)
-		(property "LCSC Part" "C408447"
+		(property "LCSC Part" "C7427132"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -18420,7 +18459,7 @@
 				)
 			)
 		)
-		(property "Rating" "Isat min7.2A/tip9A; Irms min5A; DCRmax33mOhm"
+		(property "Rating" "L=3,9uH ±20%; Irms 3,7A; Isat 4,2A; indutor blindado; corpo 5x5x4mm"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -18446,7 +18485,7 @@
 				)
 			)
 		)
-		(property "Modelo 3D" "${KICAD9_3DMODEL_DIR}/Inductor_SMD.3dshapes/L_Sunlord_MWSA0603S.step"
+		(property "Modelo 3D" "${KICAD9_3DMODEL_DIR}/Inductor_SMD.3dshapes/L_APV_ANR5040.step"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -18459,7 +18498,7 @@
 				)
 			)
 		)
-		(property "Status_Ficha" "Conferido no catalogo em 2026-09-24; verificar estoque ao comprar"
+		(property "Status_Ficha" "Ficha do fabricante e catalogo LCSC conferidos em 2026-09-27; verificar estoque ao comprar"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -18498,7 +18537,7 @@
 				)
 			)
 		)
-		(property "Specification" "Isat min7.2A/tip9A; Irms min5A; DCRmax33mOhm"
+		(property "Specification" "L=3,9uH ±20%; Irms 3,7A; Isat 4,2A; indutor blindado; corpo 5x5x4mm"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -18511,7 +18550,7 @@
 				)
 			)
 		)
-		(property "Verification" "Conferido no catalogo em 2026-09-24; verificar estoque ao comprar"
+		(property "Verification" "Ficha do fabricante e catalogo LCSC conferidos em 2026-09-27; verificar estoque ao comprar"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -18543,8 +18582,8 @@
 		(sheetfile "sheets/alimentacao.kicad_sch")
 		(attr smd)
 		(fp_line
-			(start -3.61 -3.41)
-			(end 3.61 -3.41)
+			(start -2.61 -2.61)
+			(end 2.61 -2.61)
 			(stroke
 				(width 0.12)
 				(type solid)
@@ -18553,8 +18592,8 @@
 			(uuid "b8ff0a0b-fa50-4a63-98d7-897a6e1402a4")
 		)
 		(fp_line
-			(start -3.61 -2.01)
-			(end -3.61 -3.41)
+			(start -2.61 -2.36)
+			(end -2.61 -2.61)
 			(stroke
 				(width 0.12)
 				(type solid)
@@ -18563,8 +18602,8 @@
 			(uuid "c1b69b9d-47fc-4ca9-a123-ce676e185968")
 		)
 		(fp_line
-			(start -3.61 3.41)
-			(end -3.61 2.01)
+			(start -2.61 2.61)
+			(end -2.61 2.36)
 			(stroke
 				(width 0.12)
 				(type solid)
@@ -18573,8 +18612,8 @@
 			(uuid "3633cdfc-9b9e-4435-987a-c44e106247c6")
 		)
 		(fp_line
-			(start 3.61 -3.41)
-			(end 3.61 -2.01)
+			(start 2.61 -2.61)
+			(end 2.61 -2.36)
 			(stroke
 				(width 0.12)
 				(type solid)
@@ -18583,8 +18622,8 @@
 			(uuid "c05e8739-c956-4a54-9c5b-04610f133f09")
 		)
 		(fp_line
-			(start 3.61 2.01)
-			(end 3.61 3.41)
+			(start 2.61 2.36)
+			(end 2.61 2.61)
 			(stroke
 				(width 0.12)
 				(type solid)
@@ -18593,8 +18632,8 @@
 			(uuid "56b1918c-cccd-4c90-999d-bfd86eb3b780")
 		)
 		(fp_line
-			(start 3.61 3.41)
-			(end -3.61 3.41)
+			(start 2.61 2.61)
+			(end -2.61 2.61)
 			(stroke
 				(width 0.12)
 				(type solid)
@@ -18603,8 +18642,8 @@
 			(uuid "6b38b3b0-8229-409e-8163-8211417252e8")
 		)
 		(fp_line
-			(start -4.45 -2)
-			(end -3.75 -2)
+			(start -2.8 -2.35)
+			(end -2.75 -2.35)
 			(stroke
 				(width 0.05)
 				(type solid)
@@ -18613,8 +18652,8 @@
 			(uuid "95fb7b67-acc0-4d6d-9f84-c26f43aa0349")
 		)
 		(fp_line
-			(start -4.45 2)
-			(end -4.45 -2)
+			(start -2.8 2.35)
+			(end -2.8 -2.35)
 			(stroke
 				(width 0.05)
 				(type solid)
@@ -18623,8 +18662,8 @@
 			(uuid "b9d0cdf4-03f7-4108-854e-37c467743571")
 		)
 		(fp_line
-			(start -3.75 -3.55)
-			(end 3.75 -3.55)
+			(start -2.75 -2.75)
+			(end 2.75 -2.75)
 			(stroke
 				(width 0.05)
 				(type solid)
@@ -18633,8 +18672,8 @@
 			(uuid "b68e9720-60e6-4da4-a5e5-9f21bb0e90da")
 		)
 		(fp_line
-			(start -3.75 -2)
-			(end -3.75 -3.55)
+			(start -2.75 -2.35)
+			(end -2.75 -2.75)
 			(stroke
 				(width 0.05)
 				(type solid)
@@ -18643,8 +18682,8 @@
 			(uuid "d5e72e64-098f-4b18-ae01-22bf25320be7")
 		)
 		(fp_line
-			(start -3.75 2)
-			(end -4.45 2)
+			(start -2.75 2.35)
+			(end -2.8 2.35)
 			(stroke
 				(width 0.05)
 				(type solid)
@@ -18653,8 +18692,8 @@
 			(uuid "db855ce8-7d69-4ccf-966f-45f2aa6a7340")
 		)
 		(fp_line
-			(start -3.75 3.55)
-			(end -3.75 2)
+			(start -2.75 2.75)
+			(end -2.75 2.35)
 			(stroke
 				(width 0.05)
 				(type solid)
@@ -18663,8 +18702,8 @@
 			(uuid "f76d6584-4574-45ea-bd6b-c358f622e957")
 		)
 		(fp_line
-			(start 3.75 -3.55)
-			(end 3.75 -2)
+			(start 2.75 -2.75)
+			(end 2.75 -2.35)
 			(stroke
 				(width 0.05)
 				(type solid)
@@ -18673,8 +18712,8 @@
 			(uuid "7c33b85c-3ec1-4fda-a32d-dfec464d2aaa")
 		)
 		(fp_line
-			(start 3.75 -2)
-			(end 4.45 -2)
+			(start 2.75 -2.35)
+			(end 2.8 -2.35)
 			(stroke
 				(width 0.05)
 				(type solid)
@@ -18683,8 +18722,8 @@
 			(uuid "fd09f0d4-3498-409f-9ffc-a41927f04337")
 		)
 		(fp_line
-			(start 3.75 2)
-			(end 3.75 3.55)
+			(start 2.75 2.35)
+			(end 2.75 2.75)
 			(stroke
 				(width 0.05)
 				(type solid)
@@ -18693,8 +18732,8 @@
 			(uuid "a2ae01d1-11bd-4a0f-b17f-1d3c33e6b772")
 		)
 		(fp_line
-			(start 3.75 3.55)
-			(end -3.75 3.55)
+			(start 2.75 2.75)
+			(end -2.75 2.75)
 			(stroke
 				(width 0.05)
 				(type solid)
@@ -18703,8 +18742,8 @@
 			(uuid "a60e41bb-0287-4ace-a258-4f8c8d50be80")
 		)
 		(fp_line
-			(start 4.45 -2)
-			(end 4.45 2)
+			(start 2.8 -2.35)
+			(end 2.8 2.35)
 			(stroke
 				(width 0.05)
 				(type solid)
@@ -18713,8 +18752,8 @@
 			(uuid "ed62d9ab-11ca-4317-83a3-907c3962cce9")
 		)
 		(fp_line
-			(start 4.45 2)
-			(end 3.75 2)
+			(start 2.8 2.35)
+			(end 2.75 2.35)
 			(stroke
 				(width 0.05)
 				(type solid)
@@ -18723,8 +18762,8 @@
 			(uuid "17e3b64a-9f1d-47c2-a4ec-ee0ddf139f14")
 		)
 		(fp_rect
-			(start -3.5 -3.3)
-			(end 3.5 3.3)
+			(start -2.5 -2.5)
+			(end 2.5 2.5)
 			(stroke
 				(width 0.1)
 				(type solid)
@@ -18745,27 +18784,27 @@
 			)
 		)
 		(pad "1" smd roundrect
-			(at -3.025 0)
-			(size 2.35 3.5)
+			(at -1.85 0)
+			(size 1.4 4.2)
 			(layers "F.Cu" "F.Mask" "F.Paste")
-			(roundrect_rratio 0.106383)
+			(roundrect_rratio 0.178571)
 			(net 7 "Net-(U601-SW)")
 			(pinfunction "1")
 			(pintype "passive")
 			(uuid "3b7d1676-0ae7-4536-adf9-b7a6c5f008f8")
 		)
 		(pad "2" smd roundrect
-			(at 3.025 0)
-			(size 2.35 3.5)
+			(at 1.85 0)
+			(size 1.4 4.2)
 			(layers "F.Cu" "F.Mask" "F.Paste")
-			(roundrect_rratio 0.106383)
+			(roundrect_rratio 0.178571)
 			(net 9 "+5V")
 			(pinfunction "2")
 			(pintype "passive")
 			(uuid "8bc7f93e-7235-455a-9d96-6f2bb1869192")
 		)
 		(embedded_fonts no)
-		(model "${KICAD9_3DMODEL_DIR}/Inductor_SMD.3dshapes/L_Sunlord_MWSA0603S.step"
+		(model "${KICAD9_3DMODEL_DIR}/Inductor_SMD.3dshapes/L_APV_ANR5040.step"
 			(offset
 				(xyz 0 0 0)
 			)
