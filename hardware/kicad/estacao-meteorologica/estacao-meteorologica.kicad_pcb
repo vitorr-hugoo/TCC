@@ -485,7 +485,7 @@
 		(descr "Capacitor SMD 0603 (1608 Metric), square (rectangular) end terminal, IPC-7351 nominal, (Body size source: IPC-SM-782 page 76, https://www.pcb-3d.com/wordpress/wp-content/uploads/ipc-sm-782a_amendment_1_and_2.pdf), generated with kicad-footprint-generator")
 		(tags "capacitor")
 		(property "Reference" "C212"
-			(at 3.575 0 0)
+			(at 0.725 -1.6 0)
 			(layer "F.SilkS")
 			(uuid "de019b60-3bde-477d-b0df-49331882665a")
 			(effects
@@ -2418,11 +2418,11 @@
 			)
 		)
 	)
-	(footprint "TestPoint:TestPoint_Pad_D1.5mm"
+	(footprint "TestPoint:TestPoint_Pad_D1.0mm"
 		(layer "F.Cu")
 		(uuid "10326836-73cb-4ee9-a567-07f6032b81f2")
 		(at 53.3 90.59)
-		(descr "SMD pad as test Point, diameter 1.5mm")
+		(descr "SMD pad as test Point, diameter 1.0mm")
 		(tags "test point SMD pad")
 		(property "Reference" "TP301"
 			(at 0.9 2.202 0)
@@ -2622,7 +2622,7 @@
 		(attr exclude_from_pos_files exclude_from_bom)
 		(fp_circle
 			(center 0 0)
-			(end 0 0.95)
+			(end 0 0.7)
 			(stroke
 				(width 0.12)
 				(type solid)
@@ -2633,7 +2633,7 @@
 		)
 		(fp_circle
 			(center 0 0)
-			(end 1.25 0)
+			(end 1 0)
 			(stroke
 				(width 0.05)
 				(type solid)
@@ -2655,7 +2655,7 @@
 		)
 		(pad "1" smd circle
 			(at 0 0)
-			(size 1.5 1.5)
+			(size 1 1)
 			(layers "F.Cu" "F.Mask")
 			(net 10 "/INTERFACES METEOROLÓGICAS/PLUVIÔMETRO/SENS_RAIN_RAW")
 			(pinfunction "1")
@@ -5063,11 +5063,11 @@
 			)
 		)
 	)
-	(footprint "TestPoint:TestPoint_Pad_D1.5mm"
+	(footprint "TestPoint:TestPoint_Pad_D1.0mm"
 		(layer "F.Cu")
 		(uuid "1b093a67-3cc2-4033-8db6-294101e7c496")
 		(at 65.6 105.4)
-		(descr "SMD pad as test Point, diameter 1.5mm")
+		(descr "SMD pad as test Point, diameter 1.0mm")
 		(tags "test point SMD pad")
 		(property "Reference" "TP402"
 			(at 2.7 -1.898 0)
@@ -5267,7 +5267,7 @@
 		(attr exclude_from_pos_files exclude_from_bom)
 		(fp_circle
 			(center 0 0)
-			(end 0 0.95)
+			(end 0 0.7)
 			(stroke
 				(width 0.12)
 				(type solid)
@@ -5278,7 +5278,7 @@
 		)
 		(fp_circle
 			(center 0 0)
-			(end 1.25 0)
+			(end 1 0)
 			(stroke
 				(width 0.05)
 				(type solid)
@@ -5300,7 +5300,7 @@
 		)
 		(pad "1" smd circle
 			(at 0 0)
-			(size 1.5 1.5)
+			(size 1 1)
 			(layers "F.Cu" "F.Mask")
 			(net 4 "Net-(D402-COM)")
 			(pinfunction "1")
@@ -13844,6 +13844,252 @@
 			)
 		)
 	)
+	(footprint "TestPoint:TestPoint_Pad_D1.0mm"
+		(layer "F.Cu")
+		(uuid "548140ea-02ae-43ba-926c-d7229c88ffd4")
+		(at 131.4 107.1)
+		(descr "SMD pad as test Point, diameter 1.0mm")
+		(tags "test point SMD pad")
+		(property "Reference" "TP232"
+			(at 1.4 2.122 0)
+			(layer "F.Fab")
+			(uuid "79b73f3f-ea50-431c-98f9-30335cd05a66")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Value" "GND"
+			(at 0 1.75 0)
+			(layer "F.Fab")
+			(uuid "e9d8951f-3d60-4ef4-b028-4b3652f46ec7")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Datasheet" "N/A - geometria definida no footprint"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "963ae333-45e2-454e-8eb9-59ea7464d251")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Description" "Ponto de teste em cobre, pad circular de 1,0 mm; rede GND"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "06ce4442-2ec6-4d10-8677-ff369cf9cb36")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Manufacturer" "N/A"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "6a65d9b2-390a-4bcd-9c3c-73140d9dce42")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "MPN" "N/A - elemento de cobre da PCB"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "e33c3214-2d08-4cb6-9da7-0e3448d4c362")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "LCSC" "N/A"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "e6d75cd1-5330-4275-bb55-412355dbb7fe")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "LCSC Part" "N/A"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "7df5cc7f-9523-47e7-b649-69e29db1ef0d")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Rating" "Copper pad; no purchased component"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "903f0e29-0afa-4cfa-9c09-51b215c5be9e")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Function" "Ponto de teste do sinal GND"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "22fd1322-0120-47ca-aceb-06f27e00b823")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Modelo 3D" "N/A - geometria de cobre, sem corpo"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "a86bdb71-27b6-42c2-97e2-240c76017beb")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "CREATOR" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "58a1065e-3cca-4d10-b5c8-9e3e73f8d98f")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "VERIFIER" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "6d71f388-b5ae-4f84-a145-0007494bfd5a")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Specification" "Copper pad; no purchased component"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "4a7563a5-ec54-451b-83dd-5a31bf51e504")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Assembly" "PCB — sem compra"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "e9f8462b-4280-4ce0-9529-50e23f51642c")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property ki_fp_filters "Pin* Test*")
+		(path "/0c305a6e-f9cd-49a1-b146-c2956e5469b6/34d78a87-9b09-4795-98a5-fe6ea1a123f9/c8e01903-62c0-454c-9b79-ebce8399b220")
+		(sheetname "SENSOR DHT22")
+		(sheetfile "sheets/Dht22.kicad_sch")
+		(attr exclude_from_pos_files exclude_from_bom)
+		(fp_circle
+			(center 0 0)
+			(end 0 0.7)
+			(stroke
+				(width 0.12)
+				(type solid)
+			)
+			(fill no)
+			(layer "F.SilkS")
+			(uuid "504374f3-4db7-412d-9234-36d29957e8d5")
+		)
+		(fp_circle
+			(center 0 0)
+			(end 1 0)
+			(stroke
+				(width 0.05)
+				(type solid)
+			)
+			(fill no)
+			(layer "F.CrtYd")
+			(uuid "6c72f044-aa49-4007-84b0-593297dd8b33")
+		)
+		(fp_text user "${REFERENCE}"
+			(at 1.4 2.12 0)
+			(layer "F.Fab")
+			(uuid "c4129747-70a9-4f27-87d9-da33f541137b")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(pad "1" smd circle
+			(at 0 0)
+			(size 1 1)
+			(layers "F.Cu" "F.Mask")
+			(net 2 "GND")
+			(pinfunction "1")
+			(pintype "passive")
+			(uuid "21ac1173-4be5-40fe-b193-416ef9298c15")
+		)
+		(embedded_fonts no)
+	)
 	(footprint "Capacitor_SMD:C_0603_1608Metric"
 		(layer "F.Cu")
 		(uuid "57b0a2fe-54f5-4370-a5dd-46d8a897968f")
@@ -14582,11 +14828,11 @@
 			)
 		)
 	)
-	(footprint "TestPoint:TestPoint_Pad_D1.5mm"
+	(footprint "TestPoint:TestPoint_Pad_D1.0mm"
 		(layer "F.Cu")
 		(uuid "5831e050-138c-41fe-9e2c-2eefd1fdcd30")
 		(at 57.2 110.5)
-		(descr "SMD pad as test Point, diameter 1.5mm")
+		(descr "SMD pad as test Point, diameter 1.0mm")
 		(tags "test point SMD pad")
 		(property "Reference" "TP401"
 			(at 1.4 2.122 0)
@@ -14786,7 +15032,7 @@
 		(attr exclude_from_pos_files exclude_from_bom)
 		(fp_circle
 			(center 0 0)
-			(end 0 0.95)
+			(end 0 0.7)
 			(stroke
 				(width 0.12)
 				(type solid)
@@ -14797,7 +15043,7 @@
 		)
 		(fp_circle
 			(center 0 0)
-			(end 1.25 0)
+			(end 1 0)
 			(stroke
 				(width 0.05)
 				(type solid)
@@ -14819,7 +15065,7 @@
 		)
 		(pad "1" smd circle
 			(at 0 0)
-			(size 1.5 1.5)
+			(size 1 1)
 			(layers "F.Cu" "F.Mask")
 			(net 108 "SENS_WIND_SPEED_RAW")
 			(pinfunction "1")
@@ -15786,11 +16032,11 @@
 			)
 		)
 	)
-	(footprint "TestPoint:TestPoint_Pad_D1.5mm"
+	(footprint "TestPoint:TestPoint_Pad_D1.0mm"
 		(layer "F.Cu")
 		(uuid "6126c4c0-e653-4061-a4a0-a75b29a6d73e")
 		(at 61.4 110.1 -90)
-		(descr "SMD pad as test Point, diameter 1.5mm")
+		(descr "SMD pad as test Point, diameter 1.0mm")
 		(tags "test point SMD pad")
 		(property "Reference" "TP503"
 			(at 0.8 -2.3 270)
@@ -15990,7 +16236,7 @@
 		(attr exclude_from_pos_files exclude_from_bom)
 		(fp_circle
 			(center 0 0)
-			(end 0 0.95)
+			(end 0 0.7)
 			(stroke
 				(width 0.12)
 				(type solid)
@@ -16001,7 +16247,7 @@
 		)
 		(fp_circle
 			(center 0 0)
-			(end 1.25 0)
+			(end 1 0)
 			(stroke
 				(width 0.05)
 				(type solid)
@@ -16012,7 +16258,7 @@
 		)
 		(pad "1" smd circle
 			(at 0 0 270)
-			(size 1.5 1.5)
+			(size 1 1)
 			(layers "F.Cu" "F.Mask")
 			(net 37 "AVREF_SENSOR")
 			(pinfunction "1")
@@ -20382,11 +20628,257 @@
 			)
 		)
 	)
-	(footprint "TestPoint:TestPoint_Pad_D1.5mm"
+	(footprint "TestPoint:TestPoint_Pad_D1.0mm"
+		(layer "F.Cu")
+		(uuid "762c80f6-4aa3-45d6-91b3-39406af564e5")
+		(at 126.4 98.5)
+		(descr "SMD pad as test Point, diameter 1.0mm")
+		(tags "test point SMD pad")
+		(property "Reference" "TP231"
+			(at 1.4 2.122 0)
+			(layer "F.Fab")
+			(uuid "c79b43d8-06d7-41dc-b08d-8134b89b6e16")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Value" "DHT22_DATA"
+			(at 0 1.75 0)
+			(layer "F.Fab")
+			(uuid "e9f3418e-1bd6-403e-8561-3165b7b14b44")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Datasheet" "N/A - geometria definida no footprint"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "301422cb-4ea3-46f7-8193-869317e21aa5")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Description" "Ponto de teste em cobre, pad circular de 1,0 mm; rede DHT22_DATA"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "bb00ad06-3bcf-491c-8db0-4255f120e686")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Manufacturer" "N/A"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "f6d98409-6585-4126-8564-4afca3bb2645")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "MPN" "N/A - elemento de cobre da PCB"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "c821d91b-a9f4-4a4a-a09f-9293424c0362")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "LCSC" "N/A"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "9d579b18-bc31-43ca-b2fe-57c9b3a7ac5f")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "LCSC Part" "N/A"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "ae602bae-43ac-4639-bfa0-08ebd2141d3f")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Rating" "Copper pad; no purchased component"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "70a4db40-121d-4a58-8061-841eada4420b")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Function" "Ponto de teste do sinal DHT22_DATA"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "7e09df17-0569-4ce8-8048-ffb4bed663b7")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Modelo 3D" "N/A - geometria de cobre, sem corpo"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "6b22278e-9007-46ed-b02f-ab2d72236067")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "CREATOR" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "34cd8228-d907-4a84-a78f-76e7338eb831")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "VERIFIER" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "f62f68c7-0431-4cd1-b793-d7ed61f1efc8")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Specification" "Copper pad; no purchased component"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "be880517-200e-48fc-a19a-787c32d5a736")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Assembly" "PCB — sem compra"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "539fb2ef-2f42-43fa-8fcb-122c216af3b0")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property ki_fp_filters "Pin* Test*")
+		(path "/0c305a6e-f9cd-49a1-b146-c2956e5469b6/34d78a87-9b09-4795-98a5-fe6ea1a123f9/ea16e9d5-f243-4eac-8c9a-e748fa79f2f8")
+		(sheetname "SENSOR DHT22")
+		(sheetfile "sheets/Dht22.kicad_sch")
+		(attr exclude_from_pos_files exclude_from_bom)
+		(fp_circle
+			(center 0 0)
+			(end 0 0.7)
+			(stroke
+				(width 0.12)
+				(type solid)
+			)
+			(fill no)
+			(layer "F.SilkS")
+			(uuid "d6998f98-677c-4897-af8b-17d080ce6c3a")
+		)
+		(fp_circle
+			(center 0 0)
+			(end 1 0)
+			(stroke
+				(width 0.05)
+				(type solid)
+			)
+			(fill no)
+			(layer "F.CrtYd")
+			(uuid "5e9c2d3f-97ef-4eb6-9681-7079939ecfb7")
+		)
+		(fp_text user "${REFERENCE}"
+			(at 1.4 2.12 0)
+			(layer "F.Fab")
+			(uuid "a5120048-4054-4241-a7f4-edbb7944c06f")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(pad "1" smd circle
+			(at 0 0)
+			(size 1 1)
+			(layers "F.Cu" "F.Mask")
+			(net 35 "/MCU E DEPURAÇÃO/DHT22_DATA")
+			(pinfunction "1")
+			(pintype "passive")
+			(uuid "dfd5a320-38c7-4e4c-bd45-d484939f2ffd")
+		)
+		(embedded_fonts no)
+	)
+	(footprint "TestPoint:TestPoint_Pad_D1.0mm"
 		(layer "F.Cu")
 		(uuid "7691e1d2-dd17-4e8b-9aa0-4e45860a23a7")
 		(at 61 79.29)
-		(descr "SMD pad as test Point, diameter 1.5mm")
+		(descr "SMD pad as test Point, diameter 1.0mm")
 		(tags "test point SMD pad")
 		(property "Reference" "TP302"
 			(at 2.5 -1.898 0)
@@ -20586,7 +21078,7 @@
 		(attr exclude_from_pos_files exclude_from_bom)
 		(fp_circle
 			(center 0 0)
-			(end 0 0.95)
+			(end 0 0.7)
 			(stroke
 				(width 0.12)
 				(type solid)
@@ -20597,7 +21089,7 @@
 		)
 		(fp_circle
 			(center 0 0)
-			(end 1.25 0)
+			(end 1 0)
 			(stroke
 				(width 0.05)
 				(type solid)
@@ -20619,7 +21111,7 @@
 		)
 		(pad "1" smd circle
 			(at 0 0)
-			(size 1.5 1.5)
+			(size 1 1)
 			(layers "F.Cu" "F.Mask")
 			(net 3 "Net-(D302-COM)")
 			(pinfunction "1")
@@ -20628,11 +21120,257 @@
 		)
 		(embedded_fonts no)
 	)
-	(footprint "TestPoint:TestPoint_Pad_D1.5mm"
+	(footprint "TestPoint:TestPoint_Pad_D1.0mm"
+		(layer "F.Cu")
+		(uuid "7ad8b953-0434-455c-8d5e-2c27bdb3953d")
+		(at 118.7 63.7)
+		(descr "SMD pad as test Point, diameter 1.0mm")
+		(tags "test point SMD pad")
+		(property "Reference" "TP222"
+			(at 1.4 2.122 0)
+			(layer "F.Fab")
+			(uuid "ea282685-6b69-435d-aa63-324d9173799e")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Value" "BH_I2C3_SDA"
+			(at 0 1.75 0)
+			(layer "F.Fab")
+			(uuid "e07da26f-53a2-43b0-8205-48b253035b17")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Datasheet" "N/A - geometria definida no footprint"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "ffd0708b-9b6e-4f69-a0c0-3fcd28a920f1")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Description" "Ponto de teste em cobre, pad circular de 1,0 mm; rede BH_I2C3_SDA"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "67847dce-bbf6-4bc3-a1d2-7c3de5b058ce")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Manufacturer" "N/A"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "16c119f5-1f92-418b-8eaf-1596a7589a81")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "MPN" "N/A - elemento de cobre da PCB"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "e8dcf25e-370d-4144-9fe0-12610ccafd65")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "LCSC" "N/A"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "996907db-5e48-4ec0-b4ad-956e715a756d")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "LCSC Part" "N/A"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "88d940b1-d39c-488a-9d4c-4488f9262b25")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Rating" "Copper pad; no purchased component"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "921d32f8-0c8c-416c-a69e-487d6daa9963")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Function" "Ponto de teste do sinal BH_I2C3_SDA"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "4425ed7d-5633-47d2-9dd8-c7311f86c64a")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Modelo 3D" "N/A - geometria de cobre, sem corpo"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "a5b1efaa-aa24-4fe4-901b-03d8f2824a27")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "CREATOR" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "af21d91b-278e-428e-b0f8-d8aa9e551cca")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "VERIFIER" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "3ec4421f-ec3f-4358-9bde-8301d1a18f0e")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Specification" "Copper pad; no purchased component"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "abf1efb9-5d33-4cc5-85c5-d70d4e26760a")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Assembly" "PCB — sem compra"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "fcda9d1c-d948-4cd6-b024-22706347fdc9")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property ki_fp_filters "Pin* Test*")
+		(path "/0c305a6e-f9cd-49a1-b146-c2956e5469b6/ee5e162e-fef6-4e44-a551-c13cb2903f32/13d0e5a5-ca31-4984-b436-986c6814c814")
+		(sheetname "BH1750_INTERFACE")
+		(sheetfile "sheets/bh1750_interface.kicad_sch")
+		(attr exclude_from_pos_files exclude_from_bom)
+		(fp_circle
+			(center 0 0)
+			(end 0 0.7)
+			(stroke
+				(width 0.12)
+				(type solid)
+			)
+			(fill no)
+			(layer "F.SilkS")
+			(uuid "1096cc9a-36af-4260-8f58-5f2bd067716d")
+		)
+		(fp_circle
+			(center 0 0)
+			(end 1 0)
+			(stroke
+				(width 0.05)
+				(type solid)
+			)
+			(fill no)
+			(layer "F.CrtYd")
+			(uuid "6fc14864-e5c8-4e71-983e-f85af95fa2da")
+		)
+		(fp_text user "${REFERENCE}"
+			(at 1.4 2.12 0)
+			(layer "F.Fab")
+			(uuid "4f40fa99-7da2-4ffc-aa38-71de543128eb")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(pad "1" smd circle
+			(at 0 0)
+			(size 1 1)
+			(layers "F.Cu" "F.Mask")
+			(net 47 "BH_I2C3_SDA")
+			(pinfunction "1")
+			(pintype "passive")
+			(uuid "72c9a45c-3365-49c8-bf1e-0c665d17a6a9")
+		)
+		(embedded_fonts no)
+	)
+	(footprint "TestPoint:TestPoint_Pad_D1.0mm"
 		(layer "F.Cu")
 		(uuid "7ae57f41-e046-4aeb-95dc-95196a114f46")
 		(at 50.3 111 180)
-		(descr "SMD pad as test Point, diameter 1.5mm")
+		(descr "SMD pad as test Point, diameter 1.0mm")
 		(tags "test point SMD pad")
 		(property "Reference" "TP501"
 			(at 3.9 0.3 0)
@@ -20832,7 +21570,7 @@
 		(attr exclude_from_pos_files exclude_from_bom)
 		(fp_circle
 			(center 0 0)
-			(end 0 0.95)
+			(end 0 0.7)
 			(stroke
 				(width 0.12)
 				(type solid)
@@ -20843,7 +21581,7 @@
 		)
 		(fp_circle
 			(center 0 0)
-			(end 1.25 0)
+			(end 1 0)
 			(stroke
 				(width 0.05)
 				(type solid)
@@ -20865,7 +21603,7 @@
 		)
 		(pad "1" smd circle
 			(at 0 0 180)
-			(size 1.5 1.5)
+			(size 1 1)
 			(layers "F.Cu" "F.Mask")
 			(net 106 "Net-(D501-K)")
 			(pinfunction "1")
@@ -23340,11 +24078,11 @@
 			)
 		)
 	)
-	(footprint "TestPoint:TestPoint_Pad_D1.5mm"
+	(footprint "TestPoint:TestPoint_Pad_D1.0mm"
 		(layer "F.Cu")
 		(uuid "8ba4f97c-14f6-4b15-a5c5-2ccd96b6a2f2")
 		(at 63.2 87.79 180)
-		(descr "SMD pad as test Point, diameter 1.5mm")
+		(descr "SMD pad as test Point, diameter 1.0mm")
 		(tags "test point SMD pad")
 		(property "Reference" "TP303"
 			(at 0.4 -2.81 0)
@@ -23544,7 +24282,7 @@
 		(attr exclude_from_pos_files exclude_from_bom)
 		(fp_circle
 			(center 0 0)
-			(end 0 0.95)
+			(end 0 0.7)
 			(stroke
 				(width 0.12)
 				(type solid)
@@ -23555,7 +24293,7 @@
 		)
 		(fp_circle
 			(center 0 0)
-			(end 1.25 0)
+			(end 1 0)
 			(stroke
 				(width 0.05)
 				(type solid)
@@ -23577,12 +24315,258 @@
 		)
 		(pad "1" smd circle
 			(at 0 0 180)
-			(size 1.5 1.5)
+			(size 1 1)
 			(layers "F.Cu" "F.Mask")
 			(net 39 "/INTERFACES METEOROLÓGICAS/RAIN_PULSE")
 			(pinfunction "1")
 			(pintype "passive")
 			(uuid "bca24509-3dcf-4708-8840-b75450ee73ef")
+		)
+		(embedded_fonts no)
+	)
+	(footprint "TestPoint:TestPoint_Pad_D1.0mm"
+		(layer "F.Cu")
+		(uuid "8d8a5148-d167-447e-8561-1f829a642587")
+		(at 116.6 60)
+		(descr "SMD pad as test Point, diameter 1.0mm")
+		(tags "test point SMD pad")
+		(property "Reference" "TP223"
+			(at 1.4 2.122 0)
+			(layer "F.Fab")
+			(uuid "1da69cfd-0e70-46ce-ae53-9fbc3930b1a4")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Value" "GND"
+			(at 0 1.75 0)
+			(layer "F.Fab")
+			(uuid "042099ab-903f-46d3-8d5c-cb0a704a165b")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Datasheet" "N/A - geometria definida no footprint"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "08cd8f2e-d57f-4cee-94fb-e2a3973c6656")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Description" "Ponto de teste em cobre, pad circular de 1,0 mm; rede GND"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "2722f5c2-6bb4-4e43-b9f2-d35a107e6bf6")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Manufacturer" "N/A"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "12bad35d-714b-462f-987a-1264d3afe48d")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "MPN" "N/A - elemento de cobre da PCB"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "f6c94253-86db-4d4d-8af5-b679cab0bc83")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "LCSC" "N/A"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "52c042ad-da1c-461d-a600-3d7a8bf6d60f")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "LCSC Part" "N/A"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "a4404806-de97-4d1b-bdf4-5212c45ecd79")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Rating" "Copper pad; no purchased component"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "5cd78c9e-a86b-4730-ba0c-eeb9442337cb")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Function" "Ponto de teste do sinal GND"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "e23d4ffb-2141-4429-afed-9141a0a985ad")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Modelo 3D" "N/A - geometria de cobre, sem corpo"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "835a8199-52a8-4613-a373-4a6504acb660")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "CREATOR" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "b143ec53-5c1f-4b4e-8a63-c7e5d7cd5855")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "VERIFIER" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "97015f55-17b9-44b1-973d-2e8bf327a262")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Specification" "Copper pad; no purchased component"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "6112027d-417e-4df9-8a91-2553145295a4")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Assembly" "PCB — sem compra"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "451e523d-0afd-4504-8817-4e0fd417ed95")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property ki_fp_filters "Pin* Test*")
+		(path "/0c305a6e-f9cd-49a1-b146-c2956e5469b6/ee5e162e-fef6-4e44-a551-c13cb2903f32/d50dc1d8-cfd5-4e49-8ff4-0d251f548784")
+		(sheetname "BH1750_INTERFACE")
+		(sheetfile "sheets/bh1750_interface.kicad_sch")
+		(attr exclude_from_pos_files exclude_from_bom)
+		(fp_circle
+			(center 0 0)
+			(end 0 0.7)
+			(stroke
+				(width 0.12)
+				(type solid)
+			)
+			(fill no)
+			(layer "F.SilkS")
+			(uuid "e148ddb9-6b97-4a50-92d7-bce937c2c142")
+		)
+		(fp_circle
+			(center 0 0)
+			(end 1 0)
+			(stroke
+				(width 0.05)
+				(type solid)
+			)
+			(fill no)
+			(layer "F.CrtYd")
+			(uuid "f271428d-0438-4514-824d-094ff33f859d")
+		)
+		(fp_text user "${REFERENCE}"
+			(at 1.4 2.12 0)
+			(layer "F.Fab")
+			(uuid "6eac0542-c3d5-4c73-9a94-a259e6d3becb")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(pad "1" smd circle
+			(at 0 0)
+			(size 1 1)
+			(layers "F.Cu" "F.Mask")
+			(net 2 "GND")
+			(pinfunction "1")
+			(pintype "passive")
+			(uuid "512d0900-22c3-405e-83bd-555010e326bc")
 		)
 		(embedded_fonts no)
 	)
@@ -29514,11 +30498,11 @@
 			)
 		)
 	)
-	(footprint "TestPoint:TestPoint_Pad_D1.5mm"
+	(footprint "TestPoint:TestPoint_Pad_D1.0mm"
 		(layer "F.Cu")
 		(uuid "9d7ec1ea-0cc0-41ae-a8b2-571eeab48056")
 		(at 61.3 96 180)
-		(descr "SMD pad as test Point, diameter 1.5mm")
+		(descr "SMD pad as test Point, diameter 1.0mm")
 		(tags "test point SMD pad")
 		(property "Reference" "TP502"
 			(at -2 -0.6 90)
@@ -29718,7 +30702,7 @@
 		(attr exclude_from_pos_files exclude_from_bom)
 		(fp_circle
 			(center 0 0)
-			(end 0 0.95)
+			(end 0 0.7)
 			(stroke
 				(width 0.12)
 				(type solid)
@@ -29729,7 +30713,7 @@
 		)
 		(fp_circle
 			(center 0 0)
-			(end 1.25 0)
+			(end 1 0)
 			(stroke
 				(width 0.05)
 				(type solid)
@@ -29740,7 +30724,7 @@
 		)
 		(pad "1" smd circle
 			(at 0 0 180)
-			(size 1.5 1.5)
+			(size 1 1)
 			(layers "F.Cu" "F.Mask")
 			(net 5 "/INTERFACES METEOROLÓGICAS/WIND_DIR_ADC")
 			(pinfunction "1")
@@ -33715,6 +34699,252 @@
 			)
 		)
 	)
+	(footprint "TestPoint:TestPoint_Pad_D1.0mm"
+		(layer "F.Cu")
+		(uuid "ad83520e-4532-4444-a111-9b5db4655303")
+		(at 123.4 65.4)
+		(descr "SMD pad as test Point, diameter 1.0mm")
+		(tags "test point SMD pad")
+		(property "Reference" "TP212"
+			(at 1.4 2.122 0)
+			(layer "F.Fab")
+			(uuid "f99d3b5c-3142-45ef-af5e-f65907e3e068")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Value" "I2C1_SDA"
+			(at 0 1.75 0)
+			(layer "F.Fab")
+			(uuid "0453681d-e14f-4a3e-885d-07c5bb338ae5")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Datasheet" "N/A - geometria definida no footprint"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "7c4761cd-ac14-4737-afb7-9636be9b8ba8")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Description" "Ponto de teste em cobre, pad circular de 1,0 mm; rede I2C1_SDA"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "d8c82122-97b5-4651-ae33-d0e3fb351ecc")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Manufacturer" "N/A"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "573e7091-bfab-4344-b26b-5af1009f88ee")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "MPN" "N/A - elemento de cobre da PCB"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "058b0cb3-6bc2-43ec-b94b-5df4c922a66a")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "LCSC" "N/A"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "32c2ad4a-8d12-468b-996e-ae4c181002d0")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "LCSC Part" "N/A"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "65d2e26e-40bb-44f1-923b-662b427f9bde")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Rating" "Copper pad; no purchased component"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "d9ee788b-6f2f-44d7-9b36-3fb0528b61d2")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Function" "Ponto de teste do sinal I2C1_SDA"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "a9c46b6e-e13f-4522-952f-3195e228fa41")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Modelo 3D" "N/A - geometria de cobre, sem corpo"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "e1872333-c9ea-48c6-bf06-b4beefce86a6")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "CREATOR" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "1980674d-3fe1-4ee2-bec1-71ddbb94eeba")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "VERIFIER" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "0b2f1b4d-7e4d-41fe-816a-8c15ac446b45")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Specification" "Copper pad; no purchased component"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "24bf06fa-5ffb-48c4-8b8e-9561c4ae3dd6")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Assembly" "PCB — sem compra"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "79d47cea-bc04-4013-b577-92c5a52d96c8")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property ki_fp_filters "Pin* Test*")
+		(path "/0c305a6e-f9cd-49a1-b146-c2956e5469b6/0abc4084-0cd9-43a4-88f9-87e0e6566acc/f4ff5cd5-d5df-4e49-963b-252fae4f529a")
+		(sheetname "SENSOR BMP280")
+		(sheetfile "sheets/bmp280.kicad_sch")
+		(attr exclude_from_pos_files exclude_from_bom)
+		(fp_circle
+			(center 0 0)
+			(end 0 0.7)
+			(stroke
+				(width 0.12)
+				(type solid)
+			)
+			(fill no)
+			(layer "F.SilkS")
+			(uuid "fb107815-cb63-4f7f-8f28-2028c0652855")
+		)
+		(fp_circle
+			(center 0 0)
+			(end 1 0)
+			(stroke
+				(width 0.05)
+				(type solid)
+			)
+			(fill no)
+			(layer "F.CrtYd")
+			(uuid "7b943989-cc89-41fe-979e-8d669d2a9a59")
+		)
+		(fp_text user "${REFERENCE}"
+			(at 1.4 2.12 0)
+			(layer "F.Fab")
+			(uuid "017c73bc-f84c-4a20-bbe8-a78380765891")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(pad "1" smd circle
+			(at 0 0)
+			(size 1 1)
+			(layers "F.Cu" "F.Mask")
+			(net 44 "/MCU E DEPURAÇÃO/I2C1_SDA")
+			(pinfunction "1")
+			(pintype "passive")
+			(uuid "5ce4e500-5ea9-4397-ae81-37e136683c35")
+		)
+		(embedded_fonts no)
+	)
 	(footprint "Capacitor_SMD:C_0603_1608Metric"
 		(layer "F.Cu")
 		(uuid "aff41212-256f-459a-9e0b-e44537e64318")
@@ -34082,6 +35312,252 @@
 				(xyz 0 0 0)
 			)
 		)
+	)
+	(footprint "TestPoint:TestPoint_Pad_D1.0mm"
+		(layer "F.Cu")
+		(uuid "affaf58d-b89e-4d2f-9ec8-981c4555388b")
+		(at 127.5 58.5)
+		(descr "SMD pad as test Point, diameter 1.0mm")
+		(tags "test point SMD pad")
+		(property "Reference" "TP213"
+			(at 1.4 2.122 0)
+			(layer "F.Fab")
+			(uuid "ed0515d2-3622-403a-9d2e-f61178608636")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Value" "GND"
+			(at 0 1.75 0)
+			(layer "F.Fab")
+			(uuid "69e442fc-7601-46a7-a7f9-aae4e6dbe2e8")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Datasheet" "N/A - geometria definida no footprint"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "b22b13c2-4bce-4d36-8985-e202ac774e7e")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Description" "Ponto de teste em cobre, pad circular de 1,0 mm; rede GND"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "731d2f4b-f436-4850-b036-25bd67e6572b")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Manufacturer" "N/A"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "4e82af3e-db70-4cd0-bf76-f0ad517792be")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "MPN" "N/A - elemento de cobre da PCB"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "b9fe504a-fe24-4aca-ac7f-8d8af43e0979")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "LCSC" "N/A"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "96e39f74-40b8-4308-88ff-3bc0e4c9ab0f")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "LCSC Part" "N/A"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "0cf3a412-9991-4673-b164-c425a75b0a85")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Rating" "Copper pad; no purchased component"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "acd6cf91-75b0-464e-84e8-3b5958f5e957")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Function" "Ponto de teste do sinal GND"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "66f48def-6281-40d3-a6ce-ad4e2f454b40")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Modelo 3D" "N/A - geometria de cobre, sem corpo"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "58b96ac7-3558-4025-b09d-29d0f36abd2c")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "CREATOR" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "fa147039-f80c-47fc-94be-b84a6cc41f6a")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "VERIFIER" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "50e130f4-0474-4383-9a04-19a94b4ed8f8")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Specification" "Copper pad; no purchased component"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "1a3a5249-fd07-4b9c-b187-7f871709698d")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Assembly" "PCB — sem compra"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "a2794a80-9569-4320-9fea-a9ee87e07a79")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property ki_fp_filters "Pin* Test*")
+		(path "/0c305a6e-f9cd-49a1-b146-c2956e5469b6/0abc4084-0cd9-43a4-88f9-87e0e6566acc/73d2912c-0832-4ae6-a333-3e67c946128c")
+		(sheetname "SENSOR BMP280")
+		(sheetfile "sheets/bmp280.kicad_sch")
+		(attr exclude_from_pos_files exclude_from_bom)
+		(fp_circle
+			(center 0 0)
+			(end 0 0.7)
+			(stroke
+				(width 0.12)
+				(type solid)
+			)
+			(fill no)
+			(layer "F.SilkS")
+			(uuid "4533c0b6-76a2-451a-883a-b5dff6120425")
+		)
+		(fp_circle
+			(center 0 0)
+			(end 1 0)
+			(stroke
+				(width 0.05)
+				(type solid)
+			)
+			(fill no)
+			(layer "F.CrtYd")
+			(uuid "44312de4-6b89-4c61-9481-649bd242cc96")
+		)
+		(fp_text user "${REFERENCE}"
+			(at 1.4 2.12 0)
+			(layer "F.Fab")
+			(uuid "45e11136-afcf-4a1e-b143-8a5b247ca831")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(pad "1" smd circle
+			(at 0 0)
+			(size 1 1)
+			(layers "F.Cu" "F.Mask")
+			(net 2 "GND")
+			(pinfunction "1")
+			(pintype "passive")
+			(uuid "5e533f9b-8f9f-4d73-bef1-647ac21558c1")
+		)
+		(embedded_fonts no)
 	)
 	(footprint "Resistor_SMD:R_0603_1608Metric"
 		(layer "F.Cu")
@@ -40753,6 +42229,252 @@
 			)
 		)
 	)
+	(footprint "TestPoint:TestPoint_Pad_D1.0mm"
+		(layer "F.Cu")
+		(uuid "cf84753d-fdeb-44d4-98ff-dc973723eb4a")
+		(at 126.2 65.6)
+		(descr "SMD pad as test Point, diameter 1.0mm")
+		(tags "test point SMD pad")
+		(property "Reference" "TP211"
+			(at 1.4 2.122 0)
+			(layer "F.Fab")
+			(uuid "1fff2c77-a700-44ce-86e1-8434932d99e0")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Value" "I2C1_SCL"
+			(at 0 1.75 0)
+			(layer "F.Fab")
+			(uuid "739959e3-ec04-48c4-b106-7633d30eac1f")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Datasheet" "N/A - geometria definida no footprint"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "c1adb01c-640c-4d27-bf76-e44ae494dc66")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Description" "Ponto de teste em cobre, pad circular de 1,0 mm; rede I2C1_SCL"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "821dc918-e11b-4eb7-a929-cc9ab054f849")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Manufacturer" "N/A"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "6ffb6a99-c10e-4a6d-8957-603cc2dbe4e2")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "MPN" "N/A - elemento de cobre da PCB"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "2d38613b-28c0-4ae8-a338-89f3c149f4f7")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "LCSC" "N/A"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "4581c097-1621-4da0-82c4-87e7f223f64e")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "LCSC Part" "N/A"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "c4de4add-ced6-4681-81df-427c14e8a763")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Rating" "Copper pad; no purchased component"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "f58db9d4-c78c-417e-9b43-38f9c53928cd")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Function" "Ponto de teste do sinal I2C1_SCL"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "8dd533ee-ab1a-47ac-98a1-e20c5624d07b")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Modelo 3D" "N/A - geometria de cobre, sem corpo"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "83414c81-3d9e-4dad-acc7-a21b3c8dca50")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "CREATOR" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "a2fdd602-0b41-4f81-b888-20425f0cab6f")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "VERIFIER" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "00a9a556-cb89-4551-b50e-23bd687c7923")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Specification" "Copper pad; no purchased component"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "1220ffd9-f98e-47ff-95f9-b5f24cc149ca")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Assembly" "PCB — sem compra"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "9caae0fd-f5de-469b-ae39-ac6d40b1498e")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property ki_fp_filters "Pin* Test*")
+		(path "/0c305a6e-f9cd-49a1-b146-c2956e5469b6/0abc4084-0cd9-43a4-88f9-87e0e6566acc/0e309041-f1dd-4baa-8648-839cb88d72f4")
+		(sheetname "SENSOR BMP280")
+		(sheetfile "sheets/bmp280.kicad_sch")
+		(attr exclude_from_pos_files exclude_from_bom)
+		(fp_circle
+			(center 0 0)
+			(end 0 0.7)
+			(stroke
+				(width 0.12)
+				(type solid)
+			)
+			(fill no)
+			(layer "F.SilkS")
+			(uuid "58f3eea2-6e31-4817-b655-25977230dd50")
+		)
+		(fp_circle
+			(center 0 0)
+			(end 1 0)
+			(stroke
+				(width 0.05)
+				(type solid)
+			)
+			(fill no)
+			(layer "F.CrtYd")
+			(uuid "b5d673d0-9b7a-47dd-800b-5f6068ba841c")
+		)
+		(fp_text user "${REFERENCE}"
+			(at 1.4 2.12 0)
+			(layer "F.Fab")
+			(uuid "91df7962-5be2-4c44-b18a-ac093b98561f")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(pad "1" smd circle
+			(at 0 0)
+			(size 1 1)
+			(layers "F.Cu" "F.Mask")
+			(net 68 "/MCU E DEPURAÇÃO/I2C1_SCL")
+			(pinfunction "1")
+			(pintype "passive")
+			(uuid "c36e340d-6756-4c74-b05f-d93bde80dbb7")
+		)
+		(embedded_fonts no)
+	)
 	(footprint "Resistor_SMD:R_0603_1608Metric"
 		(layer "F.Cu")
 		(uuid "d12faae6-2e9f-49cf-acd4-1dc3861964cd")
@@ -44832,11 +46554,11 @@
 			)
 		)
 	)
-	(footprint "TestPoint:TestPoint_Pad_D1.5mm"
+	(footprint "TestPoint:TestPoint_Pad_D1.0mm"
 		(layer "F.Cu")
 		(uuid "e5402d8c-4001-4e0b-9bff-6063d5f3f4c6")
 		(at 67 98.9)
-		(descr "SMD pad as test Point, diameter 1.5mm")
+		(descr "SMD pad as test Point, diameter 1.0mm")
 		(tags "test point SMD pad")
 		(property "Reference" "TP403"
 			(at 1.002 -3.8 90)
@@ -45036,7 +46758,7 @@
 		(attr exclude_from_pos_files exclude_from_bom)
 		(fp_circle
 			(center 0 0)
-			(end 0 0.95)
+			(end 0 0.7)
 			(stroke
 				(width 0.12)
 				(type solid)
@@ -45047,7 +46769,7 @@
 		)
 		(fp_circle
 			(center 0 0)
-			(end 1.25 0)
+			(end 1 0)
 			(stroke
 				(width 0.05)
 				(type solid)
@@ -45069,7 +46791,7 @@
 		)
 		(pad "1" smd circle
 			(at 0 0)
-			(size 1.5 1.5)
+			(size 1 1)
 			(layers "F.Cu" "F.Mask")
 			(net 40 "/INTERFACES METEOROLÓGICAS/WIND_SPEED_PULSE")
 			(pinfunction "1")
@@ -45678,6 +47400,252 @@
 				(xyz 0 0 0)
 			)
 		)
+	)
+	(footprint "TestPoint:TestPoint_Pad_D1.0mm"
+		(layer "F.Cu")
+		(uuid "f3eb16ad-1a7c-4998-b789-207bb92a3ac5")
+		(at 115.9 64.1)
+		(descr "SMD pad as test Point, diameter 1.0mm")
+		(tags "test point SMD pad")
+		(property "Reference" "TP221"
+			(at 1.4 2.122 0)
+			(layer "F.Fab")
+			(uuid "46c78259-254d-453e-a163-7b870ebf0f06")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Value" "BH_I2C3_SCL"
+			(at 0 1.75 0)
+			(layer "F.Fab")
+			(uuid "cea406ce-2ee4-482d-8771-015c54d2fc2b")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Datasheet" "N/A - geometria definida no footprint"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "ac8341f8-522b-4b59-9f39-0319c98630ee")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Description" "Ponto de teste em cobre, pad circular de 1,0 mm; rede BH_I2C3_SCL"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "202d41a5-bfcc-46c5-a3ca-3452a9151c2b")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Manufacturer" "N/A"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "1ac68fbf-09c0-4ccc-8b6f-c1499ec23b83")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "MPN" "N/A - elemento de cobre da PCB"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "01e5e89d-209f-4328-839c-fd07e858ce5f")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "LCSC" "N/A"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "7e61d857-a815-4243-8d0b-a3ac5d83bae0")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "LCSC Part" "N/A"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "390612c7-b921-481b-8a85-ec214e157719")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Rating" "Copper pad; no purchased component"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "6c03abc8-0b15-4c9e-8df9-be4f7f7990e7")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Function" "Ponto de teste do sinal BH_I2C3_SCL"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "050e92d4-c676-4320-8bbf-7bab98bbb39f")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Modelo 3D" "N/A - geometria de cobre, sem corpo"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "52d79414-cc53-4a7b-bcf6-a2e6ab830aa3")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "CREATOR" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "664fa78c-8a09-4122-97b1-20b34d18b462")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "VERIFIER" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "000a50ab-db5b-4373-8074-2dea3d34aca8")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Specification" "Copper pad; no purchased component"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "377add2e-5aa6-49a8-a814-da42102090e0")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Assembly" "PCB — sem compra"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "c90121fb-2662-4f47-a4de-8e7609c2a950")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property ki_fp_filters "Pin* Test*")
+		(path "/0c305a6e-f9cd-49a1-b146-c2956e5469b6/ee5e162e-fef6-4e44-a551-c13cb2903f32/30c89681-402b-4611-9810-a8d818381e42")
+		(sheetname "BH1750_INTERFACE")
+		(sheetfile "sheets/bh1750_interface.kicad_sch")
+		(attr exclude_from_pos_files exclude_from_bom)
+		(fp_circle
+			(center 0 0)
+			(end 0 0.7)
+			(stroke
+				(width 0.12)
+				(type solid)
+			)
+			(fill no)
+			(layer "F.SilkS")
+			(uuid "b741f428-0a09-4f76-a91b-f7f9769b74a0")
+		)
+		(fp_circle
+			(center 0 0)
+			(end 1 0)
+			(stroke
+				(width 0.05)
+				(type solid)
+			)
+			(fill no)
+			(layer "F.CrtYd")
+			(uuid "0df7b870-0df2-41a5-8cb5-d67131c6ac68")
+		)
+		(fp_text user "${REFERENCE}"
+			(at 1.4 2.12 0)
+			(layer "F.Fab")
+			(uuid "cbb65e62-ac22-4846-b393-da57d981a4c7")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(pad "1" smd circle
+			(at 0 0)
+			(size 1 1)
+			(layers "F.Cu" "F.Mask")
+			(net 79 "BH_I2C3_SCL")
+			(pinfunction "1")
+			(pintype "passive")
+			(uuid "cfb8e79c-46ea-4b43-90aa-f5cedc16f118")
+		)
+		(embedded_fonts no)
 	)
 	(footprint "Sensores_Meteo:RJ11-TH_PCB-6P6C-90"
 		(layer "F.Cu")
@@ -47607,7 +49575,7 @@
 	(footprint "MountingHole:MountingHole_3.2mm_M3"
 		(layer "F.Cu")
 		(uuid "ff6219ff-f4b5-42f5-aa20-01d95a3c8134")
-		(at 74.3 126.9)
+		(at 137 96)
 		(descr "Mounting Hole 3.2mm, M3, no annular, generated by kicad-footprint-generator mountinghole.py")
 		(tags "mountinghole M3")
 		(property "Reference" "H902"

@@ -2026,7 +2026,7 @@
 				)
 			)
 		)
-		(property "Footprint" "TestPoint:TestPoint_Pad_D1.5mm"
+		(property "Footprint" "TestPoint:TestPoint_Pad_D1.0mm"
 			(at 66.04 69.85 0)
 			(effects
 				(font
@@ -2044,7 +2044,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Ponto de teste em cobre, pad circular de 1,5 mm; rede ANEMOMETRO_RAW"
+		(property "Description" "Ponto de teste em cobre, pad circular de 1,0 mm; rede ANEMOMETRO_RAW"
 			(at 66.04 69.85 0)
 			(effects
 				(font
@@ -3183,7 +3183,7 @@
 				)
 			)
 		)
-		(property "Footprint" "TestPoint:TestPoint_Pad_D1.5mm"
+		(property "Footprint" "TestPoint:TestPoint_Pad_D1.0mm"
 			(at 162.56 69.85 0)
 			(effects
 				(font
@@ -3201,7 +3201,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Ponto de teste em cobre, pad circular de 1,5 mm; rede ANEMOMETRO_FILT"
+		(property "Description" "Ponto de teste em cobre, pad circular de 1,0 mm; rede ANEMOMETRO_FILT"
 			(at 162.56 69.85 0)
 			(effects
 				(font
@@ -3627,7 +3627,7 @@
 				)
 			)
 		)
-		(property "Footprint" "TestPoint:TestPoint_Pad_D1.5mm"
+		(property "Footprint" "TestPoint:TestPoint_Pad_D1.0mm"
 			(at 223.52 95.25 0)
 			(effects
 				(font
@@ -3645,7 +3645,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Ponto de teste em cobre, pad circular de 1,5 mm; rede WIND_SPEED_PULSE"
+		(property "Description" "Ponto de teste em cobre, pad circular de 1,0 mm; rede WIND_SPEED_PULSE"
 			(at 223.52 95.25 0)
 			(effects
 				(font

@@ -1793,7 +1793,7 @@
 				)
 			)
 		)
-		(property "Footprint" "TestPoint:TestPoint_Pad_D1.5mm"
+		(property "Footprint" "TestPoint:TestPoint_Pad_D1.0mm"
 			(at 90.17 50.8 0)
 			(effects
 				(font
@@ -1811,7 +1811,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Ponto de teste em cobre, pad circular de 1,5 mm; rede AVREF_SENSOR"
+		(property "Description" "Ponto de teste em cobre, pad circular de 1,0 mm; rede AVREF_SENSOR"
 			(at 90.17 50.8 0)
 			(effects
 				(font
@@ -2436,7 +2436,7 @@
 				)
 			)
 		)
-		(property "Footprint" "TestPoint:TestPoint_Pad_D1.5mm"
+		(property "Footprint" "TestPoint:TestPoint_Pad_D1.0mm"
 			(at 66.04 69.85 0)
 			(effects
 				(font
@@ -2454,7 +2454,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Ponto de teste em cobre, pad circular de 1,5 mm; rede WIND_DIR_RAW"
+		(property "Description" "Ponto de teste em cobre, pad circular de 1,0 mm; rede WIND_DIR_RAW"
 			(at 66.04 69.85 0)
 			(effects
 				(font
@@ -3077,7 +3077,7 @@
 				)
 			)
 		)
-		(property "Footprint" "TestPoint:TestPoint_Pad_D1.5mm"
+		(property "Footprint" "TestPoint:TestPoint_Pad_D1.0mm"
 			(at 232.41 95.25 0)
 			(effects
 				(font
@@ -3095,7 +3095,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Ponto de teste em cobre, pad circular de 1,5 mm; rede WIND_DIR_ADC"
+		(property "Description" "Ponto de teste em cobre, pad circular de 1,0 mm; rede WIND_DIR_ADC"
 			(at 232.41 95.25 0)
 			(effects
 				(font

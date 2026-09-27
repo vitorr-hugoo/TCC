@@ -5,6 +5,113 @@
 	(uuid "467fb11e-17b5-44cf-acb9-d26d19661d19")
 	(paper "A4")
 	(lib_symbols
+		(symbol "Connector:TestPoint"
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 0.762)
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "TP"
+				(at 0 6.858 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "TestPoint"
+				(at 0 5.08 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 5.08 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "~"
+				(at 5.08 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "test point"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "test point tp"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "Pin* Test*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "TestPoint_0_1"
+				(circle
+					(center 0 3.302)
+					(radius 0.762)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "TestPoint_1_1"
+				(pin passive line
+					(at 0 0 90)
+					(length 2.54)
+					(name "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
 		(symbol "DHT22:DHT22"
 			(pin_names
 				(offset 1.016)
@@ -717,9 +824,25 @@
 		(color 0 0 0 0)
 		(uuid "760299a9-6033-42d7-88d2-8de0386ebef0")
 	)
+	(junction
+		(at 133.35 76.2)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "f2e7be54-21af-4eb7-b6d4-67042770105c")
+	)
 	(no_connect
 		(at 133.35 107.95)
 		(uuid "8bf1826a-d4af-4f6e-a1b8-bec399fcc776")
+	)
+	(wire
+		(pts
+			(xy 106.68 93.98) (xy 106.68 95.25)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "221226f8-e33c-47e6-8d03-69bb95647b55")
 	)
 	(wire
 		(pts
@@ -743,7 +866,7 @@
 	)
 	(wire
 		(pts
-			(xy 133.35 72.39) (xy 133.35 78.74)
+			(xy 133.35 72.39) (xy 133.35 76.2)
 		)
 		(stroke
 			(width 0)
@@ -763,6 +886,16 @@
 	)
 	(wire
 		(pts
+			(xy 135.89 69.85) (xy 135.89 76.2)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6662f64d-4dc4-4ea0-a679-b9515e58861b")
+	)
+	(wire
+		(pts
 			(xy 138.43 72.39) (xy 142.24 72.39)
 		)
 		(stroke
@@ -773,6 +906,16 @@
 	)
 	(wire
 		(pts
+			(xy 133.35 76.2) (xy 135.89 76.2)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7630a23f-a520-4ca7-937f-6d853d306a5e")
+	)
+	(wire
+		(pts
 			(xy 142.24 72.39) (xy 142.24 73.66)
 		)
 		(stroke
@@ -780,6 +923,16 @@
 			(type default)
 		)
 		(uuid "8fffad56-e4f8-47ef-a2ee-9136e0c610d6")
+	)
+	(wire
+		(pts
+			(xy 133.35 76.2) (xy 133.35 78.74)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "90023d64-501b-4fbf-8511-f629efa14df3")
 	)
 	(wire
 		(pts
@@ -1333,7 +1486,7 @@
 		(dnp no)
 		(uuid "c276dada-2ab1-459c-aba7-2b886f2ab026")
 		(property "Reference" "C231"
-			(at 124.46 84.074 0)
+			(at 114.554 87.122 0)
 			(effects
 				(font
 					(size 1 1)
@@ -1341,7 +1494,7 @@
 			)
 		)
 		(property "Value" "100 nF"
-			(at 124.206 86.36 0)
+			(at 115.824 89.154 0)
 			(effects
 				(font
 					(size 1 1)
@@ -1430,7 +1583,7 @@
 			)
 		)
 		(property "Assembly" "SMT"
-			(at 0 0 0)
+			(at 5.08 -8.89 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1448,6 +1601,307 @@
 			(project "estacao-meteorologica"
 				(path "/0c305a6e-f9cd-49a1-b146-c2956e5469b6/34d78a87-9b09-4795-98a5-fe6ea1a123f9"
 					(reference "C231")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector:TestPoint")
+		(at 106.68 93.98 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board yes)
+		(dnp no)
+		(uuid "c8e01903-62c0-454c-9b79-ebce8399b220")
+		(property "Reference" "TP232"
+			(at 102.616 92.456 0)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Value" "GND"
+			(at 102.616 94.996 0)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Footprint" "TestPoint:TestPoint_Pad_D1.0mm"
+			(at 106.68 93.98 0)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "N/A - geometria definida no footprint"
+			(at 106.68 93.98 0)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Ponto de teste em cobre, pad circular de 1,0 mm; rede GND"
+			(at 106.68 93.98 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "N/A"
+			(at 106.68 93.98 0)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" "N/A - elemento de cobre da PCB"
+			(at 106.68 93.98 0)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "N/A"
+			(at 106.68 93.98 0)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(hide yes)
+			)
+		)
+		(property "Specification" "Copper pad; no purchased component"
+			(at 106.68 93.98 0)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(hide yes)
+			)
+		)
+		(property "Function" "Ponto de teste do sinal GND"
+			(at 106.68 93.98 0)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(hide yes)
+			)
+		)
+		(property "Assembly" "PCB — sem compra"
+			(at -7.62 1.27 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "af670205-114d-49d9-8ead-8bbfeef27ca0")
+		)
+		(instances
+			(project "esquematico_V4"
+				(path "/0c305a6e-f9cd-49a1-b146-c2956e5469b6/34d78a87-9b09-4795-98a5-fe6ea1a123f9"
+					(reference "TP232")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 106.68 95.25 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "cb504829-6ad6-43a8-8930-92326c46270a")
+		(property "Reference" "#PWR084"
+			(at 106.68 101.6 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 109.728 98.298 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 106.68 95.25 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 106.68 95.25 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 106.68 95.25 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "dc4a87a3-080c-49e0-89b5-d6aa09027955")
+		)
+		(instances
+			(project "estacao-meteorologica"
+				(path "/0c305a6e-f9cd-49a1-b146-c2956e5469b6/34d78a87-9b09-4795-98a5-fe6ea1a123f9"
+					(reference "#PWR084")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector:TestPoint")
+		(at 135.89 69.85 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board yes)
+		(dnp no)
+		(uuid "ea16e9d5-f243-4eac-8c9a-e748fa79f2f8")
+		(property "Reference" "TP231"
+			(at 141.986 65.278 0)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Value" "DHT22_DATA"
+			(at 141.986 67.818 0)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Footprint" "TestPoint:TestPoint_Pad_D1.0mm"
+			(at 135.89 69.85 0)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "N/A - geometria definida no footprint"
+			(at 135.89 69.85 0)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Ponto de teste em cobre, pad circular de 1,0 mm; rede DHT22_DATA"
+			(at 135.89 69.85 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "N/A"
+			(at 135.89 69.85 0)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" "N/A - elemento de cobre da PCB"
+			(at 135.89 69.85 0)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "N/A"
+			(at 135.89 69.85 0)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(hide yes)
+			)
+		)
+		(property "Specification" "Copper pad; no purchased component"
+			(at 135.89 69.85 0)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(hide yes)
+			)
+		)
+		(property "Function" "Ponto de teste do sinal DHT22_DATA"
+			(at 135.89 69.85 0)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(hide yes)
+			)
+		)
+		(property "Assembly" "PCB — sem compra"
+			(at 2.54 -6.35 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "ed7d65a3-22d7-44a6-b2a0-d86c4a608ac0")
+		)
+		(instances
+			(project "esquematico_V4"
+				(path "/0c305a6e-f9cd-49a1-b146-c2956e5469b6/34d78a87-9b09-4795-98a5-fe6ea1a123f9"
+					(reference "TP231")
 					(unit 1)
 				)
 			)
