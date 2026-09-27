@@ -1378,12 +1378,6 @@
 		(uuid "3883c26d-c8e0-5619-8f99-377181f9dcf7")
 	)
 	(junction
-		(at 52.07 80.01)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "5f354faf-ec59-4019-9767-756c3aced0ea")
-	)
-	(junction
 		(at 142.24 80.01)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -1398,16 +1392,6 @@
 			(type default)
 		)
 		(uuid "02d9dc3b-f31b-536d-9ddc-f853c8ddad3b")
-	)
-	(wire
-		(pts
-			(xy 52.07 80.01) (xy 66.04 80.01)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "14811863-c5e6-4beb-9fa1-a765930ba245")
 	)
 	(wire
 		(pts
@@ -1511,16 +1495,6 @@
 	)
 	(wire
 		(pts
-			(xy 52.07 77.47) (xy 52.07 80.01)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "7be82639-b80d-4ca0-b375-7706336d8fe6")
-	)
-	(wire
-		(pts
 			(xy 121.92 80.01) (xy 121.92 95.25)
 		)
 		(stroke
@@ -1561,7 +1535,7 @@
 	)
 	(wire
 		(pts
-			(xy 45.72 80.01) (xy 52.07 80.01)
+			(xy 45.72 80.01) (xy 66.04 80.01)
 		)
 		(stroke
 			(width 0)
@@ -1658,16 +1632,6 @@
 			(type default)
 		)
 		(uuid "ff24e3f0-7361-523d-b59e-b7aa245198af")
-	)
-	(label "SENS_WIND_SPEED_RAW"
-		(at 52.07 77.47 0)
-		(effects
-			(font
-				(size 1 1)
-			)
-			(justify left)
-		)
-		(uuid "b012dae5-878d-5715-84ef-33ea287bbcd1")
 	)
 	(global_label "SENS_WIND_SPEED_RAW"
 		(shape passive)

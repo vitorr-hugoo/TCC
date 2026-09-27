@@ -530,96 +530,96 @@
       "exclude_dnp": false,
       "fields_ordered": [
         {
-                "label": "Reference",
-                "name": "Reference",
-                "group_by": false,
-                "show": true
+          "group_by": false,
+          "label": "Reference",
+          "name": "Reference",
+          "show": true
         },
         {
-                "label": "Qty",
-                "name": "${QUANTITY}",
-                "group_by": false,
-                "show": true
+          "group_by": false,
+          "label": "Qty",
+          "name": "${QUANTITY}",
+          "show": true
         },
         {
-                "label": "Value",
-                "name": "Value",
-                "group_by": true,
-                "show": true
+          "group_by": true,
+          "label": "Value",
+          "name": "Value",
+          "show": true
         },
         {
-                "label": "Description",
-                "name": "Description",
-                "group_by": true,
-                "show": true
+          "group_by": true,
+          "label": "Description",
+          "name": "Description",
+          "show": true
         },
         {
-                "label": "Function",
-                "name": "Function",
-                "group_by": true,
-                "show": true
+          "group_by": true,
+          "label": "Function",
+          "name": "Function",
+          "show": true
         },
         {
-                "label": "Manufacturer",
-                "name": "Manufacturer",
-                "group_by": true,
-                "show": true
+          "group_by": true,
+          "label": "Manufacturer",
+          "name": "Manufacturer",
+          "show": true
         },
         {
-                "label": "MPN",
-                "name": "MPN",
-                "group_by": true,
-                "show": true
+          "group_by": true,
+          "label": "MPN",
+          "name": "MPN",
+          "show": true
         },
         {
-                "label": "LCSC",
-                "name": "LCSC",
-                "group_by": true,
-                "show": true
+          "group_by": true,
+          "label": "LCSC",
+          "name": "LCSC",
+          "show": true
         },
         {
-                "label": "Specification",
-                "name": "Specification",
-                "group_by": true,
-                "show": true
+          "group_by": true,
+          "label": "Specification",
+          "name": "Specification",
+          "show": true
         },
         {
-                "label": "Datasheet",
-                "name": "Datasheet",
-                "group_by": false,
-                "show": true
+          "group_by": false,
+          "label": "Datasheet",
+          "name": "Datasheet",
+          "show": true
         },
         {
-                "label": "Footprint",
-                "name": "Footprint",
-                "group_by": true,
-                "show": true
+          "group_by": true,
+          "label": "Footprint",
+          "name": "Footprint",
+          "show": true
         },
         {
-                "label": "Assembly",
-                "name": "Assembly",
-                "group_by": true,
-                "show": true
+          "group_by": true,
+          "label": "Assembly",
+          "name": "Assembly",
+          "show": true
         },
         {
-                "label": "DNP",
-                "name": "${DNP}",
-                "group_by": true,
-                "show": true
+          "group_by": true,
+          "label": "DNP",
+          "name": "${DNP}",
+          "show": true
         },
         {
-                "label": "Exclude from BOM",
-                "name": "${EXCLUDE_FROM_BOM}",
-                "group_by": true,
-                "show": false
+          "group_by": true,
+          "label": "Exclude from BOM",
+          "name": "${EXCLUDE_FROM_BOM}",
+          "show": false
         },
         {
-                "label": "Exclude from Board",
-                "name": "${EXCLUDE_FROM_BOARD}",
-                "group_by": true,
-                "show": false
+          "group_by": true,
+          "label": "Exclude from Board",
+          "name": "${EXCLUDE_FROM_BOARD}",
+          "show": false
         }
-],
+      ],
       "filter_string": "",
       "group_symbols": true,
       "include_excluded_from_bom": true,
@@ -685,10 +685,6 @@
       "SENSOR BMP280"
     ],
     [
-      "c5455acd-00c4-4dde-ab9a-382e33c5bf3a",
-      "SENSOR BH1750"
-    ],
-    [
       "8495f6b1-74a6-413b-a199-5ab08c5254ba",
       "CARTÃO microSD"
     ],
@@ -711,6 +707,10 @@
     [
       "9f29de2e-b04a-471a-b3f5-0032147ee0d6",
       "ANEMÔMETRO"
+    ],
+    [
+      "ee5e162e-fef6-4e44-a551-c13cb2903f32",
+      "BH1750_INTERFACE"
     ],
     [
       "4ef75fdb-90eb-437a-af55-0afcbbe28aca",

@@ -3259,18 +3259,6 @@
 			(embedded_fonts no)
 		)
 	)
-	(junction
-		(at 106.68 78.74)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "3305d880-bbf9-4c47-b15c-7c3ddc75dd1c")
-	)
-	(junction
-		(at 102.87 73.66)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "d4ef6d58-9571-41d7-a472-27c5a7230dbe")
-	)
 	(no_connect
 		(at 210.82 125.73)
 		(uuid "fbfb69ec-bfb7-46e7-b5b4-0498b81dbe11")
@@ -3304,16 +3292,6 @@
 			(type default)
 		)
 		(uuid "16e400f9-6ce4-4419-8ce3-0053413718cf")
-	)
-	(wire
-		(pts
-			(xy 106.68 66.04) (xy 106.68 78.74)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "28641f8e-145c-43a9-90c2-b658669290ef")
 	)
 	(wire
 		(pts
@@ -3437,16 +3415,6 @@
 	)
 	(wire
 		(pts
-			(xy 85.09 66.04) (xy 106.68 66.04)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "7d8244c9-bc34-415a-a19c-6ef23013b323")
-	)
-	(wire
-		(pts
 			(xy 85.09 85.09) (xy 102.87 85.09)
 		)
 		(stroke
@@ -3487,16 +3455,6 @@
 	)
 	(wire
 		(pts
-			(xy 85.09 60.96) (xy 102.87 60.96)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "a8d25a75-f638-4b0f-8fce-1ba8b0ef781a")
-	)
-	(wire
-		(pts
 			(xy 182.88 135.89) (xy 210.82 135.89)
 		)
 		(stroke
@@ -3514,16 +3472,6 @@
 			(type default)
 		)
 		(uuid "bf3ccd48-f5ff-4e56-9630-457fb3e312d3")
-	)
-	(wire
-		(pts
-			(xy 102.87 60.96) (xy 102.87 73.66)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "d16d19de-9a2d-43dd-b99a-c9eeccf9034c")
 	)
 	(wire
 		(pts
@@ -3587,6 +3535,16 @@
 	)
 	(wire
 		(pts
+			(xy 85.09 55.88) (xy 115.57 55.88)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f7a99518-4e1c-4f73-8d25-06d0cdc6aa00")
+	)
+	(wire
+		(pts
 			(xy 182.88 50.8) (xy 210.82 50.8)
 		)
 		(stroke
@@ -3594,6 +3552,16 @@
 			(type default)
 		)
 		(uuid "f8e1d9d1-d14f-4a8c-85bc-61cb22923d56")
+	)
+	(wire
+		(pts
+			(xy 85.09 60.96) (xy 115.57 60.96)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "fea83a23-d7e1-447d-86d2-eff2a03208ed")
 	)
 	(global_label "AVREF_SENSOR"
 		(shape passive)
@@ -5046,6 +5014,26 @@
 				(justify left)
 			)
 		)
+		(pin "BH_I2C3_SCL" passive
+			(at 115.57 55.88 180)
+			(uuid "584dade7-34ac-4c09-ad2a-c2dd93195900")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "BH_I2C3_SDA" passive
+			(at 115.57 60.96 180)
+			(uuid "64f961a7-6ebc-4c69-9b94-571d1175bf76")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
 		(instances
 			(project "estacao-meteorologica"
 				(path "/0c305a6e-f9cd-49a1-b146-c2956e5469b6"
@@ -5055,8 +5043,8 @@
 		)
 	)
 	(sheet
-		(at 72.39 53.34)
-		(size 12.7 16.51)
+		(at 69.85 50.8)
+		(size 15.24 19.05)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
@@ -5069,9 +5057,9 @@
 		(fill
 			(color 0 0 0 0.0000)
 		)
-		(uuid "c5455acd-00c4-4dde-ab9a-382e33c5bf3a")
-		(property "Sheetname" "SENSOR BH1750"
-			(at 72.39 52.6284 0)
+		(uuid "ee5e162e-fef6-4e44-a551-c13cb2903f32")
+		(property "Sheetname" "BH1750_INTERFACE"
+			(at 69.85 50.0884 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5079,8 +5067,8 @@
 				(justify left bottom)
 			)
 		)
-		(property "Sheetfile" "sheets/bh1750.kicad_sch"
-			(at 72.39 70.4346 0)
+		(property "Sheetfile" "sheets/bh1750_interface.kicad_sch"
+			(at 69.85 70.4346 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5088,9 +5076,9 @@
 				(justify left top)
 			)
 		)
-		(pin "I2C1_SCL" bidirectional
-			(at 85.09 66.04 0)
-			(uuid "ec1c792e-fdfd-4ccc-9fa3-fbb3db0d1b2c")
+		(pin "BH_I2C3_SCL" passive
+			(at 85.09 55.88 0)
+			(uuid "8905ce25-8060-4f2f-9947-d92ac339473b")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5098,9 +5086,9 @@
 				(justify right)
 			)
 		)
-		(pin "I2C1_SDA" bidirectional
+		(pin "BH_I2C3_SDA" passive
 			(at 85.09 60.96 0)
-			(uuid "ea71a315-78e6-4647-a031-78c975d770bf")
+			(uuid "6a9d0468-e694-4632-9618-4deb2ef9fcd9")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5111,7 +5099,7 @@
 		(instances
 			(project "estacao-meteorologica"
 				(path "/0c305a6e-f9cd-49a1-b146-c2956e5469b6"
-					(page "5")
+					(page "12")
 				)
 			)
 		)
