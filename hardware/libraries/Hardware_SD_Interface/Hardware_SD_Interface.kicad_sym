@@ -404,7 +404,7 @@
   			(embedded_fonts no)
   		)
 
-  (symbol "MicroSD_Molex_104031_0811"
+  (symbol "MicroSD_SOFNG_TF_15x15"
   			(exclude_from_sim no)
   			(in_bom yes)
   			(on_board yes)
@@ -416,7 +416,7 @@
   					)
   				)
   			)
-  			(property "Value" "Micro_SD_Card_Det2"
+			(property "Value" "MicroSD_SOFNG_TF-15x15"
   				(at 16.51 17.78 0)
   				(effects
   					(font
@@ -434,7 +434,7 @@
   					(hide yes)
   				)
   			)
-  			(property "Datasheet" "https://www.hirose.com/en/product/document?clcode=&productname=&series=DM3&documenttype=Catalog&lang=en&documentid=D49662_en"
+			(property "Datasheet" "https://datasheet.lcsc.com/datasheet/pdf/38dcce1bae4dd4ca995533b0c0352a82.pdf?productCode=C111196"
   				(at 2.54 2.54 0)
   				(effects
   					(font
@@ -443,7 +443,7 @@
   					(hide yes)
   				)
   			)
-  			(property "Description" "Micro SD Card Socket with two card detection pins"
+			(property "Description" "SOFNG TF-15x15 microSD card socket, push-push, with detection switch and three shield tabs; LCSC C111196"
   				(at 0 0 0)
   				(effects
   					(font
@@ -470,7 +470,7 @@
   					(hide yes)
   				)
   			)
-  			(symbol "MicroSD_Molex_104031_0811_0_1"
+			(symbol "MicroSD_SOFNG_TF_15x15_0_1"
   				(polyline
   					(pts
   						(xy -8.89 -8.89) (xy -8.89 11.43) (xy -1.27 11.43) (xy 2.54 15.24) (xy 3.81 15.24) (xy 3.81 13.97)
@@ -585,7 +585,7 @@
   					)
   				)
   			)
-  			(symbol "MicroSD_Molex_104031_0811_1_1"
+			(symbol "MicroSD_SOFNG_TF_15x15_1_1"
   				(pin bidirectional line
   					(at -22.86 10.16 0)
   					(length 3.81)
@@ -782,6 +782,42 @@
   								(size 1.27 1.27)
   							)
   						)
+				(pin passive line
+					(at 20.32 -12.7 180)
+					(length 3.81)
+					(name "SHIELD"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "12"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 20.32 -12.7 180)
+					(length 3.81)
+					(name "SHIELD"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "13"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
   					)
   				)
   			)

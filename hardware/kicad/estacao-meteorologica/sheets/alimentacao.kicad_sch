@@ -2419,17 +2419,6 @@
 			(embedded_fonts no)
 		)
 	)
-	(text "3  BUCK 3,3 V  |  SEM MCU PARA PARTIDA"
-		(exclude_from_sim no)
-		(at 220.98 137.16 0)
-		(effects
-			(font
-				(size 1.8 1.8)
-			)
-			(justify left top)
-		)
-		(uuid "05855419-2760-5d14-948d-e716bb39ab04")
-	)
 	(text "ALIMENTACAO DA PCB PRINCIPAL | entrada nominal 12 V, nao regulada | faixa de projeto 10 a 16 Vcc"
 		(exclude_from_sim no)
 		(at 20.32 15.24 0)
@@ -2569,6 +2558,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "52b22cca-f27d-5a74-844e-f2a3700142dc")
+	)
+	(junction
+		(at 55.88 54.61)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "595991ad-98fc-4949-920e-7c06b9352864")
 	)
 	(junction
 		(at 200.66 172.72)
@@ -2788,6 +2783,16 @@
 	)
 	(wire
 		(pts
+			(xy 55.88 54.61) (xy 85.09 54.61)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2f01062a-82f5-473f-af1d-ddce8716ca8d")
+	)
+	(wire
+		(pts
 			(xy 44.45 91.44) (xy 44.45 87.63)
 		)
 		(stroke
@@ -2998,16 +3003,6 @@
 	)
 	(wire
 		(pts
-			(xy 154.94 172.72) (xy 180.34 172.72)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "6aee46f5-5212-5127-a4b2-167c7da7dafe")
-	)
-	(wire
-		(pts
 			(xy 115.57 69.85) (xy 137.16 69.85)
 		)
 		(stroke
@@ -3168,6 +3163,16 @@
 	)
 	(wire
 		(pts
+			(xy 100.33 167.64) (xy 100.33 172.72)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9bbcf73a-cac3-4fb4-85bb-321e83a6f298")
+	)
+	(wire
+		(pts
 			(xy 85.09 54.61) (xy 85.09 64.77)
 		)
 		(stroke
@@ -3205,6 +3210,16 @@
 			(type default)
 		)
 		(uuid "a2147234-af07-5559-83f4-bc8914d69fec")
+	)
+	(wire
+		(pts
+			(xy 55.88 53.34) (xy 55.88 54.61)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a28cde23-ff68-46c5-baf4-cf776de5c63b")
 	)
 	(wire
 		(pts
@@ -3248,7 +3263,7 @@
 	)
 	(wire
 		(pts
-			(xy 36.83 54.61) (xy 85.09 54.61)
+			(xy 36.83 54.61) (xy 55.88 54.61)
 		)
 		(stroke
 			(width 0)
@@ -3305,6 +3320,16 @@
 			(type default)
 		)
 		(uuid "cc14623d-9643-5988-b6c5-13b18a42b0b4")
+	)
+	(wire
+		(pts
+			(xy 154.94 172.72) (xy 180.34 172.72)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "de5bd8dd-bc62-4aa2-aac2-895252fb5a77")
 	)
 	(wire
 		(pts
@@ -3367,7 +3392,7 @@
 		(uuid "57080eb3-9fc1-531e-bc81-db66cfe75aab")
 	)
 	(label "VIN_JACK"
-		(at 55.88 54.61 0)
+		(at 55.88 53.34 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -3375,6 +3400,16 @@
 			(justify left)
 		)
 		(uuid "6b0c5136-be3e-5aea-b92f-fd2756f2015e")
+	)
+	(label "V_SW"
+		(at 100.33 167.64 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "785e0515-5d46-455e-ba45-17ba62bf5082")
 	)
 	(label "VIN_MAIN"
 		(at 358.14 72.39 0)

@@ -10339,7 +10339,7 @@
 				(hide yes)
 			)
 		)
-		(property "Verification" "Conferido com desenho mecânico MYOUNG WD-CP-0239. Item LCSC C20606807; confirmar estoque antes da compra."
+		(property "Verification" "Footprint e modelo STEP importados com easyeda2kicad v1.0.1 a partir do registro EasyEDA/LCSC C20606807 em 2026-09-28."
 			(at 205.74 39.37 0)
 			(effects
 				(font
@@ -10384,7 +10384,7 @@
 				(hide yes)
 			)
 		)
-		(property "Specification" "CR1225, 3 V; SMT; dois pads 3,15 x 4,00 mm em passo de 15,8 mm; perfil do suporte 4,7 mm."
+		(property "Specification" "CR1225, 3 V; SMT; pads 3,15 x 4,00 mm em passo de 21,46 mm; altura do modelo importado 4,71 mm."
 			(at 205.74 39.37 0)
 			(effects
 				(font

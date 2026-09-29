@@ -726,6 +726,12 @@
 		)
 	)
 	(junction
+		(at 100.33 72.39)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "010d1bf4-dfde-449f-98c1-11a37c2a0ff2")
+	)
+	(junction
 		(at 115.57 74.93)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -738,16 +744,20 @@
 		(uuid "85a2cc3e-c82d-4860-ae85-b764ae777a1e")
 	)
 	(junction
-		(at 100.33 77.47)
+		(at 113.03 72.39)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "929649c5-151a-4ae8-a27f-5f1168807a2a")
+		(uuid "d6a2013a-0cd2-49bf-82ed-6a137e167710")
 	)
-	(junction
-		(at 115.57 77.47)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "e5efd3d5-6da6-43bd-a584-69bc3dd3710b")
+	(wire
+		(pts
+			(xy 113.03 62.23) (xy 113.03 72.39)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "03c0f060-432a-449f-9cdb-97014db25c0d")
 	)
 	(wire
 		(pts
@@ -791,13 +801,13 @@
 	)
 	(wire
 		(pts
-			(xy 115.57 77.47) (xy 115.57 82.55)
+			(xy 100.33 82.55) (xy 100.33 72.39)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "51fd98ae-dc4c-42ea-9a57-9451eb0a99b7")
+		(uuid "4d7da55e-d3b6-4760-8720-18d1bed34637")
 	)
 	(wire
 		(pts
@@ -808,26 +818,6 @@
 			(type default)
 		)
 		(uuid "525c8dd9-060d-44f6-9213-bf49495d2932")
-	)
-	(wire
-		(pts
-			(xy 100.33 77.47) (xy 93.98 77.47)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "5d42be85-66e6-42b3-8f61-8de4d874f928")
-	)
-	(wire
-		(pts
-			(xy 100.33 77.47) (xy 100.33 82.55)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "67fd9397-1645-4748-9705-ead8c848896b")
 	)
 	(wire
 		(pts
@@ -871,7 +861,7 @@
 	)
 	(wire
 		(pts
-			(xy 99.06 72.39) (xy 93.98 72.39)
+			(xy 93.98 72.39) (xy 100.33 72.39)
 		)
 		(stroke
 			(width 0)
@@ -891,27 +881,27 @@
 	)
 	(wire
 		(pts
-			(xy 121.92 77.47) (xy 115.57 77.47)
+			(xy 100.33 72.39) (xy 113.03 72.39)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "9b57931d-468f-419b-b30b-3fbe8bb9a385")
+		(uuid "bcdaebda-c0ff-4e1e-a0ec-2f4d67649d5e")
 	)
 	(wire
 		(pts
-			(xy 119.38 82.55) (xy 115.57 82.55)
+			(xy 113.03 72.39) (xy 121.92 72.39)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "b14185c2-e79a-4f30-b321-9866edefa768")
+		(uuid "c39c2569-25a5-4fb5-a899-ed8c205c18cc")
 	)
 	(wire
 		(pts
-			(xy 115.57 77.47) (xy 100.33 77.47)
+			(xy 93.98 77.47) (xy 121.92 77.47)
 		)
 		(stroke
 			(width 0)
@@ -921,14 +911,14 @@
 	)
 	(hierarchical_label "BH_I2C3_SDA"
 		(shape passive)
-		(at 121.92 77.47 0)
+		(at 121.92 72.39 0)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
 			(justify left)
 		)
-		(uuid "49acb777-af70-4b95-9ba7-bd783707e1d9")
+		(uuid "07105204-f9f0-468d-b8fc-a7510ed10035")
 	)
 	(hierarchical_label "BH_I2C3_SCL"
 		(shape passive)
@@ -1011,7 +1001,7 @@
 	)
 	(symbol
 		(lib_id "Connector:TestPoint")
-		(at 119.38 82.55 270)
+		(at 113.03 62.23 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom no)
@@ -1019,7 +1009,7 @@
 		(dnp no)
 		(uuid "13d0e5a5-ca31-4984-b436-986c6814c814")
 		(property "Reference" "TP222"
-			(at 128.778 81.534 90)
+			(at 112.014 52.832 90)
 			(effects
 				(font
 					(size 1 1)
@@ -1027,7 +1017,7 @@
 			)
 		)
 		(property "Value" "BH_I2C3_SDA"
-			(at 128.778 84.074 90)
+			(at 114.554 52.832 90)
 			(effects
 				(font
 					(size 1 1)
@@ -1035,7 +1025,7 @@
 			)
 		)
 		(property "Footprint" "TestPoint:TestPoint_Pad_D1.0mm"
-			(at 119.38 82.55 0)
+			(at 113.03 62.23 0)
 			(effects
 				(font
 					(size 1 1)
@@ -1044,7 +1034,7 @@
 			)
 		)
 		(property "Datasheet" "N/A - geometria definida no footprint"
-			(at 119.38 82.55 0)
+			(at 113.03 62.23 0)
 			(effects
 				(font
 					(size 1 1)
@@ -1053,7 +1043,7 @@
 			)
 		)
 		(property "Description" "Ponto de teste em cobre, pad circular de 1,0 mm; rede BH_I2C3_SDA"
-			(at 119.38 82.55 0)
+			(at 113.03 62.23 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1062,7 +1052,7 @@
 			)
 		)
 		(property "Manufacturer" "N/A"
-			(at 119.38 82.55 0)
+			(at 113.03 62.23 0)
 			(effects
 				(font
 					(size 1 1)
@@ -1071,7 +1061,7 @@
 			)
 		)
 		(property "MPN" "N/A - elemento de cobre da PCB"
-			(at 119.38 82.55 0)
+			(at 113.03 62.23 0)
 			(effects
 				(font
 					(size 1 1)
@@ -1080,7 +1070,7 @@
 			)
 		)
 		(property "LCSC" "N/A"
-			(at 119.38 82.55 0)
+			(at 113.03 62.23 0)
 			(effects
 				(font
 					(size 1 1)
@@ -1089,7 +1079,7 @@
 			)
 		)
 		(property "Specification" "Copper pad; no purchased component"
-			(at 119.38 82.55 0)
+			(at 113.03 62.23 0)
 			(effects
 				(font
 					(size 1 1)
@@ -1098,7 +1088,7 @@
 			)
 		)
 		(property "Function" "Ponto de teste do sinal BH_I2C3_SDA"
-			(at 119.38 82.55 0)
+			(at 113.03 62.23 0)
 			(effects
 				(font
 					(size 1 1)
@@ -1107,7 +1097,7 @@
 			)
 		)
 		(property "Assembly" "PCB — sem compra"
-			(at 196.85 -33.02 0)
+			(at -2.54 -15.24 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1119,7 +1109,7 @@
 			(uuid "35eda487-dab0-4eb1-a1b6-99300b35fb85")
 		)
 		(instances
-			(project "esquematico_V4"
+			(project "estacao-meteorologica"
 				(path "/0c305a6e-f9cd-49a1-b146-c2956e5469b6/ee5e162e-fef6-4e44-a551-c13cb2903f32"
 					(reference "TP222")
 					(unit 1)
@@ -1492,6 +1482,73 @@
 	)
 	(symbol
 		(lib_id "power:GND")
+		(at 100.33 93.98 0)
+		(mirror y)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "49365a95-fdf6-4f10-9f38-e92d07c20d8a")
+		(property "Reference" "#PWR080"
+			(at 100.33 100.33 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 100.33 99.06 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 100.33 93.98 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 100.33 93.98 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 100.33 93.98 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "d9388338-bba3-442b-b458-fe3b0ac03fc0")
+		)
+		(instances
+			(project "estacao-meteorologica"
+				(path "/0c305a6e-f9cd-49a1-b146-c2956e5469b6/ee5e162e-fef6-4e44-a551-c13cb2903f32"
+					(reference "#PWR080")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
 		(at 99.06 69.85 90)
 		(mirror x)
 		(unit 1)
@@ -1732,7 +1789,7 @@
 	)
 	(symbol
 		(lib_id "power:+3V3")
-		(at 99.06 72.39 270)
+		(at 137.16 77.47 270)
 		(mirror x)
 		(unit 1)
 		(exclude_from_sim no)
@@ -1742,7 +1799,7 @@
 		(fields_autoplaced yes)
 		(uuid "d4169717-6161-4fd8-a946-9691ac71b070")
 		(property "Reference" "#PWR05"
-			(at 95.25 72.39 0)
+			(at 133.35 77.47 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1751,7 +1808,7 @@
 			)
 		)
 		(property "Value" "+3V3"
-			(at 102.87 72.3899 90)
+			(at 140.97 77.4699 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1760,7 +1817,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 99.06 72.39 0)
+			(at 137.16 77.47 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1769,7 +1826,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 99.06 72.39 0)
+			(at 137.16 77.47 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1778,7 +1835,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"+3V3\""
-			(at 99.06 72.39 0)
+			(at 137.16 77.47 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1790,7 +1847,7 @@
 			(uuid "babc880e-1379-4823-95a7-6e0acd395435")
 		)
 		(instances
-			(project ""
+			(project "estacao-meteorologica"
 				(path "/0c305a6e-f9cd-49a1-b146-c2956e5469b6/ee5e162e-fef6-4e44-a551-c13cb2903f32"
 					(reference "#PWR05")
 					(unit 1)
