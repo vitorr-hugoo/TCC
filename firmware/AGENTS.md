@@ -2,7 +2,9 @@
 
 ## Escopo e fontes
 
-Este arquivo rege `firmware/`, incluindo `stm32/`, `gateway-esp32/` e testes. Leia-o antes de alterar o firmware e procure instruções mais específicas nos diretórios afetados. Na inspeção de 12/09/2026 não havia outro `AGENTS.md` na raiz do repositório ou em seus subdiretórios. Preserve instruções locais que venham a existir; não duplique aqui seus detalhes.
+Este arquivo rege `firmware/`, incluindo `stm32/`, `gateway-esp32/` e testes, e complementa o `../AGENTS.md` da raiz. Leia-o antes de alterar o firmware e procure instruções mais específicas nos diretórios afetados. Preserve instruções locais que venham a existir; não duplique aqui seus detalhes.
+
+Quando uma tarefa de firmware depender de pinagem, alimentação, sensor ou interface física, leia `../hardware/AGENTS.md` e os documentos de decisão pertinentes. Registre o impacto entre domínios, mas não altere arquivos KiCad sem solicitação explícita.
 
 **[padrao-c-embarcado](../tools/codex/skills/padrao-c-embarcado/SKILL.md) é a fonte de verdade para estilo, nomenclatura e documentação C.** Consulte-a para criar, modificar ou revisar C e headers, inclusive testes. Não replique suas regras neste arquivo nem reformate código legado, gerado ou externo fora do escopo. Preserve APIs e comportamento não relacionado à tarefa.
 
