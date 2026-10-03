@@ -911,17 +911,6 @@
 	)
 	(hierarchical_label "BH_I2C3_SDA"
 		(shape passive)
-		(at 121.92 72.39 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "07105204-f9f0-468d-b8fc-a7510ed10035")
-	)
-	(hierarchical_label "BH_I2C3_SCL"
-		(shape passive)
 		(at 121.92 74.93 0)
 		(effects
 			(font
@@ -929,7 +918,18 @@
 			)
 			(justify left)
 		)
-		(uuid "d25e5463-2802-43fa-9f54-9dd4d65f42a3")
+		(uuid "117e8a35-8b1e-4f6b-8c96-017ad67f34ca")
+	)
+	(hierarchical_label "BH_I2C3_SCL"
+		(shape passive)
+		(at 121.92 72.39 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "6927559d-8da9-4a21-8685-c4a3e6c72728")
 	)
 	(symbol
 		(lib_id "power:GND")
@@ -1789,7 +1789,7 @@
 	)
 	(symbol
 		(lib_id "power:+3V3")
-		(at 137.16 77.47 270)
+		(at 121.92 77.47 270)
 		(mirror x)
 		(unit 1)
 		(exclude_from_sim no)
@@ -1799,7 +1799,7 @@
 		(fields_autoplaced yes)
 		(uuid "d4169717-6161-4fd8-a946-9691ac71b070")
 		(property "Reference" "#PWR05"
-			(at 133.35 77.47 0)
+			(at 118.11 77.47 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1808,7 +1808,7 @@
 			)
 		)
 		(property "Value" "+3V3"
-			(at 140.97 77.4699 90)
+			(at 125.73 77.4699 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1817,7 +1817,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 137.16 77.47 0)
+			(at 121.92 77.47 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1826,7 +1826,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 137.16 77.47 0)
+			(at 121.92 77.47 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1835,7 +1835,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"+3V3\""
-			(at 137.16 77.47 0)
+			(at 121.92 77.47 0)
 			(effects
 				(font
 					(size 1.27 1.27)
