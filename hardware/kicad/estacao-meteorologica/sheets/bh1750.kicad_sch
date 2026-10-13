@@ -1289,6 +1289,15 @@
 				(hide yes)
 			)
 		)
+		(property "Assembly" "SMT"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "69bc20cb-4fbc-4b13-983b-8f29bdd21578")
 		)
@@ -1319,14 +1328,6 @@
 					(reference "U?")
 					(unit 1)
 				)
-			)
-		)
-	
-		(property "Assembly" "SMT"
-			(at 0 0 0)
-			(effects
-				(font (size 1.27 1.27))
-				(hide yes)
 			)
 		)
 	)
@@ -1438,6 +1439,15 @@
 				(hide yes)
 			)
 		)
+		(property "Assembly" "SMT"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "84144d9a-b11e-4968-be6b-a26d835944a7")
 		)
@@ -1450,14 +1460,6 @@
 					(reference "C221")
 					(unit 1)
 				)
-			)
-		)
-	
-		(property "Assembly" "SMT"
-			(at 0 0 0)
-			(effects
-				(font (size 1.27 1.27))
-				(hide yes)
 			)
 		)
 	)
@@ -1570,6 +1572,15 @@
 				(hide yes)
 			)
 		)
+		(property "Assembly" "SMT"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "2"
 			(uuid "adb5d9d6-f493-445f-9202-872e4d331920")
 		)
@@ -1588,14 +1599,6 @@
 					(reference "R?")
 					(unit 1)
 				)
-			)
-		)
-	
-		(property "Assembly" "SMT"
-			(at 0 0 0)
-			(effects
-				(font (size 1.27 1.27))
-				(hide yes)
 			)
 		)
 	)
@@ -1780,6 +1783,15 @@
 				(hide yes)
 			)
 		)
+		(property "Assembly" "SMT"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "2"
 			(uuid "26c2ab7c-adc1-4e47-b43f-4c37b13541bb")
 		)
@@ -1798,14 +1810,6 @@
 					(reference "R?")
 					(unit 1)
 				)
-			)
-		)
-	
-		(property "Assembly" "SMT"
-			(at 0 0 0)
-			(effects
-				(font (size 1.27 1.27))
-				(hide yes)
 			)
 		)
 	)
@@ -2199,6 +2203,15 @@
 				(hide yes)
 			)
 		)
+		(property "Assembly" "SMT"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "4665b4f4-05ea-489d-930c-e98f1265e921")
 		)
@@ -2211,14 +2224,6 @@
 					(reference "C222")
 					(unit 1)
 				)
-			)
-		)
-	
-		(property "Assembly" "SMT"
-			(at 0 0 0)
-			(effects
-				(font (size 1.27 1.27))
-				(hide yes)
 			)
 		)
 	)

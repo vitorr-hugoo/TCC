@@ -1057,6 +1057,131 @@
 			)
 			(embedded_fonts no)
 		)
+		(symbol "power:+3V3"
+			(power)
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 0)
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "#PWR"
+				(at 0 -3.81 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Value" "+3V3"
+				(at 0 3.556 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Power symbol creates a global label with name \"+3V3\""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "global power"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "+3V3_0_1"
+				(polyline
+					(pts
+						(xy -0.762 1.27) (xy 0 2.54)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 2.54) (xy 0.762 1.27)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 0) (xy 0 2.54)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "+3V3_1_1"
+				(pin power_in line
+					(at 0 0 90)
+					(length 0)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
 		(symbol "power:GND"
 			(power)
 			(pin_numbers
@@ -1381,6 +1506,46 @@
 	)
 	(wire
 		(pts
+			(xy 49.53 99.06) (xy 50.8 99.06)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6f623cc3-4edf-44e5-952c-ffd819827d82")
+	)
+	(wire
+		(pts
+			(xy 50.8 92.71) (xy 50.8 99.06)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "734ea1ba-3417-4ac9-ba82-aa8b0da5203a")
+	)
+	(wire
+		(pts
+			(xy 45.72 80.01) (xy 50.8 80.01)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "77fe7e83-788f-4d45-b7df-90630684cb69")
+	)
+	(wire
+		(pts
+			(xy 50.8 80.01) (xy 50.8 85.09)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "801b4db3-ed2b-45e4-9c79-6ca904e4e259")
+	)
+	(wire
+		(pts
 			(xy 157.48 63.5) (xy 157.48 80.01)
 		)
 		(stroke
@@ -1539,8 +1704,8 @@
 		)
 		(uuid "ecb74b09-871e-47f8-8724-acbe2ed2eeb1")
 	)
-	(global_label "SENS_SPARE"
-		(shape input)
+	(global_label "SENS_WIND_SPEED_RAW"
+		(shape passive)
 		(at 45.72 77.47 0)
 		(fields_autoplaced yes)
 		(effects
@@ -1549,34 +1714,14 @@
 			)
 			(justify left)
 		)
-		(uuid "4c19ee10-1fce-4d64-8cf8-d7bbf2b8496a")
+		(uuid "62f492b1-b707-4470-86bb-4cfaec398467")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 55.6598 77.47 0)
+			(at 69.9094 77.47 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left)
-				(hide yes)
-			)
-		)
-	)
-	(global_label "+3V3"
-		(shape passive)
-		(at 45.72 80.01 0)
-		(effects
-			(font
-				(size 1 1)
-			)
-			(justify left)
-		)
-		(uuid "579a276a-2ff9-4e95-b6ca-a066ab04755f")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 45.72 80.01 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
 				(hide yes)
 			)
 		)
@@ -1648,7 +1793,7 @@
 				)
 			)
 		)
-		(property "Footprint" "TestPoint:TestPoint_Pad_D1.5mm"
+		(property "Footprint" "TestPoint:TestPoint_Pad_D1.0mm"
 			(at 90.17 50.8 0)
 			(effects
 				(font
@@ -1666,7 +1811,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Ponto de teste em cobre, pad circular de 1,5 mm; rede AVREF_SENSOR"
+		(property "Description" "Ponto de teste em cobre, pad circular de 1,0 mm; rede AVREF_SENSOR"
 			(at 90.17 50.8 0)
 			(effects
 				(font
@@ -1720,6 +1865,15 @@
 				(hide yes)
 			)
 		)
+		(property "Assembly" "PCB — sem compra"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "883c036f-720c-400e-bda7-3d3d302ab1f2")
 		)
@@ -1729,14 +1883,6 @@
 					(reference "TP503")
 					(unit 1)
 				)
-			)
-		)
-	
-		(property "Assembly" "PCB — sem compra"
-			(at 0 0 0)
-			(effects
-				(font (size 1.27 1.27))
-				(hide yes)
 			)
 		)
 	)
@@ -1846,6 +1992,15 @@
 				(hide yes)
 			)
 		)
+		(property "Assembly" "SMT"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "2"
 			(uuid "dad8d247-4927-4402-80a9-dc094bab339c")
 		)
@@ -1860,12 +2015,134 @@
 				)
 			)
 		)
-	
-		(property "Assembly" "SMT"
-			(at 0 0 0)
+	)
+	(symbol
+		(lib_id "Device:R")
+		(at 50.8 88.9 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "172d2246-d676-40a6-be59-2581bfa69e65")
+		(property "Reference" "R1"
+			(at 54.61 86.36 0)
 			(effects
-				(font (size 1.27 1.27))
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Value" "1 kΩ"
+			(at 54.61 88.9 0)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
+			(at 50.8 88.9 0)
+			(effects
+				(font
+					(size 1 1)
+				)
 				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.lcsc.com/datasheet/lcsc_datasheet_2206010130_UNI-ROYAL-Uniroyal-Elec-0603WAF1001T5E_C21190.pdf"
+			(at 50.8 88.9 0)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor SMD 1 kohm, 1%, 0,1 W, 0603"
+			(at 50.8 88.9 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "UNI-ROYAL(Uniroyal Elec)"
+			(at 50.8 88.9 0)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" "0603WAF1001T5E"
+			(at 50.8 88.9 0)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C21190"
+			(at 50.8 88.9 0)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(hide yes)
+			)
+		)
+		(property "Specification" "1%; 0.1W; 75V"
+			(at 50.8 88.9 0)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(hide yes)
+			)
+		)
+		(property "Function" "Resistor serie da alimentacao do cabo; limita corrente pelo reed e pelo TVS"
+			(at 50.8 88.9 0)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(hide yes)
+			)
+		)
+		(property "Verification" "Conferido no catalogo em 2026-09-24; verificar estoque ao comprar"
+			(at 50.8 88.9 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Assembly" "SMT"
+			(at 2.54 -8.89 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "a073c943-ecf8-4d7b-bbee-11530db76c25")
+		)
+		(pin "2"
+			(uuid "88b828cd-0b04-4d97-ab73-b33dd427c197")
+		)
+		(instances
+			(project "estacao-meteorologica"
+				(path "/0c305a6e-f9cd-49a1-b146-c2956e5469b6/058dce74-971b-49d7-82f0-384e20be985c/4ef75fdb-90eb-437a-af55-0afcbbe28aca"
+					(reference "R1")
+					(unit 1)
+				)
 			)
 		)
 	)
@@ -2041,6 +2318,15 @@
 				(hide yes)
 			)
 		)
+		(property "Assembly" "SMT"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "90388dcc-ec79-4224-9709-ca73f9bcf134")
 		)
@@ -2056,14 +2342,6 @@
 					(reference "D502")
 					(unit 1)
 				)
-			)
-		)
-	
-		(property "Assembly" "SMT"
-			(at 0 0 0)
-			(effects
-				(font (size 1.27 1.27))
-				(hide yes)
 			)
 		)
 	)
@@ -2158,7 +2436,7 @@
 				)
 			)
 		)
-		(property "Footprint" "TestPoint:TestPoint_Pad_D1.5mm"
+		(property "Footprint" "TestPoint:TestPoint_Pad_D1.0mm"
 			(at 66.04 69.85 0)
 			(effects
 				(font
@@ -2176,7 +2454,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Ponto de teste em cobre, pad circular de 1,5 mm; rede WIND_DIR_RAW"
+		(property "Description" "Ponto de teste em cobre, pad circular de 1,0 mm; rede WIND_DIR_RAW"
 			(at 66.04 69.85 0)
 			(effects
 				(font
@@ -2230,6 +2508,15 @@
 				(hide yes)
 			)
 		)
+		(property "Assembly" "PCB — sem compra"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "3b9641a9-21c4-4484-9cd7-9d3b2baf49c8")
 		)
@@ -2239,14 +2526,6 @@
 					(reference "TP501")
 					(unit 1)
 				)
-			)
-		)
-	
-		(property "Assembly" "PCB — sem compra"
-			(at 0 0 0)
-			(effects
-				(font (size 1.27 1.27))
-				(hide yes)
 			)
 		)
 	)
@@ -2356,6 +2635,15 @@
 				(hide yes)
 			)
 		)
+		(property "Assembly" "SMT"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "fdcf38e8-abff-4a69-a9f3-96088900979b")
 		)
@@ -2368,14 +2656,6 @@
 					(reference "R503")
 					(unit 1)
 				)
-			)
-		)
-	
-		(property "Assembly" "SMT"
-			(at 0 0 0)
-			(effects
-				(font (size 1.27 1.27))
-				(hide yes)
 			)
 		)
 	)
@@ -2485,6 +2765,15 @@
 				(hide yes)
 			)
 		)
+		(property "Assembly" "SMT"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "2"
 			(uuid "a73aa664-01c7-4088-b407-0d0892c7b888")
 		)
@@ -2499,12 +2788,71 @@
 				)
 			)
 		)
-	
-		(property "Assembly" "SMT"
-			(at 0 0 0)
+	)
+	(symbol
+		(lib_id "power:+3V3")
+		(at 49.53 99.06 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "651d342f-803a-4fa6-bd65-3280e406b07b")
+		(property "Reference" "#PWR081"
+			(at 53.34 99.06 0)
 			(effects
-				(font (size 1.27 1.27))
+				(font
+					(size 1.27 1.27)
+				)
 				(hide yes)
+			)
+		)
+		(property "Value" "+3V3"
+			(at 45.72 99.0599 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 49.53 99.06 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 49.53 99.06 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+3V3\""
+			(at 49.53 99.06 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "9315f4a6-cb0c-41cf-8481-aabe6696af75")
+		)
+		(instances
+			(project "estacao-meteorologica"
+				(path "/0c305a6e-f9cd-49a1-b146-c2956e5469b6/058dce74-971b-49d7-82f0-384e20be985c/4ef75fdb-90eb-437a-af55-0afcbbe28aca"
+					(reference "#PWR081")
+					(unit 1)
+				)
 			)
 		)
 	)
@@ -2614,6 +2962,15 @@
 				(hide yes)
 			)
 		)
+		(property "Assembly" "SMT"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "cc9ef810-0119-47da-8f3d-6a339a28f602")
 		)
@@ -2626,14 +2983,6 @@
 					(reference "C501")
 					(unit 1)
 				)
-			)
-		)
-	
-		(property "Assembly" "SMT"
-			(at 0 0 0)
-			(effects
-				(font (size 1.27 1.27))
-				(hide yes)
 			)
 		)
 	)
@@ -2728,7 +3077,7 @@
 				)
 			)
 		)
-		(property "Footprint" "TestPoint:TestPoint_Pad_D1.5mm"
+		(property "Footprint" "TestPoint:TestPoint_Pad_D1.0mm"
 			(at 232.41 95.25 0)
 			(effects
 				(font
@@ -2746,7 +3095,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Ponto de teste em cobre, pad circular de 1,5 mm; rede WIND_DIR_ADC"
+		(property "Description" "Ponto de teste em cobre, pad circular de 1,0 mm; rede WIND_DIR_ADC"
 			(at 232.41 95.25 0)
 			(effects
 				(font
@@ -2800,6 +3149,15 @@
 				(hide yes)
 			)
 		)
+		(property "Assembly" "PCB — sem compra"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "064c6c73-e7e6-4397-b9e8-6425feb1977a")
 		)
@@ -2809,14 +3167,6 @@
 					(reference "TP502")
 					(unit 1)
 				)
-			)
-		)
-	
-		(property "Assembly" "PCB — sem compra"
-			(at 0 0 0)
-			(effects
-				(font (size 1.27 1.27))
-				(hide yes)
 			)
 		)
 	)
@@ -2977,7 +3327,7 @@
 				)
 			)
 		)
-		(property "Footprint" "TestPoint:TestPoint_Pad_D1.5mm"
+		(property "Footprint" "TestPoint:TestPoint_Pad_D1.0mm"
 			(at 81.28 111.76 0)
 			(effects
 				(font
@@ -3049,6 +3399,15 @@
 				(hide yes)
 			)
 		)
+		(property "Assembly" "PCB — sem compra"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "dcfb5fed-7fc2-4742-927e-2256d5adfea9")
 		)
@@ -3058,14 +3417,6 @@
 					(reference "TP504")
 					(unit 1)
 				)
-			)
-		)
-	
-		(property "Assembly" "PCB — sem compra"
-			(at 0 0 0)
-			(effects
-				(font (size 1.27 1.27))
-				(hide yes)
 			)
 		)
 	)
@@ -3175,6 +3526,15 @@
 				(hide yes)
 			)
 		)
+		(property "Assembly" "SMT"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "2"
 			(uuid "1ae93804-da19-43da-891c-29443dca7590")
 		)
@@ -3187,14 +3547,6 @@
 					(reference "R501")
 					(unit 1)
 				)
-			)
-		)
-	
-		(property "Assembly" "SMT"
-			(at 0 0 0)
-			(effects
-				(font (size 1.27 1.27))
-				(hide yes)
 			)
 		)
 	)
@@ -3304,6 +3656,15 @@
 				(hide yes)
 			)
 		)
+		(property "Assembly" "SMT"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "6"
 			(uuid "b7f0e1b1-3358-44d3-877e-c0cacdf2a916")
 		)
@@ -3328,14 +3689,6 @@
 					(reference "J501")
 					(unit 1)
 				)
-			)
-		)
-	
-		(property "Assembly" "SMT"
-			(at 0 0 0)
-			(effects
-				(font (size 1.27 1.27))
-				(hide yes)
 			)
 		)
 	)

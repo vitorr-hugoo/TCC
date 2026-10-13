@@ -2907,6 +2907,131 @@
 			)
 			(embedded_fonts no)
 		)
+		(symbol "power:+3V3"
+			(power)
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 0)
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "#PWR"
+				(at 0 -3.81 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Value" "+3V3"
+				(at 0 3.556 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Power symbol creates a global label with name \"+3V3\""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "global power"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "+3V3_0_1"
+				(polyline
+					(pts
+						(xy -0.762 1.27) (xy 0 2.54)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 2.54) (xy 0.762 1.27)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 0) (xy 0 2.54)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "+3V3_1_1"
+				(pin power_in line
+					(at 0 0 90)
+					(length 0)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
 		(symbol "power:GND"
 			(power)
 			(pin_numbers
@@ -3009,18 +3134,6 @@
 			(embedded_fonts no)
 		)
 	)
-	(junction
-		(at 106.68 78.74)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "3305d880-bbf9-4c47-b15c-7c3ddc75dd1c")
-	)
-	(junction
-		(at 102.87 73.66)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "d4ef6d58-9571-41d7-a472-27c5a7230dbe")
-	)
 	(no_connect
 		(at 210.82 125.73)
 		(uuid "fbfb69ec-bfb7-46e7-b5b4-0498b81dbe11")
@@ -3054,16 +3167,6 @@
 			(type default)
 		)
 		(uuid "16e400f9-6ce4-4419-8ce3-0053413718cf")
-	)
-	(wire
-		(pts
-			(xy 106.68 66.04) (xy 106.68 78.74)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "28641f8e-145c-43a9-90c2-b658669290ef")
 	)
 	(wire
 		(pts
@@ -3187,16 +3290,6 @@
 	)
 	(wire
 		(pts
-			(xy 85.09 66.04) (xy 106.68 66.04)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "7d8244c9-bc34-415a-a19c-6ef23013b323")
-	)
-	(wire
-		(pts
 			(xy 85.09 85.09) (xy 102.87 85.09)
 		)
 		(stroke
@@ -3217,7 +3310,7 @@
 	)
 	(wire
 		(pts
-			(xy 78.74 30.48) (xy 88.9 30.48)
+			(xy 78.74 30.48) (xy 93.98 30.48)
 		)
 		(stroke
 			(width 0)
@@ -3234,16 +3327,6 @@
 			(type default)
 		)
 		(uuid "97fcc4c6-c079-460f-a887-9998a634ff12")
-	)
-	(wire
-		(pts
-			(xy 85.09 60.96) (xy 102.87 60.96)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "a8d25a75-f638-4b0f-8fce-1ba8b0ef781a")
 	)
 	(wire
 		(pts
@@ -3267,16 +3350,6 @@
 	)
 	(wire
 		(pts
-			(xy 102.87 60.96) (xy 102.87 73.66)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "d16d19de-9a2d-43dd-b99a-c9eeccf9034c")
-	)
-	(wire
-		(pts
 			(xy 85.09 88.9) (xy 106.68 88.9)
 		)
 		(stroke
@@ -3294,16 +3367,6 @@
 			(type default)
 		)
 		(uuid "d60ef49f-1bc4-4b41-b401-e6730d83f945")
-	)
-	(wire
-		(pts
-			(xy 78.74 25.4) (xy 88.9 25.4)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "d7d96da5-3c9d-5e18-82f3-747c5e2f6741")
 	)
 	(wire
 		(pts
@@ -3337,6 +3400,16 @@
 	)
 	(wire
 		(pts
+			(xy 85.09 55.88) (xy 115.57 55.88)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f7a99518-4e1c-4f73-8d25-06d0cdc6aa00")
+	)
+	(wire
+		(pts
 			(xy 182.88 50.8) (xy 210.82 50.8)
 		)
 		(stroke
@@ -3345,45 +3418,15 @@
 		)
 		(uuid "f8e1d9d1-d14f-4a8c-85bc-61cb22923d56")
 	)
-	(global_label "+3V3"
-		(shape passive)
-		(at 88.9 30.48 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
+	(wire
+		(pts
+			(xy 85.09 60.96) (xy 115.57 60.96)
 		)
-		(uuid "6c5f382c-c5bc-55c1-8069-298808521954")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 88.9 30.48 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
+		(stroke
+			(width 0)
+			(type default)
 		)
-	)
-	(global_label "+5V"
-		(shape passive)
-		(at 88.9 25.4 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "a6e4085d-d9d3-5e54-990d-8a72f488f74a")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 88.9 25.4 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
+		(uuid "fea83a23-d7e1-447d-86d2-eff2a03208ed")
 	)
 	(global_label "AVREF_SENSOR"
 		(shape passive)
@@ -3397,26 +3440,6 @@
 		(uuid "c1d88788-3f8e-532e-8413-efb0b9c7f7e3")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
 			(at 151.13 31.75 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-	)
-	(global_label "GND"
-		(shape passive)
-		(at 88.9 35.56 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "edbc8c91-6cd2-5269-8f13-bc5f17de9285")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 88.9 35.56 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3442,6 +3465,72 @@
 					(size 1.27 1.27)
 				)
 				(hide yes)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:+3V3")
+		(at 93.98 30.48 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "2d5ba6b8-124c-44b4-aa72-e85925ee7d8d")
+		(property "Reference" "#PWR079"
+			(at 93.98 34.29 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "+3V3"
+			(at 93.98 25.4 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 93.98 30.48 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 93.98 30.48 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+3V3\""
+			(at 93.98 30.48 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "edb87338-76e2-4fdb-9f70-a9fedb5686f5")
+		)
+		(instances
+			(project ""
+				(path "/0c305a6e-f9cd-49a1-b146-c2956e5469b6"
+					(reference "#PWR079")
+					(unit 1)
+				)
 			)
 		)
 	)
@@ -3554,20 +3643,21 @@
 				(hide yes)
 			)
 		)
+		(property "Specification" "M3 NPTH, Ø3.2 mm"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(instances
 			(project ""
 				(path "/0c305a6e-f9cd-49a1-b146-c2956e5469b6"
 					(reference "H902")
 					(unit 1)
 				)
-			)
-		)
-	
-		(property "Specification" "M3 NPTH, Ø3.2 mm"
-			(at 0 0 0)
-			(effects
-				(font (size 1.27 1.27))
-				(hide yes)
 			)
 		)
 	)
@@ -3680,20 +3770,21 @@
 				(hide yes)
 			)
 		)
+		(property "Specification" "M3 NPTH, Ø3.2 mm"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(instances
 			(project ""
 				(path "/0c305a6e-f9cd-49a1-b146-c2956e5469b6"
 					(reference "H901")
 					(unit 1)
 				)
-			)
-		)
-	
-		(property "Specification" "M3 NPTH, Ø3.2 mm"
-			(at 0 0 0)
-			(effects
-				(font (size 1.27 1.27))
-				(hide yes)
 			)
 		)
 	)
@@ -3806,6 +3897,15 @@
 				(hide yes)
 			)
 		)
+		(property "Specification" "M3 NPTH, Ø3.2 mm"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(instances
 			(project "estacao-meteorologica"
 				(path "/0c305a6e-f9cd-49a1-b146-c2956e5469b6"
@@ -3814,12 +3914,70 @@
 				)
 			)
 		)
-	
-		(property "Specification" "M3 NPTH, Ø3.2 mm"
-			(at 0 0 0)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 88.9 35.56 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "f150a676-e5da-4225-b560-f8ac790c9452")
+		(property "Reference" "#PWR078"
+			(at 88.9 41.91 0)
 			(effects
-				(font (size 1.27 1.27))
+				(font
+					(size 1.27 1.27)
+				)
 				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 88.9 40.64 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 88.9 35.56 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 88.9 35.56 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 88.9 35.56 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "e52fa08a-7e6c-42ed-ba58-49879553dae5")
+		)
+		(instances
+			(project ""
+				(path "/0c305a6e-f9cd-49a1-b146-c2956e5469b6"
+					(reference "#PWR078")
+					(unit 1)
+				)
 			)
 		)
 	)
@@ -3932,20 +4090,21 @@
 				(hide yes)
 			)
 		)
+		(property "Specification" "M3 NPTH, Ø3.2 mm"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(instances
 			(project "estacao-meteorologica"
 				(path "/0c305a6e-f9cd-49a1-b146-c2956e5469b6"
 					(reference "H903")
 					(unit 1)
 				)
-			)
-		)
-	
-		(property "Specification" "M3 NPTH, Ø3.2 mm"
-			(at 0 0 0)
-			(effects
-				(font (size 1.27 1.27))
-				(hide yes)
 			)
 		)
 	)
@@ -4124,16 +4283,6 @@
 					(size 1.27 1.27)
 				)
 				(justify left)
-			)
-		)
-		(pin "+5V" output
-			(at 78.74 25.4 0)
-			(uuid "0d30a412-2fee-5e05-8913-74c000705fc3")
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
 			)
 		)
 		(pin "+3V3" output
@@ -4654,6 +4803,26 @@
 				(justify left)
 			)
 		)
+		(pin "BH_I2C3_SCL" passive
+			(at 115.57 55.88 180)
+			(uuid "584dade7-34ac-4c09-ad2a-c2dd93195900")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "BH_I2C3_SDA" passive
+			(at 115.57 60.96 180)
+			(uuid "64f961a7-6ebc-4c69-9b94-571d1175bf76")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
 		(instances
 			(project "estacao-meteorologica"
 				(path "/0c305a6e-f9cd-49a1-b146-c2956e5469b6"
@@ -4663,8 +4832,8 @@
 		)
 	)
 	(sheet
-		(at 72.39 53.34)
-		(size 12.7 16.51)
+		(at 69.85 50.8)
+		(size 15.24 19.05)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
@@ -4677,9 +4846,9 @@
 		(fill
 			(color 0 0 0 0.0000)
 		)
-		(uuid "c5455acd-00c4-4dde-ab9a-382e33c5bf3a")
-		(property "Sheetname" "SENSOR BH1750"
-			(at 72.39 52.6284 0)
+		(uuid "ee5e162e-fef6-4e44-a551-c13cb2903f32")
+		(property "Sheetname" "BH1750_INTERFACE"
+			(at 69.85 50.0884 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4687,8 +4856,8 @@
 				(justify left bottom)
 			)
 		)
-		(property "Sheetfile" "sheets/bh1750.kicad_sch"
-			(at 72.39 70.4346 0)
+		(property "Sheetfile" "sheets/bh1750_interface.kicad_sch"
+			(at 69.85 70.4346 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4696,9 +4865,9 @@
 				(justify left top)
 			)
 		)
-		(pin "I2C1_SCL" bidirectional
-			(at 85.09 66.04 0)
-			(uuid "ec1c792e-fdfd-4ccc-9fa3-fbb3db0d1b2c")
+		(pin "BH_I2C3_SCL" passive
+			(at 85.09 55.88 0)
+			(uuid "8905ce25-8060-4f2f-9947-d92ac339473b")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4706,9 +4875,9 @@
 				(justify right)
 			)
 		)
-		(pin "I2C1_SDA" bidirectional
+		(pin "BH_I2C3_SDA" passive
 			(at 85.09 60.96 0)
-			(uuid "ea71a315-78e6-4647-a031-78c975d770bf")
+			(uuid "6a9d0468-e694-4632-9618-4deb2ef9fcd9")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4719,7 +4888,7 @@
 		(instances
 			(project "estacao-meteorologica"
 				(path "/0c305a6e-f9cd-49a1-b146-c2956e5469b6"
-					(page "5")
+					(page "12")
 				)
 			)
 		)

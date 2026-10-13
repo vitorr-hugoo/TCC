@@ -7,4 +7,5 @@
   (lib (name "Hardware_Power")(type "KiCad")(uri "${KIPRJMOD}/../../libraries/Hardware_Power/Hardware_Power.kicad_sym")(options "")(descr "Alimentacao - importados EasyEDA, pinagem revisada"))
   (lib (name "BH1750FVI-TR")(type "KiCad")(uri "${KIPRJMOD}/../../libraries/Hardware_Sensors/Hardware_Sensors.kicad_sym")(options "")(descr "BH1750 - simbolo, footprint e modelo 3D locais"))
   (lib (name "Hardware_SD")(type "KiCad")(uri "${KIPRJMOD}/../../libraries/Hardware_SD/Hardware_SD.kicad_sym")(options "")(descr "Cartao microSD - protecao ESD/EMI e modelos 3D locais"))
+  (lib (name "Hardware_SD_Interface")(type "KiCad")(uri "${KIPRJMOD}/../../libraries/Hardware_SD_Interface/Hardware_SD_Interface.kicad_sym")(options "")(descr "Buffer SPI e socket microSD Molex, com simbolos locais persistentes"))
 )

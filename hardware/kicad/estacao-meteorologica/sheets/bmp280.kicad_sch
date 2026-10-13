@@ -5,6 +5,113 @@
 	(uuid "7a62190e-49c6-410f-b647-17ab3ab1c9ef")
 	(paper "A4")
 	(lib_symbols
+		(symbol "Connector:TestPoint"
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 0.762)
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "TP"
+				(at 0 6.858 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "TestPoint"
+				(at 0 5.08 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 5.08 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "~"
+				(at 5.08 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "test point"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "test point tp"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "Pin* Test*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "TestPoint_0_1"
+				(circle
+					(center 0 3.302)
+					(radius 0.762)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "TestPoint_1_1"
+				(pin passive line
+					(at 0 0 90)
+					(length 2.54)
+					(name "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
 		(symbol "Device:C"
 			(pin_numbers
 				(hide yes)
@@ -730,6 +837,18 @@
 		(uuid "1567c63f-2d61-41e3-90fc-52035bdb19c9")
 	)
 	(junction
+		(at 142.24 85.09)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "1efc30ad-12d6-4203-b62c-1af0780aeb5e")
+	)
+	(junction
+		(at 144.78 80.01)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "36351292-f20c-4c1e-9dc2-51058b1e1179")
+	)
+	(junction
 		(at 139.7 93.98)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -761,6 +880,16 @@
 	)
 	(wire
 		(pts
+			(xy 142.24 85.09) (xy 142.24 96.52)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "11e087ce-2362-45dc-820c-d3d5a3415945")
+	)
+	(wire
+		(pts
 			(xy 137.16 74.93) (xy 137.16 83.82)
 		)
 		(stroke
@@ -781,6 +910,16 @@
 	)
 	(wire
 		(pts
+			(xy 153.67 77.47) (xy 151.13 77.47)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2a785a83-29df-4c81-b90d-72da901e125b")
+	)
+	(wire
+		(pts
 			(xy 124.46 83.82) (xy 118.11 83.82)
 		)
 		(stroke
@@ -791,7 +930,17 @@
 	)
 	(wire
 		(pts
-			(xy 144.78 74.93) (xy 144.78 96.52)
+			(xy 152.4 85.09) (xy 142.24 85.09)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "33c4a424-7291-4026-84da-ea538a0b07f5")
+	)
+	(wire
+		(pts
+			(xy 144.78 74.93) (xy 144.78 80.01)
 		)
 		(stroke
 			(width 0)
@@ -828,6 +977,26 @@
 			(type default)
 		)
 		(uuid "3d15141f-f0b9-4ab5-a9a0-263b6eea4d35")
+	)
+	(wire
+		(pts
+			(xy 151.13 77.47) (xy 151.13 80.01)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3e6af8ca-12b4-45ab-b9e1-e98b63dc1881")
+	)
+	(wire
+		(pts
+			(xy 144.78 80.01) (xy 151.13 80.01)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "424362d6-512d-486d-a5f3-1d3e2275c8fc")
 	)
 	(wire
 		(pts
@@ -868,6 +1037,16 @@
 			(type default)
 		)
 		(uuid "802a402c-993e-46b0-8dda-0b2349680a83")
+	)
+	(wire
+		(pts
+			(xy 175.26 125.73) (xy 175.26 124.46)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "905b4459-f63f-4f57-91c4-eb266d481a75")
 	)
 	(wire
 		(pts
@@ -938,16 +1117,6 @@
 			(type default)
 		)
 		(uuid "a7028040-19da-454b-8ec3-50baf201ef84")
-	)
-	(wire
-		(pts
-			(xy 142.24 74.93) (xy 142.24 96.52)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "af6899e7-4688-4c5f-b483-2e069cb7ef06")
 	)
 	(wire
 		(pts
@@ -1028,6 +1197,26 @@
 			(type default)
 		)
 		(uuid "fadfd26f-fd54-446e-ae5b-9e0350e72639")
+	)
+	(wire
+		(pts
+			(xy 144.78 80.01) (xy 144.78 96.52)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "fcc963fd-7876-4cae-b3fb-295308238b25")
+	)
+	(wire
+		(pts
+			(xy 142.24 74.93) (xy 142.24 85.09)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ff8f8d2c-b6e1-4a96-b3ab-920a802c01ff")
 	)
 	(global_label "BMP_SDO"
 		(shape input)
@@ -1156,6 +1345,124 @@
 			(project "esquematico_V4"
 				(path "/0c305a6e-f9cd-49a1-b146-c2956e5469b6/0abc4084-0cd9-43a4-88f9-87e0e6566acc"
 					(reference "#PWR018")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector:TestPoint")
+		(at 153.67 77.47 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board yes)
+		(dnp no)
+		(uuid "0e309041-f1dd-4baa-8648-839cb88d72f4")
+		(property "Reference" "TP211"
+			(at 157.226 72.39 0)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Value" "I2C1_SCL"
+			(at 158.242 74.676 0)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Footprint" "TestPoint:TestPoint_Pad_D1.0mm"
+			(at 153.67 77.47 0)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "N/A - geometria definida no footprint"
+			(at 153.67 77.47 0)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Ponto de teste em cobre, pad circular de 1,0 mm; rede I2C1_SCL"
+			(at 153.67 77.47 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "N/A"
+			(at 153.67 77.47 0)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" "N/A - elemento de cobre da PCB"
+			(at 153.67 77.47 0)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "N/A"
+			(at 153.67 77.47 0)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(hide yes)
+			)
+		)
+		(property "Specification" "Copper pad; no purchased component"
+			(at 153.67 77.47 0)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(hide yes)
+			)
+		)
+		(property "Function" "Ponto de teste do sinal I2C1_SCL"
+			(at 153.67 77.47 0)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(hide yes)
+			)
+		)
+		(property "Assembly" "PCB — sem compra"
+			(at 8.89 -2.54 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "029dcf01-07ce-454c-a86d-47b05d849421")
+		)
+		(instances
+			(project "esquematico_V4"
+				(path "/0c305a6e-f9cd-49a1-b146-c2956e5469b6/0abc4084-0cd9-43a4-88f9-87e0e6566acc"
+					(reference "TP211")
 					(unit 1)
 				)
 			)
@@ -1400,6 +1707,15 @@
 				(hide yes)
 			)
 		)
+		(property "Assembly" "SMT"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "5"
 			(uuid "f0f84b2e-e0d3-42b3-9bad-3be0ff20d587")
 		)
@@ -1432,12 +1748,122 @@
 				)
 			)
 		)
-	
-		(property "Assembly" "SMT"
-			(at 0 0 0)
+	)
+	(symbol
+		(lib_id "Connector:TestPoint")
+		(at 175.26 124.46 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board yes)
+		(dnp no)
+		(uuid "73d2912c-0832-4ae6-a333-3e67c946128c")
+		(property "Reference" "TP213"
+			(at 179.832 121.666 0)
 			(effects
-				(font (size 1.27 1.27))
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Value" "GND"
+			(at 179.832 124.206 0)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Footprint" "TestPoint:TestPoint_Pad_D1.0mm"
+			(at 175.26 124.46 0)
+			(effects
+				(font
+					(size 1 1)
+				)
 				(hide yes)
+			)
+		)
+		(property "Datasheet" "N/A - geometria definida no footprint"
+			(at 175.26 124.46 0)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Ponto de teste em cobre, pad circular de 1,0 mm; rede GND"
+			(at 175.26 124.46 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "N/A"
+			(at 175.26 124.46 0)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" "N/A - elemento de cobre da PCB"
+			(at 175.26 124.46 0)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "N/A"
+			(at 175.26 124.46 0)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(hide yes)
+			)
+		)
+		(property "Specification" "Copper pad; no purchased component"
+			(at 175.26 124.46 0)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(hide yes)
+			)
+		)
+		(property "Function" "Ponto de teste do sinal GND"
+			(at 175.26 124.46 0)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(hide yes)
+			)
+		)
+		(property "Assembly" "PCB — sem compra"
+			(at 5.08 3.81 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "91676810-0c10-4d40-adb8-1336553feb7e")
+		)
+		(instances
+			(project "esquematico_V4"
+				(path "/0c305a6e-f9cd-49a1-b146-c2956e5469b6/0abc4084-0cd9-43a4-88f9-87e0e6566acc"
+					(reference "TP213")
+					(unit 1)
+				)
 			)
 		)
 	)
@@ -1547,6 +1973,15 @@
 				(hide yes)
 			)
 		)
+		(property "Assembly" "SMT"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "2"
 			(uuid "e0af3c98-49d5-42c0-94b7-eeff7f9fcc0e")
 		)
@@ -1559,14 +1994,6 @@
 					(reference "R212")
 					(unit 1)
 				)
-			)
-		)
-	
-		(property "Assembly" "SMT"
-			(at 0 0 0)
-			(effects
-				(font (size 1.27 1.27))
-				(hide yes)
 			)
 		)
 	)
@@ -1679,6 +2106,15 @@
 				(hide yes)
 			)
 		)
+		(property "Assembly" "SMT"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "a737799f-ddc0-4c2d-b92f-e25946d7a4c7")
 		)
@@ -1691,14 +2127,6 @@
 					(reference "C212")
 					(unit 1)
 				)
-			)
-		)
-	
-		(property "Assembly" "SMT"
-			(at 0 0 0)
-			(effects
-				(font (size 1.27 1.27))
-				(hide yes)
 			)
 		)
 	)
@@ -1810,6 +2238,15 @@
 				(hide yes)
 			)
 		)
+		(property "Assembly" "SMT"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "e304e9a8-075b-49ac-b517-de77079a410c")
 		)
@@ -1822,14 +2259,6 @@
 					(reference "C211")
 					(unit 1)
 				)
-			)
-		)
-	
-		(property "Assembly" "SMT"
-			(at 0 0 0)
-			(effects
-				(font (size 1.27 1.27))
-				(hide yes)
 			)
 		)
 	)
@@ -1966,6 +2395,72 @@
 		)
 	)
 	(symbol
+		(lib_id "power:GND")
+		(at 124.46 96.52 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "bae25343-5695-4ce2-bdfd-ef4af34aa9e5")
+		(property "Reference" "#PWR083"
+			(at 124.46 102.87 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 124.46 101.6 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 124.46 96.52 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 124.46 96.52 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 124.46 96.52 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "54c63d3d-2f18-4638-a4b6-3745064da08a")
+		)
+		(instances
+			(project "estacao-meteorologica"
+				(path "/0c305a6e-f9cd-49a1-b146-c2956e5469b6/0abc4084-0cd9-43a4-88f9-87e0e6566acc"
+					(reference "#PWR083")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Device:R")
 		(at 128.27 83.82 90)
 		(unit 1)
@@ -2071,6 +2566,15 @@
 				(hide yes)
 			)
 		)
+		(property "Assembly" "SMT"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "2"
 			(uuid "44b8a19a-2998-4659-a1f0-6f6cab456170")
 		)
@@ -2085,27 +2589,18 @@
 				)
 			)
 		)
-	
-		(property "Assembly" "SMT"
-			(at 0 0 0)
-			(effects
-				(font (size 1.27 1.27))
-				(hide yes)
-			)
-		)
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 124.46 96.52 0)
+		(at 175.26 125.73 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "de7d72d5-bff1-4679-ada8-79fd52f68fee")
 		(property "Reference" "#PWR020"
-			(at 124.46 102.87 0)
+			(at 175.26 127 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2114,7 +2609,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 124.46 101.6 0)
+			(at 176.022 129.794 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2122,7 +2617,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 124.46 96.52 0)
+			(at 175.26 125.73 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2131,7 +2626,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 124.46 96.52 0)
+			(at 175.26 125.73 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2140,7 +2635,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 124.46 96.52 0)
+			(at 175.26 125.73 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2155,6 +2650,124 @@
 			(project "esquematico_V4"
 				(path "/0c305a6e-f9cd-49a1-b146-c2956e5469b6/0abc4084-0cd9-43a4-88f9-87e0e6566acc"
 					(reference "#PWR020")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector:TestPoint")
+		(at 152.4 85.09 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board yes)
+		(dnp no)
+		(uuid "f4ff5cd5-d5df-4e49-963b-252fae4f529a")
+		(property "Reference" "TP212"
+			(at 156.21 82.042 0)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Value" "I2C1_SDA"
+			(at 156.972 84.074 0)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Footprint" "TestPoint:TestPoint_Pad_D1.0mm"
+			(at 152.4 85.09 0)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "N/A - geometria definida no footprint"
+			(at 152.4 85.09 0)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Ponto de teste em cobre, pad circular de 1,0 mm; rede I2C1_SDA"
+			(at 152.4 85.09 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "N/A"
+			(at 152.4 85.09 0)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" "N/A - elemento de cobre da PCB"
+			(at 152.4 85.09 0)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "N/A"
+			(at 152.4 85.09 0)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(hide yes)
+			)
+		)
+		(property "Specification" "Copper pad; no purchased component"
+			(at 152.4 85.09 0)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(hide yes)
+			)
+		)
+		(property "Function" "Ponto de teste do sinal I2C1_SDA"
+			(at 152.4 85.09 0)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(hide yes)
+			)
+		)
+		(property "Assembly" "PCB — sem compra"
+			(at 10.16 5.08 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "83ded8d3-1f4e-4d3d-be56-b5a9703e7f73")
+		)
+		(instances
+			(project "esquematico_V4"
+				(path "/0c305a6e-f9cd-49a1-b146-c2956e5469b6/0abc4084-0cd9-43a4-88f9-87e0e6566acc"
+					(reference "TP212")
 					(unit 1)
 				)
 			)

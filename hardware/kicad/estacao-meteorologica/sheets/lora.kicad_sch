@@ -2415,6 +2415,33 @@
 				(hide yes)
 			)
 		)
+		(property "Function" "Circuito integrado ou módulo funcional."
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Specification" "LORA1276-C1-915MHZ"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Assembly" "SMT"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "5"
 			(uuid "67df5b2f-066b-4719-a8f3-4bb209399648")
 		)
@@ -2469,28 +2496,6 @@
 					(reference "U701")
 					(unit 1)
 				)
-			)
-		)
-	
-		(property "Function" "Circuito integrado ou módulo funcional."
-			(at 0 0 0)
-			(effects
-				(font (size 1.27 1.27))
-				(hide yes)
-			)
-		)
-		(property "Specification" "LORA1276-C1-915MHZ"
-			(at 0 0 0)
-			(effects
-				(font (size 1.27 1.27))
-				(hide yes)
-			)
-		)
-		(property "Assembly" "SMT"
-			(at 0 0 0)
-			(effects
-				(font (size 1.27 1.27))
-				(hide yes)
 			)
 		)
 	)
@@ -2585,6 +2590,33 @@
 				(hide yes)
 			)
 		)
+		(property "Function" "Capacitor de desacoplamento ou filtro local."
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Specification" "100 nF"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Assembly" "SMT"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "6aa2397b-fb5e-4db9-8c7e-732ca548fab3")
 		)
@@ -2597,28 +2629,6 @@
 					(reference "C701")
 					(unit 1)
 				)
-			)
-		)
-	
-		(property "Function" "Capacitor de desacoplamento ou filtro local."
-			(at 0 0 0)
-			(effects
-				(font (size 1.27 1.27))
-				(hide yes)
-			)
-		)
-		(property "Specification" "100 nF"
-			(at 0 0 0)
-			(effects
-				(font (size 1.27 1.27))
-				(hide yes)
-			)
-		)
-		(property "Assembly" "SMT"
-			(at 0 0 0)
-			(effects
-				(font (size 1.27 1.27))
-				(hide yes)
 			)
 		)
 	)
@@ -2756,7 +2766,7 @@
 		(dnp no)
 		(uuid "4a4b28eb-c5bb-447c-8ac2-f0bb015945f4")
 		(property "Reference" "R702"
-			(at 114.3 73.406 0)
+			(at 112.522 72.898 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2836,6 +2846,33 @@
 				(hide yes)
 			)
 		)
+		(property "Function" "Resistor de polarização, filtro ou configuração."
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Specification" "10 kΩ"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Assembly" "SMT"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "2"
 			(uuid "d0112f62-494d-4847-a34c-22d946c33c9c")
 		)
@@ -2848,28 +2885,6 @@
 					(reference "R702")
 					(unit 1)
 				)
-			)
-		)
-	
-		(property "Function" "Resistor de polarização, filtro ou configuração."
-			(at 0 0 0)
-			(effects
-				(font (size 1.27 1.27))
-				(hide yes)
-			)
-		)
-		(property "Specification" "10 kΩ"
-			(at 0 0 0)
-			(effects
-				(font (size 1.27 1.27))
-				(hide yes)
-			)
-		)
-		(property "Assembly" "SMT"
-			(at 0 0 0)
-			(effects
-				(font (size 1.27 1.27))
-				(hide yes)
 			)
 		)
 	)
@@ -2961,6 +2976,33 @@
 				(hide yes)
 			)
 		)
+		(property "Function" "Diodo de proteção ou clamp."
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Specification" "PESD5V0R1BSFYL"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Assembly" "SMT"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "2"
 			(uuid "3f7afdac-5122-4efd-b517-2e7fe799b207")
 		)
@@ -2973,28 +3015,6 @@
 					(reference "D701")
 					(unit 1)
 				)
-			)
-		)
-	
-		(property "Function" "Diodo de proteção ou clamp."
-			(at 0 0 0)
-			(effects
-				(font (size 1.27 1.27))
-				(hide yes)
-			)
-		)
-		(property "Specification" "PESD5V0R1BSFYL"
-			(at 0 0 0)
-			(effects
-				(font (size 1.27 1.27))
-				(hide yes)
-			)
-		)
-		(property "Assembly" "SMT"
-			(at 0 0 0)
-			(effects
-				(font (size 1.27 1.27))
-				(hide yes)
 			)
 		)
 	)
@@ -3217,6 +3237,33 @@
 				(hide yes)
 			)
 		)
+		(property "Function" "Capacitor de desacoplamento ou filtro local."
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Specification" "10 µF"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Assembly" "SMT"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "07134dd8-c5c4-4500-b3d8-9cbfa866145e")
 		)
@@ -3229,28 +3276,6 @@
 					(reference "C702")
 					(unit 1)
 				)
-			)
-		)
-	
-		(property "Function" "Capacitor de desacoplamento ou filtro local."
-			(at 0 0 0)
-			(effects
-				(font (size 1.27 1.27))
-				(hide yes)
-			)
-		)
-		(property "Specification" "10 µF"
-			(at 0 0 0)
-			(effects
-				(font (size 1.27 1.27))
-				(hide yes)
-			)
-		)
-		(property "Assembly" "SMT"
-			(at 0 0 0)
-			(effects
-				(font (size 1.27 1.27))
-				(hide yes)
 			)
 		)
 	)
@@ -3345,6 +3370,33 @@
 				(hide yes)
 			)
 		)
+		(property "Function" "Resistor de polarização, filtro ou configuração."
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Specification" "10 kΩ"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Assembly" "SMT"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "2"
 			(uuid "830e9495-573d-4801-876e-c11139ce1a2f")
 		)
@@ -3357,28 +3409,6 @@
 					(reference "R701")
 					(unit 1)
 				)
-			)
-		)
-	
-		(property "Function" "Resistor de polarização, filtro ou configuração."
-			(at 0 0 0)
-			(effects
-				(font (size 1.27 1.27))
-				(hide yes)
-			)
-		)
-		(property "Specification" "10 kΩ"
-			(at 0 0 0)
-			(effects
-				(font (size 1.27 1.27))
-				(hide yes)
-			)
-		)
-		(property "Assembly" "SMT"
-			(at 0 0 0)
-			(effects
-				(font (size 1.27 1.27))
-				(hide yes)
 			)
 		)
 	)
@@ -3470,6 +3500,33 @@
 				(hide yes)
 			)
 		)
+		(property "Function" "Conector de interface."
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Specification" "U.FL, 50 Ω"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Assembly" "SMT"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "2"
 			(uuid "aca1133d-2958-48bb-bc2c-5a66736f5dfd")
 		)
@@ -3482,28 +3539,6 @@
 					(reference "J701")
 					(unit 1)
 				)
-			)
-		)
-	
-		(property "Function" "Conector de interface."
-			(at 0 0 0)
-			(effects
-				(font (size 1.27 1.27))
-				(hide yes)
-			)
-		)
-		(property "Specification" "U.FL, 50 Ω"
-			(at 0 0 0)
-			(effects
-				(font (size 1.27 1.27))
-				(hide yes)
-			)
-		)
-		(property "Assembly" "SMT"
-			(at 0 0 0)
-			(effects
-				(font (size 1.27 1.27))
-				(hide yes)
 			)
 		)
 	)
@@ -3723,6 +3758,33 @@
 				(hide yes)
 			)
 		)
+		(property "Function" "Filtro de ferrite na alimentação."
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Specification" "120 Ω @ 100 MHz, 2 A"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Assembly" "SMT"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "ee065a5d-e9d9-4b92-8558-36b6f2a2ad50")
 		)
@@ -3735,28 +3797,6 @@
 					(reference "FB701")
 					(unit 1)
 				)
-			)
-		)
-	
-		(property "Function" "Filtro de ferrite na alimentação."
-			(at 0 0 0)
-			(effects
-				(font (size 1.27 1.27))
-				(hide yes)
-			)
-		)
-		(property "Specification" "120 Ω @ 100 MHz, 2 A"
-			(at 0 0 0)
-			(effects
-				(font (size 1.27 1.27))
-				(hide yes)
-			)
-		)
-		(property "Assembly" "SMT"
-			(at 0 0 0)
-			(effects
-				(font (size 1.27 1.27))
-				(hide yes)
 			)
 		)
 	)
